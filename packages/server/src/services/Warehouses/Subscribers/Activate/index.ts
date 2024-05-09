@@ -1,4 +1,3 @@
-/* eslint-disable import/extensions */
 export * from './BillWarehousesActivateSubscriber';
 export * from './CreditNoteWarehousesActivateSubscriber';
 export * from './EstimateWarehousesActivateSubscriber';

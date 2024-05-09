@@ -1,5 +1,3 @@
-/* eslint-disable quote-props */
-
 export default {
   // Expenses.
   expense: {
@@ -17,7 +15,7 @@ export default {
       column: 'currency_code',
     },
     reference_no: {
-      column: 'reference_no'
+      column: 'reference_no',
     },
     description: {
       column: 'description',
@@ -58,11 +56,11 @@ export default {
       columnType: 'date',
     },
     active: {
-      column: 'active', 
+      column: 'active',
     },
     balance: {
       column: 'amount',
-      columnType: 'number'
+      columnType: 'number',
     },
     currency: {
       column: 'currency_code',
@@ -70,7 +68,7 @@ export default {
     normal: {
       column: 'account_type_id',
       relation: 'account_types.id',
-      relationColumn: 'account_types.normal'
+      relationColumn: 'account_types.normal',
     },
   },
 
@@ -89,7 +87,7 @@ export default {
       column: 'purchasable',
     },
     sell_price: {
-      column: 'sell_price'
+      column: 'sell_price',
     },
     cost_price: {
       column: 'cost_price',
@@ -132,7 +130,7 @@ export default {
     },
     created_at: {
       column: 'created_at',
-    }
+    },
   },
 
   // Item category.
@@ -201,5 +199,5 @@ export default {
     created_at: {
       column: 'created_at',
     },
-  }
+  },
 };
