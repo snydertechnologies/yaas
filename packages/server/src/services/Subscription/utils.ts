@@ -6,24 +6,17 @@ import { lemonSqueezySetup } from '@lemonsqueezy/lemonsqueezy.js';
  * if there's an error setting up the SDK.
  */
 export function configureLemonSqueezy() {
-  const requiredVars = [
-    'LEMONSQUEEZY_API_KEY',
-    'LEMONSQUEEZY_STORE_ID',
-    'LEMONSQUEEZY_WEBHOOK_SECRET',
-  ];
+  const requiredVars = ['LEMONSQUEEZY_API_KEY', 'LEMONSQUEEZY_STORE_ID', 'LEMONSQUEEZY_WEBHOOK_SECRET'];
   const missingVars = requiredVars.filter((varName) => !process.env[varName]);
 
   if (missingVars.length > 0) {
     throw new Error(
-      `Missing required LEMONSQUEEZY env variables: ${missingVars.join(
-        ', '
-      )}. Please, set them in your .env file.`
+      `Missing required LEMONSQUEEZY env variables: ${missingVars.join(', ')}. Please, set them in your .env file.`,
     );
   }
   lemonSqueezySetup({
     apiKey: process.env.LEMONSQUEEZY_API_KEY,
     onError: (error) => {
-      // eslint-disable-next-line no-console -- allow logging
       console.error(error);
       throw new Error(`Lemon Squeezy API error: ${error.message}`);
     },
@@ -78,19 +71,11 @@ export function webhookHasData(obj: unknown): obj is {
     id: string;
   };
 } {
-  return (
-    isObject(obj) &&
-    'data' in obj &&
-    isObject(obj.data) &&
-    'attributes' in obj.data
-  );
+  return isObject(obj) && 'data' in obj && isObject(obj.data) && 'attributes' in obj.data;
 }
 
 export function createHmacSignature(secretKey, body) {
-  return require('crypto')
-    .createHmac('sha256', secretKey)
-    .update(body)
-    .digest('hex');
+  return require('crypto').createHmac('sha256', secretKey).update(body).digest('hex');
 }
 
 export function compareSignatures(signature, comparison_signature) {

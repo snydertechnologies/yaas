@@ -10,13 +10,11 @@ export function useWatch(callback, argument) {
       return;
     }
     callback(argument);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [argument]);
 }
 
 export function useWatchImmediate(callback, argument) {
   useEffect(() => {
     callback(argument);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [argument]);
 }

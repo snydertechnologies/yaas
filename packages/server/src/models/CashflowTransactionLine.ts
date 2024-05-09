@@ -1,6 +1,5 @@
-/* eslint-disable global-require */
-import { Model } from 'objection';
 import TenantModel from 'models/TenantModel';
+import { Model } from 'objection';
 
 export default class CashflowTransactionLine extends TenantModel {
   /**

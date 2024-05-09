@@ -1,10 +1,6 @@
-/* eslint-disable import/prefer-default-export */
-import * as R from 'ramda';
-import {
-  BALANCE_SHEET_SCHEMA_NODE_ID,
-  BALANCE_SHEET_SCHEMA_NODE_TYPE,
-} from '@/interfaces';
 import { ACCOUNT_TYPE } from '@/data/AccountTypes';
+import { BALANCE_SHEET_SCHEMA_NODE_ID, BALANCE_SHEET_SCHEMA_NODE_TYPE } from '@/interfaces';
+import * as R from 'ramda';
 import { FinancialSchema } from '../FinancialSchema';
 
 export const BalanceSheetSchema = (Base) =>

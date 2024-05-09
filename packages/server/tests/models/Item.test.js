@@ -1,13 +1,8 @@
-import { create, expect } from '~/testInit';
 import Item from 'models/Item';
-// eslint-disable-next-line no-unused-vars
-import itemCategory from 'models/ItemCategory';
-import {
-  tenantWebsite,
-  tenantFactory,
-  loginRes
-} from '~/dbInit';
+import { create, expect } from '~/testInit';
 
+import itemCategory from 'models/ItemCategory';
+import { loginRes, tenantFactory, tenantWebsite } from '~/dbInit';
 
 describe('Model: Item', () => {
   it('Should item model belongs to the associated category model.', async () => {
