@@ -1,0 +1,41 @@
+
+.content p{
+  @apply mb-4;
+}
+
+.content ul {
+  @apply mb-4;
+  list-style: disc;
+  margin-left: 1.2rem;
+}
+
+.content ul li{
+  @apply mb-2 mt-2;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+    @apply font-bold mt-8 mb-6 text-[#252c53];
+    letter-spacing: -0.5px;
+}
+
+.content h1{
+    @apply text-4xl;    
+}
+
+.content h2 {
+    @apply text-3xl
+}
+
+.content h3 {
+    @apply text-2xl
+}
+
+.content a{
+  text-decoration: underline;
+  color: #375DEE;
+}
