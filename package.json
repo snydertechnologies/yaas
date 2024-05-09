@@ -12,6 +12,9 @@
     "test:e2e": "playwright test",
     "prepare": "husky install"
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
     "@commitlint/cli": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.2",
