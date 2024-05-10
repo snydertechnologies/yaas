@@ -1,0 +1,49 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "name": "website",
+  "projectType": "application",
+  "sourceRoot": "packages/website/src",
+  "tags": ["stack:edge", "lang:typescript", "framework:express"],
+  "targets": {
+    "install": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["cd packages/website && bun i"],
+        "parallel": false
+      }
+    },
+    "format": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["cd packages/website && bun --bun format"],
+        "parallel": false
+      }
+    },
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["cd packages/website && bun --bun lint"],
+        "parallel": false
+      }
+    },
+    "build": {
+      "configurations": {
+        "production": {}
+      },
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["cd packages/website && bun --bun build"],
+        "parallel": false
+      }
+    },
+    "serve": {
+      "configurations": {
+        "production": {}
+      },
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "cd packages/website && bun --bun dev"
+      }
+    }
+  }
+}

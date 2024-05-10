@@ -60,23 +60,23 @@ export interface IGeneralLedgerSheetAccount {
 
 export type IGeneralLedgerSheetData = IGeneralLedgerSheetAccount[];
 
-export interface IAccountTransaction {
-  id: number;
-  index: number;
-  draft: boolean;
-  note: string;
-  accountId: number;
-  transactionType: string;
-  referenceType: string;
-  referenceId: number;
-  contactId: number;
-  contactType: string;
-  credit: number;
-  debit: number;
-  date: string | Date;
-  createdAt: string | Date;
-  updatedAt: string | Date;
-}
+// export interface IAccountTransaction { // was a duplicate
+//   id: number;
+//   index: number;
+//   draft: boolean;
+//   note: string;
+//   accountId: number;
+//   transactionType: string;
+//   referenceType: string;
+//   referenceId: number;
+//   contactId: number;
+//   contactType: string;
+//   credit: number;
+//   debit: number;
+//   date: string | Date;
+//   createdAt: string | Date;
+//   updatedAt: string | Date;
+// }
 
 export interface IGeneralLedgerMeta extends IFinancialSheetCommonMeta {
   formattedFromDate: string;

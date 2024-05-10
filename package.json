@@ -1,19 +1,19 @@
 {
   "name": "bigcapital-monorepo",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
+  "type": "module",
   "scripts": {
-    "build": "lerna run build",
-    "build:server": "lerna run build --scope \"@bigcapital/server\"",
-    "build:webapp": "lerna run build --scope \"@bigcapital/webapp\"",
-    "dev": "lerna run dev",
-    "dev:server": "lerna run dev --scope \"@bigcapital/server\"",
-    "dev:webapp": "lerna run dev --scope \"@bigcapital/webapp\"",
-    "dev:website": "lerna run dev --scope \"@bigcapital/website\"",
-    "format": "lerna run format --scope \"@bigcapital/webapp\" --scope \"@bigcapital/server\" --scope \"@bigcapital/website\"",
-    "lint": "lerna run lint --scope \"@bigcapital/webapp\" --scope \"@bigcapital/server\" --scope \"@bigcapital/website\"",
+    "build": "bun run build:server & bun run build:webapp",
+    "build:server": "bun --bun nx run server:build",
+    "build:webapp": "bun --bun nx run webapp:build",
+    "build:website": "bun --bun nx run website:build",
+    "dev": "bun run dev:server & bun run dev:webapp",
+    "dev:server": "bun --bun nx run server:serve",
+    "dev:webapp": "bun --bun nx run webapp:serve",
+    "dev:website": "bun --bun nx run website:serve",
+    "format": "bun i && bun --bun nx run-many --all --target=format",
+    "install:packages": "bun i && bun --bun nx run-many --all --target=install",
+    "lint": "bun i && bun --bun nx run-many --all --target=lint",
     "prepare": "husky install",
     "serve:server": "lerna run serve --scope \"@bigcapital/server\"",
     "test:e2e": "playwright test"
@@ -25,13 +25,19 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.7.3",
-    "@commitlint/cli": "^17.4.2",
-    "@commitlint/config-conventional": "^17.4.2",
-    "@commitlint/config-lerna-scopes": "^17.4.2",
-    "@faker-js/faker": "^8.0.2",
-    "@playwright/test": "^1.32.3",
-    "husky": "^8.0.3",
-    "lerna": "^8.1.2"
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@commitlint/config-lerna-scopes": "^19.0.0",
+    "@faker-js/faker": "^8.4.1",
+    "@playwright/test": "^1.44.0",
+    "bun-types": "^1.1.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "husky": "^9.0.11",
+    "nx": "^19.0.2"
+  },
+  "peerDependencies": {
+    "typescript": "beta"
   },
   "engines": {
     "bun": ">=1",

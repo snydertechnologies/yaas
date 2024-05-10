@@ -1,10 +1,10 @@
-import {
-  INumberFormatQuery,
-  IFormatNumberSettings,
+import type {
   IFinancialSheetBranchesQuery,
   IFinancialSheetCommonMeta,
+  IFormatNumberSettings,
+  INumberFormatQuery,
 } from './FinancialStatements';
-import { IFinancialTable } from './Table';
+import type { IFinancialTable } from './Table';
 
 // Balance sheet schema nodes types.
 export enum BALANCE_SHEET_SCHEMA_NODE_TYPE {
@@ -69,17 +69,13 @@ export interface IBalanceSheetMeta extends IFinancialSheetCommonMeta {
   formattedDateRange: string;
 }
 
-export interface IBalanceSheetFormatNumberSettings
-  extends IFormatNumberSettings {
+export interface IBalanceSheetFormatNumberSettings extends IFormatNumberSettings {
   type: string;
 }
 
 // Balance sheet service.
 export interface IBalanceSheetStatementService {
-  balanceSheet(
-    tenantId: number,
-    query: IBalanceSheetQuery
-  ): Promise<IBalanceSheetDOO>;
+  balanceSheet(tenantId: number, query: IBalanceSheetQuery): Promise<IBalanceSheetDOO>;
 }
 
 export type IBalanceSheetStatementData = IBalanceSheetDataNode[];

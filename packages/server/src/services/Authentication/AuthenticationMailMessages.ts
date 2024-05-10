@@ -1,7 +1,7 @@
-import { Service } from 'typedi';
-import { ISystemUser } from '@/interfaces';
 import config from '@/config';
+import { ISystemUser } from '@/interfaces';
 import Mail from '@/lib/Mail';
+import { Service } from 'typedi';
 
 @Service()
 export default class AuthenticationMailMesssages {
@@ -11,10 +11,7 @@ export default class AuthenticationMailMesssages {
    * @param {string} token - Reset password token.
    * @return {Promise<void>}
    */
-  public async sendResetPasswordMessage(
-    user: ISystemUser,
-    token: string
-  ): Promise<void> {
+  public async sendResetPasswordMessage(user: ISystemUser, token: string): Promise<void> {
     await new Mail()
       .setSubject('Bigcapital - Password Reset')
       .setView('mail/ResetPassword.html')
@@ -22,7 +19,7 @@ export default class AuthenticationMailMesssages {
       .setAttachments([
         {
           filename: 'bigcapital.png',
-          path: `${global.__views_dir}/images/bigcapital.png`,
+          path: `${process.env.APP_VIEWS_DIR}/images/bigcapital.png`,
           cid: 'bigcapital_logo',
         },
       ])
@@ -41,11 +38,7 @@ export default class AuthenticationMailMesssages {
    * @param {string} token - Verification token.
    * @returns {Promise<void>}
    */
-  public async sendSignupVerificationMail(
-    email: string,
-    fullName: string,
-    token: string
-  ) {
+  public async sendSignupVerificationMail(email: string, fullName: string, token: string) {
     const verifyUrl = `${config.baseURL}/auth/email_confirmation?token=${token}&email=${email}`;
 
     await new Mail()
@@ -55,7 +48,7 @@ export default class AuthenticationMailMesssages {
       .setAttachments([
         {
           filename: 'bigcapital.png',
-          path: `${global.__views_dir}/images/bigcapital.png`,
+          path: `${process.env.APP_VIEWS_DIR}/images/bigcapital.png`,
           cid: 'bigcapital_logo',
         },
       ])

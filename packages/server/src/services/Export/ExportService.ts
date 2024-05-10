@@ -1,13 +1,13 @@
-import { Inject, Service } from 'typedi';
-import xlsx from 'xlsx';
-import * as R from 'ramda';
+import { ServiceError } from '@/exceptions';
+import { IModelMeta, IModelMetaColumn } from '@/interfaces';
 import { get } from 'lodash';
+import * as R from 'ramda';
+import { Inject, Service } from 'typedi';
+import { utils, write } from 'xlsx';
 import { sanitizeResourceName } from '../Import/_utils';
 import ResourceService from '../Resource/ResourceService';
 import { ExportableResources } from './ExportResources';
-import { ServiceError } from '@/exceptions';
 import { Errors } from './common';
-import { IModelMeta, IModelMetaColumn } from '@/interfaces';
 import { flatDataCollections, getDataAccessor } from './utils';
 
 @Service()
@@ -72,14 +72,14 @@ export class ExportResourceService {
   private transformExportedData(
     tenantId: number,
     resource: string,
-    data: Array<Record<string, any>>
+    data: Array<Record<string, any>>,
   ): Array<Record<string, any>> {
     const resourceMeta = this.getResourceMeta(tenantId, resource);
 
     return R.when<Array<Record<string, any>>, Array<Record<string, any>>>(
       R.always(Boolean(resourceMeta.exportFlattenOn)),
       (data) => flatDataCollections(data, resourceMeta.exportFlattenOn),
-      data
+      data,
     );
   }
   /**
@@ -89,8 +89,7 @@ export class ExportResourceService {
    * @returns A promise that resolves to the exportable data.
    */
   private async getExportableData(tenantId: number, resource: string) {
-    const exportable =
-      this.exportableResources.registry.getExportable(resource);
+    const exportable = this.exportableResources.registry.getExportable(resource);
     return exportable.exportable(tenantId, {});
   }
 
@@ -100,10 +99,7 @@ export class ExportResourceService {
    * @returns An array of exportable columns.
    */
   private getExportableColumns(resourceMeta: IModelMeta) {
-    const processColumns = (
-      columns: { [key: string]: IModelMetaColumn },
-      parent = ''
-    ) => {
+    const processColumns = (columns: { [key: string]: IModelMetaColumn }, parent = '') => {
       return Object.entries(columns)
         .filter(([_, value]) => value.exportable !== false)
         .flatMap(([key, value]) => {
@@ -132,15 +128,13 @@ export class ExportResourceService {
    * @returns The created workbook.
    */
   private createWorkbook(data: any[], exportableColumns: any[]) {
-    const workbook = xlsx.utils.book_new();
-    const worksheetData = data.map((item) =>
-      exportableColumns.map((col) => get(item, getDataAccessor(col)))
-    );
+    const workbook = utils.book_new();
+    const worksheetData = data.map((item) => exportableColumns.map((col) => get(item, getDataAccessor(col))));
 
     worksheetData.unshift(exportableColumns.map((col) => col.name));
 
-    const worksheet = xlsx.utils.aoa_to_sheet(worksheetData);
-    xlsx.utils.book_append_sheet(workbook, worksheet, 'Exported Data');
+    const worksheet = utils.aoa_to_sheet(worksheetData);
+    utils.book_append_sheet(workbook, worksheet, 'Exported Data');
 
     return workbook;
   }
@@ -153,9 +147,9 @@ export class ExportResourceService {
    */
   private exportWorkbook(workbook: any, format: string) {
     if (format.toLowerCase() === 'csv') {
-      return xlsx.write(workbook, { type: 'buffer', bookType: 'csv' });
+      return write(workbook, { type: 'buffer', bookType: 'csv' });
     } else if (format.toLowerCase() === 'xlsx') {
-      return xlsx.write(workbook, { type: 'buffer', bookType: 'xlsx' });
+      return write(workbook, { type: 'buffer', bookType: 'xlsx' });
     }
   }
 }

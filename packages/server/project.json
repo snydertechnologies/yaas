@@ -1,10 +1,64 @@
 {
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "name": "server",
-  "prefix": "server",
   "projectType": "application",
   "sourceRoot": "packages/server/src",
-  "tags": [],
+  "tags": ["stack:edge", "lang:typescript", "framework:express"],
   "targets": {
+    "install": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["cd packages/server && bun i"],
+        "parallel": false
+      }
+    },
+    "format": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["cd packages/server && bun --bun format"],
+        "parallel": false
+      }
+    },
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["cd packages/server && bun --bun lint"],
+        "parallel": false
+      }
+    },
+    "build": {
+      "configurations": {
+        "production": {}
+      },
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "cd packages/server && bun build --compile --sourcemap ./src/index.ts --outfile ../../dist/packages/server/YACS.Server.bun --target bun"
+        ],
+        "parallel": false
+      }
+    },
+    "build-pre": {
+      "configurations": {
+        "production": {}
+      },
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "cd packages/server && gulp --gulpfile=scripts/gulpfile.cjs styles styles-rtl",
+          "cd packages/server && NODE_ENV=production bun build --compile --sourcemap ./src/commands/index.ts --outfile ../../dist/packages/server/YACS.Server.Commands.bun --target bun"
+        ],
+        "parallel": false
+      }
+    },
+    "serve": {
+      "configurations": {
+        "production": {}
+      },
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "cd packages/server && bun run ./src/index.ts --watch"
+      }
+    }
   }
 }

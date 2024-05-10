@@ -123,7 +123,7 @@ export default class Account extends mixin(TenantModel, [ModelSettings, CustomVi
         }
       },
       viewRolesBuilder(query, conditionals, expression) {
-        buildFilterQuery(Account.tableName, conditionals, expression)(query);
+        // buildFilterQuery(Account.tableName, conditionals, expression)(query); @TODO: Inam, uncomment this line
       },
       sortColumnBuilder(query, columnKey, direction) {
         buildSortColumnQuery(Account.tableName, columnKey, direction)(query);

@@ -3,8 +3,11 @@ node_modules/
 # Docker volumes data directory
 /data
 
-# Production env file 
+# Production env file
 .env
 
 test-results/
 bun.lockb
+.nx
+dist
+*.log
