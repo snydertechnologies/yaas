@@ -75,7 +75,7 @@ export * from './Times';
 export * from './ProjectProfitabilitySummary';
 export * from './TaxRate';
 export * from './Plaid';
-
+export * from './BalanceSheet';
 export interface I18nService {
   __: (input: string) => string;
 }

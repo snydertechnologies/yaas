@@ -1,7 +1,7 @@
 // @ts-nocheck
-import React, { useContext } from 'react';
-import { WindowScroller, AutoSizer, List } from 'react-virtualized';
+import { AutoSizer, List, WindowScroller } from 'https://cdn.jsdelivr.net/npm/react-virtualized@9.22.5/+esm'; // won't work from node_modules
 import { CLASSES } from '@/constants/classes';
+import React, { useContext } from 'react';
 import TableContext from './TableContext';
 
 /**
@@ -29,15 +29,9 @@ export function TableVirtualizedListRows() {
   } = useContext(TableContext);
 
   // Dashboard content pane.
-  const dashboardContentPane = React.useMemo(
-    () => document.querySelector(`.${CLASSES.DASHBOARD_CONTENT_PANE}`),
-    [],
-  );
+  const dashboardContentPane = React.useMemo(() => document.querySelector(`.${CLASSES.DASHBOARD_CONTENT_PANE}`), []);
 
-  const rowRenderer = React.useCallback(
-    ({ key, ...args }) => <TableVirtualizedListRow {...args} key={key} />,
-    [],
-  );
+  const rowRenderer = React.useCallback(({ key, ...args }) => <TableVirtualizedListRow {...args} key={key} />, []);
 
   return (
     <WindowScroller scrollElement={dashboardContentPane}>

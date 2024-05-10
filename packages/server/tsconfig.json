@@ -1,36 +1,44 @@
 {
   "compilerOptions": {
-    "target": "es2017",
-    "lib": [
-      "es2017",
-      "esnext.asynciterable"
-    ],
-    "typeRoots": [
-      "./node_modules/@types",
-      "./src/types"
-    ],
+    // Enable latest features
+    "lib": ["ESNext"],
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleDetection": "force",
+    "jsx": "react-jsx",
+    "allowJs": true,
+
+    // Bundler mode
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "noEmit": true,
+
+    // Best practices
+    "strict": true,
+    "skipLibCheck": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // Some stricter flags
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    // "noPropertyAccessFromIndexSignature": true,
+
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node",
-    "module": "commonjs",
     "pretty": true,
     "sourceMap": true,
-    "outDir": "./build",
-    "allowJs": true,
-    "noEmit": false,
+    // "outDir": "./build",
     "esModuleInterop": true,
     "baseUrl": "./src",
     "paths": {
       "@/*": ["./*"]
     },
+    "types": [
+      "bun-types" // add Bun global
+    ]
   },
-  "include": [
-    "./src/**/*"
-  ],
-  "exclude": [
-    "./node_modules",
-    "tests"
-  ]
+  "include": ["./src/**/*", "src/server.ts", "src/index.ts"]
 }

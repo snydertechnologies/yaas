@@ -1,22 +1,17 @@
-import XLSX from 'xlsx';
+import { ServiceError } from '@/exceptions';
+import { Import } from '@/system/models';
 import bluebird from 'bluebird';
+import { Knex } from 'knex';
+import { first } from 'lodash';
 import * as R from 'ramda';
 import { Inject, Service } from 'typedi';
-import { first } from 'lodash';
-import { ImportFileDataValidator } from './ImportFileDataValidator';
-import { Knex } from 'knex';
-import {
-  ImportInsertError,
-  ImportOperError,
-  ImportOperSuccess,
-  ImportableContext,
-} from './interfaces';
-import { ServiceError } from '@/exceptions';
-import { getUniqueImportableValue, trimObject } from './_utils';
-import { ImportableResources } from './ImportableResources';
+import { read, utils } from 'xlsx';
 import ResourceService from '../Resource/ResourceService';
 import HasTenancyService from '../Tenancy/TenancyService';
-import { Import } from '@/system/models';
+import { ImportFileDataValidator } from './ImportFileDataValidator';
+import { ImportableResources } from './ImportableResources';
+import { getUniqueImportableValue, trimObject } from './_utils';
+import type { ImportInsertError, ImportOperError, ImportOperSuccess, ImportableContext } from './interfaces';
 
 @Service()
 export class ImportFileCommon {
@@ -39,14 +34,13 @@ export class ImportFileCommon {
    * @returns {Record<string, any>[]} - The mapped data objects.
    */
   public parseXlsxSheet(buffer: Buffer): Record<string, unknown>[] {
-    const workbook = XLSX.read(buffer, { type: 'buffer', raw: true });
+    const workbook = read(buffer, { type: 'buffer', raw: true });
 
     const firstSheetName = workbook.SheetNames[0];
     const worksheet = workbook.Sheets[firstSheetName];
 
-    return XLSX.utils.sheet_to_json(worksheet, {});
+    return utils.sheet_to_json(worksheet, {});
   }
-
 
   /**
    * Imports the given parsed data to the resource storage through registered importable service.
@@ -60,12 +54,9 @@ export class ImportFileCommon {
     tenantId: number,
     importFile: Import,
     parsedData: Record<string, any>[],
-    trx?: Knex.Transaction
+    trx?: Knex.Transaction,
   ): Promise<[ImportOperSuccess[], ImportOperError[]]> {
-    const resourceFields = this.resource.getResourceFields2(
-      tenantId,
-      importFile.resource
-    );
+    const resourceFields = this.resource.getResourceFields2(tenantId, importFile.resource);
     const ImportableRegistry = this.importable.registry;
     const importable = ImportableRegistry.getImportable(importFile.resource);
 
@@ -88,17 +79,10 @@ export class ImportFileCommon {
       };
       try {
         // Validate the DTO object before passing it to the service layer.
-        await this.importFileValidator.validateData(
-          resourceFields,
-          transformedDTO
-        );
+        await this.importFileValidator.validateData(resourceFields, transformedDTO);
         try {
           // Run the importable function and listen to the errors.
-          const data = await importable.importable(
-            tenantId,
-            transformedDTO,
-            trx
-          );
+          const data = await importable.importable(tenantId, transformedDTO, trx);
           success.push({ index, data });
         } catch (err) {
           if (err instanceof ServiceError) {
@@ -136,10 +120,7 @@ export class ImportFileCommon {
    * @param {string} resourceName
    * @param {Record<string, any>} params
    */
-  public async validateParamsSchema(
-    resourceName: string,
-    params: Record<string, any>
-  ) {
+  public async validateParamsSchema(resourceName: string, params: Record<string, any>) {
     const ImportableRegistry = this.importable.registry;
     const importable = ImportableRegistry.getImportable(resourceName);
 
@@ -161,11 +142,7 @@ export class ImportFileCommon {
    * @param {string} resourceName
    * @param {Record<string, any>} params
    */
-  public async validateParams(
-    tenantId: number,
-    resourceName: string,
-    params: Record<string, any>
-  ) {
+  public async validateParams(tenantId: number, resourceName: string, params: Record<string, any>) {
     const ImportableRegistry = this.importable.registry;
     const importable = ImportableRegistry.getImportable(resourceName);
 

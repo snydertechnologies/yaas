@@ -1,5 +1,5 @@
+import { IDynamicListFilter } from '@/interfaces/DynamicFilter';
 import { Knex } from 'knex';
-import { IDynamicListFilterDTO } from '@/interfaces/DynamicFilter';
 
 export interface IAccountDTO {
   name: string;
@@ -92,8 +92,8 @@ export enum IAccountsStructureType {
   Flat = 'flat',
 }
 
-export interface IAccountsFilter extends IDynamicListFilterDTO {
-  stringifiedFilterRoles?: string;
+export interface IAccountsFilter extends IDynamicListFilter {
+  stringifiedFilterRoles: string;
   onlyInactive: boolean;
   structure?: IAccountsStructureType;
 }
@@ -156,11 +156,4 @@ export enum AccountAction {
   DELETE = 'Delete',
   VIEW = 'View',
   TransactionsLocking = 'TransactionsLocking',
-}
-
-export enum TaxRateAction {
-  CREATE = 'Create',
-  EDIT = 'Edit',
-  DELETE = 'Delete',
-  VIEW = 'View',
 }

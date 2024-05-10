@@ -1,17 +1,14 @@
-import { Model, mixin } from 'objection';
-import TenantModel from 'models/TenantModel';
-import { buildFilterQuery } from '@/lib/ViewRolesBuilder';
-import ItemSettings from './Item.Settings';
-import ModelSetting from './ModelSetting';
-import CustomViewBaseModel from './CustomViewBaseModel';
+import { IFilterRole, IModel } from '@/interfaces';
 import { DEFAULT_VIEWS } from '@/services/Items/constants';
+import TenantModel from 'models/TenantModel';
+import { Model, mixin } from 'objection';
+import CustomViewBaseModel from './CustomViewBaseModel';
+// import { buildFilterQuery } from '@/lib/ViewRolesBuilder';
+import ItemSettings from './Item.Settings';
 import ModelSearchable from './ModelSearchable';
+import ModelSetting from './ModelSetting';
 
-export default class Item extends mixin(TenantModel, [
-  ModelSetting,
-  CustomViewBaseModel,
-  ModelSearchable,
-]) {
+export default class Item extends mixin(TenantModel, [ModelSetting, CustomViewBaseModel, ModelSearchable]) {
   /**
    * Table name
    */
@@ -42,7 +39,7 @@ export default class Item extends mixin(TenantModel, [
         query.orderBy(columnSort, sortDirection);
       },
       viewRolesBuilder(query, conditions, logicExpression) {
-        buildFilterQuery(Item.tableName, conditions, logicExpression)(query);
+        // buildFilterQuery(Item.tableName, conditions, logicExpression)(query); // @TODO: Inam, uncomment this line
       },
 
       /**
@@ -210,11 +207,7 @@ export default class Item extends mixin(TenantModel, [
    *
    */
   static get secureDeleteRelations() {
-    return [
-      'itemEntries',
-      'inventoryAdjustmentsEntries',
-      'warehousesTransfersEntries',
-    ];
+    return ['itemEntries', 'inventoryAdjustmentsEntries', 'warehousesTransfersEntries'];
   }
 
   /**

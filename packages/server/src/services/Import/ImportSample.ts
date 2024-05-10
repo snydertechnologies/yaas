@@ -1,5 +1,5 @@
-import XLSX from 'xlsx';
 import { Inject, Service } from 'typedi';
+import { utils, write } from 'xlsx';
 import { ImportableResources } from './ImportableResources';
 import { sanitizeResourceName } from './_utils';
 
@@ -15,11 +15,7 @@ export class ImportSampleService {
    * @param {string} format
    * @returns {Buffer | string}
    */
-  public sample(
-    tenantId: number,
-    resource: string,
-    format: 'csv' | 'xlsx'
-  ): Buffer | string {
+  public sample(tenantId: number, resource: string, format: 'csv' | 'xlsx'): Buffer | string {
     const _resource = sanitizeResourceName(resource);
 
     const ImportableRegistry = this.importable.registry;
@@ -27,16 +23,16 @@ export class ImportSampleService {
 
     const data = importable.sampleData();
 
-    const workbook = XLSX.utils.book_new();
-    const worksheet = XLSX.utils.json_to_sheet(data);
-    XLSX.utils.book_append_sheet(workbook, worksheet, 'Sheet1');
+    const workbook = utils.book_new();
+    const worksheet = utils.json_to_sheet(data);
+    utils.book_append_sheet(workbook, worksheet, 'Sheet1');
 
     // Determine the output format
     if (format === 'csv') {
-      const csvOutput = XLSX.utils.sheet_to_csv(worksheet);
+      const csvOutput = utils.sheet_to_csv(worksheet);
       return csvOutput;
     } else {
-      const xlsxOutput = XLSX.write(workbook, {
+      const xlsxOutput = write(workbook, {
         bookType: 'xlsx',
         type: 'buffer',
       });

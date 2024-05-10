@@ -1,9 +1,6 @@
 {
   "name": "bigcapital-monorepo",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {
     "build": "lerna run build",
     "build:server": "lerna run build --scope \"@bigcapital/server\"",
@@ -30,8 +27,11 @@
     "@commitlint/config-lerna-scopes": "^17.4.2",
     "@faker-js/faker": "^8.0.2",
     "@playwright/test": "^1.32.3",
-    "husky": "^8.0.3",
-    "lerna": "^8.1.2"
+    "bun-types": "^1.1.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "husky": "^9.0.11",
+    "nx": "^19.0.2"
   },
   "engines": {
     "bun": ">=1",

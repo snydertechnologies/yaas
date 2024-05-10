@@ -1,16 +1,10 @@
-import { Service, Inject } from 'typedi';
+import { IExpense, IExpenseCommonDTO, IExpenseCreateDTO, IExpenseEditDTO, ISystemUser } from '@/interfaces';
+import { BranchTransactionDTOTransform } from '@/services/Branches/Integrations/BranchTransactionDTOTransform';
+import { TenantMetadata } from '@/system/models';
 import { omit, sumBy } from 'lodash';
 import moment from 'moment';
 import * as R from 'ramda';
-import {
-  IExpense,
-  IExpenseCreateDTO,
-  IExpenseDTO,
-  IExpenseEditDTO,
-  ISystemUser,
-} from '@/interfaces';
-import { BranchTransactionDTOTransform } from '@/services/Branches/Integrations/BranchTransactionDTOTransform';
-import { TenantMetadata } from '@/system/models';
+import { Inject, Service } from 'typedi';
 
 @Service()
 export class ExpenseDTOTransformer {
@@ -19,10 +13,10 @@ export class ExpenseDTOTransformer {
 
   /**
    * Retrieve the expense landed cost amount.
-   * @param  {IExpenseDTO} expenseDTO
+   * @param  {IExpenseCommonDTO} expenseDTO
    * @return {number}
    */
-  private getExpenseLandedCostAmount = (expenseDTO: IExpenseDTO): number => {
+  private getExpenseLandedCostAmount = (expenseDTO: IExpenseCommonDTO): number => {
     const landedCostEntries = expenseDTO.categories.filter((entry) => {
       return entry.landedCost === true;
     });
@@ -40,14 +34,14 @@ export class ExpenseDTOTransformer {
 
   /**
    * Mapping expense DTO to model.
-   * @param  {IExpenseDTO} expenseDTO
+   * @param  {IExpenseCommonDTO} expenseDTO
    * @param  {ISystemUser} authorizedUser
    * @return {IExpense}
    */
   private expenseDTOToModel(
     tenantId: number,
     expenseDTO: IExpenseCreateDTO | IExpenseEditDTO,
-    user?: ISystemUser
+    user?: ISystemUser,
   ): IExpense {
     const landedCostAmount = this.getExpenseLandedCostAmount(expenseDTO);
     const totalAmount = this.getExpenseCategoriesTotal(expenseDTO.categories);
@@ -64,9 +58,7 @@ export class ExpenseDTOTransformer {
           }
         : {}),
     };
-    return R.compose(this.branchDTOTransform.transformDTO<IExpense>(tenantId))(
-      initialDTO
-    );
+    return R.compose(this.branchDTOTransform.transformDTO<IExpense>(tenantId))(initialDTO);
   }
 
   /**
@@ -79,7 +71,7 @@ export class ExpenseDTOTransformer {
   public expenseCreateDTO = async (
     tenantId: number,
     expenseDTO: IExpenseCreateDTO,
-    user?: ISystemUser
+    user?: ISystemUser,
   ): Promise<IExpense> => {
     const initialDTO = this.expenseDTOToModel(tenantId, expenseDTO, user);
 
@@ -108,7 +100,7 @@ export class ExpenseDTOTransformer {
   public expenseEditDTO = async (
     tenantId: number,
     expenseDTO: IExpenseEditDTO,
-    user?: ISystemUser
+    user?: ISystemUser,
   ): Promise<IExpense> => {
     return this.expenseDTOToModel(tenantId, expenseDTO, user);
   };

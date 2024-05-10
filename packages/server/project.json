@@ -1,10 +1,44 @@
 {
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "name": "server",
-  "prefix": "server",
   "projectType": "application",
   "sourceRoot": "packages/server/src",
-  "tags": [],
+  "tags": ["stack:edge", "lang:typescript", "framework:express"],
   "targets": {
+    "build": {
+      "configurations": {
+        "production": {}
+      },
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "bun build --compile --sourcemap packages/server/src/index.ts --outfile dist/packages/server/YACS.Server.bun --target bun"
+        ],
+        "parallel": false
+      }
+    },
+    "build-pre": {
+      "configurations": {
+        "production": {}
+      },
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "gulp --gulpfile=scripts/gulpfile.cjs styles styles-rtl",
+          "cross-env NODE_ENV=production bun build packages/server/src/index.ts --outdir build/server --target bun",
+          "cross-env NODE_ENV=production bun build packages/server/src/commands/index.ts --outdir build/commands --target bun"
+        ],
+        "parallel": false
+      }
+    },
+    "serve": {
+      "configurations": {
+        "production": {}
+      },
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "cd packages/server && bun run ./src/index.ts --watch"
+      }
+    }
   }
 }

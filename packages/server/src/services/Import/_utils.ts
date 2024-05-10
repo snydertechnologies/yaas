@@ -1,28 +1,28 @@
-import * as Yup from 'yup';
-import moment from 'moment';
-import * as R from 'ramda';
-import { Knex } from 'knex';
-import fs from 'fs/promises';
 import path from 'path';
+import { ServiceError } from '@/exceptions';
+import { IModelMetaField, IModelMetaField2 } from '@/interfaces';
+import { multiNumberParse } from '@/utils/multi-number-parse';
+import fs from 'fs/promises';
+import { Knex } from 'knex';
 import {
-  defaultTo,
-  upperFirst,
   camelCase,
-  first,
-  isUndefined,
-  pickBy,
-  isEmpty,
   castArray,
+  defaultTo,
+  first,
   get,
   head,
-  split,
+  isEmpty,
+  isUndefined,
   last,
+  pickBy,
+  split,
+  upperFirst,
 } from 'lodash';
+import moment from 'moment';
 import pluralize from 'pluralize';
+import * as R from 'ramda';
+import * as Yup from 'yup';
 import { ResourceMetaFieldsMap } from './interfaces';
-import { IModelMetaField, IModelMetaField2 } from '@/interfaces';
-import { ServiceError } from '@/exceptions';
-import { multiNumberParse } from '@/utils/multi-number-parse';
 
 export const ERRORS = {
   RESOURCE_NOT_IMPORTABLE: 'RESOURCE_NOT_IMPORTABLE',
@@ -68,16 +68,10 @@ export const convertFieldsToYupValidation = (fields: ResourceMetaFieldsMap) => {
 
     if (field.fieldType === 'text') {
       if (!isUndefined(field.minLength)) {
-        fieldSchema = fieldSchema.min(
-          field.minLength,
-          `Minimum length is ${field.minLength} characters`
-        );
+        fieldSchema = fieldSchema.min(field.minLength, `Minimum length is ${field.minLength} characters`);
       }
       if (!isUndefined(field.maxLength)) {
-        fieldSchema = fieldSchema.max(
-          field.maxLength,
-          `Maximum length is ${field.maxLength} characters`
-        );
+        fieldSchema = fieldSchema.max(field.maxLength, `Maximum length is ${field.maxLength} characters`);
       }
     } else if (field.fieldType === 'number') {
       fieldSchema = Yup.number().label(field.name);
@@ -106,7 +100,7 @@ export const convertFieldsToYupValidation = (fields: ResourceMetaFieldsMap) => {
             return true;
           }
           return moment(val, 'YYYY-MM-DD', true).isValid();
-        }
+        },
       );
     } else if (field.fieldType === 'url') {
       fieldSchema = fieldSchema.url();
@@ -148,9 +142,7 @@ const parseFieldName = (fieldName: string, field: IModelMetaField) => {
  * @returns
  */
 export const getUnmappedSheetColumns = (columns, mapping) => {
-  return columns.filter(
-    (column) => !mapping.some((map) => map.from === column)
-  );
+  return columns.filter((column) => !mapping.some((map) => map.from === column));
 };
 
 export const sanitizeResourceName = (resourceName: string) => {
@@ -170,12 +162,9 @@ export const getSheetColumns = (sheetData: unknown[]) => {
  */
 export const getUniqueImportableValue = (
   importableFields: { [key: string]: IModelMetaField2 },
-  objectDTO: Record<string, any>
+  objectDTO: Record<string, any>,
 ) => {
-  const uniqueImportableValue = pickBy(
-    importableFields,
-    (field) => field.unique
-  );
+  const uniqueImportableValue = pickBy(importableFields, (field) => field.unique);
   const uniqueImportableKeys = Object.keys(uniqueImportableValue);
   const uniqueImportableKey = first(uniqueImportableKeys);
 
@@ -201,14 +190,11 @@ const booleanValuesRepresentingFalse: string[] = ['false', 'no', 'n', 'f', '0'];
  * @returns {string|null}
  */
 export const parseBoolean = (value: string): boolean | null => {
-  const normalizeValue = (value: string): string =>
-    value.toString().trim().toLowerCase();
+  const normalizeValue = (value: string): string => value.toString().trim().toLowerCase();
 
   const normalizedValue = normalizeValue(value);
-  const valuesRepresentingTrue =
-    booleanValuesRepresentingTrue.map(normalizeValue);
-  const valueRepresentingFalse =
-    booleanValuesRepresentingFalse.map(normalizeValue);
+  const valuesRepresentingTrue = booleanValuesRepresentingTrue.map(normalizeValue);
+  const valueRepresentingFalse = booleanValuesRepresentingFalse.map(normalizeValue);
 
   if (valuesRepresentingTrue.includes(normalizedValue)) {
     return true;
@@ -252,10 +238,7 @@ export const getResourceColumns = (resourceColumns: {
 }) => {
   const mapColumn =
     (group: string) =>
-    ([fieldKey, { name, importHint, required, order, ...field }]: [
-      string,
-      IModelMetaField2
-    ]) => {
+    ([fieldKey, { name, importHint, required, order, ...field }]: [string, IModelMetaField2]) => {
       const extra: Record<string, any> = {};
       const key = fieldKey;
 
@@ -274,11 +257,9 @@ export const getResourceColumns = (resourceColumns: {
         ...extra,
       };
     };
-  const sortColumn = (a, b) =>
-    a.order && b.order ? a.order - b.order : a.order ? -1 : b.order ? 1 : 0;
+  const sortColumn = (a, b) => (a.order && b.order ? a.order - b.order : a.order ? -1 : b.order ? 1 : 0);
 
-  const mapColumns = (columns, parentKey = '') =>
-    Object.entries(columns).map(mapColumn(parentKey)).sort(sortColumn);
+  const mapColumns = (columns, parentKey = '') => Object.entries(columns).map(mapColumn(parentKey)).sort(sortColumn);
 
   return R.compose(transformInputToGroupedFields, mapColumns)(resourceColumns);
 };
@@ -298,9 +279,7 @@ export const valueParser =
 
       // Parses the enumeration value.
     } else if (field.fieldType === 'enumeration') {
-      const option = get(field, 'options', []).find(
-        (option) => option.label === value
-      );
+      const option = get(field, 'options', []).find((option) => option.label === value);
       _value = get(option, 'key');
       // Parses the numeric value.
     } else if (field.fieldType === 'number') {
@@ -336,27 +315,21 @@ export const valueParser =
  * @param {string} key - Mapped key path. formats: `group.key` or `key`.
  * @returns {string}
  */
-export const parseKey = R.curry(
-  (fields: { [key: string]: IModelMetaField2 }, key: string) => {
-    const fieldKey = getFieldKey(key);
-    const field = fields[fieldKey];
-    let _key = key;
+export const parseKey = R.curry((fields: { [key: string]: IModelMetaField2 }, key: string) => {
+  const fieldKey = getFieldKey(key);
+  const field = fields[fieldKey];
+  let _key = key;
 
-    if (field.fieldType === 'collection') {
-      if (field.collectionOf === 'object') {
-        const nestedFieldKey = last(key.split('.'));
-        _key = `${fieldKey}[0].${nestedFieldKey}`;
-      } else if (
-        field.collectionOf === 'string' ||
-        field.collectionOf ||
-        'numberic'
-      ) {
-        _key = `${fieldKey}`;
-      }
+  if (field.fieldType === 'collection') {
+    if (field.collectionOf === 'object') {
+      const nestedFieldKey = last(key.split('.'));
+      _key = `${fieldKey}[0].${nestedFieldKey}`;
+    } else if (field.collectionOf === 'string' || field.collectionOf || 'numberic') {
+      _key = `${fieldKey}`;
     }
-    return _key;
   }
-);
+  return _key;
+});
 
 /**
  * Retrieves the field root key, for instance: I -> entries.itemId O -> entries.
@@ -395,15 +368,9 @@ export const getFieldKey = (input: string) => {
  *   { id: 2, name: 'Jane', entries: ['entry2'] },
  * ];
  */
-export function aggregate(
-  input: Array<any>,
-  comparatorAttr: string,
-  groupOn: string
-): Array<Record<string, any>> {
+export function aggregate(input: Array<any>, comparatorAttr: string, groupOn: string): Array<Record<string, any>> {
   return input.reduce((acc, curr) => {
-    const existingEntry = acc.find(
-      (entry) => entry[comparatorAttr] === curr[comparatorAttr]
-    );
+    const existingEntry = acc.find((entry) => entry[comparatorAttr] === curr[comparatorAttr]);
 
     if (existingEntry) {
       existingEntry[groupOn].push(...curr.entries);
@@ -429,12 +396,11 @@ export const sanitizeSheetData = (json) => {
  * @param {string} group - The group key to nest the target key under.
  * @returns {string} - The path to map the value to.
  */
-export const getMapToPath = (to: string, group = '') =>
-  group ? `${group}.${to}` : to;
+export const getMapToPath = (to: string, group = '') => (group ? `${group}.${to}` : to);
 
 export const getImportsStoragePath = () => {
-  return  path.join(global.__storage_dir, `/imports`);
-}
+  return path.join(process.env.APP_STORAGE_DIR, `/imports`);
+};
 
 /**
  * Deletes the imported file from the storage and database.

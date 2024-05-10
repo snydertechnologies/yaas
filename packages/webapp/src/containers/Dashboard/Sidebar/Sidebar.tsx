@@ -1,11 +1,11 @@
 // @ts-nocheck
 import React from 'react';
 
+import { SidebarOverlayBinded } from '../SidebarOverlay';
 import { SidebarContainer } from './SidebarContainer';
 import { SidebarHead } from './SidebarHead';
 import { SidebarMenu } from './SidebarMenu';
 import { useMainSidebarMenu } from './hooks';
-import { SidebarOverlayBinded } from '../SidebarOverlay';
 
 import '@/style/containers/Dashboard/Sidebar.scss';
 
@@ -34,7 +34,7 @@ export function Sidebar() {
  * @returns {React.JSX}
  */
 function SidebarFooterVersion() {
-  const { REACT_APP_VERSION } = process.env;
+  const { REACT_APP_VERSION } = import.meta.env;
 
   if (!REACT_APP_VERSION) {
     return null;

@@ -1,13 +1,14 @@
 import { Knex } from 'knex';
-import { ISystemUser } from './User';
-import { IFilterRole } from './DynamicFilter';
 import { IAccount } from './Account';
+import { IFilterRole } from './DynamicFilter';
+import { IFilterMeta, IPaginationMeta } from './Model';
+import { ISystemUser } from './User';
 
-export interface IPaginationMeta {
-  total: number;
-  page: number;
-  pageSize: number;
-}
+// export interface IPaginationMeta { // duplicate
+//   total: number;
+//   page: number;
+//   pageSize: number;
+// }
 
 export interface IExpensesFilter {
   page: number;
@@ -41,7 +42,7 @@ export interface IExpense {
   localLandedCostAmount?: number;
   localAllocatedCostAmount?: number;
   localUnallocatedCostAmount?: number;
-  
+
   billableAmount: number;
   invoicedAmount: number;
 
@@ -98,34 +99,17 @@ export interface IExpenseCategoryDTO {
 }
 
 export interface IExpensesService {
-  newExpense(
-    tenantid: number,
-    expenseDTO: IExpenseDTO,
-    authorizedUser: ISystemUser
-  ): Promise<IExpense>;
+  newExpense(tenantid: number, expenseDTO: IExpenseCommonDTO, authorizedUser: ISystemUser): Promise<IExpense>;
 
-  editExpense(
-    tenantid: number,
-    expenseId: number,
-    expenseDTO: IExpenseDTO,
-    authorizedUser: ISystemUser
-  ): void;
+  editExpense(tenantid: number, expenseId: number, expenseDTO: IExpenseCommonDTO, authorizedUser: ISystemUser): void;
 
-  publishExpense(
-    tenantId: number,
-    expenseId: number,
-    authorizedUser: ISystemUser
-  ): Promise<void>;
+  publishExpense(tenantId: number, expenseId: number, authorizedUser: ISystemUser): Promise<void>;
 
-  deleteExpense(
-    tenantId: number,
-    expenseId: number,
-    authorizedUser: ISystemUser
-  ): Promise<void>;
+  deleteExpense(tenantId: number, expenseId: number, authorizedUser: ISystemUser): Promise<void>;
 
   getExpensesList(
     tenantId: number,
-    expensesFilter: IExpensesFilter
+    expensesFilter: IExpensesFilter,
   ): Promise<{
     expenses: IExpense[];
     pagination: IPaginationMeta;

@@ -1,16 +1,11 @@
 // @ts-nocheck
-import {
-  createStore as createReduxStore,
-  applyMiddleware,
-  compose,
-} from 'redux';
-import thunkMiddleware from 'redux-thunk';
-import { persistStore } from 'redux-persist';
 import monitorReducerEnhancer from '@/store/enhancers/monitorReducer';
 import loggerMiddleware from '@/store/logger.middleware';
 import rootReducer from '@/store/reducers';
+import { applyMiddleware, compose, createStore as createReduxStore } from 'redux';
+import { persistStore } from 'redux-persist';
+import thunkMiddleware from 'redux-thunk';
 import ResetMiddleware from './ResetMiddleware';
-
 
 const createStoreFactory = (initialState = {}) => {
   /**
@@ -28,7 +23,7 @@ const createStoreFactory = (initialState = {}) => {
   const enhancers = [monitorReducerEnhancer, ResetMiddleware];
   let composeEnhancers = compose;
 
-  if (process.env.NODE_ENV === 'development') {
+  if (import.meta.env.NODE_ENV === 'development') {
     if (typeof window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ === 'function') {
       composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__;
     }
