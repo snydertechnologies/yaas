@@ -1,1 +1,1 @@
-export default { extends: ['@commitlint/config-lerna-scopes'] };
+export default { extends: ['@commitlint/config-conventional'] };
