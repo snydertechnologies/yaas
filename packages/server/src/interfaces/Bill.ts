@@ -1,7 +1,7 @@
-import { Knex } from 'knex';
-import { IDynamicListFilterDTO } from './DynamicFilter';
-import { IItemEntry, IItemEntryDTO } from './ItemEntry';
-import { IBillLandedCost } from './LandedCost';
+import type { Knex } from 'knex';
+import type { IDynamicListFilterDTO } from './DynamicFilter';
+import type { IItemEntry, IItemEntryDTO } from './ItemEntry';
+import type { IBillLandedCost } from './LandedCost';
 
 export interface IBillDTO {
   vendorId: number;

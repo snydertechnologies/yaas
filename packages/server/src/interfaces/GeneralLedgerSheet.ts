@@ -1,5 +1,5 @@
-import { IFinancialSheetCommonMeta } from './FinancialStatements';
-import { IFinancialTable } from './Table';
+import type { IFinancialSheetCommonMeta } from './FinancialStatements';
+import type { IFinancialTable } from './Table';
 
 export interface IGeneralLedgerSheetQuery {
   fromDate: Date | string;

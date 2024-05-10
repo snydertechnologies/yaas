@@ -1,14 +1,6 @@
 // @ts-nocheck
 import React from 'react';
-import {
-  NavbarGroup,
-  NavbarDivider,
-  Button,
-  Classes,
-  Intent,
-  Switch,
-  Alignment,
-} from '@blueprintjs/core';
+import { NavbarGroup, NavbarDivider, Button, Classes, Intent, Switch, Alignment } from '@blueprintjs/core';
 
 import {
   If,
@@ -102,11 +94,7 @@ function VendorActionsBar({
   return (
     <DashboardActionsBar>
       <NavbarGroup>
-        <DashboardActionViewsList
-          resourceName={'vendors'}
-          views={vendorsViews}
-          onChange={handleTabChange}
-        />
+        <DashboardActionViewsList resourceName={'vendors'} views={vendorsViews} onChange={handleTabChange} />
         <NavbarDivider />
         <Can I={VendorActionsBar.Create} a={AbilitySubject.Vendor}>
           <Button
@@ -127,9 +115,7 @@ function VendorActionsBar({
             },
           }}
         >
-          <DashboardFilterButton
-            conditionsCount={vendorsFilterConditions.length}
-          />
+          <DashboardFilterButton conditionsCount={vendorsFilterConditions.length} />
         </AdvancedFilterPopover>
 
         <If condition={false}>
@@ -153,10 +139,7 @@ function VendorActionsBar({
           onClick={handleExportBtnClick}
         />
         <NavbarDivider />
-        <DashboardRowsHeightButton
-          initialValue={vendorsTableSize}
-          onChange={handleTableRowSizeChange}
-        />
+        <DashboardRowsHeightButton initialValue={vendorsTableSize} onChange={handleTableRowSizeChange} />
         <NavbarDivider />
         <Can I={VendorAction.Edit} a={AbilitySubject.Vendor}>
           <Switch

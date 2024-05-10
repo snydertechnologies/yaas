@@ -16,14 +16,13 @@ export interface Opts {
 export class DeepMapKeys {
   private cache = new WeakMap<NonPrimitive, any>();
 
-  constructor(private mapFn: MapFn, private opts: Opts) {}
+  constructor(
+    private mapFn: MapFn,
+    private opts: Opts,
+  ) {}
 
   public map(value: any): any {
-    return isArray(value)
-      ? this.mapArray(value)
-      : isObject(value)
-      ? this.mapObject(value)
-      : value;
+    return isArray(value) ? this.mapArray(value) : isObject(value) ? this.mapObject(value) : value;
   }
 
   private mapArray(arr: any[]): any[] {
@@ -31,8 +30,8 @@ export class DeepMapKeys {
       return this.cache.get(arr);
     }
 
-    let length = arr.length;
-    let result: any[] = [];
+    const length = arr.length;
+    const result: any[] = [];
     this.cache.set(arr, result);
 
     for (let i = 0; i < length; i++) {
@@ -47,14 +46,14 @@ export class DeepMapKeys {
       return this.cache.get(obj);
     }
 
-    let {
+    const {
       mapFn,
       opts: { thisArg },
     } = this;
-    let result: NonPrimitive = {};
+    const result: NonPrimitive = {};
     this.cache.set(obj, result);
 
-    for (let key in obj) {
+    for (const key in obj) {
       if (obj.hasOwnProperty(key)) {
         result[mapFn.call(thisArg, key, obj[key])] = this.map(obj[key]);
       }

@@ -10,8 +10,7 @@ import { AuthContainer } from './AuthContainer';
 
 export default function RegisterVerify() {
   const { setLogout } = useAuthActions();
-  const { mutateAsync: resendSignUpVerifyMail, isLoading } =
-    useAuthSignUpVerifyResendMail();
+  const { mutateAsync: resendSignUpVerifyMail, isLoading } = useAuthSignUpVerifyResendMail();
 
   const handleResendMailBtnClick = () => {
     resendSignUpVerifyMail()
@@ -38,28 +37,15 @@ export default function RegisterVerify() {
         <AuthInsiderCard className={styles.root}>
           <h2 className={styles.title}>Please verify your email</h2>
           <p className={styles.description}>
-            We sent an email to <strong>asdahmed@gmail.com</strong> Click the
-            link inside to get started.
+            We sent an email to <strong>asdahmed@gmail.com</strong> Click the link inside to get started.
           </p>
 
           <Stack spacing={4}>
-            <Button
-              large
-              fill
-              loading={isLoading}
-              intent={Intent.NONE}
-              onClick={handleResendMailBtnClick}
-            >
+            <Button large fill loading={isLoading} intent={Intent.NONE} onClick={handleResendMailBtnClick}>
               Resend email
             </Button>
 
-            <Button
-              large
-              fill
-              minimal
-              intent={Intent.DANGER}
-              onClick={handleSignOutBtnClick}
-            >
+            <Button large fill minimal intent={Intent.DANGER} onClick={handleSignOutBtnClick}>
               Not my email
             </Button>
           </Stack>

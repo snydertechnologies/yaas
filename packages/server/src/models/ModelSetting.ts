@@ -1,9 +1,5 @@
+import type { IModelMeta, IModelMetaDefaultSort, IModelMetaField } from '@/interfaces';
 import { get } from 'lodash';
-import {
-  IModelMeta,
-  IModelMetaField,
-  IModelMetaDefaultSort,
-} from '@/interfaces';
 
 const defaultModelMeta = {
   fields: {},

@@ -1,6 +1,6 @@
-import { Knex } from 'knex';
-import { IDynamicListFilter, IItemEntry, IVendorCredit } from '@/interfaces';
-import { ILedgerEntry } from './Ledger';
+import type { IDynamicListFilter, IItemEntry } from '@/interfaces';
+import type { Knex } from 'knex';
+import type { ILedgerEntry } from './Ledger';
 
 export interface ICreditNoteEntryNewDTO {
   index: number;
@@ -58,7 +58,7 @@ export interface ICreditNote {
   localAmount?: number;
   branchId?: number;
   warehouseId: number;
-  createdAt?: Date,
+  createdAt?: Date;
 }
 
 export enum CreditNoteAction {

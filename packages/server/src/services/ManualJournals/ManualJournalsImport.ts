@@ -1,10 +1,10 @@
-import { Inject } from 'typedi';
+import { IManualJournalDTO } from '@/interfaces';
 import { Knex } from 'knex';
+import { Inject } from 'typedi';
 import * as Yup from 'yup';
 import { Importable } from '../Import/Importable';
-import { CreateManualJournalService } from './CreateManualJournal';
-import { IManualJournalDTO } from '@/interfaces';
 import { ImportableContext } from '../Import/interfaces';
+import { CreateManualJournalService } from './CreateManualJournal';
 import { ManualJournalsSampleData } from './constants';
 
 export class ManualJournalImportable extends Importable {
@@ -17,17 +17,8 @@ export class ManualJournalImportable extends Importable {
    * @param {IAccountCreateDTO} createAccountDTO
    * @returns
    */
-  public importable(
-    tenantId: number,
-    createJournalDTO: IManualJournalDTO,
-    trx?: Knex.Transaction
-  ) {
-    return this.createManualJournalService.makeJournalEntries(
-      tenantId,
-      createJournalDTO,
-      {},
-      trx
-    );
+  public importable(tenantId: number, createJournalDTO: IManualJournalDTO, trx?: Knex.Transaction) {
+    return this.createManualJournalService.makeJournalEntries(tenantId, createJournalDTO, {}, trx);
   }
 
   /**

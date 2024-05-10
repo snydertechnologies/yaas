@@ -1,4 +1,3 @@
-
 export default class NestedSet {
   /**
    * Constructor method.
@@ -50,8 +49,7 @@ export default class NestedSet {
           stack.push(node);
         }
         if (node.children) {
-          const childrenNodes = Object.values(node.children)
-            .map((i) => ({ ...i }));
+          const childrenNodes = Object.values(node.children).map((i) => ({ ...i }));
 
           node.children = childrenNodes;
           walk(childrenNodes);
@@ -67,7 +65,7 @@ export default class NestedSet {
   }
 
   getElementById(id) {
-    return this.tree[id] || null
+    return this.tree[id] || null;
   }
 
   getParents(id) {
@@ -82,11 +80,11 @@ export default class NestedSet {
         parents.push(_item);
       }
       if (_item[this.options.parentId]) {
-        const parentItem = this.getElementById(_item[this.options.parentId]);  
+        const parentItem = this.getElementById(_item[this.options.parentId]);
 
         index++;
         walk(parentItem);
-      }      
+      }
     };
     walk(item);
     return parents;

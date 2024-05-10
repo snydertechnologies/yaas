@@ -1,6 +1,6 @@
-import { Knex } from 'knex';
-import { IAccount } from './Account';
-import { IUncategorizedCashflowTransaction } from './CashFlow';
+import type { Knex } from 'knex';
+import type { IAccount } from './Account';
+import type { IUncategorizedCashflowTransaction } from './CashFlow';
 
 export interface ICashflowAccountTransactionsFilter {
   page: number;

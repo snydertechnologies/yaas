@@ -14,8 +14,7 @@ function setAuthLoginCookies(data) {
   setCookie('organization_id', data.tenant.organization_id);
   setCookie('tenant_id', data.tenant.id);
 
-  if (data?.tenant?.metadata?.language)
-    setCookie('locale', data.tenant.metadata.language);
+  if (data?.tenant?.metadata?.language) setCookie('locale', data.tenant.metadata.language);
 }
 
 /**
@@ -43,10 +42,7 @@ export const useAuthLogin = (props) => {
 export const useAuthRegister = (props) => {
   const apiRequest = useApiRequest();
 
-  return useMutation(
-    (values) => apiRequest.post('auth/register', values),
-    props,
-  );
+  return useMutation((values) => apiRequest.post('auth/register', values), props);
 };
 
 /**
@@ -55,10 +51,7 @@ export const useAuthRegister = (props) => {
 export const useAuthSendResetPassword = (props) => {
   const apiRequest = useApiRequest();
 
-  return useMutation(
-    (email) => apiRequest.post('auth/send_reset_password', email),
-    props,
-  );
+  return useMutation((email) => apiRequest.post('auth/send_reset_password', email), props);
 };
 
 /**
@@ -67,10 +60,7 @@ export const useAuthSendResetPassword = (props) => {
 export const useAuthResetPassword = (props) => {
   const apiRequest = useApiRequest();
 
-  return useMutation(
-    ([token, values]) => apiRequest.post(`auth/reset/${token}`, values),
-    props,
-  );
+  return useMutation(([token, values]) => apiRequest.post(`auth/reset/${token}`, values), props);
 };
 
 /**
@@ -97,10 +87,7 @@ export const useAuthMetadata = (props) => {
 export const useAuthSignUpVerifyResendMail = (props) => {
   const apiRequest = useApiRequest();
 
-  return useMutation(
-    () => apiRequest.post('auth/register/verify/resend'),
-    props,
-  );
+  return useMutation(() => apiRequest.post('auth/register/verify/resend'), props);
 };
 
 interface AuthSignUpVerifyValues {
@@ -114,9 +101,5 @@ interface AuthSignUpVerifyValues {
 export const useAuthSignUpVerify = (props) => {
   const apiRequest = useApiRequest();
 
-  return useMutation(
-    (values: AuthSignUpVerifyValues) =>
-      apiRequest.post('auth/register/verify', values),
-    props,
-  );
+  return useMutation((values: AuthSignUpVerifyValues) => apiRequest.post('auth/register/verify', values), props);
 };

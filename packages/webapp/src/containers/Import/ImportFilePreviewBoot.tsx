@@ -5,20 +5,15 @@ import { useImportFilePreview } from '@/hooks/query/import';
 
 interface ImportFilePreviewBootContextValue {}
 
-const ImportFilePreviewBootContext =
-  createContext<ImportFilePreviewBootContextValue>(
-    {} as ImportFilePreviewBootContextValue,
-  );
+const ImportFilePreviewBootContext = createContext<ImportFilePreviewBootContextValue>(
+  {} as ImportFilePreviewBootContextValue,
+);
 
 export const useImportFilePreviewBootContext = () => {
-  const context = useContext<ImportFilePreviewBootContextValue>(
-    ImportFilePreviewBootContext,
-  );
+  const context = useContext<ImportFilePreviewBootContextValue>(ImportFilePreviewBootContext);
 
   if (!context) {
-    throw new Error(
-      'useImportFilePreviewBootContext must be used within an ImportFilePreviewBootProvider',
-    );
+    throw new Error('useImportFilePreviewBootContext must be used within an ImportFilePreviewBootProvider');
   }
   return context;
 };
@@ -28,10 +23,7 @@ interface ImportFilePreviewBootProps {
   children: React.ReactNode;
 }
 
-export const ImportFilePreviewBootProvider = ({
-  importId,
-  children,
-}: ImportFilePreviewBootProps) => {
+export const ImportFilePreviewBootProvider = ({ importId, children }: ImportFilePreviewBootProps) => {
   const {
     data: importPreview,
     isLoading: isImportPreviewLoading,

@@ -205,7 +205,7 @@ export default {
 
     onPreMailSend: 'onSaleReceiptPreMailSend',
     onMailSend: 'onSaleReceiptMailSend',
-    onMailSent: 'onSaleReceiptMailSent', 
+    onMailSent: 'onSaleReceiptMailSent',
   },
 
   /**
@@ -229,7 +229,7 @@ export default {
 
     onPreMailSend: 'onPaymentReceivePreMailSend',
     onMailSend: 'onPaymentReceiveMailSend',
-    onMailSent: 'onPaymentReceiveMailSent', 
+    onMailSent: 'onPaymentReceiveMailSent',
   },
 
   /**

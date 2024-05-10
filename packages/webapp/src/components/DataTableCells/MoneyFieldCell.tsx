@@ -15,14 +15,15 @@ const MoneyFieldCellRenderer = ({
 }) => {
   const [value, setValue] = useState(initialValue);
 
-  const handleFieldChange = useCallback((value) => {
-    setValue(value);
-  }, [setValue]);
+  const handleFieldChange = useCallback(
+    (value) => {
+      setValue(value);
+    },
+    [setValue],
+  );
 
   function isNumeric(data) {
-    return (
-      !isNaN(parseFloat(data)) && isFinite(data) && data.constructor !== Array
-    );
+    return !isNaN(parseFloat(data)) && isFinite(data) && data.constructor !== Array;
   }
 
   const handleFieldBlur = () => {
@@ -37,9 +38,7 @@ const MoneyFieldCellRenderer = ({
   const error = errors?.[index]?.[id];
 
   return (
-    <FormGroup
-      intent={error ? Intent.DANGER : null}
-      className={CLASSES.FILL}>
+    <FormGroup intent={error ? Intent.DANGER : null} className={CLASSES.FILL}>
       <MoneyInputGroup
         value={value}
         // prefix={'$'}

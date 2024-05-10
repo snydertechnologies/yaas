@@ -28,7 +28,7 @@ function AccountTransactionsProvider({ query, ...props }) {
   } = useCashflowAccounts(query, { keepPreviousData: true });
 
   // Retrieve specific account details.
-  
+
   const {
     data: currentAccount,
     isFetching: isCurrentAccountFetching,
@@ -57,7 +57,6 @@ function AccountTransactionsProvider({ query, ...props }) {
   );
 }
 
-const useAccountTransactionsContext = () =>
-  React.useContext(AccountTransactionsContext);
+const useAccountTransactionsContext = () => React.useContext(AccountTransactionsContext);
 
 export { AccountTransactionsProvider, useAccountTransactionsContext };

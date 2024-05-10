@@ -1,17 +1,12 @@
-import { Service, Inject } from 'typedi';
-import {
-  IRegisterDTO,
-  ISystemUser,
-  IPasswordReset,
-  IAuthGetMetaPOJO,
-} from '@/interfaces';
+import { IAuthGetMetaPOJO, IPasswordReset, IRegisterDTO, ISystemUser } from '@/interfaces';
+import { SystemUser } from '@/system/models';
+import { Inject, Service } from 'typedi';
+import { AuthSendResetPassword } from './AuthSendResetPassword';
 import { AuthSigninService } from './AuthSignin';
 import { AuthSignupService } from './AuthSignup';
-import { AuthSendResetPassword } from './AuthSendResetPassword';
-import { GetAuthMeta } from './GetAuthMeta';
 import { AuthSignupConfirmService } from './AuthSignupConfirm';
-import { SystemUser } from '@/system/models';
 import { AuthSignupConfirmResend } from './AuthSignupResend';
+import { GetAuthMeta } from './GetAuthMeta';
 
 @Service()
 export default class AuthenticationApplication {
@@ -59,10 +54,7 @@ export default class AuthenticationApplication {
    * @param {string} token
    * @returns {Promise<SystemUser>}
    */
-  public async signUpConfirm(
-    email: string,
-    token: string
-  ): Promise<SystemUser> {
+  public async signUpConfirm(email: string, token: string): Promise<SystemUser> {
     return this.authSignupConfirmService.signUpConfirm(email, token);
   }
 

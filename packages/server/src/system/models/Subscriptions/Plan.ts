@@ -1,6 +1,5 @@
-import { Model, mixin } from 'objection';
 import SystemModel from '@/system/models/SystemModel';
-import { PlanSubscription } from '..';
+import { Model, mixin } from 'objection';
 
 export default class Plan extends mixin(SystemModel) {
   /**
@@ -52,7 +51,7 @@ export default class Plan extends mixin(SystemModel) {
           from: 'subscription_plans.id',
           to: 'subscription_plan_subscriptions.planId',
         },
-      }
+      },
     };
   }
 

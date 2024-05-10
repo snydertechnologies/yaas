@@ -17,9 +17,7 @@ export class SendVerfiyMailOnSignUp {
    *
    * @param {ITaxRateEditedPayload} payload -
    */
-  private handleSendVerifyMailOnSignup = async ({
-    user,
-  }: IAuthSignedUpEventPayload) => {
+  private handleSendVerifyMailOnSignup = async ({ user }: IAuthSignedUpEventPayload) => {
     const payload = {
       email: user.email,
       token: user.verifyToken,

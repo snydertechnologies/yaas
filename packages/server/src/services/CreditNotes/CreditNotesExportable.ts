@@ -1,6 +1,6 @@
-import { Inject, Service } from 'typedi';
 import { ICreditNotesQueryDTO } from '@/interfaces';
 import { Exportable } from '@/services/Export/Exportable';
+import { Inject, Service } from 'typedi';
 import ListCreditNotes from './ListCreditNotes';
 
 @Service()
@@ -23,8 +23,6 @@ export class CreditNotesExportable extends Exportable {
       pageSize: 12000,
     } as ICreditNotesQueryDTO;
 
-    return this.getCreditNotes
-      .getCreditNotesList(tenantId, parsedQuery)
-      .then((output) => output.creditNotes);
+    return this.getCreditNotes.getCreditNotesList(tenantId, parsedQuery).then((output) => output.creditNotes);
   }
 }

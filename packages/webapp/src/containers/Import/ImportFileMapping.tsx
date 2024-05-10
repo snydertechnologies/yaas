@@ -19,10 +19,7 @@ export function ImportFileMapping() {
     <ImportFileMapBootProvider importId={importId}>
       <ImportFileMappingForm>
         <ImportFileContainer>
-          <p>
-            Review and map the column headers in your csv/xlsx file with the
-            Bigcapital fields.
-          </p>
+          <p>Review and map the column headers in your csv/xlsx file with the Bigcapital fields.</p>
 
           {entityColumns.map((entityColumn, index) => (
             <ImportFileMappingGroup
@@ -48,11 +45,7 @@ interface ImportFileMappingGroupProps {
  * Mapping fields group
  * @returns {React.ReactNode}
  */
-function ImportFileMappingGroup({
-  groupKey,
-  groupLabel,
-  fields,
-}: ImportFileMappingGroupProps) {
+function ImportFileMappingGroup({ groupKey, groupLabel, fields }: ImportFileMappingGroupProps) {
   return (
     <Box className={styles.group}>
       {groupLabel && <h3 className={styles.groupTitle}>{groupLabel}</h3>}
@@ -83,16 +76,12 @@ interface ImportFileMappingFieldsProps {
 function ImportFileMappingFields({ fields }: ImportFileMappingFieldsProps) {
   const { sheetColumns } = useImportFileContext();
 
-  const items = useMemo(
-    () => sheetColumns.map((column) => ({ value: column, text: column })),
-    [sheetColumns],
-  );
+  const items = useMemo(() => sheetColumns.map((column) => ({ value: column, text: column })), [sheetColumns]);
   const columnMapper = useCallback(
     (column: EntityColumnField, index: number) => (
       <tr key={index}>
         <td className={styles.label}>
-          {column.name}{' '}
-          {column.required && <span className={styles.requiredSign}>*</span>}
+          {column.name} {column.required && <span className={styles.requiredSign}>*</span>}
         </td>
         <td className={styles.field}>
           <Group spacing={4}>
@@ -103,19 +92,14 @@ function ImportFileMappingFields({ fields }: ImportFileMappingFieldsProps) {
               minimal={true}
               fill={true}
             />
-            {column.hint && (
-              <Hint content={column.hint} position={Position.BOTTOM} />
-            )}
+            {column.hint && <Hint content={column.hint} position={Position.BOTTOM} />}
           </Group>
         </td>
       </tr>
     ),
     [items],
   );
-  const columns = useMemo(
-    () => fields.map(columnMapper),
-    [columnMapper, fields],
-  );
+  const columns = useMemo(() => fields.map(columnMapper), [columnMapper, fields]);
   return <>{columns}</>;
 }
 

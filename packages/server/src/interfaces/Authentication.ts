@@ -1,6 +1,6 @@
-import { ISystemUser } from './User';
-import { ITenant } from './Tenancy';
-import { SystemUser } from '@/system/models';
+import type { SystemUser } from '@/system/models';
+import type { ITenant } from './Tenancy';
+import type { ISystemUser } from './User';
 
 export interface IRegisterDTO {
   firstName: string;
@@ -23,10 +23,7 @@ export interface IPasswordReset {
 }
 
 export interface IAuthenticationService {
-  signIn(
-    email: string,
-    password: string
-  ): Promise<{ user: ISystemUser; token: string; tenant: ITenant }>;
+  signIn(email: string, password: string): Promise<{ user: ISystemUser; token: string; tenant: ITenant }>;
   register(registerDTO: IRegisterDTO): Promise<ISystemUser>;
   sendResetPassword(email: string): Promise<IPasswordReset>;
   resetPassword(token: string, password: string): Promise<void>;

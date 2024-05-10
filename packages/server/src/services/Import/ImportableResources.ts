@@ -1,21 +1,21 @@
 import Container, { Service } from 'typedi';
 import { AccountsImportable } from '../Accounts/AccountsImportable';
-import { ImportableRegistry } from './ImportableRegistry';
 import { UncategorizedTransactionsImportable } from '../Cashflow/UncategorizedTransactionsImportable';
 import { CustomersImportable } from '../Contacts/Customers/CustomersImportable';
 import { VendorsImportable } from '../Contacts/Vendors/VendorsImportable';
-import { ItemsImportable } from '../Items/ItemsImportable';
-import { ItemCategoriesImportable } from '../ItemCategories/ItemCategoriesImportable';
-import { ManualJournalImportable } from '../ManualJournals/ManualJournalsImport';
-import { BillsImportable } from '../Purchases/Bills/BillsImportable';
-import { ExpensesImportable } from '../Expenses/ExpensesImportable';
-import { SaleInvoicesImportable } from '../Sales/Invoices/SaleInvoicesImportable';
-import { SaleEstimatesImportable } from '../Sales/Estimates/SaleEstimatesImportable';
-import { BillPaymentsImportable } from '../Purchases/BillPayments/BillPaymentsImportable';
-import { VendorCreditsImportable } from '../Purchases/VendorCredits/VendorCreditsImportable';
-import { PaymentReceivesImportable } from '../Sales/PaymentReceives/PaymentReceivesImportable';
 import { CreditNotesImportable } from '../CreditNotes/CreditNotesImportable';
+import { ExpensesImportable } from '../Expenses/ExpensesImportable';
+import { ItemCategoriesImportable } from '../ItemCategories/ItemCategoriesImportable';
+import { ItemsImportable } from '../Items/ItemsImportable';
+import { ManualJournalImportable } from '../ManualJournals/ManualJournalsImport';
+import { BillPaymentsImportable } from '../Purchases/BillPayments/BillPaymentsImportable';
+import { BillsImportable } from '../Purchases/Bills/BillsImportable';
+import { VendorCreditsImportable } from '../Purchases/VendorCredits/VendorCreditsImportable';
+import { SaleEstimatesImportable } from '../Sales/Estimates/SaleEstimatesImportable';
+import { SaleInvoicesImportable } from '../Sales/Invoices/SaleInvoicesImportable';
+import { PaymentReceivesImportable } from '../Sales/PaymentReceives/PaymentReceivesImportable';
 import { SaleReceiptsImportable } from '../Sales/Receipts/SaleReceiptsImportable';
+import { ImportableRegistry } from './ImportableRegistry';
 
 @Service()
 export class ImportableResources {
@@ -47,7 +47,7 @@ export class ImportableResources {
     { resource: 'PaymentReceive', importable: PaymentReceivesImportable },
     { resource: 'VendorCredit', importable: VendorCreditsImportable },
     { resource: 'CreditNote', importable: CreditNotesImportable },
-    { resource: 'SaleReceipt', importable: SaleReceiptsImportable }
+    { resource: 'SaleReceipt', importable: SaleReceiptsImportable },
   ];
 
   public get registry() {

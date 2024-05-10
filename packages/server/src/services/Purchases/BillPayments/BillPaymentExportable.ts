@@ -1,5 +1,5 @@
-import { Inject, Service } from 'typedi';
 import { Exportable } from '@/services/Export/Exportable';
+import { Inject, Service } from 'typedi';
 import { BillPaymentsApplication } from './BillPaymentsApplication';
 
 @Service()
@@ -21,8 +21,6 @@ export class BillPaymentExportable extends Exportable {
       columnSortBy: 'created_at',
     } as any;
 
-    return this.billPaymentsApplication
-      .getBillPayments(tenantId, parsedQuery)
-      .then((output) => output.billPayments);
+    return this.billPaymentsApplication.getBillPayments(tenantId, parsedQuery).then((output) => output.billPayments);
   }
 }

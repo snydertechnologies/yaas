@@ -8,10 +8,7 @@ interface CarouselProps {
   interval?: number | null;
 }
 
-export const Carousel: React.FC<CarouselProps> = ({
-  children,
-  interval,
-}: CarouselProps) => {
+export const Carousel: React.FC<CarouselProps> = ({ children, interval }: CarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const items = React.Children.toArray(children);
   const intervalIdRef = useRef<NodeJS.Timeout | undefined>();
@@ -43,9 +40,7 @@ export const Carousel: React.FC<CarouselProps> = ({
         {items.map((item, index) => (
           <div
             key={index}
-            className={`carousel-item overflow-y-hidden overflow-x-auto ${
-              index === currentIndex ? 'block' : 'hidden'
-            }`}
+            className={`carousel-item overflow-y-hidden overflow-x-auto ${index === currentIndex ? 'block' : 'hidden'}`}
           >
             {item}
           </div>

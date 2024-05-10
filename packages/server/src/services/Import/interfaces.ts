@@ -1,4 +1,4 @@
-import { IModelMetaField, IModelMetaField2 } from '@/interfaces';
+import { IModelMetaField2 } from '@/interfaces';
 import Import from '@/models/Import';
 
 export interface ImportMappingAttr {
@@ -69,9 +69,4 @@ export interface ImportableContext {
   rowIndex: number;
 }
 
-export const ImportDateFormats = [
-  'yyyy-MM-dd',
-  'dd.MM.yy',
-  'MM/dd/yy',
-  'dd/MMM/yyyy',
-];
+export const ImportDateFormats = ['yyyy-MM-dd', 'dd.MM.yy', 'MM/dd/yy', 'dd/MMM/yyyy'];

@@ -1,4 +1,4 @@
-import { Model, ModelObject } from 'objection';
+import { Model, type ModelObject } from 'objection';
 import SystemModel from './SystemModel';
 
 export class Import extends SystemModel {

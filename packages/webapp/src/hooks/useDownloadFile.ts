@@ -20,8 +20,7 @@ export const useDownloadFile = (args: IArgs) => {
       .get(args.url, {
         responseType: 'blob',
         onDownloadProgress: (ev) => {
-          args.onDownloadProgress &&
-            args.onDownloadProgress(Math.round((ev.loaded * 100) / ev.total));
+          args.onDownloadProgress && args.onDownloadProgress(Math.round((ev.loaded * 100) / ev.total));
         },
         ...args.config,
       })

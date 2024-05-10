@@ -1,7 +1,7 @@
-import { Knex } from 'knex';
-import { IItem } from './Item';
-import { ISaleInvoice } from './SaleInvoice';
-import { ISaleReceipt } from './SaleReceipt';
+import type { Knex } from 'knex';
+import type { IItem } from './Item';
+import type { ISaleInvoice } from './SaleInvoice';
+import type { ISaleReceipt } from './SaleReceipt';
 
 export type TInventoryTransactionDirection = 'IN' | 'OUT';
 

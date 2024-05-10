@@ -1,6 +1,6 @@
-import { Inject, Service } from 'typedi';
 import { ISalesInvoicesFilter } from '@/interfaces';
 import { Exportable } from '@/services/Export/Exportable';
+import { Inject, Service } from 'typedi';
 import { SaleEstimatesApplication } from './SaleEstimatesApplication';
 
 @Service()

@@ -207,7 +207,7 @@ function ViewForm({
   // Handle click remove view role button.
   const onClickRemoveRole = useCallback(
     (viewRole, index) => {
-      let viewRoles = [...values.roles];
+      const viewRoles = [...values.roles];
 
       // Can't continue if view roles equals or less than 1.
       if (viewRoles.length > 1) {

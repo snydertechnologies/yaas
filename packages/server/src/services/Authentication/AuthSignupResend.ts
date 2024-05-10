@@ -1,6 +1,6 @@
-import { Inject, Service } from 'typedi';
 import { ServiceError } from '@/exceptions';
 import { SystemUser } from '@/system/models';
+import { Inject, Service } from 'typedi';
 import { ERRORS } from './_constants';
 
 @Service()

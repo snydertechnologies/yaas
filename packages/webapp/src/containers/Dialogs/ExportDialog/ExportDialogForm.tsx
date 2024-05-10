@@ -64,15 +64,10 @@ function ExportDialogFormRoot({
     ...transformToForm(initialValues, defaultInitialValues),
   };
   return (
-    <Formik
-      validationSchema={ExportDialogFormSchema}
-      initialValues={initialFormValues}
-      onSubmit={handleFormSubmit}
-    >
+    <Formik validationSchema={ExportDialogFormSchema} initialValues={initialFormValues} onSubmit={handleFormSubmit}>
       <ExportDialogFormContent />
     </Formik>
   );
 }
 
-export const ExportDialogForm =
-  compose(withDialogActions)(ExportDialogFormRoot);
+export const ExportDialogForm = compose(withDialogActions)(ExportDialogFormRoot);

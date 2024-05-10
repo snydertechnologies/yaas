@@ -1,7 +1,7 @@
-import { Model, mixin } from 'objection';
+import SubscriptionPeriod from '@/services/Subscription/SubscriptionPeriod';
 import SystemModel from '@/system/models/SystemModel';
 import moment from 'moment';
-import SubscriptionPeriod from '@/services/Subscription/SubscriptionPeriod';
+import { Model, mixin } from 'objection';
 
 export default class PlanSubscription extends mixin(SystemModel) {
   /**
@@ -138,11 +138,7 @@ export default class PlanSubscription extends mixin(SystemModel) {
    * @return {Object}
    */
   static setNewPeriod(invoiceInterval, invoicePeriod, start) {
-    const period = new SubscriptionPeriod(
-      invoiceInterval,
-      invoicePeriod,
-      start,
-    );
+    const period = new SubscriptionPeriod(invoiceInterval, invoicePeriod, start);
 
     const startsAt = period.getStartDate();
     const endsAt = period.getEndDate();
@@ -155,10 +151,7 @@ export default class PlanSubscription extends mixin(SystemModel) {
    * @Promise
    */
   renew(invoiceInterval, invoicePeriod) {
-    const { startsAt, endsAt } = PlanSubscription.setNewPeriod(
-      invoiceInterval,
-      invoicePeriod,
-    );
+    const { startsAt, endsAt } = PlanSubscription.setNewPeriod(invoiceInterval, invoicePeriod);
     return this.$query().update({ startsAt, endsAt });
   }
 }

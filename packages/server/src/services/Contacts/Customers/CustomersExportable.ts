@@ -1,7 +1,7 @@
-import { Inject, Service } from 'typedi';
 import { IItemsFilter } from '@/interfaces';
-import { CustomersApplication } from './CustomersApplication';
 import { Exportable } from '@/services/Export/Exportable';
+import { Inject, Service } from 'typedi';
+import { CustomersApplication } from './CustomersApplication';
 
 @Service()
 export class CustomersExportable extends Exportable {
@@ -22,8 +22,6 @@ export class CustomersExportable extends Exportable {
       pageSize: 12,
     } as IItemsFilter;
 
-    return this.customersApplication
-      .getCustomers(tenantId, parsedQuery)
-      .then((output) => output.customers);
+    return this.customersApplication.getCustomers(tenantId, parsedQuery).then((output) => output.customers);
   }
 }

@@ -23,10 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
       </head>
       <body className={inter.className + ' md:pt-[32px]'}>
         <header>
@@ -63,10 +60,7 @@ function Chatwoot() {
 function GoogleAnalytics() {
   return (
     <>
-      <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-WYPGGFSFGW"
-      ></script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WYPGGFSFGW"></script>
       <script
         type="text/javascript"
         dangerouslySetInnerHTML={{

@@ -5,14 +5,9 @@ import { Form, Formik, FormikHelpers } from 'formik';
 import { useImportFileContext } from './ImportFileProvider';
 import { AppToaster } from '@/components';
 import { ImportFileMappingFormProps } from './_types';
-import {
-  transformValueToReq,
-  useImportFileMappingInitialValues,
-} from './_utils';
+import { transformValueToReq, useImportFileMappingInitialValues } from './_utils';
 
-export function ImportFileMappingForm({
-  children,
-}: ImportFileMappingFormProps) {
+export function ImportFileMappingForm({ children }: ImportFileMappingFormProps) {
   const { mutateAsync: submitImportFileMapping } = useImportFileMapping();
   const { importId, setStep } = useImportFileContext();
 

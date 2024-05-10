@@ -1,7 +1,7 @@
-import { Inject, Service } from 'typedi';
 import { ISalesInvoicesFilter } from '@/interfaces';
-import { SaleInvoiceApplication } from './SaleInvoicesApplication';
 import { Exportable } from '@/services/Export/Exportable';
+import { Inject, Service } from 'typedi';
+import { SaleInvoiceApplication } from './SaleInvoicesApplication';
 
 @Service()
 export class SaleInvoicesExportable extends Exportable {
@@ -22,8 +22,6 @@ export class SaleInvoicesExportable extends Exportable {
       pageSize: 120000,
     } as ISalesInvoicesFilter;
 
-    return this.saleInvoicesApplication
-      .getSaleInvoices(tenantId, parsedQuery)
-      .then((output) => output.salesInvoices);
+    return this.saleInvoicesApplication.getSaleInvoices(tenantId, parsedQuery).then((output) => output.salesInvoices);
   }
 }

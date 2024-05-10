@@ -1,7 +1,7 @@
-import { Inject, Service } from 'typedi';
 import { IVendorCreditsQueryDTO } from '@/interfaces';
-import ListVendorCredits from './ListVendorCredits';
 import { Exportable } from '@/services/Export/Exportable';
+import { Inject, Service } from 'typedi';
+import ListVendorCredits from './ListVendorCredits';
 
 @Service()
 export class VendorCreditsExportable extends Exportable {
@@ -23,8 +23,6 @@ export class VendorCreditsExportable extends Exportable {
       pageSize: 12000,
     } as IVendorCreditsQueryDTO;
 
-    return this.getVendorCredits
-      .getVendorCredits(tenantId, parsedQuery)
-      .then((output) => output.vendorCredits);
+    return this.getVendorCredits.getVendorCredits(tenantId, parsedQuery).then((output) => output.vendorCredits);
   }
 }

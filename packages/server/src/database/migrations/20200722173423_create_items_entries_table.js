@@ -5,27 +5,14 @@ exports.up = function (knex) {
     table.string('reference_id').index();
 
     table.integer('index').unsigned();
-    table
-      .integer('item_id')
-      .unsigned()
-      .index()
-      .references('id')
-      .inTable('items');
+    table.integer('item_id').unsigned().index().references('id').inTable('items');
     table.text('description');
     table.integer('discount').unsigned();
     table.integer('quantity').unsigned();
     table.integer('rate').unsigned();
 
-    table
-      .integer('sell_account_id')
-      .unsigned()
-      .references('id')
-      .inTable('accounts');
-    table
-      .integer('cost_account_id')
-      .unsigned()
-      .references('id')
-      .inTable('accounts');
+    table.integer('sell_account_id').unsigned().references('id').inTable('accounts');
+    table.integer('cost_account_id').unsigned().references('id').inTable('accounts');
 
     table.boolean('landed_cost').defaultTo(false);
     table.decimal('allocated_cost_amount', 13, 3).defaultTo(0);

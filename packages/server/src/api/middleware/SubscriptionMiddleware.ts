@@ -1,5 +1,5 @@
+import { NextFunction, Request, Response } from 'express';
 import { Container } from 'typedi';
-import { Request, Response, NextFunction } from 'express';
 
 export default (subscriptionSlug = 'main') =>
   async (req: Request, res: Response, next: NextFunction) => {
@@ -9,10 +9,7 @@ export default (subscriptionSlug = 'main') =>
     if (!tenant) {
       throw new Error('Should load `TenancyMiddlware` before this middleware.');
     }
-    const subscription = await subscriptionRepository.getBySlugInTenant(
-      subscriptionSlug,
-      tenantId
-    );
+    const subscription = await subscriptionRepository.getBySlugInTenant(subscriptionSlug, tenantId);
     // Validate in case there is no any already subscription.
     if (!subscription) {
       return res.boom.badRequest('Tenant has no subscription.', {

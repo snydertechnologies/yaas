@@ -6,12 +6,7 @@ exports.up = function (knex) {
       table.string('field_key').index();
       table.string('comparator');
       table.string('value');
-      table
-        .integer('view_id')
-        .unsigned()
-        .index()
-        .references('id')
-        .inTable('views');
+      table.integer('view_id').unsigned().index().references('id').inTable('views');
     })
     .raw('ALTER TABLE `VIEW_ROLES` AUTO_INCREMENT = 1000');
 };

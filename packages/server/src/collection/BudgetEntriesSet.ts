@@ -1,18 +1,16 @@
-
-
 export default class BudgetEntriesSet {
-
   constructor() {
-    this.accounts = {}; 
-    this.totalSummary = {}
+    this.accounts = {};
+    this.totalSummary = {};
     this.orderSize = null;
   }
 
   setZeroPlaceholder() {
-    if (!this.orderSize) { return; }
+    if (!this.orderSize) {
+      return;
+    }
 
     Object.values(this.accounts).forEach((account) => {
-
       for (let i = 0; i <= this.orderSize.length; i++) {
         if (typeof account[i] === 'undefined') {
           account[i] = { amount: 0 };
@@ -72,5 +70,4 @@ export default class BudgetEntriesSet {
   toArrayTotalSummary() {
     return Object.values(this.totalSummary);
   }
-
 }

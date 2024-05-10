@@ -1,6 +1,6 @@
-import { Inject, Service } from 'typedi';
-import { Knex } from 'knex';
 import { ICreditNoteNewDTO } from '@/interfaces';
+import { Knex } from 'knex';
+import { Inject, Service } from 'typedi';
 import { Importable } from '../Import/Importable';
 import CreateCreditNote from './CreateCreditNote';
 
@@ -15,16 +15,8 @@ export class CreditNotesImportable extends Importable {
    * @param {IAccountCreateDTO} createAccountDTO
    * @returns
    */
-  public importable(
-    tenantId: number,
-    createAccountDTO: ICreditNoteNewDTO,
-    trx?: Knex.Transaction
-  ) {
-    return this.createCreditNoteImportable.newCreditNote(
-      tenantId,
-      createAccountDTO,
-      trx
-    );
+  public importable(tenantId: number, createAccountDTO: ICreditNoteNewDTO, trx?: Knex.Transaction) {
+    return this.createCreditNoteImportable.newCreditNote(tenantId, createAccountDTO, trx);
   }
 
   /**

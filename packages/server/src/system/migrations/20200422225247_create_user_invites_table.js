@@ -1,5 +1,4 @@
-
-exports.up = function(knex) {
+exports.up = function (knex) {
   return knex.schema.createTable('user_invites', (table) => {
     table.increments();
     table.string('email').index();
@@ -10,6 +9,6 @@ exports.up = function(knex) {
   });
 };
 
-exports.down = function(knex) {
+exports.down = function (knex) {
   return knex.schema.dropTableIfExists('user_invites');
 };

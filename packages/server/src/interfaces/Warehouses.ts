@@ -1,4 +1,4 @@
-import { Knex } from 'knex';
+import type { Knex } from 'knex';
 
 export interface IWarehouse {
   id?: number;
@@ -15,7 +15,7 @@ export interface IWarehouseTransfer {
   transferDeliveredAt?: Date;
 
   isInitiated?: boolean;
-  isTransferred?: boolean; 
+  isTransferred?: boolean;
 }
 export interface IWarehouseTransferEntry {
   id?: number;
@@ -189,7 +189,6 @@ export interface IWarehouseTransferInitiatePayload {
   oldWarehouseTransfer: IWarehouseTransfer;
   trx: Knex.Transaction;
 }
-
 
 export interface IWarehouseTransferInitiatedPayload {
   tenantId: number;

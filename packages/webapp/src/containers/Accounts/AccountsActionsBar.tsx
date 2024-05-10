@@ -1,15 +1,7 @@
 // @ts-nocheck
 import React from 'react';
 import { isEmpty } from 'lodash';
-import {
-  Button,
-  NavbarGroup,
-  Classes,
-  NavbarDivider,
-  Intent,
-  Switch,
-  Alignment,
-} from '@blueprintjs/core';
+import { Button, NavbarGroup, Classes, NavbarDivider, Intent, Switch, Alignment } from '@blueprintjs/core';
 
 import {
   AdvancedFilterPopover,
@@ -152,9 +144,7 @@ function AccountsActionsBar({
             },
           }}
         >
-          <DashboardFilterButton
-            conditionsCount={accountsFilterConditions.length}
-          />
+          <DashboardFilterButton conditionsCount={accountsFilterConditions.length} />
         </AdvancedFilterPopover>
 
         <NavbarDivider />
@@ -181,11 +171,7 @@ function AccountsActionsBar({
           />
         </If>
 
-        <Button
-          className={Classes.MINIMAL}
-          icon={<Icon icon="print-16" iconSize={16} />}
-          text={<T id={'print'} />}
-        />
+        <Button className={Classes.MINIMAL} icon={<Icon icon="print-16" iconSize={16} />} text={<T id={'print'} />} />
         <Button
           className={Classes.MINIMAL}
           icon={<Icon icon="file-import-16" iconSize={16} />}
@@ -199,10 +185,7 @@ function AccountsActionsBar({
           onClick={handleExportBtnClick}
         />
         <NavbarDivider />
-        <DashboardRowsHeightButton
-          initialValue={accountsTableSize}
-          onChange={handleTableRowSizeChange}
-        />
+        <DashboardRowsHeightButton initialValue={accountsTableSize} onChange={handleTableRowSizeChange} />
         <NavbarDivider />
         <Can I={AccountAction.Edit} a={AbilitySubject.Account}>
           <Switch

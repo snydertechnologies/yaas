@@ -9,11 +9,7 @@ export default function Bigcapital({ width, height }: SVGProps<SVGSVGElement>) {
       height={height}
       className={'bigcapital'}
     >
-      <path
-        fill="#2d95fd"
-        d="M56,3.16,61.33,8.5,31.94,37.9l-5.35-5.35Z"
-        transform="translate(-0.14 -3.16)"
-      ></path>
+      <path fill="#2d95fd" d="M56,3.16,61.33,8.5,31.94,37.9l-5.35-5.35Z" transform="translate(-0.14 -3.16)"></path>
       <path
         fill="#004dd0"
         d="M29.53,6.94l5.35,5.34L5.49,41.67.14,36.33l15.8-15.8Z"
@@ -64,16 +60,8 @@ export default function Bigcapital({ width, height }: SVGProps<SVGSVGElement>) {
         d="M277.55,38.87V36.31a9.15,9.15,0,0,1-7.18,3c-4.46,0-8.14-2.57-8.14-7.26V32c0-5.18,3.94-7.57,9.56-7.57a16.74,16.74,0,0,1,5.8,1V25c0-2.79-1.73-4.34-5.09-4.34A17.57,17.57,0,0,0,266,21.92l-1.68-5.13a20.94,20.94,0,0,1,9.2-1.9c7.35,0,10.58,3.8,10.58,10.22V38.87Zm.13-9.55a10.31,10.31,0,0,0-4.3-.89c-2.87,0-4.64,1.15-4.64,3.27v.09c0,1.82,1.5,2.88,3.67,2.88,3.14,0,5.27-1.73,5.27-4.16Z"
         transform="translate(-0.14 -3.16)"
       ></path>
-      <path
-        fill="#0045ba"
-        d="M289.72,38.87V6.57h6.72v32.3Z"
-        transform="translate(-0.14 -3.16)"
-      ></path>
-      <path
-        fill="#2392ff"
-        d="M302.06,38.87V31.79h7.17v7.08Z"
-        transform="translate(-0.14 -3.16)"
-      ></path>
+      <path fill="#0045ba" d="M289.72,38.87V6.57h6.72v32.3Z" transform="translate(-0.14 -3.16)"></path>
+      <path fill="#2392ff" d="M302.06,38.87V31.79h7.17v7.08Z" transform="translate(-0.14 -3.16)"></path>
     </svg>
   );
 }

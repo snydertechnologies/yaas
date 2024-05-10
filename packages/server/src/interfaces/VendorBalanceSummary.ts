@@ -1,8 +1,5 @@
-import {
-  IFinancialSheetCommonMeta,
-  INumberFormatQuery,
-} from './FinancialStatements';
-import { IFinancialTable } from './Table';
+import type { IFinancialSheetCommonMeta, INumberFormatQuery } from './FinancialStatements';
+import type { IFinancialTable } from './Table';
 
 export interface IVendorBalanceSummaryQuery {
   asDate: Date;
@@ -44,14 +41,10 @@ export interface IVendorBalanceSummaryStatement {
   data: IVendorBalanceSummaryData;
   query: IVendorBalanceSummaryQuery;
   meta: IVendorBalanceSummaryMeta;
-  
 }
 
 export interface IVendorBalanceSummaryService {
-  vendorBalanceSummary(
-    tenantId: number,
-    query: IVendorBalanceSummaryQuery
-  ): Promise<IVendorBalanceSummaryStatement>;
+  vendorBalanceSummary(tenantId: number, query: IVendorBalanceSummaryQuery): Promise<IVendorBalanceSummaryStatement>;
 }
 
 export interface IVendorBalanceSummaryTable extends IFinancialTable {

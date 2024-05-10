@@ -20,20 +20,10 @@ function ExportDialogFormContentRoot({
   return (
     <Form>
       <div className={styles.root}>
-        <p className={styles.paragraph}>
-          You can export data from Bigcapital in CSV or XLSX format
-        </p>
+        <p className={styles.paragraph}>You can export data from Bigcapital in CSV or XLSX format</p>
 
-        <FFormGroup
-          name={'resource'}
-          label={'Select Resource'}
-          className={styles.resourceFormGroup}
-        >
-          <FSelect
-            name={'resource'}
-            items={ExportResources}
-            popoverProps={{ minimal: true }}
-          />
+        <FFormGroup name={'resource'} label={'Select Resource'} className={styles.resourceFormGroup}>
+          <FSelect name={'resource'} items={ExportResources} popoverProps={{ minimal: true }} />
         </FFormGroup>
 
         <FRadioGroup label={'Export As'} name={'format'}>
@@ -45,11 +35,7 @@ function ExportDialogFormContentRoot({
           <Button intent={Intent.NONE} onClick={handleCancelBtnClick}>
             Cancel
           </Button>
-          <Button
-            type={'submit'}
-            intent={Intent.PRIMARY}
-            loading={isSubmitting}
-          >
+          <Button type={'submit'} intent={Intent.PRIMARY} loading={isSubmitting}>
             Export
           </Button>
         </Group>
@@ -58,6 +44,4 @@ function ExportDialogFormContentRoot({
   );
 }
 
-export const ExportDialogFormContent = compose(withDialogActions)(
-  ExportDialogFormContentRoot,
-);
+export const ExportDialogFormContent = compose(withDialogActions)(ExportDialogFormContentRoot);

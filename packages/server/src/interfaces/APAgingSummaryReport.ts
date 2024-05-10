@@ -1,12 +1,12 @@
-import {
+import type {
   IAgingPeriod,
   IAgingSummaryContact,
   IAgingSummaryData,
   IAgingSummaryQuery,
   IAgingSummaryTotal,
 } from './AgingReport';
-import { IFinancialSheetCommonMeta } from './FinancialStatements';
-import { IFinancialTable } from './Table';
+import type { IFinancialSheetCommonMeta } from './FinancialStatements';
+import type { IFinancialTable } from './Table';
 
 export interface IAPAgingSummaryQuery extends IAgingSummaryQuery {
   vendorsIds: number[];

@@ -1,8 +1,8 @@
-import { Knex } from 'knex';
-import { IAccount } from './Account';
-import { IFilterRole } from './DynamicFilter';
-import { IFilterMeta, IPaginationMeta } from './Model';
-import { ISystemUser } from './User';
+import type { Knex } from 'knex';
+import type { IAccount } from './Account';
+import type { IFilterRole } from './DynamicFilter';
+import type { IFilterMeta, IPaginationMeta } from './Model';
+import type { ISystemUser } from './User';
 
 // export interface IPaginationMeta { // duplicate
 //   total: number;

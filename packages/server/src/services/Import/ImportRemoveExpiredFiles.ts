@@ -1,8 +1,8 @@
-import moment from 'moment';
-import bluebird from 'bluebird';
 import { Import } from '@/system/models';
-import { deleteImportFile } from './_utils';
+import bluebird from 'bluebird';
+import moment from 'moment';
 import { Service } from 'typedi';
+import { deleteImportFile } from './_utils';
 
 @Service()
 export class ImportDeleteExpiredFiles {
@@ -12,21 +12,15 @@ export class ImportDeleteExpiredFiles {
   async deleteExpiredFiles() {
     const yesterday = moment().subtract(1, 'hour').format('YYYY-MM-DD HH:mm');
 
-    const expiredImports = await Import.query().where(
-      'createdAt',
-      '<',
-      yesterday
-    );
+    const expiredImports = await Import.query().where('createdAt', '<', yesterday);
     await bluebird.map(
       expiredImports,
       async (expiredImport) => {
         await deleteImportFile(expiredImport.filename);
       },
-      { concurrency: 10 }
+      { concurrency: 10 },
     );
-    const expiredImportsIds = expiredImports.map(
-      (expiredImport) => expiredImport.id
-    );
+    const expiredImportsIds = expiredImports.map((expiredImport) => expiredImport.id);
     if (expiredImportsIds.length > 0) {
       await Import.query().whereIn('id', expiredImportsIds).delete();
     }

@@ -1,7 +1,7 @@
 import { ACCOUNT_TYPES, getAccountsSupportsMultiCurrency } from '@/data/AccountTypes';
 import AccountTypesUtils from '@/lib/AccountTypes';
 import DependencyGraph from '@/lib/DependencyGraph';
-import { buildFilterQuery, buildSortColumnQuery } from '@/lib/ViewRolesBuilder';
+import { buildSortColumnQuery } from '@/lib/ViewRolesBuilder';
 import TenantModel from '@/models/TenantModel';
 import { DEFAULT_VIEWS } from '@/services/Accounts/constants';
 import { castArray } from 'lodash';

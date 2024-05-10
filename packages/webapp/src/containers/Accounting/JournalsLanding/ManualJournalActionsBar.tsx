@@ -1,13 +1,6 @@
 // @ts-nocheck
 import React from 'react';
-import {
-  Button,
-  NavbarGroup,
-  Classes,
-  NavbarDivider,
-  Intent,
-  Alignment,
-} from '@blueprintjs/core';
+import { Button, NavbarGroup, Classes, NavbarDivider, Intent, Alignment } from '@blueprintjs/core';
 import { useHistory } from 'react-router-dom';
 import {
   Icon,
@@ -50,7 +43,7 @@ function ManualJournalActionsBar({
   addSetting,
 
   // #withDialogActions
-  openDialog
+  openDialog,
 }) {
   // History context.
   const history = useHistory();
@@ -119,9 +112,7 @@ function ManualJournalActionsBar({
             },
           }}
         >
-          <DashboardFilterButton
-            conditionsCount={manualJournalsFilterConditions.length}
-          />
+          <DashboardFilterButton conditionsCount={manualJournalsFilterConditions.length} />
         </AdvancedFilterPopover>
 
         <If condition={false}>
@@ -134,11 +125,7 @@ function ManualJournalActionsBar({
           />
         </If>
 
-        <Button
-          className={Classes.MINIMAL}
-          icon={<Icon icon="print-16" iconSize={16} />}
-          text={<T id={'print'} />}
-        />
+        <Button className={Classes.MINIMAL} icon={<Icon icon="print-16" iconSize={16} />} text={<T id={'print'} />} />
         <Button
           className={Classes.MINIMAL}
           icon={<Icon icon="file-import-16" iconSize={16} />}
@@ -152,10 +139,7 @@ function ManualJournalActionsBar({
           onClick={handleExportBtnClick}
         />
         <NavbarDivider />
-        <DashboardRowsHeightButton
-          initialValue={manualJournalsTableSize}
-          onChange={handleTableRowSizeChange}
-        />
+        <DashboardRowsHeightButton initialValue={manualJournalsTableSize} onChange={handleTableRowSizeChange} />
         <NavbarDivider />
       </NavbarGroup>
       <NavbarGroup align={Alignment.RIGHT}>

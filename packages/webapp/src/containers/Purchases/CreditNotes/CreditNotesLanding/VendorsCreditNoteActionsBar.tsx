@@ -1,14 +1,7 @@
 // @ts-nocheck
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import {
-  Button,
-  Classes,
-  NavbarDivider,
-  NavbarGroup,
-  Intent,
-  Alignment,
-} from '@blueprintjs/core';
+import { Button, Classes, NavbarDivider, NavbarGroup, Intent, Alignment } from '@blueprintjs/core';
 import {
   Icon,
   Can,
@@ -57,8 +50,7 @@ function VendorsCreditNoteActionsBar({
   const history = useHistory();
 
   // vendor credit list context.
-  const { VendorCreditsViews, fields, refresh } =
-    useVendorsCreditNoteListContext();
+  const { VendorCreditsViews, fields, refresh } = useVendorsCreditNoteListContext();
 
   // Handle click a new Vendor.
   const handleClickNewVendorCredit = () => {
@@ -119,9 +111,7 @@ function VendorsCreditNoteActionsBar({
             },
           }}
         >
-          <DashboardFilterButton
-            conditionsCount={vendorCreditFilterRoles.length}
-          />
+          <DashboardFilterButton conditionsCount={vendorCreditFilterRoles.length} />
         </AdvancedFilterPopover>
         <Button
           className={Classes.MINIMAL}
@@ -141,10 +131,7 @@ function VendorsCreditNoteActionsBar({
           onClick={handleExportBtnClick}
         />
         <NavbarDivider />
-        <DashboardRowsHeightButton
-          initialValue={creditNoteTableSize}
-          onChange={handleTableRowSizeChange}
-        />
+        <DashboardRowsHeightButton initialValue={creditNoteTableSize} onChange={handleTableRowSizeChange} />
         <NavbarDivider />
       </NavbarGroup>
       <NavbarGroup align={Alignment.RIGHT}>

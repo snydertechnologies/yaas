@@ -1,5 +1,5 @@
-import { Features, IFeatureConfiugration } from '@/interfaces';
 import config from '@/config';
+import { Features, IFeatureConfiugration } from '@/interfaces';
 import { defaultTo } from 'lodash';
 
 export const FeaturesConfigure: IFeatureConfiugration[] = [
@@ -14,5 +14,5 @@ export const FeaturesConfigure: IFeatureConfiugration[] = [
   {
     name: Features.BankSyncing,
     defaultValue: defaultTo(config.bankSync.enabled, false),
-  }
+  },
 ];

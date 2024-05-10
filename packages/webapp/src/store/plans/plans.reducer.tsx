@@ -23,8 +23,7 @@ const getSubscriptionPlans = () => [
   {
     name: 'Capital Plus',
     slug: 'capital_plus',
-    description:
-      'Good for businesses have inventory and want more financial reports.',
+    description: 'Good for businesses have inventory and want more financial reports.',
     features: [
       'All Capital Basic features',
       'Manage Bills',
@@ -42,12 +41,7 @@ const getSubscriptionPlans = () => [
     name: 'Capital Big',
     slug: 'essentials',
     description: 'Good for businesses have multiple inventory or branches.',
-    features: [
-      'All Capital Plus features',
-      'Multiple Warehouses',
-      'Multiple Branches',
-      'Invite >= 15 Users',
-    ],
+    features: ['All Capital Plus features', 'Multiple Warehouses', 'Multiple Branches', 'Invite >= 15 Users'],
     price: '$29',
     pricePeriod: 'Per Year',
   },

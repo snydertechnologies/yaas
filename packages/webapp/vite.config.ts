@@ -1,11 +1,11 @@
 // import browserslist from 'browserslist';
 // import { browserslistToTargets } from 'lightningcss';
-import { defineConfig } from 'vite'
-import tsconfigPaths from 'vite-tsconfig-paths'
+import { defineConfig } from 'vite';
+import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
   define: {
-    global: 'window'
+    global: 'window',
   },
   server: {
     port: 4000,
@@ -24,13 +24,13 @@ export default defineConfig({
       scss: {
         additionalData: `
           
-        `
+        `,
         // @import "./src/styles/_animations.scss";
         // @import "./src/styles/_variables.scss";
         // @import "./src/styles/_mixins.scss";
         // @import "./src/styles/_helpers.scss";
-      }
-    }
+      },
+    },
   },
   // build: {
   //   cssMinify: 'lightningcss',
@@ -63,7 +63,7 @@ export default defineConfig({
       {
         find: /^~.+/,
         replacement: (val: string) => {
-          return val.replace(/^~/, "");
+          return val.replace(/^~/, '');
         },
       },
     ],

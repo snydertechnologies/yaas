@@ -1,13 +1,10 @@
-import { Inject, Service } from 'typedi';
 import { ServiceError } from '@/exceptions';
-import { SystemUser } from '@/system/models';
-import { ERRORS } from './_constants';
+import { IAuthSignUpVerifiedEventPayload, IAuthSignUpVerifingEventPayload } from '@/interfaces';
 import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';
 import events from '@/subscribers/events';
-import {
-  IAuthSignUpVerifiedEventPayload,
-  IAuthSignUpVerifingEventPayload,
-} from '@/interfaces';
+import { SystemUser } from '@/system/models';
+import { Inject, Service } from 'typedi';
+import { ERRORS } from './_constants';
 
 @Service()
 export class AuthSignupConfirmService {
@@ -20,10 +17,7 @@ export class AuthSignupConfirmService {
    * @param {IRegisterDTO} signupDTO
    * @returns {Promise<ISystemUser>}
    */
-  public async signUpConfirm(
-    email: string,
-    verifyToken: string
-  ): Promise<SystemUser> {
+  public async signUpConfirm(email: string, verifyToken: string): Promise<SystemUser> {
     const foundUser = await SystemUser.query().findOne({ email, verifyToken });
 
     if (!foundUser) {
@@ -38,13 +32,10 @@ export class AuthSignupConfirmService {
       userId,
     } as IAuthSignUpVerifingEventPayload);
 
-    const updatedUser = await SystemUser.query().patchAndFetchById(
-      foundUser.id,
-      {
-        verified: true,
-        verifyToken: '',
-      }
-    );
+    const updatedUser = await SystemUser.query().patchAndFetchById(foundUser.id, {
+      verified: true,
+      verifyToken: '',
+    });
     // Triggers `signUpConfirmed` event.
     await this.eventPublisher.emitAsync(events.auth.signUpConfirmed, {
       email,

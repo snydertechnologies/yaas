@@ -1,6 +1,6 @@
-import { Service } from 'typedi';
 import { NotAllowedChangeSubscriptionPlan } from '@/exceptions';
 import { Plan, Tenant } from '@/system/models';
+import { Service } from 'typedi';
 
 @Service()
 export class Subscription {
@@ -12,11 +12,7 @@ export class Subscription {
    * @param {number} invoicePeriod
    * @param {string} subscriptionSlug
    */
-  public async newSubscribtion(
-    tenantId: number,
-    planSlug: string,
-    subscriptionSlug: string = 'main'
-  ) {
+  public async newSubscribtion(tenantId: number, planSlug: string, subscriptionSlug: string = 'main') {
     const tenant = await Tenant.query().findById(tenantId).throwIfNotFound();
     const plan = await Plan.query().findOne('slug', planSlug).throwIfNotFound();
 
@@ -41,12 +37,7 @@ export class Subscription {
 
       // No stored past tenant subscriptions create new one.
     } else {
-      await tenant.newSubscription(
-        plan.id,
-        invoiceInterval,
-        invoicePeriod,
-        subscriptionSlug
-      );
+      await tenant.newSubscription(plan.id, invoiceInterval, invoicePeriod, subscriptionSlug);
     }
   }
 }

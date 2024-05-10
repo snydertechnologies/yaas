@@ -63,15 +63,12 @@ export function useOrganizationSetup() {
   const apiRequest = useApiRequest();
   const queryClient = useQueryClient();
 
-  return useMutation(
-    (values) => apiRequest.post(`organization/build`, values),
-    {
-      onSuccess: (res) => {
-        queryClient.invalidateQueries(t.ORGANIZATION_CURRENT);
-        queryClient.invalidateQueries(t.ORGANIZATIONS);
-      },
+  return useMutation((values) => apiRequest.post(`organization/build`, values), {
+    onSuccess: (res) => {
+      queryClient.invalidateQueries(t.ORGANIZATION_CURRENT);
+      queryClient.invalidateQueries(t.ORGANIZATIONS);
     },
-  );
+  });
 }
 
 /**
@@ -81,16 +78,13 @@ export function useUpdateOrganization(props) {
   const queryClient = useQueryClient();
   const apiRequest = useApiRequest();
 
-  return useMutation(
-    (information) => apiRequest.put('organization', information),
-    {
-      onSuccess: () => {
-        queryClient.invalidateQueries(t.ORGANIZATION_CURRENT);
-        queryClient.invalidateQueries(t.ORGANIZATIONS);
-      },
-      ...props,
+  return useMutation((information) => apiRequest.put('organization', information), {
+    onSuccess: () => {
+      queryClient.invalidateQueries(t.ORGANIZATION_CURRENT);
+      queryClient.invalidateQueries(t.ORGANIZATIONS);
     },
-  );
+    ...props,
+  });
 }
 
 export function useOrgBaseCurrencyMutateAbilities(props) {

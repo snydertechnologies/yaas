@@ -1,4 +1,8 @@
+import { Import } from '@/system/models';
 import { Inject, Service } from 'typedi';
+import ResourceService from '../Resource/ResourceService';
+import { ImportFileCommon } from './ImportFileCommon';
+import { ImportFileDataValidator } from './ImportFileDataValidator';
 import {
   deleteImportFile,
   getResourceColumns,
@@ -6,11 +10,7 @@ import {
   sanitizeResourceName,
   validateSheetEmpty,
 } from './_utils';
-import ResourceService from '../Resource/ResourceService';
-import { ImportFileCommon } from './ImportFileCommon';
-import { ImportFileDataValidator } from './ImportFileDataValidator';
 import { ImportFileUploadPOJO } from './interfaces';
-import { Import } from '@/system/models';
 
 @Service()
 export class ImportFileUploadService {
@@ -36,15 +36,10 @@ export class ImportFileUploadService {
     tenantId: number,
     resourceName: string,
     filename: string,
-    params: Record<string, number | string>
+    params: Record<string, number | string>,
   ): Promise<ImportFileUploadPOJO> {
     try {
-      return await this.importUnhandled(
-        tenantId,
-        resourceName,
-        filename,
-        params
-      );
+      return await this.importUnhandled(tenantId, resourceName, filename, params);
     } catch (err) {
       deleteImportFile(filename);
       throw err;
@@ -63,13 +58,10 @@ export class ImportFileUploadService {
     tenantId: number,
     resourceName: string,
     filename: string,
-    params: Record<string, number | string>
+    params: Record<string, number | string>,
   ): Promise<ImportFileUploadPOJO> {
     const resource = sanitizeResourceName(resourceName);
-    const resourceMeta = this.resourceService.getResourceMeta(
-      tenantId,
-      resource
-    );
+    const resourceMeta = this.resourceService.getResourceMeta(tenantId, resource);
     // Throw service error if the resource does not support importing.
     this.importValidator.validateResourceImportable(resourceMeta);
 
@@ -106,10 +98,7 @@ export class ImportFileUploadService {
       columns: coumnsStringified,
       params: paramsStringified,
     });
-    const resourceColumnsMap = this.resourceService.getResourceFields2(
-      tenantId,
-      resource
-    );
+    const resourceColumnsMap = this.resourceService.getResourceFields2(tenantId, resource);
     const resourceColumns = getResourceColumns(resourceColumnsMap);
 
     return {

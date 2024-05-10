@@ -29,18 +29,9 @@ function Feature({ icon, title, desc }: FeatureProps) {
 
 export function Features() {
   return (
-    <div
-      id={'features'}
-      className={
-        'bg-[#06091d] pt-[420px] pb-[40px] md:pb-[60px] text-white py-420 overflow-hidden'
-      }
-    >
+    <div id={'features'} className={'bg-[#06091d] pt-[420px] pb-[40px] md:pb-[60px] text-white py-420 overflow-hidden'}>
       <div className="opacity-70 relative">
-        <img
-          className="absolute -top-[900px] left-[1000px] scale-[1.8] z-[-1]"
-          src="./blur-2.jpeg"
-          alt=""
-        />
+        <img className="absolute -top-[900px] left-[1000px] scale-[1.8] z-[-1]" src="./blur-2.jpeg" alt="" />
       </div>
 
       <div className="container mx-auto px-4 z-1 relative">
@@ -87,9 +78,7 @@ export function Features() {
           <Feature
             icon={<MoneySVG fill={'#fff'} />}
             title={'Multi-currency Accounting'}
-            desc={
-              'Pay and get paid and do manual journals in any currency with real time exchange rates conversions.'
-            }
+            desc={'Pay and get paid and do manual journals in any currency with real time exchange rates conversions.'}
           />
           <Feature
             icon={<HelpSVG fill={'#fff'} />}

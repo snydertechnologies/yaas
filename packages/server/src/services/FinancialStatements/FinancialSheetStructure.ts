@@ -1,7 +1,6 @@
 import { set, sumBy } from 'lodash';
 import * as R from 'ramda';
 import {
-  condense,
   filterDeep,
   filterNodesDeep,
   findValueDeep,

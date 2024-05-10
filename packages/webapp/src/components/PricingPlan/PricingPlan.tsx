@@ -16,10 +16,7 @@ export interface PricingPlanProps {
  */
 export const PricingPlan = ({ featured, children }: PricingPlanProps) => {
   return (
-    <Stack
-      spacing={8}
-      className={clsx(styles.root, { [styles.isFeatured]: featured })}
-    >
+    <Stack spacing={8} className={clsx(styles.root, { [styles.isFeatured]: featured })}>
       <>{children}</>
     </Stack>
   );
@@ -80,12 +77,7 @@ export interface PricingBuyButtonProps extends ButtonProps {}
  */
 PricingPlan.BuyButton = ({ children, ...props }: PricingBuyButtonProps) => {
   return (
-    <Button
-      intent={Intent.PRIMARY}
-      {...props}
-      fill={true}
-      className={styles.buttonCTA}
-    >
+    <Button intent={Intent.PRIMARY} {...props} fill={true} className={styles.buttonCTA}>
       {children}
     </Button>
   );

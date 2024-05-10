@@ -1,7 +1,7 @@
-import { Model } from 'objection';
-import bcrypt from 'bcryptjs';
-import SystemModel from '@/system/models/SystemModel';
 import SoftDeleteQueryBuilder from '@/collection/SoftDeleteQueryBuilder';
+import SystemModel from '@/system/models/SystemModel';
+import bcrypt from 'bcryptjs';
+import { Model } from 'objection';
 
 export default class SystemUser extends SystemModel {
   firstName!: string;

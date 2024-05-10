@@ -10,8 +10,6 @@ interface ExportDialogContentProps {
 /**
  * Account dialog content.
  */
-export default function ExportDialogContent({
-  initialValues,
-}: ExportDialogContentProps) {
+export default function ExportDialogContent({ initialValues }: ExportDialogContentProps) {
   return <ExportDialogForm initialValues={initialValues} />;
 }

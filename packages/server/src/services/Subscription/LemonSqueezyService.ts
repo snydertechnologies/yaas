@@ -1,6 +1,6 @@
-import { Service } from 'typedi';
-import { createCheckout } from '@lemonsqueezy/lemonsqueezy.js';
 import { SystemUser } from '@/system/models';
+import { createCheckout } from '@lemonsqueezy/lemonsqueezy.js';
+import { Service } from 'typedi';
 import { configureLemonSqueezy } from './utils';
 
 @Service()

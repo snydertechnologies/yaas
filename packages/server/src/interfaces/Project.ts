@@ -1,4 +1,4 @@
-import { Knex } from 'knex';
+import type { Knex } from 'knex';
 
 export interface IProjectCommonDTO {
   contactId: number;
@@ -92,8 +92,7 @@ export interface IProjectDeletingEventPayload {
   trx: Knex.Transaction;
 }
 
-export interface IProjectDeletedEventPayload
-  extends IProjectDeletingEventPayload {}
+export interface IProjectDeletedEventPayload extends IProjectDeletingEventPayload {}
 
 export interface IProjectEditEventPayload {
   tenantId: number;

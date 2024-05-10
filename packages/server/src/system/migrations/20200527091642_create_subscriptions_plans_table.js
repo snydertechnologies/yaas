@@ -1,6 +1,5 @@
-
-exports.up = function(knex) {
-  return knex.schema.createTable('subscriptions_plans', table => {
+exports.up = function (knex) {
+  return knex.schema.createTable('subscriptions_plans', (table) => {
     table.increments();
 
     table.string('name');
@@ -10,13 +9,13 @@ exports.up = function(knex) {
 
     table.integer('trial_period');
     table.string('trial_interval');
-    
+
     table.integer('invoice_period');
     table.string('invoice_interval');
     table.timestamps();
   });
 };
 
-exports.down = function(knex) {
-  return knex.schema.dropTableIfExists('subscriptions_plans')
+exports.down = function (knex) {
+  return knex.schema.dropTableIfExists('subscriptions_plans');
 };

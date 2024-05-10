@@ -12,11 +12,7 @@ export default class SubscriptionPeriod {
    * @param {number} count -
    * @param {Date} start -
    */
-  constructor(
-    interval: unitOfTime.DurationConstructor = 'month',
-    count: number,
-    start?: Date
-  ) {
+  constructor(interval: unitOfTime.DurationConstructor = 'month', count: number, start?: Date) {
     this.interval = interval;
     this.count = count;
     this.start = start;

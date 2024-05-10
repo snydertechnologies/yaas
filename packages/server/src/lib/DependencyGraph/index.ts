@@ -89,7 +89,10 @@ class DepGraph {
     this.circular = !!opts.circular;
   }
 
-  static fromArray(items: INodeData[], options: IFromToArrayOptions = { itemId: 'id', parentItemId: 'parent_id' }): DepGraph {
+  static fromArray(
+    items: INodeData[],
+    options: IFromToArrayOptions = { itemId: 'id', parentItemId: 'parent_id' },
+  ): DepGraph {
     const depGraph = new DepGraph();
 
     for (const item of items) {
@@ -164,75 +167,74 @@ class DepGraph {
   }
 
   dependenciesOf(node: string, leavesOnly = false): string[] {
-  // Check if the node exists in the graph
-  if (!this.hasNode(node)) {
-    throw new Error('Node does not exist.');
-  }
-  
-  // Use a string array to store the result to maintain type consistency
-  const result: string[] = [];
-  // Explicitly type the DFS function for better readability and safety
-  const DFS: (start: string) => void = createDFS(this.outgoingEdges, leavesOnly, result, this.circular);
-  DFS(node);
-
-  // Remove the original node from the result if it exists
-  const index: number = result.indexOf(node);
-  if (index > -1) {
-    result.splice(index, 1);
-  }
-
-  return result;
-}
-
-dependantsOf(node: string, leavesOnly = false): string[] {
-  // Check if the node exists in the graph
-  if (!this.hasNode(node)) {
-    throw new Error(`Node does not exist: ${node}`);
-  }
-  
-  const result: string[] = [];
-  const DFS: (start: string) => void = createDFS(this.incomingEdges, leavesOnly, result, this.circular);
-  DFS(node);
-
-  const idx: number = result.indexOf(node);
-  if (idx >= 0) {
-    result.splice(idx, 1);
-  }
-
-  return result;
-}
-
-
-overallOrder(leavesOnly = false): string[] {
-  const result: string[] = [];
-  const keys: string[] = Object.keys(this.nodes);
-
-  if (keys.length === 0) {
-    return result; // Return an empty array for an empty graph
-  }
-
-  // Check for cycles if the graph is not circular
-  if (!this.circular) {
-    const CycleDFS: (start: string) => void = createDFS(this.outgoingEdges, false, [], this.circular);
-    for (const n of keys) {
-      CycleDFS(n);
+    // Check if the node exists in the graph
+    if (!this.hasNode(node)) {
+      throw new Error('Node does not exist.');
     }
-  }
 
-  const DFS: (start: string) => void = createDFS(this.outgoingEdges, leavesOnly, result, this.circular);
-  for (const node of keys.filter(node => this.incomingEdges[node].length === 0)) {
+    // Use a string array to store the result to maintain type consistency
+    const result: string[] = [];
+    // Explicitly type the DFS function for better readability and safety
+    const DFS: (start: string) => void = createDFS(this.outgoingEdges, leavesOnly, result, this.circular);
     DFS(node);
+
+    // Remove the original node from the result if it exists
+    const index: number = result.indexOf(node);
+    if (index > -1) {
+      result.splice(index, 1);
+    }
+
+    return result;
   }
 
-  // Handle circular dependencies
-  if (this.circular) {
-    for (const node of keys.filter(node => result.indexOf(node) === -1)) {
+  dependantsOf(node: string, leavesOnly = false): string[] {
+    // Check if the node exists in the graph
+    if (!this.hasNode(node)) {
+      throw new Error(`Node does not exist: ${node}`);
+    }
+
+    const result: string[] = [];
+    const DFS: (start: string) => void = createDFS(this.incomingEdges, leavesOnly, result, this.circular);
+    DFS(node);
+
+    const idx: number = result.indexOf(node);
+    if (idx >= 0) {
+      result.splice(idx, 1);
+    }
+
+    return result;
+  }
+
+  overallOrder(leavesOnly = false): string[] {
+    const result: string[] = [];
+    const keys: string[] = Object.keys(this.nodes);
+
+    if (keys.length === 0) {
+      return result; // Return an empty array for an empty graph
+    }
+
+    // Check for cycles if the graph is not circular
+    if (!this.circular) {
+      const CycleDFS: (start: string) => void = createDFS(this.outgoingEdges, false, [], this.circular);
+      for (const n of keys) {
+        CycleDFS(n);
+      }
+    }
+
+    const DFS: (start: string) => void = createDFS(this.outgoingEdges, leavesOnly, result, this.circular);
+    for (const node of keys.filter((node) => this.incomingEdges[node].length === 0)) {
       DFS(node);
     }
-  }
 
-  return result;
-}
+    // Handle circular dependencies
+    if (this.circular) {
+      for (const node of keys.filter((node) => result.indexOf(node) === -1)) {
+        DFS(node);
+      }
+    }
+
+    return result;
+  }
 }
 
 // Export classes and helper functions

@@ -41,14 +41,7 @@ interface PostProps {
   formattedDate: string;
 }
 
-function Post({
-  title,
-  subtitle,
-  id,
-  avatar,
-  picture,
-  formattedDate,
-}: PostProps) {
+function Post({ title, subtitle, id, avatar, picture, formattedDate }: PostProps) {
   return (
     <div className={''}>
       <a className="block" href={`/blog/${id}`}>
@@ -57,9 +50,7 @@ function Post({
             src={picture}
             height={300}
             width={550}
-            className={
-              'col-span-2 w-full border border-darkblue-50 object-cover rounded lg:rounded-md m-[1px]'
-            }
+            className={'col-span-2 w-full border border-darkblue-50 object-cover rounded lg:rounded-md m-[1px]'}
             alt=""
           />
         </div>
@@ -68,17 +59,9 @@ function Post({
           <div className={'mt-2.5 flex items-center gap-1.5 md:gap-2 lg:mt-3'}>
             <div className="flex gap-1 place-items-center">
               <div>
-                <Image
-                  className="rounded-full"
-                  height={'26'}
-                  width="26"
-                  src={avatar}
-                  alt={''}
-                />
+                <Image className="rounded-full" height={'26'} width="26" src={avatar} alt={''} />
               </div>
-              <p className="text-sm font-normal text-darkblue-800">
-                Ahmed Bouhulia ·{' '}
-              </p>
+              <p className="text-sm font-normal text-darkblue-800">Ahmed Bouhulia · </p>
               <p className="text-sm font-normal text-[#6b7280]">
                 <time dateTime="2024-04-11">{formattedDate}</time>
               </p>
@@ -89,9 +72,7 @@ function Post({
             {title}
           </h1>
 
-          <div className={'mt-[4px] text-[#6b7280] text-[15px]'}>
-            {subtitle}
-          </div>
+          <div className={'mt-[4px] text-[#6b7280] text-[15px]'}>{subtitle}</div>
         </div>
       </a>
     </div>

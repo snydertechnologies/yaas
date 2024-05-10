@@ -1,6 +1,6 @@
-import { Inject, Service } from 'typedi';
 import { IBillsFilter } from '@/interfaces';
 import { Exportable } from '@/services/Export/Exportable';
+import { Inject, Service } from 'typedi';
 import { BillsApplication } from './BillsApplication';
 
 @Service()
@@ -22,8 +22,6 @@ export class BillsExportable extends Exportable {
       pageSize: 12000,
     } as IBillsFilter;
 
-    return this.billsApplication
-      .getBills(tenantId, parsedQuery)
-      .then((output) => output.bills);
+    return this.billsApplication.getBills(tenantId, parsedQuery).then((output) => output.bills);
   }
 }

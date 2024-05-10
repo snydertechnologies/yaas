@@ -121,13 +121,12 @@ export default {
    * Remove all meta data of the given group.
    * @param {*} group
    */
-  removeAllMeta(group = 'default') {
+  removeAllMeta(group = 'default') 
     this.metdata.map((meta) => ({
       ...(meta.group !== group) ? { markAsDeleted: true } : {},
       ...meta,
     }));
-    this.shouldReload = true;
-  },
+    this.shouldReload = true;,
 
   /**
    * Set the meta data to the stack.
@@ -192,10 +191,9 @@ export default {
   /**
    * Purge all the cached metadata in the memory.
    */
-  purgeMetadata() {
+  purgeMetadata() 
     this.metadata = [];
-    this.shouldReload = true;
-  },
+    this.shouldReload = true;,
 
   /**
    * Parses the metadata value.
@@ -251,7 +249,7 @@ export default {
     return parsedValue;
   },
 
-  mapMetadata(attr, parseType = 'parse') {
+  mapMetadata(attr, parseType = 'parse') 
     return {
       key: attr[this.KEY_COLUMN],
       value: (parseType === 'parse')
@@ -266,14 +264,12 @@ export default {
       ...this.extraColumns.map((extraCol) => ({
         [extraCol]: attr[extraCol] || null,
       })),
-    };
-  },
+    };,
 
   /**
    * Parse the metadata collection.
    * @param {Array} collection -
    */
-  mapMetadataCollection(collection, parseType = 'parse') {
-    return collection.map((model) => this.mapMetadata(model.attributes, parseType));
-  },
+  mapMetadataCollection(collection, parseType = 'parse') 
+    return collection.map((model) => this.mapMetadata(model.attributes, parseType));,
 };

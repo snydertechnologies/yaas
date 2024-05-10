@@ -8,22 +8,14 @@ interface SubscriptionPricingProps {
   slug: string;
   label: string;
   description: string;
-  features?: Array<String>;
+  features?: Array<string>;
   featured?: boolean;
   price: string;
   pricePeriod: string;
 }
 
-function SubscriptionPricing({
-  featured,
-  label,
-  description,
-  features,
-  price,
-  pricePeriod,
-}: SubscriptionPricingProps) {
-  const { mutateAsync: getLemonCheckout, isLoading } =
-    useGetLemonSqueezyCheckout();
+function SubscriptionPricing({ featured, label, description, features, price, pricePeriod }: SubscriptionPricingProps) {
+  const { mutateAsync: getLemonCheckout, isLoading } = useGetLemonSqueezyCheckout();
 
   const handleClick = () => {
     getLemonCheckout({ variantId: '338516' })
@@ -60,7 +52,7 @@ function SubscriptionPricing({
 
 export function SubscriptionPlans({ plans }) {
   return (
-    <Group spacing={18} noWrap align='stretch'>
+    <Group spacing={18} noWrap align="stretch">
       {plans.map((plan, index) => (
         <SubscriptionPricing
           key={index}

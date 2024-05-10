@@ -9,7 +9,7 @@ import config from '@/config';
 import routes from 'api';
 import bodyParser from 'body-parser';
 import errorHandler from 'errorhandler';
-import { NextFunction, Request, Response, json } from 'express';
+import { type NextFunction, type Request, type Response, json } from 'express';
 import express from 'express';
 import boom from 'express-boom';
 import helmet from 'helmet';

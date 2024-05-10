@@ -1,6 +1,6 @@
+import { IMetaQuery, IMetableStore, IMetadata } from '@/interfaces';
+import { isEmpty, omit } from 'lodash';
 import { Model } from 'objection';
-import { omit, isEmpty } from 'lodash';
-import { IMetadata, IMetaQuery, IMetableStore } from '@/interfaces';
 import { itemsStartWith } from 'utils';
 
 export default class MetableStore implements IMetableStore {
@@ -36,7 +36,7 @@ export default class MetableStore implements IMetableStore {
     return this.metadata.find((meta: IMetadata) => {
       const isSameKey = meta.key === key;
       const sameExtraColumns = this.extraColumns.some(
-        (extraColumn: string) => extraColumns[extraColumn] === meta[extraColumn]
+        (extraColumn: string) => extraColumns[extraColumn] === meta[extraColumn],
       );
 
       const isSameExtraColumns = sameExtraColumns || isEmpty(extraColumns);
@@ -52,9 +52,7 @@ export default class MetableStore implements IMetableStore {
   all(): IMetadata[] {
     return this.metadata
       .filter((meta: IMetadata) => !meta._markAsDeleted)
-      .map((meta: IMetadata) =>
-        omit(meta, itemsStartWith(Object.keys(meta), '_'))
-      );
+      .map((meta: IMetadata) => omit(meta, itemsStartWith(Object.keys(meta), '_')));
   }
 
   /**
@@ -64,11 +62,7 @@ export default class MetableStore implements IMetableStore {
    */
   get(query: string | IMetaQuery, defaultValue: any): any | null {
     const metadata = this.find(query);
-    return metadata
-      ? metadata.value
-      : typeof defaultValue !== 'undefined'
-      ? defaultValue
-      : null;
+    return metadata ? metadata.value : typeof defaultValue !== 'undefined' ? defaultValue : null;
   }
 
   /**
@@ -140,10 +134,7 @@ export default class MetableStore implements IMetableStore {
    * @param {string} valueType -
    * @return {string|number|boolean} -
    */
-  static formatMetaValue(
-    value: string | boolean | number,
-    valueType: string
-  ): string | number | boolean {
+  static formatMetaValue(value: string | boolean | number, valueType: string): string | number | boolean {
     let parsedValue;
 
     switch (valueType) {
@@ -168,9 +159,7 @@ export default class MetableStore implements IMetableStore {
    * @param {Array} collection -
    */
   mapMetadataToCollection(metadata: IMetadata[], parseType: string = 'parse') {
-    return metadata.map((model) =>
-      this.mapMetadataToCollection(model, parseType)
-    );
+    return metadata.map((model) => this.mapMetadataToCollection(model, parseType));
   }
 
   /**
