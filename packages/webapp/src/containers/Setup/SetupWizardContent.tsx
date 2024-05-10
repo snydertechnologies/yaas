@@ -16,12 +16,9 @@ interface SetupWizardContentProps {
 /**
  * Setup wizard content.
  */
-export default function SetupWizardContent({
-  stepIndex,
-  stepId,
-}: SetupWizardContentProps) {
+export default function SetupWizardContent({ stepIndex, stepId }: SetupWizardContentProps) {
   return (
-    <div class="setup-page__content">
+    <div className="setup-page__content">
       <Stepper
         active={stepIndex}
         classNames={{

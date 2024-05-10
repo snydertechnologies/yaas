@@ -29,7 +29,7 @@ function NavLink({ children, href, target, className }: NavLinkProps) {
         target={target}
         className={clsx(
           'inline-block lg:h-[32px] lg:leading-[32px] lg:px-[14px] font-medium  hover:text-indigo border-b-[rgba(24,34,77,0.15)] border-b border-solid lg:border-0 w-full h-[45px] leading-[45px]',
-          className
+          className,
         )}
       >
         {children}
@@ -46,17 +46,10 @@ interface NavButtonProps {
   target?: string;
 }
 
-function NavButton({
-  variant = 'solid',
-  children,
-  href,
-  target,
-  className,
-}: NavButtonProps) {
+function NavButton({ variant = 'solid', children, href, target, className }: NavButtonProps) {
   const commonStyle =
     'inline-block lg:h-[32px] lg:leading-[32px] h-[45px] leading-[45px] px-[14px] font-medium  rounded-full w-full';
-  const outlineStyle =
-    'hover:text-indigo border border-1-darkblue-600  hover:bg-darkblue-600 hover:text-white';
+  const outlineStyle = 'hover:text-indigo border border-1-darkblue-600  hover:bg-darkblue-600 hover:text-white';
 
   const solidStyle =
     'bg-indigo text-white lg:px-[14px] font-medium border-b-[rgba(24,34,77,0.15)] border-b border-solid lg:border-0 ';
@@ -72,7 +65,7 @@ function NavButton({
             [solidStyle]: variant === 'solid',
           },
           commonStyle,
-          className
+          className,
         )}
       >
         {children}
@@ -118,13 +111,10 @@ export function TopBar({ beforeNavbar, afterNavbar }: TopBarProps) {
           </div>
 
           <div
-            className={clsx(
-              'pt-6 lg:pt-0 lg:flex flex-grow items-center lg:block',
-              {
-                hidden: !toggle,
-                block: toggle,
-              }
-            )}
+            className={clsx('pt-6 lg:pt-0 lg:flex flex-grow items-center lg:block', {
+              hidden: !toggle,
+              block: toggle,
+            })}
           >
             <div className="flex flex-col lg:flex-row ml-auto items-stretch lg:items-center">
               <NavItem className={'pb-2 lg:pb-0'}>
@@ -157,7 +147,7 @@ export function TopBar({ beforeNavbar, afterNavbar }: TopBarProps) {
               {/* 
               <NavItem className={'d-none d-lg-block'}>
                 <a
-                  class="btn btn-outline-secondary"
+                  className="btn btn-outline-secondary"
                   href={'https://app.bigcapital.ly/'}
                 >
                   Sign In
@@ -165,11 +155,7 @@ export function TopBar({ beforeNavbar, afterNavbar }: TopBarProps) {
               </NavItem> */}
 
               <NavItem className={'hidden lg:block lg:ml-4'}>
-                <NavButton
-                  className={'px-6'}
-                  variant={'solid'}
-                  href={AppUrl.SignUp}
-                >
+                <NavButton className={'px-6'} variant={'solid'} href={AppUrl.SignUp}>
                   Sign Up
                 </NavButton>
               </NavItem>

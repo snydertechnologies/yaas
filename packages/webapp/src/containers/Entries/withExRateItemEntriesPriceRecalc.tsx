@@ -1,38 +1,45 @@
 import { useCurrentOrganization } from '@/hooks/state';
-// @ts-nocheck
 import { useFormikContext } from 'formik';
-import { useCallback, useEffect } from 'react';
+import React, { ComponentType, ReactNode, useCallback, useEffect } from 'react';
 import { useAutoExRateContext } from './AutoExchangeProvider';
 import { useUpdateEntriesOnExchangeRateChange } from './useUpdateEntriesOnExchangeRateChange';
+
+type WithExtraProps<P> = P & {
+  onRecalcConfirm?: ({ exchangeRate, oldExchangeRate }: { exchangeRate: number; oldExchangeRate: number }) => void;
+};
 
 /**
  * Re-calculate the item entries prices based on the old exchange rate.
  * @param {InvoiceExchangeRateInputFieldRoot} Component
  * @returns {JSX.Element}
  */
-export const withExchangeRateItemEntriesPriceRecalc = (Component) => (props) => {
-  const { setFieldValue } = useFormikContext();
-  const updateChangeExRate = useUpdateEntriesOnExchangeRateChange();
+export const withExchangeRateItemEntriesPriceRecalc =
+  <P extends {}>(Component: ComponentType<WithExtraProps<P>>) =>
+  (props: P) => {
+    const { setFieldValue } = useFormikContext();
+    const updateChangeExRate = useUpdateEntriesOnExchangeRateChange();
 
-  return (
-    <Component
-      onRecalcConfirm={({ exchangeRate, oldExchangeRate }) => {
-        setFieldValue('entries', updateChangeExRate(oldExchangeRate, exchangeRate));
-      }}
-      {...props}
-    />
-  );
-};
+    return (
+      // @ts-ignore - Ignore the type error for now, we'll fix later
+      <Component
+        {...props}
+        onRecalcConfirm={({ exchangeRate, oldExchangeRate }) => {
+          setFieldValue('entries', updateChangeExRate(oldExchangeRate, exchangeRate));
+        }}
+      />
+    );
+  };
 
 /**
  * Injects the loading props to the exchange rate field.
  * @param Component
  * @returns {}
  */
-export const withExchangeRateFetchingLoading = (Component) => (props) => {
+export const withExchangeRateFetchingLoading = (Component: JSX.IntrinsicAttributes) => (props: any) => {
   const { isAutoExchangeRateLoading } = useAutoExRateContext();
 
   return (
+    // @ts-ignore - Ignore the type error for now, we'll fix later
     <Component
       isLoading={isAutoExchangeRateLoading}
       inputGroupProps={{
@@ -48,6 +55,7 @@ export const withExchangeRateFetchingLoading = (Component) => (props) => {
  */
 export const useCustomerUpdateExRate = () => {
   const { setFieldValue, values } = useFormikContext();
+  // @ts-ignore - Ignore the type error for now, we'll fix later
   const { setAutoExRateCurrency } = useAutoExRateContext();
 
   const updateEntriesOnExChange = useUpdateEntriesOnExchangeRateChange();
@@ -62,13 +70,15 @@ export const useCustomerUpdateExRate = () => {
 
       // If the customer's currency code equals the same base currency.
       if (customer.currency_code === currentCompany.base_currency) {
-        setFieldValue('exchange_rate', DEFAULT_EX_RATE + '');
+        setFieldValue('exchange_rate', `${DEFAULT_EX_RATE}`);
+        // @ts-ignore - Ignore the type error for now, we'll fix later
         setFieldValue('entries', updateEntriesOnExChange(values.exchange_rate, DEFAULT_EX_RATE));
       } else {
         // Sets the currency code to fetch exchange rate of the given currency code.
         setAutoExRateCurrency(customer?.currency_code);
       }
     },
+    // @ts-ignore - Ignore the type error for now, we'll fix later
     [currentCompany.base_currency, setAutoExRateCurrency, setFieldValue, updateEntriesOnExChange, values.exchange_rate],
   );
 };
@@ -85,6 +95,7 @@ interface UseSyncExRateToFormProps {
  */
 export const useSyncExRateToForm = ({ onSynced }: UseSyncExRateToFormProps) => {
   const { setFieldValue, values } = useFormikContext();
+  // @ts-ignore - Ignore the type error for now, we'll fix later
   const { autoExRateCurrency, autoExchangeRate, isAutoExchangeRateLoading } = useAutoExRateContext();
   const updateEntriesOnExChange = useUpdateEntriesOnExchangeRateChange();
 
@@ -94,8 +105,8 @@ export const useSyncExRateToForm = ({ onSynced }: UseSyncExRateToFormProps) => {
       // Sets a default ex. rate to 1 in case the exchange rate service wasn't configured.
       // or returned an error from the server-side.
       const exchangeRate = autoExchangeRate?.exchange_rate || 1;
-
-      setFieldValue('exchange_rate', exchangeRate + '');
+      setFieldValue('exchange_rate', `${exchangeRate}`);
+      // @ts-ignore - Ignore the type error for now, we'll fix later
       setFieldValue('entries', updateEntriesOnExChange(values.exchange_rate, exchangeRate));
       onSynced?.();
     }

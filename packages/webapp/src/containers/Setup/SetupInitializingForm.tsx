@@ -15,10 +15,7 @@ import '@/style/pages/Setup/Initializing.scss';
 /**
  * Setup initializing step form.
  */
-function SetupInitializingForm({
-  setOrganizationSetupCompleted,
-  organization,
-}) {
+function SetupInitializingForm({ setOrganizationSetupCompleted, organization }) {
   const { refetch, isSuccess } = useCurrentOrganization({ enabled: false });
 
   // Job done state.
@@ -47,7 +44,7 @@ function SetupInitializingForm({
   }, [setOrganizationSetupCompleted, isJobDone, isSuccess]);
 
   return (
-    <div class="setup-initializing-form">
+    <div className="setup-initializing-form">
       {failed ? (
         <SetupInitializingFailed />
       ) : running || queued || isJobFetching ? (
@@ -74,12 +71,12 @@ export default R.compose(
  */
 function SetupInitializingFailed() {
   return (
-    <div class="setup-initializing__content">
+    <div className="setup-initializing__content">
       <div className={'setup-initializing-form__title'}>
         <h1>
           <T id={'setup.initializing.something_went_wrong'} />
         </h1>
-        <p class="paragraph">
+        <p className="paragraph">
           <T id={'setup.initializing.please_refresh_the_page'} />
         </p>
       </div>
@@ -92,7 +89,7 @@ function SetupInitializingFailed() {
  */
 function SetupInitializingRunning() {
   return (
-    <div class="setup-initializing__content">
+    <div className="setup-initializing__content">
       <ProgressBar intent={Intent.PRIMARY} value={null} />
 
       <div className={'setup-initializing-form__title'}>
@@ -112,15 +109,13 @@ function SetupInitializingRunning() {
  */
 function SetupInitializingCompleted() {
   return (
-    <div class="setup-initializing__content">
+    <div className="setup-initializing__content">
       <div className={'setup-initializing-form__title'}>
         <h1>
           <T id={'setup.initializing.waiting_to_redirect'} />
         </h1>
-        <p class="paragraph">
-          <T
-            id={'setup.initializing.refresh_the_page_if_redirect_not_worked'}
-          />
+        <p className="paragraph">
+          <T id={'setup.initializing.refresh_the_page_if_redirect_not_worked'} />
         </p>
       </div>
     </div>

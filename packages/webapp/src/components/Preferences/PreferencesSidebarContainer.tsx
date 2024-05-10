@@ -6,15 +6,10 @@ import { CLASSES } from '@/constants/classes';
 
 export default function PreferencesSidebarContainer({ children }) {
   return (
-    <div
-      className={classNames(
-        CLASSES.PREFERENCES_PAGE_SIDEBAR,
-        CLASSES.PREFERENCES_SIDEBAR,
-      )}
-    >
-      <div class="preferences-sidebar__wrapper">
+    <div className={classNames(CLASSES.PREFERENCES_PAGE_SIDEBAR, CLASSES.PREFERENCES_SIDEBAR)}>
+      <div className="preferences-sidebar__wrapper">
         <Scrollbar noDefaultStyles={true}>
-          <div class="preferences-sidebar__inner">{children}</div>
+          <div className="preferences-sidebar__inner">{children}</div>
         </Scrollbar>
       </div>
     </div>

@@ -13,10 +13,7 @@ import withVendorsTransaction from './withVendorsTransaction';
 import withVendorsTransactionsActions from './withVendorsTransactionsActions';
 
 import { compose, transformToForm } from '@/utils';
-import {
-  getVendorTransactionsQuerySchema,
-  getVendorsTransactionsDefaultQuery,
-} from './_utils';
+import { getVendorTransactionsQuerySchema, getVendorsTransactionsDefaultQuery } from './_utils';
 
 /**
  * Vendors transactions header.
@@ -60,25 +57,14 @@ function VendorsTransactionsHeader({
   };
 
   return (
-    <FinancialStatementHeader
-      isOpen={isFilterDrawerOpen}
-      drawerProps={{ onClose: handleDrawerClose }}
-    >
-      <Formik
-        initialValues={initialValues}
-        validationSchema={validationSchema}
-        onSubmit={handleSubmit}
-      >
+    <FinancialStatementHeader isOpen={isFilterDrawerOpen} drawerProps={{ onClose: handleDrawerClose }}>
+      <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
         <Form>
           <Tabs animate={true} vertical={true} renderActiveTabPanelOnly={true}>
-            <Tab
-              id="general"
-              title={<T id={'general'} />}
-              panel={<VendorsTransactionsHeaderGeneralPanel />}
-            />
+            <Tab id="general" title={<T id={'general'} />} panel={<VendorsTransactionsHeaderGeneralPanel />} />
           </Tabs>
 
-          <div class="financial-header-drawer__footer">
+          <div className="financial-header-drawer__footer">
             <Button className={'mr1'} intent={Intent.PRIMARY} type={'submit'}>
               <T id={'calculate_report'} />
             </Button>
