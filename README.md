@@ -1,3 +1,40 @@
+<p align="center" style="font-size: 1.25em;">
+    <span style="font-size: 1.25em;"><strong>Y</strong></span><span style="color: #a0a0a0;">et</span>
+    <span style="font-size: 1.25em;"><strong>A</strong></span><span style="color: #a0a0a0;">nother</span>
+    <span style="font-size: 1.25em;"><strong>C</strong></span><span style="color: #a0a0a0;">apital</span>
+    <span style="font-size: 1.25em;"><strong>S</strong></span><span style="color: #a0a0a0;">ystem</span>
+    <hr>
+</p>
+
+# Credit Where Credit Is Due
+All the hard work and credit for the logic of the project goes to the maintainer and contributors of the original BigCapital project. This fork is being done to help encourage the upstream BigCapital project to modernize the tooling and development experience.
+
+# Why Fork BigCapital?
+The key reasons this repo exists are:
+- As of May 2024, the BigCapital repo is struggling to be typesafe. The project started as plain JS and is rolling out into production SaaS while severe typesafety problems are still present. Features are being piled on, but the codebase has serious issues and needs to be refactored. So ... why not rip-and-replace all the stuff that's causing problems with "better stuff" 🕺
+- I wanted to _replace_ [Prettier](https://prettier.io/) and [Eslint](https://eslint.org/) with tools like [BiomeJS](https://biomejs.dev/) and [OXC](https://oxc-project.github.io/).
+- I wanted to remove [Lerna](https://lerna.js.org/) and make better use of [Nx](https://nx.dev/)
+- I wanted replace [Knex.js](https://knexjs.org/) with [Drizzle ORM](https://orm.drizzle.team/)
+- I wanted first-class support for [PostgreSQL](https://www.postgresql.org/) w/ [schemas](https://www.postgresql.org/docs/current/ddl-schemas.html) instead of separate MySQL instances.
+- I wanted to build the system around my own needs, while also making our improvements available to others
+
+# Feature Pairity w/ Upstream
+- We use the [`upstream/develop`](https://github.com/snydertechnologies/yacs/tree/upstream/develop) branch to sync with [BigCapital](https://github.com/bigcapitalhq/bigcapital)'s [`develop`](https://github.com/bigcapitalhq/bigcapital/tree/develop) branch
+- When we've ported functionality from upstream, we'll update [`upstream/migrated-to-yaas`](https://github.com/snydertechnologies/yacs/tree/upstream/migrated-to-yaas) and document this README
+
+# Current state of things
+  - Initial installer isn't executing the "Job" that makes the tenant database. Working to fix this or replace the existing job approach with something Drizzle can do. For now, you can seed using BigCapital repo, then after the tenant database is created, you can run this `server`.
+  - Vite frontend works for `webapp`
+  - Bun backend works for `server`, and compiled to [single-file executables](https://bun.sh/docs/bundler/executables)
+  - The `website` has been copied and I plan to update it, paying homage to the original BigCapital and referring people there. This project doesn't ain to take bread from the mouths of the original maintainers, but to help them modernize the project.
+
+# Coming soon
+- [Snyder Tech](https://snyder.tech) will be donating infrastructure and developer time to help maintain this project on an ongoing basis, making it easy for others to get involved.
+- [Keycloak](https://www.keycloak.org/), [Zitadel](https://zitadel.com/) and generic [OIDC](https://en.wikipedia.org/wiki/OpenID#OpenID_Connect_.28OIDC.29) support for authentication and multi-org support to be a focal point of the project
+
+<br>
+<hr><hr><hr>
+<br>
 <p align="center">
   <p align="center">
     <a href="https://bigcapital.app" target="_blank">
