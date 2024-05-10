@@ -9,3 +9,5 @@ node_modules/
 test-results/
 bun.lockb
 .nx
+dist
+*.log

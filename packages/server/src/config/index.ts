@@ -9,7 +9,7 @@ dotenv.config();
 
 const API_RATE_LIMIT = process.env.API_RATE_LIMIT?.split(',') || [];
 
-process.env.APP_ROOT_DIR = path.join(__dirname, '..');
+process.env.APP_ROOT_DIR = path.join(__dirname, '../../');
 process.env.APP_RESOURCES_DIR = path.join(process.env.APP_ROOT_DIR, 'resources');
 process.env.APP_LOCALES_DIR = path.join(process.env.APP_RESOURCES_DIR, 'locales');
 process.env.APP_VIEWS_DIR = path.join(process.env.APP_ROOT_DIR, 'views');
@@ -21,7 +21,7 @@ console.log('APP_LOCALES_DIR:', process.env.APP_LOCALES_DIR);
 console.log('APP_VIEWS_DIR:', process.env.APP_VIEWS_DIR);
 console.log('APP_STORAGE_DIR:', process.env.APP_STORAGE_DIR);
 
-module.exports = {
+export default {
   /**
    * Your favorite port
    */

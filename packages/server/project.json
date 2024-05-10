@@ -5,6 +5,27 @@
   "sourceRoot": "packages/server/src",
   "tags": ["stack:edge", "lang:typescript", "framework:express"],
   "targets": {
+    "install": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["cd packages/server && bun i"],
+        "parallel": false
+      }
+    },
+    "format": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["cd packages/server && bun --bun format"],
+        "parallel": false
+      }
+    },
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["cd packages/server && bun --bun lint"],
+        "parallel": false
+      }
+    },
     "build": {
       "configurations": {
         "production": {}
@@ -12,7 +33,7 @@
       "executor": "nx:run-commands",
       "options": {
         "commands": [
-          "bun build --compile --sourcemap packages/server/src/index.ts --outfile dist/packages/server/YACS.Server.bun --target bun"
+          "cd packages/server && bun build --compile --sourcemap ./src/index.ts --outfile ../../dist/packages/server/YACS.Server.bun --target bun"
         ],
         "parallel": false
       }
@@ -24,9 +45,8 @@
       "executor": "nx:run-commands",
       "options": {
         "commands": [
-          "gulp --gulpfile=scripts/gulpfile.cjs styles styles-rtl",
-          "cross-env NODE_ENV=production bun build packages/server/src/index.ts --outdir build/server --target bun",
-          "cross-env NODE_ENV=production bun build packages/server/src/commands/index.ts --outdir build/commands --target bun"
+          "cd packages/server && gulp --gulpfile=scripts/gulpfile.cjs styles styles-rtl",
+          "cd packages/server && NODE_ENV=production bun build --compile --sourcemap ./src/commands/index.ts --outfile ../../dist/packages/server/YACS.Server.Commands.bun --target bun"
         ],
         "parallel": false
       }

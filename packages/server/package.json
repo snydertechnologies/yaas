@@ -10,12 +10,9 @@
   },
   "scripts": {
     "inspect": "cross-env NODE_PATH=./src nodemon src/server.ts",
-    "clear": "rimraf build",
     "format": "biome format --write ./",
     "lint": "biome check --apply ./",
-    "dev": "bun run serve",
-    "serve": "bun run index.ts --watch",
-    "lint:eslint": "eslint --fix ./**/*.ts"
+    "dev": "bun run serve"
   },
   "dependencies": {
     "@casl/ability": "^5.4.3",

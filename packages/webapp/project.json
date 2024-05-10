@@ -1,0 +1,49 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "name": "webapp",
+  "projectType": "application",
+  "sourceRoot": "packages/webapp/src",
+  "tags": ["stack:edge", "lang:typescript", "framework:express"],
+  "targets": {
+    "build": {
+      "configurations": {
+        "production": {}
+      },
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["cd packages/webapp && vite build"],
+        "parallel": false
+      }
+    },
+    "format": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["cd packages/webapp && bun --bun format"],
+        "parallel": false
+      }
+    },
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["cd packages/webapp && bun --bun lint"],
+        "parallel": false
+      }
+    },
+    "install": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["cd packages/webapp && bun i"],
+        "parallel": false
+      }
+    },
+    "serve": {
+      "configurations": {
+        "production": {}
+      },
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "cd packages/webapp && vite"
+      }
+    }
+  }
+}
