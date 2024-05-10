@@ -1,12 +1,6 @@
 // @ts-nocheck
 import React from 'react';
-import {
-  AccountsSelect,
-  FFormGroup,
-  FormattedMessage as T,
-  Col,
-  Row,
-} from '@/components';
+import { AccountsSelect, FFormGroup, FormattedMessage as T, Col, Row } from '@/components';
 
 import withCurrentOrganization from '@/containers/Organization/withCurrentOrganization';
 import { accountsFieldShouldUpdate } from './utils';
@@ -21,7 +15,7 @@ function ItemFormInventorySection({ organization: { base_currency } }) {
   const { accounts } = useItemFormContext();
 
   return (
-    <div class="page-form__section page-form__section--inventory">
+    <div className="page-form__section page-form__section--inventory">
       <h3>
         <T id={'inventory_information'} />
       </h3>

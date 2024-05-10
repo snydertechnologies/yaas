@@ -28,9 +28,7 @@ function ReceiptUniversalSearchSelectComponent({
   return null;
 }
 
-export const ReceiptUniversalSearchSelect = withDrawerActions(
-  ReceiptUniversalSearchSelectComponent,
-);
+export const ReceiptUniversalSearchSelect = withDrawerActions(ReceiptUniversalSearchSelectComponent);
 
 /**
  * Status accessor.
@@ -39,13 +37,13 @@ function ReceiptStatus({ receipt }) {
   return (
     <Choose>
       <Choose.When condition={receipt.is_closed}>
-        <span class="closed">
+        <span className="closed">
           <T id={'closed'} />
         </span>
       </Choose.When>
 
       <Choose.Otherwise>
-        <span class="draft">
+        <span className="draft">
           <T id={'draft'} />
         </span>
       </Choose.Otherwise>
@@ -56,26 +54,22 @@ function ReceiptStatus({ receipt }) {
 /**
  * Receipt universal search item.
  */
-export function ReceiptUniversalSearchItem(
-  item,
-  { handleClick, modifiers, query },
-) {
+export function ReceiptUniversalSearchItem(item, { handleClick, modifiers, query }) {
   return (
     <MenuItem
       active={modifiers.active}
       text={
         <div>
           <div>{item.text}</div>
-          <span class="bp4-text-muted">
-            {item.reference.receipt_number}{' '}
-            <Icon icon={'caret-right-16'} iconSize={16} />
+          <span className="bp4-text-muted">
+            {item.reference.receipt_number} <Icon icon={'caret-right-16'} iconSize={16} />
             {item.reference.formatted_receipt_date}
           </span>
         </div>
       }
       label={
         <>
-          <div class="amount">{item.reference.formatted_amount}</div>
+          <div className="amount">{item.reference.formatted_amount}</div>
           <ReceiptStatus receipt={item.reference} />
         </>
       }

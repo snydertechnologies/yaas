@@ -18,10 +18,7 @@ import BalanceSheetHeaderDimensionsPanel from './BalanceSheetHeaderDimensionsPan
 import FinancialStatementHeader from '../../FinancialStatements/FinancialStatementHeader';
 
 import { compose, transformToForm } from '@/utils';
-import {
-  getBalanceSheetHeaderValidationSchema,
-  getDefaultBalanceSheetQuery,
-} from './utils';
+import { getBalanceSheetHeaderValidationSchema, getDefaultBalanceSheetQuery } from './utils';
 
 /**
  * Balance sheet header.
@@ -77,18 +74,10 @@ function BalanceSheetHeader({
         onClose: handleDrawerClose,
       }}
     >
-      <Formik
-        initialValues={initialValues}
-        validationSchema={validationSchema}
-        onSubmit={handleSubmit}
-      >
+      <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
         <Form>
           <Tabs animate={true} vertical={true} renderActiveTabPanelOnly={true}>
-            <Tab
-              id="general"
-              title={<T id={'general'} />}
-              panel={<BalanceSheetHeaderGeneralPanal />}
-            />
+            <Tab id="general" title={<T id={'general'} />} panel={<BalanceSheetHeaderGeneralPanal />} />
             <Tab
               id="comparison"
               title={<T id={'balance_sheet.comparisons'} />}
@@ -103,7 +92,7 @@ function BalanceSheetHeader({
             )}
           </Tabs>
 
-          <div class="financial-header-drawer__footer">
+          <div className="financial-header-drawer__footer">
             <Button className={'mr1'} intent={Intent.PRIMARY} type={'submit'}>
               <T id={'calculate_report'} />
             </Button>

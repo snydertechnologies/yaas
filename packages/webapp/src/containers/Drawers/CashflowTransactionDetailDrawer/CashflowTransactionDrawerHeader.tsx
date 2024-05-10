@@ -23,7 +23,7 @@ export default function CashflowTransactionDrawerHeader() {
       <CommercialDocHeader>
         <DetailsMenu>
           <DetailItem name={'total'} label={<T id={'total'} />}>
-            <h3 class="big-number">{cashflowTransaction.formatted_amount}</h3>
+            <h3 className="big-number">{cashflowTransaction.formatted_amount}</h3>
           </DetailItem>
         </DetailsMenu>
       </CommercialDocHeader>
@@ -31,17 +31,11 @@ export default function CashflowTransactionDrawerHeader() {
       <Row>
         <Col xs={6}>
           <DetailsMenu direction={'horizantal'} minLabelSize={'180px'}>
-            <DetailItem
-              name={'transaction_type'}
-              label={<T id={'cash_flow_drawer.label_transaction_type'} />}
-            >
+            <DetailItem name={'transaction_type'} label={<T id={'cash_flow_drawer.label_transaction_type'} />}>
               {cashflowTransaction.transaction_type_formatted}
             </DetailItem>
 
-            <DetailItem
-              name={'transaction_number'}
-              label={<T id={'cash_flow.drawer.label_transaction_no'} />}
-            >
+            <DetailItem name={'transaction_number'} label={<T id={'cash_flow.drawer.label_transaction_no'} />}>
               {cashflowTransaction.transaction_number}
             </DetailItem>
 

@@ -7,9 +7,9 @@ import '@/style/pages/Setup/SetupPage.scss';
 
 export default function WizardSetupPage() {
   return (
-    <div class="setup-page">
+    <div className="setup-page">
       <SetupLeftSection />
       <SetupRightSection />
     </div>
   );
-};
+}

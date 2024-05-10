@@ -16,10 +16,7 @@ import withInventoryValuationActions from './withInventoryValuationActions';
 import { compose, transformToForm } from '@/utils';
 import { useFeatureCan } from '@/hooks/state';
 import { Features } from '@/constants';
-import {
-  getInventoryValuationQuery,
-  getInventoryValuationQuerySchema,
-} from './utils';
+import { getInventoryValuationQuery, getInventoryValuationQuerySchema } from './utils';
 
 /**
  * inventory valuation header.
@@ -71,22 +68,11 @@ function InventoryValuationHeader({
   const isWarehousesFeatureCan = featureCan(Features.Warehouses);
 
   return (
-    <InventoryValuationDrawerHeader
-      isOpen={isFilterDrawerOpen}
-      drawerProps={{ onClose: handleDrawerClose }}
-    >
-      <Formik
-        initialValues={initialValues}
-        validationSchema={validationSchema}
-        onSubmit={handleSubmit}
-      >
+    <InventoryValuationDrawerHeader isOpen={isFilterDrawerOpen} drawerProps={{ onClose: handleDrawerClose }}>
+      <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
         <Form>
           <Tabs animate={true} vertical={true} renderActiveTabPanelOnly={true}>
-            <Tab
-              id="general"
-              title={<T id={'general'} />}
-              panel={<InventoryValuationHeaderGeneralPanel />}
-            />
+            <Tab id="general" title={<T id={'general'} />} panel={<InventoryValuationHeaderGeneralPanel />} />
             {(isBranchesFeatureCan || isWarehousesFeatureCan) && (
               <Tab
                 id="dimensions"
@@ -95,7 +81,7 @@ function InventoryValuationHeader({
               />
             )}
           </Tabs>
-          <div class="financial-header-drawer__footer">
+          <div className="financial-header-drawer__footer">
             <Button className={'mr1'} intent={Intent.PRIMARY} type={'submit'}>
               <T id={'calculate_report'} />
             </Button>

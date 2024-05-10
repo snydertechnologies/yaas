@@ -15,11 +15,11 @@
  * limitations under the License.
  */
 
-import classNames from 'classnames';
-import * as React from 'react';
-import { Classes, Props } from '@blueprintjs/core';
 import IconSvgPaths from '@/static/json/icons';
+import { Classes, Props } from '@blueprintjs/core';
+import classNames from 'classnames';
 import PropTypes from 'prop-types';
+import * as React from 'react';
 export interface IconProps extends Props {
   color?: string;
   htmlTitle?: string;
@@ -28,6 +28,8 @@ export interface IconProps extends Props {
   style?: object;
   tagName?: keyof JSX.IntrinsicElements;
   title?: string;
+  height?: number;
+  width?: number;
 }
 
 export class Icon extends React.Component<IconProps> {
@@ -58,8 +60,7 @@ export class Icon extends React.Component<IconProps> {
     } = this.props;
 
     // choose which pixel grid is most appropriate for given icon size
-    const pixelGridSize =
-      iconSize >= Icon.SIZE_LARGE ? Icon.SIZE_LARGE : Icon.SIZE_STANDARD;
+    const pixelGridSize = iconSize >= Icon.SIZE_LARGE ? Icon.SIZE_LARGE : Icon.SIZE_STANDARD;
     const iconPath = this.getSvgPath(icon);
 
     if (!iconPath) {
@@ -69,12 +70,7 @@ export class Icon extends React.Component<IconProps> {
     // render path elements, or nothing if icon name is unknown.
     const paths = this.renderSvgPaths(iconPath.path);
 
-    const classes = classNames(
-      Classes.ICON,
-      Classes.iconClass(icon),
-      Classes.intentClass(intent),
-      className,
-    );
+    const classes = classNames(Classes.ICON, Classes.iconClass(icon), Classes.intentClass(intent), className);
     const viewBox = iconPath.viewBox;
 
     const computedHeight = height || iconSize;
@@ -87,13 +83,7 @@ export class Icon extends React.Component<IconProps> {
         className: classes,
         title: htmlTitle,
       },
-      <svg
-        fill={color}
-        data-icon={icon}
-        width={computedWidth}
-        height={computedHeight}
-        viewBox={viewBox}
-      >
+      <svg fill={color} data-icon={icon} width={computedWidth} height={computedHeight} viewBox={viewBox}>
         {title && <desc>{title}</desc>}
         {paths}
       </svg>,
@@ -112,9 +102,7 @@ export class Icon extends React.Component<IconProps> {
     if (pathStrings == null) {
       return null;
     }
-    return pathStrings.map((d, i) => (
-      <path key={i} d={d} className={`path-${i + 1}`} fillRule="evenodd" />
-    ));
+    return pathStrings.map((d, i) => <path key={i} d={d} className={`path-${i + 1}`} fillRule="evenodd" />);
   }
 }
 

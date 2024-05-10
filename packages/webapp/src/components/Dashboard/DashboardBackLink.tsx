@@ -13,17 +13,14 @@ function DashboardBackLink({ dashboardBackLink, breadcrumbs }) {
   const crumb = breadcrumbs[breadcrumbs.length - 2];
 
   const handleClick = (event) => {
-    const url =
-      typeof dashboardBackLink === 'string'
-        ? dashboardBackLink
-        : crumb.match.url;
+    const url = typeof dashboardBackLink === 'string' ? dashboardBackLink : crumb.match.url;
     history.push(url);
     event.preventDefault();
   };
 
   return (
     <If condition={dashboardBackLink && crumb}>
-      <div class="dashboard__back-link">
+      <div className="dashboard__back-link">
         <a href="#no-link" onClick={handleClick}>
           <Icon icon={'arrow-left'} iconSize={18} /> <T id={'back_to_list'} />
         </a>

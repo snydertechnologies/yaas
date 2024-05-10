@@ -40,9 +40,7 @@ const getState = ({ currentPage, size, total }) => {
       endPage = currentPage + halfVisibleItems - 1;
     }
   }
-  const pages = [...Array(endPage + 1 - startPage).keys()].map(
-    (i) => startPage + i,
-  );
+  const pages = [...Array(endPage + 1 - startPage).keys()].map((i) => startPage + i);
 
   // Too large or small currentPage
   let correctCurrentpage = currentPage;
@@ -91,11 +89,7 @@ export function Pagination({
   onPageChange,
   onPageSizeChange,
 }) {
-  const [state, dispatch] = useReducer(
-    reducer,
-    { currentPage, total, size },
-    getState,
-  );
+  const [state, dispatch] = useReducer(reducer, { currentPage, total, size }, getState);
 
   useEffect(() => {
     dispatch({
@@ -107,8 +101,8 @@ export function Pagination({
   }, [total, size, currentPage]);
 
   return (
-    <div class="pagination">
-      <div class="pagination__buttons-group">
+    <div className="pagination">
+      <div className="pagination__buttons-group">
         <ButtonGroup>
           <Button
             disabled={state.currentPage <= 1}
@@ -139,13 +133,9 @@ export function Pagination({
                 onPageChange({ page, pageSize });
               }}
               minimal={true}
-              className={classNames(
-                'pagination__item',
-                'pagination__item--page',
-                {
-                  'is-active': state.currentPage === page,
-                },
-              )}
+              className={classNames('pagination__item', 'pagination__item--page', {
+                'is-active': state.currentPage === page,
+              })}
             >
               {page}
             </Button>
@@ -171,8 +161,8 @@ export function Pagination({
         </ButtonGroup>
       </div>
 
-      <div class="pagination__controls">
-        <div class="pagination__goto-control">
+      <div className="pagination__controls">
+        <div className="pagination__goto-control">
           Go to
           <HTMLSelect
             minimal={true}
@@ -188,7 +178,7 @@ export function Pagination({
           />
         </div>
 
-        <div class="pagination__pagesize-control">
+        <div className="pagination__pagesize-control">
           <T id={'page_size'} />
           <HTMLSelect
             minimal={true}
@@ -205,7 +195,7 @@ export function Pagination({
         </div>
       </div>
 
-      <div class="pagination__info">
+      <div className="pagination__info">
         {intl.get('showing_current_page_to_total', {
           currentPage: state.currentPage,
           totalPages: state.totalPages,
