@@ -1,14 +1,10 @@
+import { ServiceError } from '@/exceptions';
+import { Import } from '@/system/models';
 import { fromPairs, isUndefined } from 'lodash';
 import { Inject, Service } from 'typedi';
-import {
-  ImportDateFormats,
-  ImportFileMapPOJO,
-  ImportMappingAttr,
-} from './interfaces';
 import ResourceService from '../Resource/ResourceService';
-import { ServiceError } from '@/exceptions';
 import { ERRORS } from './_utils';
-import { Import } from '@/system/models';
+import { ImportDateFormats, ImportFileMapPOJO, ImportMappingAttr } from './interfaces';
 
 @Service()
 export class ImportFileMapping {
@@ -21,14 +17,8 @@ export class ImportFileMapping {
    * @param {number} importId
    * @param {ImportMappingAttr} maps
    */
-  public async mapping(
-    tenantId: number,
-    importId: number,
-    maps: ImportMappingAttr[]
-  ): Promise<ImportFileMapPOJO> {
-    const importFile = await Import.query()
-      .findOne('filename', importId)
-      .throwIfNotFound();
+  public async mapping(tenantId: number, importId: number, maps: ImportMappingAttr[]): Promise<ImportFileMapPOJO> {
+    const importFile = await Import.query().findOne('filename', importId).throwIfNotFound();
 
     // Invalidate the from/to map attributes.
     this.validateMapsAttrs(tenantId, importFile, maps);
@@ -59,18 +49,9 @@ export class ImportFileMapping {
    * @param {ImportMappingAttr[]} maps
    * @throws {ServiceError(ERRORS.INVALID_MAP_ATTRS)}
    */
-  private validateMapsAttrs(
-    tenantId: number,
-    importFile: any,
-    maps: ImportMappingAttr[]
-  ) {
-    const fields = this.resource.getResourceFields2(
-      tenantId,
-      importFile.resource
-    );
-    const columnsMap = fromPairs(
-      importFile.columnsParsed.map((field) => [field, ''])
-    );
+  private validateMapsAttrs(tenantId: number, importFile: any, maps: ImportMappingAttr[]) {
+    const fields = this.resource.getResourceFields2(tenantId, importFile.resource);
+    const columnsMap = fromPairs(importFile.columnsParsed.map((field) => [field, '']));
     const invalid = [];
 
     // is not empty, is not undefined or map.group
@@ -109,9 +90,7 @@ export class ImportFileMapping {
       } else {
         fromMap[map.from] = true;
       }
-      const toPath = !isUndefined(map?.group)
-        ? `${map.group}.${map.to}`
-        : map.to;
+      const toPath = !isUndefined(map?.group) ? `${map.group}.${map.to}` : map.to;
 
       if (toMap[toPath]) {
         throw new ServiceError(ERRORS.DUPLICATED_TO_MAP_ATTR);
@@ -127,25 +106,12 @@ export class ImportFileMapping {
    * @param {string} resource
    * @param {ImportMappingAttr[]} maps
    */
-  private validateDateFormatMapping(
-    tenantId: number,
-    resource: string,
-    maps: ImportMappingAttr[]
-  ) {
-    const fields = this.resource.getResourceImportableFields(
-      tenantId,
-      resource
-    );
+  private validateDateFormatMapping(tenantId: number, resource: string, maps: ImportMappingAttr[]) {
+    const fields = this.resource.getResourceImportableFields(tenantId, resource);
     // @todo Validate date type of the nested fields.
     maps.forEach((map) => {
-      if (
-        typeof fields[map.to] !== 'undefined' &&
-        fields[map.to].fieldType === 'date'
-      ) {
-        if (
-          typeof map.dateFormat !== 'undefined' &&
-          ImportDateFormats.indexOf(map.dateFormat) === -1
-        ) {
+      if (typeof fields[map.to] !== 'undefined' && fields[map.to].fieldType === 'date') {
+        if (typeof map.dateFormat !== 'undefined' && ImportDateFormats.indexOf(map.dateFormat) === -1) {
           throw new ServiceError(ERRORS.INVALID_MAP_DATE_FORMAT);
         }
       }

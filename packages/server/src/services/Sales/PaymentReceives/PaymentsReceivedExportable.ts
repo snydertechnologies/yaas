@@ -1,6 +1,6 @@
-import { Inject, Service } from 'typedi';
 import { IAccountsStructureType, IPaymentReceivesFilter } from '@/interfaces';
 import { Exportable } from '@/services/Export/Exportable';
+import { Inject, Service } from 'typedi';
 import { PaymentReceivesApplication } from './PaymentReceivesApplication';
 
 @Service()
@@ -23,8 +23,6 @@ export class PaymentsReceivedExportable extends Exportable {
       structure: IAccountsStructureType.Flat,
     } as IPaymentReceivesFilter;
 
-    return this.paymentReceivedApp
-      .getPaymentReceives(tenantId, parsedQuery)
-      .then((output) => output.paymentReceives);
+    return this.paymentReceivedApp.getPaymentReceives(tenantId, parsedQuery).then((output) => output.paymentReceives);
   }
 }

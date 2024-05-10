@@ -22,8 +22,7 @@ export const useResourceExport = () => {
       .get('/export', {
         responseType: 'blob',
         headers: {
-          accept:
-            data.format === 'xlsx' ? 'application/xlsx' : 'application/csv',
+          accept: data.format === 'xlsx' ? 'application/xlsx' : 'application/csv',
         },
         params: {
           resource: data.resource,

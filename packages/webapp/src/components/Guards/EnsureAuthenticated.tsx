@@ -8,15 +8,8 @@ interface EnsureAuthenticatedProps {
   redirectTo?: string;
 }
 
-export function EnsureAuthenticated({
-  children,
-  redirectTo = '/auth/login',
-}: EnsureAuthenticatedProps) {
+export function EnsureAuthenticated({ children, redirectTo = '/auth/login' }: EnsureAuthenticatedProps) {
   const isAuthenticated = useIsAuthenticated();
 
-  return isAuthenticated ? (
-    <>{children}</>
-  ) : (
-    <Redirect to={{ pathname: redirectTo }} />
-  );
+  return isAuthenticated ? <>{children}</> : <Redirect to={{ pathname: redirectTo }} />;
 }

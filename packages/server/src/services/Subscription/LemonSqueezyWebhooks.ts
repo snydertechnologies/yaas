@@ -1,15 +1,9 @@
-import { getPrice } from '@lemonsqueezy/lemonsqueezy.js';
 import config from '@/config';
-import { Inject, Service } from 'typedi';
-import {
-  compareSignatures,
-  configureLemonSqueezy,
-  createHmacSignature,
-  webhookHasData,
-  webhookHasMeta,
-} from './utils';
 import { Plan } from '@/system/models';
+import { getPrice } from '@lemonsqueezy/lemonsqueezy.js';
+import { Inject, Service } from 'typedi';
 import { Subscription } from './Subscription';
+import { compareSignatures, configureLemonSqueezy, createHmacSignature, webhookHasData, webhookHasMeta } from './utils';
 
 @Service()
 export class LemonSqueezyWebhooks {
@@ -22,11 +16,7 @@ export class LemonSqueezyWebhooks {
    * @param {string} signature
    * @returns {Promise<void>}
    */
-  public async handlePostWebhook(
-    rawData: any,
-    data: Record<string, any>,
-    signature: string
-  ): Promise<void> {
+  public async handlePostWebhook(rawData: any, data: Record<string, any>, signature: string): Promise<void> {
     configureLemonSqueezy();
 
     if (!config.lemonSqueezy.webhookSecret) {
@@ -49,7 +39,7 @@ export class LemonSqueezyWebhooks {
 
   /**
    * This action will process a webhook event in the database.
-   * @param {unknown} eventBody - 
+   * @param {unknown} eventBody -
    * @returns {Promise<void>}
    */
   private async processWebhookEvent(eventBody): Promise<void> {
@@ -82,22 +72,16 @@ export class LemonSqueezyWebhooks {
           const priceData = await getPrice(priceId);
 
           if (priceData.error) {
-            throw new Error(
-              `Failed to get the price data for the subscription ${eventBody.data.id}.`
-            );
+            throw new Error(`Failed to get the price data for the subscription ${eventBody.data.id}.`);
           }
-          const isUsageBased =
-            attributes.first_subscription_item.is_usage_based;
+          const isUsageBased = attributes.first_subscription_item.is_usage_based;
           const price = isUsageBased
             ? priceData.data?.data.attributes.unit_price_decimal
             : priceData.data?.data.attributes.unit_price;
 
           // Create a new subscription of the tenant.
           if (webhookEvent === 'subscription_created') {
-            await this.subscriptionService.newSubscribtion(
-              tenantId,
-              'early-adaptor',
-            );
+            await this.subscriptionService.newSubscribtion(tenantId, 'early-adaptor');
           }
         }
       } else if (webhookEvent.startsWith('order_')) {

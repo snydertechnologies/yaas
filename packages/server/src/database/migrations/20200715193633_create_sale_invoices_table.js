@@ -1,12 +1,7 @@
 exports.up = function (knex) {
   return knex.schema.createTable('sales_invoices', (table) => {
     table.increments();
-    table
-      .integer('customer_id')
-      .unsigned()
-      .index()
-      .references('id')
-      .inTable('contacts');
+    table.integer('customer_id').unsigned().index().references('id').inTable('contacts');
 
     table.date('invoice_date').index();
     table.date('due_date');

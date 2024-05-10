@@ -1,6 +1,5 @@
 import TenantModel from 'models/TenantModel';
-import { Model, ModelOptions, QueryContext, mixin } from 'objection';
-import * as R from 'ramda';
+import { Model, type ModelOptions, type QueryContext, mixin } from 'objection';
 import Account from './Account';
 import ModelSettings from './ModelSetting';
 import UncategorizedCashflowTransactionMeta from './UncategorizedCashflowTransaction.meta';

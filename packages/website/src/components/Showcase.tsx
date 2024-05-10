@@ -7,54 +7,24 @@ function ShowcaseCarousel() {
   return (
     <Carousel>
       <ShowcaseBrowser>
-        <Image
-          src="/showcase/showcase-3.png"
-          alt=""
-          width="1190"
-          height="845"
-        />
+        <Image src="/showcase/showcase-3.png" alt="" width="1190" height="845" />
       </ShowcaseBrowser>
 
       <ShowcaseBrowser>
-        <Image
-          src="/showcase/showcase-10.png"
-          alt=""
-          width="1190"
-          height="845"
-        />
+        <Image src="/showcase/showcase-10.png" alt="" width="1190" height="845" />
       </ShowcaseBrowser>
 
       <ShowcaseBrowser>
-        <Image
-          src="/showcase/showcase-4.png"
-          alt=""
-          width="1190"
-          height="845"
-        />
+        <Image src="/showcase/showcase-4.png" alt="" width="1190" height="845" />
       </ShowcaseBrowser>
       <ShowcaseBrowser>
-        <Image
-          src="/showcase/showcase-5.png"
-          alt=""
-          width="1190"
-          height="845"
-        />
+        <Image src="/showcase/showcase-5.png" alt="" width="1190" height="845" />
       </ShowcaseBrowser>
       <ShowcaseBrowser>
-        <Image
-          src="/showcase/showcase-6.png"
-          alt=""
-          width="1190"
-          height="845"
-        />
+        <Image src="/showcase/showcase-6.png" alt="" width="1190" height="845" />
       </ShowcaseBrowser>
       <ShowcaseBrowser>
-        <Image
-          src="/showcase/showcase-7.png"
-          alt=""
-          width="1190"
-          height="845"
-        />
+        <Image src="/showcase/showcase-7.png" alt="" width="1190" height="845" />
       </ShowcaseBrowser>
     </Carousel>
   );
@@ -68,21 +38,9 @@ function ShowcaseBrowser({ children }: ShowcaseBrowserProps) {
     <div className="w-[950px] md:w-full px-[10px] md:px-[15px]">
       <div className={'flex h-[18px] rounded-t-lg bg-[#6d7688]'}>
         <div className={'flex ml-4 gap-2'}>
-          <span
-            className={
-              'self-center block h-1.5 w-1.5 bg-white rounded-lg opacity-60'
-            }
-          ></span>
-          <span
-            className={
-              'self-center block h-1.5 w-1.5 bg-white rounded-lg opacity-60'
-            }
-          ></span>
-          <span
-            className={
-              'self-center block h-1.5 w-1.5 bg-white rounded-lg opacity-60'
-            }
-          ></span>
+          <span className={'self-center block h-1.5 w-1.5 bg-white rounded-lg opacity-60'}></span>
+          <span className={'self-center block h-1.5 w-1.5 bg-white rounded-lg opacity-60'}></span>
+          <span className={'self-center block h-1.5 w-1.5 bg-white rounded-lg opacity-60'}></span>
         </div>
       </div>
 

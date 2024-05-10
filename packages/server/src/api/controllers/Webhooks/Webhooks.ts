@@ -1,10 +1,10 @@
-import { Router } from 'express';
 import { PlaidApplication } from '@/services/Banking/Plaid/PlaidApplication';
+import { PlaidWebhookTenantBootMiddleware } from '@/services/Banking/Plaid/PlaidWebhookTenantBootMiddleware';
+import { LemonSqueezyWebhooks } from '@/services/Subscription/LemonSqueezyWebhooks';
+import { Router } from 'express';
 import { Request, Response } from 'express';
 import { Inject, Service } from 'typedi';
 import BaseController from '../BaseController';
-import { LemonSqueezyWebhooks } from '@/services/Subscription/LemonSqueezyWebhooks';
-import { PlaidWebhookTenantBootMiddleware } from '@/services/Banking/Plaid/PlaidWebhookTenantBootMiddleware';
 
 @Service()
 export class Webhooks extends BaseController {
@@ -52,18 +52,9 @@ export class Webhooks extends BaseController {
    */
   public async plaidWebhooks(req: Request, res: Response) {
     const { tenantId } = req;
-    const {
-      webhook_type: webhookType,
-      webhook_code: webhookCode,
-      item_id: plaidItemId,
-    } = req.body;
+    const { webhook_type: webhookType, webhook_code: webhookCode, item_id: plaidItemId } = req.body;
 
-    await this.plaidApp.webhooks(
-      tenantId,
-      plaidItemId,
-      webhookType,
-      webhookCode
-    );
+    await this.plaidApp.webhooks(tenantId, plaidItemId, webhookType, webhookCode);
     return res.status(200).send({ code: 200, message: 'ok' });
   }
 }

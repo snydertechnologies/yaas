@@ -1,6 +1,6 @@
+import { IExpensesFilter } from '@/interfaces';
 import { Inject, Service } from 'typedi';
 import { Exportable } from '../Export/Exportable';
-import { IExpensesFilter } from '@/interfaces';
 import { ExpensesApplication } from './ExpensesApplication';
 
 @Service()
@@ -22,8 +22,6 @@ export class ExpensesExportable extends Exportable {
       pageSize: 12000,
     } as IExpensesFilter;
 
-    return this.expensesApplication
-      .getExpenses(tenantId, parsedQuery)
-      .then((output) => output.expenses);
+    return this.expensesApplication.getExpenses(tenantId, parsedQuery).then((output) => output.expenses);
   }
 }

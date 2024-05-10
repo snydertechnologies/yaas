@@ -1,10 +1,10 @@
+import SubscriptionPeriod from '@/services/Subscription/SubscriptionPeriod';
+import BaseModel from 'models/Model';
 import moment from 'moment';
 import { Model } from 'objection';
 import uniqid from 'uniqid';
-import SubscriptionPeriod from '@/services/Subscription/SubscriptionPeriod';
-import BaseModel from 'models/Model';
-import TenantMetadata from './TenantMetadata';
 import PlanSubscription from './Subscriptions/PlanSubscription';
+import TenantMetadata from './TenantMetadata';
 
 export default class Tenant extends BaseModel {
   upgradeJobId: string;
@@ -194,19 +194,8 @@ export default class Tenant extends BaseModel {
    * @param {*} subscriptionSlug
    * @returns
    */
-  public newSubscription(
-    planId,
-    invoiceInterval,
-    invoicePeriod,
-    subscriptionSlug
-  ) {
-    return Tenant.newSubscription(
-      this.id,
-      planId,
-      invoiceInterval,
-      invoicePeriod,
-      subscriptionSlug
-    );
+  public newSubscription(planId, invoiceInterval, invoicePeriod, subscriptionSlug) {
+    return Tenant.newSubscription(this.id, planId, invoiceInterval, invoicePeriod, subscriptionSlug);
   }
 
   /**
@@ -217,7 +206,7 @@ export default class Tenant extends BaseModel {
     planId: number,
     invoiceInterval: 'month' | 'year',
     invoicePeriod: number,
-    subscriptionSlug: string
+    subscriptionSlug: string,
   ) {
     const period = new SubscriptionPeriod(invoiceInterval, invoicePeriod);
 

@@ -1,8 +1,5 @@
-import {
-  IFinancialSheetCommonMeta,
-  INumberFormatQuery,
-} from './FinancialStatements';
-import { IFinancialTable } from './Table';
+import type { IFinancialSheetCommonMeta, INumberFormatQuery } from './FinancialStatements';
+import type { IFinancialTable } from './Table';
 
 export interface IInventoryDetailsQuery {
   fromDate: Date | string;
@@ -47,11 +44,7 @@ export interface IInventoryDetailsItem {
   nodeType: string;
   name: string;
   code: string;
-  children: (
-    | IInventoryDetailsItemTransaction
-    | IInventoryDetailsOpening
-    | IInventoryDetailsClosing
-  )[];
+  children: (IInventoryDetailsItemTransaction | IInventoryDetailsOpening | IInventoryDetailsClosing)[];
 }
 
 export interface IInventoryDetailsItemTransaction {
@@ -77,9 +70,7 @@ export interface IInventoryDetailsItemTransaction {
   direction: string;
 }
 
-export type IInventoryDetailsNode =
-  | IInventoryDetailsItem
-  | IInventoryDetailsItemTransaction;
+export type IInventoryDetailsNode = IInventoryDetailsItem | IInventoryDetailsItemTransaction;
 export type IInventoryDetailsData = IInventoryDetailsItem[];
 
 export interface IInventoryItemDetailMeta extends IFinancialSheetCommonMeta {

@@ -15,11 +15,7 @@ export default function CreditNotesImport() {
 
   return (
     <DashboardInsider name={'import-credit-notes'}>
-      <ImportView
-        resource={'credit_note'}
-        onCancelClick={handleCancelBtnClick}
-        onImportSuccess={handleImportSuccess}
-      />
+      <ImportView resource={'credit_note'} onCancelClick={handleCancelBtnClick} onImportSuccess={handleImportSuccess} />
     </DashboardInsider>
   );
 }

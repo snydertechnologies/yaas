@@ -1,4 +1,3 @@
-import { IFilterRole, IModel } from '@/interfaces';
 import { DEFAULT_VIEWS } from '@/services/Items/constants';
 import TenantModel from 'models/TenantModel';
 import { Model, mixin } from 'objection';

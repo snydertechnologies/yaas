@@ -48,9 +48,8 @@ const GroupStyled = styled(Box)`
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  align-items: ${(props: GroupProps) => (props.align || 'center')};
+  align-items: ${(props: GroupProps) => props.align || 'center'};
   flex-wrap: ${(props: GroupProps) => (props.noWrap ? 'nowrap' : 'wrap')};
-  justify-content: ${(props: GroupProps) =>
-    GROUP_POSITIONS[props.position || 'left']};
+  justify-content: ${(props: GroupProps) => GROUP_POSITIONS[props.position || 'left']};
   gap: ${(props: GroupProps) => props.spacing}px;
 `;

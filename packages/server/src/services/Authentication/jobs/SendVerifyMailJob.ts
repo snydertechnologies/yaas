@@ -1,5 +1,5 @@
-import { Container } from 'typedi';
 import AuthenticationMailMesssages from '@/services/Authentication/AuthenticationMailMessages';
+import { Container } from 'typedi';
 
 export class SendVerifyMailJob {
   /**
@@ -7,11 +7,7 @@ export class SendVerifyMailJob {
    * @param {Agenda} agenda
    */
   constructor(agenda) {
-    agenda.define(
-      'send-signup-verify-mail',
-      { priority: 'high' },
-      this.handler.bind(this)
-    );
+    agenda.define('send-signup-verify-mail', { priority: 'high' }, this.handler.bind(this));
   }
 
   /**

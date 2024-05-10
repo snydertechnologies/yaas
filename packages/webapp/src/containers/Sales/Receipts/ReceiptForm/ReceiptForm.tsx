@@ -7,10 +7,7 @@ import { sumBy, isEmpty } from 'lodash';
 import { useHistory } from 'react-router-dom';
 
 import { CLASSES } from '@/constants/classes';
-import {
-  EditReceiptFormSchema,
-  CreateReceiptFormSchema,
-} from './ReceiptForm.schema';
+import { EditReceiptFormSchema, CreateReceiptFormSchema } from './ReceiptForm.schema';
 
 import { useReceiptFormContext } from './ReceiptFormProvider';
 
@@ -34,10 +31,7 @@ import {
   transformFormValuesToRequest,
   resetFormState,
 } from './utils';
-import {
-  ReceiptSyncAutoExRateToForm,
-  ReceiptSyncIncrementSettingsToForm,
-} from './components';
+import { ReceiptSyncAutoExRateToForm, ReceiptSyncIncrementSettingsToForm } from './components';
 
 /**
  * Receipt form.
@@ -57,19 +51,10 @@ function ReceiptForm({
   const history = useHistory();
 
   // Receipt form context.
-  const {
-    receipt,
-    editReceiptMutate,
-    createReceiptMutate,
-    submitPayload,
-    isNewMode,
-  } = useReceiptFormContext();
+  const { receipt, editReceiptMutate, createReceiptMutate, submitPayload, isNewMode } = useReceiptFormContext();
 
   // The next receipt number.
-  const nextReceiptNumber = transactionNumber(
-    receiptNumberPrefix,
-    receiptNextNumber,
-  );
+  const nextReceiptNumber = transactionNumber(receiptNumberPrefix, receiptNextNumber);
   // Initial values in create and edit mode.
   const initialValues = {
     ...(!isEmpty(receipt)
@@ -87,13 +72,8 @@ function ReceiptForm({
         }),
   };
   // Handle the form submit.
-  const handleFormSubmit = (
-    values,
-    { setErrors, setSubmitting, resetForm },
-  ) => {
-    const entries = values.entries.filter(
-      (item) => item.item_id && item.quantity,
-    );
+  const handleFormSubmit = (values, { setErrors, setSubmitting, resetForm }) => {
+    const entries = values.entries.filter((item) => item.item_id && item.quantity);
     const totalQuantity = sumBy(entries, (entry) => parseInt(entry.quantity));
 
     if (totalQuantity === 0) {
@@ -112,9 +92,7 @@ function ReceiptForm({
     const onSuccess = (response) => {
       AppToaster.show({
         message: intl.get(
-          isNewMode
-            ? 'the_receipt_has_been_created_successfully'
-            : 'the_receipt_has_been_edited_successfully',
+          isNewMode ? 'the_receipt_has_been_created_successfully' : 'the_receipt_has_been_edited_successfully',
           { number: values.receipt_number },
         ),
         intent: Intent.SUCCESS,
@@ -148,17 +126,9 @@ function ReceiptForm({
   };
 
   return (
-    <div
-      className={classNames(
-        CLASSES.PAGE_FORM,
-        CLASSES.PAGE_FORM_STRIP_STYLE,
-        CLASSES.PAGE_FORM_RECEIPT,
-      )}
-    >
+    <div className={classNames(CLASSES.PAGE_FORM, CLASSES.PAGE_FORM_STRIP_STYLE, CLASSES.PAGE_FORM_RECEIPT)}>
       <Formik
-        validationSchema={
-          isNewMode ? CreateReceiptFormSchema : EditReceiptFormSchema
-        }
+        validationSchema={isNewMode ? CreateReceiptFormSchema : EditReceiptFormSchema}
         initialValues={initialValues}
         onSubmit={handleFormSubmit}
       >

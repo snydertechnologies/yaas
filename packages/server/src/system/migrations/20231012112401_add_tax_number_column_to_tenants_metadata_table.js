@@ -1,6 +1,6 @@
 exports.up = function (knex) {
   return knex.schema.table('tenants_metadata', (table) => {
-    table.string('tax_number')
+    table.string('tax_number');
   });
 };
 

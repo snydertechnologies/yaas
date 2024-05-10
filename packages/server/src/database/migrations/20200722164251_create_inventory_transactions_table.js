@@ -3,12 +3,7 @@ exports.up = function (knex) {
     table.increments('id');
     table.date('date').index();
     table.string('direction').index();
-    table
-      .integer('item_id')
-      .unsigned()
-      .index()
-      .references('id')
-      .inTable('items');
+    table.integer('item_id').unsigned().index().references('id').inTable('items');
     table.integer('quantity').unsigned();
     table.decimal('rate', 13, 3).unsigned();
 

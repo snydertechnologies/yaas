@@ -1,5 +1,3 @@
-
-
 export interface IPaymentModel {}
 
 export interface ILicensePaymentModel extends IPaymentModel {

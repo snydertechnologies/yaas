@@ -3,7 +3,6 @@ import { getCashflowAccountTransactionsTypes, getCashflowTransactionType } from 
 import { getTransactionTypeLabel } from '@/utils/transactions-types';
 import TenantModel from 'models/TenantModel';
 import { Model } from 'objection';
-import AccountTransaction from './AccountTransaction';
 export default class CashflowTransaction extends TenantModel {
   transactionType: string;
   amount: number;

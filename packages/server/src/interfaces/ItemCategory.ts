@@ -1,6 +1,6 @@
-import Knex from 'knex';
-import { IDynamicListFilterDTO } from './DynamicFilter';
-import { ISystemUser } from './User';
+import type Knex from 'knex';
+import type { IDynamicListFilterDTO } from './DynamicFilter';
+import type { ISystemUser } from './User';
 
 export interface IItemCategory {
   id: number;
@@ -36,35 +36,23 @@ export interface IItemCategoriesService {
   newItemCategory(
     tenantId: number,
     itemCategoryOTD: IItemCategoryOTD,
-    authorizedUser: ISystemUser
+    authorizedUser: ISystemUser,
   ): Promise<IItemCategory>;
   editItemCategory(
     tenantId: number,
     itemCategoryId: number,
     itemCategoryOTD: IItemCategoryOTD,
-    authorizedUser: ISystemUser
+    authorizedUser: ISystemUser,
   ): Promise<IItemCategory>;
 
-  deleteItemCategory(
-    tenantId: number,
-    itemCategoryId: number,
-    authorizedUser: ISystemUser
-  ): Promise<void>;
-  deleteItemCategories(
-    tenantId: number,
-    itemCategoriesIds: number[],
-    authorizedUser: ISystemUser
-  ): Promise<void>;
+  deleteItemCategory(tenantId: number, itemCategoryId: number, authorizedUser: ISystemUser): Promise<void>;
+  deleteItemCategories(tenantId: number, itemCategoriesIds: number[], authorizedUser: ISystemUser): Promise<void>;
 
-  getItemCategory(
-    tenantId: number,
-    itemCategoryId: number,
-    authorizedUser: ISystemUser
-  ): Promise<void>;
+  getItemCategory(tenantId: number, itemCategoryId: number, authorizedUser: ISystemUser): Promise<void>;
   getItemCategoriesList(
     tenantId: number,
     itemCategoriesFilter: IItemCategoriesFilter,
-    authorizedUser: ISystemUser
+    authorizedUser: ISystemUser,
   ): Promise<void>;
 }
 

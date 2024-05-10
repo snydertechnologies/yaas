@@ -1,28 +1,9 @@
 // @ts-nocheck
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import {
-  NavbarGroup,
-  NavbarDivider,
-  Button,
-  Classes,
-  Intent,
-  Switch,
-  Alignment,
-} from '@blueprintjs/core';
-import {
-  DashboardActionsBar,
-  DashboardRowsHeightButton,
-  FormattedMessage as T,
-} from '@/components';
-import {
-  If,
-  Can,
-  Icon,
-  DashboardActionViewsList,
-  AdvancedFilterPopover,
-  DashboardFilterButton,
-} from '@/components';
+import { NavbarGroup, NavbarDivider, Button, Classes, Intent, Switch, Alignment } from '@blueprintjs/core';
+import { DashboardActionsBar, DashboardRowsHeightButton, FormattedMessage as T } from '@/components';
+import { If, Can, Icon, DashboardActionViewsList, AdvancedFilterPopover, DashboardFilterButton } from '@/components';
 
 import { ItemAction, AbilitySubject } from '@/constants/abilityOption';
 import { useItemsListContext } from './ItemsListProvider';
@@ -60,7 +41,7 @@ function ItemsActionsBar({
   addSetting,
 
   // #withDialogActions
-  openDialog
+  openDialog,
 }) {
   // Items list context.
   const { itemsViews, fields } = useItemsListContext();
@@ -107,7 +88,7 @@ function ItemsActionsBar({
   // Handle the export button click.
   const handleExportBtnClick = () => {
     openDialog(DialogsName.Export, { resource: 'item' });
-  }
+  };
 
   return (
     <DashboardActionsBar>
@@ -167,10 +148,7 @@ function ItemsActionsBar({
           onClick={handleExportBtnClick}
         />
         <NavbarDivider />
-        <DashboardRowsHeightButton
-          initialValue={itemsTableSize}
-          onChange={handleTableRowSizeChange}
-        />
+        <DashboardRowsHeightButton initialValue={itemsTableSize} onChange={handleTableRowSizeChange} />
         <NavbarDivider />
         <Can I={ItemAction.Edit} a={AbilitySubject.Item}>
           <Switch
@@ -204,5 +182,5 @@ export default compose(
   })),
   withItemsActions,
   withAlertActions,
-  withDialogActions
+  withDialogActions,
 )(ItemsActionsBar);

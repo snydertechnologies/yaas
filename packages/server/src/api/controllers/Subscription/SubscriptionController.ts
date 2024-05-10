@@ -1,13 +1,13 @@
-import { Router, Request, Response, NextFunction } from 'express';
-import { Service, Inject } from 'typedi';
-import { body } from 'express-validator';
-import JWTAuth from '@/api/middleware/jwtAuth';
-import TenancyMiddleware from '@/api/middleware/TenancyMiddleware';
 import AttachCurrentTenantUser from '@/api/middleware/AttachCurrentTenantUser';
-import SubscriptionService from '@/services/Subscription/SubscriptionService';
+import TenancyMiddleware from '@/api/middleware/TenancyMiddleware';
 import asyncMiddleware from '@/api/middleware/asyncMiddleware';
-import BaseController from '../BaseController';
+import JWTAuth from '@/api/middleware/jwtAuth';
 import { LemonSqueezyService } from '@/services/Subscription/LemonSqueezyService';
+import SubscriptionService from '@/services/Subscription/SubscriptionService';
+import { NextFunction, Request, Response, Router } from 'express';
+import { body } from 'express-validator';
+import { Inject, Service } from 'typedi';
+import BaseController from '../BaseController';
 
 @Service()
 export class SubscriptionController extends BaseController {
@@ -31,7 +31,7 @@ export class SubscriptionController extends BaseController {
       '/lemon/checkout_url',
       [body('variantId').exists().trim()],
       this.validationResult,
-      this.getCheckoutUrl.bind(this)
+      this.getCheckoutUrl.bind(this),
     );
     router.get('/', asyncMiddleware(this.getSubscriptions.bind(this)));
 
@@ -44,17 +44,11 @@ export class SubscriptionController extends BaseController {
    * @param {Response} res
    * @param {NextFunction} next
    */
-  private async getSubscriptions(
-    req: Request,
-    res: Response,
-    next: NextFunction
-  ) {
+  private async getSubscriptions(req: Request, res: Response, next: NextFunction) {
     const { tenantId } = req;
 
     try {
-      const subscriptions = await this.subscriptionService.getSubscriptions(
-        tenantId
-      );
+      const subscriptions = await this.subscriptionService.getSubscriptions(tenantId);
       return res.status(200).send({ subscriptions });
     } catch (error) {
       next(error);
@@ -67,19 +61,12 @@ export class SubscriptionController extends BaseController {
    * @param {Response} res
    * @param {NextFunction} next
    */
-  private async getCheckoutUrl(
-    req: Request,
-    res: Response,
-    next: NextFunction
-  ) {
+  private async getCheckoutUrl(req: Request, res: Response, next: NextFunction) {
     const { variantId } = this.matchedBodyData(req);
     const { user } = req;
 
     try {
-      const checkout = await this.lemonSqueezyService.getCheckout(
-        variantId,
-        user
-      );
+      const checkout = await this.lemonSqueezyService.getCheckout(variantId, user);
       return res.status(200).send(checkout);
     } catch (error) {
       next(error);

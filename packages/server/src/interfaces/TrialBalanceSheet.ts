@@ -1,8 +1,5 @@
-import {
-  IFinancialSheetCommonMeta,
-  INumberFormatQuery,
-} from './FinancialStatements';
-import { IFinancialTable } from './Table';
+import type { IFinancialSheetCommonMeta, INumberFormatQuery } from './FinancialStatements';
+import type { IFinancialTable } from './Table';
 
 export interface ITrialBalanceSheetQuery {
   fromDate: Date | string;

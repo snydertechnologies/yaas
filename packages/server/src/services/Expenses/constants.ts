@@ -4,9 +4,7 @@ export const DEFAULT_VIEWS = [
     name: 'Draft',
     slug: 'draft',
     rolesLogicExpression: '1',
-    roles: [
-      { index: 1, fieldKey: 'status', comparator: 'equals', value: 'draft' },
-    ],
+    roles: [{ index: 1, fieldKey: 'status', comparator: 'equals', value: 'draft' }],
     columns: DEFAULT_VIEW_COLUMNS,
   },
   {
@@ -71,8 +69,7 @@ export const ExpensesSampleData = [
     'Exchange Rate': '',
     'Expense Account': 'Utilities Expense',
     Amount: 9000,
-    'Line Description':
-      'Hic alias rerum sed commodi dolores sint animi perferendis.',
+    'Line Description': 'Hic alias rerum sed commodi dolores sint animi perferendis.',
     Publish: 'T',
   },
 ];

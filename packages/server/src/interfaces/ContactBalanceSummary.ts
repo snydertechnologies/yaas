@@ -1,4 +1,4 @@
-import { INumberFormatQuery } from './FinancialStatements';
+import type { INumberFormatQuery } from './FinancialStatements';
 
 export interface IContactBalanceSummaryQuery {
   asDate: Date;

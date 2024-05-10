@@ -15,11 +15,7 @@ export default function ExpensesImport() {
 
   return (
     <DashboardInsider name={'import-expenses'}>
-      <ImportView
-        resource={'expenses'}
-        onCancelClick={handleCancelBtnClick}
-        onImportSuccess={handleImportSuccess}
-      />
+      <ImportView resource={'expenses'} onCancelClick={handleCancelBtnClick} onImportSuccess={handleImportSuccess} />
     </DashboardInsider>
   );
 }

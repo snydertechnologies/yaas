@@ -15,11 +15,7 @@ export default function BillsImport() {
 
   return (
     <DashboardInsider name={'import-bills'}>
-      <ImportView
-        resource={'bills'}
-        onCancelClick={handleCancelBtnClick}
-        onImportSuccess={handleImportSuccess}
-      />
+      <ImportView resource={'bills'} onCancelClick={handleCancelBtnClick} onImportSuccess={handleImportSuccess} />
     </DashboardInsider>
   );
 }

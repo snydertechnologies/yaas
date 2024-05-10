@@ -1,6 +1,6 @@
-import { IFinancialSheetCommonMeta } from './FinancialStatements';
-import { IJournalEntry } from './Journal';
-import { IFinancialTable } from './Table';
+import type { IFinancialSheetCommonMeta } from './FinancialStatements';
+import type { IJournalEntry } from './Journal';
+import type { IFinancialTable } from './Table';
 
 export interface IJournalReportQuery {
   fromDate: Date | string;

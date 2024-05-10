@@ -1,6 +1,5 @@
-
-exports.up = function(knex) {
-  return knex.schema.createTable('subscription_plan_subscriptions', table => {
+exports.up = function (knex) {
+  return knex.schema.createTable('subscription_plan_subscriptions', (table) => {
     table.increments('id');
     table.string('slug');
 
@@ -17,6 +16,6 @@ exports.up = function(knex) {
   });
 };
 
-exports.down = function(knex) {
+exports.down = function (knex) {
   return knex.schema.dropTableIfExists('subscription_plan_subscriptions');
 };

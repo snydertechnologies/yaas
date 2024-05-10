@@ -1,5 +1,5 @@
-import { IDynamicListFilter, IItemEntry, IItemEntryDTO } from '@/interfaces';
-import { Knex } from 'knex';
+import type { IDynamicListFilter, IItemEntry, IItemEntryDTO } from '@/interfaces';
+import type { Knex } from 'knex';
 
 export enum VendorCreditAction {
   Create = 'Create',
@@ -27,7 +27,7 @@ export interface IVendorCredit {
   isDraft: boolean;
   creditsRemaining: number;
   branchId?: number;
-  warehouseId?: number,
+  warehouseId?: number;
 }
 
 export interface IVendorCreditEntryDTO extends IItemEntryDTO {}
@@ -46,7 +46,7 @@ export interface IRefundVendorCredit {
   userId: number;
   branchId?: number;
 
-  vendorCredit?: IVendorCredit
+  vendorCredit?: IVendorCredit;
 }
 
 export interface IVendorCreditDTO {

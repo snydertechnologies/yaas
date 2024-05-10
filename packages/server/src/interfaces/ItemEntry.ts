@@ -1,5 +1,5 @@
-import { IItem } from './Item';
-import { IBillLandedCostEntry } from './LandedCost';
+import type { IItem } from './Item';
+import type { IBillLandedCostEntry } from './LandedCost';
 
 export type IItemEntryTransactionType = 'SaleInvoice' | 'Bill' | 'SaleReceipt';
 

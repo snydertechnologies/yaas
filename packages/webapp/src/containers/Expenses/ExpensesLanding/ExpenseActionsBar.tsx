@@ -1,13 +1,6 @@
 // @ts-nocheck
 import React from 'react';
-import {
-  Button,
-  NavbarGroup,
-  Classes,
-  NavbarDivider,
-  Intent,
-  Alignment,
-} from '@blueprintjs/core';
+import { Button, NavbarGroup, Classes, NavbarDivider, Intent, Alignment } from '@blueprintjs/core';
 import { useHistory } from 'react-router-dom';
 
 import {
@@ -121,9 +114,7 @@ function ExpensesActionsBar({
             },
           }}
         >
-          <DashboardFilterButton
-            conditionsCount={expensesFilterConditions.length}
-          />
+          <DashboardFilterButton conditionsCount={expensesFilterConditions.length} />
         </AdvancedFilterPopover>
 
         <If condition={false}>
@@ -136,11 +127,7 @@ function ExpensesActionsBar({
           />
         </If>
 
-        <Button
-          className={Classes.MINIMAL}
-          icon={<Icon icon="print-16" iconSize={16} />}
-          text={<T id={'print'} />}
-        />
+        <Button className={Classes.MINIMAL} icon={<Icon icon="print-16" iconSize={16} />} text={<T id={'print'} />} />
         <Button
           className={Classes.MINIMAL}
           icon={<Icon icon="file-import-16" iconSize={16} />}
@@ -154,10 +141,7 @@ function ExpensesActionsBar({
           onClick={handleExportBtnClick}
         />
         <NavbarDivider />
-        <DashboardRowsHeightButton
-          initialValue={expensesTableSize}
-          onChange={handleTableRowSizeChange}
-        />
+        <DashboardRowsHeightButton initialValue={expensesTableSize} onChange={handleTableRowSizeChange} />
         <NavbarDivider />
       </NavbarGroup>
       <NavbarGroup align={Alignment.RIGHT}>

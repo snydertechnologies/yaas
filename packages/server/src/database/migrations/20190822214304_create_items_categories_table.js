@@ -1,9 +1,8 @@
-
 exports.up = function (knex) {
   return knex.schema.createTable('items_categories', (table) => {
     table.increments();
     table.string('name').index();
-   
+
     table.text('description');
     table.integer('user_id').unsigned().index();
 

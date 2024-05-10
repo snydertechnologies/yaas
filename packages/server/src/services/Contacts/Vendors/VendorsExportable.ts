@@ -1,6 +1,6 @@
-import { Inject, Service } from 'typedi';
 import { IItemsFilter } from '@/interfaces';
 import { Exportable } from '@/services/Export/Exportable';
+import { Inject, Service } from 'typedi';
 import { VendorsApplication } from './VendorsApplication';
 
 @Service()
@@ -22,8 +22,6 @@ export class VendorsExportable extends Exportable {
       pageSize: 12,
     } as IItemsFilter;
 
-    return this.vendorsApplication
-      .getVendors(tenantId, parsedQuery)
-      .then((output) => output.vendors);
+    return this.vendorsApplication.getVendors(tenantId, parsedQuery).then((output) => output.vendors);
   }
 }

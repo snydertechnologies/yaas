@@ -1,5 +1,5 @@
-import { Knex } from 'knex';
-import { IBill } from './Bill';
+import type { Knex } from 'knex';
+import type { IBill } from './Bill';
 
 export interface IBillPaymentEntry {
   id?: number;

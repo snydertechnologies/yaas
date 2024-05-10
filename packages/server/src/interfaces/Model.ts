@@ -19,12 +19,7 @@ export interface IModelMetaDefaultSort {
   sortField: string;
 }
 
-export type IModelColumnType =
-  | 'text'
-  | 'number'
-  | 'enumeration'
-  | 'boolean'
-  | 'relation';
+export type IModelColumnType = 'text' | 'number' | 'enumeration' | 'boolean' | 'relation';
 
 export type ISortOrder = 'DESC' | 'ASC';
 
@@ -116,11 +111,9 @@ export interface IModelMetaCollectionFieldCommon {
   collectionMaxLength?: number;
 }
 
-export type IModelMetaCollectionField = IModelMetaCollectionFieldCommon &
-  IModelMetaCollectionObjectField;
+export type IModelMetaCollectionField = IModelMetaCollectionFieldCommon & IModelMetaCollectionObjectField;
 
-export type IModelMetaRelationField = IModelMetaRelationFieldCommon &
-  IModelMetaRelationEnumerationField;
+export type IModelMetaRelationField = IModelMetaRelationFieldCommon & IModelMetaRelationEnumerationField;
 
 export interface IModelMeta {
   defaultFilterField: string;
@@ -181,5 +174,4 @@ interface IModelMetaColumnCollection {
   columns: { [key: string]: ImodelMetaColumnMeta & IModelMetaColumnText };
 }
 
-export type IModelMetaColumn = ImodelMetaColumnMeta &
-  (IModelMetaColumnText | IModelMetaColumnCollection);
+export type IModelMetaColumn = ImodelMetaColumnMeta & (IModelMetaColumnText | IModelMetaColumnCollection);

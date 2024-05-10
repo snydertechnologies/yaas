@@ -1,6 +1,6 @@
+import { IAccountsFilter, IAccountsStructureType } from '@/interfaces';
 import { Inject, Service } from 'typedi';
 import { Exportable } from '../Export/Exportable';
-import { IAccountsFilter, IAccountsStructureType } from '@/interfaces';
 import ItemCategoriesService from './ItemCategoriesService';
 
 @Service()

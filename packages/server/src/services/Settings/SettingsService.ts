@@ -1,5 +1,5 @@
-import { Service, Inject } from 'typedi';
 import TenancyService from '@/services/Tenancy/TenancyService';
+import { Inject, Service } from 'typedi';
 
 @Service()
 export default class SettingsService {

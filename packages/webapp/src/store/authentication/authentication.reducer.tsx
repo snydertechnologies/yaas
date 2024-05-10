@@ -34,13 +34,8 @@ const reducerInstance = createReducer(initialState, {
     state.errors = [];
   },
 
-  [t.SET_EMAIL_VERIFIED]: (
-    state,
-    payload: PayloadAction<{ verified?: boolean }>,
-  ) => {
-    state.verified = !isUndefined(payload.action.verified)
-      ? payload.action.verified
-      : true;
+  [t.SET_EMAIL_VERIFIED]: (state, payload: PayloadAction<{ verified?: boolean }>) => {
+    state.verified = !isUndefined(payload.action.verified) ? payload.action.verified : true;
   },
 
   [t.RESET]: (state) => {

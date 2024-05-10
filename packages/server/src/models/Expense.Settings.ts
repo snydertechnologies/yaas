@@ -67,7 +67,7 @@ export default {
     paymentReceive: {
       name: 'expense.field.payment_account',
       type: 'text',
-      accessor: 'paymentAccount.name'
+      accessor: 'paymentAccount.name',
     },
     referenceNo: {
       name: 'expense.field.reference_no',

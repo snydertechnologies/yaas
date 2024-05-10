@@ -1,7 +1,7 @@
-import { Knex } from 'knex';
-import { IItemEntry, IItemEntryDTO } from './ItemEntry';
-import { IDynamicListFilterDTO } from '@/interfaces/DynamicFilter';
-import { CommonMailOptions, CommonMailOptionsDTO } from './Mailable';
+import type { IDynamicListFilterDTO } from '@/interfaces/DynamicFilter';
+import type { Knex } from 'knex';
+import type { IItemEntry, IItemEntryDTO } from './ItemEntry';
+import type { CommonMailOptions, CommonMailOptionsDTO } from './Mailable';
 
 export interface ISaleEstimate {
   id?: number;
@@ -45,10 +45,7 @@ export interface ISalesEstimatesFilter extends IDynamicListFilterDTO {
 }
 
 export interface ISalesEstimatesService {
-  validateCustomerHasNoEstimates(
-    tenantId: number,
-    customerId: number
-  ): Promise<void>;
+  validateCustomerHasNoEstimates(tenantId: number, customerId: number): Promise<void>;
 }
 
 export interface ISaleEstimateCreatedPayload {

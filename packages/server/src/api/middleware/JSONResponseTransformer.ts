@@ -11,7 +11,7 @@ import { mapKeysDeep } from 'utils';
 export function JSONResponseTransformer(transform: Function) {
   const replaceJson = (res) => {
     var origJson = res.json;
-  
+
     res.json = function (val) {
       const json = JSON.parse(JSON.stringify(val));
 

@@ -1,8 +1,8 @@
-import { Inject, Service } from 'typedi';
-import { Knex } from 'knex';
-import { Importable } from '@/services/Import/Importable';
-import { CreateBill } from './CreateBill';
 import { IBillDTO } from '@/interfaces';
+import { Importable } from '@/services/Import/Importable';
+import { Knex } from 'knex';
+import { Inject, Service } from 'typedi';
+import { CreateBill } from './CreateBill';
 import { BillsSampleData } from './constants';
 
 @Service()
@@ -16,17 +16,8 @@ export class BillsImportable extends Importable {
    * @param {IAccountCreateDTO} createAccountDTO
    * @returns
    */
-  public importable(
-    tenantId: number,
-    createAccountDTO: IBillDTO,
-    trx?: Knex.Transaction
-  ) {
-    return this.createBillService.createBill(
-      tenantId,
-      createAccountDTO,
-      {},
-      trx
-    );
+  public importable(tenantId: number, createAccountDTO: IBillDTO, trx?: Knex.Transaction) {
+    return this.createBillService.createBill(tenantId, createAccountDTO, {}, trx);
   }
 
   /**

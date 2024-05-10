@@ -1,5 +1,5 @@
-import { Knex } from 'knex';
-import { IItem } from './Item';
+import type { Knex } from 'knex';
+import type { IItem } from './Item';
 
 type IAdjustmentTypes = 'increment' | 'decrement';
 

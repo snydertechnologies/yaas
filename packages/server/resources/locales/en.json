@@ -176,7 +176,7 @@
   "invoice.paper.conditions_title": "Conditions & terms",
   "invoice.paper.notes_title": "Notes",
   "invoice.paper.total": "Total",
-  "invoice.paper.subtotal": "Subtotal", 
+  "invoice.paper.subtotal": "Subtotal",
   "invoice.paper.payment_amount": "Payment Amount",
   "invoice.paper.balance_due": "Balance Due",
 
@@ -367,7 +367,7 @@
   "expense.field.payment_account": "Payment Account",
   "expense.field.amount": "Amount",
   "expense.field.currency_code": "Currency",
-  "expense.field.exchange_rate": "Exchange Rate", 
+  "expense.field.exchange_rate": "Exchange Rate",
   "expense.field.reference_no": "Reference No.",
   "expense.field.description": "Description",
   "expense.field.line_description": "Line Description",
@@ -439,8 +439,6 @@
   "vendor.field.status.overdue": "Overdue",
   "vendor.field.status.unpaid": "Unpaid",
   "Invoice write-off": "Invoice write-off",
-
-  
 
   "transaction_type.credit_note": "Credit note",
   "transaction_type.refund_credit_note": "Refund credit note",

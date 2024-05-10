@@ -1,5 +1,5 @@
-import { Inject, Service } from 'typedi';
 import { IManualJournalsFilter } from '@/interfaces';
+import { Inject, Service } from 'typedi';
 import { Exportable } from '../Export/Exportable';
 import { ManualJournalsApplication } from './ManualJournalsApplication';
 

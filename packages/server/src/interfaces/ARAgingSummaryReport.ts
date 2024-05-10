@@ -1,11 +1,11 @@
-import {
+import type {
   IAgingPeriod,
-  IAgingSummaryQuery,
-  IAgingSummaryTotal,
   IAgingSummaryContact,
   IAgingSummaryData,
+  IAgingSummaryQuery,
+  IAgingSummaryTotal,
 } from './AgingReport';
-import { IFinancialTable } from './Table';
+import type { IFinancialTable } from './Table';
 
 export interface IARAgingSummaryQuery extends IAgingSummaryQuery {
   customersIds: number[];
@@ -39,4 +39,3 @@ export interface IARAgingSummarySheet {
   query: IARAgingSummaryQuery;
   columns: IARAgingSummaryColumns;
 }
-

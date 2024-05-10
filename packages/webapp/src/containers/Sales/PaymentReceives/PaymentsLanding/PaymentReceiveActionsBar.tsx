@@ -1,13 +1,6 @@
 // @ts-nocheck
 import React from 'react';
-import {
-  Button,
-  Classes,
-  NavbarDivider,
-  NavbarGroup,
-  Intent,
-  Alignment,
-} from '@blueprintjs/core';
+import { Button, Classes, NavbarDivider, NavbarGroup, Intent, Alignment } from '@blueprintjs/core';
 
 import { useHistory } from 'react-router-dom';
 import {
@@ -27,10 +20,7 @@ import withPaymentReceivesActions from './withPaymentReceivesActions';
 import withSettings from '@/containers/Settings/withSettings';
 import withSettingsActions from '@/containers/Settings/withSettingsActions';
 import withDialogActions from '@/containers/Dialog/withDialogActions';
-import {
-  PaymentReceiveAction,
-  AbilitySubject,
-} from '@/constants/abilityOption';
+import { PaymentReceiveAction, AbilitySubject } from '@/constants/abilityOption';
 import { usePaymentReceivesListContext } from './PaymentReceiptsListProvider';
 import { useRefreshPaymentReceive } from '@/hooks/query/paymentReceives';
 import { compose } from '@/utils';
@@ -119,9 +109,7 @@ function PaymentReceiveActionsBar({
             },
           }}
         >
-          <DashboardFilterButton
-            conditionsCount={paymentFilterConditions.length}
-          />
+          <DashboardFilterButton conditionsCount={paymentFilterConditions.length} />
         </AdvancedFilterPopover>
 
         <If condition={false}>
@@ -152,10 +140,7 @@ function PaymentReceiveActionsBar({
         />
 
         <NavbarDivider />
-        <DashboardRowsHeightButton
-          initialValue={paymentReceivesTableSize}
-          onChange={handleTableRowSizeChange}
-        />
+        <DashboardRowsHeightButton initialValue={paymentReceivesTableSize} onChange={handleTableRowSizeChange} />
         <NavbarDivider />
       </NavbarGroup>
       <NavbarGroup align={Alignment.RIGHT}>

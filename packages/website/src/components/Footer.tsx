@@ -9,9 +9,7 @@ import BigcapitalAlt from '../icons/BigcapitalAlt';
 function SocialWidget() {
   return (
     <div className="grow mb-[40px] md:mb-[60px]">
-      <h5 className="text-white/70 font-medium text-lg leading-6 tracking-tighter mb-[22px] mt-[2px]">
-        Socials
-      </h5>
+      <h5 className="text-white/70 font-medium text-lg leading-6 tracking-tighter mb-[22px] mt-[2px]">Socials</h5>
       <ul className="footer__widget-list">
         <li className={'mb-2'}>
           <a target="_blank" href="https://discord.gg/c8nPBJafeb">
@@ -64,9 +62,7 @@ function CompanyWidget() {
 function PagesWidget() {
   return (
     <div className="grow mb-[40px] md:mb-[60px]">
-      <h5 className="text-white/70 font-medium text-lg leading-6 tracking-tighter mb-[22px] mt-[2px]">
-        Content
-      </h5>
+      <h5 className="text-white/70 font-medium text-lg leading-6 tracking-tighter mb-[22px] mt-[2px]">Content</h5>
       <ul className="footer__widget-list">
         <li className={'mb-2'}>
           <Link href={'/'}>Home</Link>
@@ -101,10 +97,7 @@ export default function Footer() {
                 </a>
               </div>
               <div className="footer-text mb-0 mt-3">
-                <p>
-                  Online accounting software, built to automate business
-                  financial processes.
-                </p>
+                <p>Online accounting software, built to automate business financial processes.</p>
               </div>
             </div>
           </div>

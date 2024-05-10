@@ -1,6 +1,6 @@
-import { Inject, Service } from 'typedi';
-import { Knex } from 'knex';
 import { IExpenseCreateDTO } from '@/interfaces';
+import { Knex } from 'knex';
+import { Inject, Service } from 'typedi';
 import { Importable } from '../Import/Importable';
 import { CreateExpense } from './CRUD/CreateExpense';
 import { ExpensesSampleData } from './constants';
@@ -16,17 +16,8 @@ export class ExpensesImportable extends Importable {
    * @param {IAccountCreateDTO} createAccountDTO
    * @returns
    */
-  public importable(
-    tenantId: number,
-    createAccountDTO: IExpenseCreateDTO,
-    trx?: Knex.Transaction
-  ) {
-    return this.createExpenseService.newExpense(
-      tenantId,
-      createAccountDTO,
-      {},
-      trx
-    );
+  public importable(tenantId: number, createAccountDTO: IExpenseCreateDTO, trx?: Knex.Transaction) {
+    return this.createExpenseService.newExpense(tenantId, createAccountDTO, {}, trx);
   }
 
   /**

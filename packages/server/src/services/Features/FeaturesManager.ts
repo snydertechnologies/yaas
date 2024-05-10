@@ -1,6 +1,6 @@
+import { IFeatureAllItem } from '@/interfaces';
 import { Inject, Service } from 'typedi';
 import { FeaturesSettingsDriver } from './FeaturesSettingsDriver';
-import { IFeatureAllItem } from '@/interfaces';
 
 @Service()
 export class FeaturesManager {

@@ -22,10 +22,7 @@ export default function WizardSetupSteps({ currentStep = 1 }) {
       <div className={'setup-page-steps'}>
         <ul>
           {setupWizardSetups.map((step, index) => (
-            <WizardSetupStep
-              label={step.label}
-              isActive={index + 1 === currentStep}
-            />
+            <WizardSetupStep label={step.label} isActive={index + 1 === currentStep} />
           ))}
         </ul>
       </div>

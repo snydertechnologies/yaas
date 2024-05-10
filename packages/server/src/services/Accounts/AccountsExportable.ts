@@ -1,7 +1,7 @@
-import { Inject, Service } from 'typedi';
-import { AccountsApplication } from './AccountsApplication';
-import { Exportable } from '../Export/Exportable';
 import { IAccountsFilter, IAccountsStructureType } from '@/interfaces';
+import { Inject, Service } from 'typedi';
+import { Exportable } from '../Export/Exportable';
+import { AccountsApplication } from './AccountsApplication';
 
 @Service()
 export class AccountsExportable extends Exportable {
@@ -24,8 +24,6 @@ export class AccountsExportable extends Exportable {
       page: 1,
     } as IAccountsFilter;
 
-    return this.accountsApplication
-      .getAccounts(tenantId, parsedQuery)
-      .then((output) => output.accounts);
+    return this.accountsApplication.getAccounts(tenantId, parsedQuery).then((output) => output.accounts);
   }
 }

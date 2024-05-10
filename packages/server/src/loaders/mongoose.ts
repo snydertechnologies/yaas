@@ -1,5 +1,5 @@
-import mongoose from 'mongoose';
 import config from '@/config';
+import mongoose from 'mongoose';
 
 export default async (): Promise<mongoose.Connection> => {
   // Connect to MongoDB using the database URL from your config

@@ -1,8 +1,8 @@
-import { Inject, Service } from 'typedi';
-import { Knex } from 'knex';
-import { Importable } from '@/services/Import/Importable';
-import CreateVendorCredit from './CreateVendorCredit';
 import { IVendorCreditCreateDTO } from '@/interfaces';
+import { Importable } from '@/services/Import/Importable';
+import { Knex } from 'knex';
+import { Inject, Service } from 'typedi';
+import CreateVendorCredit from './CreateVendorCredit';
 import { VendorCreditsSampleData } from './constants';
 
 @Service()
@@ -16,16 +16,8 @@ export class VendorCreditsImportable extends Importable {
    * @param {IAccountCreateDTO} createAccountDTO
    * @returns
    */
-  public importable(
-    tenantId: number,
-    createPaymentDTO: IVendorCreditCreateDTO,
-    trx?: Knex.Transaction
-  ) {
-    return this.createVendorCreditService.newVendorCredit(
-      tenantId,
-      createPaymentDTO,
-      trx
-    );
+  public importable(tenantId: number, createPaymentDTO: IVendorCreditCreateDTO, trx?: Knex.Transaction) {
+    return this.createVendorCreditService.newVendorCredit(tenantId, createPaymentDTO, trx);
   }
 
   /**

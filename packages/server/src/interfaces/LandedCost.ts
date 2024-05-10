@@ -1,6 +1,6 @@
-import { IBill } from '@/interfaces';
-import Knex from 'knex';
-import { IItemEntry } from './ItemEntry';
+import type { IBill } from '@/interfaces';
+import type Knex from 'knex';
+import type { IItemEntry } from './ItemEntry';
 
 export interface IBillLandedCost {
   id?: number;
@@ -18,7 +18,7 @@ export interface IBillLandedCost {
   currencyCode: string;
 
   billId: number;
-  allocateEntries: IBillLandedCostEntry[]
+  allocateEntries: IBillLandedCostEntry[];
 }
 
 export interface IBillLandedCostEntry {
@@ -93,8 +93,7 @@ export interface ILandedCostTransactionEntry {
   costAccountId: number;
 }
 
-export interface ILandedCostTransactionEntryDOJO
-  extends ILandedCostTransactionEntry {
+export interface ILandedCostTransactionEntryDOJO extends ILandedCostTransactionEntry {
   formattedAmount: string;
   formattedUnallocatedCostAmount: string;
   formattedAllocatedCostAmount: string;

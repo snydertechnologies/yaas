@@ -11,18 +11,9 @@ function ExportDialogRoot({ dialogName, payload, isOpen }) {
   const { resource = null, format = null } = payload;
 
   return (
-    <Dialog
-      name={dialogName}
-      title={'Export Data'}
-      autoFocus={true}
-      canEscapeKeyClose={true}
-      isOpen={isOpen}
-    >
+    <Dialog name={dialogName} title={'Export Data'} autoFocus={true} canEscapeKeyClose={true} isOpen={isOpen}>
       <DialogSuspense>
-        <ExportDialogContent
-          dialogName={dialogName}
-          initialValues={{ resource, format }}
-        />
+        <ExportDialogContent dialogName={dialogName} initialValues={{ resource, format }} />
       </DialogSuspense>
     </Dialog>
   );

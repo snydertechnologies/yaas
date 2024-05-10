@@ -33,10 +33,7 @@ const isCurrentFocus = (autoFocus, columnId, rowIndex) => {
 };
 
 export function useCellAutoFocus(ref, autoFocus, columnId, rowIndex) {
-  const focus = useMemo(
-    () => isCurrentFocus(autoFocus, columnId, rowIndex),
-    [autoFocus, columnId, rowIndex],
-  );
+  const focus = useMemo(() => isCurrentFocus(autoFocus, columnId, rowIndex), [autoFocus, columnId, rowIndex]);
   useEffect(() => {
     if (ref.current && focus) {
       ref.current.focus();

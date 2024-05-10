@@ -1,8 +1,8 @@
-import { Knex } from 'knex';
-import { ISystemUser, IAccount, ITaxTransaction } from '@/interfaces';
-import { CommonMailOptions, CommonMailOptionsDTO } from './Mailable';
-import { IDynamicListFilter } from '@/interfaces/DynamicFilter';
-import { IItemEntry, IItemEntryDTO } from './ItemEntry';
+import type { IAccount, ISystemUser, ITaxTransaction } from '@/interfaces';
+import type { IDynamicListFilter } from '@/interfaces/DynamicFilter';
+import type { Knex } from 'knex';
+import type { IItemEntry, IItemEntryDTO } from './ItemEntry';
+import type { CommonMailOptions, CommonMailOptionsDTO } from './Mailable';
 
 export interface ISaleInvoice {
   id: number;
@@ -79,10 +79,7 @@ export interface ISalesInvoicesFilter extends IDynamicListFilter {
 }
 
 export interface ISalesInvoicesService {
-  validateCustomerHasNoInvoices(
-    tenantId: number,
-    customerId: number
-  ): Promise<void>;
+  validateCustomerHasNoInvoices(tenantId: number, customerId: number): Promise<void>;
 }
 
 export interface ISaleInvoiceWriteoffDTO {
