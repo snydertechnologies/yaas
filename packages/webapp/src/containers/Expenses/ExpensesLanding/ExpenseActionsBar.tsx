@@ -1,32 +1,32 @@
+import { Alignment, Button, Classes, Intent, NavbarDivider, NavbarGroup } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Button, NavbarGroup, Classes, NavbarDivider, Intent, Alignment } from '@blueprintjs/core';
 import { useHistory } from 'react-router-dom';
 
 import {
-  If,
+  AdvancedFilterPopover,
   Can,
-  Icon,
-  DashboardRowsHeightButton,
   DashboardActionViewsList,
   DashboardActionsBar,
   DashboardFilterButton,
-  AdvancedFilterPopover,
+  DashboardRowsHeightButton,
+  Icon,
+  If,
   FormattedMessage as T,
-} from '@/components';
+} from '@bigcapital/webapp/components';
 
-import { ExpenseAction, AbilitySubject } from '@/constants/abilityOption';
-import { useRefreshExpenses } from '@/hooks/query/expenses';
+import { AbilitySubject, ExpenseAction } from '@bigcapital/webapp/constants/abilityOption';
+import { useRefreshExpenses } from '@bigcapital/webapp/hooks/query/expenses';
 import { useExpensesListContext } from './ExpensesListProvider';
 
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import withSettingsActions from '@bigcapital/webapp/containers/Settings/withSettingsActions';
 import withExpenses from './withExpenses';
 import withExpensesActions from './withExpensesActions';
-import withSettingsActions from '@/containers/Settings/withSettingsActions';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import withSettings from '@/containers/Settings/withSettings';
 
-import { compose } from '@/utils';
-import { DialogsName } from '@/constants/dialogs';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Expenses actions bar.

@@ -1,8 +1,8 @@
+import { Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { useGetUniversalSearchTypeOptions } from '@bigcapital/webapp/containers/UniversalSearch/utils';
+import { Button, Classes } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Button, Classes } from '@blueprintjs/core';
-import { useGetUniversalSearchTypeOptions } from '@/containers/UniversalSearch/utils';
-import { Icon, FormattedMessage as T } from '@/components';
 
 export function DashboardTopbarSubscriptionMessage() {
   return (

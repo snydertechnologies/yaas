@@ -1,9 +1,9 @@
+import { For, Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import React from 'react';
-import { Icon, For, FormattedMessage as T } from '@/components';
 
-import { getFooterLinks } from '@/constants/footerLinks';
-import { useAuthActions } from '@/hooks/state';
+import { getFooterLinks } from '@bigcapital/webapp/constants/footerLinks';
+import { useAuthActions } from '@bigcapital/webapp/hooks/state';
 
 /**
  * Footer item link.

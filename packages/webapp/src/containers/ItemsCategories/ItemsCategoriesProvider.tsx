@@ -1,8 +1,8 @@
+import { DashboardInsider } from '@bigcapital/webapp/components';
+import { useItemsCategories, useResourceMeta } from '@bigcapital/webapp/hooks/query';
+import { getFieldsFromResourceMeta, transformTableStateToQuery } from '@bigcapital/webapp/utils';
 // @ts-nocheck
 import React, { createContext } from 'react';
-import { DashboardInsider } from '@/components';
-import { useItemsCategories, useResourceMeta } from '@/hooks/query';
-import { transformTableStateToQuery, getFieldsFromResourceMeta } from '@/utils';
 
 const ItemsCategoriesContext = createContext();
 

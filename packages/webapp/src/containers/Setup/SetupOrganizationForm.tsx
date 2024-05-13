@@ -1,18 +1,18 @@
+import { FFormGroup, FInputGroup, FSelect, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Button, Classes, FormGroup, Intent } from '@blueprintjs/core';
+import { TimezonePicker } from '@blueprintjs/timezone';
+import classNames from 'classnames';
+import { ErrorMessage, FastField, Form } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { FastField, Form, ErrorMessage } from 'formik';
-import { Button, Intent, FormGroup, Classes } from '@blueprintjs/core';
-import classNames from 'classnames';
-import { TimezonePicker } from '@blueprintjs/timezone';
-import { FFormGroup, FInputGroup, FSelect, FormattedMessage as T } from '@/components';
 
-import { Col, Row } from '@/components';
-import { inputIntent } from '@/utils';
+import { Col, Row } from '@bigcapital/webapp/components';
+import { inputIntent } from '@bigcapital/webapp/utils';
 
-import { getFiscalYear } from '@/constants/fiscalYearOptions';
-import { getLanguages } from '@/constants/languagesOptions';
-import { getAllCurrenciesOptions } from '@/constants/currencies';
-import { getAllCountries } from '@/utils/countries';
+import { getAllCurrenciesOptions } from '@bigcapital/webapp/constants/currencies';
+import { getFiscalYear } from '@bigcapital/webapp/constants/fiscalYearOptions';
+import { getLanguages } from '@bigcapital/webapp/constants/languagesOptions';
+import { getAllCountries } from '@bigcapital/webapp/utils/countries';
 
 const countries = getAllCountries();
 

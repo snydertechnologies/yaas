@@ -1,8 +1,8 @@
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { useSettingSMSNotifications, useSettings } from '@bigcapital/webapp/hooks/query';
+import classNames from 'classnames';
 // @ts-nocheck
 import React from 'react';
-import classNames from 'classnames';
-import { CLASSES } from '@/constants/classes';
-import { useSettings, useSettingSMSNotifications } from '@/hooks/query';
 
 const SMSIntegrationContext = React.createContext();
 

@@ -3,11 +3,11 @@ import React from 'react';
 import intl from 'react-intl-universal';
 import styled from 'styled-components';
 
-import { TableStyle } from '@/constants';
-import { ReportDataTable, FinancialSheet } from '@/components';
-import { tableRowTypesToClassnames } from '@/utils';
-import { useVendorsBalanceColumns } from './components';
+import { FinancialSheet, ReportDataTable } from '@bigcapital/webapp/components';
+import { TableStyle } from '@bigcapital/webapp/constants';
+import { tableRowTypesToClassnames } from '@bigcapital/webapp/utils';
 import { useVendorsBalanceSummaryContext } from './VendorsBalanceSummaryProvider';
+import { useVendorsBalanceColumns } from './components';
 
 /**
  * Vendors balance summary table.

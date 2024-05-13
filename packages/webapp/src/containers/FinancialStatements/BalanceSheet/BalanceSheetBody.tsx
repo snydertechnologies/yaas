@@ -1,13 +1,13 @@
 // @ts-nocheck
 import React from 'react';
 
+import withCurrentOrganization from '@bigcapital/webapp/containers/Organization/withCurrentOrganization';
 import BalanceSheetTable from './BalanceSheetTable';
-import withCurrentOrganization from '@/containers/Organization/withCurrentOrganization';
 
+import { FinancialSheetSkeleton } from '@bigcapital/webapp/components';
+import { compose } from '@bigcapital/webapp/utils';
 import { FinancialReportBody } from '../FinancialReportPage';
 import { useBalanceSheetContext } from './BalanceSheetProvider';
-import { FinancialSheetSkeleton } from '@/components';
-import { compose } from '@/utils';
 
 /**
  * Balance sheet body JSX.

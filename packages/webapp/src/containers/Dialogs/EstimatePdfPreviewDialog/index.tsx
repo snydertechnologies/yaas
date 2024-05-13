@@ -1,13 +1,13 @@
+import classNames from 'classnames';
 // @ts-nocheck
 import React from 'react';
-import classNames from 'classnames';
 
-import { T, Dialog, DialogSuspense } from '@/components';
-import { CLASSES } from '@/constants/classes';
+import { Dialog, DialogSuspense, T } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
 
-import withDialogRedux from '@/components/DialogReduxConnect';
+import withDialogRedux from '@bigcapital/webapp/components/DialogReduxConnect';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 // Lazy loading the content.
 const PdfPreviewDialogContent = React.lazy(() => import('./EstimatePdfPreviewDialogContent'));

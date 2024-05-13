@@ -1,8 +1,8 @@
+import { DashboardContentTable } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
 import { ProjectSalesTable } from './ProjectSalesTable';
-import { DashboardContentTable } from '@/components';
 
 /**
  * Project Sales Table.

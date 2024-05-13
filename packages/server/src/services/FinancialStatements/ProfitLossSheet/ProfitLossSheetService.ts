@@ -1,6 +1,6 @@
-import { IProfitLossSheetMeta, IProfitLossSheetNode, IProfitLossSheetQuery } from '@/interfaces';
-import TenancyService from '@/services/Tenancy/TenancyService';
-import { Tenant } from '@/system/models';
+import { IProfitLossSheetMeta, IProfitLossSheetNode, IProfitLossSheetQuery } from '@bigcapital/server/interfaces';
+import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import { Tenant } from '@bigcapital/server/system/models';
 import { Inject, Service } from 'typedi';
 import ProfitLossSheet from './ProfitLossSheet';
 import { ProfitLossSheetMeta } from './ProfitLossSheetMeta';

@@ -1,6 +1,6 @@
 // @ts-nocheck
 import { AutoSizer, List, WindowScroller } from 'https://cdn.jsdelivr.net/npm/react-virtualized@9.22.5/+esm'; // won't work from node_modules
-import { CLASSES } from '@/constants/classes';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
 import React, { useContext } from 'react';
 import TableContext from './TableContext';
 

@@ -1,15 +1,15 @@
+import { ensureEntriesHaveEmptyLine, updateItemsEntriesTotal } from '@bigcapital/webapp/containers/Entries/utils';
+import { getEntriesTotal } from '@bigcapital/webapp/containers/Entries/utils';
+import { useCurrentOrganization } from '@bigcapital/webapp/hooks/state';
+import { defaultFastFieldShouldUpdate, formattedAmount, repeatValue, transformToForm } from '@bigcapital/webapp/utils';
+import { useFormikContext } from 'formik';
+import { first, omit } from 'lodash';
+import moment from 'moment';
+import * as R from 'ramda';
 // @ts-nocheck
 import React from 'react';
-import * as R from 'ramda';
 import intl from 'react-intl-universal';
-import moment from 'moment';
-import { useFormikContext } from 'formik';
-import { omit, first } from 'lodash';
-import { defaultFastFieldShouldUpdate, repeatValue, transformToForm, formattedAmount } from '@/utils';
 import { useEstimateFormContext } from './EstimateFormProvider';
-import { updateItemsEntriesTotal, ensureEntriesHaveEmptyLine } from '@/containers/Entries/utils';
-import { useCurrentOrganization } from '@/hooks/state';
-import { getEntriesTotal } from '@/containers/Entries/utils';
 
 export const MIN_LINES_NUMBER = 1;
 

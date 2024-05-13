@@ -1,7 +1,7 @@
+import { ListSelect, T } from '@bigcapital/webapp/components';
+import { MenuItem } from '@blueprintjs/core';
 // @ts-nocheck
 import React, { useCallback, useMemo, useEffect, useState } from 'react';
-import { MenuItem } from '@blueprintjs/core';
-import { ListSelect, T } from '@/components';
 
 export function ItemsListField({
   items,

@@ -1,10 +1,10 @@
+import { FormGroup, Intent, NumericInput } from '@blueprintjs/core';
+import classNames from 'classnames';
 // @ts-nocheck
 import React, { useState, useEffect } from 'react';
-import { FormGroup, NumericInput, Intent } from '@blueprintjs/core';
-import classNames from 'classnames';
 
-import { CellType } from '@/constants';
-import { CLASSES } from '@/constants/classes';
+import { CellType } from '@bigcapital/webapp/constants';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
 
 /**
  * Numeric input table cell.

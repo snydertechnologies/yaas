@@ -1,4 +1,4 @@
-import MetableStoreDB from '@/lib/Metable/MetableStoreDB';
+import MetableStoreDB from '@bigcapital/server/lib/Metable/MetableStoreDB';
 
 export default class SettingsStore extends MetableStoreDB {
   /**

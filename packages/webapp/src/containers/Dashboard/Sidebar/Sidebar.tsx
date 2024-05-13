@@ -7,7 +7,7 @@ import { SidebarHead } from './SidebarHead';
 import { SidebarMenu } from './SidebarMenu';
 import { useMainSidebarMenu } from './hooks';
 
-import '@/style/containers/Dashboard/Sidebar.scss';
+import '@bigcapital/webapp/style/containers/Dashboard/Sidebar.scss';
 
 /**
  * Dashboard sidebar.

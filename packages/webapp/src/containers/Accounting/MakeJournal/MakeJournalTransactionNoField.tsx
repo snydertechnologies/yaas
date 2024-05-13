@@ -1,20 +1,20 @@
-// @ts-nocheck
-import React from 'react';
-import { Position, ControlGroup } from '@blueprintjs/core';
-import { useFormikContext } from 'formik';
-import * as R from 'ramda';
 import {
+  FFormGroup,
+  FInputGroup,
   FieldHint,
   FieldRequiredHint,
   Icon,
   InputPrependButton,
   FormattedMessage as T,
-  FInputGroup,
-  FFormGroup,
-} from '@/components';
+} from '@bigcapital/webapp/components';
+import { ControlGroup, Position } from '@blueprintjs/core';
+import { useFormikContext } from 'formik';
+import * as R from 'ramda';
+// @ts-nocheck
+import React from 'react';
 
-import withSettings from '@/containers/Settings/withSettings';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
 
 /**
  * Journal number field of make journal form.

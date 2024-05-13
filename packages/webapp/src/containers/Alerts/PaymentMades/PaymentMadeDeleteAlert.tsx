@@ -1,17 +1,17 @@
+import { AppToaster, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Alert, Intent } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { AppToaster, FormattedMessage as T } from '@/components';
-import { Intent, Alert } from '@blueprintjs/core';
 
-import withAlertStoreConnect from '@/containers/Alert/withAlertStoreConnect';
-import withAlertActions from '@/containers/Alert/withAlertActions';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
+import withAlertActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withAlertStoreConnect from '@bigcapital/webapp/containers/Alert/withAlertStoreConnect';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
 
-import { useDeletePaymentMade } from '@/hooks/query';
+import { useDeletePaymentMade } from '@bigcapital/webapp/hooks/query';
 
-import { compose } from '@/utils';
-import { DRAWERS } from '@/constants/drawers';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Payment made delete alert.

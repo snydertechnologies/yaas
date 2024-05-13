@@ -1,12 +1,12 @@
+import { AnchorButton } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { AnchorButton } from '@blueprintjs/core';
 
-import { DialogContent, PdfDocumentPreview, T } from '@/components';
-import { usePdfCreditNote } from '@/hooks/query';
+import { DialogContent, PdfDocumentPreview, T } from '@bigcapital/webapp/components';
+import { usePdfCreditNote } from '@bigcapital/webapp/hooks/query';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { compose } from '@/utils';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { compose } from '@bigcapital/webapp/utils';
 
 function CreditNotePdfPreviewDialogContent({ subscriptionForm: { creditNoteId } }) {
   const { isLoading, pdfUrl } = usePdfCreditNote(creditNoteId);

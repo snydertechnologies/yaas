@@ -1,4 +1,4 @@
-import SendInviteUsersMailMessage from '@/services/InviteUsers/SendInviteUsersMailMessage';
+import SendInviteUsersMailMessage from '@bigcapital/server/services/InviteUsers/SendInviteUsersMailMessage';
 import { Container } from 'typedi';
 
 export default class UserInviteMailJob {

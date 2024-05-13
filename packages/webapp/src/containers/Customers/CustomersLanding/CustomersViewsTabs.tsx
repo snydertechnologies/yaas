@@ -1,14 +1,14 @@
+import { Alignment, Navbar, NavbarGroup } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Alignment, Navbar, NavbarGroup } from '@blueprintjs/core';
 
-import { DashboardViewsTabs } from '@/components';
+import { DashboardViewsTabs } from '@bigcapital/webapp/components';
+import { compose, transfromViewsToTabs } from '@bigcapital/webapp/utils';
 import { useCustomersListContext } from './CustomersListProvider';
-import { compose, transfromViewsToTabs } from '@/utils';
 
+import withDashboardActions from '@bigcapital/webapp/containers/Dashboard/withDashboardActions';
 import withCustomers from './withCustomers';
 import withCustomersActions from './withCustomersActions';
-import withDashboardActions from '@/containers/Dashboard/withDashboardActions';
 
 /**
  * Customers views tabs.

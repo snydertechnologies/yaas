@@ -1,7 +1,7 @@
-import { ITableRow, ITransactionsByContactsContact } from '@/interfaces';
+import { ITableRow, ITransactionsByContactsContact } from '@bigcapital/server/interfaces';
+import { tableMapper, tableRowMapper } from '@bigcapital/server/utils';
 import moment from 'moment';
 import * as R from 'ramda';
-import { tableMapper, tableRowMapper } from 'utils';
 
 enum ROW_TYPE {
   OPENING_BALANCE = 'OPENING_BALANCE',

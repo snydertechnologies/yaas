@@ -1,6 +1,6 @@
 // @ts-nocheck
 import { Callout, Classes, Intent } from '@blueprintjs/core';
-import { Stack } from '@/components';
+import { Stack } from '@bigcapital/webapp/components';
 import { ImportDropzone } from './ImportDropzone';
 import { ImportSampleDownload } from './ImportSampleDownload';
 import { ImportFileUploadForm } from './ImportFileUploadForm';

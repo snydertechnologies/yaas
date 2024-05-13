@@ -1,8 +1,8 @@
+import { If, Pagination } from '@bigcapital/webapp/components';
+import { saveInvoke } from '@bigcapital/webapp/utils';
 // @ts-nocheck
 import React, { useCallback, useContext } from 'react';
-import { If, Pagination } from '@/components';
 import TableContext from './TableContext';
-import { saveInvoke } from '@/utils';
 
 /**
  * Table pagination.

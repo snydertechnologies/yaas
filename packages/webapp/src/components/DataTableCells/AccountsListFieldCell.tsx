@@ -1,12 +1,12 @@
+import { Classes, FormGroup, Intent } from '@blueprintjs/core';
+import classNames from 'classnames';
 // @ts-nocheck
 import React, { useRef, useCallback, useMemo } from 'react';
-import classNames from 'classnames';
-import { FormGroup, Classes, Intent } from '@blueprintjs/core';
 import intl from 'react-intl-universal';
 
-import { CellType } from '@/constants';
-import { useCellAutoFocus } from '@/hooks';
-import { AccountsSuggestField } from '@/components';
+import { AccountsSuggestField } from '@bigcapital/webapp/components';
+import { CellType } from '@bigcapital/webapp/constants';
+import { useCellAutoFocus } from '@bigcapital/webapp/hooks';
 
 /**
  * Account cell renderer.

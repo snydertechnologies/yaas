@@ -1,8 +1,8 @@
-import { ISaleInvoiceMailSend, SendInvoiceMailDTO } from '@/interfaces';
-import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';
-import Mail from '@/lib/Mail';
-import { parseAndValidateMailOptions } from '@/services/MailNotification/utils';
-import events from '@/subscribers/events';
+import { ISaleInvoiceMailSend, SendInvoiceMailDTO } from '@bigcapital/server/interfaces';
+import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
+import Mail from '@bigcapital/server/lib/Mail';
+import { parseAndValidateMailOptions } from '@bigcapital/server/services/MailNotification/utils';
+import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 import { SaleInvoicePdf } from './SaleInvoicePdf';
 import { SendSaleInvoiceMailCommon } from './SendInvoiceInvoiceMailCommon';

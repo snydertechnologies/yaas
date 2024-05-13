@@ -1,9 +1,9 @@
 // @ts-nocheck
 import React from 'react';
 
-import '@/style/components/Drawers/ItemDrawer.scss';
+import '@bigcapital/webapp/style/components/Drawers/ItemDrawer.scss';
 
-import { DrawerBody } from '@/components';
+import { DrawerBody } from '@bigcapital/webapp/components';
 import ItemContentDetails from './ItemContentDetails';
 import { ItemDetailDrawerProvider } from './ItemDetailDrawerProvider';
 

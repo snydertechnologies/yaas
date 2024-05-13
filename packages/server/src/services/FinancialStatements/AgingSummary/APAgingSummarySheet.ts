@@ -7,11 +7,11 @@ import {
   IAgingPeriod,
   IBill,
   IVendor,
-} from '@/interfaces';
+} from '@bigcapital/server/interfaces';
+import { allPassedConditionsPass } from '@bigcapital/server/utils';
 import { groupBy, isEmpty, sum } from 'lodash';
 import * as R from 'ramda';
 import { Dictionary } from 'tsyringe/dist/typings/types';
-import { allPassedConditionsPass } from 'utils';
 import AgingSummaryReport from './AgingSummary';
 
 export default class APAgingSummarySheet extends AgingSummaryReport {

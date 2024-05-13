@@ -1,5 +1,5 @@
-import Resource from 'models/Resource';
-import View from 'models/View';
+import Resource from '@bigcapital/server/models/Resource';
+import View from '@bigcapital/server/models/View';
 import { tenantFactory } from '~/dbInit';
 import { expect } from '~/testInit';
 

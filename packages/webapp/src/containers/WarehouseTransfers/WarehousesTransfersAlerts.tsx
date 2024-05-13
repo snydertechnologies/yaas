@@ -2,13 +2,13 @@
 import React from 'react';
 
 const WarehouseTransferDeleteAlert = React.lazy(
-  () => import('@/containers/Alerts/WarehousesTransfer/WarehouseTransferDeleteAlert'),
+  () => import('@bigcapital/webapp/containers/Alerts/WarehousesTransfer/WarehouseTransferDeleteAlert'),
 );
 const WarehouseTransferInitiateAlert = React.lazy(
-  () => import('@/containers/Alerts/WarehousesTransfer/WarehouseTransferInitiateAlert'),
+  () => import('@bigcapital/webapp/containers/Alerts/WarehousesTransfer/WarehouseTransferInitiateAlert'),
 );
 const TransferredWarehouseTransferAlert = React.lazy(
-  () => import('@/containers/Alerts/WarehousesTransfer/TransferredWarehouseTransferAlert'),
+  () => import('@bigcapital/webapp/containers/Alerts/WarehousesTransfer/TransferredWarehouseTransferAlert'),
 );
 
 /**

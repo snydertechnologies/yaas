@@ -1,10 +1,10 @@
 // @ts-nocheck
 import React from 'react';
 
-import { filterProjectProfitabilityOptions } from './constants';
+import { Col, FFormGroup, Row, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { ProjectMultiSelect } from '@bigcapital/webapp/containers/Projects/components';
 import { Classes } from '@blueprintjs/core';
-import { ProjectMultiSelect } from '@/containers/Projects/components';
-import { Row, Col, FFormGroup, FormattedMessage as T } from '@/components';
+import { filterProjectProfitabilityOptions } from './constants';
 
 import FinancialStatementDateRange from '../FinancialStatementDateRange';
 import FinancialStatementsFilter from '../FinancialStatementsFilter';

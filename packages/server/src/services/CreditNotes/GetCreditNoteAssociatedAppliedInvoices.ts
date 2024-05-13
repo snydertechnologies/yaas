@@ -1,5 +1,5 @@
-import { ISaleInvoice } from '@/interfaces';
-import { TransformerInjectable } from '@/lib/Transformer/TransformerInjectable';
+import { ISaleInvoice } from '@bigcapital/server/interfaces';
+import { TransformerInjectable } from '@bigcapital/server/lib/Transformer/TransformerInjectable';
 import { Inject, Service } from 'typedi';
 import { CreditNoteAppliedInvoiceTransformer } from './CreditNoteAppliedInvoiceTransformer';
 import BaseCreditNotes from './CreditNotes';

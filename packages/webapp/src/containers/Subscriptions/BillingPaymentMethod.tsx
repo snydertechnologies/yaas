@@ -1,7 +1,7 @@
 // @ts-nocheck
 import React from 'react';
 
-import { T } from '@/components';
+import { T } from '@bigcapital/webapp/components';
 import { PaymentMethodTabs } from './SubscriptionTabs';
 
 export default ({ formik, title, description }) => {

@@ -2,17 +2,17 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
-import { DataTable, TableSkeletonRows } from '@/components';
-import { TableStyle } from '@/constants';
+import { DataTable, TableSkeletonRows } from '@bigcapital/webapp/components';
+import { TableStyle } from '@bigcapital/webapp/constants';
 
 import { useItemDetailDrawerContext } from '../../ItemDetailDrawerProvider';
-import { useItemAssociatedBillTransactions } from '@/hooks/query';
+import { useItemAssociatedBillTransactions } from '@bigcapital/webapp/hooks/query';
 import { useBillTransactionsColumns, ActionsMenu } from './components';
-import withAlertsActions from '@/containers/Alert/withAlertActions';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
 
-import { compose } from '@/utils';
-import { DRAWERS } from '@/constants/drawers';
+import { compose } from '@bigcapital/webapp/utils';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
 
 /**
  * Bill payment transactions data table.

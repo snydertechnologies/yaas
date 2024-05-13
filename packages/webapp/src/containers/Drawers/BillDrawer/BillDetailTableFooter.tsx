@@ -1,6 +1,6 @@
 // @ts-nocheck
 import styled from 'styled-components';
-import { TotalLineBorderStyle, TotalLineTextStyle, T, TotalLines, TotalLine } from '@/components';
+import { TotalLineBorderStyle, TotalLineTextStyle, T, TotalLines, TotalLine } from '@bigcapital/webapp/components';
 import { useBillDrawerContext } from './BillDrawerProvider';
 
 /**

@@ -1,16 +1,16 @@
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { InputGroup, Intent, MenuItem, Overlay, Spinner, Tag } from '@blueprintjs/core';
+import { QueryList } from '@blueprintjs/select';
+import classNames from 'classnames';
+import { isUndefined } from 'lodash';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import classNames from 'classnames';
-import { isUndefined } from 'lodash';
-import { Overlay, InputGroup, Tag, MenuItem, Spinner, Intent } from '@blueprintjs/core';
-import { QueryList } from '@blueprintjs/select';
-import { CLASSES } from '@/constants/classes';
 
-import { Icon, If, ListSelect, FormattedMessage as T } from '@/components';
+import { Icon, If, ListSelect, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { RESOURCES_TYPES } from '@bigcapital/webapp/constants/resourcesTypes';
 import { UniversalSearchProvider, useUniversalSearchContext } from './UniversalSearchProvider';
 import { filterItemsByResourceType } from './utils';
-import { RESOURCES_TYPES } from '@/constants/resourcesTypes';
 
 /**
  * Universal search input action.

@@ -1,4 +1,4 @@
-import SettingsStore from '@/services/Settings/SettingsStore';
+import SettingsStore from '@bigcapital/server/services/Settings/SettingsStore';
 import { NextFunction, Request, Response } from 'express';
 import { Container } from 'typedi';
 

@@ -1,6 +1,6 @@
+import { getCurrenciesList } from '@bigcapital/webapp/store/currencies/currencies.selector';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { getCurrenciesList } from '@/store/currencies/currencies.selector';
 
 export default (mapState) => {
   const mapStateToProps = (state, props) => {

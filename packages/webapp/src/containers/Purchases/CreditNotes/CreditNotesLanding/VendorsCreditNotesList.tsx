@@ -1,18 +1,18 @@
 // @ts-nocheck
 import React from 'react';
 
-import '@/style/pages/VendorsCreditNote/List.scss';
+import '@bigcapital/webapp/style/pages/VendorsCreditNote/List.scss';
 
-import { DashboardPageContent } from '@/components';
+import { DashboardPageContent } from '@bigcapital/webapp/components';
 import VendorsCreditNoteActionsBar from './VendorsCreditNoteActionsBar';
-import VendorsCreditNoteViewTabs from './VendorsCreditNoteViewTabs';
 import VendorsCreditNoteDataTable from './VendorsCreditNoteDataTable';
+import VendorsCreditNoteViewTabs from './VendorsCreditNoteViewTabs';
 
 import withVendorsCreditNotes from './withVendorsCreditNotes';
 import withVendorsCreditNotesActions from './withVendorsCreditNotesActions';
 
+import { compose, transformTableStateToQuery } from '@bigcapital/webapp/utils';
 import { VendorsCreditNoteListProvider } from './VendorsCreditNoteListProvider';
-import { transformTableStateToQuery, compose } from '@/utils';
 
 function VendorsCreditNotesList({
   // #withVendorsCreditNotes

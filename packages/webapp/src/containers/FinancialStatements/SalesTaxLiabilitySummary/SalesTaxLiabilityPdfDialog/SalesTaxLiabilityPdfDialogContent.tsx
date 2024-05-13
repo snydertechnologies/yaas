@@ -1,7 +1,7 @@
 // @ts-nocheck
-import { DialogContent, PdfDocumentPreview, FormattedMessage as T } from '@/components';
+import { DialogContent, PdfDocumentPreview, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { useSalesTaxLiabilitySummaryPdf } from '@bigcapital/webapp/hooks/query';
 import { AnchorButton } from '@blueprintjs/core';
-import { useSalesTaxLiabilitySummaryPdf } from '@/hooks/query';
 import { useSalesTaxLiabilitySummaryContext } from '../SalesTaxLiabilitySummaryBoot';
 
 export default function SalesTaxLiabilityPdfDialogContent() {

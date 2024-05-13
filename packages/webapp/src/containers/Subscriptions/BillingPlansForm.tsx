@@ -1,12 +1,12 @@
+import * as R from 'ramda';
 // @ts-nocheck
 import React from 'react';
-import * as R from 'ramda';
 
-import '@/style/pages/Subscription/BillingPlans.scss';
+import '@bigcapital/webapp/style/pages/Subscription/BillingPlans.scss';
 
-import BillingPlansInput from './BillingPlansInput';
-import BillingPeriodsInput from './BillingPeriodsInput';
 import BillingPaymentMethod from './BillingPaymentMethod';
+import BillingPeriodsInput from './BillingPeriodsInput';
+import BillingPlansInput from './BillingPlansInput';
 
 import withSubscriptions from './withSubscriptions';
 

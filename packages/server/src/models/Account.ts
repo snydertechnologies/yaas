@@ -1,12 +1,12 @@
-import { ACCOUNT_TYPES, getAccountsSupportsMultiCurrency } from '@/data/AccountTypes';
-import AccountTypesUtils from '@/lib/AccountTypes';
-import DependencyGraph from '@/lib/DependencyGraph';
-import { buildSortColumnQuery } from '@/lib/ViewRolesBuilder';
-import TenantModel from '@/models/TenantModel';
-import { DEFAULT_VIEWS } from '@/services/Accounts/constants';
+import { ACCOUNT_TYPES, getAccountsSupportsMultiCurrency } from '@bigcapital/server/data/AccountTypes';
+import AccountTypesUtils from '@bigcapital/server/lib/AccountTypes';
+import DependencyGraph from '@bigcapital/server/lib/DependencyGraph';
+import { buildSortColumnQuery } from '@bigcapital/server/lib/ViewRolesBuilder';
+import TenantModel from '@bigcapital/server/models/TenantModel';
+import { DEFAULT_VIEWS } from '@bigcapital/server/services/Accounts/constants';
+import { flatToNestedArray } from '@bigcapital/server/utils';
 import { castArray } from 'lodash';
 import { Model, mixin } from 'objection';
-import { flatToNestedArray } from 'utils';
 import AccountSettings from './Account.Settings';
 import CustomViewBaseModel from './CustomViewBaseModel';
 import ModelSearchable from './ModelSearchable';
@@ -178,14 +178,14 @@ export default class Account extends mixin(TenantModel, [ModelSettings, CustomVi
    * Relationship mapping.
    */
   static get relationMappings() {
-    const AccountTransaction = require('models/AccountTransaction');
-    const Item = require('models/Item');
-    const InventoryAdjustment = require('models/InventoryAdjustment');
-    const ManualJournalEntry = require('models/ManualJournalEntry');
-    const Expense = require('models/Expense');
-    const ExpenseEntry = require('models/ExpenseCategory');
-    const ItemEntry = require('models/ItemEntry');
-    const UncategorizedTransaction = require('models/UncategorizedCashflowTransaction');
+    const AccountTransaction = require('@bigcapital/server/models/AccountTransaction');
+    const Item = require('@bigcapital/server/models/Item');
+    const InventoryAdjustment = require('@bigcapital/server/models/InventoryAdjustment');
+    const ManualJournalEntry = require('@bigcapital/server/models/ManualJournalEntry');
+    const Expense = require('@bigcapital/server/models/Expense');
+    const ExpenseEntry = require('@bigcapital/server/models/ExpenseCategory');
+    const ItemEntry = require('@bigcapital/server/models/ItemEntry');
+    const UncategorizedTransaction = require('@bigcapital/server/models/UncategorizedCashflowTransaction');
 
     return {
       /**

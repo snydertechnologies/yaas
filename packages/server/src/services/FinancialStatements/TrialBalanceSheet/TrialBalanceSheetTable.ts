@@ -6,8 +6,8 @@ import {
   ITrialBalanceSheetData,
   ITrialBalanceSheetQuery,
   ITrialBalanceTotal,
-} from '@/interfaces';
-import { tableRowMapper } from '@/utils';
+} from '@bigcapital/server/interfaces';
+import { tableRowMapper } from '@bigcapital/server/utils';
 import * as R from 'ramda';
 import { IROW_TYPE } from '../BalanceSheet/constants';
 import FinancialSheet from '../FinancialSheet';

@@ -1,10 +1,10 @@
+import { debounce } from 'lodash';
 // @ts-nocheck
 import React, { useState, useRef } from 'react';
 import SplitPane from 'react-split-pane';
-import { debounce } from 'lodash';
 
-import withDashboard from '@/containers/Dashboard/withDashboard';
-import { compose } from '@/utils';
+import withDashboard from '@bigcapital/webapp/containers/Dashboard/withDashboard';
+import { compose } from '@bigcapital/webapp/utils';
 
 function DashboardSplitPane({ sidebarExpended, children }) {
   const initialSize = 220;

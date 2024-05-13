@@ -1,4 +1,4 @@
-import { TransactionsLockingGroup } from '@/interfaces';
+import { TransactionsLockingGroup } from '@bigcapital/server/interfaces';
 import { Inject, Service } from 'typedi';
 import TransactionsLockingGuard from './TransactionsLockingGuard';
 

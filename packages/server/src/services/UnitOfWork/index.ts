@@ -1,4 +1,4 @@
-import TenancyService from '@/services/Tenancy/TenancyService';
+import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Transaction } from 'objection';
 import { Inject, Service } from 'typedi';
 

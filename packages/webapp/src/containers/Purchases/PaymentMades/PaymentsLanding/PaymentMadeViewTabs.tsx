@@ -1,10 +1,10 @@
+import { DashboardViewsTabs, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Alignment, Navbar, NavbarGroup } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import { useHistory } from 'react-router';
-import { DashboardViewsTabs, FormattedMessage as T } from '@/components';
-import { Alignment, Navbar, NavbarGroup } from '@blueprintjs/core';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 import { usePaymentMadesListContext } from './PaymentMadesListProvider';
 import { transformPaymentViewsToTabs } from './utils';
 

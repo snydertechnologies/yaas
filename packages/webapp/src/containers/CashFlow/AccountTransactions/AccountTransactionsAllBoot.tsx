@@ -1,8 +1,8 @@
+import { IntersectionObserver } from '@bigcapital/webapp/components';
+import { useAccountTransactionsInfinity } from '@bigcapital/webapp/hooks/query';
+import { flatten, map } from 'lodash';
 // @ts-nocheck
 import React from 'react';
-import { flatten, map } from 'lodash';
-import { IntersectionObserver } from '@/components';
-import { useAccountTransactionsInfinity } from '@/hooks/query';
 import { useAccountTransactionsContext } from './AccountTransactionsProvider';
 
 const AccountTransactionsAllBootContext = React.createContext();

@@ -1,6 +1,6 @@
+import t from '@bigcapital/webapp/hooks/query/types';
 // @ts-nocheck
-import { useRequestQuery } from '@/hooks/useQueryRequest';
-import t from '@/hooks/query/types';
+import { useRequestQuery } from '@bigcapital/webapp/hooks/useQueryRequest';
 
 /**
  * Retrieve the profitability summary for the project

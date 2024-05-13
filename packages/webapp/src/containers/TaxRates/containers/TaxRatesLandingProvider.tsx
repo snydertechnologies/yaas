@@ -1,8 +1,8 @@
+import { DashboardInsider } from '@bigcapital/webapp/components/Dashboard';
+import { useTaxRates } from '@bigcapital/webapp/hooks/query/taxRates';
+import { isEmpty } from 'lodash';
 // @ts-nocheck
 import React from 'react';
-import { isEmpty } from 'lodash';
-import { DashboardInsider } from '@/components/Dashboard';
-import { useTaxRates } from '@/hooks/query/taxRates';
 
 const TaxRatesLandingContext = React.createContext();
 

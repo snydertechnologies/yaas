@@ -1,19 +1,19 @@
+import { Intent } from '@blueprintjs/core';
+import { Formik } from 'formik';
+import * as R from 'ramda';
 // @ts-nocheck
 import { useEffect } from 'react';
 import intl from 'react-intl-universal';
-import { Formik } from 'formik';
-import * as R from 'ramda';
-import { Intent } from '@blueprintjs/core';
 
-import { AppToaster } from '@/components';
-import { PreferencesCreditNotesFormSchema } from './PreferencesCreditNotesForm.schema';
+import { AppToaster } from '@bigcapital/webapp/components';
+import withDashboardActions from '@bigcapital/webapp/containers/Dashboard/withDashboardActions';
 import { PreferencesCreditNotesForm } from './PreferencesCreditNotesForm';
-import withDashboardActions from '@/containers/Dashboard/withDashboardActions';
+import { PreferencesCreditNotesFormSchema } from './PreferencesCreditNotesForm.schema';
 
-import { compose, transformToForm, transfromToSnakeCase } from '@/utils';
-import withSettings from '@/containers/Settings/withSettings';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import { useSaveSettings } from '@bigcapital/webapp/hooks/query';
+import { compose, transformToForm, transfromToSnakeCase } from '@bigcapital/webapp/utils';
 import { transferObjectOptionsToArray } from '../Accountant/utils';
-import { useSaveSettings } from '@/hooks/query';
 
 const defaultValues = {
   termsConditions: '',

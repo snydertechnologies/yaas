@@ -1,27 +1,27 @@
-// @ts-nocheck
-import React from 'react';
+import { DashboardActionsBar, Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
 import {
-  NavbarGroup,
   Button,
   Classes,
   NavbarDivider,
+  NavbarGroup,
   Popover,
   PopoverInteractionKind,
   Position,
 } from '@blueprintjs/core';
 import classNames from 'classnames';
-import { DashboardActionsBar, Icon, FormattedMessage as T } from '@/components';
+// @ts-nocheck
+import React from 'react';
 
-import NumberFormatDropdown from '@/components/NumberFormatDropdown';
+import NumberFormatDropdown from '@bigcapital/webapp/components/NumberFormatDropdown';
 
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { useInventoryValuationContext } from './InventoryValuationProvider';
 import withInventoryValuation from './withInventoryValuation';
 import withInventoryValuationActions from './withInventoryValuationActions';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { useInventoryValuationContext } from './InventoryValuationProvider';
 
-import { compose, saveInvoke } from '@/utils';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import { compose, saveInvoke } from '@bigcapital/webapp/utils';
 import { InventoryValuationExportMenu } from './components';
-import { DialogsName } from '@/constants/dialogs';
 
 function InventoryValuationActionsBar({
   // #withInventoryValuation

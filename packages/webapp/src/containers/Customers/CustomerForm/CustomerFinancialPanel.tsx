@@ -1,25 +1,25 @@
-// @ts-nocheck
-import React from 'react';
-import classNames from 'classnames';
-import { FormGroup, Position, Classes, ControlGroup } from '@blueprintjs/core';
-import { FastField, ErrorMessage, useFormikContext } from 'formik';
-import { Features } from '@/constants';
 import {
-  FFormGroup,
-  FormattedMessage as T,
-  InputPrependText,
-  CurrencySelectList,
   BranchSelect,
-  FeatureCan,
-  Row,
   Col,
-  FMoneyInputGroup,
+  CurrencySelectList,
   ExchangeRateInputGroup,
   FDateInput,
-} from '@/components';
+  FFormGroup,
+  FMoneyInputGroup,
+  FeatureCan,
+  InputPrependText,
+  Row,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import { Features } from '@bigcapital/webapp/constants';
+import { useCurrentOrganization } from '@bigcapital/webapp/hooks/state';
+import { Classes, ControlGroup, FormGroup, Position } from '@blueprintjs/core';
+import classNames from 'classnames';
+import { ErrorMessage, FastField, useFormikContext } from 'formik';
+// @ts-nocheck
+import React from 'react';
 import { useCustomerFormContext } from './CustomerFormProvider';
 import { openingBalanceFieldShouldUpdate, useIsCustomerForeignCurrency, useSetPrimaryBranchToForm } from './utils';
-import { useCurrentOrganization } from '@/hooks/state';
 
 /**
  * Customer financial panel.

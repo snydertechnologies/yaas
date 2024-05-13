@@ -1,19 +1,19 @@
+import { DashboardPageContent } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import React, { useEffect } from 'react';
-import { DashboardPageContent } from '@/components';
 
-import '@/style/pages/Bills/List.scss';
+import '@bigcapital/webapp/style/pages/Bills/List.scss';
 
 import { BillsListProvider } from './BillsListProvider';
 
 import BillsActionsBar from './BillsActionsBar';
-import BillsViewsTabs from './BillsViewsTabs';
 import BillsTable from './BillsTable';
+import BillsViewsTabs from './BillsViewsTabs';
 
 import withBills from './withBills';
 import withBillsActions from './withBillsActions';
 
-import { transformTableStateToQuery, compose } from '@/utils';
+import { compose, transformTableStateToQuery } from '@bigcapital/webapp/utils';
 
 /**
  * Bills list.

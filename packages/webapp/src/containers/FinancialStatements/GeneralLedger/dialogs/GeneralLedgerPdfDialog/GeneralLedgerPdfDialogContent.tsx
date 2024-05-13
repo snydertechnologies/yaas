@@ -1,7 +1,7 @@
 // @ts-nocheck
-import { DialogContent, PdfDocumentPreview, FormattedMessage as T } from '@/components';
+import { DialogContent, PdfDocumentPreview, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { useGeneralLedgerPdf } from '@bigcapital/webapp/hooks/query';
 import { AnchorButton } from '@blueprintjs/core';
-import { useGeneralLedgerPdf } from '@/hooks/query';
 import { useGeneralLedgerContext } from '../../GeneralLedgerProvider';
 
 export default function GeneralLedgerPdfDialogContent() {

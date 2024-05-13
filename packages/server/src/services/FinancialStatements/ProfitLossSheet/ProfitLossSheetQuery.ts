@@ -1,4 +1,4 @@
-import { IFinancialDatePeriodsUnit, IProfitLossSheetQuery } from '@/interfaces';
+import { IFinancialDatePeriodsUnit, IProfitLossSheetQuery } from '@bigcapital/server/interfaces';
 import { merge } from 'lodash';
 import * as R from 'ramda';
 import { FinancialDateRanges } from '../FinancialDateRanges';

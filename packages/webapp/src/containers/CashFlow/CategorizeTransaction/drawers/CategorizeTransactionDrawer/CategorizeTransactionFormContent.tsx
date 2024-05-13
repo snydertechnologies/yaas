@@ -1,10 +1,10 @@
+import { FFormGroup, FSelect } from '@bigcapital/webapp/components';
+import { getAddMoneyInOptions, getAddMoneyOutOptions } from '@bigcapital/webapp/constants';
+import { FormGroup } from '@blueprintjs/core';
+import { useFormikContext } from 'formik';
 // @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
-import { FormGroup } from '@blueprintjs/core';
-import { FFormGroup, FSelect } from '@/components';
-import { getAddMoneyInOptions, getAddMoneyOutOptions } from '@/constants';
-import { useFormikContext } from 'formik';
 import { useCategorizeTransactionBoot } from './CategorizeTransactionBoot';
 
 // Retrieves the add money in button options.

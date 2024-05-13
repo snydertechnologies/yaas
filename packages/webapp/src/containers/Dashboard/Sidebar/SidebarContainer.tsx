@@ -1,12 +1,12 @@
+import classNames from 'classnames';
 // @ts-nocheck
 import React, { useEffect } from 'react';
 import { Scrollbar } from 'react-scrollbars-custom';
-import classNames from 'classnames';
 
-import withDashboard from '@/containers/Dashboard/withDashboard';
+import withDashboard from '@bigcapital/webapp/containers/Dashboard/withDashboard';
 
+import { compose } from '@bigcapital/webapp/utils';
 import { useObserveSidebarExpendedBodyclass } from './hooks';
-import { compose } from '@/utils';
 
 /**
  * Sidebar container/

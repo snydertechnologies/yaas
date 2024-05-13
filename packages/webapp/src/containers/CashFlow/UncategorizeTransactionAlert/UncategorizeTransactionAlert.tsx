@@ -1,16 +1,16 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { AppToaster } from '@bigcapital/webapp/components';
+import { Alert, Intent } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Intent, Alert } from '@blueprintjs/core';
-import { FormattedMessage as T } from '@/components';
-import { AppToaster } from '@/components';
 
-import withAlertStoreConnect from '@/containers/Alert/withAlertStoreConnect';
-import withAlertActions from '@/containers/Alert/withAlertActions';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
+import withAlertActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withAlertStoreConnect from '@bigcapital/webapp/containers/Alert/withAlertStoreConnect';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
 
-import { useUncategorizeTransaction } from '@/hooks/query';
-import { compose } from '@/utils';
-import { DRAWERS } from '@/constants/drawers';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import { useUncategorizeTransaction } from '@bigcapital/webapp/hooks/query';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Project delete alert.

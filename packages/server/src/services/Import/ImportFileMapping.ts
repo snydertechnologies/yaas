@@ -1,5 +1,5 @@
-import { ServiceError } from '@/exceptions';
-import { Import } from '@/system/models';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { Import } from '@bigcapital/server/system/models';
 import { fromPairs, isUndefined } from 'lodash';
 import { Inject, Service } from 'typedi';
 import ResourceService from '../Resource/ResourceService';

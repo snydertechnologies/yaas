@@ -1,5 +1,5 @@
-import { ChromiumlyTenancy } from '@/services/ChromiumlyTenancy/ChromiumlyTenancy';
-import { TemplateInjectable } from '@/services/TemplateInjectable/TemplateInjectable';
+import { ChromiumlyTenancy } from '@bigcapital/server/services/ChromiumlyTenancy/ChromiumlyTenancy';
+import { TemplateInjectable } from '@bigcapital/server/services/TemplateInjectable/TemplateInjectable';
 import { Inject, Service } from 'typedi';
 import { GetPaymentReceive } from './GetPaymentReceive';
 

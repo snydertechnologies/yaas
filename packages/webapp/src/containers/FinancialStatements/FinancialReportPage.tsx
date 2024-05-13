@@ -1,9 +1,9 @@
+import { DashboardInsider } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import classNames from 'classnames';
 // @ts-nocheck
 import React from 'react';
-import classNames from 'classnames';
 import styled from 'styled-components';
-import { DashboardInsider } from '@/components';
-import { CLASSES } from '@/constants/classes';
 
 /**
  * Financial report page.

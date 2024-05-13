@@ -1,5 +1,5 @@
-import { ICreditNoteCreatedPayload } from '@/interfaces';
-import events from '@/subscribers/events';
+import { ICreditNoteCreatedPayload } from '@bigcapital/server/interfaces';
+import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 import BaseCreditNotes from './CreditNotes';
 

@@ -1,15 +1,20 @@
+import {
+  DashboardActionsBar,
+  DashboardRowsHeightButton,
+  Icon,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import withSettingsActions from '@bigcapital/webapp/containers/Settings/withSettingsActions';
+import { compose } from '@bigcapital/webapp/utils';
+import { Alignment, Button, Classes, NavbarDivider, NavbarGroup } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { Button, Classes, NavbarDivider, NavbarGroup, Alignment } from '@blueprintjs/core';
-import { Icon, FormattedMessage as T, DashboardRowsHeightButton, DashboardActionsBar } from '@/components';
-import { ProjectTransactionsSelect } from './components';
-import withSettings from '@/containers/Settings/withSettings';
-import withSettingsActions from '@/containers/Settings/withSettingsActions';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { projectTranslations } from './common';
 import { useProjectDetailContext } from './ProjectDetailProvider';
-import { compose } from '@/utils';
+import { projectTranslations } from './common';
+import { ProjectTransactionsSelect } from './components';
 
 /**
  * Project detail actions bar.

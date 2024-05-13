@@ -1,14 +1,14 @@
+import { MenuItem } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { MenuItem } from '@blueprintjs/core';
 
-import { RESOURCES_TYPES } from '@/constants/resourcesTypes';
-import { AbilitySubject, PaymentReceiveAction } from '@/constants/abilityOption';
-import { highlightText } from '@/utils';
-import { Icon } from '@/components';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
-import { DRAWERS } from '@/constants/drawers';
+import { Icon } from '@bigcapital/webapp/components';
+import { AbilitySubject, PaymentReceiveAction } from '@bigcapital/webapp/constants/abilityOption';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import { RESOURCES_TYPES } from '@bigcapital/webapp/constants/resourcesTypes';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
+import { highlightText } from '@bigcapital/webapp/utils';
 
 /**
  * Payment receive universal search item select action.

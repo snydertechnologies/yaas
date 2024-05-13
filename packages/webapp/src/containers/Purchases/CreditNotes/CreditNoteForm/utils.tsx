@@ -1,22 +1,22 @@
+import { first } from 'lodash';
+import moment from 'moment';
+import * as R from 'ramda';
 // @ts-nocheck
 import React from 'react';
-import * as R from 'ramda';
-import moment from 'moment';
-import { first } from 'lodash';
 
+import { ensureEntriesHaveEmptyLine, updateItemsEntriesTotal } from '@bigcapital/webapp/containers/Entries/utils';
+import { getEntriesTotal } from '@bigcapital/webapp/containers/Entries/utils';
+import { useCurrentOrganization } from '@bigcapital/webapp/hooks/state';
 import {
   defaultFastFieldShouldUpdate,
-  transformToForm,
+  formattedAmount,
+  orderingLinesIndexes,
   repeatValue,
   transactionNumber,
-  orderingLinesIndexes,
-  formattedAmount,
-} from '@/utils';
-import { updateItemsEntriesTotal, ensureEntriesHaveEmptyLine } from '@/containers/Entries/utils';
+  transformToForm,
+} from '@bigcapital/webapp/utils';
 import { useFormikContext } from 'formik';
 import { useVendorCreditNoteFormContext } from './VendorCreditNoteFormProvider';
-import { useCurrentOrganization } from '@/hooks/state';
-import { getEntriesTotal } from '@/containers/Entries/utils';
 
 export const MIN_LINES_NUMBER = 1;
 

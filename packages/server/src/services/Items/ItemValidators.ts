@@ -1,7 +1,7 @@
-import { ACCOUNT_PARENT_TYPE, ACCOUNT_ROOT_TYPE, ACCOUNT_TYPE } from '@/data/AccountTypes';
-import { ServiceError } from '@/exceptions';
-import { IItem, IItemDTO } from '@/interfaces';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { ACCOUNT_PARENT_TYPE, ACCOUNT_ROOT_TYPE, ACCOUNT_TYPE } from '@bigcapital/server/data/AccountTypes';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { IItem, IItemDTO } from '@bigcapital/server/interfaces';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject, Service } from 'typedi';
 import { ERRORS } from './constants';
 

@@ -1,10 +1,10 @@
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
+import * as R from 'ramda';
 // @ts-nocheck
 import React from 'react';
-import * as R from 'ramda';
-import { createNewItemFromQuery, createNewItemRenderer } from './utils';
 import { FSelect } from '../Forms';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
-import { DRAWERS } from '@/constants/drawers';
+import { createNewItemFromQuery, createNewItemRenderer } from './utils';
 
 /**
  * Customer select field.

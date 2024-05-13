@@ -1,9 +1,9 @@
+import { DrawerHeaderContent, DrawerLoading } from '@bigcapital/webapp/components';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import { useJournal } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { useJournal } from '@/hooks/query';
-import { DrawerLoading, DrawerHeaderContent } from '@/components';
-import { DRAWERS } from '@/constants/drawers';
 
 const ManualJournalDrawerContext = React.createContext();
 

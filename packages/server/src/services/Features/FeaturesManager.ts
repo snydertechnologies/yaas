@@ -1,4 +1,4 @@
-import { IFeatureAllItem } from '@/interfaces';
+import { IFeatureAllItem } from '@bigcapital/server/interfaces';
 import { Inject, Service } from 'typedi';
 import { FeaturesSettingsDriver } from './FeaturesSettingsDriver';
 

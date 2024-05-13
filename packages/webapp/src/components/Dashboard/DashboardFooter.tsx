@@ -1,7 +1,7 @@
+import { For } from '@bigcapital/webapp/components';
+import { getFooterLinks } from '@bigcapital/webapp/constants/footerLinks';
 // @ts-nocheck
 import React from 'react';
-import { getFooterLinks } from '@/constants/footerLinks';
-import { For } from '@/components';
 
 function FooterLinkItem({ title, link }) {
   return (

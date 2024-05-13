@@ -1,10 +1,10 @@
 // @ts-nocheck
 import React from 'react';
 
-import { Row, Col } from '@/components';
+import { Col, Row } from '@bigcapital/webapp/components';
 import FinancialStatementDateRange from '../FinancialStatementDateRange';
-import RadiosAccountingBasis from '../RadiosAccountingBasis';
 import FinancialStatementsFilter from '../FinancialStatementsFilter';
+import RadiosAccountingBasis from '../RadiosAccountingBasis';
 
 /**
  * Trial balance sheet - Drawer header - General panel.

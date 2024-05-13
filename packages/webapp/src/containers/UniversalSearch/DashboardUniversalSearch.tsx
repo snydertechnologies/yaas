@@ -1,20 +1,20 @@
-// @ts-nocheck
-import React from 'react';
 import { debounce } from 'lodash';
 import { isUndefined } from 'lodash';
+// @ts-nocheck
+import React from 'react';
 
-import { useUniversalSearch } from '@/hooks/query';
-import { UniversalSearch } from '@/components';
+import { UniversalSearch } from '@bigcapital/webapp/components';
+import { useUniversalSearch } from '@bigcapital/webapp/hooks/query';
 
-import { RESOURCES_TYPES } from '@/constants/resourcesTypes';
-import { compose } from '@/utils';
-import withUniversalSearchActions from './withUniversalSearchActions';
+import { RESOURCES_TYPES } from '@bigcapital/webapp/constants/resourcesTypes';
+import { compose } from '@bigcapital/webapp/utils';
 import withUniversalSearch from './withUniversalSearch';
+import withUniversalSearchActions from './withUniversalSearchActions';
 
-import { useGetUniversalSearchTypeOptions } from './utils';
+import DashboardUniversalSearchHotkeys from './DashboardUniversalSearchHotkeys';
 import DashboardUniversalSearchItemActions from './DashboardUniversalSearchItemActions';
 import { DashboardUniversalSearchItem } from './components';
-import DashboardUniversalSearchHotkeys from './DashboardUniversalSearchHotkeys';
+import { useGetUniversalSearchTypeOptions } from './utils';
 
 /**
  * Dashboard universal search.

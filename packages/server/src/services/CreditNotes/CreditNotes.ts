@@ -1,10 +1,10 @@
-import { ServiceError } from '@/exceptions';
-import { ICreditNote, ICreditNoteEditDTO, ICreditNoteNewDTO } from '@/interfaces';
-import { BranchTransactionDTOTransform } from '@/services/Branches/Integrations/BranchTransactionDTOTransform';
-import ItemsEntriesService from '@/services/Items/ItemsEntriesService';
-import AutoIncrementOrdersService from '@/services/Sales/AutoIncrementOrdersService';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
-import { WarehouseTransactionDTOTransform } from '@/services/Warehouses/Integrations/WarehouseTransactionDTOTransform';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { ICreditNote, ICreditNoteEditDTO, ICreditNoteNewDTO } from '@bigcapital/server/interfaces';
+import { BranchTransactionDTOTransform } from '@bigcapital/server/services/Branches/Integrations/BranchTransactionDTOTransform';
+import ItemsEntriesService from '@bigcapital/server/services/Items/ItemsEntriesService';
+import AutoIncrementOrdersService from '@bigcapital/server/services/Sales/AutoIncrementOrdersService';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import { WarehouseTransactionDTOTransform } from '@bigcapital/server/services/Warehouses/Integrations/WarehouseTransactionDTOTransform';
 import { omit } from 'lodash';
 import moment from 'moment';
 import * as R from 'ramda';

@@ -1,5 +1,5 @@
-import { ServiceError } from '@/exceptions';
-import ResourceService from '@/services/Resource/ResourceService';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import ResourceService from '@bigcapital/server/services/Resource/ResourceService';
 import { NextFunction, Request, Response, Router } from 'express';
 import { param } from 'express-validator';
 import { Inject, Service } from 'typedi';

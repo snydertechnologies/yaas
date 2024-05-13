@@ -1,23 +1,23 @@
-// @ts-nocheck
-import React from 'react';
+import { DashboardActionsBar, Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
 import {
-  NavbarGroup,
-  NavbarDivider,
   Button,
   Classes,
+  NavbarDivider,
+  NavbarGroup,
   Popover,
   PopoverInteractionKind,
   Position,
 } from '@blueprintjs/core';
-import { DashboardActionsBar, FormattedMessage as T, Icon } from '@/components';
 import classNames from 'classnames';
+// @ts-nocheck
+import React from 'react';
 
-import NumberFormatDropdown from '@/components/NumberFormatDropdown';
+import NumberFormatDropdown from '@bigcapital/webapp/components/NumberFormatDropdown';
 
 import withRealizedGainOrLoss from './withRealizedGainOrLoss';
 import withRealizedGainOrLossActions from './withRealizedGainOrLossActions';
 
-import { compose, saveInvoke } from '@/utils';
+import { compose, saveInvoke } from '@bigcapital/webapp/utils';
 
 /**
  * Realized Gain or Loss actions bar.

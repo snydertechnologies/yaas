@@ -1,19 +1,19 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Button, Intent, Tab, Tabs } from '@blueprintjs/core';
+import { Form, Formik } from 'formik';
+import moment from 'moment';
 // @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
-import moment from 'moment';
-import { Formik, Form } from 'formik';
-import { Tabs, Tab, Button, Intent } from '@blueprintjs/core';
-import { FormattedMessage as T } from '@/components';
 
 import withProjectProfitabilitySummary from './withProjectProfitabilitySummary';
 import withProjectProfitabilitySummaryActions from './withProjectProfitabilitySummaryActions';
 
-import ProjectProfitabilitySummaryHeaderGeneralPanal from './ProjectProfitabilitySummaryHeaderGeneralPanal';
 import FinancialStatementHeader from '../FinancialStatementHeader';
+import ProjectProfitabilitySummaryHeaderGeneralPanal from './ProjectProfitabilitySummaryHeaderGeneralPanal';
 
-import { getProjectProfitabilitySummaryValidationSchema, getDefaultProjectProfitabilitySummaryQuery } from './utils';
-import { compose, transformToForm } from '@/utils';
+import { compose, transformToForm } from '@bigcapital/webapp/utils';
+import { getDefaultProjectProfitabilitySummaryQuery, getProjectProfitabilitySummaryValidationSchema } from './utils';
 
 /**
  * Project profitability summary header.

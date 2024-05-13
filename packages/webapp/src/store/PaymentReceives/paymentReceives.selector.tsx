@@ -2,8 +2,8 @@
 import { createSelector } from '@reduxjs/toolkit';
 import { isEqual } from 'lodash';
 
-import { paginationLocationQuery } from '@/store/selectors';
-import { createDeepEqualSelector } from '@/utils';
+import { paginationLocationQuery } from '@bigcapital/webapp/store/selectors';
+import { createDeepEqualSelector } from '@bigcapital/webapp/utils';
 import { defaultTableQuery } from './paymentReceives.reducer';
 
 const paymentReceiveTableState = (state) => state.paymentReceives.tableState;

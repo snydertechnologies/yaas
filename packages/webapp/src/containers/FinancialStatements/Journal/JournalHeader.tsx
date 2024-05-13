@@ -1,20 +1,20 @@
+import { Button, Intent, Tab, Tabs } from '@blueprintjs/core';
+import { Form, Formik } from 'formik';
+import moment from 'moment';
 // @ts-nocheck
 import React from 'react';
-import * as Yup from 'yup';
 import styled from 'styled-components';
-import moment from 'moment';
-import { Formik, Form } from 'formik';
-import { Tab, Tabs, Button, Intent } from '@blueprintjs/core';
+import * as Yup from 'yup';
 
-import { FormattedMessage as T } from '@/components';
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
 
+import FinancialStatementHeader from '@bigcapital/webapp/containers/FinancialStatements/FinancialStatementHeader';
 import JournalSheetHeaderGeneral from './JournalSheetHeaderGeneral';
-import FinancialStatementHeader from '@/containers/FinancialStatements/FinancialStatementHeader';
 
 import withJournal from './withJournal';
 import withJournalActions from './withJournalActions';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Journal sheet header.

@@ -1,13 +1,13 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Button, Classes, Intent } from '@blueprintjs/core';
+import { useFormikContext } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { Classes, Button, Intent } from '@blueprintjs/core';
-import { FormattedMessage as T } from '@/components';
-import { useFormikContext } from 'formik';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
 import { useItemCategoryContext } from './ItemCategoryProvider';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Item category form footer.

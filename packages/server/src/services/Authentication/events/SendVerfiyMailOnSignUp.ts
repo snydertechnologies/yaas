@@ -1,5 +1,5 @@
-import { IAuthSignedUpEventPayload } from '@/interfaces';
-import events from '@/subscribers/events';
+import { IAuthSignedUpEventPayload } from '@bigcapital/server/interfaces';
+import events from '@bigcapital/server/subscribers/events';
 import { Inject } from 'typedi';
 
 export class SendVerfiyMailOnSignUp {

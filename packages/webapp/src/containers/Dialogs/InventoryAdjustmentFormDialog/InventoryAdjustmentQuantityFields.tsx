@@ -1,9 +1,9 @@
+import { Choose, If } from '@bigcapital/webapp/components';
+import { useFormikContext } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { useFormikContext } from 'formik';
-import { Choose, If } from '@/components';
-import IncrementAdjustmentFields from './IncrementAdjustmentFields';
 import DecrementAdjustmentFields from './DecrementAdjustmentFields';
+import IncrementAdjustmentFields from './IncrementAdjustmentFields';
 
 export default function InventoryAdjustmentQuantityFields() {
   const { values } = useFormikContext();

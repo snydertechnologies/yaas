@@ -12,7 +12,7 @@ import {
   DetailItem,
   CommercialDocHeader,
   CommercialDocTopHeader,
-} from '@/components';
+} from '@bigcapital/webapp/components';
 import { WarehouseTransferDetailsStatus } from './utils';
 import { useWarehouseDetailDrawerContext } from './WarehouseTransferDetailDrawerProvider';
 

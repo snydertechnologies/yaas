@@ -1,14 +1,14 @@
+import { DataTable, TableSkeletonHeader, TableSkeletonRows } from '@bigcapital/webapp/components';
+import { TABLES } from '@bigcapital/webapp/constants/tables';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import { useMemorizedColumnsWidths } from '@bigcapital/webapp/hooks';
 // @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
-import { DataTable, TableSkeletonRows, TableSkeletonHeader } from '@/components';
-import { TABLES } from '@/constants/tables';
-import { useMemorizedColumnsWidths } from '@/hooks';
 import { ActionMenu } from './components';
 import { useProjectPurchasesColumns } from './hooks';
-import withSettings from '@/containers/Settings/withSettings';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Project Purchases DataTable.

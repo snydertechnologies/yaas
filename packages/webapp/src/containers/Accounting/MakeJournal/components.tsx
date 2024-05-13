@@ -1,28 +1,28 @@
-// @ts-nocheck
-import React, { useEffect } from 'react';
-import intl from 'react-intl-universal';
-import { Menu, MenuItem, Position, Button, Intent } from '@blueprintjs/core';
+import { Button, Intent, Menu, MenuItem, Position } from '@blueprintjs/core';
 import { Popover2 } from '@blueprintjs/popover2';
 import { useFormikContext } from 'formik';
 import * as R from 'ramda';
+// @ts-nocheck
+import React, { useEffect } from 'react';
+import intl from 'react-intl-universal';
 
-import { ExchangeRateInputGroup, Icon, Hint, FormattedMessage as T } from '@/components';
+import { ExchangeRateInputGroup, Hint, Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
 import {
   AccountsListFieldCell,
-  MoneyFieldCell,
-  InputGroupCell,
-  ContactsListFieldCell,
   BranchesListFieldCell,
+  ContactsListFieldCell,
+  InputGroupCell,
+  MoneyFieldCell,
   ProjectsListFieldCell,
-} from '@/components/DataTableCells';
+} from '@bigcapital/webapp/components/DataTableCells';
 
-import { CellType, Features, Align } from '@/constants';
+import { Align, CellType, Features } from '@bigcapital/webapp/constants';
 
-import { useCurrentOrganization, useFeatureCan } from '@/hooks/state';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import { useUpdateEffect } from '@bigcapital/webapp/hooks';
+import { useCurrentOrganization, useFeatureCan } from '@bigcapital/webapp/hooks/state';
+import { transactionNumber } from '@bigcapital/webapp/utils';
 import { useJournalIsForeign } from './utils';
-import withSettings from '@/containers/Settings/withSettings';
-import { transactionNumber } from '@/utils';
-import { useUpdateEffect } from '@/hooks';
 
 /**
  * Contact header cell.

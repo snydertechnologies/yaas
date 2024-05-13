@@ -1,37 +1,37 @@
 // @ts-nocheck
 import React, { useEffect, useRef } from 'react';
 import {
-  useTable,
+  useAsyncDebounce,
   useExpanded,
-  useRowSelect,
+  useFlexLayout,
   usePagination,
   useResizeColumns,
+  useRowSelect,
   useSortBy,
-  useFlexLayout,
-  useAsyncDebounce,
+  useTable,
 } from 'react-table';
 import { useSticky } from 'react-table-sticky';
 
-import { useUpdateEffect } from '@/hooks';
-import { saveInvoke } from '@/utils';
+import { useUpdateEffect } from '@bigcapital/webapp/hooks';
+import { saveInvoke } from '@bigcapital/webapp/utils';
 
-import '@/style/components/DataTable/DataTable.scss';
+import '@bigcapital/webapp/style/components/DataTable/DataTable.scss';
 
-import TableNoResultsRow from './TableNoResultsRow';
-import TableLoadingRow from './TableLoading';
-import TableHeader from './TableHeader';
-import TablePage from './TablePage';
+import TableCell from './TableCell';
+import TableContext from './TableContext';
 import TableFooter from './TableFooter';
+import TableHeader from './TableHeader';
+import TableLoadingRow from './TableLoading';
+import TableNoResultsRow from './TableNoResultsRow';
+import TablePage from './TablePage';
+import TablePagination from './TablePagination';
 import TableRow from './TableRow';
 import TableRows from './TableRows';
-import TableCell from './TableCell';
 import TableTBody from './TableTBody';
-import TableContext from './TableContext';
-import TablePagination from './TablePagination';
 import TableWrapper from './TableWrapper';
 
-import TableIndeterminateCheckboxRow from './TableIndeterminateCheckboxRow';
 import TableIndeterminateCheckboxHeader from './TableIndeterminateCheckboxHeader';
+import TableIndeterminateCheckboxRow from './TableIndeterminateCheckboxRow';
 
 import { useResizeObserver } from './utils';
 

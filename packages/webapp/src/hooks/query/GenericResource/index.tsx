@@ -1,6 +1,6 @@
+import { RESOURCES_TYPES } from '@bigcapital/webapp/constants/resourcesTypes';
 // @ts-nocheck
 import { useRequestQuery } from '../../useQueryRequest';
-import { RESOURCES_TYPES } from '@/constants/resourcesTypes';
 
 /**
  *

@@ -1,21 +1,21 @@
-// @ts-nocheck
-import React from 'react';
-import intl from 'react-intl-universal';
 import { Button, Intent, Menu, MenuItem } from '@blueprintjs/core';
 import { Popover2 } from '@blueprintjs/popover2';
 import { useFormikContext } from 'formik';
+// @ts-nocheck
+import React from 'react';
+import intl from 'react-intl-universal';
 
-import { Icon, Hint, ExchangeRateInputGroup, FormattedMessage as T } from '@/components';
+import { ExchangeRateInputGroup, Hint, Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
 import {
+  AccountsListFieldCell,
+  CheckBoxFieldCell,
   InputGroupCell,
   MoneyFieldCell,
-  AccountsListFieldCell,
   ProjectsListFieldCell,
-  CheckBoxFieldCell,
-} from '@/components/DataTableCells';
-import { CellType, Features, Align } from '@/constants';
+} from '@bigcapital/webapp/components/DataTableCells';
+import { Align, CellType, Features } from '@bigcapital/webapp/constants';
 
-import { useCurrentOrganization, useFeatureCan } from '@/hooks/state';
+import { useCurrentOrganization, useFeatureCan } from '@bigcapital/webapp/hooks/state';
 import { useExpensesIsForeign } from './utils';
 
 /**

@@ -1,4 +1,4 @@
-import { IJournalPoster } from '@/interfaces';
+import { IJournalPoster } from '@bigcapital/server/interfaces';
 
 export default class JournalFinancial {
   journal: IJournalPoster;

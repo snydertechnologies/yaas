@@ -1,13 +1,13 @@
+import * as R from 'ramda';
 // @ts-nocheck
 import React from 'react';
-import * as R from 'ramda';
 
-import VendorsBalanceSummaryTable from './VendorsBalanceSummaryTable';
-import { FinancialSheetSkeleton } from '@/components/FinancialSheet';
+import { FinancialSheetSkeleton } from '@bigcapital/webapp/components/FinancialSheet';
 import { FinancialReportBody } from '../FinancialReportPage';
 import { useVendorsBalanceSummaryContext } from './VendorsBalanceSummaryProvider';
+import VendorsBalanceSummaryTable from './VendorsBalanceSummaryTable';
 
-import withCurrentOrganization from '@/containers/Organization/withCurrentOrganization';
+import withCurrentOrganization from '@bigcapital/webapp/containers/Organization/withCurrentOrganization';
 
 /**
  * Vendor balance summary body.

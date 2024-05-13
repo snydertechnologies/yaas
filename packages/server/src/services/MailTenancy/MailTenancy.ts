@@ -1,5 +1,5 @@
-import config from '@/config';
-import { Tenant } from '@/system/models';
+import config from '@bigcapital/server/config';
+import { Tenant } from '@bigcapital/server/system/models';
 import { Service } from 'typedi';
 
 @Service()

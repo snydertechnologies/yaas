@@ -2,23 +2,28 @@
 import React from 'react';
 import { useHistory } from 'react-router';
 
-import { TABLES } from '@/constants/tables';
-import { DataTable, TableSkeletonRows, TableSkeletonHeader, DashboardContentTable } from '@/components';
+import {
+  DashboardContentTable,
+  DataTable,
+  TableSkeletonHeader,
+  TableSkeletonRows,
+} from '@bigcapital/webapp/components';
+import { TABLES } from '@bigcapital/webapp/constants/tables';
 
+import { useMemorizedColumnsWidths } from '@bigcapital/webapp/hooks';
 import VendorsEmptyStatus from './VendorsEmptyStatus';
 import { useVendorsListContext } from './VendorsListProvider';
-import { useMemorizedColumnsWidths } from '@/hooks';
 import { ActionsMenu, useVendorsTableColumns } from './components';
 
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
 import withVendors from './withVendors';
 import withVendorsActions from './withVendorsActions';
-import withAlertsActions from '@/containers/Alert/withAlertActions';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
-import withSettings from '@/containers/Settings/withSettings';
 
-import { compose } from '@/utils';
-import { DRAWERS } from '@/constants/drawers';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Vendors table.

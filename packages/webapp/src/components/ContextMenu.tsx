@@ -1,7 +1,7 @@
+import { saveInvoke } from '@bigcapital/webapp/utils';
+import { Classes, Popover, Position } from '@blueprintjs/core';
 // @ts-nocheck
 import React, { memo } from 'react';
-import { Popover, Position, Classes } from '@blueprintjs/core';
-import { saveInvoke } from '@/utils';
 
 const POPPER_MODIFIERS = {
   preventOverflow: { boundariesElement: 'viewport' },

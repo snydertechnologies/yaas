@@ -1,14 +1,14 @@
+import { Alignment, Navbar, NavbarGroup } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Alignment, Navbar, NavbarGroup } from '@blueprintjs/core';
 
-import { DashboardViewsTabs } from '@/components';
+import { DashboardViewsTabs } from '@bigcapital/webapp/components';
 
-import withEstimatesActions from './withEstimatesActions';
 import withEstimates from './withEstimates';
+import withEstimatesActions from './withEstimatesActions';
 
+import { compose, transfromViewsToTabs } from '@bigcapital/webapp/utils';
 import { useEstimatesListContext } from './EstimatesListProvider';
-import { compose, transfromViewsToTabs } from '@/utils';
 
 /**
  * Estimates views tabs.

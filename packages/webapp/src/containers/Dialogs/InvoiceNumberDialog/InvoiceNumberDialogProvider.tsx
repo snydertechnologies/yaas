@@ -1,7 +1,7 @@
+import { DialogContent } from '@bigcapital/webapp/components';
+import { useSettingsInvoices } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React, { createContext, useContext } from 'react';
-import { DialogContent } from '@/components';
-import { useSettingsInvoices } from '@/hooks/query';
 
 const InvoiceNumberDialogContext = createContext();
 

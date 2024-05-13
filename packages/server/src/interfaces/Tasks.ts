@@ -1,4 +1,4 @@
-import type { ProjectTaskChargeType } from '@/services/Projects/Tasks/constants';
+import type { ProjectTaskChargeType } from '@bigcapital/server/services/Projects/Tasks/constants';
 import type { Knex } from 'knex';
 
 export interface IProjectTask {

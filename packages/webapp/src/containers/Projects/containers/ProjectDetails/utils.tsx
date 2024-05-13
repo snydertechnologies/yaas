@@ -1,9 +1,9 @@
 //@ts-nocheck
 
-import React from 'react';
-import moment from 'moment';
+import { calculateStatus } from '@bigcapital/webapp/utils';
 import { subtract } from 'lodash';
-import { calculateStatus } from '@/utils';
+import moment from 'moment';
+import React from 'react';
 import { useProjectDetailContext } from './ProjectDetailProvider';
 
 function calculateProject(costEstiate, totalAmount) {

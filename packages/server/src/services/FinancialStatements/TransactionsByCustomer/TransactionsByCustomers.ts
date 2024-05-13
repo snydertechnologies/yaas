@@ -5,8 +5,8 @@ import {
   ITransactionsByCustomersData,
   ITransactionsByCustomersFilter,
   ITransactionsByCustomersTransaction,
-} from '@/interfaces';
-import Ledger from '@/services/Accounting/Ledger';
+} from '@bigcapital/server/interfaces';
+import Ledger from '@bigcapital/server/services/Accounting/Ledger';
 import { isEmpty } from 'lodash';
 import * as R from 'ramda';
 import TransactionsByContact from '../TransactionsByContact/TransactionsByContact';

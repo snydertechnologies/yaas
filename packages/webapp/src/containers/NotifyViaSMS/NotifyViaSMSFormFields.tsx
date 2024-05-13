@@ -5,9 +5,9 @@ import { FormGroup, InputGroup } from '@blueprintjs/core';
 import classNames from 'classnames';
 import styled from 'styled-components';
 
-import { ListSelect, FieldRequiredHint, FormattedMessage as T } from '@/components';
-import { CLASSES } from '@/constants/classes';
-import { inputIntent } from '@/utils';
+import { ListSelect, FieldRequiredHint, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { inputIntent } from '@bigcapital/webapp/utils';
 
 export default function NotifyViaSMSFormFields({ notificationTypes }) {
   return (

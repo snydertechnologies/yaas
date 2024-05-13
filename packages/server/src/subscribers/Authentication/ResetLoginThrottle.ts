@@ -1,5 +1,5 @@
-import type { IAuthSignedInEventPayload } from '@/interfaces';
-import events from '@/subscribers/events';
+import type { IAuthSignedInEventPayload } from '@bigcapital/server/interfaces';
+import events from '@bigcapital/server/subscribers/events';
 import { Container, Service } from 'typedi';
 
 @Service()

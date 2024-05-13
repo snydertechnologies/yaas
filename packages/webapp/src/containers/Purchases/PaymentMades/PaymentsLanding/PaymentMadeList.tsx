@@ -1,18 +1,18 @@
 // @ts-nocheck
 import React from 'react';
 
-import '@/style/pages/PaymentMade/List.scss';
+import '@bigcapital/webapp/style/pages/PaymentMade/List.scss';
 
-import { DashboardPageContent } from '@/components';
-import { PaymentMadesListProvider } from './PaymentMadesListProvider';
+import { DashboardPageContent } from '@bigcapital/webapp/components';
 import PaymentMadeActionsBar from './PaymentMadeActionsBar';
-import PaymentMadesTable from './PaymentMadesTable';
 import PaymentMadeViewTabs from './PaymentMadeViewTabs';
+import { PaymentMadesListProvider } from './PaymentMadesListProvider';
+import PaymentMadesTable from './PaymentMadesTable';
 
 import withPaymentMades from './withPaymentMade';
 import withPaymentMadeActions from './withPaymentMadeActions';
 
-import { compose, transformTableStateToQuery } from '@/utils';
+import { compose, transformTableStateToQuery } from '@bigcapital/webapp/utils';
 
 /**
  * Payment mades list.

@@ -1,8 +1,8 @@
-import BaseController from '@/api/controllers/BaseController';
-import { FeatureActivationGuard } from '@/api/middleware/FeatureActivationGuard';
-import { ServiceError } from '@/exceptions';
-import { Features, ICreateWarehouseTransferDTO, IEditWarehouseTransferDTO } from '@/interfaces';
-import { WarehouseTransferApplication } from '@/services/Warehouses/WarehousesTransfers/WarehouseTransferApplication';
+import BaseController from '@bigcapital/server/api/controllers/BaseController';
+import { FeatureActivationGuard } from '@bigcapital/server/api/middleware/FeatureActivationGuard';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { Features, ICreateWarehouseTransferDTO, IEditWarehouseTransferDTO } from '@bigcapital/server/interfaces';
+import { WarehouseTransferApplication } from '@bigcapital/server/services/Warehouses/WarehousesTransfers/WarehouseTransferApplication';
 import { NextFunction, Request, Response, Router } from 'express';
 import { check, param, query } from 'express-validator';
 import { Inject, Service } from 'typedi';

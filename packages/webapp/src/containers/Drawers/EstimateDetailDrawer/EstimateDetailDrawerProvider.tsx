@@ -1,11 +1,11 @@
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { Features } from '@/constants';
-import { useEstimate } from '@/hooks/query';
-import { useFeatureCan } from '@/hooks/state';
-import { DrawerHeaderContent, DrawerLoading } from '@/components';
-import { DRAWERS } from '@/constants/drawers';
+import { Features } from '@bigcapital/webapp/constants';
+import { useEstimate } from '@bigcapital/webapp/hooks/query';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
+import { DrawerHeaderContent, DrawerLoading } from '@bigcapital/webapp/components';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
 
 const EstimateDetailDrawerContext = React.createContext();
 

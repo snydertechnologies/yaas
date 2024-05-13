@@ -1,7 +1,7 @@
+import { DialogContent } from '@bigcapital/webapp/components';
+import { useCreateNotifyInvoiceBySMS, useInvoiceSMSDetail } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React from 'react';
-import { DialogContent } from '@/components';
-import { useCreateNotifyInvoiceBySMS, useInvoiceSMSDetail } from '@/hooks/query';
 
 const NotifyInvoiceViaSMSContext = React.createContext();
 

@@ -1,6 +1,6 @@
-import { getTransactionTypeLabel } from '@/utils/transactions-types';
+import TenantModel from '@bigcapital/server/models/TenantModel';
+import { getTransactionTypeLabel } from '@bigcapital/server/utils/transactions-types';
 import { castArray } from 'lodash';
-import TenantModel from 'models/TenantModel';
 import moment from 'moment';
 import { Model, raw } from 'objection';
 
@@ -88,10 +88,10 @@ export default class InventoryTransaction extends TenantModel {
    * Relationship mapping.
    */
   static get relationMappings() {
-    const Item = require('models/Item');
-    const ItemEntry = require('models/ItemEntry');
-    const InventoryTransactionMeta = require('models/InventoryTransactionMeta');
-    const InventoryCostLots = require('models/InventoryCostLotTracker');
+    const Item = require('@bigcapital/server/models/Item');
+    const ItemEntry = require('@bigcapital/server/models/ItemEntry');
+    const InventoryTransactionMeta = require('@bigcapital/server/models/InventoryTransactionMeta');
+    const InventoryCostLots = require('@bigcapital/server/models/InventoryCostLotTracker');
 
     return {
       // Transaction meta.

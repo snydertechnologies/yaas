@@ -1,10 +1,10 @@
+import { SubscriptionPlans, T } from '@bigcapital/webapp/components';
+import { Field } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { Field } from 'formik';
-import { T, SubscriptionPlans } from '@/components';
 
+import { compose } from '@bigcapital/webapp/utils';
 import withPlans from './withPlans';
-import { compose } from '@/utils';
 
 /**
  * Billing plans.

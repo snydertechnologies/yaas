@@ -1,21 +1,21 @@
+import moment from 'moment';
 // @ts-nocheck
 import React, { useEffect } from 'react';
-import moment from 'moment';
 
-import { FinancialStatement, DashboardPageContent } from '@/components';
+import { DashboardPageContent, FinancialStatement } from '@bigcapital/webapp/components';
 
-import VendorsBalanceSummaryHeader from './VendorsBalanceSummaryHeader';
 import VendorsBalanceSummaryActionsBar from './VendorsBalanceSummaryActionsBar';
+import VendorsBalanceSummaryHeader from './VendorsBalanceSummaryHeader';
 
+import { VendorBalanceSummaryBody } from './VendorsBalanceSummaryBody';
 import { VendorsBalanceSummaryProvider } from './VendorsBalanceSummaryProvider';
 import { VendorsSummarySheetLoadingBar } from './components';
-import { VendorBalanceSummaryBody } from './VendorsBalanceSummaryBody';
 
 import withVendorsBalanceSummaryActions from './withVendorsBalanceSummaryActions';
 
-import { useVendorsBalanceSummaryQuery } from './utils';
+import { compose } from '@bigcapital/webapp/utils';
 import { VendorBalanceDialogs } from './VendorBalanceDialogs';
-import { compose } from '@/utils';
+import { useVendorsBalanceSummaryQuery } from './utils';
 
 /**
  * Vendors Balance summary.

@@ -1,30 +1,30 @@
-// @ts-nocheck
-import React from 'react';
-import { Button, NavbarGroup, Classes, NavbarDivider, Intent, Alignment } from '@blueprintjs/core';
-import { useHistory } from 'react-router-dom';
 import {
-  Icon,
   AdvancedFilterPopover,
-  DashboardFilterButton,
-  DashboardRowsHeightButton,
-  FormattedMessage as T,
   Can,
-  If,
   DashboardActionViewsList,
   DashboardActionsBar,
-} from '@/components';
-import { useRefreshJournals } from '@/hooks/query/manualJournals';
+  DashboardFilterButton,
+  DashboardRowsHeightButton,
+  Icon,
+  If,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import { AbilitySubject, ManualJournalAction } from '@bigcapital/webapp/constants/abilityOption';
+import { useRefreshJournals } from '@bigcapital/webapp/hooks/query/manualJournals';
+import { Alignment, Button, Classes, Intent, NavbarDivider, NavbarGroup } from '@blueprintjs/core';
+// @ts-nocheck
+import React from 'react';
+import { useHistory } from 'react-router-dom';
 import { useManualJournalsContext } from './ManualJournalsListProvider';
-import { ManualJournalAction, AbilitySubject } from '@/constants/abilityOption';
 
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import withSettingsActions from '@bigcapital/webapp/containers/Settings/withSettingsActions';
 import withManualJournals from './withManualJournals';
 import withManualJournalsActions from './withManualJournalsActions';
-import withSettings from '@/containers/Settings/withSettings';
-import withSettingsActions from '@/containers/Settings/withSettingsActions';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
 
-import { compose } from '@/utils';
-import { DialogsName } from '@/constants/dialogs';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Manual journal actions bar.

@@ -1,8 +1,8 @@
+import { DialogContent } from '@bigcapital/webapp/components';
+import { useCustomers } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React from 'react';
-import { useCustomers } from '@/hooks/query';
 import { useCreateProject, useEditProject, useProject } from '../../hooks';
-import { DialogContent } from '@/components';
 
 const ProjectFormContext = React.createContext();
 

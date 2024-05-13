@@ -1,9 +1,9 @@
+import { AppToaster } from '@bigcapital/webapp/components';
+import { useImportFileMapping } from '@bigcapital/webapp/hooks/query/import';
 // @ts-nocheck
 import { Intent } from '@blueprintjs/core';
-import { useImportFileMapping } from '@/hooks/query/import';
 import { Form, Formik, FormikHelpers } from 'formik';
 import { useImportFileContext } from './ImportFileProvider';
-import { AppToaster } from '@/components';
 import { ImportFileMappingFormProps } from './_types';
 import { transformValueToReq, useImportFileMappingInitialValues } from './_utils';
 

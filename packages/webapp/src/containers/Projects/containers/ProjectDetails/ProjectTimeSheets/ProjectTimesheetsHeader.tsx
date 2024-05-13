@@ -1,11 +1,11 @@
+import { FormatDate } from '@bigcapital/webapp/components';
+import { calculateStatus } from '@bigcapital/webapp/utils';
+import { Intent } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
 import styled from 'styled-components';
-import { Intent } from '@blueprintjs/core';
-import { FormatDate } from '@/components';
-import { DetailFinancialCard, DetailFinancialSection, FinancialProgressBar, FinancialCardText } from '../components';
-import { calculateStatus } from '@/utils';
+import { DetailFinancialCard, DetailFinancialSection, FinancialCardText, FinancialProgressBar } from '../components';
 
 /**
  * Project Timesheets header

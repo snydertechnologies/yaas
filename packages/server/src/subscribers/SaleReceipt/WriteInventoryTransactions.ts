@@ -1,6 +1,6 @@
-import { ISaleReceiptCreatedPayload, ISaleReceiptEditedPayload, ISaleReceiptEventDeletedPayload } from '@/interfaces';
-import { SaleReceiptInventoryTransactions } from '@/services/Sales/Receipts/SaleReceiptInventoryTransactions';
-import events from '@/subscribers/events';
+import { ISaleReceiptCreatedPayload, ISaleReceiptEditedPayload, ISaleReceiptEventDeletedPayload } from '@bigcapital/server/interfaces';
+import { SaleReceiptInventoryTransactions } from '@bigcapital/server/services/Sales/Receipts/SaleReceiptInventoryTransactions';
+import events from '@bigcapital/server/subscribers/events';
 import { EventSubscriber } from 'event-dispatch';
 import { Inject } from 'typedi';
 

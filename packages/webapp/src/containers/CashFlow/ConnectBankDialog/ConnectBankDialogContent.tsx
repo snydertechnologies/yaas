@@ -1,9 +1,9 @@
+import { Stack } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import styled from 'styled-components';
-import { Stack } from '@/components';
+import { PlaidIcon } from '../Icons/PlaidIcon';
 import { TellerIcon } from '../Icons/TellerIcon';
 import { YodleeIcon } from '../Icons/YodleeIcon';
-import { PlaidIcon } from '../Icons/PlaidIcon';
 import { BankServiceCard } from './ConnectBankServiceCard';
 
 const TopDesc = styled('p')`

@@ -1,6 +1,6 @@
+import { getItemsCategoriesTableStateFactory } from '@bigcapital/webapp/store/itemCategories/ItemsCategories.selectors';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { getItemsCategoriesTableStateFactory } from '@/store/itemCategories/ItemsCategories.selectors';
 
 export default (mapState) => {
   const getItemsCategoriesTableState = getItemsCategoriesTableStateFactory();

@@ -1,24 +1,24 @@
-// @ts-nocheck
-import React, { createContext, useState } from 'react';
-import { isEmpty, pick } from 'lodash';
-import { useLocation } from 'react-router-dom';
-import { Features } from '@/constants';
-import { useFeatureCan } from '@/hooks/state';
-import { DashboardInsider } from '@/components/Dashboard';
-import { transformToEditForm, ITEMS_FILTER_ROLES_QUERY } from './utils';
+import { DashboardInsider } from '@bigcapital/webapp/components/Dashboard';
+import { Features } from '@bigcapital/webapp/constants';
+import { useProjects } from '@bigcapital/webapp/containers/Projects/hooks';
 import {
-  useInvoice,
-  useItems,
-  useCustomers,
-  useWarehouses,
   useBranches,
   useCreateInvoice,
+  useCustomers,
   useEditInvoice,
-  useSettingsInvoices,
   useEstimate,
-} from '@/hooks/query';
-import { useProjects } from '@/containers/Projects/hooks';
-import { useTaxRates } from '@/hooks/query/taxRates';
+  useInvoice,
+  useItems,
+  useSettingsInvoices,
+  useWarehouses,
+} from '@bigcapital/webapp/hooks/query';
+import { useTaxRates } from '@bigcapital/webapp/hooks/query/taxRates';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
+import { isEmpty, pick } from 'lodash';
+// @ts-nocheck
+import React, { createContext, useState } from 'react';
+import { useLocation } from 'react-router-dom';
+import { ITEMS_FILTER_ROLES_QUERY, transformToEditForm } from './utils';
 
 const InvoiceFormContext = createContext();
 

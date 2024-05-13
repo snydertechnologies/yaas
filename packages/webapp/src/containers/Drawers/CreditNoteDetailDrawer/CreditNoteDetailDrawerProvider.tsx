@@ -1,11 +1,16 @@
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { useCreditNote, useRefundCreditNote, useReconcileCreditNote, useReconcileCreditNotes } from '@/hooks/query';
-import { Features } from '@/constants';
-import { useFeatureCan } from '@/hooks/state';
-import { DrawerHeaderContent, DrawerLoading } from '@/components';
-import { DRAWERS } from '@/constants/drawers';
+import {
+  useCreditNote,
+  useRefundCreditNote,
+  useReconcileCreditNote,
+  useReconcileCreditNotes,
+} from '@bigcapital/webapp/hooks/query';
+import { Features } from '@bigcapital/webapp/constants';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
+import { DrawerHeaderContent, DrawerLoading } from '@bigcapital/webapp/components';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
 
 const CreditNoteDetailDrawerContext = React.createContext();
 

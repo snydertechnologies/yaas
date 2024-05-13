@@ -1,10 +1,10 @@
+import { DrawerHeaderContent, DrawerLoading } from '@bigcapital/webapp/components';
+import { Features } from '@bigcapital/webapp/constants';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import { useAccounts, useBranches, useUncategorizedTransaction } from '@bigcapital/webapp/hooks/query';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
 // @ts-nocheck
 import React from 'react';
-import { DrawerHeaderContent, DrawerLoading } from '@/components';
-import { DRAWERS } from '@/constants/drawers';
-import { useAccounts, useBranches, useUncategorizedTransaction } from '@/hooks/query';
-import { useFeatureCan } from '@/hooks/state';
-import { Features } from '@/constants';
 
 const CategorizeTransactionBootContext = React.createContext();
 

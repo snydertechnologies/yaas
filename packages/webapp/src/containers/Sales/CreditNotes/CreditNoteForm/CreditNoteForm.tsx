@@ -1,30 +1,30 @@
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { Intent } from '@blueprintjs/core';
+import classNames from 'classnames';
+import { Form, Formik } from 'formik';
+import { defaultTo, isEmpty } from 'lodash';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import classNames from 'classnames';
 import { useHistory } from 'react-router-dom';
-import { Formik, Form } from 'formik';
-import { Intent } from '@blueprintjs/core';
-import { defaultTo, isEmpty } from 'lodash';
-import { CLASSES } from '@/constants/classes';
 import { CreateCreditNoteFormSchema, EditCreditNoteFormSchema } from './CreditNoteForm.schema';
 
-import CreditNoteFormHeader from './CreditNoteFormHeader';
-import CreditNoteItemsEntriesEditorField from './CreditNoteItemsEntriesEditorField';
-import CreditNoteFormFooter from './CreditNoteFormFooter';
 import CreditNoteFloatingActions from './CreditNoteFloatingActions';
 import CreditNoteFormDialogs from './CreditNoteFormDialogs';
+import CreditNoteFormFooter from './CreditNoteFormFooter';
+import CreditNoteFormHeader from './CreditNoteFormHeader';
 import CreditNoteFormTopBar from './CreditNoteFormTopBar';
+import CreditNoteItemsEntriesEditorField from './CreditNoteItemsEntriesEditorField';
 
-import { AppToaster } from '@/components';
+import { AppToaster } from '@bigcapital/webapp/components';
 
 import { useCreditNoteFormContext } from './CreditNoteFormProvider';
-import { filterNonZeroEntries, transformToEditForm, transformFormValuesToRequest, defaultCreditNote } from './utils';
+import { defaultCreditNote, filterNonZeroEntries, transformFormValuesToRequest, transformToEditForm } from './utils';
 
-import { compose, orderingLinesIndexes, transactionNumber, safeSumBy } from '@/utils';
+import { compose, orderingLinesIndexes, safeSumBy, transactionNumber } from '@bigcapital/webapp/utils';
 
-import withSettings from '@/containers/Settings/withSettings';
-import withCurrentOrganization from '@/containers/Organization/withCurrentOrganization';
+import withCurrentOrganization from '@bigcapital/webapp/containers/Organization/withCurrentOrganization';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
 import { CreditNoteExchangeRateSync, CreditNoteSyncIncrementSettingsToForm } from './components';
 
 /**

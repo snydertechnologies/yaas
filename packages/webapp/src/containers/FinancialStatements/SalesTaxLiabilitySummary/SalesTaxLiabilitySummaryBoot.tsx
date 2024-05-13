@@ -1,8 +1,8 @@
+import { useSalesTaxLiabilitySummary } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React, { createContext, useContext } from 'react';
 import FinancialReportPage from '../FinancialReportPage';
 import { transformFilterFormToQuery } from '../common';
-import { useSalesTaxLiabilitySummary } from '@/hooks/query';
 
 const SalesTaxLiabilitySummaryContext = createContext();
 

@@ -1,4 +1,4 @@
-import { ServiceError } from '@/exceptions';
+import { ServiceError } from '@bigcapital/server/exceptions';
 import { NextFunction, Request, Response } from 'express';
 
 /**

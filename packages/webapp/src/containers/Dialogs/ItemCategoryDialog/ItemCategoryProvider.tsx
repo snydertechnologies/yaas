@@ -1,7 +1,7 @@
+import { DialogContent } from '@bigcapital/webapp/components';
+import { useCreateItemCategory, useEditItemCategory, useItemCategory } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React, { createContext } from 'react';
-import { DialogContent } from '@/components';
-import { useItemCategory, useEditItemCategory, useCreateItemCategory } from '@/hooks/query';
 
 const ItemCategoryContext = createContext();
 

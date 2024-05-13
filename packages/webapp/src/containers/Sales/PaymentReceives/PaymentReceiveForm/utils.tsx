@@ -1,21 +1,21 @@
-// @ts-nocheck
-import React from 'react';
-import moment from 'moment';
-import intl from 'react-intl-universal';
-import { omit, pick, first, sumBy } from 'lodash';
-import { useFormikContext } from 'formik';
-import { Intent } from '@blueprintjs/core';
-import { AppToaster } from '@/components';
-import { usePaymentReceiveFormContext } from './PaymentReceiveFormProvider';
+import { AppToaster } from '@bigcapital/webapp/components';
+import { useCurrentOrganization } from '@bigcapital/webapp/hooks/state';
 import {
   defaultFastFieldShouldUpdate,
+  formattedAmount,
+  orderingLinesIndexes,
+  safeSumBy,
   transactionNumber,
   transformToForm,
-  safeSumBy,
-  orderingLinesIndexes,
-  formattedAmount,
-} from '@/utils';
-import { useCurrentOrganization } from '@/hooks/state';
+} from '@bigcapital/webapp/utils';
+import { Intent } from '@blueprintjs/core';
+import { useFormikContext } from 'formik';
+import { first, omit, pick, sumBy } from 'lodash';
+import moment from 'moment';
+// @ts-nocheck
+import React from 'react';
+import intl from 'react-intl-universal';
+import { usePaymentReceiveFormContext } from './PaymentReceiveFormProvider';
 
 // Default payment receive entry.
 export const defaultPaymentReceiveEntry = {

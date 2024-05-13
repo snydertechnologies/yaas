@@ -1,15 +1,15 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Button, Menu, MenuDivider, MenuItem, Popover, Position } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { Menu, MenuItem, MenuDivider, Button, Popover, Position } from '@blueprintjs/core';
-import { FormattedMessage as T } from '@/components';
 
-import { useAuthActions } from '@/hooks/state';
+import { useAuthActions } from '@bigcapital/webapp/hooks/state';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
 
-import { useAuthenticatedAccount } from '@/hooks/query';
-import { firstLettersArgs, compose } from '@/utils';
+import { useAuthenticatedAccount } from '@bigcapital/webapp/hooks/query';
+import { compose, firstLettersArgs } from '@bigcapital/webapp/utils';
 
 /**
  * Dashboard topbar user.

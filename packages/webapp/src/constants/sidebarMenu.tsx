@@ -1,28 +1,31 @@
-// @ts-nocheck
-import React from 'react';
-import { FormattedMessage as T } from '@/components';
-import { Features } from '@/constants/features';
-import { ISidebarMenuItemType, ISidebarMenuOverlayIds } from '@/containers/Dashboard/Sidebar/interfaces';
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
 import {
-  ReportsAction,
   AbilitySubject,
-  ItemAction,
+  AccountAction,
+  BillAction,
+  CashflowAction,
+  CustomerAction,
+  ExpenseAction,
   InventoryAdjustmentAction,
+  ItemAction,
+  ManualJournalAction,
+  PaymentMadeAction,
+  PaymentReceiveAction,
+  PreferencesAbility,
+  ReportsAction,
   SaleEstimateAction,
   SaleInvoiceAction,
   SaleReceiptAction,
-  PaymentReceiveAction,
-  BillAction,
-  PaymentMadeAction,
-  CustomerAction,
-  VendorAction,
-  AccountAction,
-  ManualJournalAction,
-  ExpenseAction,
-  CashflowAction,
-  PreferencesAbility,
   TaxRateAction,
-} from '@/constants/abilityOption';
+  VendorAction,
+} from '@bigcapital/webapp/constants/abilityOption';
+import { Features } from '@bigcapital/webapp/constants/features';
+import {
+  ISidebarMenuItemType,
+  ISidebarMenuOverlayIds,
+} from '@bigcapital/webapp/containers/Dashboard/Sidebar/interfaces';
+// @ts-nocheck
+import React from 'react';
 import { DialogsName } from './dialogs';
 
 export const SidebarMenu = [

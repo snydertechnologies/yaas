@@ -1,8 +1,8 @@
-// @ts-nocheck
-import React from 'react';
+import { FFormGroup, FInputGroup, FormattedMessage as T } from '@bigcapital/webapp/components';
 import { Intent } from '@blueprintjs/core';
 import { Form } from 'formik';
-import { FFormGroup, FInputGroup, FormattedMessage as T } from '@/components';
+// @ts-nocheck
+import React from 'react';
 import { AuthSubmitButton } from './_components';
 
 /**

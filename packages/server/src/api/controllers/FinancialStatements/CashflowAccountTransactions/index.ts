@@ -1,9 +1,9 @@
-import CheckPolicies from '@/api/middleware/CheckPolicies';
-import { ServiceError } from '@/exceptions';
-import { AbilitySubject, ICashFlowStatementDOO, ReportsAction } from '@/interfaces';
-import CashFlowTable from '@/services/FinancialStatements/CashFlow/CashFlowTable';
-import CashflowAccountTransactionsService from '@/services/FinancialStatements/CashflowAccountTransactions/CashflowAccountTransactionsService';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import CheckPolicies from '@bigcapital/server/api/middleware/CheckPolicies';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { AbilitySubject, ICashFlowStatementDOO, ReportsAction } from '@bigcapital/server/interfaces';
+import CashFlowTable from '@bigcapital/server/services/FinancialStatements/CashFlow/CashFlowTable';
+import CashflowAccountTransactionsService from '@bigcapital/server/services/FinancialStatements/CashflowAccountTransactions/CashflowAccountTransactionsService';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { NextFunction, Request, Response, Router, ValidationChain } from 'express';
 import { query } from 'express-validator';
 import { Inject, Service } from 'typedi';

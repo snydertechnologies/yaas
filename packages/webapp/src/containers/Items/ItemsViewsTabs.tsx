@@ -1,14 +1,14 @@
+import { DashboardViewsTabs } from '@bigcapital/webapp/components';
+import { Alignment, Navbar, NavbarGroup } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Alignment, Navbar, NavbarGroup } from '@blueprintjs/core';
-import { DashboardViewsTabs } from '@/components';
 import { withRouter } from 'react-router-dom';
 
 import withItems from './withItems';
 import withItemsActions from './withItemsActions';
 
+import { compose, transfromViewsToTabs } from '@bigcapital/webapp/utils';
 import { useItemsListContext } from './ItemsListProvider';
-import { compose, transfromViewsToTabs } from '@/utils';
 
 /**
  * Items views tabs.

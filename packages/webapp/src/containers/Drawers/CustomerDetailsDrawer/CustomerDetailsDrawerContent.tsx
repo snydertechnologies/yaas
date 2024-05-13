@@ -1,9 +1,9 @@
 // @ts-nocheck
 import React from 'react';
 
-import { DrawerBody } from '@/components';
-import { CustomerDetailsDrawerProvider } from './CustomerDetailsDrawerProvider';
+import { DrawerBody } from '@bigcapital/webapp/components';
 import CustomerDetails from './CustomerDetails';
+import { CustomerDetailsDrawerProvider } from './CustomerDetailsDrawerProvider';
 
 /**
  * Contact detail drawer content.

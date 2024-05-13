@@ -1,9 +1,9 @@
-// @ts-nocheck
-import { connect } from 'react-redux';
 import {
   getCreditNotesTableStateFactory,
   isCreditNotesTableStateChangedFactory,
-} from '@/store/CreditNote/creditNote.selector';
+} from '@bigcapital/webapp/store/CreditNote/creditNote.selector';
+// @ts-nocheck
+import { connect } from 'react-redux';
 
 export default (mapState) => {
   const getCreditNoteTableState = getCreditNotesTableStateFactory();

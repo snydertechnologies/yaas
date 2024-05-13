@@ -1,18 +1,18 @@
+import { Can, DashboardActionsBar, FeatureCan, Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { AbilitySubject, CashflowAction } from '@bigcapital/webapp/constants/abilityOption';
+import { useRefreshCashflowAccounts } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
-import { Button, NavbarGroup, Classes, NavbarDivider, Alignment, Switch } from '@blueprintjs/core';
-import { DashboardActionsBar, Can, Icon, FormattedMessage as T, FeatureCan } from '@/components';
-import { useRefreshCashflowAccounts } from '@/hooks/query';
-import { CashflowAction, AbilitySubject } from '@/constants/abilityOption';
+import { Alignment, Button, Classes, NavbarDivider, NavbarGroup, Switch } from '@blueprintjs/core';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
 import withCashflowAccountsTableActions from '../AccountTransactions/withCashflowAccountsTableActions';
 
-import { AccountDialogAction } from '@/containers/Dialogs/AccountDialog/utils';
+import { AccountDialogAction } from '@bigcapital/webapp/containers/Dialogs/AccountDialog/utils';
 
-import { ACCOUNT_TYPE, Features } from '@/constants';
-import { DialogsName } from '@/constants/dialogs';
+import { ACCOUNT_TYPE, Features } from '@bigcapital/webapp/constants';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Cash Flow accounts actions bar.

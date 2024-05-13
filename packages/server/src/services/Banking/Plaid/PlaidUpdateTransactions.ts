@@ -1,6 +1,6 @@
-import { PlaidFetchedTransactionsUpdates } from '@/interfaces';
-import { PlaidClientWrapper } from '@/lib/Plaid/Plaid';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { PlaidFetchedTransactionsUpdates } from '@bigcapital/server/interfaces';
+import { PlaidClientWrapper } from '@bigcapital/server/lib/Plaid/Plaid';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject, Service } from 'typedi';
 import { PlaidSyncDb } from './PlaidSyncDB';
 

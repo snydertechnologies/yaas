@@ -1,19 +1,19 @@
+import { AppToaster } from '@bigcapital/webapp/components';
+import { Intent } from '@blueprintjs/core';
+import { Formik } from 'formik';
+import { omit } from 'lodash';
 // @ts-nocheck
 import React, { useEffect } from 'react';
 import intl from 'react-intl-universal';
-import { Formik } from 'formik';
-import { Intent } from '@blueprintjs/core';
-import { AppToaster } from '@/components';
-import { omit } from 'lodash';
 import { ItemPreferencesSchema } from './ItemPreferences.schema';
 import ItemPreferencesForm from './ItemPreferencesForm';
 
+import withDashboardActions from '@bigcapital/webapp/containers/Dashboard/withDashboardActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import { compose, optionsMapToArray, transformGeneralSettings, transformToForm } from '@bigcapital/webapp/utils';
 import { useItemPreferencesFormContext } from './ItemPreferencesFormProvider';
-import withDashboardActions from '@/containers/Dashboard/withDashboardActions';
-import withSettings from '@/containers/Settings/withSettings';
-import { compose, optionsMapToArray, transformGeneralSettings, transformToForm } from '@/utils';
 
-import '@/style/pages/Preferences/Accounting.scss';
+import '@bigcapital/webapp/style/pages/Preferences/Accounting.scss';
 
 const defaultFormValues = {
   preferred_sell_account: '',

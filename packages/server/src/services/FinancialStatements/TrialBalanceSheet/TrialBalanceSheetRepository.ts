@@ -1,5 +1,5 @@
-import type { ITrialBalanceSheetQuery } from '@/interfaces';
-import Ledger from '@/services/Accounting/Ledger';
+import type { ITrialBalanceSheetQuery } from '@bigcapital/server/interfaces';
+import Ledger from '@bigcapital/server/services/Accounting/Ledger';
 import { Knex } from 'knex';
 import { isEmpty } from 'lodash';
 import { Service } from 'typedi';

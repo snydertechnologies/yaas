@@ -1,7 +1,7 @@
 // @ts-nocheck
 import * as Yup from 'yup';
 import intl from 'react-intl-universal';
-import { DATATYPES_LENGTH } from '@/constants/dataTypes';
+import { DATATYPES_LENGTH } from '@bigcapital/webapp/constants/dataTypes';
 
 const Schema = Yup.object().shape({
   customer_name: Yup.string().required(),

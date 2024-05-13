@@ -1,5 +1,5 @@
-import { IVendorCreditCreatedPayload } from '@/interfaces';
-import events from '@/subscribers/events';
+import { IVendorCreditCreatedPayload } from '@bigcapital/server/interfaces';
+import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 import BaseVendorCredit from './BaseVendorCredit';
 

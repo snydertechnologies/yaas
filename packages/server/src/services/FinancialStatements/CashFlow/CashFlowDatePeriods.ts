@@ -1,4 +1,4 @@
-import { ACCOUNT_ROOT_TYPE } from '@/data/AccountTypes';
+import { ACCOUNT_ROOT_TYPE } from '@bigcapital/server/data/AccountTypes';
 import {
   ICashFlowDatePeriod,
   ICashFlowSchemaTotalSection,
@@ -9,10 +9,10 @@ import {
   ICashFlowStatementTotalSection,
   IDateRange,
   IFormatNumberSettings,
-} from '@/interfaces';
+} from '@bigcapital/server/interfaces';
+import { accumSum, dateRangeFromToCollection } from '@bigcapital/server/utils';
 import { get, mapValues, sumBy } from 'lodash';
 import * as R from 'ramda';
-import { accumSum, dateRangeFromToCollection } from 'utils';
 
 export const CashFlowStatementDatePeriods = (Base) =>
   class extends Base {

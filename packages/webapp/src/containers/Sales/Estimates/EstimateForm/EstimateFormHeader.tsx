@@ -1,14 +1,14 @@
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import classNames from 'classnames';
+import { useFormikContext } from 'formik';
 // @ts-nocheck
 import React, { useMemo } from 'react';
 import intl from 'react-intl-universal';
-import classNames from 'classnames';
-import { useFormikContext } from 'formik';
-import { CLASSES } from '@/constants/classes';
 
 import EstimateFormHeaderFields from './EstimateFormHeaderFields';
 
-import { getEntriesTotal } from '@/containers/Entries/utils';
-import { PageFormBigNumber } from '@/components';
+import { PageFormBigNumber } from '@bigcapital/webapp/components';
+import { getEntriesTotal } from '@bigcapital/webapp/containers/Entries/utils';
 
 // Estimate form top header.
 function EstimateFormHeader() {

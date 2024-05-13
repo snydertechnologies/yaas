@@ -1,9 +1,9 @@
-import BaseController from '@/api/controllers/BaseController';
-import CheckPolicies from '@/api/middleware/CheckPolicies';
-import asyncMiddleware from '@/api/middleware/asyncMiddleware';
-import { ServiceError } from '@/exceptions';
-import { AbilitySubject, IProjectStatus, ProjectAction } from '@/interfaces';
-import { ProjectsApplication } from '@/services/Projects/Projects/ProjectsApplication';
+import BaseController from '@bigcapital/server/api/controllers/BaseController';
+import CheckPolicies from '@bigcapital/server/api/middleware/CheckPolicies';
+import asyncMiddleware from '@bigcapital/server/api/middleware/asyncMiddleware';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { AbilitySubject, IProjectStatus, ProjectAction } from '@bigcapital/server/interfaces';
+import { ProjectsApplication } from '@bigcapital/server/services/Projects/Projects/ProjectsApplication';
 import { NextFunction, Request, Response, Router } from 'express';
 import { check, param, query } from 'express-validator';
 import { Inject, Service } from 'typedi';

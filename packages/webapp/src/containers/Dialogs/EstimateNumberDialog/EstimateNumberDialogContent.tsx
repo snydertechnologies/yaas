@@ -2,15 +2,15 @@
 import React, { useCallback } from 'react';
 import intl from 'react-intl-universal';
 
-import { DialogContent } from '@/components';
-import { useSaveSettings, useSettingsEstimates } from '@/hooks/query';
+import { DialogContent } from '@bigcapital/webapp/components';
+import { useSaveSettings, useSettingsEstimates } from '@bigcapital/webapp/hooks/query';
 
-import ReferenceNumberForm from '@/containers/JournalNumber/ReferenceNumberForm';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import withSettings from '@/containers/Settings/withSettings';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import ReferenceNumberForm from '@bigcapital/webapp/containers/JournalNumber/ReferenceNumberForm';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
 
-import { compose, saveInvoke } from '@/utils';
-import { transformFormToSettings, transformSettingsToForm } from '@/containers/JournalNumber/utils';
+import { transformFormToSettings, transformSettingsToForm } from '@bigcapital/webapp/containers/JournalNumber/utils';
+import { compose, saveInvoke } from '@bigcapital/webapp/utils';
 
 /**
  * Estimate number dialog's content.

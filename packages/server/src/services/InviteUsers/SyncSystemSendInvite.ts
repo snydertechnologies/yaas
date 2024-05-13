@@ -2,11 +2,11 @@ import {
   IUserInviteResendEventPayload,
   IUserInviteTenantSyncedEventPayload,
   IUserInvitedEventPayload,
-} from '@/interfaces';
-import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
-import events from '@/subscribers/events';
-import { Invite, SystemUser } from '@/system/models';
+} from '@bigcapital/server/interfaces';
+import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import events from '@bigcapital/server/subscribers/events';
+import { Invite, SystemUser } from '@bigcapital/server/system/models';
 import { Inject, Service } from 'typedi';
 
 @Service()

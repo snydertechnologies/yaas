@@ -1,31 +1,31 @@
+import { Classes, FormGroup, InputGroup, Position } from '@blueprintjs/core';
+import { DateInput } from '@blueprintjs/datetime';
+import classNames from 'classnames';
+import { ErrorMessage, FastField, useFormikContext } from 'formik';
 // @ts-nocheck
 import React, { useCallback } from 'react';
 import styled from 'styled-components';
-import classNames from 'classnames';
-import { FormGroup, InputGroup, Position, Classes } from '@blueprintjs/core';
-import { DateInput } from '@blueprintjs/datetime';
-import { FastField, ErrorMessage, useFormikContext } from 'formik';
 
-import { CLASSES } from '@/constants/classes';
-import { ACCOUNT_TYPE } from '@/constants/accountTypes';
-import { Features } from '@/constants';
 import {
-  FFormGroup,
   AccountsSelect,
+  CustomerDrawerLink,
   CustomersSelect,
+  FFormGroup,
+  FeatureCan,
   FieldRequiredHint,
   Icon,
-  CustomerDrawerLink,
   FormattedMessage as T,
-  FeatureCan,
-} from '@/components';
-import { ProjectsSelect } from '@/containers/Projects/components';
-import { momentFormatter, tansformDateValue, handleDateChange, inputIntent } from '@/utils';
+} from '@bigcapital/webapp/components';
+import { Features } from '@bigcapital/webapp/constants';
+import { ACCOUNT_TYPE } from '@bigcapital/webapp/constants/accountTypes';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { useCustomerUpdateExRate } from '@bigcapital/webapp/containers/Entries/withExRateItemEntriesPriceRecalc';
+import { ProjectsSelect } from '@bigcapital/webapp/containers/Projects/components';
+import { handleDateChange, inputIntent, momentFormatter, tansformDateValue } from '@bigcapital/webapp/utils';
 import { useReceiptFormContext } from './ReceiptFormProvider';
-import { accountsFieldShouldUpdate, customersFieldShouldUpdate } from './utils';
-import { ReceiptExchangeRateInputField, ReceiptProjectSelectButton } from './components';
 import { ReceiptFormReceiptNumberField } from './ReceiptFormReceiptNumberField';
-import { useCustomerUpdateExRate } from '@/containers/Entries/withExRateItemEntriesPriceRecalc';
+import { ReceiptExchangeRateInputField, ReceiptProjectSelectButton } from './components';
+import { accountsFieldShouldUpdate, customersFieldShouldUpdate } from './utils';
 
 /**
  * Receipt form header fields.

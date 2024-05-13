@@ -1,5 +1,5 @@
-import { NotAllowedChangeSubscriptionPlan } from '@/exceptions';
-import { Plan, Tenant } from '@/system/models';
+import { NotAllowedChangeSubscriptionPlan } from '@bigcapital/server/exceptions';
+import { Plan, Tenant } from '@bigcapital/server/system/models';
 import { Service } from 'typedi';
 
 @Service()

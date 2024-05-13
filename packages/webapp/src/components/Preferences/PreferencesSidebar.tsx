@@ -1,12 +1,12 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import preferencesMenu from '@bigcapital/webapp/constants/preferencesMenu';
+import { Menu, MenuDivider, MenuItem } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Menu, MenuItem, MenuDivider } from '@blueprintjs/core';
 import { useHistory, useLocation } from 'react-router-dom';
-import { FormattedMessage as T } from '@/components';
-import preferencesMenu from '@/constants/preferencesMenu';
 import PreferencesSidebarContainer from './PreferencesSidebarContainer';
 
-import '@/style/pages/Preferences/Sidebar.scss';
+import '@bigcapital/webapp/style/pages/Preferences/Sidebar.scss';
 
 /**
  * Preferences sidebar.

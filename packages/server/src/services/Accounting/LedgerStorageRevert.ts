@@ -1,4 +1,4 @@
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Knex } from 'knex';
 import { castArray } from 'lodash';
 import { Inject } from 'typedi';

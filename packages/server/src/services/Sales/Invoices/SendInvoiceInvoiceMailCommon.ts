@@ -1,6 +1,6 @@
-import { SaleInvoiceMailOptions } from '@/interfaces';
-import { ContactMailNotification } from '@/services/MailNotification/ContactMailNotification';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { SaleInvoiceMailOptions } from '@bigcapital/server/interfaces';
+import { ContactMailNotification } from '@bigcapital/server/services/MailNotification/ContactMailNotification';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject, Service } from 'typedi';
 import { GetSaleInvoice } from './GetSaleInvoice';
 import { DEFAULT_INVOICE_MAIL_CONTENT, DEFAULT_INVOICE_MAIL_SUBJECT } from './constants';

@@ -1,27 +1,27 @@
-// @ts-nocheck
-import React from 'react';
+import { DashboardActionsBar, Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
 import {
-  NavbarGroup,
   Button,
   Classes,
   NavbarDivider,
+  NavbarGroup,
   Popover,
-  Position,
   PopoverInteractionKind,
+  Position,
 } from '@blueprintjs/core';
-import { DashboardActionsBar, FormattedMessage as T, Icon } from '@/components';
 import classNames from 'classnames';
+// @ts-nocheck
+import React from 'react';
 
-import NumberFormatDropdown from '@/components/NumberFormatDropdown';
+import NumberFormatDropdown from '@bigcapital/webapp/components/NumberFormatDropdown';
 
-import withProfitLossActions from './withProfitLossActions';
 import withProfitLoss from './withProfitLoss';
+import withProfitLossActions from './withProfitLossActions';
 
-import { compose, saveInvoke } from '@/utils';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { compose, saveInvoke } from '@bigcapital/webapp/utils';
 import { useProfitLossSheetContext } from './ProfitLossProvider';
 import { ProfitLossSheetExportMenu } from './components';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { DialogsName } from '@/constants/dialogs';
 
 /**
  * Profit/Loss sheet actions bar.

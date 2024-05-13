@@ -1,13 +1,13 @@
+import { Button, Classes, Divider, Intent, Menu, MenuItem, Position } from '@blueprintjs/core';
+import { Popover2 } from '@blueprintjs/popover2';
 // @ts-nocheck
 import React from 'react';
-import styled from 'styled-components';
 import intl from 'react-intl-universal';
-import { Button, Position, MenuItem, Menu, Intent, Divider, Classes } from '@blueprintjs/core';
-import { Popover2 } from '@blueprintjs/popover2';
+import styled from 'styled-components';
 
-import { Hint, Icon, If, FormattedMessage as T } from '@/components';
+import { Hint, Icon, If, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { safeInvoke } from '@bigcapital/webapp/utils';
 import { useTransactionsLockingContext } from './TransactionsLockingProvider';
-import { safeInvoke } from '@/utils';
 
 /**
  * Transaction locking module item.

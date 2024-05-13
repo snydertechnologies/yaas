@@ -1,14 +1,14 @@
-import BaseController from '@/api/controllers/BaseController';
-import CheckPolicies from '@/api/middleware/CheckPolicies';
-import asyncMiddleware from '@/api/middleware/asyncMiddleware';
-import { DATATYPES_LENGTH } from '@/data/DataTypes';
-import { ServiceError } from '@/exceptions';
-import { AbilitySubject, AccountAction, IAccountDTO, IAccountsStructureType } from '@/interfaces';
-import { AccountsApplication } from '@/services/Accounts/AccountsApplication';
-import DynamicListingService from '@/services/DynamicListing/DynamicListService';
+import BaseController from '@bigcapital/server/api/controllers/BaseController';
+import CheckPolicies from '@bigcapital/server/api/middleware/CheckPolicies';
+import asyncMiddleware from '@bigcapital/server/api/middleware/asyncMiddleware';
+import { DATATYPES_LENGTH } from '@bigcapital/server/data/DataTypes';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { AbilitySubject, AccountAction, IAccountDTO, IAccountsStructureType } from '@bigcapital/server/interfaces';
+import { AccountsApplication } from '@bigcapital/server/services/Accounts/AccountsApplication';
+import { MAX_ACCOUNTS_CHART_DEPTH } from '@bigcapital/server/services/Accounts/constants';
+import DynamicListingService from '@bigcapital/server/services/DynamicListing/DynamicListService';
 import { NextFunction, Request, Response, Router } from 'express';
 import { check, param, query } from 'express-validator';
-import { MAX_ACCOUNTS_CHART_DEPTH } from 'services/Accounts/constants';
 import { Inject, Service } from 'typedi';
 
 @Service()

@@ -1,6 +1,6 @@
+import { Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import styled from 'styled-components';
-import { Icon, FormattedMessage as T } from '@/components';
 
 interface AuthContainerProps {
   children: React.ReactNode;

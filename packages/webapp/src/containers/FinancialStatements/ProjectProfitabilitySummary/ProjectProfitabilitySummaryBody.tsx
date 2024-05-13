@@ -1,14 +1,14 @@
 // @ts-nocheck
 import React from 'react';
 
-import ProjectProfitabilitySummaryTable from './ProjectProfitabilitySummaryTable';
+import { FinancialSheetSkeleton } from '@bigcapital/webapp/components/FinancialSheet';
 import { FinancialReportBody } from '../FinancialReportPage';
-import { FinancialSheetSkeleton } from '@/components/FinancialSheet';
 import { useProjectProfitabilitySummaryContext } from './ProjectProfitabilitySummaryProvider';
+import ProjectProfitabilitySummaryTable from './ProjectProfitabilitySummaryTable';
 
-import withCurrentOrganization from '@/containers/Organization/withCurrentOrganization';
+import withCurrentOrganization from '@bigcapital/webapp/containers/Organization/withCurrentOrganization';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Project profitability summary body JSX.

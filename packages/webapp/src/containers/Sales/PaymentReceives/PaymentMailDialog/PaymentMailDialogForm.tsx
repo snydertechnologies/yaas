@@ -1,20 +1,20 @@
-// @ts-nocheck
-import { Formik, FormikBag } from 'formik';
-import * as R from 'ramda';
-import { Intent } from '@blueprintjs/core';
-import { usePaymentMailDialogBoot } from './PaymentMailDialogBoot';
-import { DialogsName } from '@/constants/dialogs';
-import { useSendPaymentReceiveMail } from '@/hooks/query';
-import { PaymentMailDialogFormContent } from './PaymentMailDialogFormContent';
+import { AppToaster } from '@bigcapital/webapp/components';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
 import {
   MailNotificationFormValues,
   initialMailNotificationValues,
-  transformMailFormToRequest,
   transformMailFormToInitialValues,
-} from '@/containers/SendMailNotification/utils';
-import { AppToaster } from '@/components';
+  transformMailFormToRequest,
+} from '@bigcapital/webapp/containers/SendMailNotification/utils';
+import { useSendPaymentReceiveMail } from '@bigcapital/webapp/hooks/query';
+import { Intent } from '@blueprintjs/core';
+// @ts-nocheck
+import { Formik, FormikBag } from 'formik';
+import * as R from 'ramda';
 import { useHistory } from 'react-router-dom';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
+import { usePaymentMailDialogBoot } from './PaymentMailDialogBoot';
+import { PaymentMailDialogFormContent } from './PaymentMailDialogFormContent';
 
 const initialFormValues = {
   ...initialMailNotificationValues,

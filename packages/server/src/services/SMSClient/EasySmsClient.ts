@@ -1,4 +1,4 @@
-import SMSClientInterface from '@/services/SMSClient/SMSClientInterfaces';
+import SMSClientInterface from '@bigcapital/server/services/SMSClient/SMSClientInterfaces';
 import axios from 'axios';
 
 export default class EasySMSClient implements SMSClientInterface {

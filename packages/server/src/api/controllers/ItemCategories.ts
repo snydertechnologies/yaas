@@ -1,10 +1,10 @@
-import BaseController from '@/api/controllers/BaseController';
-import asyncMiddleware from '@/api/middleware/asyncMiddleware';
-import { DATATYPES_LENGTH } from '@/data/DataTypes';
-import { ServiceError } from '@/exceptions';
-import { IItemCategoryOTD } from '@/interfaces';
-import DynamicListingService from '@/services/DynamicListing/DynamicListService';
-import ItemCategoriesService from '@/services/ItemCategories/ItemCategoriesService';
+import BaseController from '@bigcapital/server/api/controllers/BaseController';
+import asyncMiddleware from '@bigcapital/server/api/middleware/asyncMiddleware';
+import { DATATYPES_LENGTH } from '@bigcapital/server/data/DataTypes';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { IItemCategoryOTD } from '@bigcapital/server/interfaces';
+import DynamicListingService from '@bigcapital/server/services/DynamicListing/DynamicListService';
+import ItemCategoriesService from '@bigcapital/server/services/ItemCategories/ItemCategoriesService';
 import { NextFunction, Request, Response, Router } from 'express';
 import { check, param, query } from 'express-validator';
 import { Inject, Service } from 'typedi';

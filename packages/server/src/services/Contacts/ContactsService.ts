@@ -1,7 +1,7 @@
-import { ServiceError } from '@/exceptions';
-import { IContact, IContactEditDTO, IContactNewDTO, IContactsAutoCompleteFilter } from '@/interfaces';
-import DynamicListingService from '@/services/DynamicListing/DynamicListService';
-import TenancyService from '@/services/Tenancy/TenancyService';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { IContact, IContactEditDTO, IContactNewDTO, IContactsAutoCompleteFilter } from '@bigcapital/server/interfaces';
+import DynamicListingService from '@bigcapital/server/services/DynamicListing/DynamicListService';
+import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Knex } from 'knex';
 import { difference, omit, upperFirst } from 'lodash';
 import moment from 'moment';

@@ -1,9 +1,9 @@
 // @ts-nocheck
-import { AppToaster, Box, Group } from '@/components';
+import { AppToaster, Box, Group } from '@bigcapital/webapp/components';
+import { useSampleSheetImport } from '@bigcapital/webapp/hooks/query/import';
 import { Button, Intent, Menu, MenuItem, Popover, PopoverInteractionKind } from '@blueprintjs/core';
-import styles from './ImportSampleDownload.module.scss';
-import { useSampleSheetImport } from '@/hooks/query/import';
 import { useImportFileContext } from './ImportFileProvider';
+import styles from './ImportSampleDownload.module.scss';
 
 export function ImportSampleDownload() {
   const { resource, sampleFileName, exampleTitle, exampleDescription } = useImportFileContext();

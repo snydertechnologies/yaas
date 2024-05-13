@@ -1,8 +1,8 @@
+import { DialogContent } from '@bigcapital/webapp/components';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import { useTaxRate } from '@bigcapital/webapp/hooks/query/taxRates';
 // @ts-nocheck
 import React from 'react';
-import { DialogContent } from '@/components';
-import { useTaxRate } from '@/hooks/query/taxRates';
-import { DialogsName } from '@/constants/dialogs';
 
 const TaxRateFormDialogContext = React.createContext();
 

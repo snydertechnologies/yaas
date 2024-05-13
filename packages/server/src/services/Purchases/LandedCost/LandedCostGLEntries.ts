@@ -6,11 +6,11 @@ import {
   ILandedCostTransactionEntry,
   ILedger,
   ILedgerEntry,
-} from '@/interfaces';
-import Ledger from '@/services/Accounting/Ledger';
-import LedgerRepository from '@/services/Ledger/LedgerRepository';
-import JournalPosterService from '@/services/Sales/JournalPosterService';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+} from '@bigcapital/server/interfaces';
+import Ledger from '@bigcapital/server/services/Accounting/Ledger';
+import LedgerRepository from '@bigcapital/server/services/Ledger/LedgerRepository';
+import JournalPosterService from '@bigcapital/server/services/Sales/JournalPosterService';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Knex } from 'knex';
 import * as R from 'ramda';
 import { Inject, Service } from 'typedi';

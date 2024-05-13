@@ -1,20 +1,20 @@
-// @ts-nocheck
-import React, { useEffect } from 'react';
 import moment from 'moment';
 import * as R from 'ramda';
+// @ts-nocheck
+import React, { useEffect } from 'react';
 
-import { FinancialStatement, DashboardPageContent } from '@/components';
+import { DashboardPageContent, FinancialStatement } from '@bigcapital/webapp/components';
 
 import CustomersBalanceSummaryActionsBar from './CustomersBalanceSummaryActionsBar';
 import CustomersBalanceSummaryHeader from './CustomersBalanceSummaryHeader';
 
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import { CustomerBalanceSummaryPdfDialog } from './CustomerBalancePdfDialog';
 import { CustomerBalanceSummaryBody } from './CustomerBalanceSummaryBody';
 import { CustomersBalanceSummaryProvider } from './CustomersBalanceSummaryProvider';
-import { useCustomerBalanceSummaryQuery } from './utils';
 import { CustomersBalanceLoadingBar } from './components';
+import { useCustomerBalanceSummaryQuery } from './utils';
 import withCustomersBalanceSummaryActions from './withCustomersBalanceSummaryActions';
-import { CustomerBalanceSummaryPdfDialog } from './CustomerBalancePdfDialog';
-import { DialogsName } from '@/constants/dialogs';
 
 /**
  * Customers Balance summary.

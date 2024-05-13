@@ -1,13 +1,13 @@
+import { compose } from 'ramda';
 // @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
-import { compose } from 'ramda';
 
-import { TableStyle } from '@/constants';
-import { ReportDataTable, FinancialSheet } from '@/components';
-import { defaultExpanderReducer, tableRowTypesToClassnames } from '@/utils';
+import { FinancialSheet, ReportDataTable } from '@bigcapital/webapp/components';
+import { TableStyle } from '@bigcapital/webapp/constants';
+import withCurrentOrganization from '@bigcapital/webapp/containers/Organization/withCurrentOrganization';
+import { defaultExpanderReducer, tableRowTypesToClassnames } from '@bigcapital/webapp/utils';
 import { useSalesTaxLiabilitySummaryContext } from './SalesTaxLiabilitySummaryBoot';
-import withCurrentOrganization from '@/containers/Organization/withCurrentOrganization';
 import { useSalesTaxLiabilitySummaryColumns } from './utils';
 
 /**

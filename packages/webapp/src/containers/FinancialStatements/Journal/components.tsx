@@ -1,14 +1,14 @@
+import { Button, Classes, Intent, Menu, MenuItem, ProgressBar, Text } from '@blueprintjs/core';
+import classNames from 'classnames';
 // @ts-nocheck
 import React, { useRef } from 'react';
-import classNames from 'classnames';
-import { Button, Classes, Menu, MenuItem, ProgressBar, Text, Intent } from '@blueprintjs/core';
 
-import { AppToaster, Icon, If, Stack, FormattedMessage as T } from '@/components';
-import { useJournalSheetContext } from './JournalProvider';
+import { AppToaster, Icon, If, Stack, FormattedMessage as T } from '@bigcapital/webapp/components';
 import FinancialLoadingBar from '../FinancialLoadingBar';
 import { FinancialComputeAlert } from '../FinancialReportPage';
+import { useJournalSheetContext } from './JournalProvider';
 
-import { useJournalSheetCsvExport, useJournalSheetXlsxExport } from '@/hooks/query';
+import { useJournalSheetCsvExport, useJournalSheetXlsxExport } from '@bigcapital/webapp/hooks/query';
 
 /**
  * Journal sheet loading bar.

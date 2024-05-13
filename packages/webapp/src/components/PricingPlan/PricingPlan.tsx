@@ -1,8 +1,8 @@
+import { CheckCircled } from '@bigcapital/webapp/icons/CheckCircled';
 import { Button, ButtonProps, Intent } from '@blueprintjs/core';
 import clsx from 'classnames';
 import { Box, Group, Stack } from '../Layout';
 import styles from './PricingPlan.module.scss';
-import { CheckCircled } from '@/icons/CheckCircled';
 
 export interface PricingPlanProps {
   featured?: boolean;

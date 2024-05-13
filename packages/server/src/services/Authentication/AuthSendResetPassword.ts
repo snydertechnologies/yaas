@@ -1,16 +1,16 @@
-import config from '@/config';
-import { ServiceError } from '@/exceptions';
+import config from '@bigcapital/server/config';
+import { ServiceError } from '@bigcapital/server/exceptions';
 import {
   IAuthResetedPasswordEventPayload,
   IAuthSendedResetPassword,
   IAuthSendingResetPassword,
   IPasswordReset,
   ISystemUser,
-} from '@/interfaces';
-import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';
-import events from '@/subscribers/events';
-import { PasswordReset } from '@/system/models';
-import { hashPassword } from '@/utils';
+} from '@bigcapital/server/interfaces';
+import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
+import events from '@bigcapital/server/subscribers/events';
+import { PasswordReset } from '@bigcapital/server/system/models';
+import { hashPassword } from '@bigcapital/server/utils';
 import moment from 'moment';
 import { Inject, Service } from 'typedi';
 import uniqid from 'uniqid';

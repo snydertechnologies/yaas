@@ -1,14 +1,14 @@
+import clsx from 'classnames';
+import moment from 'moment';
 // @ts-nocheck
 import React from 'react';
-import moment from 'moment';
 import intl from 'react-intl-universal';
-import clsx from 'classnames';
 
+import { DetailItem, DetailsMenu, FormatDate } from '@bigcapital/webapp/components';
 import { defaultTo } from 'lodash';
-import { DetailsMenu, DetailItem, FormatDate } from '@/components';
 import { useInventoryAdjustmentDrawerContext } from './InventoryAdjustmentDrawerProvider';
 
-import InventoryAdjustmentDrawerCls from '@/style/components/Drawers/InventoryAdjustmentDrawer.module.scss';
+import InventoryAdjustmentDrawerCls from '@bigcapital/webapp/style/components/Drawers/InventoryAdjustmentDrawer.module.scss';
 
 /**
  * Inventory detail header.

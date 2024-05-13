@@ -1,28 +1,28 @@
-// @ts-nocheck
-import React from 'react';
 import {
+  Button,
+  Classes,
   NavbarDivider,
   NavbarGroup,
-  Classes,
-  Button,
   Popover,
   PopoverInteractionKind,
   Position,
 } from '@blueprintjs/core';
+// @ts-nocheck
+import React from 'react';
 
+import { DashboardActionsBar, Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
 import classNames from 'classnames';
-import { DashboardActionsBar, FormattedMessage as T, Icon } from '@/components';
 import { useAPAgingSummaryContext } from './APAgingSummaryProvider';
 
-import NumberFormatDropdown from '@/components/NumberFormatDropdown';
+import NumberFormatDropdown from '@bigcapital/webapp/components/NumberFormatDropdown';
 import { APAgingSummaryExportMenu } from './components';
 
 import withAPAgingSummary from './withAPAgingSummary';
 import withAPAgingSummaryActions from './withAPAgingSummaryActions';
 
-import { saveInvoke, compose } from '@/utils';
-import { DialogsName } from '@/constants/dialogs';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { compose, saveInvoke } from '@bigcapital/webapp/utils';
 
 /**
  * AP Aging summary sheet - Actions bar.

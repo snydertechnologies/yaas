@@ -1,9 +1,9 @@
-import JournalEntry from '@/services/Accounting/JournalEntry';
-import JournalPoster from '@/services/Accounting/JournalPoster';
+import Account from '@bigcapital/server/models/Account';
+import AccountBalance from '@bigcapital/server/models/AccountBalance';
+import AccountTransaction from '@bigcapital/server/models/AccountTransaction';
+import JournalEntry from '@bigcapital/server/services/Accounting/JournalEntry';
+import JournalPoster from '@bigcapital/server/services/Accounting/JournalPoster';
 import { omit } from 'lodash';
-import Account from 'models/Account';
-import AccountBalance from 'models/AccountBalance';
-import AccountTransaction from 'models/AccountTransaction';
 import { tenantFactory } from '~/dbInit';
 import { expect } from '~/testInit';
 

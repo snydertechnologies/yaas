@@ -1,8 +1,8 @@
+import { Skeleton } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
 import { AuthInsiderCard } from './_components';
-import { Skeleton } from '@/components';
 
 /**
  * Invite accept loading space.

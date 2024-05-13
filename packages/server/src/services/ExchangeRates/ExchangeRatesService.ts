@@ -1,7 +1,7 @@
-import { EchangeRateLatestPOJO, ExchangeRateLatestDTO } from '@/interfaces';
-import { ExchangeRate } from '@/lib/ExchangeRate/ExchangeRate';
-import { ExchangeRateServiceType } from '@/lib/ExchangeRate/types';
-import { TenantMetadata } from '@/system/models';
+import { EchangeRateLatestPOJO, ExchangeRateLatestDTO } from '@bigcapital/server/interfaces';
+import { ExchangeRate } from '@bigcapital/server/lib/ExchangeRate/ExchangeRate';
+import { ExchangeRateServiceType } from '@bigcapital/server/lib/ExchangeRate/types';
+import { TenantMetadata } from '@bigcapital/server/system/models';
 import { Service } from 'typedi';
 
 @Service()

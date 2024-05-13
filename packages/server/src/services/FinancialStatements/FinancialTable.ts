@@ -1,8 +1,8 @@
-import { ITableColumn } from '@/interfaces';
-import { ITableRow } from '@/interfaces';
+import { ITableColumn } from '@bigcapital/server/interfaces';
+import { ITableRow } from '@bigcapital/server/interfaces';
+import { increment } from '@bigcapital/server/utils';
 import { clone, cloneDeep, isEmpty, omit } from 'lodash';
 import * as R from 'ramda';
-import { increment } from 'utils';
 import { IROW_TYPE } from './BalanceSheet/constants';
 
 export const FinancialTable = (Base) =>

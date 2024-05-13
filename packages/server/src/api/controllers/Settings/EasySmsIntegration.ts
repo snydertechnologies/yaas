@@ -1,4 +1,4 @@
-import EasySmsIntegration from '@/services/SmsIntegration/EasySmsIntegration';
+import EasySmsIntegration from '@bigcapital/server/services/SmsIntegration/EasySmsIntegration';
 import { NextFunction, Response, Router } from 'express';
 import { check } from 'express-validator';
 import { Request } from 'express-validator/src/base';

@@ -1,23 +1,23 @@
-// @ts-nocheck
-import React, { useRef } from 'react';
-import intl from 'react-intl-universal';
 import { Button } from '@blueprintjs/core';
 import { useFormikContext } from 'formik';
 import * as R from 'ramda';
+// @ts-nocheck
+import React, { useRef } from 'react';
+import intl from 'react-intl-universal';
 
-import { ExchangeRateInputGroup } from '@/components';
-import { useCurrentOrganization } from '@/hooks/state';
-import { useReceiptIsForeignCustomer, useReceiptTotals } from './utils';
-import { useUpdateEffect } from '@/hooks';
-import { transactionNumber } from '@/utils';
-import withSettings from '@/containers/Settings/withSettings';
+import { ExchangeRateInputGroup } from '@bigcapital/webapp/components';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
 import {
   useSyncExRateToForm,
   withExchangeRateFetchingLoading,
   withExchangeRateItemEntriesPriceRecalc,
-} from '@/containers/Entries/withExRateItemEntriesPriceRecalc';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { DialogsName } from '@/constants/dialogs';
+} from '@bigcapital/webapp/containers/Entries/withExRateItemEntriesPriceRecalc';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import { useUpdateEffect } from '@bigcapital/webapp/hooks';
+import { useCurrentOrganization } from '@bigcapital/webapp/hooks/state';
+import { transactionNumber } from '@bigcapital/webapp/utils';
+import { useReceiptIsForeignCustomer, useReceiptTotals } from './utils';
 
 /**
  * Receipt exchange rate input field.

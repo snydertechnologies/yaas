@@ -1,16 +1,16 @@
 // @ts-nocheck
 import React from 'react';
 
-import '@/style/pages/InventoryAdjustments/List.scss';
+import '@bigcapital/webapp/style/pages/InventoryAdjustments/List.scss';
 
-import { DashboardContentTable, DashboardPageContent } from '@/components';
+import { DashboardContentTable, DashboardPageContent } from '@bigcapital/webapp/components';
 
-import { InventoryAdjustmentsProvider } from './InventoryAdjustmentsProvider';
 import InventoryAdjustmentTable from './InventoryAdjustmentTable';
+import { InventoryAdjustmentsProvider } from './InventoryAdjustmentsProvider';
 
 import withInventoryAdjustments from './withInventoryAdjustments';
 
-import { compose, transformTableStateToQuery } from '@/utils';
+import { compose, transformTableStateToQuery } from '@bigcapital/webapp/utils';
 
 /**
  * Inventory Adjustment List.

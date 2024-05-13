@@ -1,11 +1,11 @@
+import { Classes, Intent, Menu, MenuDivider, MenuItem, Position, Tooltip } from '@blueprintjs/core';
 // @ts-nocheck
 import React, { useMemo } from 'react';
 import intl from 'react-intl-universal';
-import { Menu, MenuItem, MenuDivider, Intent, Tooltip, Position, Classes } from '@blueprintjs/core';
 
-import { Can, Icon, Money, If, AvatarCell } from '@/components';
-import { CustomerAction, AbilitySubject } from '@/constants/abilityOption';
-import { safeCallback } from '@/utils';
+import { AvatarCell, Can, Icon, If, Money } from '@bigcapital/webapp/components';
+import { AbilitySubject, CustomerAction } from '@bigcapital/webapp/constants/abilityOption';
+import { safeCallback } from '@bigcapital/webapp/utils';
 
 /**
  * Actions menu.

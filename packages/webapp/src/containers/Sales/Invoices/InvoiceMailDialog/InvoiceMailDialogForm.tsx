@@ -1,17 +1,17 @@
-// @ts-nocheck
-import { Formik } from 'formik';
-import { Intent } from '@blueprintjs/core';
-import { useInvoiceMailDialogBoot } from './InvoiceMailDialogBoot';
-import { AppToaster } from '@/components';
-import { useSendSaleInvoiceMail } from '@/hooks/query';
-import { InvoiceMailDialogFormContent } from './InvoiceMailDialogFormContent';
-import { InvoiceMailFormSchema } from './InvoiceMailDialogForm.schema';
+import { AppToaster } from '@bigcapital/webapp/components';
 import {
   MailNotificationFormValues,
   initialMailNotificationValues,
-  transformMailFormToRequest,
   transformMailFormToInitialValues,
-} from '@/containers/SendMailNotification/utils';
+  transformMailFormToRequest,
+} from '@bigcapital/webapp/containers/SendMailNotification/utils';
+import { useSendSaleInvoiceMail } from '@bigcapital/webapp/hooks/query';
+import { Intent } from '@blueprintjs/core';
+// @ts-nocheck
+import { Formik } from 'formik';
+import { useInvoiceMailDialogBoot } from './InvoiceMailDialogBoot';
+import { InvoiceMailFormSchema } from './InvoiceMailDialogForm.schema';
+import { InvoiceMailDialogFormContent } from './InvoiceMailDialogFormContent';
 
 const initialFormValues = {
   ...initialMailNotificationValues,

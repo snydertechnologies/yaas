@@ -1,9 +1,9 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import classNames from 'classnames';
 // @ts-nocheck
 import React from 'react';
-import classNames from 'classnames';
-import { FormattedMessage as T } from '@/components';
 
-import { saveInvoke } from '@/utils';
+import { saveInvoke } from '@bigcapital/webapp/utils';
 
 /**
  * Billing plan.

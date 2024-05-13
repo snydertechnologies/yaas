@@ -1,14 +1,21 @@
+import { Checkbox, FormGroup, Position } from '@blueprintjs/core';
+import { DateInput } from '@blueprintjs/datetime';
+import { FastField } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { FastField } from 'formik';
-import { DateInput } from '@blueprintjs/datetime';
-import { FormGroup, Position, Checkbox } from '@blueprintjs/core';
 
-import { Row, Col, FieldHint, FormattedMessage as T, FFormGroup, VendorsMultiSelect } from '@/components';
-import { filterVendorsOptions } from '../constants';
-import { momentFormatter, tansformDateValue, inputIntent, handleDateChange } from '@/utils';
-import { useVendorsBalanceSummaryGeneralPanelContext } from './VendorsBalanceSummaryHeaderGeneralProvider';
+import {
+  Col,
+  FFormGroup,
+  FieldHint,
+  Row,
+  FormattedMessage as T,
+  VendorsMultiSelect,
+} from '@bigcapital/webapp/components';
+import { handleDateChange, inputIntent, momentFormatter, tansformDateValue } from '@bigcapital/webapp/utils';
 import FinancialStatementsFilter from '../FinancialStatementsFilter';
+import { filterVendorsOptions } from '../constants';
+import { useVendorsBalanceSummaryGeneralPanelContext } from './VendorsBalanceSummaryHeaderGeneralProvider';
 
 /**
  * Vendors balance header - General panel - Content.

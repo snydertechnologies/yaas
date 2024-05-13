@@ -1,6 +1,6 @@
-import { IPlaidItemCreatedEventPayload } from '@/interfaces/Plaid';
-import { EventSubscriber } from '@/lib/EventPublisher/EventPublisher';
-import events from '@/subscribers/events';
+import { IPlaidItemCreatedEventPayload } from '@bigcapital/server/interfaces/Plaid';
+import { EventSubscriber } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
+import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 
 @Service()

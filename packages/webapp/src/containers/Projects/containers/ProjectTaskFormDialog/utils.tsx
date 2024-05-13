@@ -1,9 +1,9 @@
+import { Choose, Money, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { useFormikContext } from 'formik';
+import _ from 'lodash';
 // @ts-nocheck
 import React from 'react';
-import _ from 'lodash';
-import { useFormikContext } from 'formik';
 import styled from 'styled-components';
-import { Choose, Money, FormattedMessage as T } from '@/components';
 
 export function EstimateAmount({ baseCurrency }) {
   const { values } = useFormikContext();

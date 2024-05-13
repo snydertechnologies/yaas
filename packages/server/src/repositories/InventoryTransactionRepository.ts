@@ -1,5 +1,5 @@
-import TenantRepository from '@/repositories/TenantRepository';
-import { InventoryTransaction } from 'models';
+import { InventoryTransaction } from '@bigcapital/server/models';
+import TenantRepository from '@bigcapital/server/repositories/TenantRepository';
 
 export default class InventoryTransactionRepository extends TenantRepository {
   /**

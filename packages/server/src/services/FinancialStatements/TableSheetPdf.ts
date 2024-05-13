@@ -1,6 +1,6 @@
-import { ITableColumn, ITableData, ITableRow } from '@/interfaces';
-import { ChromiumlyTenancy } from '@/services/ChromiumlyTenancy/ChromiumlyTenancy';
-import { TemplateInjectable } from '@/services/TemplateInjectable/TemplateInjectable';
+import { ITableColumn, ITableData, ITableRow } from '@bigcapital/server/interfaces';
+import { ChromiumlyTenancy } from '@bigcapital/server/services/ChromiumlyTenancy/ChromiumlyTenancy';
+import { TemplateInjectable } from '@bigcapital/server/services/TemplateInjectable/TemplateInjectable';
 import * as R from 'ramda';
 import { Inject, Service } from 'typedi';
 import { FinancialTableStructure } from './FinancialTableStructure';

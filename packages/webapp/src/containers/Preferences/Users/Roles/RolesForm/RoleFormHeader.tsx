@@ -1,11 +1,11 @@
+import { FormGroup, InputGroup, TextArea } from '@blueprintjs/core';
+import { ErrorMessage, FastField } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { ErrorMessage, FastField } from 'formik';
-import { FormGroup, InputGroup, TextArea } from '@blueprintjs/core';
 
-import { inputIntent } from '@/utils';
-import { FormattedMessage as T, FieldRequiredHint, Card } from '@/components';
-import { useAutofocus } from '@/hooks';
+import { Card, FieldRequiredHint, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { useAutofocus } from '@bigcapital/webapp/hooks';
+import { inputIntent } from '@bigcapital/webapp/utils';
 
 /**
  * Role form header.

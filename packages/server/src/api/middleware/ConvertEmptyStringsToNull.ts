@@ -1,6 +1,6 @@
+import { convertEmptyStringToNull } from '@bigcapital/server/utils';
 import deepMap from 'deep-map';
 import { NextFunction, Request, Response } from 'express';
-import { convertEmptyStringToNull } from 'utils';
 
 function convertEmptyStringsToNull(data) {
   return deepMap(data, (value) => convertEmptyStringToNull(value));

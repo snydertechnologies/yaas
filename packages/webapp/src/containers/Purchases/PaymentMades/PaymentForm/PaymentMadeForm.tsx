@@ -1,29 +1,29 @@
+import { Intent } from '@blueprintjs/core';
+import classNames from 'classnames';
+import { Form, Formik } from 'formik';
+import { defaultTo, sumBy } from 'lodash';
 // @ts-nocheck
 import React, { useMemo } from 'react';
 import intl from 'react-intl-universal';
-import classNames from 'classnames';
-import { Formik, Form } from 'formik';
-import { Intent } from '@blueprintjs/core';
-import { sumBy, defaultTo } from 'lodash';
 import { useHistory } from 'react-router-dom';
 
-import { CLASSES } from '@/constants/classes';
-import { AppToaster } from '@/components';
-import PaymentMadeHeader from './PaymentMadeFormHeader';
+import { AppToaster } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
 import PaymentMadeFloatingActions from './PaymentMadeFloatingActions';
 import PaymentMadeFooter from './PaymentMadeFooter';
 import PaymentMadeFormBody from './PaymentMadeFormBody';
+import PaymentMadeHeader from './PaymentMadeFormHeader';
 import PaymentMadeFormTopBar from './PaymentMadeFormTopBar';
 
-import { PaymentMadeInnerProvider } from './PaymentMadeInnerProvider';
+import { compose, orderingLinesIndexes } from '@bigcapital/webapp/utils';
 import { usePaymentMadeFormContext } from './PaymentMadeFormProvider';
-import { compose, orderingLinesIndexes } from '@/utils';
+import { PaymentMadeInnerProvider } from './PaymentMadeInnerProvider';
 
-import withSettings from '@/containers/Settings/withSettings';
-import withCurrentOrganization from '@/containers/Organization/withCurrentOrganization';
+import withCurrentOrganization from '@bigcapital/webapp/containers/Organization/withCurrentOrganization';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
 
-import { EditPaymentMadeFormSchema, CreatePaymentMadeFormSchema } from './PaymentMadeForm.schema';
-import { defaultPaymentMade, transformToEditForm, transformErrors, transformFormToRequest } from './utils';
+import { CreatePaymentMadeFormSchema, EditPaymentMadeFormSchema } from './PaymentMadeForm.schema';
+import { defaultPaymentMade, transformErrors, transformFormToRequest, transformToEditForm } from './utils';
 
 /**
  * Payment made form component.

@@ -1,13 +1,13 @@
+import { DialogFooter, DialogFooterActions, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Button, Intent } from '@blueprintjs/core';
+import { useFormikContext } from 'formik';
 // @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
-import { Intent, Button } from '@blueprintjs/core';
-import { useFormikContext } from 'formik';
-import { DialogFooter, DialogFooterActions, FormattedMessage as T } from '@/components';
 
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { compose } from '@bigcapital/webapp/utils';
 import { useAllocateLandedConstDialogContext } from './AllocateLandedCostDialogProvider';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { compose } from '@/utils';
 
 /**
  * Allocate landed cost floating actions.

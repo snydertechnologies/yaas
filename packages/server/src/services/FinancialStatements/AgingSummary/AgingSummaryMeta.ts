@@ -1,4 +1,4 @@
-import { IAgingSummaryMeta, IAgingSummaryQuery } from '@/interfaces';
+import { IAgingSummaryMeta, IAgingSummaryQuery } from '@bigcapital/server/interfaces';
 import moment from 'moment';
 import { Inject } from 'typedi';
 import { FinancialSheetMeta } from '../FinancialSheetMeta';

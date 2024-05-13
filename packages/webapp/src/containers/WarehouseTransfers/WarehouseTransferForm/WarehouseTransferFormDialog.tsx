@@ -1,7 +1,7 @@
+import WarehouseTransferNumberDialog from '@bigcapital/webapp/containers/Dialogs/WarehouseTransferNumberDialog';
+import { useFormikContext } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { useFormikContext } from 'formik';
-import WarehouseTransferNumberDialog from '@/containers/Dialogs/WarehouseTransferNumberDialog';
 
 /**
  * Warehouse transfer form dialog.

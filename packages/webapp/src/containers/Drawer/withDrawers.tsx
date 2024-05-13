@@ -1,6 +1,6 @@
+import { getDrawerPayloadFactory, isDrawerOpenFactory } from '@bigcapital/webapp/store/dashboard/dashboard.selectors';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { isDrawerOpenFactory, getDrawerPayloadFactory } from '@/store/dashboard/dashboard.selectors';
 
 export default (mapState) => {
   const isDrawerOpen = isDrawerOpenFactory();

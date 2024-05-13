@@ -1,4 +1,4 @@
-import config from '@/config';
+import config from '@bigcapital/server/config';
 import nodemailer from 'nodemailer';
 
 // create reusable transporter object using the default SMTP transport

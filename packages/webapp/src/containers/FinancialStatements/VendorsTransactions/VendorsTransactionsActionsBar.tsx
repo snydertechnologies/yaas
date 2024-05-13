@@ -1,27 +1,27 @@
-// @ts-nocheck
-import React from 'react';
+import { DashboardActionsBar, Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
 import {
-  NavbarGroup,
   Button,
   Classes,
   NavbarDivider,
+  NavbarGroup,
   Popover,
   PopoverInteractionKind,
   Position,
 } from '@blueprintjs/core';
-import { DashboardActionsBar, FormattedMessage as T, Icon } from '@/components';
 import classNames from 'classnames';
+// @ts-nocheck
+import React from 'react';
 
-import NumberFormatDropdown from '@/components/NumberFormatDropdown';
+import NumberFormatDropdown from '@bigcapital/webapp/components/NumberFormatDropdown';
 
 import { useVendorsTransactionsContext } from './VendorsTransactionsProvider';
 import withVendorsTransaction from './withVendorsTransaction';
 import withVendorsTransactionsActions from './withVendorsTransactionsActions';
 
-import { compose, saveInvoke } from '@/utils';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { compose, saveInvoke } from '@bigcapital/webapp/utils';
 import { VendorTransactionsExportMenu } from './components';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { DialogsName } from '@/constants/dialogs';
 
 /**
  * vendors transactions actions bar.

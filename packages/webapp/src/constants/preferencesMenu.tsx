@@ -1,6 +1,6 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import React from 'react';
-import { FormattedMessage as T } from '@/components';
 
 export default [
   {

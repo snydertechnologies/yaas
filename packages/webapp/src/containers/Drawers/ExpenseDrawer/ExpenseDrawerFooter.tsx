@@ -2,9 +2,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { T, TotalLines, TotalLineBorderStyle, TotalLineTextStyle } from '@/components';
+import { T, TotalLineBorderStyle, TotalLineTextStyle, TotalLines } from '@bigcapital/webapp/components';
+import { TotalLine } from '@bigcapital/webapp/components';
 import { useExpenseDrawerContext } from './ExpenseDrawerProvider';
-import { TotalLine } from '@/components';
 
 /**
  * Footer details of expense readonly details.

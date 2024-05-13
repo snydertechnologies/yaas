@@ -1,8 +1,8 @@
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { useRoles } from '@bigcapital/webapp/hooks/query';
+import classNames from 'classnames';
 // @ts-nocheck
 import React from 'react';
-import classNames from 'classnames';
-import { CLASSES } from '@/constants/classes';
-import { useRoles } from '@/hooks/query';
 
 const RolesListContext = React.createContext();
 

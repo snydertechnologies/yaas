@@ -1,19 +1,19 @@
 // @ts-nocheck
 import React, { useEffect } from 'react';
 
-import '@/style/pages/Customers/List.scss';
+import '@bigcapital/webapp/style/pages/Customers/List.scss';
 
-import { DashboardPageContent } from '@/components';
+import { DashboardPageContent } from '@bigcapital/webapp/components';
 
 import CustomersActionsBar from './CustomersActionsBar';
-import CustomersViewsTabs from './CustomersViewsTabs';
-import CustomersTable from './CustomersTable';
 import { CustomersListProvider } from './CustomersListProvider';
+import CustomersTable from './CustomersTable';
+import CustomersViewsTabs from './CustomersViewsTabs';
 
 import withCustomers from './withCustomers';
 import withCustomersActions from './withCustomersActions';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Customers list.

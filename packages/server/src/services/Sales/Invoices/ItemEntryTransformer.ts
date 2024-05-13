@@ -1,6 +1,6 @@
-import { IItemEntry } from '@/interfaces';
-import { Transformer } from '@/lib/Transformer/Transformer';
-import { formatNumber } from '@/utils';
+import { IItemEntry } from '@bigcapital/server/interfaces';
+import { Transformer } from '@bigcapital/server/lib/Transformer/Transformer';
+import { formatNumber } from '@bigcapital/server/utils';
 
 export class ItemEntryTransformer extends Transformer {
   /**

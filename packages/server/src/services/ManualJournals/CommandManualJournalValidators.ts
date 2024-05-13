@@ -1,6 +1,6 @@
-import { ServiceError } from '@/exceptions';
-import { IManualJournal, IManualJournalDTO, IManualJournalEntry } from '@/interfaces';
-import TenancyService from '@/services/Tenancy/TenancyService';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { IManualJournal, IManualJournalDTO, IManualJournalEntry } from '@bigcapital/server/interfaces';
+import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { difference } from 'lodash';
 import { Inject, Service } from 'typedi';
 import { AutoIncrementManualJournal } from './AutoIncrementManualJournal';

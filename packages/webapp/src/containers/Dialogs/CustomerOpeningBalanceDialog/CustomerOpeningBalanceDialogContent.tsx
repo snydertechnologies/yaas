@@ -1,7 +1,7 @@
 // @ts-nocheck
 import React from 'react';
 
-import '@/style/pages/CustomerOpeningBalance/CustomerOpeningBalance.scss';
+import '@bigcapital/webapp/style/pages/CustomerOpeningBalance/CustomerOpeningBalance.scss';
 
 import CustomerOpeningBalanceForm from './CustomerOpeningBalanceForm';
 import { CustomerOpeningBalanceFormProvider } from './CustomerOpeningBalanceFormProvider';

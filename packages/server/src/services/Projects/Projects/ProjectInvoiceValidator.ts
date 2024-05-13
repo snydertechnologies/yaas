@@ -1,6 +1,6 @@
-import { ServiceError } from '@/exceptions';
-import { ISaleInvoiceCreateDTO, ProjectLinkRefType } from '@/interfaces';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { ISaleInvoiceCreateDTO, ProjectLinkRefType } from '@bigcapital/server/interfaces';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { difference, isEmpty } from 'lodash';
 import { Inject, Service } from 'typedi';
 import { ERRORS } from './constants';

@@ -1,9 +1,9 @@
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import ReceiptNumberDialog from '@bigcapital/webapp/containers/Dialogs/ReceiptNumberDialog';
+import { useFormikContext } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { useFormikContext } from 'formik';
-import ReceiptNumberDialog from '@/containers/Dialogs/ReceiptNumberDialog';
 import ReceiptFormMailDeliverDialog from './Dialogs/ReceiptFormMailDeliverDialog';
-import { DialogsName } from '@/constants/dialogs';
 
 /**
  * Receipt form dialogs.

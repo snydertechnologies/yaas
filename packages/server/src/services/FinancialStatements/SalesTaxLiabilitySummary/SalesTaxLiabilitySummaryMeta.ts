@@ -1,4 +1,4 @@
-import { SalesTaxLiabilitySummaryQuery } from '@/interfaces/SalesTaxLiabilitySummary';
+import { SalesTaxLiabilitySummaryQuery } from '@bigcapital/server/interfaces/SalesTaxLiabilitySummary';
 import moment from 'moment';
 import { Inject, Service } from 'typedi';
 import { FinancialSheetMeta } from '../FinancialSheetMeta';

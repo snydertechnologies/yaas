@@ -1,12 +1,12 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { FormGroup, Radio, RadioGroup } from '@blueprintjs/core';
+import classNames from 'classnames';
+import { FastField } from 'formik';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import classNames from 'classnames';
-import { RadioGroup, Radio, FormGroup } from '@blueprintjs/core';
-import { FormattedMessage as T } from '@/components';
-import { FastField } from 'formik';
 
-import { handleStringChange, saveInvoke } from '@/utils';
+import { handleStringChange, saveInvoke } from '@bigcapital/webapp/utils';
 
 /**
  * Customer type radio field.

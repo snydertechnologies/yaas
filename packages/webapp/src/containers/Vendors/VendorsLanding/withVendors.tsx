@@ -1,6 +1,9 @@
+import {
+  getVendorsTableStateFactory,
+  vendorsTableStateChangedFactory,
+} from '@bigcapital/webapp/store/vendors/vendors.selectors';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { getVendorsTableStateFactory, vendorsTableStateChangedFactory } from '@/store/vendors/vendors.selectors';
 
 export default (mapState) => {
   const getVendorsTableState = getVendorsTableStateFactory();

@@ -1,13 +1,13 @@
+import { Button, InputGroup, Intent } from '@blueprintjs/core';
+import { Tooltip2 } from '@blueprintjs/popover2';
+import { Form, useFormikContext } from 'formik';
 // @ts-nocheck
 import React, { useState } from 'react';
 import intl from 'react-intl-universal';
-import { Button, InputGroup, Intent } from '@blueprintjs/core';
-import { Form, useFormikContext } from 'formik';
 import { Link } from 'react-router-dom';
-import { Tooltip2 } from '@blueprintjs/popover2';
 import styled from 'styled-components';
 
-import { Col, FFormGroup, FInputGroup, Row, FormattedMessage as T } from '@/components';
+import { Col, FFormGroup, FInputGroup, Row, FormattedMessage as T } from '@bigcapital/webapp/components';
 import { useInviteAcceptContext } from './InviteAcceptProvider';
 import { AuthSubmitButton } from './_components';
 

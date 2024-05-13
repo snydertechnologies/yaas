@@ -1,12 +1,12 @@
+import { Classes } from '@blueprintjs/core';
+import { useFormikContext } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { useFormikContext } from 'formik';
-import { Classes } from '@blueprintjs/core';
 
-import { If } from '@/components';
+import { If } from '@bigcapital/webapp/components';
 import MoneyInContentFields from './MoneyInContentFields';
-import TransactionTypeFields from './TransactionTypeFields';
 import { useMoneyInDailogContext } from './MoneyInDialogProvider';
+import TransactionTypeFields from './TransactionTypeFields';
 
 /**
  * Money in form fields.

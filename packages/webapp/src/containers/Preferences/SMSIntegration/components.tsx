@@ -1,11 +1,11 @@
+import { Button, Intent, Menu, MenuDivider, MenuItem } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
 import styled from 'styled-components';
-import { Intent, Button, Menu, MenuItem, MenuDivider } from '@blueprintjs/core';
 
-import { SwitchFieldCell } from '@/components/DataTableCells';
-import { safeInvoke } from '@/utils';
+import { SwitchFieldCell } from '@bigcapital/webapp/components/DataTableCells';
+import { safeInvoke } from '@bigcapital/webapp/utils';
 
 /**
  * Notification accessor.

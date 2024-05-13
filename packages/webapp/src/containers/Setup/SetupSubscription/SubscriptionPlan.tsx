@@ -1,8 +1,8 @@
 // @ts-nocheck
-import { AppToaster, Group, T } from '@/components';
-import { useGetLemonSqueezyCheckout } from '@/hooks/query';
+import { AppToaster, Group, T } from '@bigcapital/webapp/components';
+import { PricingPlan } from '@bigcapital/webapp/components/PricingPlan/PricingPlan';
+import { useGetLemonSqueezyCheckout } from '@bigcapital/webapp/hooks/query';
 import { Intent } from '@blueprintjs/core';
-import { PricingPlan } from '@/components/PricingPlan/PricingPlan';
 
 interface SubscriptionPricingProps {
   slug: string;

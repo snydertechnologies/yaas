@@ -1,5 +1,5 @@
-import { ACCOUNT_PARENT_TYPE } from '@/data/AccountTypes';
-import { IAccount, ILedger } from '@/interfaces';
+import { ACCOUNT_PARENT_TYPE } from '@bigcapital/server/data/AccountTypes';
+import { IAccount, ILedger } from '@bigcapital/server/interfaces';
 import * as R from 'ramda';
 import { FinancialDatePeriods } from '../FinancialDatePeriods';
 

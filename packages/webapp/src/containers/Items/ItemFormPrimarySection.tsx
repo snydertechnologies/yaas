@@ -1,21 +1,21 @@
-// @ts-nocheck
-import React, { useEffect, useRef } from 'react';
-import { FormGroup, InputGroup, RadioGroup, Classes, Radio, Position } from '@blueprintjs/core';
-import { ErrorMessage, FastField } from 'formik';
-import { CLASSES } from '@/constants/classes';
 import {
   CategoriesSelectList,
-  Hint,
   Col,
-  Row,
   FieldRequiredHint,
-  FormattedMessage as T,
   FormattedHTMLMessage,
-} from '@/components';
+  Hint,
+  Row,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { Classes, FormGroup, InputGroup, Position, Radio, RadioGroup } from '@blueprintjs/core';
 import classNames from 'classnames';
+import { ErrorMessage, FastField } from 'formik';
+// @ts-nocheck
+import React, { useEffect, useRef } from 'react';
 
+import { handleStringChange, inputIntent } from '@bigcapital/webapp/utils';
 import { useItemFormContext } from './ItemFormProvider';
-import { handleStringChange, inputIntent } from '@/utils';
 import { categoriesFieldShouldUpdate } from './utils';
 
 /**

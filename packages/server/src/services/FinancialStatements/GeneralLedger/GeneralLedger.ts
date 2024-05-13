@@ -7,7 +7,7 @@ import {
   IGeneralLedgerSheetQuery,
   IJournalEntry,
   IJournalPoster,
-} from '@/interfaces';
+} from '@bigcapital/server/interfaces';
 import { get, isEmpty, last, sumBy } from 'lodash';
 import moment from 'moment';
 import FinancialSheet from '../FinancialSheet';

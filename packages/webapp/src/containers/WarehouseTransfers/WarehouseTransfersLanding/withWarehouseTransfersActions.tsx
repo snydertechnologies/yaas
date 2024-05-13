@@ -1,9 +1,9 @@
+import {
+  resetWarehouseTransferTableState,
+  setWarehouseTransferTableState,
+} from '@bigcapital/webapp/store/WarehouseTransfer/warehouseTransfer.actions';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import {
-  setWarehouseTransferTableState,
-  resetWarehouseTransferTableState,
-} from '@/store/WarehouseTransfer/warehouseTransfer.actions';
 
 const mapDipatchToProps = (dispatch) => ({
   setWarehouseTransferTableState: (queries) => dispatch(setWarehouseTransferTableState(queries)),

@@ -1,4 +1,4 @@
-import { ISystemUser } from '@/interfaces';
+import { ISystemUser } from '@bigcapital/server/interfaces';
 import { Service } from 'typedi';
 
 @Service()

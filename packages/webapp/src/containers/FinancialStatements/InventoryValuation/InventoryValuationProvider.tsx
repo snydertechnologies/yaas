@@ -1,7 +1,7 @@
+import { useInventoryValuationTable } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React from 'react';
 import FinancialReportPage from '../FinancialReportPage';
-import { useInventoryValuationTable } from '@/hooks/query';
 import { transformFilterFormToQuery } from '../common';
 
 const InventoryValuationContext = React.createContext();

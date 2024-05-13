@@ -2,7 +2,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { T, TotalLines, FormatNumber, TotalLine, TotalLineBorderStyle, TotalLineTextStyle } from '@/components';
+import {
+  T,
+  TotalLines,
+  FormatNumber,
+  TotalLine,
+  TotalLineBorderStyle,
+  TotalLineTextStyle,
+} from '@bigcapital/webapp/components';
 import { useInvoiceDetailDrawerContext } from './InvoiceDetailDrawerProvider';
 
 /**

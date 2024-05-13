@@ -4,7 +4,7 @@ import React from 'react';
 import ContactDuplicateForm from './ContactDuplicateForm';
 import { ContactDuplicateProvider } from './ContactDuplicateProvider';
 
-import '@/style/pages/ContactDuplicate/ContactDuplicateDialog.scss';
+import '@bigcapital/webapp/style/pages/ContactDuplicate/ContactDuplicateDialog.scss';
 
 export default function ContactDuplicateDialogContent({
   // #ownProp

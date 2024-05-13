@@ -1,7 +1,7 @@
 // @ts-nocheck
-import { DialogContent, PdfDocumentPreview, FormattedMessage as T } from '@/components';
+import { DialogContent, PdfDocumentPreview, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { useCustomersTransactionsPdfExport } from '@bigcapital/webapp/hooks/query';
 import { AnchorButton } from '@blueprintjs/core';
-import { useCustomersTransactionsPdfExport } from '@/hooks/query';
 import { useCustomersTransactionsContext } from '../../CustomersTransactionsProvider';
 
 export default function CashflowSheetPdfDialogContent() {

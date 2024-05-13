@@ -1,15 +1,15 @@
+import { DashboardViewsTabs, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Alignment, Navbar, NavbarGroup } from '@blueprintjs/core';
+import { pick } from 'lodash';
 // @ts-nocheck
 import React from 'react';
 import { useHistory } from 'react-router';
-import { Alignment, Navbar, NavbarGroup } from '@blueprintjs/core';
-import { FormattedMessage as T, DashboardViewsTabs } from '@/components';
-import { pick } from 'lodash';
 
+import { usePaymentReceivesListContext } from './PaymentReceiptsListProvider';
 import withPaymentReceives from './withPaymentReceives';
 import withPaymentReceivesActions from './withPaymentReceivesActions';
-import { usePaymentReceivesListContext } from './PaymentReceiptsListProvider';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Payment receive view tabs.

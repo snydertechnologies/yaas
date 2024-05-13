@@ -1,5 +1,5 @@
-import { ITransactionsByCustomersFilter } from '@/interfaces';
-import { TableSheet } from '@/lib/Xlsx/TableSheet';
+import { ITransactionsByCustomersFilter } from '@bigcapital/server/interfaces';
+import { TableSheet } from '@bigcapital/server/lib/Xlsx/TableSheet';
 import { Inject, Service } from 'typedi';
 import { TransactionsByCustomersTableInjectable } from './TransactionsByCustomersTableInjectable';
 

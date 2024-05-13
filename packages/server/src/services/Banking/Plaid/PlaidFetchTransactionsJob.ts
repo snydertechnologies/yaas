@@ -1,4 +1,4 @@
-import { IPlaidItemCreatedEventPayload } from '@/interfaces';
+import { IPlaidItemCreatedEventPayload } from '@bigcapital/server/interfaces';
 import Container, { Service } from 'typedi';
 import { PlaidUpdateTransactions } from './PlaidUpdateTransactions';
 

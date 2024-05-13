@@ -1,4 +1,4 @@
-import { IBalanceSheetNetIncomeNode, IBalanceSheetTotal } from '@/interfaces';
+import { IBalanceSheetNetIncomeNode, IBalanceSheetTotal } from '@bigcapital/server/interfaces';
 import * as R from 'ramda';
 import { FinancialHorizTotals } from '../FinancialHorizTotals';
 import { FinancialPreviousPeriod } from '../FinancialPreviousPeriod';

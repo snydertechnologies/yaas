@@ -1,15 +1,15 @@
-// @ts-nocheck
-import React from 'react';
 import { Alignment, Navbar, NavbarGroup } from '@blueprintjs/core';
 import { pick } from 'lodash';
+// @ts-nocheck
+import React from 'react';
 
-import { DashboardViewsTabs } from '@/components';
+import { DashboardViewsTabs } from '@bigcapital/webapp/components';
+import withDashboardActions from '@bigcapital/webapp/containers/Dashboard/withDashboardActions';
 import { useManualJournalsContext } from './ManualJournalsListProvider';
 import withManualJournals from './withManualJournals';
 import withManualJournalsActions from './withManualJournalsActions';
-import withDashboardActions from '@/containers/Dashboard/withDashboardActions';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Manual journal views tabs.

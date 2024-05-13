@@ -1,5 +1,5 @@
-import config from '@/config';
-import RateLimiter from '@/services/Authentication/RateLimiter';
+import config from '@bigcapital/server/config';
+import RateLimiter from '@bigcapital/server/services/Authentication/RateLimiter';
 import { RateLimiterMemory } from 'rate-limiter-flexible';
 import { Container } from 'typedi';
 

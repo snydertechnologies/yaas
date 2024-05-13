@@ -1,5 +1,5 @@
-import { IAccount, IAccountTransaction, ICashFlowStatementQuery } from '@/interfaces';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { IAccount, IAccountTransaction, ICashFlowStatementQuery } from '@bigcapital/server/interfaces';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Knex } from 'knex';
 import { isEmpty } from 'lodash';
 import moment from 'moment';

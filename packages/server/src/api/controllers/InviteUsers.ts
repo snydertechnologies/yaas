@@ -1,8 +1,8 @@
-import asyncMiddleware from '@/api/middleware/asyncMiddleware';
-import { ServiceError } from '@/exceptions';
-import { IInviteUserInput } from '@/interfaces';
-import AcceptInviteUserService from '@/services/InviteUsers/AcceptInviteUser';
-import InviteTenantUserService from '@/services/InviteUsers/TenantInviteUser';
+import asyncMiddleware from '@bigcapital/server/api/middleware/asyncMiddleware';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { IInviteUserInput } from '@bigcapital/server/interfaces';
+import AcceptInviteUserService from '@bigcapital/server/services/InviteUsers/AcceptInviteUser';
+import InviteTenantUserService from '@bigcapital/server/services/InviteUsers/TenantInviteUser';
 import { NextFunction, Request, Response, Router } from 'express';
 import { body, check, param } from 'express-validator';
 import { Inject, Service } from 'typedi';

@@ -2,7 +2,7 @@ import {
   IFinancialCommonHorizDatePeriodNode,
   IFinancialCommonNode,
   IFinancialNodeWithPreviousYear,
-} from '@/interfaces';
+} from '@bigcapital/server/interfaces';
 import { sumBy } from 'lodash';
 import * as R from 'ramda';
 

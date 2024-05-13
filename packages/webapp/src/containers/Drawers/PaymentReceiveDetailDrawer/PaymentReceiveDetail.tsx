@@ -4,7 +4,7 @@ import intl from 'react-intl-universal';
 import styled from 'styled-components';
 import { Tab } from '@blueprintjs/core';
 
-import { DrawerMainTabs } from '@/components';
+import { DrawerMainTabs } from '@bigcapital/webapp/components';
 
 import PaymentReceiveDetailTab from './PaymentReceiveDetailTab';
 import PaymentReceiveActionsBar from './PaymentReceiveActionsBar';

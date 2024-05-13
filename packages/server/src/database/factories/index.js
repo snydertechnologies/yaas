@@ -1,4 +1,4 @@
-import KnexFactory from '@/lib/KnexFactory';
+import KnexFactory from '@bigcapital/server/lib/KnexFactory';
 import faker from 'faker';
 
 export default (tenantDb) => {

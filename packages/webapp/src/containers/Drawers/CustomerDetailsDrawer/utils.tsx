@@ -1,7 +1,7 @@
 // @ts-nocheck
 import React from 'react';
 import { Button, Popover, PopoverInteractionKind, Position, MenuItem, Menu } from '@blueprintjs/core';
-import { Icon, FormattedMessage as T } from '@/components';
+import { Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
 
 /**
  *  Customer more actions menu items.

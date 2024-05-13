@@ -1,6 +1,6 @@
-import asyncMiddleware from '@/api/middleware/asyncMiddleware';
-import { ServiceError } from '@/exceptions';
-import CurrenciesService from '@/services/Currencies/CurrenciesService';
+import asyncMiddleware from '@bigcapital/server/api/middleware/asyncMiddleware';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import CurrenciesService from '@bigcapital/server/services/Currencies/CurrenciesService';
 import { NextFunction, Request, Response, Router } from 'express';
 import { ValidationChain, check, param, query } from 'express-validator';
 import { Inject, Service } from 'typedi';

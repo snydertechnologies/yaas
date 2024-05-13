@@ -1,13 +1,13 @@
+import { DashboardViewsTabs } from '@bigcapital/webapp/components';
+import { Alignment, Navbar, NavbarGroup } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Alignment, Navbar, NavbarGroup } from '@blueprintjs/core';
 import { useVendorsListContext } from './VendorsListProvider';
-import { DashboardViewsTabs } from '@/components';
 
-import withVendorsActions from './withVendorsActions';
 import withVendors from './withVendors';
+import withVendorsActions from './withVendorsActions';
 
-import { transfromViewsToTabs, compose } from '@/utils';
+import { compose, transfromViewsToTabs } from '@bigcapital/webapp/utils';
 
 /**
  * Vendors views tabs.

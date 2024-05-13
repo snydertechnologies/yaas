@@ -1,11 +1,11 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { ListSelect } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { saveInvoke } from '@bigcapital/webapp/utils';
+import { MenuItem } from '@blueprintjs/core';
+import classNames from 'classnames';
 // @ts-nocheck
 import React, { useCallback } from 'react';
-import { FormattedMessage as T } from '@/components';
-import { ListSelect } from '@/components';
-import { MenuItem } from '@blueprintjs/core';
-import { saveInvoke } from '@/utils';
-import classNames from 'classnames';
-import { CLASSES } from '@/constants/classes';
 
 export function CategoriesSelectList({
   categories,

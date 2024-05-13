@@ -1,4 +1,4 @@
-import NestedSet from '@/collection/NestedSet';
+import NestedSet from '@bigcapital/server/collection/NestedSet';
 import { expect } from '~/testInit';
 
 describe('NestedSet', () => {

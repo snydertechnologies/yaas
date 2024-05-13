@@ -1,19 +1,19 @@
 // @ts-nocheck
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { DataTable, Card, TableSkeletonRows } from '@/components';
+import { DataTable, Card, TableSkeletonRows } from '@bigcapital/webapp/components';
 
 import { useInvoicePaymentTransactionsColumns, ActionsMenu } from './components';
 import { useInvoiceDetailDrawerContext } from '../InvoiceDetailDrawerProvider';
-import { useInvoicePaymentTransactions } from '@/hooks/query';
+import { useInvoicePaymentTransactions } from '@bigcapital/webapp/hooks/query';
 
-import { TableStyle } from '@/constants';
+import { TableStyle } from '@bigcapital/webapp/constants';
 
-import withAlertsActions from '@/containers/Alert/withAlertActions';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
 
-import { compose } from '@/utils';
-import { DRAWERS } from '@/constants/drawers';
+import { compose } from '@bigcapital/webapp/utils';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
 
 /**
  * Invoice payment transactions datatable.

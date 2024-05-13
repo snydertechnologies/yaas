@@ -1,5 +1,5 @@
-import { ITrialBalanceSheetQuery } from '@/interfaces';
-import { TableSheet } from '@/lib/Xlsx/TableSheet';
+import { ITrialBalanceSheetQuery } from '@bigcapital/server/interfaces';
+import { TableSheet } from '@bigcapital/server/lib/Xlsx/TableSheet';
 import { Inject, Service } from 'typedi';
 import { TrialBalanceSheetPdfInjectable } from './TrialBalanceSheetPdfInjectsable';
 import { TrialBalanceSheetTableInjectable } from './TrialBalanceSheetTableInjectable';

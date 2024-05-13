@@ -1,16 +1,20 @@
 // @ts-nocheck
 import React from 'react';
 
-const CreditNoteDeleteAlert = React.lazy(() => import('@/containers/Alerts/CreditNotes/CreditNoteDeleteAlert'));
-
-const RefundCreditNoteDeleteAlert = React.lazy(
-  () => import('@/containers/Alerts/CreditNotes/RefundCreditNoteDeleteAlert'),
+const CreditNoteDeleteAlert = React.lazy(
+  () => import('@bigcapital/webapp/containers/Alerts/CreditNotes/CreditNoteDeleteAlert'),
 );
 
-const OpenCreditNoteAlert = React.lazy(() => import('@/containers/Alerts/CreditNotes/CreditNoteOpenedAlert'));
+const RefundCreditNoteDeleteAlert = React.lazy(
+  () => import('@bigcapital/webapp/containers/Alerts/CreditNotes/RefundCreditNoteDeleteAlert'),
+);
+
+const OpenCreditNoteAlert = React.lazy(
+  () => import('@bigcapital/webapp/containers/Alerts/CreditNotes/CreditNoteOpenedAlert'),
+);
 
 const ReconcileCreditDeleteAlert = React.lazy(
-  () => import('@/containers/Alerts/CreditNotes/ReconcileCreditNoteDeleteAlert'),
+  () => import('@bigcapital/webapp/containers/Alerts/CreditNotes/ReconcileCreditNoteDeleteAlert'),
 );
 
 /**

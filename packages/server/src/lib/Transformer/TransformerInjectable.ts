@@ -1,5 +1,5 @@
-import HasTenancyService from '@/services/Tenancy/TenancyService';
-import { TenantMetadata } from '@/system/models';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import { TenantMetadata } from '@bigcapital/server/system/models';
 import { isNull } from 'lodash';
 import { Inject, Service } from 'typedi';
 import { Transformer } from './Transformer';

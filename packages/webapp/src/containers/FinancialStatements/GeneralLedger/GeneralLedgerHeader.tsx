@@ -1,22 +1,22 @@
+import { Button, Intent, Tab, Tabs } from '@blueprintjs/core';
+import { Form, Formik } from 'formik';
+import moment from 'moment';
 // @ts-nocheck
 import React from 'react';
-import moment from 'moment';
 import styled from 'styled-components';
-import { Formik, Form } from 'formik';
-import { Tabs, Tab, Button, Intent } from '@blueprintjs/core';
 
-import { FormattedMessage as T } from '@/components';
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { compose, saveInvoke, transformToForm } from '@bigcapital/webapp/utils';
 import { getDefaultGeneralLedgerQuery, getGeneralLedgerQuerySchema } from './common';
-import { compose, transformToForm, saveInvoke } from '@/utils';
 
 import FinancialStatementHeader from '../FinancialStatementHeader';
-import GeneralLedgerHeaderGeneralPane from './GeneralLedgerHeaderGeneralPane';
 import GeneralLedgerHeaderDimensionsPanel from './GeneralLedgerHeaderDimensionsPanel';
+import GeneralLedgerHeaderGeneralPane from './GeneralLedgerHeaderGeneralPane';
 
+import { Features } from '@bigcapital/webapp/constants';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
 import withGeneralLedger from './withGeneralLedger';
 import withGeneralLedgerActions from './withGeneralLedgerActions';
-import { useFeatureCan } from '@/hooks/state';
-import { Features } from '@/constants';
 
 /**
  * Geenral Ledger (GL) - Header.

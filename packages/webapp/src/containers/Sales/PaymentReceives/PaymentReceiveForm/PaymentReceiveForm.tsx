@@ -1,40 +1,40 @@
+import { Intent } from '@blueprintjs/core';
+import classNames from 'classnames';
+import { Form, Formik } from 'formik';
+import { defaultTo, isEmpty, sumBy } from 'lodash';
 // @ts-nocheck
 import React, { useMemo } from 'react';
-import { sumBy, isEmpty, defaultTo } from 'lodash';
 import intl from 'react-intl-universal';
-import classNames from 'classnames';
-import { Formik, Form } from 'formik';
 import { useHistory } from 'react-router-dom';
-import { Intent } from '@blueprintjs/core';
 
-import '@/style/pages/PaymentReceive/PageForm.scss';
+import '@bigcapital/webapp/style/pages/PaymentReceive/PageForm.scss';
 
-import { CLASSES } from '@/constants/classes';
-import PaymentReceiveHeader from './PaymentReceiveFormHeader';
-import PaymentReceiveFormBody from './PaymentReceiveFormBody';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
 import PaymentReceiveFloatingActions from './PaymentReceiveFloatingActions';
-import PaymentReceiveFormFooter from './PaymentReceiveFormFooter';
 import PaymentReceiveFormAlerts from './PaymentReceiveFormAlerts';
+import PaymentReceiveFormBody from './PaymentReceiveFormBody';
 import PaymentReceiveFormDialogs from './PaymentReceiveFormDialogs';
+import PaymentReceiveFormFooter from './PaymentReceiveFormFooter';
+import PaymentReceiveHeader from './PaymentReceiveFormHeader';
 import PaymentReceiveFormTopBar from './PaymentReceiveFormTopBar';
 import { PaymentReceiveInnerProvider } from './PaymentReceiveInnerProvider';
 
-import withSettings from '@/containers/Settings/withSettings';
-import withCurrentOrganization from '@/containers/Organization/withCurrentOrganization';
+import withCurrentOrganization from '@bigcapital/webapp/containers/Organization/withCurrentOrganization';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
 
-import { EditPaymentReceiveFormSchema, CreatePaymentReceiveFormSchema } from './PaymentReceiveForm.schema';
-import { AppToaster } from '@/components';
-import { transactionNumber, compose } from '@/utils';
+import { AppToaster } from '@bigcapital/webapp/components';
+import { compose, transactionNumber } from '@bigcapital/webapp/utils';
+import { CreatePaymentReceiveFormSchema, EditPaymentReceiveFormSchema } from './PaymentReceiveForm.schema';
 
 import { usePaymentReceiveFormContext } from './PaymentReceiveFormProvider';
+import { PaymentReceiveSyncIncrementSettingsToForm } from './components';
 import {
   defaultPaymentReceive,
-  transformToEditForm,
-  transformFormToRequest,
-  transformErrors,
   resetFormState,
+  transformErrors,
+  transformFormToRequest,
+  transformToEditForm,
 } from './utils';
-import { PaymentReceiveSyncIncrementSettingsToForm } from './components';
 
 /**
  * Payment Receive form.

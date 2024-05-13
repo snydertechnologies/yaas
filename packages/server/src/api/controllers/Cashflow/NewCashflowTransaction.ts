@@ -1,7 +1,7 @@
-import CheckPolicies from '@/api/middleware/CheckPolicies';
-import { ServiceError } from '@/exceptions';
-import { AbilitySubject, CashflowAction } from '@/interfaces';
-import { CashflowApplication } from '@/services/Cashflow/CashflowApplication';
+import CheckPolicies from '@bigcapital/server/api/middleware/CheckPolicies';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { AbilitySubject, CashflowAction } from '@bigcapital/server/interfaces';
+import { CashflowApplication } from '@bigcapital/server/services/Cashflow/CashflowApplication';
 import { NextFunction, Request, Response, Router } from 'express';
 import { check, param, query } from 'express-validator';
 import { Inject, Service } from 'typedi';

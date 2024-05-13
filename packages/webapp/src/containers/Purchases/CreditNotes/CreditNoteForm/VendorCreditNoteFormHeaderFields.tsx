@@ -1,29 +1,29 @@
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { ControlGroup, FormGroup, InputGroup, Position } from '@blueprintjs/core';
+import { DateInput } from '@blueprintjs/datetime';
+import classNames from 'classnames';
+import { ErrorMessage, FastField, useFormikContext } from 'formik';
 // @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
-import classNames from 'classnames';
-import { FormGroup, InputGroup, Position, ControlGroup } from '@blueprintjs/core';
-import { DateInput } from '@blueprintjs/datetime';
-import { FastField, ErrorMessage, useFormikContext } from 'formik';
-import { CLASSES } from '@/constants/classes';
 
 import {
   FFormGroup,
   FieldRequiredHint,
-  InputPrependButton,
   Icon,
+  InputPrependButton,
   FormattedMessage as T,
   VendorDrawerLink,
   VendorsSelect,
-} from '@/components';
-import { vendorsFieldShouldUpdate, useObserveVendorCreditNoSettings } from './utils';
+} from '@bigcapital/webapp/components';
+import { useObserveVendorCreditNoSettings, vendorsFieldShouldUpdate } from './utils';
 
+import { compose, handleDateChange, inputIntent, momentFormatter, tansformDateValue } from '@bigcapital/webapp/utils';
 import { useVendorCreditNoteFormContext } from './VendorCreditNoteFormProvider';
 import { VendorCreditNoteExchangeRateInputField } from './components';
-import { momentFormatter, compose, tansformDateValue, inputIntent, handleDateChange } from '@/utils';
 
-import withSettings from '@/containers/Settings/withSettings';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
 
 /**
  * Vendor Credit note form header fields.

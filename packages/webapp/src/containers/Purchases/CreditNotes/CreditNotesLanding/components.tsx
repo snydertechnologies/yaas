@@ -1,13 +1,13 @@
+import { Intent, Menu, MenuDivider, MenuItem, Tag } from '@blueprintjs/core';
+import clsx from 'classnames';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import clsx from 'classnames';
-import { Intent, Tag, Menu, MenuItem, MenuDivider } from '@blueprintjs/core';
 
-import { CLASSES } from '@/constants/classes';
-import { FormatDateCell, FormattedMessage as T, Choose, If, Icon, Can } from '@/components';
-import { safeCallback } from '@/utils';
-import { VendorCreditAction, AbilitySubject } from '@/constants/abilityOption';
+import { Can, Choose, FormatDateCell, Icon, If, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { AbilitySubject, VendorCreditAction } from '@bigcapital/webapp/constants/abilityOption';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { safeCallback } from '@bigcapital/webapp/utils';
 
 /**
  * Actions menu.

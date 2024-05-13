@@ -1,5 +1,5 @@
-import { IWarehouse } from '@/interfaces';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { IWarehouse } from '@bigcapital/server/interfaces';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject, Service } from 'typedi';
 
 @Service()

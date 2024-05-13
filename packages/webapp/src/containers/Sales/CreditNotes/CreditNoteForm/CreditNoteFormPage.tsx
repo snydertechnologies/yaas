@@ -2,11 +2,11 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
-import '@/style/pages/CreditNote/PageForm.scss';
+import '@bigcapital/webapp/style/pages/CreditNote/PageForm.scss';
 
+import { AutoExchangeRateProvider } from '@bigcapital/webapp/containers/Entries/AutoExchangeProvider';
 import CreditNoteForm from './CreditNoteForm';
 import { CreditNoteFormProvider } from './CreditNoteFormProvider';
-import { AutoExchangeRateProvider } from '@/containers/Entries/AutoExchangeProvider';
 
 /**
  * Credit note form page.

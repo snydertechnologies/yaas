@@ -1,5 +1,5 @@
-import { AccountNormal, ILedgerEntry, IVendor } from '@/interfaces';
-import Ledger from '@/services/Accounting/Ledger';
+import { AccountNormal, ILedgerEntry, IVendor } from '@bigcapital/server/interfaces';
+import Ledger from '@bigcapital/server/services/Accounting/Ledger';
 import { Service } from 'typedi';
 
 @Service()

@@ -1,23 +1,23 @@
+import { Button, Intent, Tab, Tabs } from '@blueprintjs/core';
+import { Form, Formik } from 'formik';
+import moment from 'moment';
 // @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
-import moment from 'moment';
-import { Tabs, Tab, Button, Intent } from '@blueprintjs/core';
-import { Formik, Form } from 'formik';
 
-import { FormattedMessage as T } from '@/components';
-import { useFeatureCan } from '@/hooks/state';
-import { Features } from '@/constants';
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Features } from '@bigcapital/webapp/constants';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
 
 import withBalanceSheet from './withBalanceSheet';
 import withBalanceSheetActions from './withBalanceSheetActions';
 
-import BalanceSheetHeaderGeneralPanal from './BalanceSheetHeaderGeneralPanal';
+import FinancialStatementHeader from '../../FinancialStatements/FinancialStatementHeader';
 import BalanceSheetHeaderComparisonPanal from './BalanceSheetHeaderComparisonPanal';
 import BalanceSheetHeaderDimensionsPanel from './BalanceSheetHeaderDimensionsPanel';
-import FinancialStatementHeader from '../../FinancialStatements/FinancialStatementHeader';
+import BalanceSheetHeaderGeneralPanal from './BalanceSheetHeaderGeneralPanal';
 
-import { compose, transformToForm } from '@/utils';
+import { compose, transformToForm } from '@bigcapital/webapp/utils';
 import { getBalanceSheetHeaderValidationSchema, getDefaultBalanceSheetQuery } from './utils';
 
 /**

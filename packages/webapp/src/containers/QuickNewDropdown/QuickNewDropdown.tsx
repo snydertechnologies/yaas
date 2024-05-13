@@ -1,13 +1,13 @@
-// @ts-nocheck
-import React from 'react';
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Icon } from '@bigcapital/webapp/components';
 import { Button, MenuItem } from '@blueprintjs/core';
-import { FormattedMessage as T } from '@/components';
-import { useHistory } from 'react-router-dom';
-import { Icon } from '@/components';
 import { Position } from '@blueprintjs/core';
 import { Select } from '@blueprintjs/select';
+// @ts-nocheck
+import React from 'react';
+import { useHistory } from 'react-router-dom';
 
-import { useGetQuickNewMenu } from '@/constants/quickNewOptions';
+import { useGetQuickNewMenu } from '@bigcapital/webapp/constants/quickNewOptions';
 
 /**
  * Quick New Dropdown.

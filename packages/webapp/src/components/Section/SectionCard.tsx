@@ -1,7 +1,7 @@
+import { CLASSES } from '@bigcapital/webapp/constants';
+import { DISPLAYNAME_PREFIX, HTMLDivProps, Props } from '@blueprintjs/core';
 import classNames from 'classnames';
 import * as React from 'react';
-import { DISPLAYNAME_PREFIX, HTMLDivProps, Props } from '@blueprintjs/core';
-import { CLASSES } from '@/constants';
 
 export interface SectionCardProps extends Props, HTMLDivProps, React.RefAttributes<HTMLDivElement> {
   /**

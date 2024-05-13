@@ -1,5 +1,5 @@
-import Bills from '@/api/controllers/Purchases/Bills';
-import BillPayments from '@/api/controllers/Purchases/BillsPayments';
+import Bills from '@bigcapital/server/api/controllers/Purchases/Bills';
+import BillPayments from '@bigcapital/server/api/controllers/Purchases/BillsPayments';
 import { Router } from 'express';
 import { Container, Service } from 'typedi';
 import BillAllocateLandedCost from './LandedCost';

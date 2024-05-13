@@ -1,12 +1,12 @@
-// @ts-nocheck
-import { chain, isEmpty, castArray, memoize } from 'lodash';
-import * as R from 'ramda';
-import { DepGraph } from 'dependency-graph';
 import {
   getPermissionsSchema,
   getPermissionsSchemaService,
   getPermissionsSchemaServices,
-} from '@/constants/permissionsSchema';
+} from '@bigcapital/webapp/constants/permissionsSchema';
+import { DepGraph } from 'dependency-graph';
+// @ts-nocheck
+import { castArray, chain, isEmpty, memoize } from 'lodash';
+import * as R from 'ramda';
 
 export const FULL_ACCESS_CHECKBOX_STATE = {
   INDETARMINE: -1,

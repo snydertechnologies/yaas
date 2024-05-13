@@ -1,7 +1,7 @@
+import { DialogContent } from '@bigcapital/webapp/components';
+import { useAccount } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React from 'react';
-import { DialogContent } from '@/components';
-import { useAccount } from '@/hooks/query';
 import { useMoneyOutDialogContext } from './MoneyOutDialogProvider';
 
 const MoneyOutFieldsContext = React.createContext();

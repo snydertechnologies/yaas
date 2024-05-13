@@ -1,4 +1,4 @@
-import { IBalanceSheetMeta, IInventoryValuationReportQuery } from '@/interfaces';
+import { IBalanceSheetMeta, IInventoryValuationReportQuery } from '@bigcapital/server/interfaces';
 import moment from 'moment';
 import { Inject, Service } from 'typedi';
 import { FinancialSheetMeta } from '../FinancialSheetMeta';

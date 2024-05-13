@@ -1,24 +1,24 @@
-// @ts-nocheck
-import React, { useEffect, useState, useCallback } from 'react';
-import { useAsync } from 'react-use';
-import { useParams } from 'react-router-dom';
-import { Intent, Alert } from '@blueprintjs/core';
 import {
-  If,
   AppToaster,
   DashboardInsider,
   DashboardPageContent,
-  FormattedMessage as T,
   FormattedHTMLMessage,
-} from '@/components';
+  If,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import { Alert, Intent } from '@blueprintjs/core';
+// @ts-nocheck
+import React, { useEffect, useState, useCallback } from 'react';
+import { useParams } from 'react-router-dom';
+import { useAsync } from 'react-use';
 
-import ViewForm from '@/containers/Views/ViewForm';
+import ViewForm from '@bigcapital/webapp/containers/Views/ViewForm';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
-import withResourcesActions from '@/containers/Resources/withResourcesActions';
-import withViewsActions from '@/containers/Views/withViewsActions';
-import withDashboardActions from '@/containers/Dashboard/withDashboardActions';
+import withDashboardActions from '@bigcapital/webapp/containers/Dashboard/withDashboardActions';
+import withResourcesActions from '@bigcapital/webapp/containers/Resources/withResourcesActions';
+import withViewsActions from '@bigcapital/webapp/containers/Views/withViewsActions';
 
 // @flow
 function ViewFormPage({

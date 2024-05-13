@@ -1,4 +1,4 @@
-import { ServiceError } from '@/exceptions';
+import { ServiceError } from '@bigcapital/server/exceptions';
 import {
   IInventoryAdjustment,
   IInventoryAdjustmentCreatingPayload,
@@ -12,15 +12,15 @@ import {
   IPaginationMeta,
   IQuickInventoryAdjustmentDTO,
   ISystemUser,
-} from '@/interfaces';
-import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';
-import { TransformerInjectable } from '@/lib/Transformer/TransformerInjectable';
-import { BranchTransactionDTOTransform } from '@/services/Branches/Integrations/BranchTransactionDTOTransform';
-import DynamicListingService from '@/services/DynamicListing/DynamicListService';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
-import UnitOfWork from '@/services/UnitOfWork';
-import { WarehouseTransactionDTOTransform } from '@/services/Warehouses/Integrations/WarehouseTransactionDTOTransform';
-import events from '@/subscribers/events';
+} from '@bigcapital/server/interfaces';
+import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
+import { TransformerInjectable } from '@bigcapital/server/lib/Transformer/TransformerInjectable';
+import { BranchTransactionDTOTransform } from '@bigcapital/server/services/Branches/Integrations/BranchTransactionDTOTransform';
+import DynamicListingService from '@bigcapital/server/services/DynamicListing/DynamicListService';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import UnitOfWork from '@bigcapital/server/services/UnitOfWork';
+import { WarehouseTransactionDTOTransform } from '@bigcapital/server/services/Warehouses/Integrations/WarehouseTransactionDTOTransform';
+import events from '@bigcapital/server/subscribers/events';
 import { Knex } from 'knex';
 import { omit } from 'lodash';
 import moment from 'moment';

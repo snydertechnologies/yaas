@@ -3,11 +3,11 @@ import {
   ICashFlowStatementDOO,
   ICashFlowStatementQuery,
   ICashFlowStatementService,
-} from '@/interfaces';
-import Ledger from '@/services/Accounting/Ledger';
-import InventoryService from '@/services/Inventory/Inventory';
-import TenancyService from '@/services/Tenancy/TenancyService';
-import { Tenant } from '@/system/models';
+} from '@bigcapital/server/interfaces';
+import Ledger from '@bigcapital/server/services/Accounting/Ledger';
+import InventoryService from '@bigcapital/server/services/Inventory/Inventory';
+import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import { Tenant } from '@bigcapital/server/system/models';
 import moment from 'moment';
 import * as R from 'ramda';
 import { Inject, Service } from 'typedi';

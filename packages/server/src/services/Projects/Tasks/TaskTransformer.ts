@@ -1,5 +1,5 @@
-import { Transformer } from '@/lib/Transformer/Transformer';
-import { formatMinutes } from 'utils/formatMinutes';
+import { Transformer } from '@bigcapital/server/lib/Transformer/Transformer';
+import { formatMinutes } from '@bigcapital/server/utils/formatMinutes';
 
 export class TaskTransformer extends Transformer {
   /**

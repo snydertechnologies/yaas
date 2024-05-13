@@ -1,9 +1,9 @@
-// @ts-nocheck
-import React from 'react';
-import { useFormikContext } from 'formik';
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
 import { Button, Classes, Intent } from '@blueprintjs/core';
 import classNames from 'classnames';
-import { FormattedMessage as T } from '@/components';
+import { useFormikContext } from 'formik';
+// @ts-nocheck
+import React from 'react';
 
 /**
  * Number format footer.

@@ -1,14 +1,14 @@
+import { AppToaster, FormattedHTMLMessage, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Alert, Intent } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { AppToaster, FormattedMessage as T, FormattedHTMLMessage } from '@/components';
-import { Intent, Alert } from '@blueprintjs/core';
 
-import { useDeleteExchangeRate } from '@/hooks/query';
-import withAlertStoreConnect from '@/containers/Alert/withAlertStoreConnect';
-import withAlertActions from '@/containers/Alert/withAlertActions';
+import withAlertActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withAlertStoreConnect from '@bigcapital/webapp/containers/Alert/withAlertStoreConnect';
+import { useDeleteExchangeRate } from '@bigcapital/webapp/hooks/query';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * exchange rate delete alerts.

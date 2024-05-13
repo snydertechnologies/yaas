@@ -1,9 +1,13 @@
 // @ts-nocheck
 import React from 'react';
 
-const AccountDeleteAlert = React.lazy(() => import('@/containers/Alerts/Accounts/AccountDeleteAlert'));
-const AccountInactivateAlert = React.lazy(() => import('@/containers/Alerts/Accounts/AccountInactivateAlert'));
-const AccountActivateAlert = React.lazy(() => import('@/containers/Alerts/Accounts/AccountActivateAlert'));
+const AccountDeleteAlert = React.lazy(() => import('@bigcapital/webapp/containers/Alerts/Accounts/AccountDeleteAlert'));
+const AccountInactivateAlert = React.lazy(
+  () => import('@bigcapital/webapp/containers/Alerts/Accounts/AccountInactivateAlert'),
+);
+const AccountActivateAlert = React.lazy(
+  () => import('@bigcapital/webapp/containers/Alerts/Accounts/AccountActivateAlert'),
+);
 
 export default [
   { name: 'account-delete', component: AccountDeleteAlert },

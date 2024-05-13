@@ -1,4 +1,4 @@
-import { TenantSeeder } from '@/lib/Seeder/TenantSeeder';
+import { TenantSeeder } from '@bigcapital/server/lib/Seeder/TenantSeeder';
 
 export default class UpdateTaxPayableAccount extends TenantSeeder {
   /**

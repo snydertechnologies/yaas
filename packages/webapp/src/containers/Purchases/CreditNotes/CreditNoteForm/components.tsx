@@ -1,8 +1,8 @@
+import { ExchangeRateInputGroup } from '@bigcapital/webapp/components';
+import { useCurrentOrganization } from '@bigcapital/webapp/hooks/state';
+import { useFormikContext } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { useFormikContext } from 'formik';
-import { ExchangeRateInputGroup } from '@/components';
-import { useCurrentOrganization } from '@/hooks/state';
 import { useVendorNoteIsForeignCustomer } from './utils';
 
 /**

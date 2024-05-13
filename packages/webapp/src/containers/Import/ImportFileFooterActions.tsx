@@ -1,7 +1,7 @@
 // @ts-nocheck
 import clsx from 'classnames';
-import { Group } from '@/components';
-import { CLASSES } from '@/constants';
+import { Group } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants';
 import { Button, Intent } from '@blueprintjs/core';
 import { useFormikContext } from 'formik';
 import styles from './ImportFileActions.module.scss';

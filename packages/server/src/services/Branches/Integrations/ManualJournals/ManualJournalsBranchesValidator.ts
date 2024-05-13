@@ -1,5 +1,5 @@
-import { ServiceError } from '@/exceptions';
-import { IManualJournalDTO, IManualJournalEntryDTO } from '@/interfaces';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { IManualJournalDTO, IManualJournalEntryDTO } from '@bigcapital/server/interfaces';
 import { Service } from 'typedi';
 import { ERRORS } from './constants';
 

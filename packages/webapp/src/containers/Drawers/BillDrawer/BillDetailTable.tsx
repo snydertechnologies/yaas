@@ -1,12 +1,12 @@
 // @ts-nocheck
 import React from 'react';
 
-import { CommercialDocEntriesTable } from '@/components';
+import { CommercialDocEntriesTable } from '@bigcapital/webapp/components';
 
 import { useBillDrawerContext } from './BillDrawerProvider';
 import { useBillReadonlyEntriesTableColumns } from './utils';
 
-import { TableStyle } from '@/constants';
+import { TableStyle } from '@bigcapital/webapp/constants';
 
 export default function BillDetailTable() {
   const {

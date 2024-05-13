@@ -1,19 +1,19 @@
+import { Intent } from '@blueprintjs/core';
+import { Formik } from 'formik';
+import { defaultTo } from 'lodash';
+import moment from 'moment';
 // @ts-nocheck
 import React from 'react';
-import moment from 'moment';
 import intl from 'react-intl-universal';
-import { Formik } from 'formik';
-import { Intent } from '@blueprintjs/core';
-import { defaultTo } from 'lodash';
 
-import { AppToaster } from '@/components';
+import { AppToaster } from '@bigcapital/webapp/components';
 import { CreateCustomerOpeningBalanceFormSchema } from './CustomerOpeningBalanceForm.schema';
 import { useCustomerOpeningBalanceContext } from './CustomerOpeningBalanceFormProvider';
 
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
 import CustomerOpeningBalanceFormContent from './CustomerOpeningBalanceFormContent';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 const defaultInitialValues = {
   opening_balance: '0',

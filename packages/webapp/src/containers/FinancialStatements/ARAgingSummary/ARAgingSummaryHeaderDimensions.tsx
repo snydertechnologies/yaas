@@ -1,8 +1,8 @@
+import { BranchMultiSelect, Col, Row } from '@bigcapital/webapp/components';
+import { Classes, FormGroup } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { FormGroup, Classes } from '@blueprintjs/core';
-import { BranchMultiSelect, Row, Col } from '@/components';
 import {
   ARAgingSummaryHeaderDimensionsProvider,
   useARAgingSummaryHeaderDimensonsContext,

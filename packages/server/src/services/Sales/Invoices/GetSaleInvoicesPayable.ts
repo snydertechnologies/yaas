@@ -1,5 +1,5 @@
-import { ISaleInvoice } from '@/interfaces';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { ISaleInvoice } from '@bigcapital/server/interfaces';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject, Service } from 'typedi';
 
 @Service()

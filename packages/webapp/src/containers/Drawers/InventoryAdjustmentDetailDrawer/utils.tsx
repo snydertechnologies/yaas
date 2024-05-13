@@ -1,8 +1,8 @@
+import { TextOverviewTooltipCell } from '@bigcapital/webapp/components';
+import { getColumnWidth } from '@bigcapital/webapp/utils';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { getColumnWidth } from '@/utils';
-import { TextOverviewTooltipCell } from '@/components';
 import { useInventoryAdjustmentDrawerContext } from './InventoryAdjustmentDrawerProvider';
 
 export const useInventoryAdjustmentEntriesColumns = () => {

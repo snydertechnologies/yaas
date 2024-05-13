@@ -1,19 +1,19 @@
+import classNames from 'classnames';
+import * as R from 'ramda';
 // @ts-nocheck
 import React from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
-import classNames from 'classnames';
-import * as R from 'ramda';
 
-import { CLASSES } from '@/constants/classes';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
 
-import PreferencesTopbar from '@/components/Preferences/PreferencesTopbar';
-import PreferencesContentRoute from '@/components/Preferences/PreferencesContentRoute';
-import DashboardErrorBoundary from '@/components/Dashboard/DashboardErrorBoundary';
-import PreferencesSidebar from '@/components/Preferences/PreferencesSidebar';
+import DashboardErrorBoundary from '@bigcapital/webapp/components/Dashboard/DashboardErrorBoundary';
+import PreferencesContentRoute from '@bigcapital/webapp/components/Preferences/PreferencesContentRoute';
+import PreferencesSidebar from '@bigcapital/webapp/components/Preferences/PreferencesSidebar';
+import PreferencesTopbar from '@bigcapital/webapp/components/Preferences/PreferencesTopbar';
 
-import withDashboardActions from '@/containers/Dashboard/withDashboardActions';
+import withDashboardActions from '@bigcapital/webapp/containers/Dashboard/withDashboardActions';
 
-import '@/style/pages/Preferences/Page.scss';
+import '@bigcapital/webapp/style/pages/Preferences/Page.scss';
 
 /**
  * Preferences page.

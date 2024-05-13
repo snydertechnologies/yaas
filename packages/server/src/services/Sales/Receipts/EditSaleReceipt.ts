@@ -1,9 +1,9 @@
-import { ISaleReceiptEditedPayload, ISaleReceiptEditingPayload } from '@/interfaces';
-import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';
-import ItemsEntriesService from '@/services/Items/ItemsEntriesService';
-import TenancyService from '@/services/Tenancy/TenancyService';
-import UnitOfWork from '@/services/UnitOfWork';
-import events from '@/subscribers/events';
+import { ISaleReceiptEditedPayload, ISaleReceiptEditingPayload } from '@bigcapital/server/interfaces';
+import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
+import ItemsEntriesService from '@bigcapital/server/services/Items/ItemsEntriesService';
+import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import UnitOfWork from '@bigcapital/server/services/UnitOfWork';
+import events from '@bigcapital/server/subscribers/events';
 import { Knex } from 'knex';
 import { Inject, Service } from 'typedi';
 import { SaleReceiptDTOTransformer } from './SaleReceiptDTOTransformer';

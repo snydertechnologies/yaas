@@ -1,7 +1,7 @@
 // @ts-nocheck
 import { createReducer } from '@reduxjs/toolkit';
-import { createTableQueryReducers } from '@/store/queryReducers';
-import t from '@/store/types';
+import { createTableQueryReducers } from '@bigcapital/webapp/store/queryReducers';
+import t from '@bigcapital/webapp/store/types';
 
 const initialState = {
   items: {},

@@ -1,12 +1,12 @@
 // @ts-nocheck
 import React from 'react';
 
-import { CommercialDocEntriesTable } from '@/components';
+import { CommercialDocEntriesTable } from '@bigcapital/webapp/components';
 
 import { useVendorCreditDetailDrawerContext } from './VendorCreditDetailDrawerProvider';
 import { useVendorCreditReadonlyEntriesTableColumns } from './utils';
 
-import { TableStyle } from '@/constants';
+import { TableStyle } from '@bigcapital/webapp/constants';
 
 /**
  * Vendor Credit detail table.

@@ -1,27 +1,27 @@
-// @ts-nocheck
-import React from 'react';
+import { DashboardActionsBar, Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
 import {
+  Button,
+  Classes,
   NavbarDivider,
   NavbarGroup,
-  Classes,
-  Button,
   Popover,
   PopoverInteractionKind,
   Position,
 } from '@blueprintjs/core';
-import { DashboardActionsBar, Icon, FormattedMessage as T } from '@/components';
 import classNames from 'classnames';
+// @ts-nocheck
+import React from 'react';
 
-import NumberFormatDropdown from '@/components/NumberFormatDropdown';
+import NumberFormatDropdown from '@bigcapital/webapp/components/NumberFormatDropdown';
 
+import { useVendorsBalanceSummaryContext } from './VendorsBalanceSummaryProvider';
 import withVendorsBalanceSummary from './withVendorsBalanceSummary';
 import withVendorsBalanceSummaryActions from './withVendorsBalanceSummaryActions';
-import { useVendorsBalanceSummaryContext } from './VendorsBalanceSummaryProvider';
 
-import { saveInvoke, compose } from '@/utils';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { compose, saveInvoke } from '@bigcapital/webapp/utils';
 import { VendorSummarySheetExportMenu } from './components';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { DialogsName } from '@/constants/dialogs';
 
 /**
  * Vendors balance summary action bar.

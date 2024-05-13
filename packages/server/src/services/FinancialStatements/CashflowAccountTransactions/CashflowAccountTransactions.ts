@@ -1,7 +1,11 @@
-import type { ICashflowAccountTransaction, ICashflowAccountTransactionsQuery, INumberFormatQuery } from '@/interfaces';
+import type {
+  ICashflowAccountTransaction,
+  ICashflowAccountTransactionsQuery,
+  INumberFormatQuery,
+} from '@bigcapital/server/interfaces';
+import { runningAmount } from '@bigcapital/server/utils';
 import moment from 'moment';
 import * as R from 'ramda';
-import { runningAmount } from 'utils';
 import FinancialSheet from '../FinancialSheet';
 
 export default class CashflowAccountTransactionReport extends FinancialSheet {

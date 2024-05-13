@@ -2,12 +2,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { TableStyle } from '@/constants';
-import { ReportDataTable, FinancialSheet, FormattedMessage as T } from '@/components';
+import { FinancialSheet, ReportDataTable, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { TableStyle } from '@bigcapital/webapp/constants';
 
-import { useProfitLossSheetColumns } from './hooks';
+import { defaultExpanderReducer, tableRowTypesToClassnames } from '@bigcapital/webapp/utils';
 import { useProfitLossSheetContext } from './ProfitLossProvider';
-import { tableRowTypesToClassnames, defaultExpanderReducer } from '@/utils';
+import { useProfitLossSheetColumns } from './hooks';
 
 export default function ProfitLossSheetTable({
   // #ownProps

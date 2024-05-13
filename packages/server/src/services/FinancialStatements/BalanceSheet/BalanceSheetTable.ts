@@ -11,9 +11,9 @@ import {
   type ITableColumn,
   type ITableColumnAccessor,
   type ITableRow,
-} from '@/interfaces';
+} from '@bigcapital/server/interfaces';
+import { tableRowMapper } from '@bigcapital/server/utils';
 import * as R from 'ramda';
-import { tableRowMapper } from 'utils';
 import FinancialSheet from '../FinancialSheet';
 import { FinancialSheetStructure } from '../FinancialSheetStructure';
 import { FinancialTable } from '../FinancialTable';

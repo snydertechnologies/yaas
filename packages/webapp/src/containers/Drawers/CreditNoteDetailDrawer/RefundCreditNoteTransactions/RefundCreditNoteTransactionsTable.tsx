@@ -1,14 +1,14 @@
 // @ts-nocheck
 import React from 'react';
-import { DataTable, Card } from '@/components';
+import { DataTable, Card } from '@bigcapital/webapp/components';
 
-import { TableStyle } from '@/constants';
-import withAlertsActions from '@/containers/Alert/withAlertActions';
+import { TableStyle } from '@bigcapital/webapp/constants';
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
 
 import { useCreditNoteDetailDrawerContext } from '../CreditNoteDetailDrawerProvider';
 import { useRefundCreditTransactionsTableColumns, ActionsMenu } from './components';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Refund credit note transactions table.

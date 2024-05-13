@@ -1,6 +1,6 @@
-import { ServiceError } from '@/exceptions';
-import { TransactionsLockingGroup } from '@/interfaces';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { TransactionsLockingGroup } from '@bigcapital/server/interfaces';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import moment from 'moment';
 import { Inject, Service } from 'typedi';
 import TransactionsLockingRepository from './TransactionsLockingRepository';

@@ -1,5 +1,5 @@
-import { ITransactionsByVendorsFilter } from '@/interfaces';
-import { TableSheet } from '@/lib/Xlsx/TableSheet';
+import { ITransactionsByVendorsFilter } from '@bigcapital/server/interfaces';
+import { TableSheet } from '@bigcapital/server/lib/Xlsx/TableSheet';
 import { Inject, Service } from 'typedi';
 import { TransactionsByVendorTableInjectable } from './TransactionsByVendorTableInjectable';
 

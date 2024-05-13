@@ -1,9 +1,9 @@
+import { Dialog, DialogSuspense } from '@bigcapital/webapp/components';
+import withDialogRedux from '@bigcapital/webapp/components/DialogReduxConnect';
+import { compose } from '@bigcapital/webapp/utils';
 // @ts-nocheck
 import React, { lazy } from 'react';
 import styled from 'styled-components';
-import { Dialog, DialogSuspense } from '@/components';
-import withDialogRedux from '@/components/DialogReduxConnect';
-import { compose } from '@/utils';
 
 const TaxRateFormDialogContent = lazy(() => import('./TaxRateFormDialogContent'));
 

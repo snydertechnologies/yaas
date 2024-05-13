@@ -1,17 +1,17 @@
+import { Tab, Tabs } from '@blueprintjs/core';
+import classNames from 'classnames';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import classNames from 'classnames';
 import styled from 'styled-components';
-import { Tabs, Tab } from '@blueprintjs/core';
 
-import '@/style/pages/Preferences/Users.scss';
+import '@bigcapital/webapp/style/pages/Preferences/Users.scss';
 
-import { Card } from '@/components';
-import { CLASSES } from '@/constants/classes';
-import PreferencesSubContent from '@/components/Preferences/PreferencesSubContent';
+import { Card } from '@bigcapital/webapp/components';
+import PreferencesSubContent from '@bigcapital/webapp/components/Preferences/PreferencesSubContent';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
 
-import withUserPreferences from '@/containers/Preferences/Users/withUserPreferences';
+import withUserPreferences from '@bigcapital/webapp/containers/Preferences/Users/withUserPreferences';
 
 /**
  * Preferences page - Users page.

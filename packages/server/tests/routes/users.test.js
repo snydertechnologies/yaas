@@ -1,4 +1,4 @@
-import knex from '@/database/knex';
+import knex from '@bigcapital/server/database/knex';
 import { loginRes, tenantFactory, tenantWebsite } from '~/dbInit';
 import { expect, request } from '~/testInit';
 

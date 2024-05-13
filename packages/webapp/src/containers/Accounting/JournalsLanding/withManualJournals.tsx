@@ -1,9 +1,9 @@
-// @ts-nocheck
-import { connect } from 'react-redux';
 import {
   getManualJournalsTableStateFactory,
   manualJournalTableStateChangedFactory,
-} from '@/store/manualJournals/manualJournals.selectors';
+} from '@bigcapital/webapp/store/manualJournals/manualJournals.selectors';
+// @ts-nocheck
+import { connect } from 'react-redux';
 
 export default (mapState) => {
   const getJournalsTableQuery = getManualJournalsTableStateFactory();

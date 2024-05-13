@@ -1,33 +1,33 @@
-// @ts-nocheck
-import React from 'react';
-import { FastField, ErrorMessage } from 'formik';
-import { FormGroup, Position, ControlGroup } from '@blueprintjs/core';
-import classNames from 'classnames';
 import {
-  FormattedMessage as T,
   AccountsSuggestField,
-  InputPrependText,
-  FieldRequiredHint,
-  Col,
-  Row,
-  FeatureCan,
   BranchSelect,
   BranchSelectButton,
+  Col,
   FFormGroup,
-  FTextArea,
-  FMoneyInputGroup,
   FInputGroup,
-} from '@/components';
+  FMoneyInputGroup,
+  FTextArea,
+  FeatureCan,
+  FieldRequiredHint,
+  InputPrependText,
+  Row,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import { Features } from '@bigcapital/webapp/constants';
+import { ACCOUNT_TYPE } from '@bigcapital/webapp/constants/accountTypes';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { handleDateChange, inputIntent, momentFormatter, tansformDateValue } from '@bigcapital/webapp/utils';
+import { ControlGroup, FormGroup, Position } from '@blueprintjs/core';
 import { DateInput } from '@blueprintjs/datetime';
-import { ACCOUNT_TYPE } from '@/constants/accountTypes';
-import { inputIntent, momentFormatter, tansformDateValue, handleDateChange } from '@/utils';
-import { Features } from '@/constants';
-import { CLASSES } from '@/constants/classes';
-import { useMoneyOutDialogContext } from '../MoneyOutDialogProvider';
-import { useSetPrimaryBranchToForm, BranchRowDivider } from '../utils';
+import classNames from 'classnames';
+import { ErrorMessage, FastField } from 'formik';
+// @ts-nocheck
+import React from 'react';
 import { MoneyInOutTransactionNoField } from '../../_components';
+import { useMoneyOutDialogContext } from '../MoneyOutDialogProvider';
 import { MoneyOutExchangeRateField } from '../MoneyOutExchangeRateField';
 import { useMoneyOutFieldsContext } from '../MoneyOutFieldsProvider';
+import { BranchRowDivider, useSetPrimaryBranchToForm } from '../utils';
 
 /**
  * Transfer to account form fields.

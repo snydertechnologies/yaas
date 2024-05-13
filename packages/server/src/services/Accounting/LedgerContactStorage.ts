@@ -1,7 +1,7 @@
-import { ACCOUNT_TYPE } from '@/data/AccountTypes';
-import { ILedger, ILedgerEntry, ISaleContactsBalanceQueuePayload } from '@/interfaces';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
-import { TenantMetadata } from '@/system/models';
+import { ACCOUNT_TYPE } from '@bigcapital/server/data/AccountTypes';
+import { ILedger, ILedgerEntry, ISaleContactsBalanceQueuePayload } from '@bigcapital/server/interfaces';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import { TenantMetadata } from '@bigcapital/server/system/models';
 import async from 'async';
 import { Knex } from 'knex';
 import { Inject, Service } from 'typedi';

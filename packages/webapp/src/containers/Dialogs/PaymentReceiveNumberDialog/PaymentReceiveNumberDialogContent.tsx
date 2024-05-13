@@ -2,17 +2,17 @@
 import React, { useCallback } from 'react';
 import intl from 'react-intl-universal';
 
-import { DialogContent } from '@/components';
-import { useSaveSettings, useSettingsPaymentReceives } from '@/hooks/query';
+import { DialogContent } from '@bigcapital/webapp/components';
+import { useSaveSettings, useSettingsPaymentReceives } from '@bigcapital/webapp/hooks/query';
 
-import ReferenceNumberForm from '@/containers/JournalNumber/ReferenceNumberForm';
+import ReferenceNumberForm from '@bigcapital/webapp/containers/JournalNumber/ReferenceNumberForm';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import withSettingsActions from '@/containers/Settings/withSettingsActions';
-import withSettings from '@/containers/Settings/withSettings';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import withSettingsActions from '@bigcapital/webapp/containers/Settings/withSettingsActions';
 
-import { saveInvoke, compose } from '@/utils';
-import { transformFormToSettings, transformSettingsToForm } from '@/containers/JournalNumber/utils';
+import { transformFormToSettings, transformSettingsToForm } from '@bigcapital/webapp/containers/JournalNumber/utils';
+import { compose, saveInvoke } from '@bigcapital/webapp/utils';
 
 /**
  * Payment receive number dialog's content.

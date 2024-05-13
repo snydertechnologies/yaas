@@ -1,5 +1,5 @@
-import { IInventoryLotCost } from '@/interfaces';
-import TenancyService from '@/services/Tenancy/TenancyService';
+import { IInventoryLotCost } from '@bigcapital/server/interfaces';
+import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { omit } from 'lodash';
 import { Container } from 'typedi';
 

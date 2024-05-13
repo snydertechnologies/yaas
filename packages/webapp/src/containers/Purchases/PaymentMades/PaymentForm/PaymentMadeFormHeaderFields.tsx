@@ -1,39 +1,39 @@
+import { FormattedMessage as T, VendorsSelect } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { Button, Classes, ControlGroup, FormGroup, InputGroup, Position } from '@blueprintjs/core';
+import { DateInput } from '@blueprintjs/datetime';
+import classNames from 'classnames';
+import { ErrorMessage, FastField, Field, useFormikContext } from 'formik';
+import { toSafeInteger } from 'lodash';
 // @ts-nocheck
 import React, { useMemo } from 'react';
 import styled from 'styled-components';
-import classNames from 'classnames';
-import { FormGroup, InputGroup, Position, Classes, ControlGroup, Button } from '@blueprintjs/core';
-import { DateInput } from '@blueprintjs/datetime';
-import { FastField, Field, useFormikContext, ErrorMessage } from 'formik';
-import { FormattedMessage as T, VendorsSelect } from '@/components';
-import { toSafeInteger } from 'lodash';
-import { CLASSES } from '@/constants/classes';
 
 import {
-  FFormGroup,
   AccountsSelect,
+  FFormGroup,
   FieldRequiredHint,
-  InputPrependText,
-  Money,
   Hint,
   Icon,
-  VendorDrawerLink,
+  InputPrependText,
+  Money,
   MoneyInputGroup,
-} from '@/components';
-import withCurrentOrganization from '@/containers/Organization/withCurrentOrganization';
-import { usePaymentMadeFormContext } from './PaymentMadeFormProvider';
-import { ACCOUNT_TYPE } from '@/constants/accountTypes';
-import { PaymentMadeExchangeRateInputField } from './components';
+  VendorDrawerLink,
+} from '@bigcapital/webapp/components';
+import { ACCOUNT_TYPE } from '@bigcapital/webapp/constants/accountTypes';
+import withCurrentOrganization from '@bigcapital/webapp/containers/Organization/withCurrentOrganization';
 import {
-  momentFormatter,
-  tansformDateValue,
+  amountPaymentEntries,
+  compose,
+  fullAmountPaymentEntries,
   handleDateChange,
   inputIntent,
-  compose,
+  momentFormatter,
   safeSumBy,
-  fullAmountPaymentEntries,
-  amountPaymentEntries,
-} from '@/utils';
+  tansformDateValue,
+} from '@bigcapital/webapp/utils';
+import { usePaymentMadeFormContext } from './PaymentMadeFormProvider';
+import { PaymentMadeExchangeRateInputField } from './components';
 import { accountsFieldShouldUpdate, vendorsFieldShouldUpdate } from './utils';
 
 /**

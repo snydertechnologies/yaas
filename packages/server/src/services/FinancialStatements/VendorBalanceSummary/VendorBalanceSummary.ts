@@ -5,7 +5,7 @@ import {
   IVendorBalanceSummaryData,
   IVendorBalanceSummaryQuery,
   IVendorBalanceSummaryVendor,
-} from '@/interfaces';
+} from '@bigcapital/server/interfaces';
 import { isEmpty } from 'lodash';
 import * as R from 'ramda';
 import { ContactBalanceSummaryReport } from '../ContactBalanceSummary/ContactBalanceSummary';

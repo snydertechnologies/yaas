@@ -1,4 +1,4 @@
-import { ICashFlowDateRange, IDateRange, ITableColumn, ITableColumnAccessor } from '@/interfaces';
+import { ICashFlowDateRange, IDateRange, ITableColumn, ITableColumnAccessor } from '@bigcapital/server/interfaces';
 import moment from 'moment';
 import * as R from 'ramda';
 import { FinancialDatePeriods } from '../FinancialDatePeriods';

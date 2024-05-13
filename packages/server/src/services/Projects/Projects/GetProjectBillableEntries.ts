@@ -1,6 +1,6 @@
-import { ProjectBillableEntriesQuery, ProjectBillableEntry, ProjectBillableType } from '@/interfaces';
-import { TransformerInjectable } from '@/lib/Transformer/TransformerInjectable';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { ProjectBillableEntriesQuery, ProjectBillableEntry, ProjectBillableType } from '@bigcapital/server/interfaces';
+import { TransformerInjectable } from '@bigcapital/server/lib/Transformer/TransformerInjectable';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { flatten, includes, isEmpty } from 'lodash';
 import { Inject, Service } from 'typedi';
 import { ProjectBillableBillTransformer } from './ProjectBillableBillTransformer';

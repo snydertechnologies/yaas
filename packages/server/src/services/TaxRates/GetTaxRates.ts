@@ -1,4 +1,4 @@
-import { TransformerInjectable } from '@/lib/Transformer/TransformerInjectable';
+import { TransformerInjectable } from '@bigcapital/server/lib/Transformer/TransformerInjectable';
 import { Inject, Service } from 'typedi';
 import HasTenancyService from '../Tenancy/TenancyService';
 import { TaxRateTransformer } from './TaxRateTransformer';

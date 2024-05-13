@@ -1,10 +1,10 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Button, Intent, Tab, Tabs } from '@blueprintjs/core';
+import { Form, Formik } from 'formik';
+import moment from 'moment';
 // @ts-nocheck
 import React from 'react';
-import moment from 'moment';
 import styled from 'styled-components';
-import { Tabs, Tab, Button, Intent } from '@blueprintjs/core';
-import { FormattedMessage as T } from '@/components';
-import { Formik, Form } from 'formik';
 
 import FinancialStatementHeader from '../FinancialStatementHeader';
 import CustomersTransactionsHeaderGeneralPanel from './CustomersTransactionsHeaderGeneralPanel';
@@ -12,7 +12,7 @@ import CustomersTransactionsHeaderGeneralPanel from './CustomersTransactionsHead
 import withCustomersTransactions from './withCustomersTransactions';
 import withCustomersTransactionsActions from './withCustomersTransactionsActions';
 
-import { compose, transformToForm } from '@/utils';
+import { compose, transformToForm } from '@bigcapital/webapp/utils';
 import { getCustomersTransactionsDefaultQuery, getCustomersTransactionsQuerySchema } from './_utils';
 
 /**

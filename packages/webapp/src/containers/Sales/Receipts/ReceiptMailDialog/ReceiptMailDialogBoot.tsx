@@ -1,7 +1,7 @@
+import { DialogContent } from '@bigcapital/webapp/components';
+import { useSaleReceiptDefaultOptions } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React, { createContext } from 'react';
-import { useSaleReceiptDefaultOptions } from '@/hooks/query';
-import { DialogContent } from '@/components';
 
 interface ReceiptMailDialogBootValues {
   receiptId: number;

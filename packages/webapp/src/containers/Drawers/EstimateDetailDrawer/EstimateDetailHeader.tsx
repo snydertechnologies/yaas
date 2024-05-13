@@ -15,7 +15,7 @@ import {
   Col,
   CustomerDrawerLink,
   ExchangeRateDetailItem,
-} from '@/components';
+} from '@bigcapital/webapp/components';
 import { useEstimateDetailDrawerContext } from './EstimateDetailDrawerProvider';
 import { EstimateDetailsStatus } from './components';
 

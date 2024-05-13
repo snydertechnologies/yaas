@@ -1,20 +1,20 @@
+import moment from 'moment';
 // @ts-nocheck
 import React, { useEffect } from 'react';
-import moment from 'moment';
 
-import { FinancialStatement, DashboardPageContent } from '@/components';
+import { DashboardPageContent, FinancialStatement } from '@bigcapital/webapp/components';
 import { CashFlowStatementBody } from './CashFlowStatementBody';
 import { CashFlowStatementProvider } from './CashFlowStatementProvider';
 
-import CashFlowStatementHeader from './CashFlowStatementHeader';
 import CashFlowStatementActionsBar from './CashFlowStatementActionsBar';
+import CashFlowStatementHeader from './CashFlowStatementHeader';
 
+import { CashFlowStatementAlerts, CashFlowStatementLoadingBar } from './components';
 import withCashFlowStatementActions from './withCashFlowStatementActions';
-import { CashFlowStatementLoadingBar, CashFlowStatementAlerts } from './components';
 
-import { useCashflowStatementQuery } from './utils';
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 import { CashflowSheetDialogs } from './CashflowSheetDialogs';
+import { useCashflowStatementQuery } from './utils';
 
 /**
  * Cash flow statement.

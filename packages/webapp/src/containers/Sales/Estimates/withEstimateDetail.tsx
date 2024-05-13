@@ -1,6 +1,6 @@
+import { getEstimateByIdFactory } from '@bigcapital/webapp/store/Estimate/estimates.selectors';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { getEstimateByIdFactory } from '@/store/Estimate/estimates.selectors';
 
 export default () => {
   const getEstimateById = getEstimateByIdFactory();

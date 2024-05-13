@@ -5,7 +5,7 @@ import {
   IBalanceSheetSchemaAggregateNode,
   IBalanceSheetSchemaNode,
   INumberFormatQuery,
-} from '@/interfaces';
+} from '@bigcapital/server/interfaces';
 import * as R from 'ramda';
 import { FinancialSheetStructure } from '../FinancialSheetStructure';
 import { BalanceSheetBase } from './BalanceSheetBase';

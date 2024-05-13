@@ -1,4 +1,4 @@
-import { ExpenseCategory } from 'models';
+import { ExpenseCategory } from '@bigcapital/server/models';
 import TenantRepository from './TenantRepository';
 
 export default class ExpenseEntryRepository extends TenantRepository {

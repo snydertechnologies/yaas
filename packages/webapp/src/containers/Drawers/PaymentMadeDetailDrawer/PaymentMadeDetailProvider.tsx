@@ -1,10 +1,10 @@
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { DrawerHeaderContent, DrawerLoading } from '@/components';
-import { usePaymentMade } from '@/hooks/query';
-import { useFeatureCan } from '@/hooks/state';
-import { Features } from '@/constants';
+import { DrawerHeaderContent, DrawerLoading } from '@bigcapital/webapp/components';
+import { usePaymentMade } from '@bigcapital/webapp/hooks/query';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
+import { Features } from '@bigcapital/webapp/constants';
 
 const PaymentMadeDetailContext = React.createContext();
 

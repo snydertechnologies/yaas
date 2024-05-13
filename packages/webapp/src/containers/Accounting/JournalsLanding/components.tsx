@@ -1,22 +1,22 @@
-// @ts-nocheck
-import React from 'react';
 import {
-  Intent,
-  Classes,
-  Tooltip,
-  Position,
-  Tag,
   Button,
-  MenuItem,
+  Classes,
+  Intent,
   Menu,
   MenuDivider,
+  MenuItem,
   Popover,
+  Position,
+  Tag,
+  Tooltip,
 } from '@blueprintjs/core';
+// @ts-nocheck
+import React from 'react';
 import intl from 'react-intl-universal';
 
-import { Can, FormattedMessage as T, Choose, Money, If, Icon } from '@/components';
-import { ManualJournalAction, AbilitySubject } from '@/constants/abilityOption';
-import { safeCallback } from '@/utils';
+import { Can, Choose, Icon, If, Money, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { AbilitySubject, ManualJournalAction } from '@bigcapital/webapp/constants/abilityOption';
+import { safeCallback } from '@bigcapital/webapp/utils';
 
 /**
  * Amount accessor.

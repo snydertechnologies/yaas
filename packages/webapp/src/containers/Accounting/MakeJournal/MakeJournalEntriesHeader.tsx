@@ -1,10 +1,10 @@
-// @ts-nocheck
-import React from 'react';
+import { PageFormBigNumber, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { safeSumBy } from '@bigcapital/webapp/utils';
 import classNames from 'classnames';
 import { useFormikContext } from 'formik';
-import { CLASSES } from '@/constants/classes';
-import { safeSumBy } from '@/utils';
-import { PageFormBigNumber, FormattedMessage as T } from '@/components';
+// @ts-nocheck
+import React from 'react';
 import MakeJournalEntriesHeaderFields from './MakeJournalEntriesHeaderFields';
 
 export default function MakeJournalEntriesHeader() {

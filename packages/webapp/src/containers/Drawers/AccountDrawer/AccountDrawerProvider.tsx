@@ -1,8 +1,8 @@
 // @ts-nocheck
 import React from 'react';
-import { useAccount, useAccountTransactions } from '@/hooks/query';
-import { DrawerHeaderContent, DrawerLoading } from '@/components';
-import { DRAWERS } from '@/constants/drawers';
+import { useAccount, useAccountTransactions } from '@bigcapital/webapp/hooks/query';
+import { DrawerHeaderContent, DrawerLoading } from '@bigcapital/webapp/components';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
 
 const AccountDrawerContext = React.createContext();
 

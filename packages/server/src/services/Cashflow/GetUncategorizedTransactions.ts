@@ -1,5 +1,5 @@
-import { IGetUncategorizedTransactionsQuery } from '@/interfaces';
-import { TransformerInjectable } from '@/lib/Transformer/TransformerInjectable';
+import { IGetUncategorizedTransactionsQuery } from '@bigcapital/server/interfaces';
+import { TransformerInjectable } from '@bigcapital/server/lib/Transformer/TransformerInjectable';
 import { Inject, Service } from 'typedi';
 import HasTenancyService from '../Tenancy/TenancyService';
 import { UncategorizedTransactionTransformer } from './UncategorizedTransactionTransformer';

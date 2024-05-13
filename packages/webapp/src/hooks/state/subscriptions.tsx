@@ -1,12 +1,12 @@
+import { setSubscriptions } from '@bigcapital/webapp/store/subscription/subscription.actions';
+import {
+  isSubscriptionActiveFactory,
+  isSubscriptionInactiveFactory,
+  isSubscriptionOnTrialFactory,
+} from '@bigcapital/webapp/store/subscription/subscription.selectors';
 // @ts-nocheck
 import { useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { setSubscriptions } from '@/store/subscription/subscription.actions';
-import {
-  isSubscriptionOnTrialFactory,
-  isSubscriptionInactiveFactory,
-  isSubscriptionActiveFactory,
-} from '@/store/subscription/subscription.selectors';
 
 /**
  * Sets subscriptions.

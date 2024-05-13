@@ -1,14 +1,20 @@
+import {
+  DisplayNameList,
+  FieldRequiredHint,
+  Hint,
+  SalutationList,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { useAutofocus } from '@bigcapital/webapp/hooks';
+import { inputIntent } from '@bigcapital/webapp/utils';
+import { ControlGroup, FormGroup, InputGroup } from '@blueprintjs/core';
+import classNames from 'classnames';
+import { ErrorMessage, FastField, Field } from 'formik';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import classNames from 'classnames';
-import { FormGroup, InputGroup, ControlGroup } from '@blueprintjs/core';
-import { FastField, Field, ErrorMessage } from 'formik';
-import { Hint, FieldRequiredHint, SalutationList, DisplayNameList, FormattedMessage as T } from '@/components';
 import CustomerTypeRadioField from './CustomerTypeRadioField';
-import { CLASSES } from '@/constants/classes';
-import { inputIntent } from '@/utils';
-import { useAutofocus } from '@/hooks';
 
 /**
  * Customer form primary section.

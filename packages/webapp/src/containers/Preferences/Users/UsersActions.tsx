@@ -2,11 +2,11 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
+import { Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
 import { Button, Intent } from '@blueprintjs/core';
-import { Icon, FormattedMessage as T } from '@/components';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { compose } from '@/utils';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { compose } from '@bigcapital/webapp/utils';
 
 function UsersActions({ openDialog, closeDialog }) {
   const history = useHistory();

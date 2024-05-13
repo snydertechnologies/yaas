@@ -1,8 +1,8 @@
-import CheckPolicies from '@/api/middleware/CheckPolicies';
-import { AbilitySubject, IProjectProfitabilitySummaryPOJO, ReportsAction } from '@/interfaces';
-import { ProjectProfitabilitySummaryService } from '@/services/FinancialStatements/ProjectProfitabilitySummary/ProjectProfitabilitySummaryService';
-import { ProjectProfitabilitySummaryTable } from '@/services/FinancialStatements/ProjectProfitabilitySummary/ProjectProfitabilitySummaryTable';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import CheckPolicies from '@bigcapital/server/api/middleware/CheckPolicies';
+import { AbilitySubject, IProjectProfitabilitySummaryPOJO, ReportsAction } from '@bigcapital/server/interfaces';
+import { ProjectProfitabilitySummaryService } from '@bigcapital/server/services/FinancialStatements/ProjectProfitabilitySummary/ProjectProfitabilitySummaryService';
+import { ProjectProfitabilitySummaryTable } from '@bigcapital/server/services/FinancialStatements/ProjectProfitabilitySummary/ProjectProfitabilitySummaryTable';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { NextFunction, Request, Response, Router, ValidationChain } from 'express';
 import { query } from 'express-validator';
 import { Inject, Service } from 'typedi';

@@ -1,6 +1,9 @@
+import {
+  getItemsTableStateFactory,
+  isItemsTableStateChangedFactory,
+} from '@bigcapital/webapp/store/items/items.selectors';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { getItemsTableStateFactory, isItemsTableStateChangedFactory } from '@/store/items/items.selectors';
 
 export default (mapState) => {
   const getItemsTableState = getItemsTableStateFactory();

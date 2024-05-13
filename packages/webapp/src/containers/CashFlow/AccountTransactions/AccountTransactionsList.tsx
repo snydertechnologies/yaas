@@ -1,16 +1,16 @@
+import { Spinner } from '@blueprintjs/core';
 // @ts-nocheck
 import React, { Suspense } from 'react';
-import { Spinner } from '@blueprintjs/core';
 
-import '@/style/pages/CashFlow/AccountTransactions/List.scss';
+import '@bigcapital/webapp/style/pages/CashFlow/AccountTransactions/List.scss';
 
-import { DashboardPageContent } from '@/components';
+import { DashboardPageContent } from '@bigcapital/webapp/components';
 
 import AccountTransactionsActionsBar from './AccountTransactionsActionsBar';
-import { AccountTransactionsProvider, useAccountTransactionsContext } from './AccountTransactionsProvider';
 import { AccountTransactionsDetailsBar } from './AccountTransactionsDetailsBar';
-import { AccountTransactionsProgressBar } from './components';
 import { AccountTransactionsFilterTabs } from './AccountTransactionsFilterTabs';
+import { AccountTransactionsProvider, useAccountTransactionsContext } from './AccountTransactionsProvider';
+import { AccountTransactionsProgressBar } from './components';
 
 /**
  * Account transactions list.

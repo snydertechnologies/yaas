@@ -1,14 +1,14 @@
 // @ts-nocheck
 import React from 'react';
 
-import { DataTableEditable } from '@/components';
-import { useWarehouseTransferFormContext } from './WarehouseTransferFormProvider';
+import { DataTableEditable } from '@bigcapital/webapp/components';
+import { useDeepCompareEffect } from '@bigcapital/webapp/hooks/utils';
 import { useWarehouseTransferTableColumns } from '../utils';
+import { useWarehouseTransferFormContext } from './WarehouseTransferFormProvider';
 import { useFetchItemWarehouseQuantity } from './hooks';
-import { useDeepCompareEffect } from '@/hooks/utils';
 
-import { saveInvoke } from '@/utils';
-import { mutateTableCell, mutateTableRow, deleteTableRow } from './utils';
+import { saveInvoke } from '@bigcapital/webapp/utils';
+import { deleteTableRow, mutateTableCell, mutateTableRow } from './utils';
 
 /**
  * Warehouse transfer form entries table.

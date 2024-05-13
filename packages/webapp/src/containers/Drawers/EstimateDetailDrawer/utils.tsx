@@ -1,8 +1,8 @@
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { getColumnWidth } from '@/utils';
-import { TextOverviewTooltipCell } from '@/components';
+import { getColumnWidth } from '@bigcapital/webapp/utils';
+import { TextOverviewTooltipCell } from '@bigcapital/webapp/components';
 import { useEstimateDetailDrawerContext } from './EstimateDetailDrawerProvider';
 
 /**

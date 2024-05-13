@@ -2,15 +2,15 @@
 import React from 'react';
 import intl from 'react-intl-universal';
 
+import { AppToaster } from '@bigcapital/webapp/components';
 import { Intent } from '@blueprintjs/core';
-import { AppToaster } from '@/components';
 
-import NotifyViaSMSForm from '@/containers/NotifyViaSMS/NotifyViaSMSForm';
+import NotifyViaSMSForm from '@bigcapital/webapp/containers/NotifyViaSMS/NotifyViaSMSForm';
+import { transformErrors } from '@bigcapital/webapp/containers/NotifyViaSMS/utils';
 import { useEstimateViaSMSContext } from './NotifyEstimateViaSMSFormProvider';
-import { transformErrors } from '@/containers/NotifyViaSMS/utils';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { compose } from '@/utils';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { compose } from '@bigcapital/webapp/utils';
 
 const notificationType = {
   key: 'sale-estimate-details',

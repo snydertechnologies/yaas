@@ -1,6 +1,6 @@
+import { DashboardInsider } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import { useHistory } from 'react-router-dom';
-import { DashboardInsider } from '@/components';
 import { ImportView } from '../Import/ImportView';
 
 export default function VendorsImport() {

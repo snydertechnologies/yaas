@@ -1,10 +1,10 @@
+import { FFormGroup, FSelect } from '@bigcapital/webapp/components';
+import { EntriesActionsBar } from '@bigcapital/webapp/containers/Entries/EntriesActionBar';
+import { useFormikContext } from 'formik';
 // @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
-import { useFormikContext } from 'formik';
 import { InclusiveButtonOptions } from './constants';
-import { FFormGroup, FSelect } from '@/components';
-import { EntriesActionsBar } from '@/containers/Entries/EntriesActionBar';
 import { composeEntriesOnEditInclusiveTax } from './utils';
 
 /**

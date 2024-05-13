@@ -1,18 +1,18 @@
 // @ts-nocheck
-import General from '@/containers/Preferences/General/General';
+import General from '@bigcapital/webapp/containers/Preferences/General/General';
 import Users from '../containers/Preferences/Users/Users';
 import Roles from '../containers/Preferences/Users/Roles/RolesForm/RolesFormPage';
-import Accountant from '@/containers/Preferences/Accountant/Accountant';
-import Currencies from '@/containers/Preferences/Currencies/Currencies';
-import Item from '@/containers/Preferences/Item';
+import Accountant from '@bigcapital/webapp/containers/Preferences/Accountant/Accountant';
+import Currencies from '@bigcapital/webapp/containers/Preferences/Currencies/Currencies';
+import Item from '@bigcapital/webapp/containers/Preferences/Item';
 import SMSIntegration from '../containers/Preferences/SMSIntegration';
 import DefaultRoute from '../containers/Preferences/DefaultRoute';
 import Warehouses from '../containers/Preferences/Warehouses';
 import Branches from '../containers/Preferences/Branches';
 import Invoices from '../containers/Preferences/Invoices/PreferencesInvoices';
 import { PreferencesCreditNotes } from '../containers/Preferences/CreditNotes/PreferencesCreditNotes';
-import { PreferencesEstimates } from '@/containers/Preferences/Estimates/PreferencesEstimates';
-import { PreferencesReceipts } from '@/containers/Preferences/Receipts/PreferencesReceipts';
+import { PreferencesEstimates } from '@bigcapital/webapp/containers/Preferences/Estimates/PreferencesEstimates';
+import { PreferencesReceipts } from '@bigcapital/webapp/containers/Preferences/Receipts/PreferencesReceipts';
 
 const BASE_URL = '/preferences';
 

@@ -1,10 +1,10 @@
+import * as R from 'ramda';
 // @ts-nocheck
 import React from 'react';
-import * as R from 'ramda';
 
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
 import { ButtonLink } from '../Button';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
-import { DRAWERS } from '@/constants/drawers';
 
 function VendorDrawerLinkComponent({
   // #ownProps

@@ -1,4 +1,4 @@
-import TenantModel from 'models/TenantModel';
+import TenantModel from '@bigcapital/server/models/TenantModel';
 import { Model, mixin } from 'objection';
 import CustomViewBaseModel from './CustomViewBaseModel';
 import ModelSearchable from './ModelSearchable';
@@ -30,8 +30,8 @@ export default class Time extends mixin(TenantModel, [ModelSetting, CustomViewBa
    * Relationship mapping.
    */
   static get relationMappings() {
-    const Task = require('models/Task');
-    const Project = require('models/Project');
+    const Task = require('@bigcapital/server/models/Task');
+    const Project = require('@bigcapital/server/models/Project');
 
     return {
       /**

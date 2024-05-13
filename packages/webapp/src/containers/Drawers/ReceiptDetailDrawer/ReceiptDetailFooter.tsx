@@ -1,6 +1,6 @@
+import { CommercialDocFooter, DetailItem, DetailsMenu, If, T } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import React from 'react';
-import { CommercialDocFooter, T, If, DetailsMenu, DetailItem } from '@/components';
 
 import { useReceiptDetailDrawerContext } from './ReceiptDetailDrawerProvider';
 

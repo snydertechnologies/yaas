@@ -1,6 +1,6 @@
-import JournalCommands from '@/services/Accounting/JournalCommands';
-import JournalPoster from '@/services/Accounting/JournalPoster';
-import TenancyService from '@/services/Tenancy/TenancyService';
+import JournalCommands from '@bigcapital/server/services/Accounting/JournalCommands';
+import JournalPoster from '@bigcapital/server/services/Accounting/JournalPoster';
+import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import Knex from 'knex';
 import { Inject, Service } from 'typedi';
 

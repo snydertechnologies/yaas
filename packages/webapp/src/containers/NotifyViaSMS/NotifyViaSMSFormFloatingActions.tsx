@@ -3,7 +3,7 @@ import React from 'react';
 import { useFormikContext } from 'formik';
 import { Intent, Button } from '@blueprintjs/core';
 
-import { DialogFooter, DialogFooterActions, FormattedMessage as T } from '@/components';
+import { DialogFooter, DialogFooterActions, FormattedMessage as T } from '@bigcapital/webapp/components';
 
 /**
  *

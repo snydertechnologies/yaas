@@ -1,8 +1,8 @@
+import { DialogContent } from '@bigcapital/webapp/components';
+import { useCreateReconcileCreditNote, useCreditNote, useReconcileCreditNote } from '@bigcapital/webapp/hooks/query';
+import { isEmpty } from 'lodash';
 // @ts-nocheck
 import React from 'react';
-import { DialogContent } from '@/components';
-import { useCreditNote, useReconcileCreditNote, useCreateReconcileCreditNote } from '@/hooks/query';
-import { isEmpty } from 'lodash';
 
 const ReconcileCreditNoteDialogContext = React.createContext();
 

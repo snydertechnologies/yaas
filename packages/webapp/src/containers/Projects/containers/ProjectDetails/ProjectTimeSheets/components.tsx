@@ -1,10 +1,10 @@
+import { FormatDate, Icon } from '@bigcapital/webapp/components';
+import { firstLettersArgs, safeCallback } from '@bigcapital/webapp/utils';
+import { Intent, Menu, MenuItem } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
 import styled from 'styled-components';
-import { FormatDate, Icon } from '@/components';
-import { Menu, MenuItem, Intent } from '@blueprintjs/core';
-import { safeCallback, firstLettersArgs } from '@/utils';
 
 /**
  * Table actions cell.

@@ -1,14 +1,14 @@
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { Tab, Tabs } from '@blueprintjs/core';
+import classNames from 'classnames';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import classNames from 'classnames';
-import { Tabs, Tab } from '@blueprintjs/core';
-import { CLASSES } from '@/constants/classes';
 
 import VendorFinanicalPanelTab from './VendorFinanicalPanelTab';
 
-import CustomerAddressTabs from '@/containers/Customers/CustomerForm/CustomerAddressTabs';
-import CustomerNotePanel from '@/containers/Customers/CustomerForm/CustomerNotePanel';
+import CustomerAddressTabs from '@bigcapital/webapp/containers/Customers/CustomerForm/CustomerAddressTabs';
+import CustomerNotePanel from '@bigcapital/webapp/containers/Customers/CustomerForm/CustomerNotePanel';
 
 /**
  * Vendor form tabs.

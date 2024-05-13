@@ -1,6 +1,6 @@
-import { ServiceError } from '@/exceptions';
-import { TransformerInjectable } from '@/lib/Transformer/TransformerInjectable';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { TransformerInjectable } from '@bigcapital/server/lib/Transformer/TransformerInjectable';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject, Service } from 'typedi';
 import { VendorCreditTransformer } from './VendorCreditTransformer';
 import { ERRORS } from './constants';

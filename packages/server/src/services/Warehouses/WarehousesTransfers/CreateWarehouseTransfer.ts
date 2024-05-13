@@ -5,13 +5,13 @@ import {
   IWarehouseTransferCreate,
   IWarehouseTransferCreated,
   IWarehouseTransferEntryDTO,
-} from '@/interfaces';
-import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';
-import { InventoryItemCostService } from '@/services/Inventory/InventoryCostsService';
-import ItemsEntriesService from '@/services/Items/ItemsEntriesService';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
-import UnitOfWork from '@/services/UnitOfWork';
-import events from '@/subscribers/events';
+} from '@bigcapital/server/interfaces';
+import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
+import { InventoryItemCostService } from '@bigcapital/server/services/Inventory/InventoryCostsService';
+import ItemsEntriesService from '@bigcapital/server/services/Items/ItemsEntriesService';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import UnitOfWork from '@bigcapital/server/services/UnitOfWork';
+import events from '@bigcapital/server/subscribers/events';
 import { Knex } from 'knex';
 import { get, isNumber, omit } from 'lodash';
 import * as R from 'ramda';

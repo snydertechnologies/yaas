@@ -1,11 +1,11 @@
+import { Can, Icon, If, Money, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { AbilitySubject, InventoryAdjustmentAction, ItemAction } from '@bigcapital/webapp/constants/abilityOption';
+import { isBlank, safeCallback } from '@bigcapital/webapp/utils';
+import { Button, Intent, Menu, MenuDivider, MenuItem, Popover, Position, Tag } from '@blueprintjs/core';
+import { isNumber } from 'lodash';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { isNumber } from 'lodash';
-import { Menu, MenuDivider, MenuItem, Intent, Tag, Position, Button, Popover } from '@blueprintjs/core';
-import { FormattedMessage as T, Icon, Money, If, Can } from '@/components';
-import { isBlank, safeCallback } from '@/utils';
-import { AbilitySubject, ItemAction, InventoryAdjustmentAction } from '@/constants/abilityOption';
 
 /**
  * Publish accessor

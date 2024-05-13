@@ -1,9 +1,9 @@
 // @ts-nocheck
 
-import React from 'react';
+import { DialogContent } from '@bigcapital/webapp/components';
 import { isEmpty } from 'lodash';
+import React from 'react';
 import { useProjectBillableEntries } from '../../hooks';
-import { DialogContent } from '@/components';
 
 const ProjectBillableEntriesFormContext = React.createContext();
 

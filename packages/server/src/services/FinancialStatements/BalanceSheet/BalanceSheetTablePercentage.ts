@@ -1,4 +1,4 @@
-import { ITableColumn } from '@/interfaces';
+import { ITableColumn } from '@bigcapital/server/interfaces';
 import * as R from 'ramda';
 
 export const BalanceSheetTablePercentage = (Base) =>

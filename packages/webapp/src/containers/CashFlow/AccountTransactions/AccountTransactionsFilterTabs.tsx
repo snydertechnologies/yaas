@@ -1,6 +1,6 @@
+import { ContentTabs } from '@bigcapital/webapp/components/ContentTabs/ContentTabs';
 // @ts-nocheck
 import styled from 'styled-components';
-import { ContentTabs } from '@/components/ContentTabs/ContentTabs';
 import { useAccountTransactionsContext } from './AccountTransactionsProvider';
 
 const AccountContentTabs = styled(ContentTabs)`

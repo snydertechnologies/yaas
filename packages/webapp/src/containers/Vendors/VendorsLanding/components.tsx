@@ -1,11 +1,11 @@
+import { Button, Classes, Intent, Menu, MenuDivider, MenuItem, Popover, Position, Tooltip } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { Button, Popover, Menu, MenuItem, MenuDivider, Position, Tooltip, Intent, Classes } from '@blueprintjs/core';
 
-import { Can, Icon, Money, If, AvatarCell } from '@/components';
-import { VendorAction, AbilitySubject } from '@/constants/abilityOption';
-import { safeCallback, firstLettersArgs } from '@/utils';
+import { AvatarCell, Can, Icon, If, Money } from '@bigcapital/webapp/components';
+import { AbilitySubject, VendorAction } from '@bigcapital/webapp/constants/abilityOption';
+import { firstLettersArgs, safeCallback } from '@bigcapital/webapp/utils';
 
 /**
  * Actions menu.

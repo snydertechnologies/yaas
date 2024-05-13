@@ -1,8 +1,8 @@
+import { Intent, Tag } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Tag, Intent } from '@blueprintjs/core';
 
-import { T } from '@/components';
+import { T } from '@bigcapital/webapp/components';
 
 /**
  * Expense details status.

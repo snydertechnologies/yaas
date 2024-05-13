@@ -1,11 +1,11 @@
+import classNames from 'classnames';
 // @ts-nocheck
 import React, { useContext, createContext } from 'react';
-import classNames from 'classnames';
 import styled from 'styled-components';
 
-import { CLASSES } from '@/constants/classes';
-import { Card } from '@/components';
-import { useSettingsItems, useAccounts, useSaveSettings } from '@/hooks/query';
+import { Card } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { useAccounts, useSaveSettings, useSettingsItems } from '@bigcapital/webapp/hooks/query';
 import PreferencesPageLoader from '../PreferencesPageLoader';
 
 const ItemFormContext = createContext();

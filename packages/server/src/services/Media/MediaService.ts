@@ -1,7 +1,7 @@
 import fs from 'fs';
-import { IMedia, IMediaService } from '@/interfaces';
-import TenancyService from '@/services/Tenancy/TenancyService';
-import { ServiceError } from 'exceptions';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { IMedia, IMediaService } from '@bigcapital/server/interfaces';
+import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { difference } from 'lodash';
 import { Inject, Service } from 'typedi';
 

@@ -1,10 +1,10 @@
 // @ts-nocheck
-import { T } from '@/components';
+import { T } from '@bigcapital/webapp/components';
 
-import { SubscriptionPlans } from './SubscriptionPlan';
-import withPlans from '../../Subscriptions/withPlans';
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 import { Callout, Intent } from '@blueprintjs/core';
+import withPlans from '../../Subscriptions/withPlans';
+import { SubscriptionPlans } from './SubscriptionPlan';
 
 /**
  * Billing plans.

@@ -1,6 +1,6 @@
-import { IRefundCreditNotePOJO } from '@/interfaces';
-import { TransformerInjectable } from '@/lib/Transformer/TransformerInjectable';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { IRefundCreditNotePOJO } from '@bigcapital/server/interfaces';
+import { TransformerInjectable } from '@bigcapital/server/lib/Transformer/TransformerInjectable';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject, Service } from 'typedi';
 import BaseCreditNotes from './CreditNotes';
 import RefundCreditNoteTransformer from './RefundCreditNoteTransformer';

@@ -1,8 +1,8 @@
+import { Card } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import React from 'react';
 import ContactDetailActionsBar from './ContactDetailActionsBar';
 import ContactDetailList from './ContactDetailList';
-import { Card } from '@/components';
 
 /**
  * contact detail.

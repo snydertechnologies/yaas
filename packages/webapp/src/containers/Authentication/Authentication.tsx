@@ -1,14 +1,14 @@
+import BodyClassName from 'react-body-classname';
 // @ts-nocheck
 import { Route, Switch, useLocation } from 'react-router-dom';
-import BodyClassName from 'react-body-classname';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
-import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
-import authenticationRoutes from '@/routes/authentication';
-import { Icon, FormattedMessage as T } from '@/components';
+import { Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
+import authenticationRoutes from '@bigcapital/webapp/routes/authentication';
 import { AuthMetaBootProvider } from './AuthMetaBoot';
 
-import '@/style/pages/Authentication/Auth.scss';
+import '@bigcapital/webapp/style/pages/Authentication/Auth.scss';
 
 export function Authentication() {
   return (

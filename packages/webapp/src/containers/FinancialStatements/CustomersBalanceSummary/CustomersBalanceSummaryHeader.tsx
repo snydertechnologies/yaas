@@ -1,18 +1,18 @@
 // @ts-nocheck
 import React from 'react';
 
-import styled from 'styled-components';
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Button, Intent, Tab, Tabs } from '@blueprintjs/core';
+import { Form, Formik } from 'formik';
 import moment from 'moment';
-import { Formik, Form } from 'formik';
-import { Tabs, Tab, Button, Intent } from '@blueprintjs/core';
-import { FormattedMessage as T } from '@/components';
+import styled from 'styled-components';
 
 import FinancialStatementHeader from '../FinancialStatementHeader';
+import CustomersBalanceSummaryGeneralPanel from './CustomersBalanceSummaryGeneralPanel';
 import withCustomersBalanceSummary from './withCustomersBalanceSummary';
 import withCustomersBalanceSummaryActions from './withCustomersBalanceSummaryActions';
-import CustomersBalanceSummaryGeneralPanel from './CustomersBalanceSummaryGeneralPanel';
 
-import { compose, transformToForm } from '@/utils';
+import { compose, transformToForm } from '@bigcapital/webapp/utils';
 import { getCustomersBalanceQuerySchema } from './utils';
 
 /**

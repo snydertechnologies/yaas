@@ -1,31 +1,31 @@
+import {
+  Button,
+  Classes,
+  Intent,
+  Menu,
+  MenuItem,
+  NavbarDivider,
+  NavbarGroup,
+  Popover,
+  PopoverInteractionKind,
+  Position,
+} from '@blueprintjs/core';
+import clsx from 'classnames';
 // @ts-nocheck
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import {
-  Button,
-  NavbarGroup,
-  Classes,
-  NavbarDivider,
-  Intent,
-  PopoverInteractionKind,
-  Position,
-  MenuItem,
-  Menu,
-  Popover,
-} from '@blueprintjs/core';
-import clsx from 'classnames';
 
 import { useVendorDetailsDrawerContext } from './VendorDetailsDrawerProvider';
 
-import withAlertsActions from '@/containers/Alert/withAlertActions';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
 
-import { Can, Icon, DashboardActionsBar, FormattedMessage as T } from '@/components';
+import { Can, DashboardActionsBar, Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import { compose, safeCallback } from '@bigcapital/webapp/utils';
+import { AbilitySubject, PaymentMadeAction, SaleInvoiceAction, VendorAction } from '../../../constants/abilityOption';
 import { VendorMoreMenuItem } from './utils';
-import { AbilitySubject, SaleInvoiceAction, PaymentMadeAction, VendorAction } from '../../../constants/abilityOption';
-import { safeCallback, compose } from '@/utils';
-import { DRAWERS } from '@/constants/drawers';
 
 /**
  * Vendor details actions bar.

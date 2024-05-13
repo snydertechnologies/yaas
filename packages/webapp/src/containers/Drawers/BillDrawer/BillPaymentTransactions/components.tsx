@@ -3,10 +3,10 @@ import React from 'react';
 import intl from 'react-intl-universal';
 import clsx from 'classnames';
 import { Intent, Menu, MenuItem, MenuDivider } from '@blueprintjs/core';
-import { safeCallback } from '@/utils';
-import { Can, FormatDateCell, Icon } from '@/components';
-import { CLASSES } from '@/constants/classes';
-import { PaymentMadeAction, AbilitySubject } from '@/constants/abilityOption';
+import { safeCallback } from '@bigcapital/webapp/utils';
+import { Can, FormatDateCell, Icon } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { PaymentMadeAction, AbilitySubject } from '@bigcapital/webapp/constants/abilityOption';
 
 /**
  * Table actions menu.

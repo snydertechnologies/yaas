@@ -1,11 +1,11 @@
+import { DrawerHeaderContent, DrawerLoading } from '@bigcapital/webapp/components';
+import { Features } from '@bigcapital/webapp/constants';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import { useReconcileVendorCredits, useRefundVendorCredit, useVendorCredit } from '@bigcapital/webapp/hooks/query';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { useVendorCredit, useRefundVendorCredit, useReconcileVendorCredits } from '@/hooks/query';
-import { DrawerHeaderContent, DrawerLoading } from '@/components';
-import { useFeatureCan } from '@/hooks/state';
-import { Features } from '@/constants';
-import { DRAWERS } from '@/constants/drawers';
 
 const VendorCreditDetailDrawerContext = React.createContext();
 

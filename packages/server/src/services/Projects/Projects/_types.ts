@@ -1,4 +1,4 @@
-import { ProjectBillableEntriesQuery, ProjectBillableEntry, ProjectBillableType } from '@/interfaces';
+import { ProjectBillableEntriesQuery, ProjectBillableEntry, ProjectBillableType } from '@bigcapital/server/interfaces';
 import { Knex } from 'knex';
 
 export interface IncreaseInvoicedTaskQueuePayload {

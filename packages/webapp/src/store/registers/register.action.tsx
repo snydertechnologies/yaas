@@ -1,5 +1,5 @@
 // @ts-nocheck
-import ApiService from '@/services/ApiService';
+import ApiService from '@bigcapital/webapp/services/ApiService';
 
 export const submitRegister = ({ form }) => {
   return (dispatch) => {

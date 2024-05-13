@@ -1,9 +1,9 @@
+import { TotalLine, TotalLineBorderStyle, TotalLineTextStyle, TotalLines } from '@bigcapital/webapp/components';
+import { TaxType } from '@bigcapital/webapp/interfaces/TaxRates';
+import { useFormikContext } from 'formik';
 // @ts-nocheck
 import styled from 'styled-components';
-import { TotalLines, TotalLine, TotalLineBorderStyle, TotalLineTextStyle } from '@/components';
 import { useBillAggregatedTaxRates, useBillTotals } from './utils';
-import { useFormikContext } from 'formik';
-import { TaxType } from '@/interfaces/TaxRates';
 
 export function BillFormFooterRight() {
   const { formattedSubtotal, formattedTotal, formattedDueTotal, formattedPaymentTotal } = useBillTotals();

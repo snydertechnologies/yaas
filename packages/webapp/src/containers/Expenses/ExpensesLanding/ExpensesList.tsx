@@ -1,18 +1,18 @@
 // @ts-nocheck
 import React, { useEffect } from 'react';
 
-import '@/style/pages/Expense/List.scss';
+import '@bigcapital/webapp/style/pages/Expense/List.scss';
 
-import { DashboardPageContent } from '@/components';
+import { DashboardPageContent } from '@bigcapital/webapp/components';
 
 import ExpenseActionsBar from './ExpenseActionsBar';
-import ExpenseViewTabs from './ExpenseViewTabs';
 import ExpenseDataTable from './ExpenseDataTable';
+import ExpenseViewTabs from './ExpenseViewTabs';
 
 import withExpenses from './withExpenses';
 import withExpensesActions from './withExpensesActions';
 
-import { compose, transformTableStateToQuery } from '@/utils';
+import { compose, transformTableStateToQuery } from '@bigcapital/webapp/utils';
 import { ExpensesListProvider } from './ExpensesListProvider';
 
 /**

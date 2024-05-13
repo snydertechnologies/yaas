@@ -1,20 +1,20 @@
-// @ts-nocheck
-import React, { useMemo } from 'react';
-import { FastField, Field, ErrorMessage } from 'formik';
-import { FormGroup } from '@blueprintjs/core';
-import classNames from 'classnames';
 import {
-  FormattedMessage as T,
   AccountsSuggestField,
-  FieldRequiredHint,
-  ListSelect,
   Col,
-  Row,
   FFormGroup,
   FSelect,
-} from '@/components';
-import { inputIntent } from '@/utils';
-import { CLASSES, getAddMoneyInOptions } from '@/constants';
+  FieldRequiredHint,
+  ListSelect,
+  Row,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import { CLASSES, getAddMoneyInOptions } from '@bigcapital/webapp/constants';
+import { inputIntent } from '@bigcapital/webapp/utils';
+import { FormGroup } from '@blueprintjs/core';
+import classNames from 'classnames';
+import { ErrorMessage, FastField, Field } from 'formik';
+// @ts-nocheck
+import React, { useMemo } from 'react';
 
 import { useMoneyInDailogContext } from './MoneyInDialogProvider';
 

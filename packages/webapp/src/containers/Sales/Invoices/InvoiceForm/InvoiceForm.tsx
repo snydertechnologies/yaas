@@ -1,31 +1,31 @@
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { Intent } from '@blueprintjs/core';
+import classNames from 'classnames';
+import { Form, Formik } from 'formik';
+import { defaultTo, isEmpty, sumBy } from 'lodash';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import classNames from 'classnames';
-import { Formik, Form } from 'formik';
-import { Intent } from '@blueprintjs/core';
-import { sumBy, isEmpty, defaultTo } from 'lodash';
 import { useHistory } from 'react-router-dom';
-import { CLASSES } from '@/constants/classes';
 import { getCreateInvoiceFormSchema, getEditInvoiceFormSchema } from './InvoiceForm.schema';
 
-import InvoiceFormHeader from './InvoiceFormHeader';
-import InvoiceItemsEntriesEditorField from './InvoiceItemsEntriesEditorField';
 import InvoiceFloatingActions from './InvoiceFloatingActions';
-import InvoiceFormFooter from './InvoiceFormFooter';
 import InvoiceFormDialogs from './InvoiceFormDialogs';
+import InvoiceFormFooter from './InvoiceFormFooter';
+import InvoiceFormHeader from './InvoiceFormHeader';
 import InvoiceFormTopBar from './InvoiceFormTopBar';
+import InvoiceItemsEntriesEditorField from './InvoiceItemsEntriesEditorField';
 
-import withDashboardActions from '@/containers/Dashboard/withDashboardActions';
-import withSettings from '@/containers/Settings/withSettings';
-import withCurrentOrganization from '@/containers/Organization/withCurrentOrganization';
+import withDashboardActions from '@bigcapital/webapp/containers/Dashboard/withDashboardActions';
+import withCurrentOrganization from '@bigcapital/webapp/containers/Organization/withCurrentOrganization';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
 
-import { AppToaster } from '@/components';
-import { compose, orderingLinesIndexes, transactionNumber } from '@/utils';
-import { useInvoiceFormContext } from './InvoiceFormProvider';
+import { AppToaster } from '@bigcapital/webapp/components';
+import { compose, orderingLinesIndexes, transactionNumber } from '@bigcapital/webapp/utils';
 import { InvoiceFormActions } from './InvoiceFormActions';
-import { transformToEditForm, defaultInvoice, transformErrors, transformValueToRequest, resetFormState } from './utils';
+import { useInvoiceFormContext } from './InvoiceFormProvider';
 import { InvoiceExchangeRateSync, InvoiceNoSyncSettingsToForm } from './components';
+import { defaultInvoice, resetFormState, transformErrors, transformToEditForm, transformValueToRequest } from './utils';
 
 /**
  * Invoice form.

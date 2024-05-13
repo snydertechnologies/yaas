@@ -1,7 +1,7 @@
 // @ts-nocheck
 import React from 'react';
 
-import { CommercialDocEntriesTable } from '@/components';
+import { CommercialDocEntriesTable } from '@bigcapital/webapp/components';
 
 import { useCreditNoteDetailDrawerContext } from './CreditNoteDetailDrawerProvider';
 import { useCreditNoteReadOnlyEntriesColumns } from './utils';

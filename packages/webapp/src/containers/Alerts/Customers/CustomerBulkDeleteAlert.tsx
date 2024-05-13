@@ -1,15 +1,15 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { AppToaster } from '@bigcapital/webapp/components';
+import { transformErrors } from '@bigcapital/webapp/containers/Customers/utils';
+import { Alert, Intent } from '@blueprintjs/core';
 // @ts-nocheck
 import React, { useCallback, useState } from 'react';
-import { FormattedMessage as T } from '@/components';
 import intl from 'react-intl-universal';
-import { Intent, Alert } from '@blueprintjs/core';
-import { AppToaster } from '@/components';
-import { transformErrors } from '@/containers/Customers/utils';
 
-import withAlertStoreConnect from '@/containers/Alert/withAlertStoreConnect';
-import withAlertActions from '@/containers/Alert/withAlertActions';
+import withAlertActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withAlertStoreConnect from '@bigcapital/webapp/containers/Alert/withAlertStoreConnect';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Customer bulk delete alert.

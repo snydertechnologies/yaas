@@ -1,7 +1,7 @@
-import AccountTypesUtils from '@/lib/AccountTypes';
-import { DEFAULT_VIEWS } from '@/services/Accounts/constants';
+import AccountTypesUtils from '@bigcapital/server/lib/AccountTypes';
+import TenantModel from '@bigcapital/server/models/TenantModel';
+import { DEFAULT_VIEWS } from '@bigcapital/server/services/Accounts/constants';
 import { castArray } from 'lodash';
-import TenantModel from 'models/TenantModel';
 import { Model, mixin } from 'objection';
 import CashflowAccountSettings from './CashflowAccount.Settings';
 import CustomViewBaseModel from './CustomViewBaseModel';
@@ -62,7 +62,7 @@ export default class CashflowAccount extends mixin(TenantModel, [ModelSettings, 
    * Relationship mapping.
    */
   static get relationMappings() {
-    const AccountTransaction = require('models/AccountTransaction');
+    const AccountTransaction = require('@bigcapital/server/models/AccountTransaction');
 
     return {
       /**

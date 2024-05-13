@@ -1,8 +1,8 @@
-import BaseController from '@/api/controllers/BaseController';
-import AttachCurrentTenantUser from '@/api/middleware/AttachCurrentTenantUser';
-import TenancyMiddleware from '@/api/middleware/TenancyMiddleware';
-import JWTAuth from '@/api/middleware/jwtAuth';
-import AuthenticatedAccount from '@/services/AuthenticatedAccount';
+import BaseController from '@bigcapital/server/api/controllers/BaseController';
+import AttachCurrentTenantUser from '@bigcapital/server/api/middleware/AttachCurrentTenantUser';
+import TenancyMiddleware from '@bigcapital/server/api/middleware/TenancyMiddleware';
+import JWTAuth from '@bigcapital/server/api/middleware/jwtAuth';
+import AuthenticatedAccount from '@bigcapital/server/services/AuthenticatedAccount';
 import { NextFunction, Request, Response, Router } from 'express';
 import { Inject, Service } from 'typedi';
 

@@ -1,10 +1,10 @@
-// @ts-nocheck
-import * as Yup from 'yup';
-import intl from 'react-intl-universal';
+import { useAppQueryString } from '@bigcapital/webapp/hooks';
+import { transformToForm } from '@bigcapital/webapp/utils';
 import moment from 'moment';
 import { useMemo } from 'react';
-import { transformToForm } from '@/utils';
-import { useAppQueryString } from '@/hooks';
+import intl from 'react-intl-universal';
+// @ts-nocheck
+import * as Yup from 'yup';
 
 /**
  * The validation schema of vendors transactions.

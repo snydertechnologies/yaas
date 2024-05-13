@@ -1,6 +1,6 @@
+import { getExpensesCurrentPageFactory } from '@bigcapital/webapp/store/users/users.selectors';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { getExpensesCurrentPageFactory } from '@/store/users/users.selectors';
 
 export default (mapState) => {
   const mapStateToProps = (state, props) => {

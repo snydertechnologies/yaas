@@ -1,9 +1,9 @@
+import { DashboardInsider } from '@bigcapital/webapp/components';
+import { useAppQueryString } from '@bigcapital/webapp/hooks';
+import { useAccount, useCashflowAccounts } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { DashboardInsider } from '@/components';
-import { useCashflowAccounts, useAccount } from '@/hooks/query';
-import { useAppQueryString } from '@/hooks';
 
 const AccountTransactionsContext = React.createContext();
 

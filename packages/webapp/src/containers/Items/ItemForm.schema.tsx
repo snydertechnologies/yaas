@@ -1,8 +1,8 @@
-// @ts-nocheck
-import * as Yup from 'yup';
+import { DATATYPES_LENGTH } from '@bigcapital/webapp/constants/dataTypes';
 import { defaultTo } from 'lodash';
 import intl from 'react-intl-universal';
-import { DATATYPES_LENGTH } from '@/constants/dataTypes';
+// @ts-nocheck
+import * as Yup from 'yup';
 
 const Schema = Yup.object().shape({
   active: Yup.boolean(),

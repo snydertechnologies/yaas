@@ -1,5 +1,5 @@
-import { IInventoryTransaction } from '@/interfaces';
-import InventoryCostMethod from '@/services/Inventory/InventoryCostMethod';
+import { IInventoryTransaction } from '@bigcapital/server/interfaces';
+import InventoryCostMethod from '@bigcapital/server/services/Inventory/InventoryCostMethod';
 import { Knex } from 'knex';
 import { pick } from 'lodash';
 

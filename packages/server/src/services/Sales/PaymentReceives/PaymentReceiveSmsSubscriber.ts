@@ -1,4 +1,4 @@
-import events from '@/subscribers/events';
+import events from '@bigcapital/server/subscribers/events';
 import { EventSubscriber, On } from 'event-dispatch';
 import { Container } from 'typedi';
 import PaymentReceiveNotifyBySms from './PaymentReceiveSmsNotify';

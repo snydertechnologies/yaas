@@ -1,7 +1,7 @@
-import BaseController from '@/api/controllers/BaseController';
-import { ServiceError } from '@/exceptions';
-import { ACCEPT_TYPE } from '@/interfaces/Http';
-import { ExportApplication } from '@/services/Export/ExportApplication';
+import BaseController from '@bigcapital/server/api/controllers/BaseController';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { ACCEPT_TYPE } from '@bigcapital/server/interfaces/Http';
+import { ExportApplication } from '@bigcapital/server/services/Export/ExportApplication';
 import { NextFunction, Request, Response, Router } from 'express';
 import { query } from 'express-validator';
 import { Inject, Service } from 'typedi';

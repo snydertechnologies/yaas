@@ -1,19 +1,19 @@
+import { DataTable, TableSkeletonHeader, TableSkeletonRows } from '@bigcapital/webapp/components';
+import { TABLES } from '@bigcapital/webapp/constants/tables';
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import { useMemorizedColumnsWidths } from '@bigcapital/webapp/hooks';
 // @ts-nocheck
 import React from 'react';
-import styled from 'styled-components';
 import { useHistory } from 'react-router-dom';
-import { DataTable, TableSkeletonRows, TableSkeletonHeader } from '@/components';
-import { TABLES } from '@/constants/tables';
+import styled from 'styled-components';
 import ProjectsEmptyStatus from './ProjectsEmptyStatus';
 import { useProjectsListContext } from './ProjectsListProvider';
-import { useMemorizedColumnsWidths } from '@/hooks';
-import { useProjectsListColumns, ActionsMenu } from './components';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import withAlertsActions from '@/containers/Alert/withAlertActions';
-import withSettings from '@/containers/Settings/withSettings';
+import { ActionsMenu, useProjectsListColumns } from './components';
 import withProjectsActions from './withProjectsActions';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Projects list datatable.

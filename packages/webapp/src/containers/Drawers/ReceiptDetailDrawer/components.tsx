@@ -1,8 +1,8 @@
+import { Button, Intent, Menu, MenuItem, Popover, PopoverInteractionKind, Position, Tag } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Button, Popover, PopoverInteractionKind, Position, MenuItem, Menu, Intent, Tag } from '@blueprintjs/core';
 
-import { Icon, Choose, T } from '@/components';
+import { Choose, Icon, T } from '@bigcapital/webapp/components';
 
 /**
  * Receipt details status.

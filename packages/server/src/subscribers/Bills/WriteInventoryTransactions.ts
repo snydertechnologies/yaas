@@ -3,12 +3,12 @@ import type {
   IBillCreatedPayload,
   IBillEditedPayload,
   IBillOpenedPayload,
-} from '@/interfaces';
-import events from '@/subscribers/events';
+} from '@bigcapital/server/interfaces';
+import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 
 // biome-ignore lint: service is not a type
-import { BillInventoryTransactionsService } from '@/services/Purchases/Bills/BillInventoryTransactionsService';
+import { BillInventoryTransactionsService } from '@bigcapital/server/services/Purchases/Bills/BillInventoryTransactionsService';
 
 @Service()
 export default class BillWriteInventoryTransactionsSubscriber {

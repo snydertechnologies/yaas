@@ -1,21 +1,21 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import React from 'react';
-import { FormattedMessage as T } from '@/components';
 import {
-  SaleInvoiceAction,
-  SaleEstimateAction,
   AbilitySubject,
-  SaleReceiptAction,
-  CustomerAction,
-  PaymentReceiveAction,
-  BillAction,
-  VendorAction,
-  PaymentMadeAction,
   AccountAction,
-  ManualJournalAction,
+  BillAction,
+  CustomerAction,
   ExpenseAction,
   ItemAction,
+  ManualJournalAction,
+  PaymentMadeAction,
+  PaymentReceiveAction,
   ReportsAction,
+  SaleEstimateAction,
+  SaleInvoiceAction,
+  SaleReceiptAction,
+  VendorAction,
 } from './abilityOption';
 
 export const accountsReceivable = [

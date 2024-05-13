@@ -1,17 +1,17 @@
+import { AppToaster } from '@bigcapital/webapp/components';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
+import { useCategorizeTransaction } from '@bigcapital/webapp/hooks/query';
+import { compose } from '@bigcapital/webapp/utils';
+import { Intent } from '@blueprintjs/core';
 // @ts-nocheck
-import { Formik, Form } from 'formik';
+import { Form, Formik } from 'formik';
 import styled from 'styled-components';
+import { useCategorizeTransactionBoot } from './CategorizeTransactionBoot';
 import { CreateCategorizeTransactionSchema } from './CategorizeTransactionForm.schema';
 import { CategorizeTransactionFormContent } from './CategorizeTransactionFormContent';
 import { CategorizeTransactionFormFooter } from './CategorizeTransactionFormFooter';
-import { useCategorizeTransaction } from '@/hooks/query';
-import { useCategorizeTransactionBoot } from './CategorizeTransactionBoot';
-import { DRAWERS } from '@/constants/drawers';
-import { transformToCategorizeForm, defaultInitialValues, tranformToRequest } from './_utils';
-import { compose } from '@/utils';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
-import { AppToaster } from '@/components';
-import { Intent } from '@blueprintjs/core';
+import { defaultInitialValues, tranformToRequest, transformToCategorizeForm } from './_utils';
 
 /**
  * Categorize cashflow transaction form dialog content.

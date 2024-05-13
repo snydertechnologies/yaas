@@ -1,19 +1,19 @@
+import { AppToaster, FormattedHTMLMessage, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Alert, Intent } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { Intent, Alert } from '@blueprintjs/core';
-import { AppToaster, FormattedMessage as T, FormattedHTMLMessage } from '@/components';
 
-import { handleDeleteErrors } from '@/containers/Items/utils';
-import { useDeleteItem } from '@/hooks/query';
+import { handleDeleteErrors } from '@bigcapital/webapp/containers/Items/utils';
+import { useDeleteItem } from '@bigcapital/webapp/hooks/query';
 
-import withAlertStoreConnect from '@/containers/Alert/withAlertStoreConnect';
-import withAlertActions from '@/containers/Alert/withAlertActions';
-import withItemsActions from '@/containers/Items/withItemsActions';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
+import withAlertActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withAlertStoreConnect from '@bigcapital/webapp/containers/Alert/withAlertStoreConnect';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
+import withItemsActions from '@bigcapital/webapp/containers/Items/withItemsActions';
 
-import { compose } from '@/utils';
-import { DRAWERS } from '@/constants/drawers';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Item delete alerts.

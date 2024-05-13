@@ -1,36 +1,36 @@
+import { ACCOUNT_TYPE, CLASSES, Features } from '@bigcapital/webapp/constants';
+import { useAutofocus } from '@bigcapital/webapp/hooks';
+import { Classes, ControlGroup, FormGroup, InputGroup, Position, TextArea } from '@blueprintjs/core';
+import { DateInput } from '@blueprintjs/datetime';
+import classNames from 'classnames';
+import { ErrorMessage, FastField, useFormikContext } from 'formik';
+import { isEqual } from 'lodash';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
 import styled from 'styled-components';
-import { FastField, ErrorMessage, useFormikContext } from 'formik';
-import { isEqual } from 'lodash';
-import { Classes, FormGroup, InputGroup, TextArea, Position, ControlGroup } from '@blueprintjs/core';
-import { useAutofocus } from '@/hooks';
-import classNames from 'classnames';
-import { CLASSES, ACCOUNT_TYPE, Features } from '@/constants';
-import { DateInput } from '@blueprintjs/datetime';
 
 import {
-  FieldRequiredHint,
-  Col,
-  Row,
-  FormattedMessage as T,
   AccountsSuggestField,
-  InputPrependText,
-  MoneyInputGroup,
-  Icon,
-  If,
-  FeatureCan,
-  ExchangeRateMutedField,
   BranchSelect,
   BranchSelectButton,
-} from '@/components';
-import { inputIntent, momentFormatter, tansformDateValue, handleDateChange } from '@/utils';
-import { useSetPrimaryBranchToForm } from './utils';
+  Col,
+  ExchangeRateMutedField,
+  FeatureCan,
+  FieldRequiredHint,
+  Icon,
+  If,
+  InputPrependText,
+  MoneyInputGroup,
+  Row,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import { handleDateChange, inputIntent, momentFormatter, tansformDateValue } from '@bigcapital/webapp/utils';
 import { useQuickPaymentMadeContext } from './QuickPaymentMadeFormProvider';
+import { useSetPrimaryBranchToForm } from './utils';
 
-import withCurrentOrganization from '@/containers/Organization/withCurrentOrganization';
-import { compose } from '@/utils';
+import withCurrentOrganization from '@bigcapital/webapp/containers/Organization/withCurrentOrganization';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Quick payment made form fields.

@@ -1,11 +1,11 @@
+import { Button, Intent } from '@blueprintjs/core';
+import { useFormikContext } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import styled from 'styled-components';
-import { useFormikContext } from 'formik';
-import { Intent, Button } from '@blueprintjs/core';
 import { useHistory } from 'react-router-dom';
+import styled from 'styled-components';
 
-import { FormattedMessage as T } from '@/components';
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
 
 /**
  * Role form floating actions.

@@ -1,5 +1,5 @@
-import { ContactService, IVendorEditDTO, IVendorNewDTO } from '@/interfaces';
-import { TenantMetadata } from '@/system/models';
+import { ContactService, IVendorEditDTO, IVendorNewDTO } from '@bigcapital/server/interfaces';
+import { TenantMetadata } from '@bigcapital/server/system/models';
 import { defaultTo, isEmpty } from 'lodash';
 import moment from 'moment';
 import { Service } from 'typedi';

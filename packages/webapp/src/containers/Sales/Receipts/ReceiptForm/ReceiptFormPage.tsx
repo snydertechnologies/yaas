@@ -2,11 +2,11 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
-import '@/style/pages/SaleReceipt/PageForm.scss';
+import '@bigcapital/webapp/style/pages/SaleReceipt/PageForm.scss';
 
+import { AutoExchangeRateProvider } from '@bigcapital/webapp/containers/Entries/AutoExchangeProvider';
 import ReceiptFrom from './ReceiptForm';
 import { ReceiptFormProvider } from './ReceiptFormProvider';
-import { AutoExchangeRateProvider } from '@/containers/Entries/AutoExchangeProvider';
 
 /**
  * Receipt form page.

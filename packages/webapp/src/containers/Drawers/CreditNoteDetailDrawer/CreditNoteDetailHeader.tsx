@@ -16,7 +16,7 @@ import {
   CommercialDocTopHeader,
   CustomerDrawerLink,
   ExchangeRateDetailItem,
-} from '@/components';
+} from '@bigcapital/webapp/components';
 import { useCreditNoteDetailDrawerContext } from './CreditNoteDetailDrawerProvider';
 
 import { CreditNoteDetailsStatus } from './utils';

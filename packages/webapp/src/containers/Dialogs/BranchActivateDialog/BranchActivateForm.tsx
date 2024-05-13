@@ -2,16 +2,16 @@
 import React from 'react';
 import intl from 'react-intl-universal';
 
-import { Formik } from 'formik';
 import { Intent } from '@blueprintjs/core';
+import { Formik } from 'formik';
 
-import { AppToaster } from '@/components';
-import { useBranchActivateContext } from './BranchActivateFormProvider';
+import { AppToaster } from '@bigcapital/webapp/components';
 import BranchActivateFormContent from './BranchActivateFormContent';
+import { useBranchActivateContext } from './BranchActivateFormProvider';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Branch activate form.

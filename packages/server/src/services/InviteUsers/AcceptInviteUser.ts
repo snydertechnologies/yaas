@@ -1,12 +1,17 @@
-import { ServiceError } from '@/exceptions';
-import { IAcceptInviteEventPayload, ICheckInviteEventPayload, IInviteUserInput, IUserInvite } from '@/interfaces';
-import { IAcceptInviteUserService } from '@/interfaces';
-import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';
-import events from '@/subscribers/events';
-import { Invite, SystemUser, Tenant } from '@/system/models';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import {
+  IAcceptInviteEventPayload,
+  ICheckInviteEventPayload,
+  IInviteUserInput,
+  IUserInvite,
+} from '@bigcapital/server/interfaces';
+import { IAcceptInviteUserService } from '@bigcapital/server/interfaces';
+import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
+import events from '@bigcapital/server/subscribers/events';
+import { Invite, SystemUser, Tenant } from '@bigcapital/server/system/models';
+import { hashPassword } from '@bigcapital/server/utils';
 import moment from 'moment';
 import { Inject, Service } from 'typedi';
-import { hashPassword } from 'utils';
 import { ERRORS } from './constants';
 
 @Service()

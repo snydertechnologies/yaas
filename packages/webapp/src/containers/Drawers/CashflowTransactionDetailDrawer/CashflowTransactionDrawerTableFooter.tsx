@@ -1,7 +1,7 @@
 // @ts-nocheck
 import React from 'react';
 import { useCashflowTransactionDrawerContext } from './CashflowTransactionDrawerProvider';
-import { T, FormatNumber } from '@/components';
+import { T, FormatNumber } from '@bigcapital/webapp/components';
 
 export default function CashflowTransactionDrawerTableFooter() {
   const {

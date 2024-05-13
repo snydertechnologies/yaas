@@ -1,12 +1,12 @@
-import CheckPolicies from '@/api/middleware/CheckPolicies';
-import { ServiceError } from '@/exceptions';
+import CheckPolicies from '@bigcapital/server/api/middleware/CheckPolicies';
+import { ServiceError } from '@bigcapital/server/exceptions';
 import { NextFunction, Request, Response, Router } from 'express';
 import { param } from 'express-validator';
 import { Inject, Service } from 'typedi';
 import BaseController from '../BaseController';
 
-import { AbilitySubject, CashflowAction } from '@/interfaces';
-import { CashflowApplication } from '@/services/Cashflow/CashflowApplication';
+import { AbilitySubject, CashflowAction } from '@bigcapital/server/interfaces';
+import { CashflowApplication } from '@bigcapital/server/services/Cashflow/CashflowApplication';
 
 @Service()
 export default class DeleteCashflowTransactionController extends BaseController {

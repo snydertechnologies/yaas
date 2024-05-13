@@ -1,12 +1,12 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Icon, If } from '@bigcapital/webapp/components';
+import { saveInvoke } from '@bigcapital/webapp/utils';
+import { Button, Position, Tab, Tabs, Tooltip } from '@blueprintjs/core';
+import { debounce } from 'lodash';
+import PropTypes from 'prop-types';
 // @ts-nocheck
 import React, { useRef, useState, useEffect } from 'react';
-import { FormattedMessage as T } from '@/components';
-import PropTypes from 'prop-types';
-import { Button, Tabs, Tab, Tooltip, Position } from '@blueprintjs/core';
 import { useHistory } from 'react-router';
-import { debounce } from 'lodash';
-import { If, Icon } from '@/components';
-import { saveInvoke } from '@/utils';
 
 /**
  * Dashboard views tabs.

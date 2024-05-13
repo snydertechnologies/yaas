@@ -1,7 +1,7 @@
-import { ServiceError } from '@/exceptions';
-import { ICommonLandedCostEntry, ICommonLandedCostEntryDTO } from '@/interfaces';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { ICommonLandedCostEntry, ICommonLandedCostEntryDTO } from '@bigcapital/server/interfaces';
+import { transformToMap } from '@bigcapital/server/utils';
 import { Service } from 'typedi';
-import { transformToMap } from 'utils';
 
 const ERRORS = {
   ENTRIES_ALLOCATED_COST_COULD_NOT_DELETED: 'ENTRIES_ALLOCATED_COST_COULD_NOT_DELETED',

@@ -1,6 +1,6 @@
-import { IPurchasesByItemsReportQuery, IPurchasesByItemsSheet } from '@/interfaces/PurchasesByItemsSheet';
-import TenancyService from '@/services/Tenancy/TenancyService';
-import { Tenant } from '@/system/models';
+import { IPurchasesByItemsReportQuery, IPurchasesByItemsSheet } from '@bigcapital/server/interfaces/PurchasesByItemsSheet';
+import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import { Tenant } from '@bigcapital/server/system/models';
 import moment from 'moment';
 import { Inject, Service } from 'typedi';
 import { PurchasesByItems } from './PurchasesByItems';

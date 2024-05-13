@@ -1,10 +1,10 @@
+import { FSelect } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { Button, MenuItem } from '@blueprintjs/core';
+import classNames from 'classnames';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { MenuItem, Button } from '@blueprintjs/core';
-import { FSelect } from '@/components';
-import { CLASSES } from '@/constants/classes';
-import classNames from 'classnames';
 
 /**
  *

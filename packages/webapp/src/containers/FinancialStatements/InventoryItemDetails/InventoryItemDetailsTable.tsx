@@ -3,12 +3,12 @@ import React, { useMemo } from 'react';
 import intl from 'react-intl-universal';
 import styled from 'styled-components';
 
-import { ReportDataTable, FinancialSheet } from '@/components';
-import { useInventoryItemDetailsColumns } from './components';
+import { FinancialSheet, ReportDataTable } from '@bigcapital/webapp/components';
 import { useInventoryItemDetailsContext } from './InventoryItemDetailsProvider';
+import { useInventoryItemDetailsColumns } from './components';
 
-import { defaultExpanderReducer, tableRowTypesToClassnames } from '@/utils';
-import { TableStyle } from '@/constants';
+import { TableStyle } from '@bigcapital/webapp/constants';
+import { defaultExpanderReducer, tableRowTypesToClassnames } from '@bigcapital/webapp/utils';
 
 /**
  * Inventory item detail table.

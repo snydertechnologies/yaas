@@ -1,10 +1,10 @@
 // @ts-nocheck
 import React from 'react';
 
-import '@/style/pages/RefundVendorCredit/RefundVendorCredit.scss';
+import '@bigcapital/webapp/style/pages/RefundVendorCredit/RefundVendorCredit.scss';
 
-import { RefundVendorCreditFormProvider } from './RefundVendorCreditFormProvider';
 import RefundVendorCreditForm from './RefundVendorCreditForm';
+import { RefundVendorCreditFormProvider } from './RefundVendorCreditFormProvider';
 
 export default function RefundVendorCreditDialogContent({
   // #ownProps

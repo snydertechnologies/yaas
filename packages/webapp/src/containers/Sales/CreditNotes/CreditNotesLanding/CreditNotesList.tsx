@@ -1,18 +1,18 @@
 // @ts-nocheck
 import React from 'react';
 
-import '@/style/pages/CreditNote/List.scss';
+import '@bigcapital/webapp/style/pages/CreditNote/List.scss';
 
-import { DashboardPageContent } from '@/components';
+import { DashboardPageContent } from '@bigcapital/webapp/components';
 import CreditNotesActionsBar from './CreditNotesActionsBar';
-import CreditNotesViewTabs from './CreditNotesViewTabs';
 import CreditNotesDataTable from './CreditNotesDataTable';
+import CreditNotesViewTabs from './CreditNotesViewTabs';
 
 import withCreditNotes from './withCreditNotes';
 import withCreditNotesActions from './withCreditNotesActions';
 
+import { compose, transformTableStateToQuery } from '@bigcapital/webapp/utils';
 import { CreditNotesListProvider } from './CreditNotesListProvider';
-import { transformTableStateToQuery, compose } from '@/utils';
 
 function CreditNotesList({
   // #withCreditNotes

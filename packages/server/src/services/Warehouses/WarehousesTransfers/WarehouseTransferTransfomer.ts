@@ -1,4 +1,4 @@
-import { Transformer } from '@/lib/Transformer/Transformer';
+import { Transformer } from '@bigcapital/server/lib/Transformer/Transformer';
 import { WarehouseTransferItemTransformer } from './WarehouseTransferItemTransformer';
 
 export class WarehouseTransferTransformer extends Transformer {

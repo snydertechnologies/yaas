@@ -1,14 +1,14 @@
+import { Card, DataTable } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import React from 'react';
-import { DataTable, Card } from '@/components';
 
-import { TableStyle } from '@/constants';
+import { TableStyle } from '@bigcapital/webapp/constants';
 
-import withAlertsActions from '@/containers/Alert/withAlertActions';
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
 import { useVendorCreditDetailDrawerContext } from '../VendorCreditDetailDrawerProvider';
-import { useRefundCreditTransactionsTableColumns, ActionsMenu } from './components';
+import { ActionsMenu, useRefundCreditTransactionsTableColumns } from './components';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Refund vendor transactions table.

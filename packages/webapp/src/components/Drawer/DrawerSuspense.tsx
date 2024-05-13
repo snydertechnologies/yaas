@@ -1,6 +1,6 @@
+import { DrawerLoading } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import React, { Suspense } from 'react';
-import { DrawerLoading } from '@/components';
 
 /**
  * Loading content.

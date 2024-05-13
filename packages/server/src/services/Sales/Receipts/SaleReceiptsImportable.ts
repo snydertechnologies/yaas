@@ -1,5 +1,5 @@
-import { ISaleReceiptDTO } from '@/interfaces';
-import { Importable } from '@/services/Import/Importable';
+import { ISaleReceiptDTO } from '@bigcapital/server/interfaces';
+import { Importable } from '@bigcapital/server/services/Import/Importable';
 import { Knex } from 'knex';
 import { Inject, Service } from 'typedi';
 import { CreateSaleReceipt } from './CreateSaleReceipt';

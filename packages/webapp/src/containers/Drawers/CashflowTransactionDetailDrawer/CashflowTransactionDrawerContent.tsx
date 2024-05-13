@@ -1,11 +1,11 @@
 // @ts-nocheck
 import React from 'react';
 
-import '@/style/components/Drawers/CashflowTransactionDrawer.scss';
+import '@bigcapital/webapp/style/components/Drawers/CashflowTransactionDrawer.scss';
 
-import { DrawerBody } from '@/components';
-import { CashflowTransactionDrawerProvider } from './CashflowTransactionDrawerProvider';
+import { DrawerBody } from '@bigcapital/webapp/components';
 import CashflowTransactionDrawerDetails from './CashflowTransactionDrawerDetails';
+import { CashflowTransactionDrawerProvider } from './CashflowTransactionDrawerProvider';
 
 /**
  * Cash flow transction drawer content.

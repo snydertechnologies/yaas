@@ -1,5 +1,5 @@
-import { IGeneralLedgerSheetQuery, IGeneralLedgerTableData } from '@/interfaces';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { IGeneralLedgerSheetQuery, IGeneralLedgerTableData } from '@bigcapital/server/interfaces';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject, Service } from 'typedi';
 import { GeneralLedgerService } from './GeneralLedgerService';
 import { GeneralLedgerTable } from './GeneralLedgerTable';

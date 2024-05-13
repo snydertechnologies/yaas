@@ -1,7 +1,7 @@
+import { DATATYPES_LENGTH } from '@bigcapital/webapp/constants/dataTypes';
+import intl from 'react-intl-universal';
 // @ts-nocheck
 import * as Yup from 'yup';
-import intl from 'react-intl-universal';
-import { DATATYPES_LENGTH } from '@/constants/dataTypes';
 
 const Schema = Yup.object().shape({
   journal_number: Yup.string().required().min(1).max(DATATYPES_LENGTH.STRING).label(intl.get('journal_number_')),

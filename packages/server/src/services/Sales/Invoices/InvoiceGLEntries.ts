@@ -1,8 +1,8 @@
-import { AccountNormal, IItemEntry, ILedger, ILedgerEntry, ISaleInvoice } from '@/interfaces';
-import Ledger from '@/services/Accounting/Ledger';
-import LedgerStorageService from '@/services/Accounting/LedgerStorageService';
-import ItemsEntriesService from '@/services/Items/ItemsEntriesService';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { AccountNormal, IItemEntry, ILedger, ILedgerEntry, ISaleInvoice } from '@bigcapital/server/interfaces';
+import Ledger from '@bigcapital/server/services/Accounting/Ledger';
+import LedgerStorageService from '@bigcapital/server/services/Accounting/LedgerStorageService';
+import ItemsEntriesService from '@bigcapital/server/services/Items/ItemsEntriesService';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Knex } from 'knex';
 import * as R from 'ramda';
 import { Inject, Service } from 'typedi';

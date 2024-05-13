@@ -1,14 +1,14 @@
+import { AppToaster, If, Stack } from '@bigcapital/webapp/components';
+import { Align } from '@bigcapital/webapp/constants';
+import { useCustomersTransactionsCsvExport, useCustomersTransactionsXlsxExport } from '@bigcapital/webapp/hooks/query';
+import { getColumnWidth } from '@bigcapital/webapp/utils';
+import { Classes, Intent, Menu, MenuItem, ProgressBar, Text } from '@blueprintjs/core';
+import classNames from 'classnames';
 // @ts-nocheck
 import React, { useRef } from 'react';
 import intl from 'react-intl-universal';
-import { AppToaster, If, Stack } from '@/components';
-import { Align } from '@/constants';
-import { getColumnWidth } from '@/utils';
-import { useCustomersTransactionsContext } from './CustomersTransactionsProvider';
 import FinancialLoadingBar from '../FinancialLoadingBar';
-import { Classes, Intent, Menu, MenuItem, ProgressBar, Text } from '@blueprintjs/core';
-import { useCustomersTransactionsCsvExport, useCustomersTransactionsXlsxExport } from '@/hooks/query';
-import classNames from 'classnames';
+import { useCustomersTransactionsContext } from './CustomersTransactionsProvider';
 
 /**
  * Retrieve customers transactions columns.

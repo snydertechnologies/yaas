@@ -1,4 +1,4 @@
-import type { ISystemUser } from '@/interfaces';
+import type { ISystemUser } from '@bigcapital/server/interfaces';
 import type { Knex } from 'knex';
 import type { IFilterRole } from './DynamicFilter';
 

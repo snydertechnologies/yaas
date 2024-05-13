@@ -1,23 +1,23 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Button, Intent, Tab, Tabs } from '@blueprintjs/core';
+import { Form, Formik } from 'formik';
+import moment from 'moment';
 // @ts-nocheck
 import React from 'react';
-import { Tabs, Tab, Button, Intent } from '@blueprintjs/core';
-import { FormattedMessage as T } from '@/components';
 import intl from 'react-intl-universal';
-import moment from 'moment';
 import * as Yup from 'yup';
-import { Formik, Form } from 'formik';
 
 import FinancialStatementHeader from '../FinancialStatementHeader';
-import CashFlowStatementGeneralPanel from './CashFlowStatementGeneralPanel';
 import CashFlowStatementDimensionsPanel from './CashFlowStatementDimensionsPanel';
+import CashFlowStatementGeneralPanel from './CashFlowStatementGeneralPanel';
 
 import withCashFlowStatement from './withCashFlowStatement';
 import withCashFlowStatementActions from './withCashFlowStatementActions';
 
+import { Features } from '@bigcapital/webapp/constants';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
+import { compose, transformToForm } from '@bigcapital/webapp/utils';
 import { getDefaultCashFlowSheetQuery } from './utils';
-import { compose, transformToForm } from '@/utils';
-import { useFeatureCan } from '@/hooks/state';
-import { Features } from '@/constants';
 
 /**
  * Cash flow statement header.

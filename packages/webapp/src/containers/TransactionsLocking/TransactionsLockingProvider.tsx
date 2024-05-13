@@ -1,8 +1,8 @@
+import { DashboardInsider } from '@bigcapital/webapp/components/Dashboard';
+import { useTransactionsLocking } from '@bigcapital/webapp/hooks/query';
+import { useWatchImmediate } from '@bigcapital/webapp/hooks/utils/useWatch';
 // @ts-nocheck
 import React from 'react';
-import { DashboardInsider } from '@/components/Dashboard';
-import { useTransactionsLocking } from '@/hooks/query';
-import { useWatchImmediate } from '@/hooks/utils/useWatch';
 
 const TransactionsLockingContext = React.createContext();
 

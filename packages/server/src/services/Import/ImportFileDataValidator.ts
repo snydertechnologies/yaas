@@ -1,5 +1,5 @@
-import { ServiceError } from '@/exceptions';
-import { IModelMeta } from '@/interfaces';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { IModelMeta } from '@bigcapital/server/interfaces';
 import { Service } from 'typedi';
 import { ERRORS, convertFieldsToYupValidation } from './_utils';
 import { ImportInsertError, ResourceMetaFieldsMap } from './interfaces';

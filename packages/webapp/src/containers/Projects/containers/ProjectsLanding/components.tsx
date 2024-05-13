@@ -3,10 +3,10 @@ import React from 'react';
 import intl from 'react-intl-universal';
 import styled from 'styled-components';
 
-import { Menu, MenuDivider, MenuItem, Tag, Intent, ProgressBar } from '@blueprintjs/core';
-import { Icon, FormatDate, Can, Choose, If, FormattedMessage as T } from '@/components';
-import { ProjectAction, AbilitySubject } from '@/constants/abilityOption';
-import { safeCallback, firstLettersArgs, calculateStatus } from '@/utils';
+import { Can, Choose, FormatDate, Icon, If, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { AbilitySubject, ProjectAction } from '@bigcapital/webapp/constants/abilityOption';
+import { calculateStatus, firstLettersArgs, safeCallback } from '@bigcapital/webapp/utils';
+import { Intent, Menu, MenuDivider, MenuItem, ProgressBar, Tag } from '@blueprintjs/core';
 
 /**
  * project status.

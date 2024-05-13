@@ -1,4 +1,4 @@
-import { IFilterRole } from '@/interfaces';
+import { IFilterRole } from '@bigcapital/server/interfaces';
 import DynamicFilterRoleAbstractor from './DynamicFilterRoleAbstractor';
 
 export default class FilterRoles extends DynamicFilterRoleAbstractor {

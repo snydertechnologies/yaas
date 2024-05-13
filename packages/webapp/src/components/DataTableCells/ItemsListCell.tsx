@@ -1,13 +1,13 @@
+import { Classes, FormGroup, Intent } from '@blueprintjs/core';
+import classNames from 'classnames';
 // @ts-nocheck
 import React, { useCallback, useRef } from 'react';
-import classNames from 'classnames';
-import { FormGroup, Classes, Intent } from '@blueprintjs/core';
 import intl from 'react-intl-universal';
 
-import { CellType } from '@/constants';
-import { ItemsSuggestField } from '@/components';
+import { ItemsSuggestField } from '@bigcapital/webapp/components';
+import { CellType } from '@bigcapital/webapp/constants';
 
-import { useCellAutoFocus } from '@/hooks';
+import { useCellAutoFocus } from '@bigcapital/webapp/hooks';
 
 /**
  * Items list cell.

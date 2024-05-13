@@ -1,7 +1,7 @@
-import type { IComputeItemCostJobCompletedPayload, IComputeItemCostJobStartedPayload } from '@/interfaces';
-import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';
-import InventoryService from '@/services/Inventory/Inventory';
-import events from '@/subscribers/events';
+import type { IComputeItemCostJobCompletedPayload, IComputeItemCostJobStartedPayload } from '@bigcapital/server/interfaces';
+import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
+import InventoryService from '@bigcapital/server/services/Inventory/Inventory';
+import events from '@bigcapital/server/subscribers/events';
 import { Container } from 'typedi';
 
 export default class ComputeItemCostJob {

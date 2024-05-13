@@ -1,8 +1,8 @@
-// @ts-nocheck
-import React from 'react';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
 import classNames from 'classnames';
 import { FastField } from 'formik';
-import { CLASSES } from '@/constants/classes';
+// @ts-nocheck
+import React from 'react';
 import PaymentMadeEntriesTable from './PaymentMadeEntriesTable';
 
 export default function PaymentMadeFormBody() {

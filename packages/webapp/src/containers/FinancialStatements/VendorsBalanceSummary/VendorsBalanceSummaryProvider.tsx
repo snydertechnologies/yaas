@@ -1,7 +1,7 @@
+import { useVendorsBalanceSummaryReport } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React from 'react';
 import FinancialReportPage from '../FinancialReportPage';
-import { useVendorsBalanceSummaryReport } from '@/hooks/query';
 import { transformFilterFormToQuery } from '../common';
 
 const VendorsBalanceSummaryContext = React.createContext();

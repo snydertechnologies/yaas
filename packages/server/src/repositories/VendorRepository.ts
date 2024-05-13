@@ -1,4 +1,4 @@
-import { Vendor } from 'models';
+import { Vendor } from '@bigcapital/server/models';
 import TenantRepository from './TenantRepository';
 
 export default class VendorRepository extends TenantRepository {

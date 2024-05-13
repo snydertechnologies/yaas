@@ -1,7 +1,7 @@
 // @ts-nocheck
 import React from 'react';
 
-import { CommercialDocBox } from '@/components';
+import { CommercialDocBox } from '@bigcapital/webapp/components';
 
 import InvoiceDetailHeader from './InvoiceDetailHeader';
 import InvoiceDetailTable from './InvoiceDetailTable';

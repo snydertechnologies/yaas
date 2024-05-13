@@ -1,17 +1,23 @@
-// @ts-nocheck
-import React from 'react';
-import { InputGroup, FormGroup, Position } from '@blueprintjs/core';
-import { FastField, ErrorMessage } from 'formik';
+import { FormGroup, InputGroup, Position } from '@blueprintjs/core';
 import { DateInput } from '@blueprintjs/datetime';
 import classNames from 'classnames';
+import { ErrorMessage, FastField } from 'formik';
+// @ts-nocheck
+import React from 'react';
 
-import { CLASSES } from '@/constants/classes';
-import { momentFormatter, inputIntent, handleDateChange, tansformDateValue } from '@/utils';
-import { Hint, FieldRequiredHint, Icon, CurrencySelectList, FormattedMessage as T } from '@/components';
+import {
+  CurrencySelectList,
+  FieldRequiredHint,
+  Hint,
+  Icon,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { handleDateChange, inputIntent, momentFormatter, tansformDateValue } from '@bigcapital/webapp/utils';
 import { useMakeJournalFormContext } from './MakeJournalProvider';
+import { MakeJournalTransactionNoField } from './MakeJournalTransactionNoField';
 import { JournalExchangeRateInputField } from './components';
 import { currenciesFieldShouldUpdate } from './utils';
-import { MakeJournalTransactionNoField } from './MakeJournalTransactionNoField';
 
 /**
  * Make journal entries header.

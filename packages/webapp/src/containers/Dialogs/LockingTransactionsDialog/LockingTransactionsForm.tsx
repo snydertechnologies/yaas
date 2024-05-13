@@ -1,20 +1,20 @@
-// @ts-nocheck
-import React from 'react';
-import moment from 'moment';
-import intl from 'react-intl-universal';
 import { Intent } from '@blueprintjs/core';
 import { Formik } from 'formik';
+import moment from 'moment';
+// @ts-nocheck
+import React from 'react';
+import intl from 'react-intl-universal';
 
-import '@/style/pages/TransactionsLocking/TransactionsLockingDialog.scss';
+import '@bigcapital/webapp/style/pages/TransactionsLocking/TransactionsLockingDialog.scss';
 
-import { AppToaster } from '@/components';
+import { AppToaster } from '@bigcapital/webapp/components';
 import { CreateLockingTransactionsFormSchema } from './LockingTransactionsForm.schema';
 
-import { useLockingTransactionsContext } from './LockingTransactionsFormProvider';
 import LockingTransactionsFormContent from './LockingTransactionsFormContent';
+import { useLockingTransactionsContext } from './LockingTransactionsFormProvider';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { compose, transformToForm } from '@/utils';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { compose, transformToForm } from '@bigcapital/webapp/utils';
 
 const defaultInitialValues = {
   module: '',

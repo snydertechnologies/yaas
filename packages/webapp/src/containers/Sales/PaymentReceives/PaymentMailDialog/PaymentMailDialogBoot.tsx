@@ -1,7 +1,7 @@
+import { DialogContent } from '@bigcapital/webapp/components';
+import { usePaymentReceiveDefaultOptions } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React, { createContext } from 'react';
-import { usePaymentReceiveDefaultOptions } from '@/hooks/query';
-import { DialogContent } from '@/components';
 
 interface PaymentMailDialogBootValues {
   paymentReceiveId: number;

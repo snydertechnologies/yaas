@@ -1,6 +1,6 @@
 // @ts-nocheck
-import { Align } from '@/constants';
-import { getColumnWidth } from '@/utils';
+import { Align } from '@bigcapital/webapp/constants';
+import { getColumnWidth } from '@bigcapital/webapp/utils';
 import * as R from 'ramda';
 import { useInventoryValuationContext } from './InventoryValuationProvider';
 

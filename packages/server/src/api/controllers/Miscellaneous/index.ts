@@ -1,5 +1,5 @@
-import BaseController from '@/api/controllers/BaseController';
-import DateFormatsService from '@/services/Miscellaneous/DateFormats';
+import BaseController from '@bigcapital/server/api/controllers/BaseController';
+import DateFormatsService from '@bigcapital/server/services/Miscellaneous/DateFormats';
 import { NextFunction, Request, Response, Router } from 'express';
 import { Inject, Service } from 'typedi';
 

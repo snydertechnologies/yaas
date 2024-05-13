@@ -1,4 +1,4 @@
-import config from '@/config';
+import config from '@bigcapital/server/config';
 import { NextFunction, Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
 import { Container } from 'typedi';

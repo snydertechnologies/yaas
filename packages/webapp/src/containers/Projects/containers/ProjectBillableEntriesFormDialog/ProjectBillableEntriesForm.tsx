@@ -1,14 +1,14 @@
 // @ts-nocheck
 
+import { AppToaster } from '@bigcapital/webapp/components';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { Formik } from 'formik';
 import React from 'react';
 import intl from 'react-intl-universal';
-import { Formik } from 'formik';
-import { AppToaster } from '@/components';
 import { ProjectBillableEntriesFormSchema } from './ProjectBillableEntriesForm.schema';
 import ProjectBillableEntriesFormContent from './ProjectBillableEntriesFormContent';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 const defaultInitialValues = {};
 

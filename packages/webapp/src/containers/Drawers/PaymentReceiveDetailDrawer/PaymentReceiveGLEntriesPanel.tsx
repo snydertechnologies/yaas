@@ -1,10 +1,10 @@
 // @ts-nocheck
 import styled from 'styled-components';
 
-import { Card } from '@/components';
+import { Card } from '@bigcapital/webapp/components';
 import JournalEntriesTable, { AmountDisplayedBaseCurrencyMessage } from '../../JournalEntriesTable/JournalEntriesTable';
 
-import { useTransactionsByReference } from '@/hooks/query';
+import { useTransactionsByReference } from '@bigcapital/webapp/hooks/query';
 import { usePaymentReceiveDetailContext } from './PaymentReceiveDetailProvider';
 
 /**

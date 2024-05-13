@@ -1,5 +1,5 @@
-import { TransactionsLockingGroup } from '@/interfaces';
-import TransactionsLockingValidator from '@/services/TransactionsLocking/TransactionsLockingGuard';
+import { TransactionsLockingGroup } from '@bigcapital/server/interfaces';
+import TransactionsLockingValidator from '@bigcapital/server/services/TransactionsLocking/TransactionsLockingGuard';
 import { Inject, Service } from 'typedi';
 
 @Service()

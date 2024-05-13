@@ -1,6 +1,6 @@
-import config from '@/config';
-import { ISystemUser } from '@/interfaces';
-import Mail from '@/lib/Mail';
+import config from '@bigcapital/server/config';
+import { ISystemUser } from '@bigcapital/server/interfaces';
+import Mail from '@bigcapital/server/lib/Mail';
 import { Service } from 'typedi';
 
 @Service()

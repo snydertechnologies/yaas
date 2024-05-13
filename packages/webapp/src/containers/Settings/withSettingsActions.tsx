@@ -1,6 +1,6 @@
+import { FetchOptions, addSettings, submitOptions } from '@bigcapital/webapp/store/settings/settings.actions';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { FetchOptions, submitOptions, addSettings } from '@/store/settings/settings.actions';
 
 export const mapDispatchToProps = (dispatch) => ({
   requestSubmitOptions: (form) => dispatch(submitOptions({ form })),

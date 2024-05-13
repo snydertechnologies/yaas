@@ -2,10 +2,10 @@ import { NextFunction, Request, Response, Router } from 'express';
 import { param } from 'express-validator';
 import { Inject, Service } from 'typedi';
 
-import BaseController from '@/api/controllers/BaseController';
-import { FeatureActivationGuard } from '@/api/middleware/FeatureActivationGuard';
-import { Features } from '@/interfaces';
-import { WarehousesApplication } from '@/services/Warehouses/WarehousesApplication';
+import BaseController from '@bigcapital/server/api/controllers/BaseController';
+import { FeatureActivationGuard } from '@bigcapital/server/api/middleware/FeatureActivationGuard';
+import { Features } from '@bigcapital/server/interfaces';
+import { WarehousesApplication } from '@bigcapital/server/services/Warehouses/WarehousesApplication';
 
 @Service()
 export class WarehousesItemController extends BaseController {

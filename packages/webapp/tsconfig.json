@@ -15,11 +15,8 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "incremental": true,
-    "paths": {
-      "@/*": ["./src/*"],
-      "@public/*": ["../public/*"]
-    }
+    "incremental": true
   },
+  "extends": "../../tsconfig.base.json",
   "include": ["src/**/*.ts", "src/**/*.tsx"]
 }

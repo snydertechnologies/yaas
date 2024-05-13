@@ -1,4 +1,4 @@
-import { ITransactionsByCustomersFilter } from '@/interfaces';
+import { ITransactionsByCustomersFilter } from '@bigcapital/server/interfaces';
 import { Inject } from 'typedi';
 import { TableSheetPdf } from '../TableSheetPdf';
 import { TransactionsByCustomersTableInjectable } from './TransactionsByCustomersTableInjectable';

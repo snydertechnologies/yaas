@@ -1,4 +1,4 @@
-import AuthenticationMailMesssages from '@/services/Authentication/AuthenticationMailMessages';
+import AuthenticationMailMesssages from '@bigcapital/server/services/Authentication/AuthenticationMailMessages';
 import { Container } from 'typedi';
 
 export default class ResetPasswordEmailJob {

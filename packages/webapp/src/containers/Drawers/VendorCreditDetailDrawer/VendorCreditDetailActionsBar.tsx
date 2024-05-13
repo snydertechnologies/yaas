@@ -2,18 +2,18 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
-import { Button, NavbarGroup, Classes, NavbarDivider, Intent } from '@blueprintjs/core';
+import { AbilitySubject, VendorCreditAction } from '@bigcapital/webapp/constants/abilityOption';
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
+import { Button, Classes, Intent, NavbarDivider, NavbarGroup } from '@blueprintjs/core';
 import { useVendorCreditDetailDrawerContext } from './VendorCreditDetailDrawerProvider';
 import { VendorCreditMenuItem } from './utils';
-import { VendorCreditAction, AbilitySubject } from '@/constants/abilityOption';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import withAlertsActions from '@/containers/Alert/withAlertActions';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
 
-import { If, Icon, FormattedMessage as T, DashboardActionsBar, Can } from '@/components';
+import { Can, DashboardActionsBar, Icon, If, FormattedMessage as T } from '@bigcapital/webapp/components';
 
-import { compose } from '@/utils';
-import { DRAWERS } from '@/constants/drawers';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Vendor credit detail actions bar.

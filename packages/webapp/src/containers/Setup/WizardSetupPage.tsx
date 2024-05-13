@@ -1,9 +1,9 @@
 // @ts-nocheck
 import React from 'react';
-import SetupRightSection from './SetupRightSection';
 import SetupLeftSection from './SetupLeftSection';
+import SetupRightSection from './SetupRightSection';
 
-import '@/style/pages/Setup/SetupPage.scss';
+import '@bigcapital/webapp/style/pages/Setup/SetupPage.scss';
 
 export default function WizardSetupPage() {
   return (

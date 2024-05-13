@@ -1,6 +1,6 @@
+import { useAbilityContext } from '@bigcapital/webapp/hooks';
 // @ts-nocheck
 import { isEmpty } from 'lodash';
-import { useAbilityContext } from '@/hooks';
 
 export const useFilterShortcutBoxesSection = (section) => {
   const ability = useAbilityContext();

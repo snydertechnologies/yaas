@@ -1,6 +1,6 @@
+import { checkRequiredProperties, defaultFastFieldShouldUpdate, uniqueMultiProps } from '@bigcapital/webapp/utils';
 // @ts-nocheck
 import intl from 'react-intl-universal';
-import { defaultFastFieldShouldUpdate, uniqueMultiProps, checkRequiredProperties } from '@/utils';
 
 // Conditions options.
 export const getConditionalsOptions = () => [

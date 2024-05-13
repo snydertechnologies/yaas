@@ -1,7 +1,7 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { AbilitySubject, ReportsAction } from '@bigcapital/webapp/constants/abilityOption';
 // @ts-nocheck
 import React from 'react';
-import { FormattedMessage as T } from '@/components';
-import { ReportsAction, AbilitySubject } from '@/constants/abilityOption';
 
 export const financialReportMenus = [
   {

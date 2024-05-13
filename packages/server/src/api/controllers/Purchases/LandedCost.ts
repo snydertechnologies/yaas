@@ -1,8 +1,8 @@
-import { ServiceError } from '@/exceptions';
-import AllocateLandedCost from '@/services/Purchases/LandedCost/AllocateLandedCost';
-import BillAllocatedCostTransactions from '@/services/Purchases/LandedCost/BillAllocatedLandedCostTransactions';
-import LandedCostTranasctions from '@/services/Purchases/LandedCost/LandedCostTransactions';
-import RevertAllocatedLandedCost from '@/services/Purchases/LandedCost/RevertAllocatedLandedCost';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import AllocateLandedCost from '@bigcapital/server/services/Purchases/LandedCost/AllocateLandedCost';
+import BillAllocatedCostTransactions from '@bigcapital/server/services/Purchases/LandedCost/BillAllocatedLandedCostTransactions';
+import LandedCostTranasctions from '@bigcapital/server/services/Purchases/LandedCost/LandedCostTransactions';
+import RevertAllocatedLandedCost from '@bigcapital/server/services/Purchases/LandedCost/RevertAllocatedLandedCost';
 import { NextFunction, Request, Response, Router } from 'express';
 import { check, param, query } from 'express-validator';
 import { Inject, Service } from 'typedi';

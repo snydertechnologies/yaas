@@ -1,10 +1,10 @@
 import crypto from 'crypto';
-import config from '@/config';
-import { ServiceError } from '@/exceptions';
-import { IAuthSignedUpEventPayload, IAuthSigningUpEventPayload, IRegisterDTO, ISystemUser } from '@/interfaces';
-import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';
-import events from '@/subscribers/events';
-import { hashPassword } from '@/utils';
+import config from '@bigcapital/server/config';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { IAuthSignedUpEventPayload, IAuthSigningUpEventPayload, IRegisterDTO, ISystemUser } from '@bigcapital/server/interfaces';
+import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
+import events from '@bigcapital/server/subscribers/events';
+import { hashPassword } from '@bigcapital/server/utils';
 import { defaultTo, isEmpty, omit } from 'lodash';
 import moment from 'moment';
 import { Inject } from 'typedi';

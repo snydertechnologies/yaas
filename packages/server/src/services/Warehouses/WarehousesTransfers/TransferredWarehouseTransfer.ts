@@ -1,13 +1,13 @@
-import { ServiceError } from '@/exceptions';
+import { ServiceError } from '@bigcapital/server/exceptions';
 import {
   IWarehouseTransfer,
   IWarehouseTransferTransferingPayload,
   IWarehouseTransferTransferredPayload,
-} from '@/interfaces';
-import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
-import UnitOfWork from '@/services/UnitOfWork';
-import events from '@/subscribers/events';
+} from '@bigcapital/server/interfaces';
+import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import UnitOfWork from '@bigcapital/server/services/UnitOfWork';
+import events from '@bigcapital/server/subscribers/events';
 import { Knex } from 'knex';
 import { Inject, Service } from 'typedi';
 import { CommandWarehouseTransfer } from './CommandWarehouseTransfer';

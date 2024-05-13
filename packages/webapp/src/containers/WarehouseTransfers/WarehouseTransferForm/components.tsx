@@ -1,7 +1,7 @@
+import { FormikObserver } from '@bigcapital/webapp/components';
+import { chain } from 'lodash';
 // @ts-nocheck
 import React from 'react';
-import { chain } from 'lodash';
-import { FormikObserver } from '@/components';
 import { useWarehouseTransferFormContext } from './WarehouseTransferFormProvider';
 
 export function WarehouseTransferObserveItemsCost() {

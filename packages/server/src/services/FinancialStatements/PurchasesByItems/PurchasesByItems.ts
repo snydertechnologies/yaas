@@ -1,13 +1,13 @@
-import { IAccountTransaction, IItem } from '@/interfaces';
+import { IAccountTransaction, IItem } from '@bigcapital/server/interfaces';
 import {
   IPurchasesByItemsItem,
   IPurchasesByItemsReportQuery,
   IPurchasesByItemsSheetData,
   IPurchasesByItemsTotal,
-} from '@/interfaces/PurchasesByItemsSheet';
+} from '@bigcapital/server/interfaces/PurchasesByItemsSheet';
+import { allPassedConditionsPass, transformToMap } from '@bigcapital/server/utils';
 import { get, isEmpty, sumBy } from 'lodash';
 import * as R from 'ramda';
-import { allPassedConditionsPass, transformToMap } from 'utils';
 import FinancialSheet from '../FinancialSheet';
 
 export class PurchasesByItems extends FinancialSheet {

@@ -1,9 +1,9 @@
+import { DrawerHeaderContent, DrawerLoading } from '@bigcapital/webapp/components';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import { useInventoryAdjustment } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { DrawerHeaderContent, DrawerLoading } from '@/components';
-import { useInventoryAdjustment } from '@/hooks/query';
-import { DRAWERS } from '@/constants/drawers';
 
 const InventoryAdjustmentDrawerContext = React.createContext();
 

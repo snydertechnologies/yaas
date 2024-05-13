@@ -1,11 +1,11 @@
+import { Can, EmptyStatus, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { AbilitySubject, ProjectAction } from '@bigcapital/webapp/constants/abilityOption';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { Button, Intent } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Button, Intent } from '@blueprintjs/core';
-import { EmptyStatus, Can, FormattedMessage as T } from '@/components';
-import { ProjectAction, AbilitySubject } from '@/constants/abilityOption';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 function ProjectsEmptyStatus({
   // #withDialogActions

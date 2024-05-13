@@ -1,14 +1,14 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Button, Intent, Menu, MenuDivider, MenuItem, Popover, Position, Tag } from '@blueprintjs/core';
+import clsx from 'classnames';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import clsx from 'classnames';
-import { FormattedMessage as T } from '@/components';
-import { Position, Menu, MenuItem, MenuDivider, Intent, Popover, Tag, Button } from '@blueprintjs/core';
 
-import { CLASSES } from '@/constants/classes';
-import { safeCallback } from '@/utils';
-import { FormatDateCell, Choose, Money, Icon, If, Can } from '@/components';
-import { SaleReceiptAction, AbilitySubject } from '@/constants/abilityOption';
+import { Can, Choose, FormatDateCell, Icon, If, Money } from '@bigcapital/webapp/components';
+import { AbilitySubject, SaleReceiptAction } from '@bigcapital/webapp/constants/abilityOption';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { safeCallback } from '@bigcapital/webapp/utils';
 
 /**
  * Receipts table row actions menu.

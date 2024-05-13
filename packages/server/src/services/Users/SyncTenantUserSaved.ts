@@ -1,6 +1,6 @@
-import { ITenantUserActivatedPayload, ITenantUserEditedPayload, ITenantUserInactivatedPayload } from '@/interfaces';
-import events from '@/subscribers/events';
-import { SystemUser } from '@/system/models';
+import { ITenantUserActivatedPayload, ITenantUserEditedPayload, ITenantUserInactivatedPayload } from '@bigcapital/server/interfaces';
+import events from '@bigcapital/server/subscribers/events';
+import { SystemUser } from '@bigcapital/server/system/models';
 import { pick } from 'lodash';
 
 export default class SyncTenantUserMutate {

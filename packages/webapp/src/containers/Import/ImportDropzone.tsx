@@ -1,6 +1,6 @@
 // @ts-nocheck
 import { Field } from 'formik';
-import { Box, Group, Stack } from '@/components';
+import { Box, Group, Stack } from '@bigcapital/webapp/components';
 import styles from './ImportDropzone.module.css';
 import { ImportDropzoneField } from './ImportDropzoneFile';
 import { useAlertsManager } from './AlertsManager';

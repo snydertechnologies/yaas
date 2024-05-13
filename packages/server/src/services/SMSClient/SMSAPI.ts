@@ -1,4 +1,4 @@
-import SMSClientInterface from '@/services/SMSClient/SMSClientInterface';
+import SMSClientInterface from '@bigcapital/server/services/SMSClient/SMSClientInterface';
 import { Container } from 'typedi';
 
 export default class SMSAPI {

@@ -1,13 +1,13 @@
+import { Button, Classes, Intent, NavbarGroup } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Button, NavbarGroup, Classes, Intent } from '@blueprintjs/core';
 
-import withAlertsActions from '@/containers/Alert/withAlertActions';
+import { Can, DrawerActionsBar, Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { AbilitySubject, VendorCreditAction } from '@bigcapital/webapp/constants/abilityOption';
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
 import { useRefundVendorCreditNoteDrawerContext } from './RefundVendorCreditDrawerProvider';
-import { Icon, DrawerActionsBar, FormattedMessage as T, Can } from '@/components';
-import { VendorCreditAction, AbilitySubject } from '@/constants/abilityOption';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Refund vendor credit actions bar.

@@ -1,23 +1,23 @@
-// @ts-nocheck
-import React from 'react';
-import * as R from 'ramda';
-import moment from 'moment';
-import intl from 'react-intl-universal';
-import { Intent } from '@blueprintjs/core';
-import { sumBy, setWith, toSafeInteger, get, first } from 'lodash';
+import { AppToaster } from '@bigcapital/webapp/components';
+import { useCurrentOrganization } from '@bigcapital/webapp/hooks/state';
 import {
-  updateTableCell,
-  repeatValue,
-  transformToForm,
   defaultFastFieldShouldUpdate,
   ensureEntriesHasEmptyLine,
   formattedAmount,
+  repeatValue,
   safeSumBy,
-} from '@/utils';
-import { AppToaster } from '@/components';
+  transformToForm,
+  updateTableCell,
+} from '@bigcapital/webapp/utils';
+import { Intent } from '@blueprintjs/core';
 import { useFormikContext } from 'formik';
+import { first, get, setWith, sumBy, toSafeInteger } from 'lodash';
+import moment from 'moment';
+import * as R from 'ramda';
+// @ts-nocheck
+import React from 'react';
+import intl from 'react-intl-universal';
 import { useMakeJournalFormContext } from './MakeJournalProvider';
-import { useCurrentOrganization } from '@/hooks/state';
 
 const ERROR = {
   JOURNAL_NUMBER_ALREADY_EXISTS: 'JOURNAL.NUMBER.ALREADY.EXISTS',

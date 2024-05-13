@@ -1,24 +1,24 @@
 // @ts-nocheck
 import React from 'react';
 
+import { Button, Intent, Tab, Tabs } from '@blueprintjs/core';
+import { Form, Formik } from 'formik';
 import moment from 'moment';
-import { Formik, Form } from 'formik';
-import { Tabs, Tab, Button, Intent } from '@blueprintjs/core';
 import styled from 'styled-components';
 
-import { FormattedMessage as T } from '@/components';
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
 
 import FinancialStatementHeader from '../FinancialStatementHeader';
-import InventoryItemDetailsHeaderGeneralPanel from './InventoryItemDetailsHeaderGeneralPanel';
 import InventoryItemDetailsHeaderDimensionsPanel from './InventoryItemDetailsHeaderDimensionsPanel';
+import InventoryItemDetailsHeaderGeneralPanel from './InventoryItemDetailsHeaderGeneralPanel';
 
 import withInventoryItemDetails from './withInventoryItemDetails';
 import withInventoryItemDetailsActions from './withInventoryItemDetailsActions';
 
+import { Features } from '@bigcapital/webapp/constants';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
+import { compose, transformToForm } from '@bigcapital/webapp/utils';
 import { getInventoryItemDetailsDefaultQuery, getInventoryItemDetailsQuerySchema } from './utils2';
-import { compose, transformToForm } from '@/utils';
-import { useFeatureCan } from '@/hooks/state';
-import { Features } from '@/constants';
 
 /**
  * Inventory item details header.

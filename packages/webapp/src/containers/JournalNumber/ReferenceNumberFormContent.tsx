@@ -1,10 +1,10 @@
+import { FormGroup, InputGroup, Radio } from '@blueprintjs/core';
+import { FastField, useFormikContext } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { FastField, useFormikContext } from 'formik';
-import { FormGroup, InputGroup, Radio } from '@blueprintjs/core';
 
-import { FormattedMessage as T, Row, Col, ErrorMessage } from '@/components';
-import { inputIntent } from '@/utils';
+import { Col, ErrorMessage, Row, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { inputIntent } from '@bigcapital/webapp/utils';
 
 /**
  * Reference number form content.

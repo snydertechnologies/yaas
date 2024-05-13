@@ -1,7 +1,7 @@
+import { Box } from '@bigcapital/webapp/components';
+import { useImportFileMeta } from '@bigcapital/webapp/hooks/query/import';
 import { Spinner } from '@blueprintjs/core';
 import React, { createContext, useContext } from 'react';
-import { Box } from '@/components';
-import { useImportFileMeta } from '@/hooks/query/import';
 
 interface ImportFileMapBootContextValue {}
 

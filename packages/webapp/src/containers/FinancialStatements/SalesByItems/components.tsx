@@ -1,13 +1,13 @@
+import { Classes } from '@blueprintjs/core';
+import classNames from 'classnames';
 // @ts-nocheck
 import { useRef } from 'react';
-import classNames from 'classnames';
-import { Classes } from '@blueprintjs/core';
 
-import { AppToaster, If, Stack } from '@/components';
-import { useSalesByItemsContext } from './SalesByItemProvider';
-import FinancialLoadingBar from '../FinancialLoadingBar';
+import { AppToaster, If, Stack } from '@bigcapital/webapp/components';
+import { useSalesByItemsCsvExport, useSalesByItemsXlsxExport } from '@bigcapital/webapp/hooks/query';
 import { Intent, Menu, MenuItem, ProgressBar, Text } from '@blueprintjs/core';
-import { useSalesByItemsCsvExport, useSalesByItemsXlsxExport } from '@/hooks/query';
+import FinancialLoadingBar from '../FinancialLoadingBar';
+import { useSalesByItemsContext } from './SalesByItemProvider';
 
 /**
  * sales by items progress loading bar.

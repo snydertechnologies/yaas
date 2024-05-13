@@ -1,8 +1,8 @@
+import { Align } from '@bigcapital/webapp/constants';
 // @ts-nocheck
-import { getColumnWidth } from '@/utils';
+import { getColumnWidth } from '@bigcapital/webapp/utils';
 import * as R from 'ramda';
 import { useGeneralLedgerContext } from './GeneralLedgerProvider';
-import { Align } from '@/constants';
 
 const getTableCellValueAccessor = (index) => `cells[${index}].value`;
 

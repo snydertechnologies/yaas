@@ -1,21 +1,21 @@
+import { Button, Intent, Tab, Tabs } from '@blueprintjs/core';
+import { Form, Formik } from 'formik';
+import moment from 'moment';
 // @ts-nocheck
 import React from 'react';
-import moment from 'moment';
 import styled from 'styled-components';
-import { Formik, Form } from 'formik';
-import { Tabs, Tab, Button, Intent } from '@blueprintjs/core';
 
-import { FormattedMessage as T } from '@/components';
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
 
-import FinancialStatementHeader from '@/containers/FinancialStatements/FinancialStatementHeader';
-import InventoryValuationHeaderGeneralPanel from './InventoryValuationHeaderGeneralPanel';
+import FinancialStatementHeader from '@bigcapital/webapp/containers/FinancialStatements/FinancialStatementHeader';
 import InventoryValuationHeaderDimensionsPanel from './InventoryValuationHeaderDimensionsPanel';
+import InventoryValuationHeaderGeneralPanel from './InventoryValuationHeaderGeneralPanel';
 import withInventoryValuation from './withInventoryValuation';
 import withInventoryValuationActions from './withInventoryValuationActions';
 
-import { compose, transformToForm } from '@/utils';
-import { useFeatureCan } from '@/hooks/state';
-import { Features } from '@/constants';
+import { Features } from '@bigcapital/webapp/constants';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
+import { compose, transformToForm } from '@bigcapital/webapp/utils';
 import { getInventoryValuationQuery, getInventoryValuationQuerySchema } from './utils';
 
 /**

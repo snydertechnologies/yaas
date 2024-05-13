@@ -1,5 +1,5 @@
-import { IAuthGetMetaPOJO, IPasswordReset, IRegisterDTO, ISystemUser } from '@/interfaces';
-import { SystemUser } from '@/system/models';
+import { IAuthGetMetaPOJO, IPasswordReset, IRegisterDTO, ISystemUser } from '@bigcapital/server/interfaces';
+import { SystemUser } from '@bigcapital/server/system/models';
 import { Inject, Service } from 'typedi';
 import { AuthSendResetPassword } from './AuthSendResetPassword';
 import { AuthSigninService } from './AuthSignin';

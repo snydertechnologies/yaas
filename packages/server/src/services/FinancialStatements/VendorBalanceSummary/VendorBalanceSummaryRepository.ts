@@ -1,6 +1,6 @@
-import { ACCOUNT_TYPE } from '@/data/AccountTypes';
-import { IAccount, IVendor } from '@/interfaces';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { ACCOUNT_TYPE } from '@bigcapital/server/data/AccountTypes';
+import { IAccount, IVendor } from '@bigcapital/server/interfaces';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { isEmpty, map } from 'lodash';
 import { Inject, Service } from 'typedi';
 

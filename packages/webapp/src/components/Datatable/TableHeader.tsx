@@ -1,8 +1,8 @@
+import { If, MaterialProgressBar } from '@bigcapital/webapp/components';
+import classNames from 'classnames';
 // @ts-nocheck
 import React, { useContext } from 'react';
-import classNames from 'classnames';
 import { ScrollSyncPane } from 'react-scroll-sync';
-import { If, MaterialProgressBar } from '@/components';
 import TableContext from './TableContext';
 
 function TableHeaderCell({ column, index }) {

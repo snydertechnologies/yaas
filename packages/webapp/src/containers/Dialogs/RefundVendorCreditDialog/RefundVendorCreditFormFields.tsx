@@ -1,34 +1,34 @@
+import {
+  AccountsSuggestField,
+  BranchSelect,
+  BranchSelectButton,
+  Col,
+  ExchangeRateMutedField,
+  FeatureCan,
+  FieldRequiredHint,
+  Icon,
+  If,
+  InputPrependText,
+  MoneyInputGroup,
+  Row,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import { ACCOUNT_TYPE, Features } from '@bigcapital/webapp/constants';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import withCurrentOrganization from '@bigcapital/webapp/containers/Organization/withCurrentOrganization';
+import { useAutofocus } from '@bigcapital/webapp/hooks';
+import { compose, handleDateChange, inputIntent, momentFormatter, tansformDateValue } from '@bigcapital/webapp/utils';
+import { Classes, ControlGroup, FormGroup, InputGroup, Position, TextArea } from '@blueprintjs/core';
+import { DateInput } from '@blueprintjs/datetime';
+import classNames from 'classnames';
+import { ErrorMessage, FastField, useFormikContext } from 'formik';
+import { isEqual } from 'lodash';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
 import styled from 'styled-components';
-import { FastField, ErrorMessage, useFormikContext } from 'formik';
-import { Classes, FormGroup, InputGroup, TextArea, Position, ControlGroup } from '@blueprintjs/core';
-import classNames from 'classnames';
-import { CLASSES } from '@/constants/classes';
-import { DateInput } from '@blueprintjs/datetime';
-import { isEqual } from 'lodash';
-import {
-  Icon,
-  Col,
-  Row,
-  If,
-  FieldRequiredHint,
-  AccountsSuggestField,
-  InputPrependText,
-  MoneyInputGroup,
-  FormattedMessage as T,
-  ExchangeRateMutedField,
-  BranchSelect,
-  BranchSelectButton,
-  FeatureCan,
-} from '@/components';
-import { inputIntent, momentFormatter, tansformDateValue, handleDateChange, compose } from '@/utils';
-import { useAutofocus } from '@/hooks';
-import { Features, ACCOUNT_TYPE } from '@/constants';
-import { useSetPrimaryBranchToForm } from './utils';
 import { useRefundVendorCreditContext } from './RefundVendorCreditFormProvider';
-import withCurrentOrganization from '@/containers/Organization/withCurrentOrganization';
+import { useSetPrimaryBranchToForm } from './utils';
 
 /**
  * Refund Vendor credit form fields.

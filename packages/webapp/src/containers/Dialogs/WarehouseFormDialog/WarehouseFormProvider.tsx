@@ -1,7 +1,7 @@
+import { DialogContent } from '@bigcapital/webapp/components';
+import { useCreateWarehouse, useEditWarehouse, useWarehouse } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React from 'react';
-import { DialogContent } from '@/components';
-import { useCreateWarehouse, useEditWarehouse, useWarehouse } from '@/hooks/query';
 
 const WarehouseFormContext = React.createContext();
 

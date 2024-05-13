@@ -1,9 +1,9 @@
-// @ts-nocheck
-import { connect } from 'react-redux';
 import {
   getWarehouseTransfersTableStateFactory,
   isWarehouseTransferTableStateChangedFactory,
-} from '@/store/WarehouseTransfer/warehouseTransfer.selector';
+} from '@bigcapital/webapp/store/WarehouseTransfer/warehouseTransfer.selector';
+// @ts-nocheck
+import { connect } from 'react-redux';
 
 export default (mapState) => {
   const getWarehouseTransferTableState = getWarehouseTransfersTableStateFactory();

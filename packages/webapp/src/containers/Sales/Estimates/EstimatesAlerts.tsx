@@ -1,10 +1,18 @@
 // @ts-nocheck
 import React from 'react';
 
-const EstimateDeleteAlert = React.lazy(() => import('@/containers/Alerts/Estimates/EstimateDeleteAlert'));
-const EstimateDeliveredAlert = React.lazy(() => import('@/containers/Alerts/Estimates/EstimateDeliveredAlert'));
-const EstimateApproveAlert = React.lazy(() => import('@/containers/Alerts/Estimates/EstimateApproveAlert'));
-const EstimateRejectAlert = React.lazy(() => import('@/containers/Alerts/Estimates/EstimateRejectAlert'));
+const EstimateDeleteAlert = React.lazy(
+  () => import('@bigcapital/webapp/containers/Alerts/Estimates/EstimateDeleteAlert'),
+);
+const EstimateDeliveredAlert = React.lazy(
+  () => import('@bigcapital/webapp/containers/Alerts/Estimates/EstimateDeliveredAlert'),
+);
+const EstimateApproveAlert = React.lazy(
+  () => import('@bigcapital/webapp/containers/Alerts/Estimates/EstimateApproveAlert'),
+);
+const EstimateRejectAlert = React.lazy(
+  () => import('@bigcapital/webapp/containers/Alerts/Estimates/EstimateRejectAlert'),
+);
 
 /**
  * Estimates alert.

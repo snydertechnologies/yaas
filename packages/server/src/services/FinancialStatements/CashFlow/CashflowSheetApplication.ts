@@ -1,4 +1,4 @@
-import { ICashFlowStatementQuery } from '@/interfaces';
+import { ICashFlowStatementQuery } from '@bigcapital/server/interfaces';
 import { Inject, Service } from 'typedi';
 import CashFlowStatementService from './CashFlowService';
 import { CashflowExportInjectable } from './CashflowExportInjectable';

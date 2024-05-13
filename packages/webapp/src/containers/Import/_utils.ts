@@ -3,7 +3,7 @@ import { useMemo } from 'react';
 import { chain, isEmpty, lowerCase, head, last, set, get, assign } from 'lodash';
 import { EntityColumn, SheetColumn, useImportFileContext } from './ImportFileProvider';
 import { useImportFileMapBootContext } from './ImportFileMappingBoot';
-import { deepdash, transformToForm } from '@/utils';
+import { deepdash, transformToForm } from '@bigcapital/webapp/utils';
 import { ImportFileMappingFormValues } from './_types';
 
 export const getFieldKey = (key: string, group = '') => {

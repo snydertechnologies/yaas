@@ -1,12 +1,19 @@
+import {
+  Col,
+  CustomersMultiSelect,
+  FFormGroup,
+  FieldHint,
+  Row,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import { handleDateChange, inputIntent, momentFormatter, tansformDateValue } from '@bigcapital/webapp/utils';
+import { Checkbox, FormGroup, Position } from '@blueprintjs/core';
+import { DateInput } from '@blueprintjs/datetime';
 // @ts-nocheck
 import { FastField } from 'formik';
-import { DateInput } from '@blueprintjs/datetime';
-import { FormGroup, Position, Checkbox } from '@blueprintjs/core';
-import { FormattedMessage as T, Row, Col, FieldHint, CustomersMultiSelect, FFormGroup } from '@/components';
-import { momentFormatter, tansformDateValue, inputIntent, handleDateChange } from '@/utils';
+import FinancialStatementsFilter from '../FinancialStatementsFilter';
 import { filterCustomersOptions } from '../constants';
 import { useCustomersBalanceSummaryGeneralContext } from './CustomersBalanceSummaryGeneralProvider';
-import FinancialStatementsFilter from '../FinancialStatementsFilter';
 
 /**
  * Customers balance header - General panel - Content

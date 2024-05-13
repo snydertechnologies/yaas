@@ -1,13 +1,13 @@
-// @ts-nocheck
-import React from 'react';
 import classNames from 'classnames';
 import { get } from 'lodash';
+// @ts-nocheck
+import React from 'react';
 
-import '@/style/pages/Subscription/PlanPeriodRadio.scss';
+import '@bigcapital/webapp/style/pages/Subscription/PlanPeriodRadio.scss';
 
-import withPlan from '@/containers/Subscriptions/withPlan';
+import withPlan from '@bigcapital/webapp/containers/Subscriptions/withPlan';
 
-import { saveInvoke, compose } from '@/utils';
+import { compose, saveInvoke } from '@bigcapital/webapp/utils';
 
 /**
  * Billing period.

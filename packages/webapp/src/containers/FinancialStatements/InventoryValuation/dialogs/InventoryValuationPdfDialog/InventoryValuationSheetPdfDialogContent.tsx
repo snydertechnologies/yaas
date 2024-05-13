@@ -1,6 +1,6 @@
 // @ts-nocheck
-import { DialogContent, PdfDocumentPreview, FormattedMessage as T } from '@/components';
-import { useInventoryValuationPdf } from '@/hooks/query';
+import { DialogContent, PdfDocumentPreview, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { useInventoryValuationPdf } from '@bigcapital/webapp/hooks/query';
 import { AnchorButton } from '@blueprintjs/core';
 import { useInventoryValuationContext } from '../../InventoryValuationProvider';
 

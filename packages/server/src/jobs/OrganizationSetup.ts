@@ -1,4 +1,4 @@
-import OrganizationService from '@/services/Organization/OrganizationService';
+import OrganizationService from '@bigcapital/server/services/Organization/OrganizationService';
 import { Container } from 'typedi';
 
 export default class OrganizationSetupJob {

@@ -1,5 +1,5 @@
-import { ServiceError } from '@/exceptions';
-import { IModelMeta, IModelMetaColumn } from '@/interfaces';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { IModelMeta, IModelMetaColumn } from '@bigcapital/server/interfaces';
 import { get } from 'lodash';
 import * as R from 'ramda';
 import { Inject, Service } from 'typedi';

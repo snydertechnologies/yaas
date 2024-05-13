@@ -1,7 +1,7 @@
 // @ts-nocheck
 import React, { createContext, useContext } from 'react';
 
-import { useAccounts } from '@/hooks/query';
+import { useAccounts } from '@bigcapital/webapp/hooks/query';
 import { FinancialHeaderLoadingSkeleton } from '../FinancialHeaderLoadingSkeleton';
 
 const GLHeaderGeneralPanelContext = createContext();

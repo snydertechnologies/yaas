@@ -1,23 +1,30 @@
+import { DashboardActionsBar, DashboardRowsHeightButton, FormattedMessage as T } from '@bigcapital/webapp/components';
+import {
+  AdvancedFilterPopover,
+  Can,
+  DashboardActionViewsList,
+  DashboardFilterButton,
+  Icon,
+  If,
+} from '@bigcapital/webapp/components';
+import { Alignment, Button, Classes, Intent, NavbarDivider, NavbarGroup, Switch } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { NavbarGroup, NavbarDivider, Button, Classes, Intent, Switch, Alignment } from '@blueprintjs/core';
-import { DashboardActionsBar, DashboardRowsHeightButton, FormattedMessage as T } from '@/components';
-import { If, Can, Icon, DashboardActionViewsList, AdvancedFilterPopover, DashboardFilterButton } from '@/components';
 
-import { ItemAction, AbilitySubject } from '@/constants/abilityOption';
+import { AbilitySubject, ItemAction } from '@bigcapital/webapp/constants/abilityOption';
+import { useRefreshItems } from '@bigcapital/webapp/hooks/query/items';
 import { useItemsListContext } from './ItemsListProvider';
-import { useRefreshItems } from '@/hooks/query/items';
 
+import withAlertActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import withSettingsActions from '@bigcapital/webapp/containers/Settings/withSettingsActions';
+import withDialogActions from '../Dialog/withDialogActions';
 import withItems from './withItems';
 import withItemsActions from './withItemsActions';
-import withAlertActions from '@/containers/Alert/withAlertActions';
-import withSettings from '@/containers/Settings/withSettings';
-import withSettingsActions from '@/containers/Settings/withSettingsActions';
-import withDialogActions from '../Dialog/withDialogActions';
 
-import { DialogsName } from '@/constants/dialogs';
-import { compose } from '@/utils';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Items actions bar.

@@ -1,6 +1,6 @@
 // @ts-nocheck
-import { downloadFile } from '@/hooks/useDownloadFile';
-import useApiRequest from '@/hooks/useRequest';
+import { downloadFile } from '@bigcapital/webapp/hooks/useDownloadFile';
+import useApiRequest from '@bigcapital/webapp/hooks/useRequest';
 import { AxiosError } from 'axios';
 import { useMutation } from 'react-query';
 

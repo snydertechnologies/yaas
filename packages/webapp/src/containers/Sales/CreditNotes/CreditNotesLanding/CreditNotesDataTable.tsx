@@ -2,24 +2,29 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
-import { TABLES } from '@/constants/tables';
-import { DataTable, DashboardContentTable, TableSkeletonRows, TableSkeletonHeader } from '@/components';
-import { useMemorizedColumnsWidths } from '@/hooks';
+import {
+  DashboardContentTable,
+  DataTable,
+  TableSkeletonHeader,
+  TableSkeletonRows,
+} from '@bigcapital/webapp/components';
+import { TABLES } from '@bigcapital/webapp/constants/tables';
+import { useMemorizedColumnsWidths } from '@bigcapital/webapp/hooks';
 
 import CreditNoteEmptyStatus from './CreditNotesEmptyStatus';
 
-import withDashboardActions from '@/containers/Dashboard/withDashboardActions';
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDashboardActions from '@bigcapital/webapp/containers/Dashboard/withDashboardActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
 import withCreditNotesActions from './withCreditNotesActions';
-import withAlertsActions from '@/containers/Alert/withAlertActions';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import withSettings from '@/containers/Settings/withSettings';
 
-import { useCreditNoteTableColumns, ActionsMenu } from './components';
 import { useCreditNoteListContext } from './CreditNotesListProvider';
+import { ActionsMenu, useCreditNoteTableColumns } from './components';
 
-import { compose } from '@/utils';
-import { DRAWERS } from '@/constants/drawers';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Credit note data table.

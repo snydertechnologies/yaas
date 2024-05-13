@@ -1,7 +1,7 @@
 // @ts-nocheck
 import React from 'react';
 
-import { DrawerBody } from '@/components';
+import { DrawerBody } from '@bigcapital/webapp/components';
 import PaymentMadeDetails from './PaymentMadeDetails';
 import { PaymentMadeDetailProvider } from './PaymentMadeDetailProvider';
 

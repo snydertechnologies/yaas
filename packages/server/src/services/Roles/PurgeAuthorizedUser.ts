@@ -1,4 +1,4 @@
-import events from '@/subscribers/events';
+import events from '@bigcapital/server/subscribers/events';
 import { Service } from 'typedi';
 import { ABILITIES_CACHE } from '../../api/middleware/AuthorizationMiddleware';
 

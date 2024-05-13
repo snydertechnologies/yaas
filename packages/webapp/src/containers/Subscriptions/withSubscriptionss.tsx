@@ -1,9 +1,9 @@
+import {
+  isSubscriptionsActiveFactory,
+  isSubscriptionsInactiveFactory,
+} from '@bigcapital/webapp/store/subscription/subscription.selectors';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import {
-  isSubscriptionsInactiveFactory,
-  isSubscriptionsActiveFactory,
-} from '@/store/subscription/subscription.selectors';
 
 export default (mapState) => {
   const isSubscriptionsInactive = isSubscriptionsInactiveFactory();

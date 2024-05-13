@@ -1,10 +1,10 @@
 // @ts-nocheck
 
-import { Stepper } from '@/components/Stepper';
-import { ImportFileUploadStep } from './ImportFileUploadStep';
-import { useImportFileContext } from './ImportFileProvider';
+import { Stepper } from '@bigcapital/webapp/components/Stepper';
 import { ImportFileMapping } from './ImportFileMapping';
 import { ImportFilePreview } from './ImportFilePreview';
+import { useImportFileContext } from './ImportFileProvider';
+import { ImportFileUploadStep } from './ImportFileUploadStep';
 import styles from './ImportStepper.module.scss';
 
 export function ImportStepper() {

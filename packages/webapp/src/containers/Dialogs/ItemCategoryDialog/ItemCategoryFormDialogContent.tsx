@@ -1,9 +1,9 @@
 // @ts-nocheck
 import React from 'react';
-import { ItemCategoryProvider } from './ItemCategoryProvider';
 import ItemCategoryForm from './ItemCategoryForm';
+import { ItemCategoryProvider } from './ItemCategoryProvider';
 
-import '@/style/pages/ItemCategory/ItemCategoryDialog.scss';
+import '@bigcapital/webapp/style/pages/ItemCategory/ItemCategoryDialog.scss';
 
 /**
  * Item Category form dialog content.

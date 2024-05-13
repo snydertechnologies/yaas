@@ -2,7 +2,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { T, TotalLines, TotalLine, TotalLineBorderStyle, TotalLineTextStyle } from '@/components';
+import { T, TotalLine, TotalLineBorderStyle, TotalLineTextStyle, TotalLines } from '@bigcapital/webapp/components';
 import { useVendorCreditDetailDrawerContext } from './VendorCreditDetailDrawerProvider';
 
 /**

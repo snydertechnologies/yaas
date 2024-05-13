@@ -1,8 +1,8 @@
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import classNames from 'classnames';
+import { FastField } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { FastField } from 'formik';
-import { CLASSES } from '@/constants/classes';
-import classNames from 'classnames';
 import AllocateLandedCostEntriesTable from './AllocateLandedCostEntriesTable';
 
 export default function AllocateLandedCostFormBody() {

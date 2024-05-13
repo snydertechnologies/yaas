@@ -1,20 +1,20 @@
+import classNames from 'classnames';
 // @ts-nocheck
 import React, { useCallback } from 'react';
-import classNames from 'classnames';
 
-import { CLASSES } from '@/constants/classes';
-import { DataTableEditable } from '@/components';
+import { DataTableEditable } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
 
+import { useUncontrolled } from '@bigcapital/webapp/hooks/useUncontrolled';
+import { ItemEntry } from '@bigcapital/webapp/interfaces/ItemEntries';
+import { ItemEntriesTableProvider, useItemEntriesTableContext } from './ItemEntriesTableProvider';
 import { useEditableItemsEntriesColumns } from './components';
 import {
-  useFetchItemRow,
   useComposeRowsOnEditTableCell,
-  useComposeRowsOnRemoveTableRow,
   useComposeRowsOnNewRow,
+  useComposeRowsOnRemoveTableRow,
+  useFetchItemRow,
 } from './utils';
-import { ItemEntriesTableProvider, useItemEntriesTableContext } from './ItemEntriesTableProvider';
-import { useUncontrolled } from '@/hooks/useUncontrolled';
-import { ItemEntry } from '@/interfaces/ItemEntries';
 
 interface ItemsEntriesTableProps {
   initialValue?: ItemEntry;

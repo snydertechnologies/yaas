@@ -1,27 +1,27 @@
-// @ts-nocheck
-import React from 'react';
+import { DashboardActionsBar, Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
 import {
+  Button,
+  Classes,
   NavbarDivider,
   NavbarGroup,
-  Classes,
-  Button,
   Popover,
   PopoverInteractionKind,
   Position,
 } from '@blueprintjs/core';
-import { DashboardActionsBar, FormattedMessage as T, Icon } from '@/components';
 import classNames from 'classnames';
+// @ts-nocheck
+import React from 'react';
 
-import NumberFormatDropdown from '@/components/NumberFormatDropdown';
+import NumberFormatDropdown from '@bigcapital/webapp/components/NumberFormatDropdown';
 
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
 import { useARAgingSummaryContext } from './ARAgingSummaryProvider';
-import withARAgingSummaryActions from './withARAgingSummaryActions';
 import withARAgingSummary from './withARAgingSummary';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
+import withARAgingSummaryActions from './withARAgingSummaryActions';
 
-import { compose, safeInvoke } from '@/utils';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import { compose, safeInvoke } from '@bigcapital/webapp/utils';
 import { ARAgingSummaryExportMenu } from './components';
-import { DialogsName } from '@/constants/dialogs';
 
 /**
  * A/R Aging summary sheet - Actions bar.

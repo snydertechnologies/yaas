@@ -1,6 +1,6 @@
+import { useItems } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React, { createContext, useContext } from 'react';
-import { useItems } from '@/hooks/query';
 import { FinancialHeaderLoadingSkeleton } from '../FinancialHeaderLoadingSkeleton';
 const PurchasesByItemsGeneralPanelContext = createContext();
 

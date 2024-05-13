@@ -1,7 +1,7 @@
+import { DialogContent, PdfDocumentPreview, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { useTransactionsByVendorsPdf } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import { AnchorButton } from '@blueprintjs/core';
-import { DialogContent, PdfDocumentPreview, FormattedMessage as T } from '@/components';
-import { useTransactionsByVendorsPdf } from '@/hooks/query';
 import { useVendorsTransactionsContext } from '../../VendorsTransactionsProvider';
 
 export default function VendorTransactionsPdfDialogContent() {

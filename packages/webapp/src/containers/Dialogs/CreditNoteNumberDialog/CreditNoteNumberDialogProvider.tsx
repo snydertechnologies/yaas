@@ -1,7 +1,7 @@
+import { DialogContent } from '@bigcapital/webapp/components';
+import { useSettingsCreditNotes } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React from 'react';
-import { DialogContent } from '@/components';
-import { useSettingsCreditNotes } from '@/hooks/query';
 
 const CreditNoteNumberDialogContext = React.createContext();
 

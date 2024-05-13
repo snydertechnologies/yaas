@@ -1,4 +1,4 @@
-import TenantModel from 'models/TenantModel';
+import TenantModel from '@bigcapital/server/models/TenantModel';
 import { Model } from 'objection';
 
 export default class Branch extends TenantModel {
@@ -36,16 +36,16 @@ export default class Branch extends TenantModel {
    * Relationship mapping.
    */
   static get relationMappings() {
-    const SaleInvoice = require('models/SaleInvoice');
-    const SaleEstimate = require('models/SaleEstimate');
-    const SaleReceipt = require('models/SaleReceipt');
-    const Bill = require('models/Bill');
-    const PaymentReceive = require('models/PaymentReceive');
-    const PaymentMade = require('models/BillPayment');
-    const VendorCredit = require('models/VendorCredit');
-    const CreditNote = require('models/CreditNote');
-    const AccountTransaction = require('models/AccountTransaction');
-    const InventoryTransaction = require('models/InventoryTransaction');
+    const SaleInvoice = require('@bigcapital/server/models/SaleInvoice');
+    const SaleEstimate = require('@bigcapital/server/models/SaleEstimate');
+    const SaleReceipt = require('@bigcapital/server/models/SaleReceipt');
+    const Bill = require('@bigcapital/server/models/Bill');
+    const PaymentReceive = require('@bigcapital/server/models/PaymentReceive');
+    const PaymentMade = require('@bigcapital/server/models/BillPayment');
+    const VendorCredit = require('@bigcapital/server/models/VendorCredit');
+    const CreditNote = require('@bigcapital/server/models/CreditNote');
+    const AccountTransaction = require('@bigcapital/server/models/AccountTransaction');
+    const InventoryTransaction = require('@bigcapital/server/models/InventoryTransaction');
 
     return {
       /**

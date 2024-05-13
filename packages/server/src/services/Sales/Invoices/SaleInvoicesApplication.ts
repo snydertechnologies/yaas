@@ -12,7 +12,7 @@ import {
   ITenantUser,
   InvoiceNotificationType,
   SendInvoiceMailDTO,
-} from '@/interfaces';
+} from '@bigcapital/server/interfaces';
 import { Inject, Service } from 'typedi';
 import { CreateSaleInvoice } from './CreateSaleInvoice';
 import { DeleteSaleInvoice } from './DeleteSaleInvoice';

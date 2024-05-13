@@ -1,5 +1,5 @@
-import TenantRepository from '@/repositories/TenantRepository';
-import Setting from 'models/Setting';
+import Setting from '@bigcapital/server/models/Setting';
+import TenantRepository from '@bigcapital/server/repositories/TenantRepository';
 
 export default class SettingRepository extends TenantRepository {
   /**

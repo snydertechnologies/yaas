@@ -1,25 +1,25 @@
-// @ts-nocheck
-import React from 'react';
-import classNames from 'classnames';
-import { FormGroup, ControlGroup, Position, Classes } from '@blueprintjs/core';
-import { FastField, ErrorMessage, useFormikContext } from 'formik';
-import { Features } from '@/constants';
 import {
-  FFormGroup,
-  InputPrependText,
-  CurrencySelectList,
   BranchSelect,
-  FeatureCan,
-  Row,
   Col,
-  FormattedMessage as T,
-  FMoneyInputGroup,
+  CurrencySelectList,
   ExchangeRateInputGroup,
   FDateInput,
-} from '@/components';
-import { openingBalanceFieldShouldUpdate, useIsVendorForeignCurrency, useSetPrimaryBranchToForm } from './utils';
+  FFormGroup,
+  FMoneyInputGroup,
+  FeatureCan,
+  InputPrependText,
+  Row,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import { Features } from '@bigcapital/webapp/constants';
+import { useCurrentOrganization } from '@bigcapital/webapp/hooks/state';
+import { Classes, ControlGroup, FormGroup, Position } from '@blueprintjs/core';
+import classNames from 'classnames';
+import { ErrorMessage, FastField, useFormikContext } from 'formik';
+// @ts-nocheck
+import React from 'react';
 import { useVendorFormContext } from './VendorFormProvider';
-import { useCurrentOrganization } from '@/hooks/state';
+import { openingBalanceFieldShouldUpdate, useIsVendorForeignCurrency, useSetPrimaryBranchToForm } from './utils';
 
 /**
  * Vendor Finaniceal Panel Tab.

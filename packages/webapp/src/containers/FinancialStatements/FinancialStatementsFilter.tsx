@@ -1,10 +1,10 @@
+import { ListSelect, MODIFIER, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { FormGroup, MenuItem, PopoverInteractionKind, Position, Tooltip } from '@blueprintjs/core';
+import classNames from 'classnames';
+import { FastField } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { FastField } from 'formik';
-import { PopoverInteractionKind, Tooltip, MenuItem, Position, FormGroup } from '@blueprintjs/core';
-import classNames from 'classnames';
-import { ListSelect, MODIFIER, FormattedMessage as T } from '@/components';
-import { CLASSES } from '@/constants/classes';
 import { filterAccountsOptions } from './constants';
 
 const SUBMENU_POPOVER_MODIFIERS = {

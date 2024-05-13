@@ -2,7 +2,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import { getDashboardRoutes } from '@/routes/dashboard';
+import { getDashboardRoutes } from '@bigcapital/webapp/routes/dashboard';
 import DashboardPage from './DashboardPage';
 
 /**

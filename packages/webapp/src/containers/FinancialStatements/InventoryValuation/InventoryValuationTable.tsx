@@ -3,9 +3,9 @@ import React from 'react';
 import intl from 'react-intl-universal';
 import styled from 'styled-components';
 
-import { TableStyle } from '@/constants';
-import { ReportDataTable, FinancialSheet } from '@/components';
-import { tableRowTypesToClassnames } from '@/utils';
+import { FinancialSheet, ReportDataTable } from '@bigcapital/webapp/components';
+import { TableStyle } from '@bigcapital/webapp/constants';
+import { tableRowTypesToClassnames } from '@bigcapital/webapp/utils';
 
 import { useInventoryValuationContext } from './InventoryValuationProvider';
 import { useInventoryValuationColumns } from './dynamicColumns';

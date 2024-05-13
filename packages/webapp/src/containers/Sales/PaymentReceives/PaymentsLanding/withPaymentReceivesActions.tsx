@@ -1,9 +1,9 @@
+import {
+  resetPaymentReceivesTableState,
+  setPaymentReceivesTableState,
+} from '@bigcapital/webapp/store/PaymentReceives/paymentReceives.actions';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import {
-  setPaymentReceivesTableState,
-  resetPaymentReceivesTableState,
-} from '@/store/PaymentReceives/paymentReceives.actions';
 
 const mapDispatchToProps = (dispatch) => ({
   setPaymentReceivesTableState: (state) => dispatch(setPaymentReceivesTableState(state)),

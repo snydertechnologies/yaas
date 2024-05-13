@@ -1,9 +1,9 @@
+import { Drawer, DrawerHeaderContent, DrawerSuspense } from '@bigcapital/webapp/components';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import withDrawers from '@bigcapital/webapp/containers/Drawer/withDrawers';
+import * as R from 'ramda';
 // @ts-nocheck
 import React from 'react';
-import * as R from 'ramda';
-import { Drawer, DrawerHeaderContent, DrawerSuspense } from '@/components';
-import withDrawers from '@/containers/Drawer/withDrawers';
-import { DRAWERS } from '@/constants/drawers';
 
 const TaxRateDetailsDrawerContent = React.lazy(() => import('./TaxRateDetailsContent'));
 

@@ -1,7 +1,7 @@
 import 'reflect-metadata'; // We need this in order to use @Decorators
 
 // import 'newrelic';
-import '@/config';
+import '@bigcapital/server/config';
 import './before';
 
 import express from 'express';

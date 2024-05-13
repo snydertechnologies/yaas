@@ -1,6 +1,6 @@
-import { ISaleInvoice } from '@/interfaces';
-import InventoryService from '@/services/Inventory/Inventory';
-import ItemsEntriesService from '@/services/Items/ItemsEntriesService';
+import { ISaleInvoice } from '@bigcapital/server/interfaces';
+import InventoryService from '@bigcapital/server/services/Inventory/Inventory';
+import ItemsEntriesService from '@bigcapital/server/services/Items/ItemsEntriesService';
 import { Knex } from 'knex';
 import { Inject, Service } from 'typedi';
 

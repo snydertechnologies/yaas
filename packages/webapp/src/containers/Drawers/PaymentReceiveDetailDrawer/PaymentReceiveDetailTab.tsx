@@ -1,7 +1,7 @@
 // @ts-nocheck
 import styled from 'styled-components';
 
-import { CommercialDocBox } from '@/components';
+import { CommercialDocBox } from '@bigcapital/webapp/components';
 
 import PaymentReceiveDetailHeader from './PaymentReceiveDetailHeader';
 import PaymentReceiveDetailTable from './PaymentReceiveDetailTable';

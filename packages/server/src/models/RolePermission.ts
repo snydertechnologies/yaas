@@ -1,4 +1,4 @@
-import TenantModel from 'models/TenantModel';
+import TenantModel from '@bigcapital/server/models/TenantModel';
 import { Model, mixin } from 'objection';
 import CustomViewBaseModel from './CustomViewBaseModel';
 import ModelSearchable from './ModelSearchable';
@@ -16,7 +16,7 @@ export default class RolePermission extends mixin(TenantModel, [ModelSetting, Cu
    * Relationship mapping.
    */
   static get relationMappings() {
-    const Role = require('models/Role');
+    const Role = require('@bigcapital/server/models/Role');
 
     return {
       /**

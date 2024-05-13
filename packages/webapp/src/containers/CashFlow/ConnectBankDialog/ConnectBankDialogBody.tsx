@@ -1,15 +1,15 @@
+import { AppToaster } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { useGetPlaidLinkToken } from '@bigcapital/webapp/hooks/query';
+import { useSetBankingPlaidToken } from '@bigcapital/webapp/hooks/state/banking';
+import { Intent } from '@blueprintjs/core';
+import classNames from 'classnames';
+import { Form, Formik, FormikHelpers } from 'formik';
 // @ts-nocheck
 import * as R from 'ramda';
-import { Form, Formik, FormikHelpers } from 'formik';
-import classNames from 'classnames';
 import { ConnectBankDialogContent } from './ConnectBankDialogContent';
-import { useGetPlaidLinkToken } from '@/hooks/query';
-import { useSetBankingPlaidToken } from '@/hooks/state/banking';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { CLASSES } from '@/constants';
-import { AppToaster } from '@/components';
-import { Intent } from '@blueprintjs/core';
-import { DialogsName } from '@/constants/dialogs';
 
 const initialValues: ConnectBankDialogForm = {
   serviceProvider: 'plaid',

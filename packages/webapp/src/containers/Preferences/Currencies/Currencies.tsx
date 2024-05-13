@@ -1,10 +1,10 @@
+import classNames from 'classnames';
 // @ts-nocheck
 import React from 'react';
-import classNames from 'classnames';
 import styled from 'styled-components';
 
-import { Card } from '@/components';
-import { CLASSES } from '@/constants/classes';
+import { Card } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
 import CurrenciesList from './CurrenciesList';
 
 export default function PreferencesCurrenciesPage() {

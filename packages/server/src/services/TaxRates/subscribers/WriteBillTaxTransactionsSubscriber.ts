@@ -1,5 +1,5 @@
-import { IBIllEventDeletedPayload, IBillCreatedPayload, IBillEditedPayload } from '@/interfaces';
-import events from '@/subscribers/events';
+import { IBIllEventDeletedPayload, IBillCreatedPayload, IBillEditedPayload } from '@bigcapital/server/interfaces';
+import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 import { WriteTaxTransactionsItemEntries } from '../WriteTaxTransactionsItemEntries';
 

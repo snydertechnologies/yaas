@@ -1,14 +1,14 @@
-import { IBill, IBillDTO, IItemEntry, ISystemUser, IVendor } from '@/interfaces';
-import { BranchTransactionDTOTransform } from '@/services/Branches/Integrations/BranchTransactionDTOTransform';
-import { ItemEntriesTaxTransactions } from '@/services/TaxRates/ItemEntriesTaxTransactions';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
-import { WarehouseTransactionDTOTransform } from '@/services/Warehouses/Integrations/WarehouseTransactionDTOTransform';
+import { IBill, IBillDTO, IItemEntry, ISystemUser, IVendor } from '@bigcapital/server/interfaces';
+import { BranchTransactionDTOTransform } from '@bigcapital/server/services/Branches/Integrations/BranchTransactionDTOTransform';
+import { ItemEntriesTaxTransactions } from '@bigcapital/server/services/TaxRates/ItemEntriesTaxTransactions';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import { WarehouseTransactionDTOTransform } from '@bigcapital/server/services/Warehouses/Integrations/WarehouseTransactionDTOTransform';
+import { formatDateFields } from '@bigcapital/server/utils';
 import composeAsync from 'async/compose';
 import { omit, sumBy } from 'lodash';
 import moment from 'moment';
 import * as R from 'ramda';
 import { Inject, Service } from 'typedi';
-import { formatDateFields } from 'utils';
 
 @Service()
 export class BillDTOTransformer {

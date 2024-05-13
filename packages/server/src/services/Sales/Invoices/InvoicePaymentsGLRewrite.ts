@@ -1,4 +1,4 @@
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import async from 'async';
 import { Knex } from 'knex';
 import { Inject, Service } from 'typedi';

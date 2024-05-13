@@ -1,12 +1,12 @@
+import { Callout, Classes, Intent } from '@blueprintjs/core';
+import clsx from 'classnames';
+import * as R from 'ramda';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import * as R from 'ramda';
-import clsx from 'classnames';
-import { Callout, Intent, Classes } from '@blueprintjs/core';
 
-import { CLASSES } from '@/constants/classes';
-import { MoneyFieldCell, FormatDateCell, AppToaster, T } from '@/components';
+import { AppToaster, FormatDateCell, MoneyFieldCell, T } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
 
 export const transformErrors = (errors, { setErrors }) => {
   if (errors.some((e) => e.type === 'INVOICES_HAS_NO_REMAINING_AMOUNT')) {

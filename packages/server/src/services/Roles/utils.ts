@@ -1,4 +1,4 @@
-import { ISubjectAbilitiesSchema } from '@/interfaces';
+import { ISubjectAbilitiesSchema } from '@bigcapital/server/interfaces';
 import { keyBy } from 'lodash';
 
 /**

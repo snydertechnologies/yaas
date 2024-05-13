@@ -2,28 +2,28 @@
 import React from 'react';
 
 import {
-  TableFastCell,
   DataTable,
-  TableSkeletonRows,
+  TableFastCell,
   TableSkeletonHeader,
+  TableSkeletonRows,
   TableVirtualizedListRows,
-} from '@/components';
-import { useAccountsTableColumns, rowClassNames } from './utils';
+} from '@bigcapital/webapp/components';
+import { AccountDialogAction } from '@bigcapital/webapp/containers/Dialogs/AccountDialog/utils';
 import { ActionsMenu } from './components';
-import { AccountDialogAction } from '@/containers/Dialogs/AccountDialog/utils';
+import { rowClassNames, useAccountsTableColumns } from './utils';
 
+import { useMemorizedColumnsWidths } from '@bigcapital/webapp/hooks';
 import { useAccountsChartContext } from './AccountsChartProvider';
-import { useMemorizedColumnsWidths } from '@/hooks';
 
-import { TABLES } from '@/constants/tables';
-import { DialogsName } from '@/constants/dialogs';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import { TABLES } from '@bigcapital/webapp/constants/tables';
 
-import withSettings from '@/containers/Settings/withSettings';
-import withAlertsActions from '@/containers/Alert/withAlertActions';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
-import { compose } from '@/utils';
-import { DRAWERS } from '@/constants/drawers';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Accounts data-table.

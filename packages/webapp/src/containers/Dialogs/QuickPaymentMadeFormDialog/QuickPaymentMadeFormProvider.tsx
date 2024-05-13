@@ -1,10 +1,10 @@
+import { DialogContent } from '@bigcapital/webapp/components';
+import { Features } from '@bigcapital/webapp/constants';
+import { useAccounts, useBill, useBranches, useCreatePaymentMade } from '@bigcapital/webapp/hooks/query';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
+import { pick } from 'lodash';
 // @ts-nocheck
 import React from 'react';
-import { DialogContent } from '@/components';
-import { useBill, useAccounts, useBranches, useCreatePaymentMade } from '@/hooks/query';
-import { Features } from '@/constants';
-import { useFeatureCan } from '@/hooks/state';
-import { pick } from 'lodash';
 
 const QuickPaymentMadeContext = React.createContext();
 

@@ -1,17 +1,17 @@
+import { Intent } from '@blueprintjs/core';
+import { Formik } from 'formik';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { Formik } from 'formik';
-import { Intent } from '@blueprintjs/core';
 
-import '@/style/pages/AllocateLandedCost/AllocateLandedCostForm.scss';
+import '@bigcapital/webapp/style/pages/AllocateLandedCost/AllocateLandedCostForm.scss';
 
-import { AppToaster } from '@/components';
-import { AllocateLandedCostFormSchema } from './AllocateLandedCostForm.schema';
+import { AppToaster } from '@bigcapital/webapp/components';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { compose, transformToForm } from '@bigcapital/webapp/utils';
 import { useAllocateLandedConstDialogContext } from './AllocateLandedCostDialogProvider';
+import { AllocateLandedCostFormSchema } from './AllocateLandedCostForm.schema';
 import AllocateLandedCostFormContent from './AllocateLandedCostFormContent';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { compose, transformToForm } from '@/utils';
 import { defaultInitialValues } from './utils';
 
 /**

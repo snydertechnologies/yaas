@@ -2,24 +2,29 @@
 import React, { useCallback } from 'react';
 import { useHistory } from 'react-router-dom';
 
-import { compose } from '@/utils';
-import { TABLES } from '@/constants/tables';
-import { DataTable, DashboardContentTable, TableSkeletonRows, TableSkeletonHeader } from '@/components';
+import {
+  DashboardContentTable,
+  DataTable,
+  TableSkeletonHeader,
+  TableSkeletonRows,
+} from '@bigcapital/webapp/components';
+import { TABLES } from '@bigcapital/webapp/constants/tables';
+import { compose } from '@bigcapital/webapp/utils';
 
 import PaymentReceivesEmptyStatus from './PaymentReceivesEmptyStatus';
 
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
 import withPaymentReceives from './withPaymentReceives';
 import withPaymentReceivesActions from './withPaymentReceivesActions';
-import withAlertsActions from '@/containers/Alert/withAlertActions';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import withSettings from '@/containers/Settings/withSettings';
 
-import { usePaymentReceivesColumns, ActionsMenu } from './components';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import { useMemorizedColumnsWidths } from '@bigcapital/webapp/hooks';
 import { usePaymentReceivesListContext } from './PaymentReceiptsListProvider';
-import { useMemorizedColumnsWidths } from '@/hooks';
-import { DRAWERS } from '@/constants/drawers';
-import { DialogsName } from '@/constants/dialogs';
+import { ActionsMenu, usePaymentReceivesColumns } from './components';
 
 /**
  * Payment receives datatable.

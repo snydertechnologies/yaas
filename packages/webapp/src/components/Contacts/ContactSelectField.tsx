@@ -1,14 +1,14 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import React, { useCallback, useState, useEffect, useMemo } from 'react';
-import { FormattedMessage as T } from '@/components';
 import intl from 'react-intl-universal';
 
-import { MenuItem, Button } from '@blueprintjs/core';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { Button, MenuItem } from '@blueprintjs/core';
 import { Select } from '@blueprintjs/select';
 import classNames from 'classnames';
-import { CLASSES } from '@/constants/classes';
 
-import { itemPredicate, handleContactRenderer } from './utils';
+import { handleContactRenderer, itemPredicate } from './utils';
 
 export function ContactSelectField({
   contacts,

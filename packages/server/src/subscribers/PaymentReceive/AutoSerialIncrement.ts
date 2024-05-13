@@ -1,7 +1,7 @@
-import { IPaymentReceiveCreatedPayload } from '@/interfaces';
-import { EventSubscriber } from '@/lib/EventPublisher/EventPublisher';
-import { PaymentReceiveIncrement } from '@/services/Sales/PaymentReceives/PaymentReceiveIncrement';
-import events from '@/subscribers/events';
+import { IPaymentReceiveCreatedPayload } from '@bigcapital/server/interfaces';
+import { EventSubscriber } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
+import { PaymentReceiveIncrement } from '@bigcapital/server/services/Sales/PaymentReceives/PaymentReceiveIncrement';
+import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 
 @Service()

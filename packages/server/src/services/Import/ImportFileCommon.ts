@@ -1,5 +1,5 @@
-import { ServiceError } from '@/exceptions';
-import { Import } from '@/system/models';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { Import } from '@bigcapital/server/system/models';
 import bluebird from 'bluebird';
 import { Knex } from 'knex';
 import { first } from 'lodash';

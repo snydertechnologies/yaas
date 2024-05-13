@@ -1,13 +1,13 @@
+import { useAppQueryString } from '@bigcapital/webapp/hooks';
+import { transformToForm } from '@bigcapital/webapp/utils';
+import { castArray } from 'lodash';
+import moment from 'moment';
 // @ts-nocheck
 import React from 'react';
-import moment from 'moment';
-import * as Yup from 'yup';
-import { castArray } from 'lodash';
 import intl from 'react-intl-universal';
-import { transformToForm } from '@/utils';
-import { useAppQueryString } from '@/hooks';
-import { salesTaxLiabilitySummaryDynamicColumns } from './dynamicColumns';
+import * as Yup from 'yup';
 import { useSalesTaxLiabilitySummaryContext } from './SalesTaxLiabilitySummaryBoot';
+import { salesTaxLiabilitySummaryDynamicColumns } from './dynamicColumns';
 
 /**
  * Retrieves the default sales tax liability summary query.

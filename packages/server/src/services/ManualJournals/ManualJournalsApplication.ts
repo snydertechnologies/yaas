@@ -1,4 +1,4 @@
-import { IManualJournalDTO, IManualJournalsFilter, ISystemUser } from '@/interfaces';
+import { IManualJournalDTO, IManualJournalsFilter, ISystemUser } from '@bigcapital/server/interfaces';
 import { Inject, Service } from 'typedi';
 import { CreateManualJournalService } from './CreateManualJournal';
 import { DeleteManualJournal } from './DeleteManualJournal';

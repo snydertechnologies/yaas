@@ -1,5 +1,5 @@
+import { filterAccountsByQuery, nestedArrayToflatten } from '@bigcapital/webapp/utils';
 import { useMemo } from 'react';
-import { filterAccountsByQuery, nestedArrayToflatten } from '@/utils';
 
 interface PreprocessingAccountsOptions {
   filterByRootTypes: string[];

@@ -1,4 +1,4 @@
-import { ISaleInvoice, ISaleInvoiceDTO, ProjectLinkRefType } from '@/interfaces';
+import { ISaleInvoice, ISaleInvoiceDTO, ProjectLinkRefType } from '@bigcapital/server/interfaces';
 import async from 'async';
 import { Knex } from 'knex';
 import { Service } from 'typedi';

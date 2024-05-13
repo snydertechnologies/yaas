@@ -1,6 +1,6 @@
-import type { ISystemUser } from '@/interfaces';
-import { SystemUser } from '@/system/models';
-import SystemRepository from '@/system/repositories/SystemRepository';
+import type { ISystemUser } from '@bigcapital/server/interfaces';
+import { SystemUser } from '@bigcapital/server/system/models';
+import SystemRepository from '@bigcapital/server/system/repositories/SystemRepository';
 import moment from 'moment';
 
 export default class SystemUserRepository extends SystemRepository {

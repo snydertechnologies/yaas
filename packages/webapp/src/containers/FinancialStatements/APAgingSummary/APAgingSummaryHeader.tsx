@@ -1,20 +1,20 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Button, Intent, Tab, Tabs } from '@blueprintjs/core';
+import { Form, Formik } from 'formik';
 // @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
-import { FormattedMessage as T } from '@/components';
-import { Formik, Form } from 'formik';
-import { Tabs, Tab, Button, Intent } from '@blueprintjs/core';
 
-import FinancialStatementHeader from '@/containers/FinancialStatements/FinancialStatementHeader';
-import APAgingSummaryHeaderGeneral from './APAgingSummaryHeaderGeneral';
+import FinancialStatementHeader from '@bigcapital/webapp/containers/FinancialStatements/FinancialStatementHeader';
 import APAgingSummaryHeaderDimensions from './APAgingSummaryHeaderDimensions';
+import APAgingSummaryHeaderGeneral from './APAgingSummaryHeaderGeneral';
 
 import withAPAgingSummary from './withAPAgingSummary';
 import withAPAgingSummaryActions from './withAPAgingSummaryActions';
 
-import { transformToForm, compose } from '@/utils';
-import { useFeatureCan } from '@/hooks/state';
-import { Features } from '@/constants';
+import { Features } from '@bigcapital/webapp/constants';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
+import { compose, transformToForm } from '@bigcapital/webapp/utils';
 import { getAPAgingSummaryQuerySchema, getDefaultAPAgingSummaryQuery } from './common';
 
 /**

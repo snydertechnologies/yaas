@@ -2,8 +2,8 @@ import {
   IBillPaymentEventCreatedPayload,
   IBillPaymentEventDeletedPayload,
   IBillPaymentEventEditedPayload,
-} from '@/interfaces';
-import events from '@/subscribers/events';
+} from '@bigcapital/server/interfaces';
+import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 import { BillPaymentGLEntries } from './BillPaymentGLEntries';
 

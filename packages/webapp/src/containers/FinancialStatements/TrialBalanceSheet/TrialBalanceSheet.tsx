@@ -1,19 +1,19 @@
+import moment from 'moment';
 // @ts-nocheck
 import React, { useCallback, useEffect } from 'react';
-import moment from 'moment';
 
-import { FinancialStatement, DashboardPageContent } from '@/components';
-import { TrialBalanceSheetBody } from './TrialBalanceSheetBody';
-import { TrialBalanceSheetProvider } from './TrialBalanceProvider';
-import { useTrialBalanceSheetQuery } from './utils';
+import { DashboardPageContent, FinancialStatement } from '@bigcapital/webapp/components';
 import TrialBalanceActionsBar from './TrialBalanceActionsBar';
+import { TrialBalanceSheetProvider } from './TrialBalanceProvider';
+import { TrialBalanceSheetBody } from './TrialBalanceSheetBody';
 import TrialBalanceSheetHeader from './TrialBalanceSheetHeader';
+import { useTrialBalanceSheetQuery } from './utils';
 
 import { TrialBalanceSheetAlerts, TrialBalanceSheetLoadingBar } from './components';
 
-import withTrialBalanceActions from './withTrialBalanceActions';
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 import { TrialBalanceSheetDialogs } from './TrialBalanceSheetDialogs';
+import withTrialBalanceActions from './withTrialBalanceActions';
 
 /**
  * Trial balance sheet.

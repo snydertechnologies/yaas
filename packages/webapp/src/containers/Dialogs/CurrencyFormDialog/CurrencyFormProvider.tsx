@@ -1,7 +1,7 @@
+import { DialogContent } from '@bigcapital/webapp/components';
+import { useCreateCurrency, useEditCurrency } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React, { createContext } from 'react';
-import { useEditCurrency, useCreateCurrency } from '@/hooks/query';
-import { DialogContent } from '@/components';
 
 const CurrencyFormContext = createContext();
 

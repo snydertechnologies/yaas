@@ -1,5 +1,5 @@
 // @ts-nocheck
-import t from '@/store/types';
+import t from '@bigcapital/webapp/store/types';
 
 /**
  * Sets global table state of the table.

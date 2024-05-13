@@ -1,4 +1,4 @@
-import { IPurchasesByItemsReportQuery, IPurchasesByItemsTable } from '@/interfaces/PurchasesByItemsSheet';
+import { IPurchasesByItemsReportQuery, IPurchasesByItemsTable } from '@bigcapital/server/interfaces/PurchasesByItemsSheet';
 import { Inject, Service } from 'typedi';
 import { PurchasesByItemsService } from './PurchasesByItemsService';
 import { PurchasesByItemsTable } from './PurchasesByItemsTable';

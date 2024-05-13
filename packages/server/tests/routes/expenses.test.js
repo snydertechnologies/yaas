@@ -1,7 +1,7 @@
+import AccountTransaction from '@bigcapital/server/models/AccountTransaction';
+import Expense from '@bigcapital/server/models/Expense';
+import ExpenseCategory from '@bigcapital/server/models/ExpenseCategory';
 import { pick } from 'lodash';
-import AccountTransaction from 'models/AccountTransaction';
-import Expense from 'models/Expense';
-import ExpenseCategory from 'models/ExpenseCategory';
 import moment from 'moment';
 import { loginRes, tenantFactory, tenantWebsite } from '~/dbInit';
 import { expect, request } from '~/testInit';

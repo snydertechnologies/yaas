@@ -1,8 +1,8 @@
+import { CellType } from '@bigcapital/webapp/constants';
+import { Classes, FormGroup, Intent, TextArea } from '@blueprintjs/core';
+import classNames from 'classnames';
 // @ts-nocheck
 import React, { useState, useEffect } from 'react';
-import classNames from 'classnames';
-import { Classes, TextArea, FormGroup, Intent } from '@blueprintjs/core';
-import { CellType } from '@/constants';
 
 const TextAreaEditableCell = ({ row: { index }, column: { id }, cell: { value: initialValue }, payload }) => {
   const [value, setValue] = useState(initialValue);

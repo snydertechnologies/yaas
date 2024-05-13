@@ -1,29 +1,29 @@
-import AccountDrawer from '@/containers/Drawers/AccountDrawer';
-import ManualJournalDrawer from '@/containers/Drawers/ManualJournalDrawer';
-import ExpenseDrawer from '@/containers/Drawers/ExpenseDrawer';
-import BillDrawer from '@/containers/Drawers/BillDrawer';
-import InvoiceDetailDrawer from '@/containers/Drawers/InvoiceDetailDrawer';
-import ReceiptDetailDrawer from '@/containers/Drawers/ReceiptDetailDrawer';
-import PaymentReceiveDetailDrawer from '@/containers/Drawers/PaymentReceiveDetailDrawer';
-import PaymentMadeDetailDrawer from '@/containers/Drawers/PaymentMadeDetailDrawer';
-import EstimateDetailDrawer from '@/containers/Drawers/EstimateDetailDrawer';
-import ItemDetailDrawer from '@/containers/Drawers/ItemDetailDrawer';
-import CustomerDetailsDrawer from '@/containers/Drawers/CustomerDetailsDrawer';
-import VendorDetailsDrawer from '@/containers/Drawers/VendorDetailsDrawer';
-import InventoryAdjustmentDetailDrawer from '@/containers/Drawers/InventoryAdjustmentDetailDrawer';
-import CashflowTransactionDetailDrawer from '@/containers/Drawers/CashflowTransactionDetailDrawer';
-import QuickCreateCustomerDrawer from '@/containers/Drawers/QuickCreateCustomerDrawer';
-import QuickCreateItemDrawer from '@/containers/Drawers/QuickCreateItemDrawer';
-import QuickWriteVendorDrawer from '@/containers/Drawers/QuickWriteVendorDrawer';
-import CreditNoteDetailDrawer from '@/containers/Drawers/CreditNoteDetailDrawer';
-import VendorCreditDetailDrawer from '@/containers/Drawers/VendorCreditDetailDrawer';
-import RefundCreditNoteDetailDrawer from '@/containers/Drawers/RefundCreditNoteDetailDrawer';
-import RefundVendorCreditDetailDrawer from '@/containers/Drawers/RefundVendorCreditDetailDrawer';
-import WarehouseTransferDetailDrawer from '@/containers/Drawers/WarehouseTransferDetailDrawer';
-import TaxRateDetailsDrawer from '@/containers/TaxRates/drawers/TaxRateDetailsDrawer/TaxRateDetailsDrawer';
+import AccountDrawer from '@bigcapital/webapp/containers/Drawers/AccountDrawer';
+import BillDrawer from '@bigcapital/webapp/containers/Drawers/BillDrawer';
+import CashflowTransactionDetailDrawer from '@bigcapital/webapp/containers/Drawers/CashflowTransactionDetailDrawer';
+import CreditNoteDetailDrawer from '@bigcapital/webapp/containers/Drawers/CreditNoteDetailDrawer';
+import CustomerDetailsDrawer from '@bigcapital/webapp/containers/Drawers/CustomerDetailsDrawer';
+import EstimateDetailDrawer from '@bigcapital/webapp/containers/Drawers/EstimateDetailDrawer';
+import ExpenseDrawer from '@bigcapital/webapp/containers/Drawers/ExpenseDrawer';
+import InventoryAdjustmentDetailDrawer from '@bigcapital/webapp/containers/Drawers/InventoryAdjustmentDetailDrawer';
+import InvoiceDetailDrawer from '@bigcapital/webapp/containers/Drawers/InvoiceDetailDrawer';
+import ItemDetailDrawer from '@bigcapital/webapp/containers/Drawers/ItemDetailDrawer';
+import ManualJournalDrawer from '@bigcapital/webapp/containers/Drawers/ManualJournalDrawer';
+import PaymentMadeDetailDrawer from '@bigcapital/webapp/containers/Drawers/PaymentMadeDetailDrawer';
+import PaymentReceiveDetailDrawer from '@bigcapital/webapp/containers/Drawers/PaymentReceiveDetailDrawer';
+import QuickCreateCustomerDrawer from '@bigcapital/webapp/containers/Drawers/QuickCreateCustomerDrawer';
+import QuickCreateItemDrawer from '@bigcapital/webapp/containers/Drawers/QuickCreateItemDrawer';
+import QuickWriteVendorDrawer from '@bigcapital/webapp/containers/Drawers/QuickWriteVendorDrawer';
+import ReceiptDetailDrawer from '@bigcapital/webapp/containers/Drawers/ReceiptDetailDrawer';
+import RefundCreditNoteDetailDrawer from '@bigcapital/webapp/containers/Drawers/RefundCreditNoteDetailDrawer';
+import RefundVendorCreditDetailDrawer from '@bigcapital/webapp/containers/Drawers/RefundVendorCreditDetailDrawer';
+import VendorCreditDetailDrawer from '@bigcapital/webapp/containers/Drawers/VendorCreditDetailDrawer';
+import VendorDetailsDrawer from '@bigcapital/webapp/containers/Drawers/VendorDetailsDrawer';
+import WarehouseTransferDetailDrawer from '@bigcapital/webapp/containers/Drawers/WarehouseTransferDetailDrawer';
+import TaxRateDetailsDrawer from '@bigcapital/webapp/containers/TaxRates/drawers/TaxRateDetailsDrawer/TaxRateDetailsDrawer';
 
-import { DRAWERS } from '@/constants/drawers';
-import CategorizeTransactionDrawer from '@/containers/CashFlow/CategorizeTransaction/drawers/CategorizeTransactionDrawer/CategorizeTransactionDrawer';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import CategorizeTransactionDrawer from '@bigcapital/webapp/containers/CashFlow/CategorizeTransaction/drawers/CategorizeTransactionDrawer/CategorizeTransactionDrawer';
 
 /**
  * Drawers container of the dashboard.

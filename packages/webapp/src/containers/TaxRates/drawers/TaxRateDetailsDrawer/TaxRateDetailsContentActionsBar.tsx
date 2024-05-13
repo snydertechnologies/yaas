@@ -1,5 +1,10 @@
-// @ts-nocheck
-import React from 'react';
+import { AppToaster, Can, DashboardActionsBar, Icon } from '@bigcapital/webapp/components';
+import { AbilitySubject, TaxRateAction } from '@bigcapital/webapp/constants/abilityOption';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
+import { useActivateTaxRate, useInactivateTaxRate } from '@bigcapital/webapp/hooks/query/taxRates';
 import {
   Button,
   Classes,
@@ -13,14 +18,9 @@ import {
   Position,
 } from '@blueprintjs/core';
 import * as R from 'ramda';
-import { AppToaster, Can, DashboardActionsBar, Icon } from '@/components';
-import { AbilitySubject, TaxRateAction } from '@/constants/abilityOption';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
-import withAlertsActions from '@/containers/Alert/withAlertActions';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
+// @ts-nocheck
+import React from 'react';
 import { useTaxRateDetailsContext } from './TaxRateDetailsContentBoot';
-import { DialogsName } from '@/constants/dialogs';
-import { useActivateTaxRate, useInactivateTaxRate } from '@/hooks/query/taxRates';
 
 /**
  * Tax rate details content actions bar.

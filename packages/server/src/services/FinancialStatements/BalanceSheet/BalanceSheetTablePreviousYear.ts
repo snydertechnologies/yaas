@@ -1,4 +1,4 @@
-import { IDateRange, ITableColumn } from '@/interfaces';
+import { IDateRange, ITableColumn } from '@bigcapital/server/interfaces';
 import * as R from 'ramda';
 import { FinancialDateRanges } from '../FinancialDateRanges';
 import { FinancialTablePreviousYear } from '../FinancialTablePreviousYear';

@@ -1,10 +1,10 @@
 // @ts-nocheck
 import React, { createContext, useMemo, useContext } from 'react';
 
+import { useProjects } from '@bigcapital/webapp/containers/Projects/hooks';
 import FinancialReportPage from '../FinancialReportPage';
-import { useProjectProfitabilitySummary } from './hooks';
-import { useProjects } from '@/containers/Projects/hooks';
 import { transformFilterFormToQuery } from '../common';
+import { useProjectProfitabilitySummary } from './hooks';
 
 const ProjectProfitabilitySummaryContext = createContext();
 

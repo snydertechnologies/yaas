@@ -1,7 +1,7 @@
+import { Align } from '@bigcapital/webapp/constants';
+import { Intent, Tag } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Intent, Tag } from '@blueprintjs/core';
-import { Align } from '@/constants';
 import styled from 'styled-components';
 
 const codeAccessor = (taxRate) => {

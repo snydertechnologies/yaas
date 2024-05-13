@@ -3,9 +3,9 @@ import {
   IExpenseEventDeletePayload,
   IExpenseEventEditPayload,
   IExpenseEventPublishedPayload,
-} from '@/interfaces';
-import TenancyService from '@/services/Tenancy/TenancyService';
-import events from '@/subscribers/events';
+} from '@bigcapital/server/interfaces';
+import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 import { ExpenseGLEntriesStorage } from './ExpenseGLEntriesStorage';
 

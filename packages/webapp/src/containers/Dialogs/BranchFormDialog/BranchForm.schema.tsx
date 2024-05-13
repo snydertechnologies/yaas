@@ -1,7 +1,7 @@
+import { DATATYPES_LENGTH } from '@bigcapital/webapp/constants/dataTypes';
+import intl from 'react-intl-universal';
 // @ts-nocheck
 import * as Yup from 'yup';
-import intl from 'react-intl-universal';
-import { DATATYPES_LENGTH } from '@/constants/dataTypes';
 
 const Schema = Yup.object().shape({
   name: Yup.string().required().label(intl.get('branch_name')),

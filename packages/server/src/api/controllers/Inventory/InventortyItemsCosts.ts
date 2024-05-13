@@ -1,4 +1,4 @@
-import { InventoryCostApplication } from '@/services/Inventory/InventoryCostApplication';
+import { InventoryCostApplication } from '@bigcapital/server/services/Inventory/InventoryCostApplication';
 import { NextFunction, Request, Response, Router } from 'express';
 import { query } from 'express-validator';
 import { Inject, Service } from 'typedi';

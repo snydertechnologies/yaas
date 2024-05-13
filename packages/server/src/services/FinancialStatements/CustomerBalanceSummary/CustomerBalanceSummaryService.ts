@@ -3,9 +3,9 @@ import {
   ICustomerBalanceSummaryService,
   ICustomerBalanceSummaryStatement,
   ILedgerEntry,
-} from '@/interfaces';
-import Ledger from '@/services/Accounting/Ledger';
-import { Tenant } from '@/system/models';
+} from '@bigcapital/server/interfaces';
+import Ledger from '@bigcapital/server/services/Accounting/Ledger';
+import { Tenant } from '@bigcapital/server/system/models';
 import moment from 'moment';
 import * as R from 'ramda';
 import { Inject, Service } from 'typedi';

@@ -1,10 +1,10 @@
+import { Dialog, DialogSuspense, FormattedMessage as T } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import React, { lazy } from 'react';
-import { Dialog, DialogSuspense, FormattedMessage as T } from '@/components';
 
-import withDialogRedux from '@/components/DialogReduxConnect';
+import withDialogRedux from '@bigcapital/webapp/components/DialogReduxConnect';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 // Lazy loading the content.
 const PaymentViaLicenseDialogContent = lazy(() => import('./PaymentViaVoucherDialogContent'));

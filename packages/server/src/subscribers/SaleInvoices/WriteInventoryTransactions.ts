@@ -3,9 +3,9 @@ import {
   ISaleInvoiceDeletedPayload,
   ISaleInvoiceEditedPayload,
   ISaleInvoiceEventDeliveredPayload,
-} from '@/interfaces';
-import { InvoiceInventoryTransactions } from '@/services/Sales/Invoices/InvoiceInventoryTransactions';
-import events from '@/subscribers/events';
+} from '@bigcapital/server/interfaces';
+import { InvoiceInventoryTransactions } from '@bigcapital/server/services/Sales/Invoices/InvoiceInventoryTransactions';
+import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 
 @Service()

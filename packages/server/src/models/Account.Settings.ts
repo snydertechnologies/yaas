@@ -1,4 +1,4 @@
-import { ACCOUNT_TYPES } from '@/data/AccountTypes';
+import { ACCOUNT_TYPES } from '@bigcapital/server/data/AccountTypes';
 
 export default {
   defaultFilterField: 'name',

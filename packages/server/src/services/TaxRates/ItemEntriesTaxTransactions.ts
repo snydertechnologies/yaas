@@ -1,5 +1,5 @@
-import { IItemEntry } from '@/interfaces';
-import { ItemEntry } from '@/models';
+import { IItemEntry } from '@bigcapital/server/interfaces';
+import { ItemEntry } from '@bigcapital/server/models';
 import { keyBy, sumBy } from 'lodash';
 import { Inject, Service } from 'typedi';
 import HasTenancyService from '../Tenancy/TenancyService';

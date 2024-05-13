@@ -1,4 +1,4 @@
-import type { IColumnMapperMeta, ITableRow } from '@/interfaces';
+import type { IColumnMapperMeta, ITableRow } from '@bigcapital/server/interfaces';
 import { get } from 'lodash';
 
 export function tableMapper(data: Object[], columns: IColumnMapperMeta[], rowsMeta): ITableRow[] {

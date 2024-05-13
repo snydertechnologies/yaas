@@ -1,4 +1,4 @@
-import { IInventoryTransaction, IItemWarehouseQuantityChange } from '@/interfaces';
+import { IInventoryTransaction, IItemWarehouseQuantityChange } from '@bigcapital/server/interfaces';
 import { chain, get, set, toPairs } from 'lodash';
 
 export class WarehousesItemsQuantity {

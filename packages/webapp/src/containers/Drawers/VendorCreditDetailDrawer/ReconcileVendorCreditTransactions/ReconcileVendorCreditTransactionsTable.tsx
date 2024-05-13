@@ -1,13 +1,13 @@
+import { Card, DataTable } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import React from 'react';
-import { DataTable, Card } from '@/components';
 
-import { TableStyle } from '@/constants';
-import withAlertsActions from '@/containers/Alert/withAlertActions';
+import { TableStyle } from '@bigcapital/webapp/constants';
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
 
+import { compose } from '@bigcapital/webapp/utils';
 import { useVendorCreditDetailDrawerContext } from '../VendorCreditDetailDrawerProvider';
-import { useReconcileVendorCreditTransactionsTableColumns, ActionsMenu } from './components';
-import { compose } from '@/utils';
+import { ActionsMenu, useReconcileVendorCreditTransactionsTableColumns } from './components';
 
 /**
  * Reconcile vendor credit transactions table.

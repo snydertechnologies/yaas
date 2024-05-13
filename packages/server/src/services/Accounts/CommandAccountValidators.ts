@@ -1,7 +1,7 @@
-import { ServiceError } from '@/exceptions';
-import { IAccount, IAccountCreateDTO, IAccountDTO } from '@/interfaces';
-import AccountTypesUtils from '@/lib/AccountTypes';
-import TenancyService from '@/services/Tenancy/TenancyService';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { IAccount, IAccountCreateDTO, IAccountDTO } from '@bigcapital/server/interfaces';
+import AccountTypesUtils from '@bigcapital/server/lib/AccountTypes';
+import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject, Service } from 'typedi';
 import { ERRORS, MAX_ACCOUNTS_CHART_DEPTH } from './constants';
 

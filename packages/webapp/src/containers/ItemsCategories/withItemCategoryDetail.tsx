@@ -1,6 +1,6 @@
+import { getItemCategoryByIdFactory } from '@bigcapital/webapp/store/itemCategories/ItemsCategories.selectors';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { getItemCategoryByIdFactory } from '@/store/itemCategories/ItemsCategories.selectors';
 
 export default () => {
   const getCategoryId = getItemCategoryByIdFactory();

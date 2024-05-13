@@ -1,9 +1,9 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Icon } from '@bigcapital/webapp/components';
+import { Button, Classes, Divider, Menu, MenuItem, Popover, PopoverInteractionKind, Position } from '@blueprintjs/core';
+import classNames from 'classnames';
 // @ts-nocheck
 import React, { useMemo, useState } from 'react';
-import classNames from 'classnames';
-import { Button, Classes, MenuItem, Menu, Popover, PopoverInteractionKind, Position, Divider } from '@blueprintjs/core';
-import { FormattedMessage as T } from '@/components';
-import { Icon } from '@/components';
 
 /**
  * Dashboard action views list.

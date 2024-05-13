@@ -1,6 +1,6 @@
-import { ITenant } from '@/interfaces';
-import TenancyService from '@/services/Tenancy/TenancyService';
-import TenantsManagerService from '@/services/Tenancy/TenantsManager';
+import { ITenant } from '@bigcapital/server/interfaces';
+import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import TenantsManagerService from '@bigcapital/server/services/Tenancy/TenantsManager';
 import { Request } from 'express';
 import rtlDetect from 'rtl-detect';
 import { Container } from 'typedi';

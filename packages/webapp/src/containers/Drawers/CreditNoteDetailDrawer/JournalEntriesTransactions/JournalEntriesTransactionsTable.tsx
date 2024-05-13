@@ -1,14 +1,14 @@
 // @ts-nocheck
 import React from 'react';
-import { Card } from '@/components';
+import { Card } from '@bigcapital/webapp/components';
 
 import { useCreditNoteDetailDrawerContext } from '../CreditNoteDetailDrawerProvider';
-import { useTransactionsByReference } from '@/hooks/query';
+import { useTransactionsByReference } from '@bigcapital/webapp/hooks/query';
 import { useJournalEntriesTransactionsColumns } from './components';
 
 import JournalEntriesTable, {
   AmountDisplayedBaseCurrencyMessage,
-} from '@/containers/JournalEntriesTable/JournalEntriesTable';
+} from '@bigcapital/webapp/containers/JournalEntriesTable/JournalEntriesTable';
 
 /**
  * Journal entries table.

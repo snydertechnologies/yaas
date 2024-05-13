@@ -1,5 +1,5 @@
-import config from '@/config';
-import type { ITenant } from '@/interfaces';
+import config from '@bigcapital/server/config';
+import type { ITenant } from '@bigcapital/server/interfaces';
 
 export const tenantKnexConfig = (tenant: ITenant) => {
   const { organizationId, id } = tenant;

@@ -1,5 +1,5 @@
-import { IRefundCreditNote } from '@/interfaces';
-import { TransformerInjectable } from '@/lib/Transformer/TransformerInjectable';
+import { IRefundCreditNote } from '@bigcapital/server/interfaces';
+import { TransformerInjectable } from '@bigcapital/server/lib/Transformer/TransformerInjectable';
 import { Inject, Service } from 'typedi';
 import RefundCreditNote from './RefundCreditNote';
 import RefundCreditNoteTransformer from './RefundCreditNoteTransformer';

@@ -1,9 +1,9 @@
-// @ts-nocheck
-import * as Yup from 'yup';
+import { DATATYPES_LENGTH } from '@bigcapital/webapp/constants/dataTypes';
+import { isBlank } from '@bigcapital/webapp/utils';
 import moment from 'moment';
 import intl from 'react-intl-universal';
-import { DATATYPES_LENGTH } from '@/constants/dataTypes';
-import { isBlank } from '@/utils';
+// @ts-nocheck
+import * as Yup from 'yup';
 
 const BillFormSchema = Yup.object().shape({
   vendor_id: Yup.number().required().label(intl.get('vendor_name_')),

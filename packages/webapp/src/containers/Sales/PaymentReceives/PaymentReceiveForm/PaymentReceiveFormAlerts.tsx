@@ -1,7 +1,7 @@
+import ClearingAllLinesAlert from '@bigcapital/webapp/containers/Alerts/PaymentReceives/ClearingAllLinesAlert';
+import { useFormikContext } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { useFormikContext } from 'formik';
-import ClearingAllLinesAlert from '@/containers/Alerts/PaymentReceives/ClearingAllLinesAlert';
 import { clearAllPaymentEntries } from './utils';
 
 /**

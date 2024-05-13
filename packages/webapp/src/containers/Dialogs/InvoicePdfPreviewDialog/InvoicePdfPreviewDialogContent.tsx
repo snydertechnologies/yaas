@@ -1,12 +1,12 @@
+import { AnchorButton } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { AnchorButton } from '@blueprintjs/core';
 
-import { DialogContent, PdfDocumentPreview, T } from '@/components';
-import { usePdfInvoice } from '@/hooks/query';
+import { DialogContent, PdfDocumentPreview, T } from '@bigcapital/webapp/components';
+import { usePdfInvoice } from '@bigcapital/webapp/hooks/query';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { compose } from '@/utils';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { compose } from '@bigcapital/webapp/utils';
 
 function InvoicePdfPreviewDialogContent({
   subscriptionForm: { invoiceId },

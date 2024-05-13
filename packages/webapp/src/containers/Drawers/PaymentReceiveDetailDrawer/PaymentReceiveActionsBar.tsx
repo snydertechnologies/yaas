@@ -5,16 +5,16 @@ import { Button, NavbarGroup, Classes, NavbarDivider, Intent } from '@blueprintj
 
 import { usePaymentReceiveDetailContext } from './PaymentReceiveDetailProvider';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import withAlertsActions from '@/containers/Alert/withAlertActions';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
 import { PaymentReceiveMoreMenuItems } from './utils';
-import { Can, Icon, FormattedMessage as T, DrawerActionsBar } from '@/components';
-import { PaymentReceiveAction, AbilitySubject } from '@/constants/abilityOption';
+import { Can, Icon, FormattedMessage as T, DrawerActionsBar } from '@bigcapital/webapp/components';
+import { PaymentReceiveAction, AbilitySubject } from '@bigcapital/webapp/constants/abilityOption';
 
-import { compose } from '@/utils';
-import { DRAWERS } from '@/constants/drawers';
-import { DialogsName } from '@/constants/dialogs';
+import { compose } from '@bigcapital/webapp/utils';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
 
 /**
  * Payment receive actions bar.

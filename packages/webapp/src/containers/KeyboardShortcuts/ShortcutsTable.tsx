@@ -1,8 +1,8 @@
+import { DataTable } from '@bigcapital/webapp/components';
+import { useKeywordShortcuts } from '@bigcapital/webapp/hooks/dashboard';
 // @ts-nocheck
 import React, { useMemo } from 'react';
-import { DataTable } from '@/components';
 import intl from 'react-intl-universal';
-import { useKeywordShortcuts } from '@/hooks/dashboard';
 
 /**
  *  keyboard shortcuts table.

@@ -1,7 +1,7 @@
-import asyncMiddleware from '@/api/middleware/asyncMiddleware';
-import { ServiceError } from '@/exceptions';
-import { EchangeRateErrors } from '@/lib/ExchangeRate/types';
-import { ExchangeRateApplication } from '@/services/ExchangeRates/ExchangeRateApplication';
+import asyncMiddleware from '@bigcapital/server/api/middleware/asyncMiddleware';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { EchangeRateErrors } from '@bigcapital/server/lib/ExchangeRate/types';
+import { ExchangeRateApplication } from '@bigcapital/server/services/ExchangeRates/ExchangeRateApplication';
 import { NextFunction, Request, Response, Router } from 'express';
 import { oneOf, query } from 'express-validator';
 import { Inject, Service } from 'typedi';

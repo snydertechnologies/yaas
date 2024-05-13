@@ -1,6 +1,6 @@
-import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';
-import { SaleInvoicesCost } from '@/services/Sales/Invoices/SalesInvoicesCost';
-import events from '@/subscribers/events';
+import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
+import { SaleInvoicesCost } from '@bigcapital/server/services/Sales/Invoices/SalesInvoicesCost';
+import events from '@bigcapital/server/subscribers/events';
 import { Container } from 'typedi';
 
 export default class WriteInvoicesJournalEntries {

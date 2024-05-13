@@ -1,10 +1,10 @@
+import classNames from 'classnames';
 // @ts-nocheck
 import React from 'react';
-import classNames from 'classnames';
 import styled from 'styled-components';
 
-import { CLASSES } from '@/constants/classes';
-import { Row, Col, Paper } from '@/components';
+import { Col, Paper, Row } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
 import { PaymentReceiveFormFootetLeft } from './PaymentReceiveFormFootetLeft';
 import { PaymentReceiveFormFootetRight } from './PaymentReceiveFormFootetRight';
 

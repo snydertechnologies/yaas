@@ -1,12 +1,12 @@
+import { Drawer, Position } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Position, Drawer } from '@blueprintjs/core';
 
-import '@/style/components/Drawer.scss';
+import '@bigcapital/webapp/style/components/Drawer.scss';
 
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
+import { compose } from '@bigcapital/webapp/utils';
 import { DrawerProvider } from './DrawerProvider';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
-import { compose } from '@/utils';
 
 /**
  * Drawer component.

@@ -1,6 +1,6 @@
+import { BaseCurrency, BaseCurrencyRoot } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import React from 'react';
-import { BaseCurrency, BaseCurrencyRoot } from '@/components';
 import { useCreditNoteFormContext } from './CreditNoteFormProvider';
 
 /**

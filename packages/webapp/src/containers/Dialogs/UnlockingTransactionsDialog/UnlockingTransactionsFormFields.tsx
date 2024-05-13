@@ -1,10 +1,10 @@
+import { FieldRequiredHint, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { useAutofocus } from '@bigcapital/webapp/hooks';
+import { inputIntent } from '@bigcapital/webapp/utils';
+import { Classes, FormGroup, TextArea } from '@blueprintjs/core';
+import { ErrorMessage, FastField } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { FastField, ErrorMessage } from 'formik';
-import { Classes, FormGroup, TextArea } from '@blueprintjs/core';
-import { FieldRequiredHint, FormattedMessage as T } from '@/components';
-import { useAutofocus } from '@/hooks';
-import { inputIntent } from '@/utils';
 
 /**
  * Unlocking transactions form fields.

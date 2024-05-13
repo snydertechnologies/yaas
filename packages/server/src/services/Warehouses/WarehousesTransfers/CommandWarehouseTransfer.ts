@@ -1,7 +1,7 @@
-import { ServiceError } from '@/exceptions';
-import { ICreateWarehouseTransferDTO, IEditWarehouseTransferDTO, IItem } from '@/interfaces';
-import ItemsEntriesService from '@/services/Items/ItemsEntriesService';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { ICreateWarehouseTransferDTO, IEditWarehouseTransferDTO, IItem } from '@bigcapital/server/interfaces';
+import ItemsEntriesService from '@bigcapital/server/services/Items/ItemsEntriesService';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject } from 'typedi';
 import { CRUDWarehouseTransfer } from './CRUDWarehouseTransfer';
 import { ERRORS } from './constants';

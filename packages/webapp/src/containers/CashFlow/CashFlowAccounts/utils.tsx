@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { transformTableStateToQuery } from '@/utils';
+import { transformTableStateToQuery } from '@bigcapital/webapp/utils';
 
 /**
  * Transformes the table state to list query.

@@ -1,8 +1,8 @@
+import { DrawerHeaderContent, DrawerLoading } from '@bigcapital/webapp/components';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import { useVendor } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React from 'react';
-import { DrawerHeaderContent, DrawerLoading } from '@/components';
-import { useVendor } from '@/hooks/query';
-import { DRAWERS } from '@/constants/drawers';
 
 const VendorDetailDrawerContext = React.createContext();
 

@@ -1,5 +1,5 @@
-import { IInventoryTransaction, IWarehouseTransfer, IWarehouseTransferEntry } from '@/interfaces';
-import InventoryService from '@/services/Inventory/Inventory';
+import { IInventoryTransaction, IWarehouseTransfer, IWarehouseTransferEntry } from '@bigcapital/server/interfaces';
+import InventoryService from '@bigcapital/server/services/Inventory/Inventory';
 import { Knex } from 'knex';
 import { Inject, Service } from 'typedi';
 

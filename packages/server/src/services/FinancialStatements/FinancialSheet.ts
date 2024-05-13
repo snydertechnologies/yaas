@@ -1,6 +1,6 @@
-import { ICashFlowStatementTotal, IFormatNumberSettings, INumberFormatQuery } from '@/interfaces';
+import { ICashFlowStatementTotal, IFormatNumberSettings, INumberFormatQuery } from '@bigcapital/server/interfaces';
+import { formatNumber } from '@bigcapital/server/utils';
 import moment from 'moment';
-import { formatNumber } from 'utils';
 
 export default class FinancialSheet {
   readonly numberFormat: INumberFormatQuery = {

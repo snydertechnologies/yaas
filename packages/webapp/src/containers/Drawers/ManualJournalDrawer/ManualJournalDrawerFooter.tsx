@@ -2,8 +2,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { FormatNumber, T, TD, TRDarkDoubleLines, TRDarkSingleLine, Table } from '@bigcapital/webapp/components';
 import { useManualJournalDrawerContext } from './ManualJournalDrawerProvider';
-import { TRDarkSingleLine, TRDarkDoubleLines, T, FormatNumber, Table, TD } from '@/components';
 
 /**
  * Manual journal readonly details footer.

@@ -1,8 +1,8 @@
-import { IBill } from '@/interfaces';
-import { Transformer } from '@/lib/Transformer/Transformer';
-import { ItemEntryTransformer } from '@/services/Sales/Invoices/ItemEntryTransformer';
-import { SaleInvoiceTaxEntryTransformer } from '@/services/Sales/Invoices/SaleInvoiceTaxEntryTransformer';
-import { formatNumber } from 'utils';
+import { IBill } from '@bigcapital/server/interfaces';
+import { Transformer } from '@bigcapital/server/lib/Transformer/Transformer';
+import { ItemEntryTransformer } from '@bigcapital/server/services/Sales/Invoices/ItemEntryTransformer';
+import { SaleInvoiceTaxEntryTransformer } from '@bigcapital/server/services/Sales/Invoices/SaleInvoiceTaxEntryTransformer';
+import { formatNumber } from '@bigcapital/server/utils';
 
 export class PurchaseInvoiceTransformer extends Transformer {
   /**

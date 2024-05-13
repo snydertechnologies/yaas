@@ -1,7 +1,7 @@
+import { AppToaster } from '@bigcapital/webapp/components';
+import { Intent } from '@blueprintjs/core';
 // @ts-nocheck
 import intl from 'react-intl-universal';
-import { Intent } from '@blueprintjs/core';
-import { AppToaster } from '@/components';
 
 /**
  * Handle delete errors.

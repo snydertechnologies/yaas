@@ -1,9 +1,9 @@
+import { Card, DetailItem, DetailsMenu } from '@bigcapital/webapp/components';
+import { Intent, Tag } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Card, DetailItem, DetailsMenu } from '@/components';
-import { useTaxRateDetailsContext } from './TaxRateDetailsContentBoot';
-import { Intent, Tag } from '@blueprintjs/core';
 import styled from 'styled-components';
+import { useTaxRateDetailsContext } from './TaxRateDetailsContentBoot';
 
 export default function TaxRateDetailsContentDetails() {
   const { taxRate } = useTaxRateDetailsContext();

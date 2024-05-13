@@ -1,7 +1,7 @@
-import BaseController from '@/api/controllers/BaseController';
-import { ServiceError } from '@/exceptions';
-import { ImportResourceApplication } from '@/services/Import/ImportResourceApplication';
-import { parseJsonSafe } from '@/utils/parse-json-safe';
+import BaseController from '@bigcapital/server/api/controllers/BaseController';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { ImportResourceApplication } from '@bigcapital/server/services/Import/ImportResourceApplication';
+import { parseJsonSafe } from '@bigcapital/server/utils/parse-json-safe';
 import { NextFunction, Request, Response, Router } from 'express';
 import { body, param, query } from 'express-validator';
 import { defaultTo } from 'lodash';

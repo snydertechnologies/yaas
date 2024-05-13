@@ -1,19 +1,19 @@
+import { FFormGroup, FormattedMessage as T, WarehouseSelect } from '@bigcapital/webapp/components';
+import { compose, momentFormatter, tansformDateValue } from '@bigcapital/webapp/utils';
+import { ControlGroup, FormGroup, InputGroup, Position } from '@blueprintjs/core';
+import { DateInput } from '@blueprintjs/datetime';
+import classNames from 'classnames';
+import { ErrorMessage, FastField, Field } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { FormGroup, InputGroup, Position, ControlGroup } from '@blueprintjs/core';
-import { FastField, Field, ErrorMessage } from 'formik';
-import { DateInput } from '@blueprintjs/datetime';
-import { FFormGroup, FormattedMessage as T, WarehouseSelect } from '@/components';
-import { momentFormatter, compose, tansformDateValue } from '@/utils';
-import classNames from 'classnames';
 
-import { CLASSES } from '@/constants/classes';
-import { FieldRequiredHint, Icon, InputPrependButton } from '@/components';
-import { inputIntent, handleDateChange } from '@/utils';
+import { FieldRequiredHint, Icon, InputPrependButton } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import { handleDateChange, inputIntent } from '@bigcapital/webapp/utils';
 import { useWarehouseTransferFormContext } from './WarehouseTransferFormProvider';
 import { useObserveTransferNoSettings } from './utils';
-import withSettings from '@/containers/Settings/withSettings';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
 
 /**
  * Warehouse transfer form header fields.

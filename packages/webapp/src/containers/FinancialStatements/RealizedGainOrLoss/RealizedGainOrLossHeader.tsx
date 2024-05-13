@@ -1,11 +1,11 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Button, Intent, Tab, Tabs } from '@blueprintjs/core';
+import { Form, Formik } from 'formik';
+import moment from 'moment';
 // @ts-nocheck
 import React from 'react';
-import moment from 'moment';
-import * as Yup from 'yup';
 import intl from 'react-intl-universal';
-import { Formik, Form } from 'formik';
-import { Tabs, Tab, Button, Intent } from '@blueprintjs/core';
-import { FormattedMessage as T } from '@/components';
+import * as Yup from 'yup';
 
 import FinancialStatementHeader from '../FinancialStatementHeader';
 import RealizedGainOrLossGeneralPanel from './RealizedGainOrLossGeneralPanel';
@@ -13,7 +13,7 @@ import RealizedGainOrLossGeneralPanel from './RealizedGainOrLossGeneralPanel';
 import withRealizedGainOrLoss from './withRealizedGainOrLoss';
 import withRealizedGainOrLossActions from './withRealizedGainOrLossActions';
 
-import { compose, transformToForm } from '@/utils';
+import { compose, transformToForm } from '@bigcapital/webapp/utils';
 
 /**
  * Realized Gain or Loss.header.

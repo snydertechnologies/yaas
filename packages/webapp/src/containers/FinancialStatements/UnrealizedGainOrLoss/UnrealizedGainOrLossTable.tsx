@@ -2,7 +2,7 @@
 import React from 'react';
 import intl from 'react-intl-universal';
 
-import { FinancialSheet, DataTable } from '@/components';
+import { DataTable, FinancialSheet } from '@bigcapital/webapp/components';
 
 /**
  * Unrealized Gain or Loss table.

@@ -1,12 +1,12 @@
 // @ts-nocheck
 import React from 'react';
 
-import { CommercialDocEntriesTable } from '@/components';
+import { CommercialDocEntriesTable } from '@bigcapital/webapp/components';
 
 import { useEstimateDetailDrawerContext } from './EstimateDetailDrawerProvider';
 import { useEstimateReadonlyEntriesColumns } from './utils';
 
-import { TableStyle } from '@/constants';
+import { TableStyle } from '@bigcapital/webapp/constants';
 
 /**
  * Estimate detail table.

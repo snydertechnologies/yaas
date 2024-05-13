@@ -1,15 +1,15 @@
+import classNames from 'classnames';
+import * as R from 'ramda';
 // @ts-nocheck
 import React, { useRef } from 'react';
 import intl from 'react-intl-universal';
-import * as R from 'ramda';
-import classNames from 'classnames';
 
-import { AppToaster, If, Stack } from '@/components';
-import { Align, CLASSES } from '@/constants';
-import { useVendorsBalanceSummaryContext } from './VendorsBalanceSummaryProvider';
-import FinancialLoadingBar from '../FinancialLoadingBar';
+import { AppToaster, If, Stack } from '@bigcapital/webapp/components';
+import { Align, CLASSES } from '@bigcapital/webapp/constants';
+import { useVendorBalanceSummaryCsvExport, useVendorBalanceSummaryXlsxExport } from '@bigcapital/webapp/hooks/query';
 import { Intent, Menu, MenuItem, ProgressBar, Text } from '@blueprintjs/core';
-import { useVendorBalanceSummaryCsvExport, useVendorBalanceSummaryXlsxExport } from '@/hooks/query';
+import FinancialLoadingBar from '../FinancialLoadingBar';
+import { useVendorsBalanceSummaryContext } from './VendorsBalanceSummaryProvider';
 
 /**
  * Retrieve vendors balance summary columns.

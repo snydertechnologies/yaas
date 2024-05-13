@@ -1,13 +1,13 @@
-import { ServiceError } from '@/exceptions';
-import { IGeneralLedgerMeta, IGeneralLedgerSheetQuery } from '@/interfaces';
-import Journal from '@/services/Accounting/JournalPoster';
-import GeneralLedgerSheet from '@/services/FinancialStatements/GeneralLedger/GeneralLedger';
-import TenancyService from '@/services/Tenancy/TenancyService';
-import { Tenant } from '@/system/models';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { IGeneralLedgerMeta, IGeneralLedgerSheetQuery } from '@bigcapital/server/interfaces';
+import Journal from '@bigcapital/server/services/Accounting/JournalPoster';
+import GeneralLedgerSheet from '@bigcapital/server/services/FinancialStatements/GeneralLedger/GeneralLedger';
+import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import { Tenant } from '@bigcapital/server/system/models';
+import { transformToMap } from '@bigcapital/server/utils';
 import { difference } from 'lodash';
 import moment from 'moment';
 import { Inject, Service } from 'typedi';
-import { transformToMap } from 'utils';
 import { GeneralLedgerMeta } from './GeneralLedgerMeta';
 
 const ERRORS = {

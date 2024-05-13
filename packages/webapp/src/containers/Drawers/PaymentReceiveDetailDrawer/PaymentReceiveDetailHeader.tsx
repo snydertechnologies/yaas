@@ -12,7 +12,7 @@ import {
   CommercialDocTopHeader,
   CustomerDrawerLink,
   ExchangeRateDetailItem,
-} from '@/components';
+} from '@bigcapital/webapp/components';
 import { usePaymentReceiveDetailContext } from './PaymentReceiveDetailProvider';
 
 /**

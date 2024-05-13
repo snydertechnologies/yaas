@@ -1,6 +1,9 @@
+import {
+  resetVendorCreditTableState,
+  setVendorCreditTableState,
+} from '@bigcapital/webapp/store/VendorCredit/vendorCredit.actions';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { setVendorCreditTableState, resetVendorCreditTableState } from '@/store/VendorCredit/vendorCredit.actions';
 
 const mapDispatchToProps = (dispatch) => ({
   setVendorsCreditNoteTableState: (queries) => dispatch(setVendorCreditTableState(queries)),

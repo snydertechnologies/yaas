@@ -1,7 +1,7 @@
 // @ts-nocheck
-import { DialogContent, PdfDocumentPreview, FormattedMessage as T } from '@/components';
+import { DialogContent, PdfDocumentPreview, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { useTrialBalanceSheetPdf } from '@bigcapital/webapp/hooks/query';
 import { AnchorButton } from '@blueprintjs/core';
-import { useTrialBalanceSheetPdf } from '@/hooks/query';
 import { useTrialBalanceSheetContext } from '../../TrialBalanceProvider';
 
 export default function TrialBalanceSheetPdfDialogContent() {

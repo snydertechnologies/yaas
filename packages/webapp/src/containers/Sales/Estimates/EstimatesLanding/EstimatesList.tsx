@@ -1,18 +1,18 @@
+import { DashboardContentTable, DashboardPageContent } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import React from 'react';
-import { DashboardContentTable, DashboardPageContent } from '@/components';
 
-import '@/style/pages/SaleEstimate/List.scss';
+import '@bigcapital/webapp/style/pages/SaleEstimate/List.scss';
 
 import EstimatesActionsBar from './EstimatesActionsBar';
-import EstimatesViewTabs from './EstimatesViewTabs';
 import EstimatesDataTable from './EstimatesDataTable';
+import EstimatesViewTabs from './EstimatesViewTabs';
 
 import withEstimates from './withEstimates';
 import withEstimatesActions from './withEstimatesActions';
 
+import { compose, transformTableStateToQuery } from '@bigcapital/webapp/utils';
 import { EstimatesListProvider } from './EstimatesListProvider';
-import { compose, transformTableStateToQuery } from '@/utils';
 
 /**
  * Sale estimates list page.

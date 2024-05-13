@@ -1,12 +1,12 @@
+import { AccountsSelect, Col, FFormGroup, Row, FormattedMessage as T } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import React from 'react';
-import { AccountsSelect, FFormGroup, FormattedMessage as T, Col, Row } from '@/components';
 
-import withCurrentOrganization from '@/containers/Organization/withCurrentOrganization';
-import { accountsFieldShouldUpdate } from './utils';
-import { ACCOUNT_TYPE } from '@/constants/accountTypes';
+import { ACCOUNT_TYPE } from '@bigcapital/webapp/constants/accountTypes';
+import withCurrentOrganization from '@bigcapital/webapp/containers/Organization/withCurrentOrganization';
+import { compose } from '@bigcapital/webapp/utils';
 import { useItemFormContext } from './ItemFormProvider';
-import { compose } from '@/utils';
+import { accountsFieldShouldUpdate } from './utils';
 
 /**
  * Item form inventory sections.

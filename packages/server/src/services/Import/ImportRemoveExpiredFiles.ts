@@ -1,4 +1,4 @@
-import { Import } from '@/system/models';
+import { Import } from '@bigcapital/server/system/models';
 import bluebird from 'bluebird';
 import moment from 'moment';
 import { Service } from 'typedi';

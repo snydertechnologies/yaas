@@ -1,16 +1,16 @@
+import { FieldHint, Flex, FlexItem, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Checkbox, FormGroup } from '@blueprintjs/core';
+import { FastField, Field } from 'formik';
 // @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
-import { FastField, Field } from 'formik';
-import { FormGroup, Checkbox } from '@blueprintjs/core';
-import { Flex, FlexItem, FieldHint, FormattedMessage as T } from '@/components';
 import {
-  handlePreviousYearCheckBoxChange,
-  handlePreviousYearChangeCheckboxChange,
-  handlePreviousPeriodCheckBoxChange,
   handlePreivousPeriodPercentageCheckboxChange,
-  handlePreviousYearPercentageCheckboxChange,
   handlePreviousPeriodChangeCheckboxChange,
+  handlePreviousPeriodCheckBoxChange,
+  handlePreviousYearChangeCheckboxChange,
+  handlePreviousYearCheckBoxChange,
+  handlePreviousYearPercentageCheckboxChange,
 } from './utils';
 
 /**

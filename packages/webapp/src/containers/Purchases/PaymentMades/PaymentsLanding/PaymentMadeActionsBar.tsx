@@ -1,33 +1,33 @@
+import { Alignment, Button, Classes, Intent, NavbarDivider, NavbarGroup } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Button, Classes, NavbarDivider, NavbarGroup, Intent, Alignment } from '@blueprintjs/core';
 
 import { useHistory } from 'react-router-dom';
 
 import {
-  If,
-  Can,
-  Icon,
-  FormattedMessage as T,
-  DashboardActionViewsList,
-  DashboardFilterButton,
   AdvancedFilterPopover,
-  DashboardRowsHeightButton,
+  Can,
+  DashboardActionViewsList,
   DashboardActionsBar,
-} from '@/components';
+  DashboardFilterButton,
+  DashboardRowsHeightButton,
+  Icon,
+  If,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
 
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import withSettingsActions from '@bigcapital/webapp/containers/Settings/withSettingsActions';
 import withPaymentMade from './withPaymentMade';
 import withPaymentMadeActions from './withPaymentMadeActions';
-import withSettings from '@/containers/Settings/withSettings';
-import withSettingsActions from '@/containers/Settings/withSettingsActions';
 
+import { AbilitySubject, PaymentMadeAction } from '@bigcapital/webapp/constants/abilityOption';
+import { useRefreshPaymentMades } from '@bigcapital/webapp/hooks/query/paymentMades';
 import { usePaymentMadesListContext } from './PaymentMadesListProvider';
-import { useRefreshPaymentMades } from '@/hooks/query/paymentMades';
-import { PaymentMadeAction, AbilitySubject } from '@/constants/abilityOption';
 
-import { compose } from '@/utils';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { DialogsName } from '@/constants/dialogs';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Payment made actions bar.

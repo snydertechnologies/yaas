@@ -3,11 +3,11 @@ import {
   IFinancialDatePeriodsUnit,
   type IFinancialSheetTotalPeriod,
   type IFormatNumberSettings,
-} from '@/interfaces';
+} from '@bigcapital/server/interfaces';
+import { dateRangeFromToCollection } from '@bigcapital/server/utils';
 import { memoize } from 'lodash';
 import { compose } from 'lodash/fp';
 import * as R from 'ramda';
-import { dateRangeFromToCollection } from 'utils';
 import { FinancialDateRanges } from './FinancialDateRanges';
 
 export const FinancialDatePeriods = (Base) =>

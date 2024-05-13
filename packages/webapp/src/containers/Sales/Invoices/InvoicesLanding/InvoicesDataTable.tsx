@@ -4,24 +4,29 @@ import { useHistory } from 'react-router-dom';
 
 import InvoicesEmptyStatus from './InvoicesEmptyStatus';
 
-import { TABLES } from '@/constants/tables';
-import { DataTable, DashboardContentTable, TableSkeletonHeader, TableSkeletonRows } from '@/components';
+import {
+  DashboardContentTable,
+  DataTable,
+  TableSkeletonHeader,
+  TableSkeletonRows,
+} from '@bigcapital/webapp/components';
+import { TABLES } from '@bigcapital/webapp/constants/tables';
 
-import withInvoices from './withInvoices';
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDashboardActions from '@bigcapital/webapp/containers/Dashboard/withDashboardActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
 import withInvoiceActions from './withInvoiceActions';
-import withAlertsActions from '@/containers/Alert/withAlertActions';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import withDashboardActions from '@/containers/Dashboard/withDashboardActions';
-import withSettings from '@/containers/Settings/withSettings';
+import withInvoices from './withInvoices';
 
-import { useMemorizedColumnsWidths } from '@/hooks';
-import { useInvoicesTableColumns, ActionsMenu } from './components';
+import { useMemorizedColumnsWidths } from '@bigcapital/webapp/hooks';
 import { useInvoicesListContext } from './InvoicesListProvider';
+import { ActionsMenu, useInvoicesTableColumns } from './components';
 
-import { compose } from '@/utils';
-import { DRAWERS } from '@/constants/drawers';
-import { DialogsName } from '@/constants/dialogs';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Invoices datatable.

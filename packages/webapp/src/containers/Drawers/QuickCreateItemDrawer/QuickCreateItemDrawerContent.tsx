@@ -1,7 +1,7 @@
+import { DrawerBody, DrawerHeaderContent, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
 // @ts-nocheck
 import React from 'react';
-import { DrawerHeaderContent, DrawerBody, FormattedMessage as T } from '@/components';
-import { DRAWERS } from '@/constants/drawers';
 import QuickCreateItemDrawerForm from './QuickCreateItemDrawerForm';
 
 /**

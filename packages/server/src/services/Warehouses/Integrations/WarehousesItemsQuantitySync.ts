@@ -1,5 +1,5 @@
-import { IInventoryTransaction, IItemWarehouseQuantityChange } from '@/interfaces';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { IInventoryTransaction, IItemWarehouseQuantityChange } from '@bigcapital/server/interfaces';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Knex } from 'knex';
 import { omit } from 'lodash';
 import { Inject, Service } from 'typedi';

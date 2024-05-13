@@ -1,19 +1,19 @@
+import moment from 'moment';
 // @ts-nocheck
 import React, { useEffect, useCallback } from 'react';
-import moment from 'moment';
 
 import PurchasesByItemsActionsBar from './PurchasesByItemsActionsBar';
 import PurchasesByItemsHeader from './PurchasesByItemsHeader';
 
-import { FinancialStatement, DashboardPageContent } from '@/components';
-import { PurchasesByItemsLoadingBar } from './components';
-import { PurchasesByItemsProvider } from './PurchasesByItemsProvider';
+import { DashboardPageContent, FinancialStatement } from '@bigcapital/webapp/components';
+import { compose } from '@bigcapital/webapp/utils';
 import { PurchasesByItemsBody } from './PurchasesByItemsBody';
+import { PurchasesByItemsProvider } from './PurchasesByItemsProvider';
+import { PurchasesByItemsLoadingBar } from './components';
 import { usePurchasesByItemsQuery } from './utils';
-import { compose } from '@/utils';
 
-import withPurchasesByItemsActions from './withPurchasesByItemsActions';
 import { PurchasesByItemsDialogs } from './PurchasesByItemsDialogs';
+import withPurchasesByItemsActions from './withPurchasesByItemsActions';
 
 /**
  * Purchases by items.

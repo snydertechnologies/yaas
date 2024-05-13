@@ -1,9 +1,9 @@
 // @ts-nocheck
 import React from 'react';
-import { useParams, useHistory } from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
 import styled from 'styled-components';
 
-import { DashboardCard, DashboardInsider } from '@/components';
+import { DashboardCard, DashboardInsider } from '@bigcapital/webapp/components';
 
 import CustomerFormFormik from './CustomerFormFormik';
 import { CustomerFormProvider, useCustomerFormContext } from './CustomerFormProvider';

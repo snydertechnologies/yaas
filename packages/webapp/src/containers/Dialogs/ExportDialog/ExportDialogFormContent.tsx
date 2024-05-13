@@ -1,12 +1,12 @@
 // @ts-nocheck
-import { FFormGroup, FRadioGroup, FSelect, Group } from '@/components';
+import { FFormGroup, FRadioGroup, FSelect, Group } from '@bigcapital/webapp/components';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { compose } from '@bigcapital/webapp/utils';
 import { Button, Intent, Radio } from '@blueprintjs/core';
 import { Form, useFormikContext } from 'formik';
-import { ExportResources } from './constants';
 import styles from './ExportDialogContent.module.scss';
-import { compose } from '@/utils';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { DialogsName } from '@/constants/dialogs';
+import { ExportResources } from './constants';
 
 function ExportDialogFormContentRoot({
   // #withDialogActions

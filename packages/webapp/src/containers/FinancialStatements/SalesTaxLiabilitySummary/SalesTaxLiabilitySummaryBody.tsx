@@ -1,8 +1,8 @@
 // @ts-nocheck
 import React from 'react';
 
+import { FinancialSheetSkeleton } from '@bigcapital/webapp/components';
 import { FinancialReportBody } from '../FinancialReportPage';
-import { FinancialSheetSkeleton } from '@/components';
 import { SalesTaxLiabilitySummaryTable } from './SalesTaxLiabilitySummaryTable';
 
 import { useSalesTaxLiabilitySummaryContext } from './SalesTaxLiabilitySummaryBoot';

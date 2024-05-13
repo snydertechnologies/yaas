@@ -1,11 +1,17 @@
+import {
+  BranchSelect,
+  DetailsBarSkeletonBase,
+  FeatureCan,
+  FormBranchSelectButton,
+  FormTopbar,
+} from '@bigcapital/webapp/components';
+import { Features } from '@bigcapital/webapp/constants';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
+import { Alignment, Classes, NavbarGroup } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Alignment, NavbarGroup, Classes } from '@blueprintjs/core';
-import { useSetPrimaryBranchToForm } from './utils';
-import { useFeatureCan } from '@/hooks/state';
-import { BranchSelect, FeatureCan, FormTopbar, DetailsBarSkeletonBase, FormBranchSelectButton } from '@/components';
 import { usePaymentMadeFormContext } from './PaymentMadeFormProvider';
-import { Features } from '@/constants';
+import { useSetPrimaryBranchToForm } from './utils';
 
 /**
  * Payment made from top bar.

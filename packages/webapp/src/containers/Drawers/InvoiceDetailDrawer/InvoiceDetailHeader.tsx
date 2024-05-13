@@ -15,7 +15,7 @@ import {
   CommercialDocTopHeader,
   CustomerDrawerLink,
   ExchangeRateDetailItem,
-} from '@/components';
+} from '@bigcapital/webapp/components';
 import { useInvoiceDetailDrawerContext } from './InvoiceDetailDrawerProvider';
 import { InvoiceDetailsStatus } from './utils';
 

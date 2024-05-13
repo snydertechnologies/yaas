@@ -9,7 +9,7 @@ import {
   IContact,
   IFormatNumberSettings,
   ISaleInvoice,
-} from '@/interfaces';
+} from '@bigcapital/server/interfaces';
 import { defaultTo, get, sumBy } from 'lodash';
 import { Dictionary } from 'tsyringe/dist/typings/types';
 import AgingReport from './AgingReport';

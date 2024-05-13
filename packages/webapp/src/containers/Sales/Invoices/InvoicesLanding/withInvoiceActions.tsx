@@ -1,6 +1,6 @@
+import { resetInvoicesTableState, setInvoicesTableState } from '@bigcapital/webapp/store/Invoice/invoices.actions';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { setInvoicesTableState, resetInvoicesTableState } from '@/store/Invoice/invoices.actions';
 
 const mapDipatchToProps = (dispatch) => ({
   setInvoicesTableState: (queries) => dispatch(setInvoicesTableState(queries)),

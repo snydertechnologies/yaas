@@ -1,6 +1,6 @@
-import { IModel, IView, IViewsService } from '@/interfaces';
-import ResourceService from '@/services/Resource/ResourceService';
-import TenancyService from '@/services/Tenancy/TenancyService';
+import { IModel, IView, IViewsService } from '@bigcapital/server/interfaces';
+import ResourceService from '@bigcapital/server/services/Resource/ResourceService';
+import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject, Service } from 'typedi';
 
 @Service()

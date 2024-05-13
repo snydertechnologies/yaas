@@ -1,21 +1,21 @@
-// @ts-nocheck
-import React, { createContext, useState } from 'react';
-import { Features } from '@/constants';
-import { useFeatureCan } from '@/hooks/state';
-import { DashboardInsider } from '@/components/Dashboard';
-import { useProjects } from '@/containers/Projects/hooks';
+import { DashboardInsider } from '@bigcapital/webapp/components/Dashboard';
+import { Features } from '@bigcapital/webapp/constants';
+import { useProjects } from '@bigcapital/webapp/containers/Projects/hooks';
 import {
   useAccounts,
-  useVendors,
-  useItems,
   useBill,
-  useWarehouses,
   useBranches,
-  useSettings,
   useCreateBill,
   useEditBill,
-} from '@/hooks/query';
-import { useTaxRates } from '@/hooks/query/taxRates';
+  useItems,
+  useSettings,
+  useVendors,
+  useWarehouses,
+} from '@bigcapital/webapp/hooks/query';
+import { useTaxRates } from '@bigcapital/webapp/hooks/query/taxRates';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
+// @ts-nocheck
+import React, { createContext, useState } from 'react';
 
 const BillFormContext = createContext();
 

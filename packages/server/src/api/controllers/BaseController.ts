@@ -1,9 +1,9 @@
-import asyncMiddleware from '@/api/middleware/asyncMiddleware';
+import asyncMiddleware from '@bigcapital/server/api/middleware/asyncMiddleware';
 import accepts from 'accepts';
 import { NextFunction, Request, Response } from 'express';
 import { matchedData, validationResult } from 'express-validator';
 import { camelCase, drop, first, get, isArray, omit, set, snakeCase } from 'lodash';
-import { mapKeysDeep } from 'utils';
+import { mapKeysDeep } from '@bigcapital/server/utils';
 
 export default class BaseController {
   /**

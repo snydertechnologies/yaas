@@ -1,24 +1,24 @@
+import { Button, Intent, Tab, Tabs } from '@blueprintjs/core';
+import { Form, Formik } from 'formik';
+import moment from 'moment';
 // @ts-nocheck
 import React from 'react';
-import * as Yup from 'yup';
-import styled from 'styled-components';
-import moment from 'moment';
-import { Formik, Form } from 'formik';
 import intl from 'react-intl-universal';
-import { Tabs, Tab, Button, Intent } from '@blueprintjs/core';
+import styled from 'styled-components';
+import * as Yup from 'yup';
 
-import { FormattedMessage as T } from '@/components';
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
 
 import FinancialStatementHeader from '../FinancialStatementHeader';
-import TrialBalanceSheetHeaderGeneralPanel from './TrialBalanceSheetHeaderGeneralPanel';
 import TrialBalanceSheetHeaderDimensionsPanel from './TrialBalanceSheetHeaderDimensionsPanel';
+import TrialBalanceSheetHeaderGeneralPanel from './TrialBalanceSheetHeaderGeneralPanel';
 
 import withTrialBalance from './withTrialBalance';
 import withTrialBalanceActions from './withTrialBalanceActions';
 
-import { compose, transformToForm } from '@/utils';
-import { useFeatureCan } from '@/hooks/state';
-import { Features } from '@/constants';
+import { Features } from '@bigcapital/webapp/constants';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
+import { compose, transformToForm } from '@bigcapital/webapp/utils';
 
 /**
  * Trial balance sheet header.

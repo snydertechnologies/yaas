@@ -1,5 +1,5 @@
-import TenantRepository from '@/repositories/TenantRepository';
-import { ManualJournal } from 'models';
+import { ManualJournal } from '@bigcapital/server/models';
+import TenantRepository from '@bigcapital/server/repositories/TenantRepository';
 
 export default class JournalRepository extends TenantRepository {
   /**

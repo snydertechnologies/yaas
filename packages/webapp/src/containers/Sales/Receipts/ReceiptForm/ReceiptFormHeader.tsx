@@ -1,14 +1,14 @@
+import classNames from 'classnames';
+import { useFormikContext } from 'formik';
 // @ts-nocheck
 import React, { useMemo } from 'react';
 import intl from 'react-intl-universal';
-import classNames from 'classnames';
-import { useFormikContext } from 'formik';
 
-import { CLASSES } from '@/constants/classes';
-import { PageFormBigNumber } from '@/components';
+import { PageFormBigNumber } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
 import ReceiptFormHeaderFields from './ReceiptFormHeaderFields';
 
-import { getEntriesTotal } from '@/containers/Entries/utils';
+import { getEntriesTotal } from '@bigcapital/webapp/containers/Entries/utils';
 
 /**
  * Receipt form header section.

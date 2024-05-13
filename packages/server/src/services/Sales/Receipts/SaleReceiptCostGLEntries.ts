@@ -1,11 +1,11 @@
-import { AccountNormal, IInventoryLotCost, ILedgerEntry } from '@/interfaces';
-import Ledger from '@/services/Accounting/Ledger';
-import LedgerStorageService from '@/services/Accounting/LedgerStorageService';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { AccountNormal, IInventoryLotCost, ILedgerEntry } from '@bigcapital/server/interfaces';
+import Ledger from '@bigcapital/server/services/Accounting/Ledger';
+import LedgerStorageService from '@bigcapital/server/services/Accounting/LedgerStorageService';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import { increment } from '@bigcapital/server/utils';
 import { Knex } from 'knex';
 import * as R from 'ramda';
 import { Inject, Service } from 'typedi';
-import { increment } from 'utils';
 import { groupInventoryTransactionsByTypeId } from '../../Inventory/utils';
 
 @Service()

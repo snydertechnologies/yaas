@@ -1,18 +1,18 @@
+import { compose } from 'lodash/fp';
 // @ts-nocheck
 import React, { useEffect } from 'react';
-import { compose } from 'lodash/fp';
 
-import '@/style/pages/CashFlow/CashFlowAccounts/List.scss';
+import '@bigcapital/webapp/style/pages/CashFlow/CashFlowAccounts/List.scss';
 
-import { DashboardPageContent } from '@/components';
+import { DashboardPageContent } from '@bigcapital/webapp/components';
 import { CashFlowAccountsProvider } from './CashFlowAccountsProvider';
 
-import CashflowAccountsGrid from './CashflowAccountsGrid';
 import CashFlowAccountsActionsBar from './CashFlowAccountsActionsBar';
+import CashflowAccountsGrid from './CashflowAccountsGrid';
 import { CashflowAccountsPlaidLink } from './CashflowAccountsPlaidLink';
 
-import withCashflowAccounts from '@/containers/CashFlow/AccountTransactions/withCashflowAccounts';
-import withCashflowAccountsTableActions from '@/containers/CashFlow/AccountTransactions/withCashflowAccountsTableActions';
+import withCashflowAccounts from '@bigcapital/webapp/containers/CashFlow/AccountTransactions/withCashflowAccounts';
+import withCashflowAccountsTableActions from '@bigcapital/webapp/containers/CashFlow/AccountTransactions/withCashflowAccountsTableActions';
 
 /**
  * Cashflow accounts list.

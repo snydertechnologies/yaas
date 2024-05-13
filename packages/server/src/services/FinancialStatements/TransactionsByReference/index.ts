@@ -1,5 +1,5 @@
-import { ITransactionsByReferenceQuery, ITransactionsByReferenceTransaction } from '@/interfaces';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { ITransactionsByReferenceQuery, ITransactionsByReferenceTransaction } from '@bigcapital/server/interfaces';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject, Service } from 'typedi';
 import TransactionsByReferenceReport from './TransactionsByReferenceReport';
 import TransactionsByReferenceRepository from './TransactionsByReferenceRepository';

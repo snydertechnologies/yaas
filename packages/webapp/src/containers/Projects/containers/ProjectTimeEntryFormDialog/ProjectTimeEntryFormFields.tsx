@@ -1,23 +1,23 @@
+import {
+  FDateInput,
+  FFormGroup,
+  FInputGroup,
+  FTextArea,
+  FieldRequiredHint,
+  If,
+  Stack,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { momentFormatter } from '@bigcapital/webapp/utils';
+import { Classes, Intent, Position } from '@blueprintjs/core';
+import classNames from 'classnames';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
 import styled from 'styled-components';
-import { Classes, Intent, Position } from '@blueprintjs/core';
-import { CLASSES } from '@/constants/classes';
-import classNames from 'classnames';
-import {
-  If,
-  FFormGroup,
-  FInputGroup,
-  FDateInput,
-  FTextArea,
-  FieldRequiredHint,
-  FormattedMessage as T,
-  Stack,
-} from '@/components';
+import { ProjectSelectButton, ProjectTaskSelect, ProjectsSelect } from '../../components';
 import { useProjectTimeEntryFormContext } from './ProjectTimeEntryFormProvider';
-import { ProjectsSelect, ProjectTaskSelect, ProjectSelectButton } from '../../components';
-import { momentFormatter } from '@/utils';
 import { useSetProjectToForm } from './utils';
 
 /**

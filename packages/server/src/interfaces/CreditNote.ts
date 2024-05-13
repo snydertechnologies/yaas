@@ -1,4 +1,4 @@
-import type { IDynamicListFilter, IItemEntry } from '@/interfaces';
+import type { IDynamicListFilter, IItemEntry } from '@bigcapital/server/interfaces';
 import type { Knex } from 'knex';
 import type { ILedgerEntry } from './Ledger';
 

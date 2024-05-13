@@ -1,4 +1,4 @@
-import { getTransactionsLockingSettingsSchema } from '@/api/controllers/TransactionsLocking/utils';
+import { getTransactionsLockingSettingsSchema } from '@bigcapital/server/api/controllers/TransactionsLocking/utils';
 
 export default {
   organization: {

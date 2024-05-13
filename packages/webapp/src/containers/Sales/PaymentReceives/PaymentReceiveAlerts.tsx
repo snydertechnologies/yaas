@@ -2,7 +2,7 @@
 import React from 'react';
 
 const PaymentReceiveDeleteAlert = React.lazy(
-  () => import('@/containers/Alerts/PaymentReceives/PaymentReceiveDeleteAlert'),
+  () => import('@bigcapital/webapp/containers/Alerts/PaymentReceives/PaymentReceiveDeleteAlert'),
 );
 
 /**

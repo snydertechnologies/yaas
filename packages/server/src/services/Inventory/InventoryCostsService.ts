@@ -1,5 +1,5 @@
-import { IInventoryItemCostMeta } from '@/interfaces';
-import TenancyService from '@/services/Tenancy/TenancyService';
+import { IInventoryItemCostMeta } from '@bigcapital/server/interfaces';
+import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Knex } from 'knex';
 import { get, keyBy } from 'lodash';
 import * as R from 'ramda';

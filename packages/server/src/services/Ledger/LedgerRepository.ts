@@ -1,6 +1,6 @@
-import { ILedgerEntry } from '@/interfaces';
-import JournalEntry from '@/services/Accounting/JournalEntry';
-import JournalPoster from '@/services/Accounting/JournalPoster';
+import { ILedgerEntry } from '@bigcapital/server/interfaces';
+import JournalEntry from '@bigcapital/server/services/Accounting/JournalEntry';
+import JournalPoster from '@bigcapital/server/services/Accounting/JournalPoster';
 import Knex from 'knex';
 import { omit } from 'lodash';
 import { Service } from 'typedi';

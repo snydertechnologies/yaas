@@ -4,13 +4,13 @@ import {
   IManualJournalDTO,
   IManualJournalEventCreatedPayload,
   ISystemUser,
-} from '@/interfaces';
-import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';
-import { ManualJournalBranchesDTOTransformer } from '@/services/Branches/Integrations/ManualJournals/ManualJournalDTOTransformer';
-import TenancyService from '@/services/Tenancy/TenancyService';
-import UnitOfWork from '@/services/UnitOfWork';
-import events from '@/subscribers/events';
-import { TenantMetadata } from '@/system/models';
+} from '@bigcapital/server/interfaces';
+import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
+import { ManualJournalBranchesDTOTransformer } from '@bigcapital/server/services/Branches/Integrations/ManualJournals/ManualJournalDTOTransformer';
+import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import UnitOfWork from '@bigcapital/server/services/UnitOfWork';
+import events from '@bigcapital/server/subscribers/events';
+import { TenantMetadata } from '@bigcapital/server/system/models';
 import { Knex } from 'knex';
 import { omit, sumBy } from 'lodash';
 import moment from 'moment';

@@ -1,11 +1,11 @@
-import { ITableColumn, ITableRow } from '@/interfaces';
+import { ITableColumn, ITableRow } from '@bigcapital/server/interfaces';
 import {
   SalesTaxLiabilitySummaryQuery,
   SalesTaxLiabilitySummaryRate,
   SalesTaxLiabilitySummaryReportData,
   SalesTaxLiabilitySummaryTotal,
-} from '@/interfaces/SalesTaxLiabilitySummary';
-import { tableRowMapper } from '@/utils';
+} from '@bigcapital/server/interfaces/SalesTaxLiabilitySummary';
+import { tableRowMapper } from '@bigcapital/server/utils';
 import * as R from 'ramda';
 import AgingReport from '../AgingSummary/AgingReport';
 import { FinancialSheetStructure } from '../FinancialSheetStructure';

@@ -1,13 +1,13 @@
+import { CloudLoadingIndicator, DataTableEditable, FormattedMessage as T } from '@bigcapital/webapp/components';
+import classNames from 'classnames';
 // @ts-nocheck
 import React, { useCallback } from 'react';
-import classNames from 'classnames';
-import { DataTableEditable, CloudLoadingIndicator, FormattedMessage as T } from '@/components';
 
-import { CLASSES } from '@/constants/classes';
-import { usePaymentMadeEntriesTableColumns } from './components';
-import { usePaymentMadeInnerContext } from './PaymentMadeInnerProvider';
-import { compose, updateTableCell } from '@/utils';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { compose, updateTableCell } from '@bigcapital/webapp/utils';
 import { useFormikContext } from 'formik';
+import { usePaymentMadeInnerContext } from './PaymentMadeInnerProvider';
+import { usePaymentMadeEntriesTableColumns } from './components';
 
 /**
  * Payment made items table.

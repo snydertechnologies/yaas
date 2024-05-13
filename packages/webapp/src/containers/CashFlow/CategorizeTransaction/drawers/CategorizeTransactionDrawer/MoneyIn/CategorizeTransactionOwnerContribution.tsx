@@ -1,6 +1,6 @@
+import { AccountsSelect, FDateInput, FFormGroup, FInputGroup, FTextArea } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import { Position } from '@blueprintjs/core';
-import { AccountsSelect, FDateInput, FFormGroup, FInputGroup, FTextArea } from '@/components';
 import { useCategorizeTransactionBoot } from '../CategorizeTransactionBoot';
 
 export default function CategorizeTransactionOwnerContribution() {

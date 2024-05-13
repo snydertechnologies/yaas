@@ -1,4 +1,4 @@
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { NextFunction, Request, Response } from 'express';
 import { Container } from 'typedi';
 import { injectI18nUtils } from './TenantDependencyInjection';

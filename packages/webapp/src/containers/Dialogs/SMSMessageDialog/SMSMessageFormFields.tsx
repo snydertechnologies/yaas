@@ -1,14 +1,14 @@
+import { Button, FormGroup, Intent, TextArea } from '@blueprintjs/core';
+import { ErrorMessage, FastField, useFormikContext } from 'formik';
 // @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
-import { useFormikContext, FastField, ErrorMessage } from 'formik';
-import { Intent, Button, FormGroup, TextArea } from '@blueprintjs/core';
 
-import { FormattedMessage as T } from '@/components';
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
 
 import { useSMSMessageDialogContext } from './SMSMessageDialogProvider';
 
-import { inputIntent } from '@/utils';
+import { inputIntent } from '@bigcapital/webapp/utils';
 
 /**
  *

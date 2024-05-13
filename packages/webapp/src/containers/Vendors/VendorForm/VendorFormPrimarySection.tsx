@@ -1,14 +1,14 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { DisplayNameList, FieldRequiredHint, Hint, SalutationList } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { useAutofocus } from '@bigcapital/webapp/hooks';
+import { inputIntent } from '@bigcapital/webapp/utils';
+import { ControlGroup, FormGroup, InputGroup } from '@blueprintjs/core';
+import classNames from 'classnames';
+import { ErrorMessage, FastField, Field } from 'formik';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import classNames from 'classnames';
-import { FormGroup, InputGroup, ControlGroup } from '@blueprintjs/core';
-import { FastField, Field, ErrorMessage } from 'formik';
-import { FormattedMessage as T } from '@/components';
-import { CLASSES } from '@/constants/classes';
-import { inputIntent } from '@/utils';
-import { useAutofocus } from '@/hooks';
-import { Hint, FieldRequiredHint, SalutationList, DisplayNameList } from '@/components';
 
 /**
  * Vendor form primary section.

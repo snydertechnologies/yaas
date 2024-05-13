@@ -1,11 +1,11 @@
+import { DrawerHeaderContent, DrawerLoading } from '@bigcapital/webapp/components';
+import { Features } from '@bigcapital/webapp/constants';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import { useExpense } from '@bigcapital/webapp/hooks/query';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { useExpense } from '@/hooks/query';
-import { DrawerHeaderContent, DrawerLoading } from '@/components';
-import { Features } from '@/constants';
-import { useFeatureCan } from '@/hooks/state';
-import { DRAWERS } from '@/constants/drawers';
 
 const ExpenseDrawerDrawerContext = React.createContext();
 

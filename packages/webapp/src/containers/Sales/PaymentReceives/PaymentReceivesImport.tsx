@@ -1,7 +1,7 @@
+import { DashboardInsider } from '@bigcapital/webapp/components';
+import { ImportView } from '@bigcapital/webapp/containers/Import';
 // @ts-nocheck
 import { useHistory } from 'react-router-dom';
-import { DashboardInsider } from '@/components';
-import { ImportView } from '@/containers/Import';
 
 export default function PaymentsReceiveImport() {
   const history = useHistory();

@@ -1,7 +1,7 @@
+import { useCustomersTransactionsReport } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import { createContext, useContext, useMemo } from 'react';
 import FinancialReportPage from '../FinancialReportPage';
-import { useCustomersTransactionsReport } from '@/hooks/query';
 import { transformFilterFormToQuery } from '../common';
 
 const CustomersTransactionsContext = createContext();

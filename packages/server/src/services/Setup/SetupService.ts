@@ -1,11 +1,11 @@
-import { IOrganizationSetupDTO, ITenant } from '@/interfaces';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { IOrganizationSetupDTO, ITenant } from '@bigcapital/server/interfaces';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import Currencies from 'js-money/lib/currency';
 import { Inject, Service } from 'typedi';
 
-import { ServiceError } from '@/exceptions';
-import CurrenciesService from '@/services/Currencies/CurrenciesService';
-import TenantsManagerService from '@/services/Tenancy/TenantsManager';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import CurrenciesService from '@bigcapital/server/services/Currencies/CurrenciesService';
+import TenantsManagerService from '@bigcapital/server/services/Tenancy/TenantsManager';
 
 const ERRORS = {
   TENANT_IS_ALREADY_SETUPED: 'TENANT_IS_ALREADY_SETUPED',

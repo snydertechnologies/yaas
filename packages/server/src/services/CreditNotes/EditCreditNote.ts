@@ -1,8 +1,8 @@
-import { ICreditNoteEditDTO, ICreditNoteEditedPayload, ICreditNoteEditingPayload } from '@/interfaces';
-import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';
-import ItemsEntriesService from '@/services/Items/ItemsEntriesService';
-import UnitOfWork from '@/services/UnitOfWork';
-import events from '@/subscribers/events';
+import { ICreditNoteEditDTO, ICreditNoteEditedPayload, ICreditNoteEditingPayload } from '@bigcapital/server/interfaces';
+import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
+import ItemsEntriesService from '@bigcapital/server/services/Items/ItemsEntriesService';
+import UnitOfWork from '@bigcapital/server/services/UnitOfWork';
+import events from '@bigcapital/server/subscribers/events';
 import { Knex } from 'knex';
 import { Inject, Service } from 'typedi';
 import BaseCreditNotes from './CreditNotes';

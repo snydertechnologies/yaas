@@ -1,23 +1,23 @@
+import { Button, Intent, Menu, MenuItem, Position } from '@blueprintjs/core';
+import { Popover2 } from '@blueprintjs/popover2';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { MenuItem, Menu, Button, Position, Intent } from '@blueprintjs/core';
-import { Popover2 } from '@blueprintjs/popover2';
 
-import { Align, CellType, Features } from '@/constants';
-import { Hint, Icon, FormattedMessage as T } from '@/components';
-import { formattedAmount } from '@/utils';
+import { Hint, Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
 import {
-  InputGroupCell,
-  MoneyFieldCell,
-  ItemsListCell,
-  PercentFieldCell,
-  NumericInputCell,
   CheckBoxFieldCell,
+  InputGroupCell,
+  ItemsListCell,
+  MoneyFieldCell,
+  NumericInputCell,
+  PercentFieldCell,
   ProjectBillableEntriesCell,
-} from '@/components/DataTableCells';
-import { useFeatureCan } from '@/hooks/state';
-import { TaxRatesSuggestInputCell } from '@/components/TaxRates/TaxRatesSuggestInputCell';
+} from '@bigcapital/webapp/components/DataTableCells';
+import { TaxRatesSuggestInputCell } from '@bigcapital/webapp/components/TaxRates/TaxRatesSuggestInputCell';
+import { Align, CellType, Features } from '@bigcapital/webapp/constants';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
+import { formattedAmount } from '@bigcapital/webapp/utils';
 import { useItemEntriesTableContext } from './ItemEntriesTableProvider';
 
 /**

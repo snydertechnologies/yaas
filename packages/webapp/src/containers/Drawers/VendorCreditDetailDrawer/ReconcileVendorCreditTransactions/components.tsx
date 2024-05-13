@@ -1,10 +1,10 @@
+import { Can, FormatDateCell, Icon } from '@bigcapital/webapp/components';
+import { AbilitySubject, VendorCreditAction } from '@bigcapital/webapp/constants/abilityOption';
+import { safeCallback } from '@bigcapital/webapp/utils';
+import { Intent, Menu, MenuItem } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { Intent, MenuItem, Menu } from '@blueprintjs/core';
-import { Can, FormatDateCell, Icon } from '@/components';
-import { safeCallback } from '@/utils';
-import { VendorCreditAction, AbilitySubject } from '@/constants/abilityOption';
 
 /**
  * Actions menu.

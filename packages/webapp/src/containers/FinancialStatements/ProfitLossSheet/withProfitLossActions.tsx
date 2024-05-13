@@ -1,6 +1,6 @@
+import { toggleProfitLossFilterDrawer } from '@bigcapital/webapp/store/financialStatement/financialStatements.actions';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { toggleProfitLossFilterDrawer } from '@/store/financialStatement/financialStatements.actions';
 
 export const mapDispatchToProps = (dispatch) => ({
   toggleProfitLossFilterDrawer: (toggle) => dispatch(toggleProfitLossFilterDrawer(toggle)),

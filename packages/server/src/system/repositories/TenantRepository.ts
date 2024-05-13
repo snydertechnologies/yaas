@@ -1,5 +1,5 @@
-import type { ITenant } from '@/interfaces';
-import { Tenant } from '@/system/models';
+import type { ITenant } from '@bigcapital/server/interfaces';
+import { Tenant } from '@bigcapital/server/system/models';
 import moment from 'moment';
 import uniqid from 'uniqid';
 import SystemRepository from './SystemRepository';

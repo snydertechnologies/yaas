@@ -1,8 +1,8 @@
 // @ts-nocheck
 import React from 'react';
 
-import { DialogContent } from '@/components';
-import { useAccounts, useInvoice, useCreateBadDebt } from '@/hooks/query';
+import { DialogContent } from '@bigcapital/webapp/components';
+import { useAccounts, useCreateBadDebt, useInvoice } from '@bigcapital/webapp/hooks/query';
 
 const BadDebtContext = React.createContext();
 

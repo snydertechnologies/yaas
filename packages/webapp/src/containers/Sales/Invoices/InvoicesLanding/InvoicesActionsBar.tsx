@@ -1,29 +1,29 @@
-// @ts-nocheck
-import React from 'react';
-import { Button, Classes, NavbarDivider, NavbarGroup, Intent, Alignment } from '@blueprintjs/core';
-import { useHistory } from 'react-router-dom';
 import {
-  Icon,
-  FormattedMessage as T,
   AdvancedFilterPopover,
+  DashboardActionsBar,
   DashboardFilterButton,
   DashboardRowsHeightButton,
-  DashboardActionsBar,
-} from '@/components';
+  Icon,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import { Alignment, Button, Classes, Intent, NavbarDivider, NavbarGroup } from '@blueprintjs/core';
+// @ts-nocheck
+import React from 'react';
+import { useHistory } from 'react-router-dom';
 
-import { Can, If, DashboardActionViewsList } from '@/components';
-import { SaleInvoiceAction, AbilitySubject } from '@/constants/abilityOption';
+import { Can, DashboardActionViewsList, If } from '@bigcapital/webapp/components';
+import { AbilitySubject, SaleInvoiceAction } from '@bigcapital/webapp/constants/abilityOption';
 
-import { useRefreshInvoices } from '@/hooks/query/invoices';
+import { useRefreshInvoices } from '@bigcapital/webapp/hooks/query/invoices';
 import { useInvoicesListContext } from './InvoicesListProvider';
 
-import withInvoices from './withInvoices';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import withSettingsActions from '@bigcapital/webapp/containers/Settings/withSettingsActions';
+import { compose } from '@bigcapital/webapp/utils';
 import withInvoiceActions from './withInvoiceActions';
-import withSettings from '@/containers/Settings/withSettings';
-import withSettingsActions from '@/containers/Settings/withSettingsActions';
-import { compose } from '@/utils';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { DialogsName } from '@/constants/dialogs';
+import withInvoices from './withInvoices';
 
 /**
  * Invoices table actions bar.

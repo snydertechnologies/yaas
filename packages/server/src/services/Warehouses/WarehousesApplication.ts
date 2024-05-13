@@ -1,4 +1,4 @@
-import { ICreateWarehouseDTO, IEditWarehouseDTO, IWarehouse } from '@/interfaces';
+import { ICreateWarehouseDTO, IEditWarehouseDTO, IWarehouse } from '@bigcapital/server/interfaces';
 import { Inject, Service } from 'typedi';
 import { ActivateWarehouses } from './ActivateWarehouses';
 import { CreateWarehouse } from './CreateWarehouse';

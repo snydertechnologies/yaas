@@ -2,9 +2,9 @@ import {
   IBillPaymentEventCreatedPayload,
   IBillPaymentEventDeletedPayload,
   IBillPaymentEventEditedPayload,
-} from '@/interfaces';
-import { BillPaymentBillSync } from '@/services/Purchases/BillPayments/BillPaymentBillSync';
-import events from '@/subscribers/events';
+} from '@bigcapital/server/interfaces';
+import { BillPaymentBillSync } from '@bigcapital/server/services/Purchases/BillPayments/BillPaymentBillSync';
+import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 
 @Service()

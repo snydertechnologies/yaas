@@ -3,12 +3,17 @@ import React, { useMemo } from 'react';
 import intl from 'react-intl-universal';
 import styled from 'styled-components';
 
-import { TableStyle } from '@/constants';
-import { ReportDataTable, FinancialSheet, TableFastCell, TableVirtualizedListRows } from '@/components';
+import {
+  FinancialSheet,
+  ReportDataTable,
+  TableFastCell,
+  TableVirtualizedListRows,
+} from '@bigcapital/webapp/components';
+import { TableStyle } from '@bigcapital/webapp/constants';
 
 import { useJournalSheetContext } from './JournalProvider';
 
-import { defaultExpanderReducer, tableRowTypesToClassnames } from '@/utils';
+import { defaultExpanderReducer, tableRowTypesToClassnames } from '@bigcapital/webapp/utils';
 import { useJournalSheetColumns } from './dynamicColumns';
 
 /**

@@ -1,5 +1,5 @@
-import { IBillCreatingPayload, IBillEditingPayload } from '@/interfaces';
-import events from '@/subscribers/events';
+import { IBillCreatingPayload, IBillEditingPayload } from '@bigcapital/server/interfaces';
+import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 import { WarehousesDTOValidators } from '../../../Integrations/WarehousesDTOValidators';
 

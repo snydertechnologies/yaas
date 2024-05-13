@@ -1,7 +1,7 @@
 import path from 'path';
-import { ServiceError } from '@/exceptions';
-import { IModelMetaField, IModelMetaField2 } from '@/interfaces';
-import { multiNumberParse } from '@/utils/multi-number-parse';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { IModelMetaField, IModelMetaField2 } from '@bigcapital/server/interfaces';
+import { multiNumberParse } from '@bigcapital/server/utils/multi-number-parse';
 import fs from 'fs/promises';
 import { Knex } from 'knex';
 import {

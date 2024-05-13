@@ -1,6 +1,6 @@
+import { getExpenseByIdFactory } from '@bigcapital/webapp/store/expenses/expenses.selectors';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { getExpenseByIdFactory } from '@/store/expenses/expenses.selectors';
 
 export default () => {
   const getExpenseById = getExpenseByIdFactory();

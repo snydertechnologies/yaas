@@ -1,10 +1,10 @@
+import { DialogContent } from '@bigcapital/webapp/components';
+import { Features } from '@bigcapital/webapp/constants';
+import { useAccounts, useBranches, useCreateRefundCreditNote, useCreditNote } from '@bigcapital/webapp/hooks/query';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
+import { pick } from 'lodash';
 // @ts-nocheck
 import React from 'react';
-import { DialogContent } from '@/components';
-import { pick } from 'lodash';
-import { Features } from '@/constants';
-import { useFeatureCan } from '@/hooks/state';
-import { useAccounts, useCreditNote, useBranches, useCreateRefundCreditNote } from '@/hooks/query';
 
 const RefundCreditNoteContext = React.createContext();
 

@@ -1,12 +1,12 @@
 // @ts-nocheck
 import React from 'react';
 
-import { CommercialDocEntriesTable } from '@/components';
+import { CommercialDocEntriesTable } from '@bigcapital/webapp/components';
 
 import { usePaymentMadeEntriesColumns } from './utils';
 import { usePaymentMadeDetailContext } from './PaymentMadeDetailProvider';
 
-import { TableStyle } from '@/constants';
+import { TableStyle } from '@bigcapital/webapp/constants';
 
 /**
  * Payment made read-only details table.

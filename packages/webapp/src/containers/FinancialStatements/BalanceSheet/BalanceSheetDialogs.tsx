@@ -1,4 +1,4 @@
-import { DialogsName } from '@/constants/dialogs';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
 import { BalanceSheetPdfDialog } from './dialogs/BalanceSheetPdfDialog';
 
 export const BalanceSheetDialogs = () => {

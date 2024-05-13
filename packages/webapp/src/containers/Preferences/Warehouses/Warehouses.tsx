@@ -2,11 +2,11 @@
 import React from 'react';
 import intl from 'react-intl-universal';
 
-import '@/style/pages/Preferences/warehousesList.scss';
+import '@bigcapital/webapp/style/pages/Preferences/warehousesList.scss';
 
+import withDashboardActions from '@bigcapital/webapp/containers/Dashboard/withDashboardActions';
+import { compose } from '@bigcapital/webapp/utils';
 import WarehousesGrid from './WarehousesGrid';
-import withDashboardActions from '@/containers/Dashboard/withDashboardActions';
-import { compose } from '@/utils';
 
 /**
  * Warehouses.

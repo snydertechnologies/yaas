@@ -1,25 +1,25 @@
+import { DashboardActionsBar, Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import {
-  NavbarGroup,
   Button,
   Classes,
   NavbarDivider,
+  NavbarGroup,
   Popover,
   PopoverInteractionKind,
   Position,
 } from '@blueprintjs/core';
 import classNames from 'classnames';
-import { DashboardActionsBar, FormattedMessage as T, Icon } from '@/components';
 
-import NumberFormatDropdown from '@/components/NumberFormatDropdown';
+import NumberFormatDropdown from '@bigcapital/webapp/components/NumberFormatDropdown';
 import { BalanceSheetExportMenu } from './components';
 
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { compose, saveInvoke } from '@bigcapital/webapp/utils';
 import { useBalanceSheetContext } from './BalanceSheetProvider';
 import withBalanceSheet from './withBalanceSheet';
 import withBalanceSheetActions from './withBalanceSheetActions';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { compose, saveInvoke } from '@/utils';
-import { DialogsName } from '@/constants/dialogs';
 
 /**
  * Balance sheet - actions bar.

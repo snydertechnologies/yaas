@@ -5,10 +5,10 @@ import {
   IContactBalanceSummaryQuery,
   IContactBalanceSummaryTotal,
   ILedger,
-} from '@/interfaces';
+} from '@bigcapital/server/interfaces';
+import { allPassedConditionsPass } from '@bigcapital/server/utils';
 import { isEmpty, sumBy } from 'lodash';
 import * as R from 'ramda';
-import { allPassedConditionsPass } from 'utils';
 import FinancialSheet from '../FinancialSheet';
 
 export class ContactBalanceSummaryReport extends FinancialSheet {

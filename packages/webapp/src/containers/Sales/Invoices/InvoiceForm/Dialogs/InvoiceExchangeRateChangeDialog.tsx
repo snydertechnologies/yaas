@@ -1,8 +1,8 @@
 // @ts-nocheck
-import { Dialog, DialogSuspense, FormattedMessage as T } from '@/components';
-import withDialogRedux from '@/components/DialogReduxConnect';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { compose } from '@/utils';
+import { Dialog, DialogSuspense, FormattedMessage as T } from '@bigcapital/webapp/components';
+import withDialogRedux from '@bigcapital/webapp/components/DialogReduxConnect';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { compose } from '@bigcapital/webapp/utils';
 import { Button, Classes, Intent } from '@blueprintjs/core';
 
 /**

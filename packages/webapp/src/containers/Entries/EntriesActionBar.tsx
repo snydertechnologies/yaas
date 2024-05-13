@@ -1,4 +1,4 @@
-import { Box } from '@/components';
+import { Box } from '@bigcapital/webapp/components';
 import styled from 'styled-components';
 
 export const EntriesActionsBar = styled(Box)`

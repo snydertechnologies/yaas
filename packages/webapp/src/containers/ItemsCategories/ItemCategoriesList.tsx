@@ -1,10 +1,10 @@
+import * as R from 'ramda';
 // @ts-nocheck
 import React from 'react';
-import * as R from 'ramda';
 
-import '@/style/pages/ItemsCategories/List.scss';
+import '@bigcapital/webapp/style/pages/ItemsCategories/List.scss';
 
-import { DashboardContentTable, DashboardPageContent } from '@/components';
+import { DashboardContentTable, DashboardPageContent } from '@bigcapital/webapp/components';
 import { ItemsCategoriesProvider } from './ItemsCategoriesProvider';
 
 import ItemCategoriesTable from './ItemCategoriesTable';

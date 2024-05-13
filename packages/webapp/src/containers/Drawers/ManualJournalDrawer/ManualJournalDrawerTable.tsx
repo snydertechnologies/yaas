@@ -1,11 +1,11 @@
 // @ts-nocheck
 import React from 'react';
 
-import { CommercialDocEntriesTable } from '@/components';
-import { useManualJournalEntriesColumns } from './utils';
+import { CommercialDocEntriesTable } from '@bigcapital/webapp/components';
 import { useManualJournalDrawerContext } from './ManualJournalDrawerProvider';
+import { useManualJournalEntriesColumns } from './utils';
 
-import { TableStyle } from '@/constants';
+import { TableStyle } from '@bigcapital/webapp/constants';
 
 /**
  * Manual journal drawer table.

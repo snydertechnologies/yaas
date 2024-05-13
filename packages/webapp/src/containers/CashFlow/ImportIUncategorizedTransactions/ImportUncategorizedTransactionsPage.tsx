@@ -1,6 +1,6 @@
 // @ts-nocheck
-import { DashboardInsider } from '@/components';
-import { ImportView } from '@/containers/Import/ImportView';
+import { DashboardInsider } from '@bigcapital/webapp/components';
+import { ImportView } from '@bigcapital/webapp/containers/Import/ImportView';
 import { useHistory, useParams } from 'react-router-dom';
 
 export default function ImportUncategorizedTransactions() {

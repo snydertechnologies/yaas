@@ -1,18 +1,18 @@
+import { DataTable, TableSkeletonHeader, TableSkeletonRows } from '@bigcapital/webapp/components';
+import { TABLES } from '@bigcapital/webapp/constants/tables';
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import { useMemorizedColumnsWidths } from '@bigcapital/webapp/hooks';
 // @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
-import { DataTable, TableSkeletonRows, TableSkeletonHeader } from '@/components';
-import { ActionsMenu } from './components';
-import { TABLES } from '@/constants/tables';
-import { useProjectTimesheetColumns } from './hooks';
-import { useMemorizedColumnsWidths } from '@/hooks';
 import { useProjectTimesheetContext } from './ProjectTimesheetsProvider';
-import withSettings from '@/containers/Settings/withSettings';
-import withAlertsActions from '@/containers/Alert/withAlertActions';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
+import { ActionsMenu } from './components';
+import { useProjectTimesheetColumns } from './hooks';
 
-import { compose } from '@/utils';
-import { DialogsName } from '@/constants/dialogs';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Timesheet DataTable.

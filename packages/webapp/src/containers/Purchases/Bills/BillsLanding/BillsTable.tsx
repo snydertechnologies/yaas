@@ -2,24 +2,29 @@
 import React, { useCallback } from 'react';
 import { useHistory } from 'react-router-dom';
 
-import { TABLES } from '@/constants/tables';
-import { DataTable, DashboardContentTable, TableSkeletonRows, TableSkeletonHeader } from '@/components';
+import {
+  DashboardContentTable,
+  DataTable,
+  TableSkeletonHeader,
+  TableSkeletonRows,
+} from '@bigcapital/webapp/components';
+import { TABLES } from '@bigcapital/webapp/constants/tables';
 
 import BillsEmptyStatus from './BillsEmptyStatus';
 
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
 import withBills from './withBills';
 import withBillActions from './withBillsActions';
-import withAlertsActions from '@/containers/Alert/withAlertActions';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
-import withSettings from '@/containers/Settings/withSettings';
 
-import { useBillsTableColumns, ActionsMenu } from './components';
+import { useMemorizedColumnsWidths } from '@bigcapital/webapp/hooks';
 import { useBillsListContext } from './BillsListProvider';
-import { useMemorizedColumnsWidths } from '@/hooks';
+import { ActionsMenu, useBillsTableColumns } from './components';
 
-import { compose } from '@/utils';
-import { DRAWERS } from '@/constants/drawers';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Bills transactions datatable.

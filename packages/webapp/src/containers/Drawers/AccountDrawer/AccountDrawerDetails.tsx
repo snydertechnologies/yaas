@@ -1,7 +1,7 @@
 // @ts-nocheck
 import React from 'react';
 
-import { Card } from '@/components';
+import { Card } from '@bigcapital/webapp/components';
 
 import AccountDrawerActionBar from './AccountDrawerActionBar';
 import AccountDrawerHeader from './AccountDrawerHeader';

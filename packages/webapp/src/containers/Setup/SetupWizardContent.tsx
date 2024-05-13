@@ -1,11 +1,11 @@
 // @ts-nocheck
 import React from 'react';
 
-import SetupSubscription from './SetupSubscription/SetupSubscription';
-import SetupOrganizationPage from './SetupOrganizationPage';
-import SetupInitializingForm from './SetupInitializingForm';
+import { Stepper } from '@bigcapital/webapp/components/Stepper';
 import SetupCongratsPage from './SetupCongratsPage';
-import { Stepper } from '@/components/Stepper';
+import SetupInitializingForm from './SetupInitializingForm';
+import SetupOrganizationPage from './SetupOrganizationPage';
+import SetupSubscription from './SetupSubscription/SetupSubscription';
 import styles from './SetupWizardContent.module.scss';
 
 interface SetupWizardContentProps {

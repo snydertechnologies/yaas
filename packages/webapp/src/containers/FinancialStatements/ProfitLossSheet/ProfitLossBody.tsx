@@ -1,14 +1,14 @@
 // @ts-nocheck
 import React from 'react';
 
-import ProfitLossSheetTable from './ProfitLossSheetTable';
-import { FinancialSheetSkeleton } from '@/components';
+import { FinancialSheetSkeleton } from '@bigcapital/webapp/components';
 import { FinancialReportBody } from '../FinancialReportPage';
 import { useProfitLossSheetContext } from './ProfitLossProvider';
+import ProfitLossSheetTable from './ProfitLossSheetTable';
 
-import withCurrentOrganization from '@/containers/Organization/withCurrentOrganization';
+import withCurrentOrganization from '@bigcapital/webapp/containers/Organization/withCurrentOrganization';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * @returns {React.JSX}

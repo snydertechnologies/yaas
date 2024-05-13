@@ -1,21 +1,21 @@
+import { defaultTo } from 'lodash';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
 import styled from 'styled-components';
-import { defaultTo } from 'lodash';
 
 import {
-  FormatDate,
-  T,
-  Row,
   Col,
-  DetailsMenu,
-  DetailItem,
   CommercialDocHeader,
   CommercialDocTopHeader,
-  VendorDrawerLink,
+  DetailItem,
+  DetailsMenu,
   ExchangeRateDetailItem,
-} from '@/components';
+  FormatDate,
+  Row,
+  T,
+  VendorDrawerLink,
+} from '@bigcapital/webapp/components';
 import { useVendorCreditDetailDrawerContext } from './VendorCreditDetailDrawerProvider';
 import { VendorCreditDetailsStatus } from './utils';
 

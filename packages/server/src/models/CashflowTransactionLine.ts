@@ -1,4 +1,4 @@
-import TenantModel from 'models/TenantModel';
+import TenantModel from '@bigcapital/server/models/TenantModel';
 import { Model } from 'objection';
 
 export default class CashflowTransactionLine extends TenantModel {
@@ -20,7 +20,7 @@ export default class CashflowTransactionLine extends TenantModel {
    * Relationship mapping.
    */
   static get relationMappings() {
-    const Account = require('models/Account');
+    const Account = require('@bigcapital/server/models/Account');
 
     return {
       cashflowAccount: {

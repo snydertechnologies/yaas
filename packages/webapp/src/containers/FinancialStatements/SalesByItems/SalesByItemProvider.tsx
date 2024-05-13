@@ -1,7 +1,7 @@
+import { useSalesByItemsTable } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import { createContext, useContext, useMemo } from 'react';
 import FinancialReportPage from '../FinancialReportPage';
-import { useSalesByItemsTable } from '@/hooks/query';
 import { transformFilterFormToQuery } from '../common';
 
 const SalesByItemsContext = createContext();

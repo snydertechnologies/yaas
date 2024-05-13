@@ -3,17 +3,17 @@ import { ValidationChain, check } from 'express-validator';
 import moment from 'moment-timezone';
 import { Inject, Service } from 'typedi';
 
-import AttachCurrentTenantUser from '@/api/middleware/AttachCurrentTenantUser';
-import SubscriptionMiddleware from '@/api/middleware/SubscriptionMiddleware';
-import TenancyMiddleware from '@/api/middleware/TenancyMiddleware';
-import asyncMiddleware from '@/api/middleware/asyncMiddleware';
-import JWTAuth from '@/api/middleware/jwtAuth';
-import { DATE_FORMATS } from '@/services/Miscellaneous/DateFormats/constants';
-import OrganizationService from '@/services/Organization/OrganizationService';
-import { ACCEPTED_LOCALES, MONTHS } from '@/services/Organization/constants';
+import AttachCurrentTenantUser from '@bigcapital/server/api/middleware/AttachCurrentTenantUser';
+import SubscriptionMiddleware from '@bigcapital/server/api/middleware/SubscriptionMiddleware';
+import TenancyMiddleware from '@bigcapital/server/api/middleware/TenancyMiddleware';
+import asyncMiddleware from '@bigcapital/server/api/middleware/asyncMiddleware';
+import JWTAuth from '@bigcapital/server/api/middleware/jwtAuth';
+import { DATE_FORMATS } from '@bigcapital/server/services/Miscellaneous/DateFormats/constants';
+import OrganizationService from '@bigcapital/server/services/Organization/OrganizationService';
+import { ACCEPTED_LOCALES, MONTHS } from '@bigcapital/server/services/Organization/constants';
 
-import BaseController from '@/api/controllers/BaseController';
-import { ServiceError } from '@/exceptions';
+import BaseController from '@bigcapital/server/api/controllers/BaseController';
+import { ServiceError } from '@bigcapital/server/exceptions';
 
 @Service()
 export default class OrganizationController extends BaseController {

@@ -1,17 +1,17 @@
+import { Can, DrawerActionsBar, Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Button, Classes, Intent, NavbarDivider, NavbarGroup } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { Button, Classes, NavbarGroup, Intent, NavbarDivider } from '@blueprintjs/core';
-import { Icon, DrawerActionsBar, Can, FormattedMessage as T } from '@/components';
 
-import withAlertsActions from '@/containers/Alert/withAlertActions';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
 
+import { AbilitySubject, ManualJournalAction } from '@bigcapital/webapp/constants/abilityOption';
 import { useManualJournalDrawerContext } from './ManualJournalDrawerProvider';
-import { ManualJournalAction, AbilitySubject } from '@/constants/abilityOption';
 
-import { compose } from '@/utils';
-import { DRAWERS } from '@/constants/drawers';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Manual journal action bar.

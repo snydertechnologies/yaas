@@ -1,15 +1,20 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { ErrorMessage, FastField } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { FastField, ErrorMessage } from 'formik';
-import { FormattedMessage as T } from '@/components';
 
-import { useAutofocus } from '@/hooks';
-import { Classes, FormGroup, TextArea, ControlGroup, Callout, Intent } from '@blueprintjs/core';
+import {
+  AccountsSuggestField,
+  FieldRequiredHint,
+  InputPrependText,
+  MoneyInputGroup,
+} from '@bigcapital/webapp/components';
+import { ACCOUNT_TYPE } from '@bigcapital/webapp/constants/accountTypes';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { useAutofocus } from '@bigcapital/webapp/hooks';
+import { inputIntent } from '@bigcapital/webapp/utils';
+import { Callout, Classes, ControlGroup, FormGroup, Intent, TextArea } from '@blueprintjs/core';
 import classNames from 'classnames';
-import { CLASSES } from '@/constants/classes';
-import { ACCOUNT_TYPE } from '@/constants/accountTypes';
-import { inputIntent } from '@/utils';
-import { AccountsSuggestField, InputPrependText, MoneyInputGroup, FieldRequiredHint } from '@/components';
 
 import { useBadDebtContext } from './BadDebtFormProvider';
 

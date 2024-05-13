@@ -1,5 +1,5 @@
 import crypto from 'crypto';
-import CacheService from '@/services/Cache';
+import CacheService from '@bigcapital/server/services/Cache';
 import { QueryBuilder } from 'objection';
 
 export default class CachableQueryBuilder extends QueryBuilder {

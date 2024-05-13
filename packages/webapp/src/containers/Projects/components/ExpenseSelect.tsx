@@ -1,8 +1,8 @@
+import { FSelect } from '@bigcapital/webapp/components';
+import { Button, MenuItem } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { MenuItem, Button } from '@blueprintjs/core';
-import { FSelect } from '@/components';
 
 /**
  *

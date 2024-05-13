@@ -1,6 +1,6 @@
-import { ServiceError } from '@/exceptions';
-import { ISaleEstimateMailPresendEvent } from '@/interfaces';
-import events from '@/subscribers/events';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { ISaleEstimateMailPresendEvent } from '@bigcapital/server/interfaces';
+import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 import { DeliverSaleEstimate } from '../DeliverSaleEstimate';
 import { ERRORS } from '../constants';

@@ -1,12 +1,12 @@
-import { ServiceError } from '@/exceptions';
+import SMSNotificationsConfig from '@bigcapital/server/config/smsNotifications';
+import { ServiceError } from '@bigcapital/server/exceptions';
 import {
   IEditSmsNotificationDTO,
   ISmsNotificationAllowedVariable,
   ISmsNotificationDefined,
   ISmsNotificationMeta,
-} from '@/interfaces';
-import TenancyService from '@/services/Tenancy/TenancyService';
-import SMSNotificationsConfig from 'config/smsNotifications';
+} from '@bigcapital/server/interfaces';
+import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { isUndefined, keyBy, omit } from 'lodash';
 import { Inject, Service } from 'typedi';
 

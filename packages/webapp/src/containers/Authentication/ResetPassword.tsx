@@ -1,18 +1,18 @@
+import { Intent, Position } from '@blueprintjs/core';
+import { Formik } from 'formik';
 // @ts-nocheck
 import React, { useMemo } from 'react';
 import intl from 'react-intl-universal';
-import { Formik } from 'formik';
-import { Intent, Position } from '@blueprintjs/core';
-import { Link, useParams, useHistory } from 'react-router-dom';
+import { Link, useHistory, useParams } from 'react-router-dom';
 
-import { AppToaster, FormattedMessage as T } from '@/components';
-import { useAuthResetPassword } from '@/hooks/query';
-import AuthInsider from '@/containers/Authentication/AuthInsider';
+import { AppToaster, FormattedMessage as T } from '@bigcapital/webapp/components';
+import AuthInsider from '@bigcapital/webapp/containers/Authentication/AuthInsider';
+import { useAuthResetPassword } from '@bigcapital/webapp/hooks/query';
 
-import { AuthFooterLink, AuthFooterLinks, AuthInsiderCard } from './_components';
-import ResetPasswordForm from './ResetPasswordForm';
-import { ResetPasswordSchema } from './utils';
 import { useAuthMetaBoot } from './AuthMetaBoot';
+import ResetPasswordForm from './ResetPasswordForm';
+import { AuthFooterLink, AuthFooterLinks, AuthInsiderCard } from './_components';
+import { ResetPasswordSchema } from './utils';
 
 const initialValues = {
   password: '',

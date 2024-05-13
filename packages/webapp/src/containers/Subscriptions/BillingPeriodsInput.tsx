@@ -1,9 +1,9 @@
-// @ts-nocheck
-import React from 'react';
 import { Field } from 'formik';
 import * as R from 'ramda';
+// @ts-nocheck
+import React from 'react';
 
-import { T, SubscriptionPeriods } from '@/components';
+import { SubscriptionPeriods, T } from '@bigcapital/webapp/components';
 
 import withPlan from './withPlan';
 

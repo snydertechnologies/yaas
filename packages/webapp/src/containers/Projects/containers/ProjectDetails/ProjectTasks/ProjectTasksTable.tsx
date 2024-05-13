@@ -1,17 +1,17 @@
+import { DataTable, TableSkeletonHeader, TableSkeletonRows } from '@bigcapital/webapp/components';
+import { TABLES } from '@bigcapital/webapp/constants/tables';
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import { useMemorizedColumnsWidths } from '@bigcapital/webapp/hooks';
 // @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
-import { DataTable, TableSkeletonRows, TableSkeletonHeader } from '@/components';
-import { TABLES } from '@/constants/tables';
+import { useProjectTaskContext } from './ProjectTaskProvider';
 import { ActionsMenu } from './components';
 import { useProjectTaskColumns } from './hooks';
-import { useMemorizedColumnsWidths } from '@/hooks';
-import { useProjectTaskContext } from './ProjectTaskProvider';
-import withSettings from '@/containers/Settings/withSettings';
-import withAlertsActions from '@/containers/Alert/withAlertActions';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 function ProjectTaskTableRoot({
   // #withSettings

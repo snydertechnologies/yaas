@@ -1,15 +1,15 @@
 // @ts-nocheck
 import React from 'react';
 
-import { TABLES } from '@/constants/tables';
-import { DataTable, TableFastCell, TableSkeletonRows, TableSkeletonHeader } from '@/components';
+import { DataTable, TableFastCell, TableSkeletonHeader, TableSkeletonRows } from '@bigcapital/webapp/components';
+import { TABLES } from '@bigcapital/webapp/constants/tables';
 
-import withSettings from '@/containers/Settings/withSettings';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
 
-import { useMemorizedColumnsWidths } from '@/hooks';
+import { useMemorizedColumnsWidths } from '@bigcapital/webapp/hooks';
+import { compose } from '@bigcapital/webapp/utils';
 import { useCashFlowAccountsContext } from './CashFlowAccountsProvider';
 import { useCashFlowAccountsTableColumns } from './components';
-import { compose } from '@/utils';
 
 /**
  * Cash flow accounts data table.

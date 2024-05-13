@@ -1,4 +1,4 @@
-import { IAgingSummaryMeta, IAgingSummaryQuery } from '@/interfaces';
+import { IAgingSummaryMeta, IAgingSummaryQuery } from '@bigcapital/server/interfaces';
 import { Inject, Service } from 'typedi';
 import { AgingSummaryMeta } from './AgingSummaryMeta';
 

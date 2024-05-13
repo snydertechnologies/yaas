@@ -1,13 +1,13 @@
+import { Button } from '@blueprintjs/core';
 // @ts-nocheck
 import React, { useMemo } from 'react';
-import { Button } from '@blueprintjs/core';
 
 import FinancialLoadingBar from '../FinancialLoadingBar';
 
-import { dynamicColumns } from './dynamicColumns';
+import { Icon, If, FormattedMessage as T } from '@bigcapital/webapp/components';
 import { FinancialComputeAlert } from '../FinancialReportPage';
-import { FormattedMessage as T, Icon, If } from '@/components';
 import { useProjectProfitabilitySummaryContext } from './ProjectProfitabilitySummaryProvider';
+import { dynamicColumns } from './dynamicColumns';
 
 /**
  * Project profitability summary alerts.

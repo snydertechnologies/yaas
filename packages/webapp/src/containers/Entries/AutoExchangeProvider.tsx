@@ -1,5 +1,5 @@
+import { useLatestExchangeRate } from '@bigcapital/webapp/hooks/query';
 import React from 'react';
-import { useLatestExchangeRate } from '@/hooks/query';
 
 interface AutoExchangeRateProviderProps {
   children: React.ReactNode;

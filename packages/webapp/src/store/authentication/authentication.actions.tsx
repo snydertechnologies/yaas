@@ -1,5 +1,5 @@
 // @ts-nocheck
-import t from '@/store/types';
+import t from '@bigcapital/webapp/store/types';
 
 export const setLogin = () => ({ type: t.LOGIN_SUCCESS });
 export const setLogout = () => ({ type: t.LOGOUT });

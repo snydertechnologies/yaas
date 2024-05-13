@@ -1,7 +1,7 @@
 // @ts-nocheck
-import { Box, FFormGroup, FInputGroup, FMultiSelect, FRichEditor } from '@/components';
-import styled from 'styled-components';
+import { Box, FFormGroup, FInputGroup, FMultiSelect, FRichEditor } from '@bigcapital/webapp/components';
 import { SelectOptionProps } from '@blueprintjs-formik/select';
+import styled from 'styled-components';
 
 interface MailNotificationFormProps {
   fromAddresses: SelectOptionProps[];

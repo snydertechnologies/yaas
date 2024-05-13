@@ -1,4 +1,4 @@
-import { IARAgingSummaryQuery } from '@/interfaces';
+import { IARAgingSummaryQuery } from '@bigcapital/server/interfaces';
 import { Inject, Service } from 'typedi';
 import { ARAgingSummaryExportInjectable } from './ARAgingSummaryExportInjectable';
 import { ARAgingSummaryPdfInjectable } from './ARAgingSummaryPdfInjectable';

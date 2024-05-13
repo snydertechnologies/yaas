@@ -1,7 +1,7 @@
+import VendorCreditNumberDialog from '@bigcapital/webapp/containers/Dialogs/VendorCreditNumberDialog';
+import { useFormikContext } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import VendorCreditNumberDialog from '@/containers/Dialogs/VendorCreditNumberDialog';
-import { useFormikContext } from 'formik';
 
 /**
  * Vendor credit form dialog.

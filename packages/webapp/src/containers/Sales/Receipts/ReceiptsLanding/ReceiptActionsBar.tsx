@@ -1,30 +1,30 @@
+import { Alignment, Button, Classes, Intent, NavbarDivider, NavbarGroup } from '@blueprintjs/core';
 // @ts-nocheck
 import React, { useState } from 'react';
-import { Button, Classes, NavbarDivider, NavbarGroup, Intent, Alignment } from '@blueprintjs/core';
 
-import { useHistory } from 'react-router-dom';
 import {
-  Icon,
   AdvancedFilterPopover,
   DashboardFilterButton,
-  FormattedMessage as T,
   DashboardRowsHeightButton,
-} from '@/components';
+  Icon,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import { useHistory } from 'react-router-dom';
 
-import { Can, If, DashboardActionsBar, DashboardActionViewsList } from '@/components';
+import { Can, DashboardActionViewsList, DashboardActionsBar, If } from '@bigcapital/webapp/components';
 
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import withSettingsActions from '@bigcapital/webapp/containers/Settings/withSettingsActions';
 import withReceipts from './withReceipts';
 import withReceiptsActions from './withReceiptsActions';
-import withSettings from '@/containers/Settings/withSettings';
-import withSettingsActions from '@/containers/Settings/withSettingsActions';
 
+import { AbilitySubject, SaleReceiptAction } from '@bigcapital/webapp/constants/abilityOption';
+import { useRefreshReceipts } from '@bigcapital/webapp/hooks/query/receipts';
 import { useReceiptsListContext } from './ReceiptsListProvider';
-import { useRefreshReceipts } from '@/hooks/query/receipts';
-import { SaleReceiptAction, AbilitySubject } from '@/constants/abilityOption';
 
-import { compose } from '@/utils';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { DialogsName } from '@/constants/dialogs';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Receipts actions bar.

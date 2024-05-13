@@ -1,9 +1,9 @@
-import { IPlaidItemCreatedEventPayload, PlaidItemDTO } from '@/interfaces/Plaid';
-import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';
-import { PlaidClientWrapper } from '@/lib/Plaid';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
-import events from '@/subscribers/events';
-import SystemPlaidItem from '@/system/models/SystemPlaidItem';
+import { IPlaidItemCreatedEventPayload, PlaidItemDTO } from '@bigcapital/server/interfaces/Plaid';
+import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
+import { PlaidClientWrapper } from '@bigcapital/server/lib/Plaid';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import events from '@bigcapital/server/subscribers/events';
+import SystemPlaidItem from '@bigcapital/server/system/models/SystemPlaidItem';
 import { Inject, Service } from 'typedi';
 
 @Service()

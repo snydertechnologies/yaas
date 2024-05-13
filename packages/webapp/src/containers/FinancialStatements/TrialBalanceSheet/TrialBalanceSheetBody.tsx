@@ -1,13 +1,13 @@
+import * as R from 'ramda';
 // @ts-nocheck
 import React from 'react';
-import * as R from 'ramda';
 
-import { FinancialSheetSkeleton } from '@/components';
+import { FinancialSheetSkeleton } from '@bigcapital/webapp/components';
 import { FinancialReportBody } from '../FinancialReportPage';
 import { useTrialBalanceSheetContext } from './TrialBalanceProvider';
 import TrialBalanceSheetTable from './TrialBalanceSheetTable';
 
-import withCurrentOrganization from '@/containers/Organization/withCurrentOrganization';
+import withCurrentOrganization from '@bigcapital/webapp/containers/Organization/withCurrentOrganization';
 
 /**
  * Trial balance sheet body.

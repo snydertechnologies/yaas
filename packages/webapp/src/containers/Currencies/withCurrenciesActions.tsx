@@ -1,6 +1,11 @@
+import {
+  deleteCurrency,
+  editCurrency,
+  fetchCurrencies,
+  submitCurrencies,
+} from '@bigcapital/webapp/store/currencies/currencies.actions';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { fetchCurrencies, submitCurrencies, deleteCurrency, editCurrency } from '@/store/currencies/currencies.actions';
 
 export const mapDispatchToProps = (dispatch) => ({
   requestFetchCurrencies: () => dispatch(fetchCurrencies({})),

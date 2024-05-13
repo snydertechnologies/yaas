@@ -1,8 +1,8 @@
+import { Skeleton } from '@bigcapital/webapp/components';
+import clsx from 'classnames';
 // @ts-nocheck
 import React, { useContext } from 'react';
-import clsx from 'classnames';
 import TableContext from './TableContext';
-import { Skeleton } from '@/components';
 
 function TableHeaderCell({ column }) {
   const { skeletonWidthMax = 100, skeletonWidthMin = 40 } = column;

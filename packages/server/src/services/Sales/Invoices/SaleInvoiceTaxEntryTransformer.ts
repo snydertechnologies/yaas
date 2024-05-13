@@ -1,6 +1,6 @@
-import { Transformer } from '@/lib/Transformer/Transformer';
-import { formatNumber } from '@/utils';
-import { getExlusiveTaxAmount, getInclusiveTaxAmount } from '@/utils/taxRate';
+import { Transformer } from '@bigcapital/server/lib/Transformer/Transformer';
+import { formatNumber } from '@bigcapital/server/utils';
+import { getExlusiveTaxAmount, getInclusiveTaxAmount } from '@bigcapital/server/utils/taxRate';
 
 export class SaleInvoiceTaxEntryTransformer extends Transformer {
   /**

@@ -1,13 +1,13 @@
+import * as R from 'ramda';
 // @ts-nocheck
 import React from 'react';
-import * as R from 'ramda';
 
-import ARAgingSummaryTable from './ARAgingSummaryTable';
+import { FinancialSheetSkeleton } from '@bigcapital/webapp/components';
 import { FinancialReportBody } from '../FinancialReportPage';
-import { FinancialSheetSkeleton } from '@/components';
 import { useARAgingSummaryContext } from './ARAgingSummaryProvider';
+import ARAgingSummaryTable from './ARAgingSummaryTable';
 
-import withCurrentOrganization from '@/containers/Organization/withCurrentOrganization';
+import withCurrentOrganization from '@bigcapital/webapp/containers/Organization/withCurrentOrganization';
 
 /**
  * A/R Aging summary body.

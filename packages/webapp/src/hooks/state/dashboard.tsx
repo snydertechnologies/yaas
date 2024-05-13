@@ -1,16 +1,16 @@
+import {
+  closeDialog,
+  closeSidebarSubmenu,
+  dashboardPageTitle,
+  openDialog,
+  openSidebarSubmenu,
+  splashStartLoading,
+  splashStopLoading,
+} from '@bigcapital/webapp/store/dashboard/dashboard.actions';
 // @ts-nocheck
 import { useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { createSelector } from 'reselect';
-import {
-  splashStopLoading,
-  splashStartLoading,
-  dashboardPageTitle,
-  openSidebarSubmenu,
-  closeSidebarSubmenu,
-  openDialog,
-  closeDialog,
-} from '@/store/dashboard/dashboard.actions';
 
 export const useDispatchAction = (action) => {
   const dispatch = useDispatch();

@@ -1,5 +1,5 @@
-import BaseController from '@/api/controllers/BaseController';
-import { PlaidApplication } from '@/services/Banking/Plaid/PlaidApplication';
+import BaseController from '@bigcapital/server/api/controllers/BaseController';
+import { PlaidApplication } from '@bigcapital/server/services/Banking/Plaid/PlaidApplication';
 import { Request, Response, Router } from 'express';
 import { Inject, Service } from 'typedi';
 

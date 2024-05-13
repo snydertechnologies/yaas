@@ -2,7 +2,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
-import '@/style/pages/ManualJournal/MakeJournal.scss';
+import '@bigcapital/webapp/style/pages/ManualJournal/MakeJournal.scss';
 
 import MakeJournalEntriesForm from './MakeJournalEntriesForm';
 import { MakeJournalProvider } from './MakeJournalProvider';

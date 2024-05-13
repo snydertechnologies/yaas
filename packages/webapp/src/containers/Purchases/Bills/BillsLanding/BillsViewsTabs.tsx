@@ -1,14 +1,14 @@
 // @ts-nocheck
 import React from 'react';
 
+import { DashboardViewsTabs } from '@bigcapital/webapp/components';
 import { Alignment, Navbar, NavbarGroup } from '@blueprintjs/core';
-import { DashboardViewsTabs } from '@/components';
 import { useBillsListContext } from './BillsListProvider';
 
 import withBills from './withBills';
 import withBillActions from './withBillsActions';
 
-import { compose, transfromViewsToTabs } from '@/utils';
+import { compose, transfromViewsToTabs } from '@bigcapital/webapp/utils';
 
 /**
  * Bills view tabs.

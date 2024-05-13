@@ -1,9 +1,9 @@
 // @ts-nocheck
 import React from 'react';
 
-import { DrawerBody } from '@/components';
-import { RefundVendorCreditDrawerProvider } from './RefundVendorCreditDrawerProvider';
+import { DrawerBody } from '@bigcapital/webapp/components';
 import RefundVendorCreditDetail from './RefundVendorCreditDetail';
+import { RefundVendorCreditDrawerProvider } from './RefundVendorCreditDrawerProvider';
 
 /**
  * Refund vendor credit drawer content.

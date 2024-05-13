@@ -1,18 +1,18 @@
-// @ts-nocheck
-import React, { createContext, useContext } from 'react';
-import { Features } from '@/constants';
-import { useFeatureCan } from '@/hooks/state';
+import { DashboardInsider } from '@bigcapital/webapp/components';
+import { Features } from '@bigcapital/webapp/constants';
 import {
   useAccounts,
-  useVendors,
-  useItems,
   useBranches,
-  usePaymentMadeEditPage,
-  useSettings,
   useCreatePaymentMade,
   useEditPaymentMade,
-} from '@/hooks/query';
-import { DashboardInsider } from '@/components';
+  useItems,
+  usePaymentMadeEditPage,
+  useSettings,
+  useVendors,
+} from '@bigcapital/webapp/hooks/query';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
+// @ts-nocheck
+import React, { createContext, useContext } from 'react';
 
 // Payment made form context.
 const PaymentMadeFormContext = createContext();

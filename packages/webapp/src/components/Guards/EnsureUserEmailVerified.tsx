@@ -1,4 +1,4 @@
-import { useAuthUserVerified } from '@/hooks/state';
+import { useAuthUserVerified } from '@bigcapital/webapp/hooks/state';
 import React, { useEffect } from 'react';
 
 interface EnsureUserEmailVerifiedProps {

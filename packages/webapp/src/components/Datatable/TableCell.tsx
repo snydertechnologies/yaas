@@ -1,12 +1,12 @@
-// @ts-nocheck
-import React, { useContext } from 'react';
 import classNames from 'classnames';
 import { camelCase } from 'lodash';
+// @ts-nocheck
+import React, { useContext } from 'react';
 
-import { If, Skeleton } from '@/components';
-import { useAppIntlContext } from '@/components/AppIntlProvider';
+import { If, Skeleton } from '@bigcapital/webapp/components';
+import { useAppIntlContext } from '@bigcapital/webapp/components/AppIntlProvider';
+import { ignoreEventFromSelectors, saveInvoke } from '@bigcapital/webapp/utils';
 import TableContext from './TableContext';
-import { saveInvoke, ignoreEventFromSelectors } from '@/utils';
 import { isCellLoading } from './utils';
 
 const ROW_CLICK_SELECTORS_INGORED = ['.expand-toggle', '.selection-checkbox'];

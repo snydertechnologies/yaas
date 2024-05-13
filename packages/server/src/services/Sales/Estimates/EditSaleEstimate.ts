@@ -1,9 +1,9 @@
-import { ISaleEstimate, ISaleEstimateDTO, ISaleEstimateEditedPayload, ISaleEstimateEditingPayload } from '@/interfaces';
-import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';
-import ItemsEntriesService from '@/services/Items/ItemsEntriesService';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
-import UnitOfWork from '@/services/UnitOfWork';
-import events from '@/subscribers/events';
+import { ISaleEstimate, ISaleEstimateDTO, ISaleEstimateEditedPayload, ISaleEstimateEditingPayload } from '@bigcapital/server/interfaces';
+import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
+import ItemsEntriesService from '@bigcapital/server/services/Items/ItemsEntriesService';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import UnitOfWork from '@bigcapital/server/services/UnitOfWork';
+import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 import { SaleEstimateDTOTransformer } from './SaleEstimateDTOTransformer';
 import { SaleEstimateValidators } from './SaleEstimateValidators';

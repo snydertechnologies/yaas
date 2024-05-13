@@ -1,12 +1,15 @@
 import path from 'path';
-import AgendashController from '@/api/controllers/Agendash';
-import ConvertEmptyStringsToNull from '@/api/middleware/ConvertEmptyStringsToNull';
-import { JSONResponseTransformer, snakecaseResponseTransformer } from '@/api/middleware/JSONResponseTransformer';
-import LoggerMiddleware from '@/api/middleware/LoggerMiddleware';
-import ObjectionErrorHandlerMiddleware from '@/api/middleware/ObjectionErrorHandlerMiddleware';
-import RateLimiterMiddleware from '@/api/middleware/RateLimiterMiddleware';
-import config from '@/config';
-import routes from 'api';
+import routes from '@bigcapital/server/api';
+import AgendashController from '@bigcapital/server/api/controllers/Agendash';
+import ConvertEmptyStringsToNull from '@bigcapital/server/api/middleware/ConvertEmptyStringsToNull';
+import {
+  JSONResponseTransformer,
+  snakecaseResponseTransformer,
+} from '@bigcapital/server/api/middleware/JSONResponseTransformer';
+import LoggerMiddleware from '@bigcapital/server/api/middleware/LoggerMiddleware';
+import ObjectionErrorHandlerMiddleware from '@bigcapital/server/api/middleware/ObjectionErrorHandlerMiddleware';
+import RateLimiterMiddleware from '@bigcapital/server/api/middleware/RateLimiterMiddleware';
+import config from '@bigcapital/server/config';
 import bodyParser from 'body-parser';
 import errorHandler from 'errorhandler';
 import { type NextFunction, type Request, type Response, json } from 'express';

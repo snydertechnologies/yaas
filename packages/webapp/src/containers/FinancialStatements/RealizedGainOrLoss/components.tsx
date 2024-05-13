@@ -1,7 +1,7 @@
 // @ts-nocheck
 import React from 'react';
 
-import { If } from '@/components';
+import { If } from '@bigcapital/webapp/components';
 
 import FinancialLoadingBar from '../FinancialLoadingBar';
 

@@ -1,21 +1,21 @@
-// @ts-nocheck
-import React, { useMemo } from 'react';
-import { FastField, ErrorMessage } from 'formik';
+import {
+  AccountsSuggestField,
+  Col,
+  FFormGroup,
+  FSelect,
+  FieldRequiredHint,
+  Row,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import { getAddMoneyOutOptions } from '@bigcapital/webapp/constants/cashflowOptions';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { inputIntent } from '@bigcapital/webapp/utils';
 import { FormGroup } from '@blueprintjs/core';
 import classNames from 'classnames';
-import {
-  FormattedMessage as T,
-  AccountsSuggestField,
-  FieldRequiredHint,
-  Col,
-  Row,
-  FSelect,
-  FFormGroup,
-} from '@/components';
-import { inputIntent } from '@/utils';
-import { getAddMoneyOutOptions } from '@/constants/cashflowOptions';
+import { ErrorMessage, FastField } from 'formik';
+// @ts-nocheck
+import React, { useMemo } from 'react';
 import { useMoneyOutDialogContext } from './MoneyOutDialogProvider';
-import { CLASSES } from '@/constants/classes';
 
 /**
  * Transaction type fields.

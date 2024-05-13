@@ -2,24 +2,29 @@
 import React, { useCallback } from 'react';
 import { useHistory } from 'react-router-dom';
 
-import { compose } from '@/utils';
-import { DataTable, DashboardContentTable, TableSkeletonRows, TableSkeletonHeader } from '@/components';
-import { TABLES } from '@/constants/tables';
+import {
+  DashboardContentTable,
+  DataTable,
+  TableSkeletonHeader,
+  TableSkeletonRows,
+} from '@bigcapital/webapp/components';
+import { TABLES } from '@bigcapital/webapp/constants/tables';
+import { compose } from '@bigcapital/webapp/utils';
 
 import ReceiptsEmptyStatus from './ReceiptsEmptyStatus';
 
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
 import withReceipts from './withReceipts';
 import withReceiptsActions from './withReceiptsActions';
-import withAlertsActions from '@/containers/Alert/withAlertActions';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import withSettings from '@/containers/Settings/withSettings';
 
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import { useMemorizedColumnsWidths } from '@bigcapital/webapp/hooks';
 import { useReceiptsListContext } from './ReceiptsListProvider';
-import { useReceiptsTableColumns, ActionsMenu } from './components';
-import { useMemorizedColumnsWidths } from '@/hooks';
-import { DRAWERS } from '@/constants/drawers';
-import { DialogsName } from '@/constants/dialogs';
+import { ActionsMenu, useReceiptsTableColumns } from './components';
 
 /**
  * Sale receipts datatable.

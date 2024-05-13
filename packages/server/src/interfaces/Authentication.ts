@@ -1,4 +1,4 @@
-import type { SystemUser } from '@/system/models';
+import type { SystemUser } from '@bigcapital/server/system/models';
 import type { ITenant } from './Tenancy';
 import type { ISystemUser } from './User';
 

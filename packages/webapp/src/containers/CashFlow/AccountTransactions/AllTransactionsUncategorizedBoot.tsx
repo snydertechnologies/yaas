@@ -1,9 +1,9 @@
 // @ts-nocheck
 
-import React from 'react';
+import { IntersectionObserver } from '@bigcapital/webapp/components';
+import { useAccountUncategorizedTransactionsInfinity } from '@bigcapital/webapp/hooks/query';
 import { flatten, map } from 'lodash';
-import { IntersectionObserver } from '@/components';
-import { useAccountUncategorizedTransactionsInfinity } from '@/hooks/query';
+import React from 'react';
 import { useAccountTransactionsContext } from './AccountTransactionsProvider';
 
 const AccountUncategorizedTransactionsContext = React.createContext();

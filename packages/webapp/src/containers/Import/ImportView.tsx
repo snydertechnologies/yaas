@@ -1,6 +1,6 @@
 // @ts-nocheck
 import { ImportStepper } from './ImportStepper';
-import { Box } from '@/components';
+import { Box } from '@bigcapital/webapp/components';
 import { ImportFileProvider } from './ImportFileProvider';
 import styles from './ImportView.module.scss';
 

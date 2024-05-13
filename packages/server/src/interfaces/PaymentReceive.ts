@@ -1,4 +1,4 @@
-import type { CommonMailOptions, CommonMailOptionsDTO, ISystemUser } from '@/interfaces';
+import type { CommonMailOptions, CommonMailOptionsDTO, ISystemUser } from '@bigcapital/server/interfaces';
 import type { Knex } from 'knex';
 import type { ILedgerEntry } from './Ledger';
 import type { ISaleInvoice } from './SaleInvoice';

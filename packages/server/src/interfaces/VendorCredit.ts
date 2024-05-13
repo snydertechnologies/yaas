@@ -1,4 +1,4 @@
-import type { IDynamicListFilter, IItemEntry, IItemEntryDTO } from '@/interfaces';
+import type { IDynamicListFilter, IItemEntry, IItemEntryDTO } from '@bigcapital/server/interfaces';
 import type { Knex } from 'knex';
 
 export enum VendorCreditAction {

@@ -1,11 +1,11 @@
+import { Features } from '@bigcapital/webapp/constants';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { useBranches } from '@bigcapital/webapp/hooks/query';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
+import classNames from 'classnames';
+import { isEmpty } from 'lodash';
 // @ts-nocheck
 import React from 'react';
-import classNames from 'classnames';
-import { CLASSES } from '@/constants/classes';
-import { useBranches } from '@/hooks/query';
-import { useFeatureCan } from '@/hooks/state';
-import { Features } from '@/constants';
-import { isEmpty } from 'lodash';
 
 const BranchesContext = React.createContext();
 

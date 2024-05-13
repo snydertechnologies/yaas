@@ -1,18 +1,18 @@
-// @ts-nocheck
-import React, { useState, useCallback, useEffect, useMemo } from 'react';
-import * as R from 'ramda';
-import intl from 'react-intl-universal';
-import classNames from 'classnames';
 import { MenuItem } from '@blueprintjs/core';
 import { Suggest } from '@blueprintjs/select';
+import classNames from 'classnames';
+import * as R from 'ramda';
+// @ts-nocheck
+import React, { useState, useCallback, useEffect, useMemo } from 'react';
+import intl from 'react-intl-universal';
 
-import { CLASSES } from '@/constants/classes';
-import { DialogsName } from '@/constants/dialogs';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
 
-import { MenuItemNestedText, FormattedMessage as T } from '@/components';
-import { nestedArrayToflatten, filterAccountsByQuery } from '@/utils';
+import { MenuItemNestedText, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { filterAccountsByQuery, nestedArrayToflatten } from '@bigcapital/webapp/utils';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
 
 // Create new account renderer.
 const createNewItemRenderer = (query, active, handleClick) => {

@@ -1,19 +1,19 @@
-// @ts-nocheck
-import React from 'react';
-import { Position, ControlGroup } from '@blueprintjs/core';
-import { useFormikContext } from 'formik';
-import * as R from 'ramda';
 import {
   FFormGroup,
+  FInputGroup,
   FieldRequiredHint,
   Icon,
   InputPrependButton,
   FormattedMessage as T,
-  FInputGroup,
-} from '@/components';
+} from '@bigcapital/webapp/components';
+import { ControlGroup, Position } from '@blueprintjs/core';
+import { useFormikContext } from 'formik';
+import * as R from 'ramda';
+// @ts-nocheck
+import React from 'react';
 
-import withSettings from '@/containers/Settings/withSettings';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
 
 /**
  * Receipt number field of receipt form.

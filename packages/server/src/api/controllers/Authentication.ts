@@ -1,16 +1,16 @@
-import BaseController from '@/api/controllers/BaseController';
-import LoginThrottlerMiddleware from '@/api/middleware/LoginThrottlerMiddleware';
-import asyncMiddleware from '@/api/middleware/asyncMiddleware';
-import { DATATYPES_LENGTH } from '@/data/DataTypes';
-import { ServiceError } from '@/exceptions';
-import { ILoginDTO, IRegisterDTO } from '@/interfaces';
-import AuthenticationApplication from '@/services/Authentication/AuthApplication';
+import BaseController from '@bigcapital/server/api/controllers/BaseController';
+import LoginThrottlerMiddleware from '@bigcapital/server/api/middleware/LoginThrottlerMiddleware';
+import asyncMiddleware from '@bigcapital/server/api/middleware/asyncMiddleware';
+import { DATATYPES_LENGTH } from '@bigcapital/server/data/DataTypes';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { ILoginDTO, IRegisterDTO } from '@bigcapital/server/interfaces';
+import AuthenticationApplication from '@bigcapital/server/services/Authentication/AuthApplication';
 import { Request, Response, Router } from 'express';
 import { ValidationChain, check } from 'express-validator';
 import { Inject, Service } from 'typedi';
 
-import AttachCurrentTenantUser from '@/api/middleware/AttachCurrentTenantUser';
-import JWTAuth from '@/api/middleware/jwtAuth';
+import AttachCurrentTenantUser from '@bigcapital/server/api/middleware/AttachCurrentTenantUser';
+import JWTAuth from '@bigcapital/server/api/middleware/jwtAuth';
 @Service()
 export default class AuthenticationController extends BaseController {
   @Inject()

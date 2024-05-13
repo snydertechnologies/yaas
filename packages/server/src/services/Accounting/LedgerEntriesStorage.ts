@@ -1,5 +1,5 @@
-import { ILedger, ILedgerEntry, ISaveLedgerEntryQueuePayload } from '@/interfaces';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { ILedger, ILedgerEntry, ISaveLedgerEntryQueuePayload } from '@bigcapital/server/interfaces';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import async from 'async';
 import { Knex } from 'knex';
 import { Inject, Service } from 'typedi';

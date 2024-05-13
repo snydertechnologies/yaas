@@ -1,4 +1,4 @@
-import type { IBill } from '@/interfaces';
+import type { IBill } from '@bigcapital/server/interfaces';
 import type Knex from 'knex';
 import type { IItemEntry } from './ItemEntry';
 

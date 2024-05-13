@@ -1,6 +1,6 @@
 // @ts-nocheck
 
-import { useRequestQuery } from '@/hooks/useQueryRequest';
+import { useRequestQuery } from '@bigcapital/webapp/hooks/useQueryRequest';
 import t from './type';
 
 /**

@@ -1,7 +1,7 @@
-import CheckPolicies from '@/api/middleware/CheckPolicies';
-import { AbilitySubject, ReportsAction } from '@/interfaces';
-import { ACCEPT_TYPE } from '@/interfaces/Http';
-import { JournalSheetApplication } from '@/services/FinancialStatements/JournalSheet/JournalSheetApplication';
+import CheckPolicies from '@bigcapital/server/api/middleware/CheckPolicies';
+import { AbilitySubject, ReportsAction } from '@bigcapital/server/interfaces';
+import { ACCEPT_TYPE } from '@bigcapital/server/interfaces/Http';
+import { JournalSheetApplication } from '@bigcapital/server/services/FinancialStatements/JournalSheet/JournalSheetApplication';
 import { NextFunction, Request, Response, Router } from 'express';
 import { oneOf, query } from 'express-validator';
 import { castArray } from 'lodash';

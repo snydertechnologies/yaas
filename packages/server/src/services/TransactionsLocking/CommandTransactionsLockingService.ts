@@ -1,4 +1,4 @@
-import { ServiceError } from '@/exceptions';
+import { ServiceError } from '@bigcapital/server/exceptions';
 import {
   ICancelTransactionsLockingDTO,
   ITransactionLockingPartiallyDTO,
@@ -8,10 +8,10 @@ import {
   ITransactionsLockingPartialUnlocked,
   TransactionsLockingGroup,
   TransactionsLockingType,
-} from '@/interfaces';
-import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
-import events from '@/subscribers/events';
+} from '@bigcapital/server/interfaces';
+import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import events from '@bigcapital/server/subscribers/events';
 import { omit } from 'lodash';
 import { Inject, Service } from 'typedi';
 import TransactionsLockingRepository from './TransactionsLockingRepository';

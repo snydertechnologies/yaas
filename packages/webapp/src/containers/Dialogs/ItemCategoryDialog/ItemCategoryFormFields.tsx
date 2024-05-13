@@ -1,11 +1,11 @@
+import { FieldRequiredHint, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Classes, FormGroup, InputGroup, TextArea } from '@blueprintjs/core';
+import { ErrorMessage, FastField } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { Classes, FormGroup, InputGroup, TextArea } from '@blueprintjs/core';
-import { FormattedMessage as T, FieldRequiredHint } from '@/components';
-import { ErrorMessage, FastField } from 'formik';
 
-import { useAutofocus } from '@/hooks';
-import { inputIntent } from '@/utils';
+import { useAutofocus } from '@bigcapital/webapp/hooks';
+import { inputIntent } from '@bigcapital/webapp/utils';
 
 /**
  * Item category form fields.

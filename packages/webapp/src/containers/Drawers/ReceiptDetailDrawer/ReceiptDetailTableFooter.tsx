@@ -2,7 +2,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { T, TotalLines, TotalLine, TotalLineBorderStyle, TotalLineTextStyle, FormatNumber } from '@/components';
+import {
+  FormatNumber,
+  T,
+  TotalLine,
+  TotalLineBorderStyle,
+  TotalLineTextStyle,
+  TotalLines,
+} from '@bigcapital/webapp/components';
 import { useReceiptDetailDrawerContext } from './ReceiptDetailDrawerProvider';
 
 /**

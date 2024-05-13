@@ -1,10 +1,10 @@
+import { FFormGroup, FSwitch } from '@bigcapital/webapp/components';
+import { MailNotificationForm } from '@bigcapital/webapp/containers/SendMailNotification';
+import { saveInvoke } from '@bigcapital/webapp/utils';
+import { Button, Classes, Intent } from '@blueprintjs/core';
 // @ts-nocheck
 import { Form, useFormikContext } from 'formik';
-import { Button, Classes, Intent } from '@blueprintjs/core';
 import styled from 'styled-components';
-import { FFormGroup, FSwitch } from '@/components';
-import { MailNotificationForm } from '@/containers/SendMailNotification';
-import { saveInvoke } from '@/utils';
 import { usePaymentMailDialogBoot } from './PaymentMailDialogBoot';
 
 interface PaymentMailDialogFormContentProps {

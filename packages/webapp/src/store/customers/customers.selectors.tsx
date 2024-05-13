@@ -1,8 +1,8 @@
 // @ts-nocheck
 import { isEqual } from 'lodash';
 
-import { paginationLocationQuery } from '@/store/selectors';
-import { createDeepEqualSelector } from '@/utils';
+import { paginationLocationQuery } from '@bigcapital/webapp/store/selectors';
+import { createDeepEqualSelector } from '@bigcapital/webapp/utils';
 import { defaultTableQueryState } from './customers.reducer';
 
 const customerTableStateSelector = (state) => state.customers.tableState;

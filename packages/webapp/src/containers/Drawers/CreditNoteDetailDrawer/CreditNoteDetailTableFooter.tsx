@@ -1,6 +1,6 @@
 // @ts-nocheck
 import styled from 'styled-components';
-import { T, TotalLines, TotalLine, TotalLineBorderStyle, TotalLineTextStyle } from '@/components';
+import { T, TotalLines, TotalLine, TotalLineBorderStyle, TotalLineTextStyle } from '@bigcapital/webapp/components';
 import { useCreditNoteDetailDrawerContext } from './CreditNoteDetailDrawerProvider';
 
 /**

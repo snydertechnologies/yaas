@@ -1,7 +1,7 @@
-import { IPaymentReceiveCreatedPayload } from '@/interfaces';
-import { PaymentReceiveNotifyBySms } from '@/services/Sales/PaymentReceives/PaymentReceiveSmsNotify';
-import { runAfterTransaction } from '@/services/UnitOfWork/TransactionsHooks';
-import events from '@/subscribers/events';
+import { IPaymentReceiveCreatedPayload } from '@bigcapital/server/interfaces';
+import { PaymentReceiveNotifyBySms } from '@bigcapital/server/services/Sales/PaymentReceives/PaymentReceiveSmsNotify';
+import { runAfterTransaction } from '@bigcapital/server/services/UnitOfWork/TransactionsHooks';
+import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 
 @Service()

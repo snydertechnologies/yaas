@@ -1,13 +1,13 @@
+import { ListSelect } from '@bigcapital/webapp/components';
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { decimalPlaces, moneyFormat, negativeFormat } from '@bigcapital/webapp/constants/numberFormatsOptions';
+import { inputIntent } from '@bigcapital/webapp/utils';
+import { Checkbox, FormGroup, Switch } from '@blueprintjs/core';
+import classNames from 'classnames';
+import { ErrorMessage, FastField } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { FastField, ErrorMessage } from 'formik';
-import { FormGroup, Checkbox, Switch } from '@blueprintjs/core';
-import { CLASSES } from '@/constants/classes';
-import { ListSelect } from '@/components';
-import { FormattedMessage as T } from '@/components';
-import { inputIntent } from '@/utils';
-import { moneyFormat, negativeFormat, decimalPlaces } from '@/constants/numberFormatsOptions';
-import classNames from 'classnames';
 
 /**
  *  Number Formats Fields.

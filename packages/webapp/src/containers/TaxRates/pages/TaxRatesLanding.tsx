@@ -1,9 +1,9 @@
 // @ts-nocheck
 import React, { useEffect } from 'react';
 
-import { DashboardPageContent } from '@/components';
-import { TaxRatesLandingProvider } from '../containers/TaxRatesLandingProvider';
+import { DashboardPageContent } from '@bigcapital/webapp/components';
 import TaxRatesLandingActionsBar from '../containers/TaxRatesLandingActionsBar';
+import { TaxRatesLandingProvider } from '../containers/TaxRatesLandingProvider';
 import TaxRatesDataTable from '../containers/TaxRatesLandingTable';
 
 /**

@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { transformToForm, optionsMapToArray, transfromToSnakeCase, transactionNumber } from '@/utils';
+import { optionsMapToArray, transactionNumber, transformToForm, transfromToSnakeCase } from '@bigcapital/webapp/utils';
 import { omit } from 'lodash';
 
 export const defaultInvoiceNoSettings = {

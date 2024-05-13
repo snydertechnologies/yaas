@@ -1,8 +1,8 @@
+import { useAuthenticatedAccount, useEditUser, useRoles, useUser } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React, { createContext, useContext } from 'react';
-import { useEditUser, useUser, useRoles, useAuthenticatedAccount } from '@/hooks/query';
 
-import { DialogContent } from '@/components';
+import { DialogContent } from '@bigcapital/webapp/components';
 
 const UserFormContext = createContext();
 

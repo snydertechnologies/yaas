@@ -1,8 +1,8 @@
 import path from 'path';
-import config from '@/config';
-import { ISystemUser } from '@/interfaces';
-import Mail from '@/lib/Mail';
-import { Tenant } from '@/system/models';
+import config from '@bigcapital/server/config';
+import { ISystemUser } from '@bigcapital/server/interfaces';
+import Mail from '@bigcapital/server/lib/Mail';
+import { Tenant } from '@bigcapital/server/system/models';
 import { Service } from 'typedi';
 
 @Service()

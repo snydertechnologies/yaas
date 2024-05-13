@@ -1,13 +1,13 @@
+import * as R from 'ramda';
 // @ts-nocheck
 import React from 'react';
-import * as R from 'ramda';
 
-import PurchasesByItemsTable from './PurchasesByItemsTable';
+import { FinancialSheetSkeleton } from '@bigcapital/webapp/components';
 import { FinancialReportBody } from '../FinancialReportPage';
-import { FinancialSheetSkeleton } from '@/components';
 import { usePurchaseByItemsContext } from './PurchasesByItemsProvider';
+import PurchasesByItemsTable from './PurchasesByItemsTable';
 
-import withCurrentOrganization from '@/containers/Organization/withCurrentOrganization';
+import withCurrentOrganization from '@bigcapital/webapp/containers/Organization/withCurrentOrganization';
 
 /**
  * Purchases by items.

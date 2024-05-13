@@ -1,10 +1,10 @@
-// @ts-nocheck
-import React, { useCallback, useState } from 'react';
-import { includes } from 'lodash';
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { safeInvoke } from '@bigcapital/webapp/utils';
 import { MenuItem } from '@blueprintjs/core';
 import { MultiSelect as MultiSelectBP } from '@blueprintjs/select';
-import { FormattedMessage as T } from '@/components';
-import { safeInvoke } from '@/utils';
+import { includes } from 'lodash';
+// @ts-nocheck
+import React, { useCallback, useState } from 'react';
 
 /**
  * Items multi-select.

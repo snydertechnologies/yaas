@@ -1,7 +1,7 @@
-import { ServiceError } from '@/exceptions';
-import { IModel } from '@/interfaces';
-import DynamicFilterViews from '@/lib/DynamicFilter/DynamicFilterViews';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { IModel } from '@bigcapital/server/interfaces';
+import DynamicFilterViews from '@bigcapital/server/lib/DynamicFilter/DynamicFilterViews';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject, Service } from 'typedi';
 import DynamicListAbstract from './DynamicListAbstract';
 import { ERRORS } from './constants';

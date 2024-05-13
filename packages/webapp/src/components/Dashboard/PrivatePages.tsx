@@ -1,15 +1,15 @@
 // @ts-nocheck
 import React from 'react';
-import { Switch, Route } from 'react-router';
+import { Route, Switch } from 'react-router';
 
-import Dashboard from '@/components/Dashboard/Dashboard';
-import SetupWizardPage from '@/containers/Setup/WizardSetupPage';
+import Dashboard from '@bigcapital/webapp/components/Dashboard/Dashboard';
+import SetupWizardPage from '@bigcapital/webapp/containers/Setup/WizardSetupPage';
 
-import EnsureOrganizationIsReady from '../Guards/EnsureOrganizationIsReady';
 import EnsureOrganizationIsNotReady from '../Guards/EnsureOrganizationIsNotReady';
+import EnsureOrganizationIsReady from '../Guards/EnsureOrganizationIsReady';
 import { PrivatePagesProvider } from './PrivatePagesProvider';
 
-import '@/style/pages/Dashboard/Dashboard.scss';
+import '@bigcapital/webapp/style/pages/Dashboard/Dashboard.scss';
 
 /**
  * Dashboard inner private pages.

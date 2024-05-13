@@ -1,6 +1,6 @@
+import { DashboardInsider } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import React from 'react';
-import { DashboardInsider } from '@/components';
 import { useProject } from '../../hooks';
 
 const ProjectDetailContext = React.createContext();

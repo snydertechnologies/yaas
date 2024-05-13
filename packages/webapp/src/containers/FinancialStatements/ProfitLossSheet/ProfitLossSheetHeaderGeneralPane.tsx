@@ -1,11 +1,11 @@
 // @ts-nocheck
 import React from 'react';
 
-import { Row, Col } from '@/components';
+import { Col, Row } from '@bigcapital/webapp/components';
 import FinancialStatementDateRange from '../FinancialStatementDateRange';
-import SelectDisplayColumnsBy from '../SelectDisplayColumnsBy';
-import RadiosAccountingBasis from '../RadiosAccountingBasis';
 import FinancialStatementsFilter from '../FinancialStatementsFilter';
+import RadiosAccountingBasis from '../RadiosAccountingBasis';
+import SelectDisplayColumnsBy from '../SelectDisplayColumnsBy';
 
 /**
  * Profit/Loss sheet - Drawer header - General panel.

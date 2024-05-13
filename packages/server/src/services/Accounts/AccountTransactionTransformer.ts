@@ -1,5 +1,5 @@
-import { IAccountTransaction } from '@/interfaces';
-import { Transformer } from '@/lib/Transformer/Transformer';
+import { IAccountTransaction } from '@bigcapital/server/interfaces';
+import { Transformer } from '@bigcapital/server/lib/Transformer/Transformer';
 
 export default class AccountTransactionTransformer extends Transformer {
   /**

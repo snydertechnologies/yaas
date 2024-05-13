@@ -1,12 +1,12 @@
+import { Tab } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
 import styled from 'styled-components';
-import { Tab } from '@blueprintjs/core';
 
-import { DrawerMainTabs } from '@/components';
-import RefundCreditNoteDetailTab from './RefundCreditNoteDetailTab';
+import { DrawerMainTabs } from '@bigcapital/webapp/components';
 import RefundCreditNoteDetailActionsBar from './RefundCreditNoteDetailActionsBar';
+import RefundCreditNoteDetailTab from './RefundCreditNoteDetailTab';
 
 /**
  * Refund credit note detail.

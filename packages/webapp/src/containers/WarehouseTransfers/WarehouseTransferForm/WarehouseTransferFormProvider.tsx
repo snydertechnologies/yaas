@@ -1,17 +1,17 @@
-// @ts-nocheck
-import React, { createContext } from 'react';
-import { isEmpty } from 'lodash';
-import { DashboardInsider } from '@/components';
+import { DashboardInsider } from '@bigcapital/webapp/components';
+import { Features } from '@bigcapital/webapp/constants';
 import {
-  useItems,
-  useWarehouses,
-  useWarehouseTransfer,
   useCreateWarehouseTransfer,
   useEditWarehouseTransfer,
   useItemInventoryCost,
-} from '@/hooks/query';
-import { Features } from '@/constants';
-import { useFeatureCan } from '@/hooks/state';
+  useItems,
+  useWarehouseTransfer,
+  useWarehouses,
+} from '@bigcapital/webapp/hooks/query';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
+import { isEmpty } from 'lodash';
+// @ts-nocheck
+import React, { createContext } from 'react';
 import { ITEMS_FILTER_ROLES_QUERY } from './utils';
 
 const WarehouseFormContext = createContext();

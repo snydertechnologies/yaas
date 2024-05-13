@@ -5,7 +5,7 @@ import {
   IProfitLossSheetAccountsNode,
   IProfitLossSheetEquationNode,
   IProfitLossSheetNode,
-} from '@/interfaces';
+} from '@bigcapital/server/interfaces';
 import { sumBy } from 'lodash';
 import * as R from 'ramda';
 import { FinancialPreviousPeriod } from '../FinancialPreviousPeriod';

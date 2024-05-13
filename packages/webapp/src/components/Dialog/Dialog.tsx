@@ -1,10 +1,10 @@
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { compose } from '@bigcapital/webapp/utils';
+import { Dialog } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Dialog } from '@blueprintjs/core';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { compose } from '@/utils';
 
-import '@/style/components/Dialog/Dialog.scss';
+import '@bigcapital/webapp/style/components/Dialog/Dialog.scss';
 
 function DialogComponent(props) {
   const { name, children, closeDialog, onClose } = props;

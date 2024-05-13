@@ -1,8 +1,8 @@
+import { DashboardInsider } from '@bigcapital/webapp/components';
+import { useResourceMeta, useResourceViews } from '@bigcapital/webapp/hooks/query';
+import { isEmpty } from 'lodash';
 // @ts-nocheck
 import React from 'react';
-import { isEmpty } from 'lodash';
-import { useResourceViews, useResourceMeta } from '@/hooks/query';
-import { DashboardInsider } from '@/components';
 import { useProjects } from '../../hooks';
 
 const ProjectsListContext = React.createContext();

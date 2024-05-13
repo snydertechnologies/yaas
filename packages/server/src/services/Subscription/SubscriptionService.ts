@@ -1,4 +1,4 @@
-import { PlanSubscription } from '@/system/models';
+import { PlanSubscription } from '@bigcapital/server/system/models';
 import { Service } from 'typedi';
 
 @Service()

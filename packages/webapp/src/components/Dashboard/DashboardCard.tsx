@@ -1,8 +1,8 @@
+import classNames from 'classnames';
 // @ts-nocheck
 import React from 'react';
-import classNames from 'classnames';
 
-import { CLASSES } from '@/constants/classes';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
 
 // Dashboard card.
 export function DashboardCard({ children, page }) {

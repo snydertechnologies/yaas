@@ -1,23 +1,28 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import {
+  DashboardContentTable,
+  DataTable,
+  TableSkeletonHeader,
+  TableSkeletonRows,
+} from '@bigcapital/webapp/components';
+import { TABLES } from '@bigcapital/webapp/constants/tables';
 // @ts-nocheck
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { TABLES } from '@/constants/tables';
-import { FormattedMessage as T } from '@/components';
-import { DashboardContentTable, DataTable, TableSkeletonRows, TableSkeletonHeader } from '@/components';
 
 import ItemsEmptyStatus from './ItemsEmptyStatus';
 
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
 import withItemsActions from './withItemsActions';
-import withAlertsActions from '@/containers/Alert/withAlertActions';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
-import withSettings from '@/containers/Settings/withSettings';
 
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import { useMemorizedColumnsWidths } from '@bigcapital/webapp/hooks';
+import { compose } from '@bigcapital/webapp/utils';
 import { useItemsListContext } from './ItemsListProvider';
-import { useItemsTableColumns, ItemsActionMenuList } from './components';
-import { useMemorizedColumnsWidths } from '@/hooks';
-import { compose } from '@/utils';
-import { DRAWERS } from '@/constants/drawers';
+import { ItemsActionMenuList, useItemsTableColumns } from './components';
 
 /**
  * Items datatable.

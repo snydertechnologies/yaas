@@ -1,17 +1,17 @@
+import { Intent } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import styled from 'styled-components';
-import { Intent } from '@blueprintjs/core';
 import { useHistory } from 'react-router-dom';
+import styled from 'styled-components';
 
-import { DataTable, AppToaster, TableSkeletonRows } from '@/components';
+import { AppToaster, DataTable, TableSkeletonRows } from '@bigcapital/webapp/components';
 
-import { useRolesTableColumns, ActionsMenu } from './components';
-import withAlertsActions from '@/containers/Alert/withAlertActions';
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
 import { useRolesContext } from './RolesListProvider';
+import { ActionsMenu, useRolesTableColumns } from './components';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Roles data table.

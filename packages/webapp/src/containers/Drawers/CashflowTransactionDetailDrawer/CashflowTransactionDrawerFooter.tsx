@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React from 'react';
-import { CommercialDocFooter, DetailsMenu, DetailItem, T } from '@/components';
+import { CommercialDocFooter, DetailsMenu, DetailItem, T } from '@bigcapital/webapp/components';
 import { useCashflowTransactionDrawerContext } from './CashflowTransactionDrawerProvider';
 
 export function CashflowTransactionDrawerFooter() {

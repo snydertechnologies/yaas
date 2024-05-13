@@ -1,15 +1,15 @@
+import { AppToaster, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Alert, Intent } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { Intent, Alert } from '@blueprintjs/core';
-import { AppToaster, FormattedMessage as T } from '@/components';
 
-import { useMarkBranchAsPrimary } from '@/hooks/query';
+import { useMarkBranchAsPrimary } from '@bigcapital/webapp/hooks/query';
 
-import withAlertActions from '@/containers/Alert/withAlertActions';
-import withAlertStoreConnect from '@/containers/Alert/withAlertStoreConnect';
+import withAlertActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withAlertStoreConnect from '@bigcapital/webapp/containers/Alert/withAlertStoreConnect';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * branch mark primary alert.

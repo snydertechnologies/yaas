@@ -1,8 +1,8 @@
+import classNames from 'classnames';
 // @ts-nocheck
 import React from 'react';
-import classNames from 'classnames';
 
-import '@/style/components/Details.scss';
+import '@bigcapital/webapp/style/components/Details.scss';
 
 const DIRECTION = {
   VERTICAL: 'vertical',

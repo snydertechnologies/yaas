@@ -1,10 +1,10 @@
+import clsx from 'classnames';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import clsx from 'classnames';
 
-import { CLASSES } from '@/constants/classes';
-import { FormatDateCell } from '@/components';
+import { FormatDateCell } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
 import { NoteAccessor, StatusAccessor } from './components';
 
 /**

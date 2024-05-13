@@ -1,4 +1,4 @@
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { isUndefined } from 'lodash';
 import * as qim from 'qim';
 import * as R from 'ramda';

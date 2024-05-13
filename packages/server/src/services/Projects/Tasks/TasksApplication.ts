@@ -4,7 +4,7 @@ import {
   IProjectTaskCreatePOJO,
   IProjectTaskEditPOJO,
   IProjectTaskGetPOJO,
-} from '@/interfaces';
+} from '@bigcapital/server/interfaces';
 import { Inject, Service } from 'typedi';
 import { CreateTaskService } from './CreateTask';
 import { DeleteTaskService } from './DeleteTask';

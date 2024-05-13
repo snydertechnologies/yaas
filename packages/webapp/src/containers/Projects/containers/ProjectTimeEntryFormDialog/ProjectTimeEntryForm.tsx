@@ -1,17 +1,17 @@
-// @ts-nocheck
-import React from 'react';
-import moment from 'moment';
-import intl from 'react-intl-universal';
+import { AppToaster } from '@bigcapital/webapp/components';
 import { Intent } from '@blueprintjs/core';
 import { Formik } from 'formik';
-import { AppToaster } from '@/components';
+import moment from 'moment';
+// @ts-nocheck
+import React from 'react';
+import intl from 'react-intl-universal';
 
-import ProjectTimeEntryFormContent from './ProjectTimeEntryFormContent';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
 import { CreateProjectTimeEntryFormSchema } from './ProjectTimeEntryForm.schema';
+import ProjectTimeEntryFormContent from './ProjectTimeEntryFormContent';
 import { useProjectTimeEntryFormContext } from './ProjectTimeEntryFormProvider';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
 
-import { compose, transformToForm } from '@/utils';
+import { compose, transformToForm } from '@bigcapital/webapp/utils';
 
 const defaultInitialValues = {
   date: moment(new Date()).format('YYYY-MM-DD'),

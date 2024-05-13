@@ -1,8 +1,8 @@
+import { AppToaster } from '@bigcapital/webapp/components';
+import { Intent } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { Intent } from '@blueprintjs/core';
-import { AppToaster } from '@/components';
 
 export const transformErrors = (errors) => {
   if (errors.find((error) => error.type === 'VENDOR.HAS.ASSOCIATED.BILLS')) {

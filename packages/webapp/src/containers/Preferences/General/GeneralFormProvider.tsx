@@ -1,16 +1,16 @@
+import classNames from 'classnames';
 // @ts-nocheck
 import React, { createContext } from 'react';
-import classNames from 'classnames';
 import styled from 'styled-components';
 
-import { Card } from '@/components';
-import { CLASSES } from '@/constants/classes';
+import { Card } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
 import {
   useCurrentOrganization,
-  useUpdateOrganization,
   useDateFormats,
   useOrgBaseCurrencyMutateAbilities,
-} from '@/hooks/query';
+  useUpdateOrganization,
+} from '@bigcapital/webapp/hooks/query';
 import PreferencesPageLoader from '../PreferencesPageLoader';
 
 const GeneralFormContext = createContext();

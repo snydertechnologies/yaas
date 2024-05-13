@@ -1,6 +1,6 @@
+import { APAgingSummaryFilterDrawerSelector } from '@bigcapital/webapp/store/financialStatement/financialStatements.selectors';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { APAgingSummaryFilterDrawerSelector } from '@/store/financialStatement/financialStatements.selectors';
 
 export default (mapState) => {
   const mapStateToProps = (state, props) => {

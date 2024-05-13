@@ -1,6 +1,6 @@
+import { getCashflowAccountsTableStateFactory } from '@bigcapital/webapp/store/CashflowAccounts/CashflowAccounts.selectors';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { getCashflowAccountsTableStateFactory } from '@/store/CashflowAccounts/CashflowAccounts.selectors';
 
 export default (mapState) => {
   const getCashflowAccountsTableState = getCashflowAccountsTableStateFactory();

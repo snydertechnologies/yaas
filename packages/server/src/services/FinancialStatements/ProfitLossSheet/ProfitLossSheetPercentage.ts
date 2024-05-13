@@ -1,4 +1,4 @@
-import { IProfitLossSheetNode, ProfitLossAggregateNodeId } from '@/interfaces';
+import { IProfitLossSheetNode, ProfitLossAggregateNodeId } from '@bigcapital/server/interfaces';
 import * as R from 'ramda';
 import { FinancialHorizTotals } from '../FinancialHorizTotals';
 

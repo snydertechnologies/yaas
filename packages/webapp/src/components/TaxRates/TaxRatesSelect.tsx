@@ -1,10 +1,10 @@
+import { FSelect } from '@bigcapital/webapp/components';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { MenuItem } from '@blueprintjs/core';
 // @ts-nocheck
 import * as R from 'ramda';
 import intl from 'react-intl-universal';
-import { FSelect } from '@/components';
-import { DialogsName } from '@/constants/dialogs';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { MenuItem } from '@blueprintjs/core';
 
 // Create new account renderer.
 const createNewItemRenderer = (query, active, handleClick) => {
