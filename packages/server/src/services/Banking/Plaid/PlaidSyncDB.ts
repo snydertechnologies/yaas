@@ -1,8 +1,8 @@
-import { PlaidAccount, PlaidTransaction } from '@/interfaces';
-import { CreateAccount } from '@/services/Accounts/CreateAccount';
-import { CashflowApplication } from '@/services/Cashflow/CashflowApplication';
-import { DeleteCashflowTransaction } from '@/services/Cashflow/DeleteCashflowTransactionService';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { PlaidAccount, PlaidTransaction } from '@bigcapital/server/interfaces';
+import { CreateAccount } from '@bigcapital/server/services/Accounts/CreateAccount';
+import { CashflowApplication } from '@bigcapital/server/services/Cashflow/CashflowApplication';
+import { DeleteCashflowTransaction } from '@bigcapital/server/services/Cashflow/DeleteCashflowTransactionService';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import bluebird from 'bluebird';
 import { entries, groupBy } from 'lodash';
 import * as R from 'ramda';

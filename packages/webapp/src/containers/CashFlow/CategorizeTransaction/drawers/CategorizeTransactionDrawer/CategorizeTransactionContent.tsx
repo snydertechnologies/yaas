@@ -1,6 +1,6 @@
+import { DrawerBody } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import styled from 'styled-components';
-import { DrawerBody } from '@/components';
 import { CategorizeTransactionBoot } from './CategorizeTransactionBoot';
 import { CategorizeTransactionForm } from './CategorizeTransactionForm';
 

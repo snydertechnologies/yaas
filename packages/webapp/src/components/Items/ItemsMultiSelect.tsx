@@ -1,8 +1,8 @@
+import { FMultiSelect } from '@bigcapital/webapp/components/Forms';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import * as R from 'ramda';
 // @ts-nocheck
 import React from 'react';
-import * as R from 'ramda';
-import { FMultiSelect } from '@/components/Forms';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
 
 /**
  * Items multi-select.

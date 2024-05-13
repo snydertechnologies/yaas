@@ -1,16 +1,16 @@
+import { Intent, ProgressBar } from '@blueprintjs/core';
+import * as R from 'ramda';
 // @ts-nocheck
 import React from 'react';
-import { ProgressBar, Intent } from '@blueprintjs/core';
-import * as R from 'ramda';
 
-import { useJob, useCurrentOrganization } from '@/hooks/query';
-import { FormattedMessage as T } from '@/components';
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { useCurrentOrganization, useJob } from '@bigcapital/webapp/hooks/query';
 
-import withOrganizationActions from '@/containers/Organization/withOrganizationActions';
-import withCurrentOrganization from '@/containers/Organization/withCurrentOrganization';
+import withCurrentOrganization from '@bigcapital/webapp/containers/Organization/withCurrentOrganization';
+import withOrganizationActions from '@bigcapital/webapp/containers/Organization/withOrganizationActions';
 import withOrganization from '../Organization/withOrganization';
 
-import '@/style/pages/Setup/Initializing.scss';
+import '@bigcapital/webapp/style/pages/Setup/Initializing.scss';
 
 /**
  * Setup initializing step form.

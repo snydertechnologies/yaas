@@ -1,10 +1,10 @@
-import { IJournalReportQuery, IJournalSheet } from '@/interfaces';
-import Journal from '@/services/Accounting/JournalPoster';
-import TenancyService from '@/services/Tenancy/TenancyService';
-import { Tenant } from '@/system/models';
+import { IJournalReportQuery, IJournalSheet } from '@bigcapital/server/interfaces';
+import Journal from '@bigcapital/server/services/Accounting/JournalPoster';
+import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import { Tenant } from '@bigcapital/server/system/models';
+import { transformToMap } from '@bigcapital/server/utils';
 import moment from 'moment';
 import { Inject, Service } from 'typedi';
-import { transformToMap } from 'utils';
 import JournalSheet from './JournalSheet';
 import { JournalSheetMeta } from './JournalSheetMeta';
 

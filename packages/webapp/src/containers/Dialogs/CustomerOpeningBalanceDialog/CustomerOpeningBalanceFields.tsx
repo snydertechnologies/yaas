@@ -1,30 +1,30 @@
+import { Features } from '@bigcapital/webapp/constants';
+import { handleDateChange, momentFormatter, tansformDateValue } from '@bigcapital/webapp/utils';
+import { Classes, ControlGroup, FormGroup, Position } from '@blueprintjs/core';
+import { DateInput } from '@blueprintjs/datetime';
+import classNames from 'classnames';
+import { FastField, useFormikContext } from 'formik';
+import { isEqual } from 'lodash';
 // @ts-nocheck
 import React from 'react';
-import { Classes, Position, FormGroup, ControlGroup } from '@blueprintjs/core';
-import { DateInput } from '@blueprintjs/datetime';
-import { isEqual } from 'lodash';
-import { FastField, useFormikContext } from 'formik';
-import { momentFormatter, tansformDateValue, handleDateChange } from '@/utils';
-import { Features } from '@/constants';
-import classNames from 'classnames';
 
 import {
-  If,
-  Icon,
-  FormattedMessage as T,
-  ExchangeRateMutedField,
   BranchSelect,
   BranchSelectButton,
+  ExchangeRateMutedField,
   FeatureCan,
+  Icon,
+  If,
   InputPrependText,
-} from '@/components';
-import { FMoneyInputGroup, FFormGroup } from '@/components/Forms';
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import { FFormGroup, FMoneyInputGroup } from '@bigcapital/webapp/components/Forms';
 
 import { useCustomerOpeningBalanceContext } from './CustomerOpeningBalanceFormProvider';
 import { useSetPrimaryBranchToForm } from './utils';
 
-import withCurrentOrganization from '@/containers/Organization/withCurrentOrganization';
-import { compose } from '@/utils';
+import withCurrentOrganization from '@bigcapital/webapp/containers/Organization/withCurrentOrganization';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Customer Opening balance fields.

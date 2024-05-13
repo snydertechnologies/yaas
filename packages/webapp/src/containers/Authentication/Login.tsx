@@ -2,14 +2,14 @@
 import { Formik } from 'formik';
 import { Link } from 'react-router-dom';
 
-import { AppToaster as Toaster, FormattedMessage as T } from '@/components';
-import AuthInsider from '@/containers/Authentication/AuthInsider';
-import { useAuthLogin } from '@/hooks/query';
+import { FormattedMessage as T, AppToaster as Toaster } from '@bigcapital/webapp/components';
+import AuthInsider from '@bigcapital/webapp/containers/Authentication/AuthInsider';
+import { useAuthLogin } from '@bigcapital/webapp/hooks/query';
 
-import LoginForm from './LoginForm';
-import { LoginSchema, transformLoginErrorsToToasts } from './utils';
-import { AuthFooterLinks, AuthFooterLink, AuthInsiderCard } from './_components';
 import { useAuthMetaBoot } from './AuthMetaBoot';
+import LoginForm from './LoginForm';
+import { AuthFooterLink, AuthFooterLinks, AuthInsiderCard } from './_components';
+import { LoginSchema, transformLoginErrorsToToasts } from './utils';
 
 const initialValues = {
   crediential: '',

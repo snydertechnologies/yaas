@@ -1,4 +1,4 @@
-import { ProfitLossNodeType } from '@/interfaces';
+import { ProfitLossNodeType } from '@bigcapital/server/interfaces';
 
 export const MAP_CONFIG = { childrenPath: 'children', pathFormat: 'array' };
 

@@ -1,5 +1,5 @@
-import { type IJobMeta } from '@/interfaces';
-import { TransformerInjectable } from '@/lib/Transformer/TransformerInjectable';
+import { type IJobMeta } from '@bigcapital/server/interfaces';
+import { TransformerInjectable } from '@bigcapital/server/lib/Transformer/TransformerInjectable';
 import { first, pick } from 'lodash';
 import { ObjectId } from 'mongodb';
 import { Inject, Service } from 'typedi';

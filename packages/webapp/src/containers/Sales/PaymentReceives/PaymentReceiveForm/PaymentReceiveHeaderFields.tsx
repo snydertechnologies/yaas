@@ -1,39 +1,39 @@
+import { Button, Classes, ControlGroup, FormGroup, InputGroup, Position } from '@blueprintjs/core';
+import { DateInput } from '@blueprintjs/datetime';
+import classNames from 'classnames';
+import { ErrorMessage, FastField, Field, useFormikContext } from 'formik';
+import { toSafeInteger } from 'lodash';
 // @ts-nocheck
 import React, { useMemo } from 'react';
-import classNames from 'classnames';
 import styled from 'styled-components';
-import { FormGroup, InputGroup, Position, Classes, ControlGroup, Button } from '@blueprintjs/core';
-import { DateInput } from '@blueprintjs/datetime';
-import { toSafeInteger } from 'lodash';
-import { FastField, Field, useFormikContext, ErrorMessage } from 'formik';
 
-import { FeatureCan, CustomersSelect, FormattedMessage as T } from '@/components';
-import { CLASSES } from '@/constants/classes';
-import { safeSumBy, momentFormatter, tansformDateValue, handleDateChange, inputIntent } from '@/utils';
+import { CustomersSelect, FeatureCan, FormattedMessage as T } from '@bigcapital/webapp/components';
 import {
-  FFormGroup,
   AccountsSelect,
-  FieldRequiredHint,
-  Icon,
-  MoneyInputGroup,
-  InputPrependText,
   CustomerDrawerLink,
+  FFormGroup,
+  FieldRequiredHint,
   Hint,
+  Icon,
+  InputPrependText,
   Money,
-} from '@/components';
+  MoneyInputGroup,
+} from '@bigcapital/webapp/components';
+import { ACCOUNT_TYPE } from '@bigcapital/webapp/constants/accountTypes';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { ProjectsSelect } from '@bigcapital/webapp/containers/Projects/components';
+import { handleDateChange, inputIntent, momentFormatter, safeSumBy, tansformDateValue } from '@bigcapital/webapp/utils';
 import { usePaymentReceiveFormContext } from './PaymentReceiveFormProvider';
-import { ACCOUNT_TYPE } from '@/constants/accountTypes';
-import { ProjectsSelect } from '@/containers/Projects/components';
 import { PaymentReceiveExchangeRateInputField, PaymentReceiveProjectSelectButton } from './components';
 
-import {
-  amountPaymentEntries,
-  fullAmountPaymentEntries,
-  customersFieldShouldUpdate,
-  accountsFieldShouldUpdate,
-} from './utils';
-import { Features } from '@/constants';
+import { Features } from '@bigcapital/webapp/constants';
 import { PaymentReceivePaymentNoField } from './PaymentReceivePaymentNoField';
+import {
+  accountsFieldShouldUpdate,
+  amountPaymentEntries,
+  customersFieldShouldUpdate,
+  fullAmountPaymentEntries,
+} from './utils';
 
 /**
  * Payment receive header fields.

@@ -1,5 +1,5 @@
-import { IInventoryTransactionsCreatedPayload, IInventoryTransactionsDeletedPayload } from '@/interfaces';
-import events from '@/subscribers/events';
+import { IInventoryTransactionsCreatedPayload, IInventoryTransactionsDeletedPayload } from '@bigcapital/server/interfaces';
+import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 import { WarehousesSettings } from '../WarehousesSettings';
 import { WarehousesItemsQuantitySync } from './WarehousesItemsQuantitySync';

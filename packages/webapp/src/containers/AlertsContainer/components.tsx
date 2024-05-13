@@ -6,10 +6,10 @@ import * as R from 'ramda';
 import { Intent, Classes, ProgressBar } from '@blueprintjs/core';
 import { debounce } from 'lodash';
 
-import withAlertStoreConnect from '@/containers/Alert/withAlertStoreConnect';
-import withAlertActions from '@/containers/Alert/withAlertActions';
+import withAlertStoreConnect from '@bigcapital/webapp/containers/Alert/withAlertStoreConnect';
+import withAlertActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
 
-import { AppToaster } from '@/components';
+import { AppToaster } from '@bigcapital/webapp/components';
 
 function AlertLazyFallbackMessage({ amount }) {
   return (

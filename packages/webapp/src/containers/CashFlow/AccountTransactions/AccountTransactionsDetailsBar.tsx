@@ -1,11 +1,11 @@
+import { Icon } from '@bigcapital/webapp/components';
+import { Button, Classes, Menu, MenuItem, Popover, Position } from '@blueprintjs/core';
+import { curry } from 'lodash/fp';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import styled from 'styled-components';
-import { Popover, Menu, Position, Button, MenuItem, Classes } from '@blueprintjs/core';
-import { Icon } from '@/components';
 import { useHistory } from 'react-router-dom';
-import { curry } from 'lodash/fp';
+import styled from 'styled-components';
 
 import { useAccountTransactionsContext } from './AccountTransactionsProvider';
 

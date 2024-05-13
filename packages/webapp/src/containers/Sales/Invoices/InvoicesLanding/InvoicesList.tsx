@@ -1,20 +1,20 @@
 // @ts-nocheck
 import React from 'react';
 
-import '@/style/pages/SaleInvoice/List.scss';
+import '@bigcapital/webapp/style/pages/SaleInvoice/List.scss';
 
-import { DashboardPageContent } from '@/components';
+import { DashboardPageContent } from '@bigcapital/webapp/components';
 import { InvoicesListProvider } from './InvoicesListProvider';
 
 import InvoiceViewTabs from './InvoiceViewTabs';
-import InvoicesDataTable from './InvoicesDataTable';
 import InvoicesActionsBar from './InvoicesActionsBar';
+import InvoicesDataTable from './InvoicesDataTable';
 
-import withInvoices from './withInvoices';
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
 import withInvoiceActions from './withInvoiceActions';
-import withAlertsActions from '@/containers/Alert/withAlertActions';
+import withInvoices from './withInvoices';
 
-import { transformTableStateToQuery, compose } from '@/utils';
+import { compose, transformTableStateToQuery } from '@bigcapital/webapp/utils';
 
 /**
  * Sale invoices list.

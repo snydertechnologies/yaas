@@ -1,23 +1,23 @@
-// @ts-nocheck
-import React from 'react';
 import {
-  Intent,
   Button,
   ButtonGroup,
+  Intent,
+  Menu,
+  MenuItem,
   Popover,
   PopoverInteractionKind,
   Position,
-  Menu,
-  MenuItem,
 } from '@blueprintjs/core';
-import styled from 'styled-components';
 import classNames from 'classnames';
 import { useFormikContext } from 'formik';
+// @ts-nocheck
+import React from 'react';
+import styled from 'styled-components';
 
-import { Icon, FormattedMessage as T } from '@/components';
-import { CLASSES } from '@/constants/classes';
+import { Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { safeInvoke } from '@bigcapital/webapp/utils';
 import { useVendorFormContext } from './VendorFormProvider';
-import { safeInvoke } from '@/utils';
 
 /**
  * Vendor floating actions bar.

@@ -1,9 +1,9 @@
 // @ts-nocheck
 import React from 'react';
 
-import '@/style/pages/RefundCreditNote/RefundCreditNote.scss';
-import { RefundCreditNoteFormProvider } from './RefundCreditNoteFormProvider';
+import '@bigcapital/webapp/style/pages/RefundCreditNote/RefundCreditNote.scss';
 import RefundCreditNoteForm from './RefundCreditNoteForm';
+import { RefundCreditNoteFormProvider } from './RefundCreditNoteFormProvider';
 
 /**
  * Refund credit note dialog content.

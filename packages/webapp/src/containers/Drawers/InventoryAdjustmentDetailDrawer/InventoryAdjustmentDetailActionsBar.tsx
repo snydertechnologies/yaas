@@ -1,15 +1,15 @@
+import { Button, Classes, Intent, NavbarGroup } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Button, NavbarGroup, Classes, Intent } from '@blueprintjs/core';
 
 import { useInventoryAdjustmentDrawerContext } from './InventoryAdjustmentDrawerProvider';
 
-import withAlertsActions from '@/containers/Alert/withAlertActions';
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
 
-import { Icon, DrawerActionsBar, FormattedMessage as T, Can } from '@/components';
-import { InventoryAdjustmentAction, AbilitySubject } from '@/constants/abilityOption';
+import { Can, DrawerActionsBar, Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { AbilitySubject, InventoryAdjustmentAction } from '@bigcapital/webapp/constants/abilityOption';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Inventory adjustment detail actions bar.

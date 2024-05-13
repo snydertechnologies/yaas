@@ -1,6 +1,6 @@
+import { useIntersectionObserver } from '@bigcapital/webapp/hooks/utils';
 // @ts-nocheck
 import React from 'react';
-import { useIntersectionObserver } from '@/hooks/utils';
 
 /**
  * Intersection observer.

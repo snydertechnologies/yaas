@@ -1,5 +1,5 @@
-import { ITransactionsByCustomersFilter, ITransactionsByCustomersTable } from '@/interfaces';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { ITransactionsByCustomersFilter, ITransactionsByCustomersTable } from '@bigcapital/server/interfaces';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject, Service } from 'typedi';
 import { TransactionsByCustomersSheet } from './TransactionsByCustomersService';
 import { TransactionsByCustomersTable } from './TransactionsByCustomersTable';

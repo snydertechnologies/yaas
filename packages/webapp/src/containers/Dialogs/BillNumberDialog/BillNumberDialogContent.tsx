@@ -1,16 +1,16 @@
+import { DialogContent } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import React from 'react';
-import { DialogContent } from '@/components';
-import { useQuery, queryCache } from 'react-query';
+import { queryCache, useQuery } from 'react-query';
 
-import ReferenceNumberForm from '@/containers/JournalNumber/ReferenceNumberForm';
+import ReferenceNumberForm from '@bigcapital/webapp/containers/JournalNumber/ReferenceNumberForm';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import withSettingsActions from '@/containers/Settings/withSettingsActions';
-import withSettings from '@/containers/Settings/withSettings';
-import withBillActions from '@/containers/Purchases/Bills/BillsLanding/withBillsActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withBillActions from '@bigcapital/webapp/containers/Purchases/Bills/BillsLanding/withBillsActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import withSettingsActions from '@bigcapital/webapp/containers/Settings/withSettingsActions';
 
-import { compose, optionsMapToArray } from '@/utils';
+import { compose, optionsMapToArray } from '@bigcapital/webapp/utils';
 
 /**
  * bill number dialog's content.

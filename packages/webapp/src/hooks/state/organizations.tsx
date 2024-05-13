@@ -1,8 +1,8 @@
+import { getCurrentOrganizationFactory } from '@bigcapital/webapp/store/authentication/authentication.selectors';
+import { setOrganizations } from '@bigcapital/webapp/store/organizations/organizations.actions';
 // @ts-nocheck
 import { useCallback } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { setOrganizations } from '@/store/organizations/organizations.actions';
-import { getCurrentOrganizationFactory } from '@/store/authentication/authentication.selectors';
+import { useDispatch, useSelector } from 'react-redux';
 
 export const useSetOrganizations = () => {
   const dispatch = useDispatch();

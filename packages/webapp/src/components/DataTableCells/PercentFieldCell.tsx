@@ -1,9 +1,9 @@
+import { FormGroup, Intent } from '@blueprintjs/core';
 // @ts-nocheck
 import React, { useCallback, useState, useEffect } from 'react';
-import { FormGroup, Intent } from '@blueprintjs/core';
 
-import { MoneyInputGroup } from '@/components';
-import { CellType } from '@/constants';
+import { MoneyInputGroup } from '@bigcapital/webapp/components';
+import { CellType } from '@bigcapital/webapp/constants';
 
 const PercentFieldCell = ({
   cell: { value: initialValue },

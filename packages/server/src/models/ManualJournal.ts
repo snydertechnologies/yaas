@@ -1,7 +1,7 @@
-import { DEFAULT_VIEWS } from '@/services/ManualJournals/constants';
-import TenantModel from 'models/TenantModel';
+import TenantModel from '@bigcapital/server/models/TenantModel';
+import { DEFAULT_VIEWS } from '@bigcapital/server/services/ManualJournals/constants';
+import { formatNumber } from '@bigcapital/server/utils';
 import { Model, mixin } from 'objection';
-import { formatNumber } from 'utils';
 import CustomViewBaseModel from './CustomViewBaseModel';
 import ManualJournalSettings from './ManualJournal.Settings';
 import ModelSearchable from './ModelSearchable';
@@ -90,9 +90,9 @@ export default class ManualJournal extends mixin(TenantModel, [ModelSetting, Cus
    * Relationship mapping.
    */
   static get relationMappings() {
-    const Media = require('models/Media');
-    const AccountTransaction = require('models/AccountTransaction');
-    const ManualJournalEntry = require('models/ManualJournalEntry');
+    const Media = require('@bigcapital/server/models/Media');
+    const AccountTransaction = require('@bigcapital/server/models/AccountTransaction');
+    const ManualJournalEntry = require('@bigcapital/server/models/ManualJournalEntry');
 
     return {
       entries: {

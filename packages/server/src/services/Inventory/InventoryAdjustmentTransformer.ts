@@ -1,5 +1,5 @@
-import { IInventoryAdjustment } from '@/interfaces';
-import { Transformer } from '@/lib/Transformer/Transformer';
+import { IInventoryAdjustment } from '@bigcapital/server/interfaces';
+import { Transformer } from '@bigcapital/server/lib/Transformer/Transformer';
 
 export default class InventoryAdjustmentTransformer extends Transformer {
   /**

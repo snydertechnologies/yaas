@@ -1,6 +1,6 @@
-import InventoryService from '@/services/Inventory/Inventory';
-import ItemsEntriesService from '@/services/Items/ItemsEntriesService';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import InventoryService from '@bigcapital/server/services/Inventory/Inventory';
+import ItemsEntriesService from '@bigcapital/server/services/Items/ItemsEntriesService';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Knex } from 'knex';
 import { Inject, Service } from 'typedi';
 

@@ -1,20 +1,20 @@
+import moment from 'moment';
 // @ts-nocheck
 import React, { useEffect, useState } from 'react';
-import moment from 'moment';
 
-import { FinancialStatement, DashboardPageContent } from '@/components';
+import { DashboardPageContent, FinancialStatement } from '@bigcapital/webapp/components';
 import { VendorsTransactionsBody } from './VendorsTransactionsBody';
 import { VendorsTransactionsProvider } from './VendorsTransactionsProvider';
 import { VendorsTransactionsLoadingBar } from './components';
 
-import VendorsTransactionsHeader from './VendorsTransactionsHeader';
 import VendorsTransactionsActionsBar from './VendorsTransactionsActionsBar';
+import VendorsTransactionsHeader from './VendorsTransactionsHeader';
 
 import withVendorsTransactionsActions from './withVendorsTransactionsActions';
 
-import { compose } from '@/utils';
-import { useVendorsTransactionsQuery } from './_utils';
+import { compose } from '@bigcapital/webapp/utils';
 import { VendorTransactionsDialogs } from './VendorTransactionsDialogs';
+import { useVendorsTransactionsQuery } from './_utils';
 
 /**
  * Vendors transactions.

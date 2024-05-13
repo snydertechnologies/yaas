@@ -1,15 +1,15 @@
+import { ControlGroup, InputGroup, Position } from '@blueprintjs/core';
+import { useFormikContext } from 'formik';
+import * as R from 'ramda';
 // @ts-nocheck
 import React from 'react';
-import { useFormikContext } from 'formik';
-import { InputGroup, Position, ControlGroup } from '@blueprintjs/core';
-import * as R from 'ramda';
 
-import { FFormGroup, Icon, InputPrependButton, FormattedMessage as T } from '@/components';
-import { useUpdateEffect } from '@/hooks';
+import { FFormGroup, Icon, InputPrependButton, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { useUpdateEffect } from '@bigcapital/webapp/hooks';
 
-import withSettings from '@/containers/Settings/withSettings';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { transactionNumber } from '@/utils';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import { transactionNumber } from '@bigcapital/webapp/utils';
 
 /**
  * Syncs cashflow auto-increment settings to the form once update.

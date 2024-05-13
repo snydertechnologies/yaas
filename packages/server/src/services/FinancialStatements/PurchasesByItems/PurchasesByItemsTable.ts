@@ -1,10 +1,10 @@
-import { ITableColumn, ITableColumnAccessor, ITableRow } from '@/interfaces';
+import { ITableColumn, ITableColumnAccessor, ITableRow } from '@bigcapital/server/interfaces';
 import {
   IPurchasesByItemsItem,
   IPurchasesByItemsSheetData,
   IPurchasesByItemsTotal,
-} from '@/interfaces/PurchasesByItemsSheet';
-import { tableRowMapper } from '@/utils';
+} from '@bigcapital/server/interfaces/PurchasesByItemsSheet';
+import { tableRowMapper } from '@bigcapital/server/utils';
 import * as R from 'ramda';
 import FinancialSheet from '../FinancialSheet';
 import { FinancialSheetStructure } from '../FinancialSheetStructure';

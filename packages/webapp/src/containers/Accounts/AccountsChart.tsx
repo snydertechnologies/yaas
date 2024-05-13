@@ -1,18 +1,18 @@
 // @ts-nocheck
 import React, { useEffect } from 'react';
 
-import '@/style/pages/Accounts/List.scss';
-import { DashboardPageContent, DashboardContentTable } from '@/components';
+import '@bigcapital/webapp/style/pages/Accounts/List.scss';
+import { DashboardContentTable, DashboardPageContent } from '@bigcapital/webapp/components';
 
-import { AccountsChartProvider } from './AccountsChartProvider';
-import AccountsViewsTabs from './AccountsViewsTabs';
 import AccountsActionsBar from './AccountsActionsBar';
+import { AccountsChartProvider } from './AccountsChartProvider';
 import AccountsDataTable from './AccountsDataTable';
+import AccountsViewsTabs from './AccountsViewsTabs';
 
-import withAccounts from '@/containers/Accounts/withAccounts';
-import withAccountsTableActions from './withAccountsTableActions';
+import withAccounts from '@bigcapital/webapp/containers/Accounts/withAccounts';
+import { compose } from '@bigcapital/webapp/utils';
 import { transformAccountsStateToQuery } from './utils';
-import { compose } from '@/utils';
+import withAccountsTableActions from './withAccountsTableActions';
 
 /**
  * Accounts chart list.

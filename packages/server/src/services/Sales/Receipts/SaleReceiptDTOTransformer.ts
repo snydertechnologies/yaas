@@ -1,9 +1,9 @@
-import { ICustomer, ISaleReceipt, ISaleReceiptDTO } from '@/interfaces';
-import { ItemEntry } from '@/models';
-import { BranchTransactionDTOTransform } from '@/services/Branches/Integrations/BranchTransactionDTOTransform';
-import ItemsEntriesService from '@/services/Items/ItemsEntriesService';
-import { WarehouseTransactionDTOTransform } from '@/services/Warehouses/Integrations/WarehouseTransactionDTOTransform';
-import { formatDateFields } from '@/utils';
+import { ICustomer, ISaleReceipt, ISaleReceiptDTO } from '@bigcapital/server/interfaces';
+import { ItemEntry } from '@bigcapital/server/models';
+import { BranchTransactionDTOTransform } from '@bigcapital/server/services/Branches/Integrations/BranchTransactionDTOTransform';
+import ItemsEntriesService from '@bigcapital/server/services/Items/ItemsEntriesService';
+import { WarehouseTransactionDTOTransform } from '@bigcapital/server/services/Warehouses/Integrations/WarehouseTransactionDTOTransform';
+import { formatDateFields } from '@bigcapital/server/utils';
 import composeAsync from 'async/compose';
 import { omit, sumBy } from 'lodash';
 import moment from 'moment';

@@ -1,24 +1,32 @@
+import {
+  AccountsSelect,
+  Col,
+  FFormGroup,
+  Hint,
+  InputPrependText,
+  MoneyInputGroup,
+  Row,
+} from '@bigcapital/webapp/components';
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Checkbox, Classes, ControlGroup, FormGroup, TextArea } from '@blueprintjs/core';
+import { ErrorMessage, FastField, useFormikContext } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { useFormikContext, FastField, ErrorMessage } from 'formik';
-import { FormGroup, Classes, TextArea, Checkbox, ControlGroup } from '@blueprintjs/core';
-import { AccountsSelect, MoneyInputGroup, Col, Row, Hint, InputPrependText, FFormGroup } from '@/components';
-import { FormattedMessage as T } from '@/components';
 
+import { TaxRatesSelect } from '@bigcapital/webapp/components/TaxRates/TaxRatesSelect';
+import { ACCOUNT_PARENT_TYPE } from '@bigcapital/webapp/constants/accountTypes';
+import withCurrentOrganization from '@bigcapital/webapp/containers/Organization/withCurrentOrganization';
+import { compose, inputIntent } from '@bigcapital/webapp/utils';
 import { useItemFormContext } from './ItemFormProvider';
-import withCurrentOrganization from '@/containers/Organization/withCurrentOrganization';
-import { ACCOUNT_PARENT_TYPE } from '@/constants/accountTypes';
 import {
-  sellDescriptionFieldShouldUpdate,
-  sellAccountFieldShouldUpdate,
-  sellPriceFieldShouldUpdate,
-  costPriceFieldShouldUpdate,
   costAccountFieldShouldUpdate,
+  costPriceFieldShouldUpdate,
   purchaseDescFieldShouldUpdate,
+  sellAccountFieldShouldUpdate,
+  sellDescriptionFieldShouldUpdate,
+  sellPriceFieldShouldUpdate,
   taxRateFieldShouldUpdate,
 } from './utils';
-import { compose, inputIntent } from '@/utils';
-import { TaxRatesSelect } from '@/components/TaxRates/TaxRatesSelect';
 
 /**
  * Item form body.

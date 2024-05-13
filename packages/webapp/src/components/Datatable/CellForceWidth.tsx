@@ -1,8 +1,8 @@
+import { get } from 'lodash';
 // @ts-nocheck
 import React from 'react';
-import { get } from 'lodash';
 
-import { getForceWidth } from '@/utils';
+import { getForceWidth } from '@bigcapital/webapp/utils';
 
 export function CellForceWidth({ value, column: { forceWidthAccess }, row: { original } }) {
   const forceWidthValue = forceWidthAccess ? get(original, forceWidthAccess) : value;

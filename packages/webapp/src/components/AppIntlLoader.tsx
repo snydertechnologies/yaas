@@ -7,10 +7,10 @@ import intl from 'react-intl-universal';
 import rtlDetect from 'rtl-detect';
 import { setLocale } from 'yup';
 
-import { useSplashLoading } from '@/hooks/state';
+import { useSplashLoading } from '@bigcapital/webapp/hooks/state';
 import { AppIntlProvider } from './AppIntlProvider';
 
-import withDashboardActions from '@/containers/Dashboard/withDashboardActions';
+import withDashboardActions from '@bigcapital/webapp/containers/Dashboard/withDashboardActions';
 import { useWatchImmediate } from '../hooks';
 
 const SUPPORTED_LOCALES = [

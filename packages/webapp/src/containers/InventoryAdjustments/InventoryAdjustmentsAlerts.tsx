@@ -2,11 +2,11 @@
 import React from 'react';
 
 const InventoryAdjustmentDeleteAlert = React.lazy(
-  () => import('@/containers/Alerts/Items/InventoryAdjustmentDeleteAlert'),
+  () => import('@bigcapital/webapp/containers/Alerts/Items/InventoryAdjustmentDeleteAlert'),
 );
 
 const InventoryAdjustmentPublishAlert = React.lazy(
-  () => import('@/containers/Alerts/Items/InventoryAdjustmentPublishAlert'),
+  () => import('@bigcapital/webapp/containers/Alerts/Items/InventoryAdjustmentPublishAlert'),
 );
 
 export default [

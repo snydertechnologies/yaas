@@ -1,16 +1,16 @@
-import { ServiceError } from '@/exceptions';
+import { ServiceError } from '@bigcapital/server/exceptions';
 import {
   IOrganizationBuildDTO,
   IOrganizationBuildEventPayload,
   IOrganizationUpdateDTO,
   ISystemUser,
   ITenant,
-} from '@/interfaces';
-import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
-import TenantsManager from '@/services/Tenancy/TenantsManager';
-import events from '@/subscribers/events';
-import { Tenant } from '@/system/models';
+} from '@bigcapital/server/interfaces';
+import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import TenantsManager from '@bigcapital/server/services/Tenancy/TenantsManager';
+import events from '@bigcapital/server/subscribers/events';
+import { Tenant } from '@bigcapital/server/system/models';
 import { defaultTo, pick } from 'lodash';
 import { ObjectId } from 'mongodb';
 import { Inject, Service } from 'typedi';

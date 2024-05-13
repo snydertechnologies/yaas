@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { FSelect } from '@/components/Forms';
+import { FSelect } from '@bigcapital/webapp/components/Forms';
 
 export function AccountsTypesSelect({ ...props }) {
   return (

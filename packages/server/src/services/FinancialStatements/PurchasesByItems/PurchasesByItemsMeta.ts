@@ -1,4 +1,4 @@
-import { IPurchasesByItemsReportQuery, IPurchasesByItemsSheetMeta } from '@/interfaces/PurchasesByItemsSheet';
+import { IPurchasesByItemsReportQuery, IPurchasesByItemsSheetMeta } from '@bigcapital/server/interfaces/PurchasesByItemsSheet';
 import moment from 'moment';
 import { Inject, Service } from 'typedi';
 import { FinancialSheetMeta } from '../FinancialSheetMeta';

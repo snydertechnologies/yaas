@@ -1,8 +1,8 @@
-import SmsClientLoader from '@/loaders/smsClient';
-import tenantCacheLoader from '@/loaders/tenantCache';
-import tenantModelsLoader from '@/loaders/tenantModels';
-import tenantRepositoriesLoader from '@/loaders/tenantRepositories';
-import TenantsManagerService from '@/services/Tenancy/TenantsManager';
+import SmsClientLoader from '@bigcapital/server/loaders/smsClient';
+import tenantCacheLoader from '@bigcapital/server/loaders/tenantCache';
+import tenantModelsLoader from '@bigcapital/server/loaders/tenantModels';
+import tenantRepositoriesLoader from '@bigcapital/server/loaders/tenantRepositories';
+import TenantsManagerService from '@bigcapital/server/services/Tenancy/TenantsManager';
 import { Container, Inject, Service } from 'typedi';
 
 @Service()

@@ -1,4 +1,4 @@
-import CacheService from '@/services/Cache';
+import CacheService from '@bigcapital/server/services/Cache';
 import { bindTenantModel, createTenant, createTenantFactory, dropTenant, login, systemFactory } from '~/testInit';
 
 let tenantWebsite;

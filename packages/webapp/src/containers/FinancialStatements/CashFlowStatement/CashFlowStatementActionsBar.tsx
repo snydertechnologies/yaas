@@ -1,27 +1,27 @@
-// @ts-nocheck
-import React from 'react';
+import { DashboardActionsBar, Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
 import {
-  NavbarGroup,
-  NavbarDivider,
   Button,
   Classes,
+  NavbarDivider,
+  NavbarGroup,
   Popover,
   PopoverInteractionKind,
   Position,
 } from '@blueprintjs/core';
-import { Icon, FormattedMessage as T, DashboardActionsBar } from '@/components';
 import classNames from 'classnames';
+// @ts-nocheck
+import React from 'react';
 
-import NumberFormatDropdown from '@/components/NumberFormatDropdown';
+import NumberFormatDropdown from '@bigcapital/webapp/components/NumberFormatDropdown';
 
 import { useCashFlowStatementContext } from './CashFlowStatementProvider';
 import withCashFlowStatement from './withCashFlowStatement';
 import withCashFlowStatementActions from './withCashFlowStatementActions';
 
-import { compose, saveInvoke } from '@/utils';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { compose, saveInvoke } from '@bigcapital/webapp/utils';
 import { CashflowSheetExportMenu } from './components';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { DialogsName } from '@/constants/dialogs';
 
 /**
  * Cash flow statement actions bar.

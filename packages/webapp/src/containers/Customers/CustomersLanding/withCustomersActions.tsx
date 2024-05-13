@@ -1,6 +1,6 @@
+import { resetCustomersTableState, setCustomersTableState } from '@bigcapital/webapp/store/customers/customers.actions';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { setCustomersTableState, resetCustomersTableState } from '@/store/customers/customers.actions';
 
 export const mapDispatchToProps = (dispatch) => ({
   setCustomersTableState: (state) => dispatch(setCustomersTableState(state)),

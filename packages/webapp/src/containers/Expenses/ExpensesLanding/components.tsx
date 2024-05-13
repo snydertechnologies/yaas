@@ -1,24 +1,24 @@
+import {
+  Button,
+  Classes,
+  Intent,
+  Menu,
+  MenuDivider,
+  MenuItem,
+  Popover,
+  Position,
+  Tag,
+  Tooltip,
+} from '@blueprintjs/core';
+import clsx from 'classnames';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import {
-  Intent,
-  Button,
-  Classes,
-  Popover,
-  Tooltip,
-  Position,
-  Tag,
-  MenuItem,
-  Menu,
-  MenuDivider,
-} from '@blueprintjs/core';
-import clsx from 'classnames';
 
-import { CLASSES } from '@/constants/classes';
-import { ExpenseAction, AbilitySubject } from '@/constants/abilityOption';
-import { FormatDateCell, FormattedMessage as T, Icon, If, Can } from '@/components';
-import { safeCallback } from '@/utils';
+import { Can, FormatDateCell, Icon, If, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { AbilitySubject, ExpenseAction } from '@bigcapital/webapp/constants/abilityOption';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { safeCallback } from '@bigcapital/webapp/utils';
 
 /**
  * Description accessor.

@@ -1,13 +1,13 @@
-// @ts-nocheck
-import { useDispatch, useSelector } from 'react-redux';
-import { useCallback } from 'react';
-import { isAuthenticated } from '@/store/authentication/authentication.reducer';
 import {
   setEmailConfirmed,
   setLogin,
-} from '@/store/authentication/authentication.actions';
+} from '@bigcapital/webapp/store/authentication/authentication.actions';
+import { isAuthenticated } from '@bigcapital/webapp/store/authentication/authentication.reducer';
+import { removeCookie } from '@bigcapital/webapp/utils';
+import { useCallback } from 'react';
 import { useQueryClient } from 'react-query';
-import { removeCookie } from '@/utils';
+// @ts-nocheck
+import { useDispatch, useSelector } from 'react-redux';
 
 /**
  * Removes the authentication cookies.

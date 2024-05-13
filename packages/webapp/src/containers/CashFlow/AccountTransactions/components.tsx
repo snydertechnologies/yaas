@@ -1,12 +1,12 @@
+import { Can, FormatDateCell, Icon, If, MaterialProgressBar } from '@bigcapital/webapp/components';
+import { AbilitySubject, CashflowAction } from '@bigcapital/webapp/constants/abilityOption';
+import { TRANSACRIONS_TYPE } from '@bigcapital/webapp/constants/cashflowOptions';
+import { safeCallback } from '@bigcapital/webapp/utils';
+import { Intent, Menu, MenuDivider, MenuItem } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { Intent, Menu, MenuItem, MenuDivider } from '@blueprintjs/core';
-import { Can, FormatDateCell, If, Icon, MaterialProgressBar } from '@/components';
 import { useAccountTransactionsContext } from './AccountTransactionsProvider';
-import { TRANSACRIONS_TYPE } from '@/constants/cashflowOptions';
-import { AbilitySubject, CashflowAction } from '@/constants/abilityOption';
-import { safeCallback } from '@/utils';
 
 export function ActionsMenu({ payload: { onDelete, onViewDetails }, row: { original } }) {
   return (

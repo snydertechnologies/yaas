@@ -1,8 +1,8 @@
-import CheckPolicies from '@/api/middleware/CheckPolicies';
-import asyncMiddleware from '@/api/middleware/asyncMiddleware';
-import { AbilitySubject, ReportsAction } from '@/interfaces';
-import { ACCEPT_TYPE } from '@/interfaces/Http';
-import { PurcahsesByItemsApplication } from '@/services/FinancialStatements/PurchasesByItems/PurchasesByItemsApplication';
+import CheckPolicies from '@bigcapital/server/api/middleware/CheckPolicies';
+import asyncMiddleware from '@bigcapital/server/api/middleware/asyncMiddleware';
+import { AbilitySubject, ReportsAction } from '@bigcapital/server/interfaces';
+import { ACCEPT_TYPE } from '@bigcapital/server/interfaces/Http';
+import { PurcahsesByItemsApplication } from '@bigcapital/server/services/FinancialStatements/PurchasesByItems/PurchasesByItemsApplication';
 import { Request, Response, Router } from 'express';
 import { ValidationChain, query } from 'express-validator';
 import { Inject, Service } from 'typedi';

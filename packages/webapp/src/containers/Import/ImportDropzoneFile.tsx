@@ -1,11 +1,11 @@
 // @ts-nocheck
 import { useRef } from 'react';
 import { Button, Intent } from '@blueprintjs/core';
-import { Box, Icon, Stack } from '@/components';
-import { Dropzone, DropzoneProps } from '@/components/Dropzone';
-import { MIME_TYPES } from '@/components/Dropzone/mine-types';
+import { Box, Icon, Stack } from '@bigcapital/webapp/components';
+import { Dropzone, DropzoneProps } from '@bigcapital/webapp/components/Dropzone';
+import { MIME_TYPES } from '@bigcapital/webapp/components/Dropzone/mine-types';
 import styles from './ImportDropzone.module.css';
-import { useUncontrolled } from '@/hooks/useUncontrolled';
+import { useUncontrolled } from '@bigcapital/webapp/hooks/useUncontrolled';
 
 interface ImportDropzoneFieldProps {
   initialValue?: File;

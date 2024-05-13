@@ -1,20 +1,20 @@
+import { Alignment, Classes, NavbarDivider, NavbarGroup } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Alignment, NavbarGroup, NavbarDivider, Classes } from '@blueprintjs/core';
-import { useSetPrimaryWarehouseToForm, useSetPrimaryBranchToForm } from './utils';
+import { useSetPrimaryBranchToForm, useSetPrimaryWarehouseToForm } from './utils';
 
-import { Features } from '@/constants';
-import { useFeatureCan } from '@/hooks/state';
-import { useReceiptFormContext } from './ReceiptFormProvider';
 import {
   BranchSelect,
-  FeatureCan,
-  WarehouseSelect,
-  FormTopbar,
   DetailsBarSkeletonBase,
+  FeatureCan,
   FormBranchSelectButton,
+  FormTopbar,
   FormWarehouseSelectButton,
-} from '@/components';
+  WarehouseSelect,
+} from '@bigcapital/webapp/components';
+import { Features } from '@bigcapital/webapp/constants';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
+import { useReceiptFormContext } from './ReceiptFormProvider';
 
 /**
  * Receipt form topbar .

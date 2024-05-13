@@ -1,13 +1,13 @@
+import { Button, Intent, Menu, MenuDivider, MenuItem, Popover, Position, Tag } from '@blueprintjs/core';
+import moment from 'moment';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import moment from 'moment';
-import { Menu, MenuDivider, MenuItem, Intent, Tag, Position, Button, Popover } from '@blueprintjs/core';
 
+import { Can, Icon, If, Money, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { AbilitySubject, InventoryAdjustmentAction } from '@bigcapital/webapp/constants/abilityOption';
+import { isBlank, safeCallback } from '@bigcapital/webapp/utils';
 import { isNumber } from 'lodash';
-import { Icon, Money, If, FormattedMessage as T, Can } from '@/components';
-import { isBlank, safeCallback } from '@/utils';
-import { InventoryAdjustmentAction, AbilitySubject } from '@/constants/abilityOption';
 
 /**
  * Publish accessor

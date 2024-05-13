@@ -1,8 +1,8 @@
 // @ts-nocheck
 import React from 'react';
 
+import { useVendors } from '@bigcapital/webapp/hooks/query';
 import { FinancialHeaderLoadingSkeleton } from '../FinancialHeaderLoadingSkeleton';
-import { useVendors } from '@/hooks/query';
 
 const VendorsBalanceSummaryGeneralPanelContext = React.createContext();
 

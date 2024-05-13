@@ -1,5 +1,5 @@
-import { IItem, IItemWarehouseQuantityChange } from '@/interfaces';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { IItem, IItemWarehouseQuantityChange } from '@bigcapital/server/interfaces';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Knex } from 'knex';
 import { Inject, Service } from 'typedi';
 import { WarehousesItemsQuantitySync } from './Integrations/WarehousesItemsQuantitySync';

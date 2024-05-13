@@ -1,8 +1,8 @@
+import { useFormikContext } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { useFormikContext } from 'formik';
 
-import TransactionNumberDialog from '@/containers/Dialogs/TransactionNumberDialog';
+import TransactionNumberDialog from '@bigcapital/webapp/containers/Dialogs/TransactionNumberDialog';
 
 /**
  * Money out form dialog.

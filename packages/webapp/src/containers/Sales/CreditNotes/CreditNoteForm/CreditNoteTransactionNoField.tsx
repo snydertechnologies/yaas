@@ -1,18 +1,18 @@
-// @ts-nocheck
-import React from 'react';
-import * as R from 'ramda';
-import { Position, ControlGroup } from '@blueprintjs/core';
-import { useFormikContext } from 'formik';
 import {
-  FieldRequiredHint,
-  InputPrependButton,
-  Icon,
-  FormattedMessage as T,
   FFormGroup,
   FInputGroup,
-} from '@/components';
-import withSettings from '@/containers/Settings/withSettings';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
+  FieldRequiredHint,
+  Icon,
+  InputPrependButton,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import { ControlGroup, Position } from '@blueprintjs/core';
+import { useFormikContext } from 'formik';
+import * as R from 'ramda';
+// @ts-nocheck
+import React from 'react';
 
 /**
  * Credit note transaction number field.

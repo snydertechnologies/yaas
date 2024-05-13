@@ -1,4 +1,4 @@
-import { IVendorBalanceSummaryMeta, IVendorBalanceSummaryQuery } from '@/interfaces';
+import { IVendorBalanceSummaryMeta, IVendorBalanceSummaryQuery } from '@bigcapital/server/interfaces';
 import moment from 'moment';
 import { Inject, Service } from 'typedi';
 import { FinancialSheetMeta } from '../FinancialSheetMeta';

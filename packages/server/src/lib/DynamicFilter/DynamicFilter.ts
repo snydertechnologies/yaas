@@ -1,4 +1,4 @@
-import { IDynamicFilter, IFilterRole, IModel } from '@/interfaces';
+import { IDynamicFilter, IFilterRole, IModel } from '@bigcapital/server/interfaces';
 import { forEach } from 'lodash';
 import DynamicFilterAbstractor from './DynamicFilterAbstractor';
 

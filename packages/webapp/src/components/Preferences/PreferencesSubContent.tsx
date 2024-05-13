@@ -1,7 +1,7 @@
+import preferencesTabs from '@bigcapital/webapp/routes/preferencesTabs';
 // @ts-nocheck
 import React from 'react';
-import preferencesTabs from '@/routes/preferencesTabs';
-import { Switch, Route, useRouteMatch } from 'react-router-dom';
+import { Route, Switch, useRouteMatch } from 'react-router-dom';
 
 export default function PreferencesSubContent({ preferenceTab }) {
   const routes = preferencesTabs[preferenceTab];

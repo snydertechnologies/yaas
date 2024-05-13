@@ -1,6 +1,6 @@
 // @ts-nocheck
-import ApiService from '@/services/ApiService';
-import t from '@/store/types';
+import ApiService from '@bigcapital/webapp/services/ApiService';
+import t from '@bigcapital/webapp/store/types';
 
 export const submitOptions = ({ form }) => {
   return (dispatch) => {

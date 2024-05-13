@@ -1,7 +1,7 @@
-import { ISaleInvoiceCreatedPayload } from '@/interfaces';
-import { EventSubscriber } from '@/lib/EventPublisher/EventPublisher';
-import { SaleInvoiceIncrement } from '@/services/Sales/Invoices/SaleInvoiceIncrement';
-import events from '@/subscribers/events';
+import { ISaleInvoiceCreatedPayload } from '@bigcapital/server/interfaces';
+import { EventSubscriber } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
+import { SaleInvoiceIncrement } from '@bigcapital/server/services/Sales/Invoices/SaleInvoiceIncrement';
+import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 
 @Service()

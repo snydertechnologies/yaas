@@ -1,7 +1,7 @@
+import { flatten, transfromToSnakeCase } from '@bigcapital/webapp/utils';
 // @ts-nocheck
 import * as R from 'ramda';
 import { displayColumnsByOptions } from './constants';
-import { transfromToSnakeCase, flatten } from '@/utils';
 
 /**
  * Associate display columns by and type properties to query object.

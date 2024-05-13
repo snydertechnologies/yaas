@@ -3,12 +3,12 @@ import React, { useMemo } from 'react';
 import intl from 'react-intl-universal';
 import styled from 'styled-components';
 
-import { TableStyle } from '@/constants';
-import { DataTable, FinancialSheet } from '@/components';
-import { defaultExpanderReducer, tableRowTypesToClassnames } from '@/utils';
+import { DataTable, FinancialSheet } from '@bigcapital/webapp/components';
+import { TableStyle } from '@bigcapital/webapp/constants';
+import { defaultExpanderReducer, tableRowTypesToClassnames } from '@bigcapital/webapp/utils';
 
-import { useCashFlowStatementColumns } from './components';
 import { useCashFlowStatementContext } from './CashFlowStatementProvider';
+import { useCashFlowStatementColumns } from './components';
 
 /**
  * Cash flow statement table.

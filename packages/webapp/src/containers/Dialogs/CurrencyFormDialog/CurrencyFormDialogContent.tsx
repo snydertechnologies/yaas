@@ -2,11 +2,11 @@
 import React from 'react';
 import { CurrencyFormProvider } from './CurrencyFormProvider';
 
+import withCurrencyDetail from '@bigcapital/webapp/containers/Currencies/withCurrencyDetail';
 import CurrencyForm from './CurrencyForm';
-import withCurrencyDetail from '@/containers/Currencies/withCurrencyDetail';
 
-import { compose } from '@/utils';
-import '@/style/pages/Currency/CurrencyFormDialog.scss';
+import { compose } from '@bigcapital/webapp/utils';
+import '@bigcapital/webapp/style/pages/Currency/CurrencyFormDialog.scss';
 
 function CurrencyFormDialogContent({
   // #ownProp

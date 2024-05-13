@@ -1,4 +1,4 @@
-import { IItemsFilter } from '@/interfaces';
+import { IItemsFilter } from '@bigcapital/server/interfaces';
 import { Inject, Service } from 'typedi';
 import { Exportable } from '../Export/Exportable';
 import { ItemsApplication } from './ItemsApplication';

@@ -5,17 +5,17 @@ import { Button, NavbarGroup, Classes, NavbarDivider, Intent } from '@blueprintj
 
 import { useInvoiceDetailDrawerContext } from './InvoiceDetailDrawerProvider';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import withAlertsActions from '@/containers/Alert/withAlertActions';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
 
-import { If, Can, Icon, DrawerActionsBar, FormattedMessage as T } from '@/components';
+import { If, Can, Icon, DrawerActionsBar, FormattedMessage as T } from '@bigcapital/webapp/components';
 import { SaleInvoiceAction, PaymentReceiveAction, AbilitySubject } from '../../../constants/abilityOption';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 import { BadDebtMenuItem } from './utils';
-import { DRAWERS } from '@/constants/drawers';
-import { DialogsName } from '@/constants/dialogs';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
 
 /**
  * Invoice details action bar.

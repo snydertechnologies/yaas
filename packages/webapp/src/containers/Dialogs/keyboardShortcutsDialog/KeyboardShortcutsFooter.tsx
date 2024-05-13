@@ -1,10 +1,10 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Button, Intent } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Button, Intent } from '@blueprintjs/core';
-import { FormattedMessage as T } from '@/components';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { compose } from '@/utils';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { compose } from '@bigcapital/webapp/utils';
 
 function KeyboardShortcutsFooter({
   // #withDialogActions

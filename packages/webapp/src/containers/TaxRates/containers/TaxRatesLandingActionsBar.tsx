@@ -1,13 +1,13 @@
+import { Can, DashboardActionsBar, Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { AbilitySubject, TaxRateAction } from '@bigcapital/webapp/constants/abilityOption';
+import { Button, Classes, NavbarDivider, NavbarGroup } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { NavbarGroup, NavbarDivider, Button, Classes } from '@blueprintjs/core';
-import { DashboardActionsBar, FormattedMessage as T, Can, Icon } from '@/components';
-import { AbilitySubject, TaxRateAction } from '@/constants/abilityOption';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
 
-import { DialogsName } from '@/constants/dialogs';
-import { compose } from '@/utils';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Tax rates actions bar.

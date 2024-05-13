@@ -1,6 +1,6 @@
 // @ts-nocheck
-import { createDeepEqualSelector } from '@/utils';
-import { paginationLocationQuery } from '@/store/selectors';
+import { createDeepEqualSelector } from '@bigcapital/webapp/utils';
+import { paginationLocationQuery } from '@bigcapital/webapp/store/selectors';
 
 const exchangeRateTableState = (state) => {
   return state.exchangeRates.tableState;

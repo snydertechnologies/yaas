@@ -1,5 +1,5 @@
-import TenantRepository from '@/repositories/TenantRepository';
-import { View } from 'models';
+import { View } from '@bigcapital/server/models';
+import TenantRepository from '@bigcapital/server/repositories/TenantRepository';
 
 export default class ViewRepository extends TenantRepository {
   /**

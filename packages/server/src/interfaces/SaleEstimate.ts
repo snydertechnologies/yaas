@@ -1,4 +1,4 @@
-import type { IDynamicListFilterDTO } from '@/interfaces/DynamicFilter';
+import type { IDynamicListFilterDTO } from '@bigcapital/server/interfaces/DynamicFilter';
 import type { Knex } from 'knex';
 import type { IItemEntry, IItemEntryDTO } from './ItemEntry';
 import type { CommonMailOptions, CommonMailOptionsDTO } from './Mailable';

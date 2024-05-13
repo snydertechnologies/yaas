@@ -2,7 +2,7 @@
 import intl from 'react-intl-universal';
 import React from 'react';
 
-import { FormatNumberCell } from '@/components';
+import { FormatNumberCell } from '@bigcapital/webapp/components';
 
 /**
  * Retrieve cashflow transaction entries columns.

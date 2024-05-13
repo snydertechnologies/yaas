@@ -1,10 +1,10 @@
+import * as R from 'ramda';
 // @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
-import * as R from 'ramda';
 
-import { ButtonLink } from '@/components';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
+import { ButtonLink } from '@bigcapital/webapp/components';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
 
 function ProjectBillableEntriesLinkComponent({
   // #ownProps

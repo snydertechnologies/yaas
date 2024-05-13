@@ -1,7 +1,7 @@
+import { DialogContent } from '@bigcapital/webapp/components';
+import { useCreateLockingTransactoin, useEditTransactionsLocking } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React from 'react';
-import { DialogContent } from '@/components';
-import { useCreateLockingTransactoin, useEditTransactionsLocking } from '@/hooks/query';
 
 const LockingTransactionsContext = React.createContext();
 

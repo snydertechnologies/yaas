@@ -1,11 +1,11 @@
-// @ts-nocheck
-import React from 'react';
+import { Can, EmptyStatus, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { AbilitySubject, SaleInvoiceAction } from '@bigcapital/webapp/constants/abilityOption';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
 import { Button, Intent } from '@blueprintjs/core';
 import * as R from 'ramda';
-import { EmptyStatus, Can, FormattedMessage as T } from '@/components';
-import { SaleInvoiceAction, AbilitySubject } from '@/constants/abilityOption';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { DialogsName } from '@/constants/dialogs';
+// @ts-nocheck
+import React from 'react';
 
 function TaxRatesLandingEmptyStateRoot({
   // #withDialogAction

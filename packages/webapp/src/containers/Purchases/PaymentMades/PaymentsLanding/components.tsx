@@ -1,12 +1,12 @@
+import { Button, Intent, Menu, MenuDivider, MenuItem, Popover, Position } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { Intent, Button, Popover, Menu, MenuItem, MenuDivider, Position } from '@blueprintjs/core';
 
-import { Icon, Money, FormatDateCell, Can } from '@/components';
-import { PaymentMadeAction, AbilitySubject } from '@/constants/abilityOption';
+import { Can, FormatDateCell, Icon, Money } from '@bigcapital/webapp/components';
+import { AbilitySubject, PaymentMadeAction } from '@bigcapital/webapp/constants/abilityOption';
 
-import { safeCallback } from '@/utils';
+import { safeCallback } from '@bigcapital/webapp/utils';
 
 export function AmountAccessor(row) {
   return <Money amount={row.amount} currency={row.currency_code} />;

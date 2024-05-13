@@ -1,5 +1,5 @@
-import AccountTransaction from 'models/AccountTransaction';
-import ManualJournal from 'models/ManualJournal';
+import AccountTransaction from '@bigcapital/server/models/AccountTransaction';
+import ManualJournal from '@bigcapital/server/models/ManualJournal';
 import moment from 'moment';
 import { loginRes, tenantFactory, tenantWebsite } from '~/dbInit';
 import { expect, request } from '~/testInit';

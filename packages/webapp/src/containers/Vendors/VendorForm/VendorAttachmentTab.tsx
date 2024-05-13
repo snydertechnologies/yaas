@@ -1,6 +1,6 @@
+import { Dragzone, FormattedMessage as T } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import React from 'react';
-import { Dragzone, FormattedMessage as T } from '@/components';
 
 /**
  * Vendor Attachment Tab.

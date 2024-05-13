@@ -1,11 +1,11 @@
 // @ts-nocheck
 import React from 'react';
 
-import '@/style/components/Drawers/ManualJournalDrawer.scss';
+import '@bigcapital/webapp/style/components/Drawers/ManualJournalDrawer.scss';
 
-import { DrawerBody } from '@/components';
-import { ManualJournalDrawerProvider } from './ManualJournalDrawerProvider';
+import { DrawerBody } from '@bigcapital/webapp/components';
 import ManualJournalDrawerDetails from './ManualJournalDrawerDetails';
+import { ManualJournalDrawerProvider } from './ManualJournalDrawerProvider';
 
 /**
  * Manual Journal drawer content.

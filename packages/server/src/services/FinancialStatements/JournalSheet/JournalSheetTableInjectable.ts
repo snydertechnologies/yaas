@@ -1,5 +1,5 @@
-import { IJournalReportQuery, IJournalTable } from '@/interfaces';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { IJournalReportQuery, IJournalTable } from '@bigcapital/server/interfaces';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject } from 'typedi';
 import { JournalSheetService } from './JournalSheetService';
 import { JournalSheetTable } from './JournalSheetTable';

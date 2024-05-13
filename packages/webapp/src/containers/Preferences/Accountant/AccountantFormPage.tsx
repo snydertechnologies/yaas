@@ -1,22 +1,22 @@
-// @ts-nocheck
-import React, { useEffect } from 'react';
-import * as R from 'ramda';
-import intl from 'react-intl-universal';
-import { Formik } from 'formik';
 import { Intent } from '@blueprintjs/core';
 import { flatten, unflatten } from 'flat';
+import { Formik } from 'formik';
+import * as R from 'ramda';
+// @ts-nocheck
+import React, { useEffect } from 'react';
+import intl from 'react-intl-universal';
 
-import { AppToaster } from '@/components';
-import withDashboardActions from '@/containers/Dashboard/withDashboardActions';
-import withSettings from '@/containers/Settings/withSettings';
+import { AppToaster } from '@bigcapital/webapp/components';
+import withDashboardActions from '@bigcapital/webapp/containers/Dashboard/withDashboardActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
 
-import AccountantForm from './AccountantForm';
+import { compose, transformToForm, transfromToSnakeCase } from '@bigcapital/webapp/utils';
 import { AccountantSchema } from './Accountant.schema';
+import AccountantForm from './AccountantForm';
 import { useAccountantFormContext } from './AccountantFormProvider';
 import { transferObjectOptionsToArray } from './utils';
-import { compose, transformToForm, transfromToSnakeCase } from '@/utils';
 
-import '@/style/pages/Preferences/Accounting.scss';
+import '@bigcapital/webapp/style/pages/Preferences/Accounting.scss';
 
 const defaultFormValues = flatten({
   organization: {

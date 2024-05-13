@@ -1,7 +1,7 @@
+import { AppToaster } from '@bigcapital/webapp/components';
+import { Intent } from '@blueprintjs/core';
 // @ts-nocheck
 import intl from 'react-intl-universal';
-import { Intent } from '@blueprintjs/core';
-import { AppToaster } from '@/components';
 
 export const handleDeleteErrors = (errors) => {
   if (errors.find((error) => error.type === 'VENDOR_CREDIT_HAS_APPLIED_BILLS')) {

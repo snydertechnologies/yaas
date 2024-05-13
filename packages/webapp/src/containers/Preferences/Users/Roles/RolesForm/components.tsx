@@ -1,15 +1,15 @@
+import { Checkbox, Popover } from '@blueprintjs/core';
+import { Field } from 'formik';
 // @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
-import { Field } from 'formik';
-import { Checkbox, Popover } from '@blueprintjs/core';
 
-import { getPermissionsSchema, ModulePermissionsStyle } from '@/constants/permissionsSchema';
-import { Card, If, ButtonLink, Choose, T } from '@/components';
+import { ButtonLink, Card, Choose, If, T } from '@bigcapital/webapp/components';
+import { ModulePermissionsStyle, getPermissionsSchema } from '@bigcapital/webapp/constants/permissionsSchema';
 import {
+  FULL_ACCESS_CHECKBOX_STATE,
   getSerivceColumnPermission,
   getServiceExtraPermissions,
-  FULL_ACCESS_CHECKBOX_STATE,
   handleCheckboxFullAccessChange,
   handleCheckboxPermissionChange,
 } from './utils';

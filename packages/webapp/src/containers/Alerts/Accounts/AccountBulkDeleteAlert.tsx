@@ -1,18 +1,18 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { AppToaster } from '@bigcapital/webapp/components';
+import { Alert, Intent } from '@blueprintjs/core';
 // @ts-nocheck
 import React, { useState } from 'react';
-import { FormattedMessage as T } from '@/components';
 import intl from 'react-intl-universal';
-import { Intent, Alert } from '@blueprintjs/core';
-import { queryCache } from 'react-query';
-import { AppToaster } from '@/components';
+import { QueryCache } from 'react-query';
 
-import { handleDeleteErrors } from '@/containers/Accounts/utils';
+import { handleDeleteErrors } from '@bigcapital/webapp/containers/Accounts/utils';
 
-import withAccountsActions from '@/containers/Accounts/withAccountsActions';
-import withAlertStoreConnect from '@/containers/Alert/withAlertStoreConnect';
-import withAlertActions from '@/containers/Alert/withAlertActions';
+import withAccountsActions from '@bigcapital/webapp/containers/Accounts/withAccountsActions';
+import withAlertActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withAlertStoreConnect from '@bigcapital/webapp/containers/Alert/withAlertStoreConnect';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Account bulk delete alert.
@@ -47,7 +47,7 @@ function AccountBulkDeleteAlert({
           message: intl.get('the_accounts_has_been_successfully_deleted'),
           intent: Intent.SUCCESS,
         });
-        queryCache.invalidateQueries('accounts-table');
+        QueryCache.invalidateQueries('accounts-table');
       })
       .catch((errors) => {
         handleDeleteErrors(errors);

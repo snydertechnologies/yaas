@@ -1,26 +1,26 @@
-// @ts-nocheck
-import React from 'react';
 import {
-  NavbarGroup,
   Button,
   Classes,
   NavbarDivider,
+  NavbarGroup,
   Popover,
   PopoverInteractionKind,
   Position,
 } from '@blueprintjs/core';
 import classNames from 'classnames';
+// @ts-nocheck
+import React from 'react';
 
-import { DashboardActionsBar, FormattedMessage as T, Icon } from '@/components';
+import { DashboardActionsBar, Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
 
-import withJournalActions from './withJournalActions';
 import withJournal from './withJournal';
+import withJournalActions from './withJournalActions';
 
-import { compose } from '@/utils';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { compose } from '@bigcapital/webapp/utils';
 import { useJournalSheetContext } from './JournalProvider';
 import { JournalSheetExportMenu } from './components';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { DialogsName } from '@/constants/dialogs';
 
 /**
  * Journal sheeet - Actions bar.

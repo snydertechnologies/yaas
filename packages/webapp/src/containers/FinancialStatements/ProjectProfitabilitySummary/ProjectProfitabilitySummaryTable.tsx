@@ -1,13 +1,13 @@
 // @ts-nocheck
 import React, { useMemo } from 'react';
-import styled from 'styled-components';
 import intl from 'react-intl-universal';
+import styled from 'styled-components';
 
-import { TableStyle } from '@/constants';
-import { ReportDataTable, FinancialSheet } from '@/components';
+import { FinancialSheet, ReportDataTable } from '@bigcapital/webapp/components';
+import { TableStyle } from '@bigcapital/webapp/constants';
+import { defaultExpanderReducer, tableRowTypesToClassnames } from '@bigcapital/webapp/utils';
 import { useProjectProfitabilitySummaryContext } from './ProjectProfitabilitySummaryProvider';
 import { useProjectProfitabilitySummaryColumns } from './components';
-import { defaultExpanderReducer, tableRowTypesToClassnames } from '@/utils';
 
 /**
  * Project profitability summary table.

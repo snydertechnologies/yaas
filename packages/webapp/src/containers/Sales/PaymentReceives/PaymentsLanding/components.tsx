@@ -1,13 +1,13 @@
+import { Button, Intent, Menu, MenuDivider, MenuItem, Popover, Position } from '@blueprintjs/core';
+import clsx from 'classnames';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import clsx from 'classnames';
-import { Intent, Button, Popover, Menu, MenuItem, MenuDivider, Position } from '@blueprintjs/core';
 
-import { FormatDateCell, Money, Icon, Can } from '@/components';
-import { safeCallback } from '@/utils';
-import { CLASSES } from '@/constants/classes';
-import { PaymentReceiveAction, AbilitySubject } from '@/constants/abilityOption';
+import { Can, FormatDateCell, Icon, Money } from '@bigcapital/webapp/components';
+import { AbilitySubject, PaymentReceiveAction } from '@bigcapital/webapp/constants/abilityOption';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { safeCallback } from '@bigcapital/webapp/utils';
 
 /**
  * Table actions menu.

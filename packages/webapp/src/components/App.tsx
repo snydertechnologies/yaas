@@ -1,31 +1,31 @@
-// @ts-nocheck
-import { Router, Switch, Route } from 'react-router';
 import { createBrowserHistory } from 'history';
-import { QueryClientProvider, QueryClient } from 'react-query';
+import { QueryClient, QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
+// @ts-nocheck
+import { Route, Router, Switch } from 'react-router';
 
-import '@/style/App.scss';
+import '@bigcapital/webapp/style/App.scss';
 import 'moment/locale/ar-ly';
 import 'moment/locale/es-us';
 
+import DashboardPrivatePages from '@bigcapital/webapp/components/Dashboard/PrivatePages';
+import { EnsureAuthenticated } from '@bigcapital/webapp/components/Guards/EnsureAuthenticated';
+import { Authentication } from '@bigcapital/webapp/containers/Authentication/Authentication';
+import GlobalErrors from '@bigcapital/webapp/containers/GlobalErrors/GlobalErrors';
 import AppIntlLoader from './AppIntlLoader';
-import { EnsureAuthenticated } from '@/components/Guards/EnsureAuthenticated';
-import GlobalErrors from '@/containers/GlobalErrors/GlobalErrors';
-import DashboardPrivatePages from '@/components/Dashboard/PrivatePages';
-import { Authentication } from '@/containers/Authentication/Authentication';
 
-import LazyLoader from '@/components/LazyLoader';
-import { SplashScreen, DashboardThemeProvider } from '../components';
+import LazyLoader from '@bigcapital/webapp/components/LazyLoader';
+import { DashboardThemeProvider, SplashScreen } from '../components';
 import { queryConfig } from '../hooks/query/base';
-import { EnsureUserEmailVerified } from './Guards/EnsureUserEmailVerified';
 import { EnsureAuthNotAuthenticated } from './Guards/EnsureAuthNotAuthenticated';
 import { EnsureUserEmailNotVerified } from './Guards/EnsureUserEmailNotVerified';
+import { EnsureUserEmailVerified } from './Guards/EnsureUserEmailVerified';
 
 const EmailConfirmation = LazyLoader({
-  loader: () => import('@/containers/Authentication/EmailConfirmation'),
+  loader: () => import('@bigcapital/webapp/containers/Authentication/EmailConfirmation'),
 });
 const RegisterVerify = LazyLoader({
-  loader: () => import('@/containers/Authentication/RegisterVerify'),
+  loader: () => import('@bigcapital/webapp/containers/Authentication/RegisterVerify'),
 });
 
 /**

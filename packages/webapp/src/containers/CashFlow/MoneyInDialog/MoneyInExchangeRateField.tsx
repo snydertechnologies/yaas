@@ -1,9 +1,9 @@
+import { ExchangeRateMutedField } from '@bigcapital/webapp/components';
+import { useFormikContext } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { ExchangeRateMutedField } from '@/components';
-import { useForeignAccount } from './utils';
-import { useFormikContext } from 'formik';
 import { useMoneyInFieldsContext } from './MoneyInFieldsProvider';
+import { useForeignAccount } from './utils';
 
 export function MoneyInExchangeRateField() {
   const { account } = useMoneyInFieldsContext();

@@ -2,10 +2,10 @@ import {
   IInventoryAdjustmentEventCreatedPayload,
   IInventoryAdjustmentEventDeletedPayload,
   IInventoryAdjustmentEventPublishedPayload,
-} from '@/interfaces';
-import InventoryAdjustmentsGL from '@/services/Inventory/InventoryAdjustmentGL';
-import InventoryAdjustmentService from '@/services/Inventory/InventoryAdjustmentService';
-import events from '@/subscribers/events';
+} from '@bigcapital/server/interfaces';
+import InventoryAdjustmentsGL from '@bigcapital/server/services/Inventory/InventoryAdjustmentGL';
+import InventoryAdjustmentService from '@bigcapital/server/services/Inventory/InventoryAdjustmentService';
+import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 
 @Service()

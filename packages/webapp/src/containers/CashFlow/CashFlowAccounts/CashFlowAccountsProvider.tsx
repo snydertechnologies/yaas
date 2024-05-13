@@ -1,8 +1,8 @@
+import { DashboardInsider } from '@bigcapital/webapp/components/Dashboard';
 // @ts-nocheck
 import React from 'react';
-import { DashboardInsider } from '@/components/Dashboard';
 
-import { useCashflowAccounts } from '@/hooks/query';
+import { useCashflowAccounts } from '@bigcapital/webapp/hooks/query';
 import { transformAccountsStateToQuery } from './utils';
 
 const CashFlowAccountsContext = React.createContext();

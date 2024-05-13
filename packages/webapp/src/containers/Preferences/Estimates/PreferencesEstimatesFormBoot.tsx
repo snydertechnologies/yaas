@@ -1,11 +1,11 @@
+import { Card } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { useSettings } from '@bigcapital/webapp/hooks/query';
+import classNames from 'classnames';
 // @ts-nocheck
 import React from 'react';
-import classNames from 'classnames';
-import { CLASSES } from '@/constants/classes';
-import { useSettings } from '@/hooks/query';
-import PreferencesPageLoader from '../PreferencesPageLoader';
 import styled from 'styled-components';
-import { Card } from '@/components';
+import PreferencesPageLoader from '../PreferencesPageLoader';
 
 const PreferencesEstimatesFormContext = React.createContext();
 

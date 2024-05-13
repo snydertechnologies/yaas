@@ -2,7 +2,7 @@
 import intl from 'react-intl-universal';
 import React from 'react';
 
-import { FormatDateCell } from '@/components';
+import { FormatDateCell } from '@bigcapital/webapp/components';
 import { useAccountDrawerTableOptionsContext } from './AccountDrawerTableOptionsProvider';
 
 /**

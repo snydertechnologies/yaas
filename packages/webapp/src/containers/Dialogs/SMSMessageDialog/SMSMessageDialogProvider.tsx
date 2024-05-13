@@ -1,7 +1,7 @@
+import { DialogContent } from '@bigcapital/webapp/components';
+import { useSettingEditSMSNotification, useSettingSMSNotification } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React from 'react';
-import { DialogContent } from '@/components';
-import { useSettingEditSMSNotification, useSettingSMSNotification } from '@/hooks/query';
 
 const SMSMessageDialogContext = React.createContext();
 

@@ -1,7 +1,7 @@
+import { DialogContent } from '@bigcapital/webapp/components';
+import { useSaleInvoiceDefaultOptions } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React, { createContext } from 'react';
-import { useSaleInvoiceDefaultOptions } from '@/hooks/query';
-import { DialogContent } from '@/components';
 
 interface InvoiceMailDialogBootValues {
   invoiceId: number;

@@ -1,5 +1,5 @@
 // @ts-nocheck
-import axios from '@/services/axios';
+import axios from '@bigcapital/webapp/services/axios';
 
 export default {
   get(resource, params) {

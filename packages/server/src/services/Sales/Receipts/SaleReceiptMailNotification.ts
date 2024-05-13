@@ -1,10 +1,10 @@
-import { ISaleReceiptMailPresend, SaleReceiptMailOpts, SaleReceiptMailOptsDTO } from '@/interfaces';
-import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';
-import Mail from '@/lib/Mail';
-import { ContactMailNotification } from '@/services/MailNotification/ContactMailNotification';
-import { parseAndValidateMailOptions } from '@/services/MailNotification/utils';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
-import events from '@/subscribers/events';
+import { ISaleReceiptMailPresend, SaleReceiptMailOpts, SaleReceiptMailOptsDTO } from '@bigcapital/server/interfaces';
+import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
+import Mail from '@bigcapital/server/lib/Mail';
+import { ContactMailNotification } from '@bigcapital/server/services/MailNotification/ContactMailNotification';
+import { parseAndValidateMailOptions } from '@bigcapital/server/services/MailNotification/utils';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 import { GetSaleReceipt } from './GetSaleReceipt';
 import { SaleReceiptsPdf } from './SaleReceiptsPdfService';

@@ -1,21 +1,21 @@
+import { defaultTo } from 'lodash';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
 import styled from 'styled-components';
-import { defaultTo } from 'lodash';
 
 import {
   ButtonLink,
-  CustomerDrawerLink,
+  Col,
   CommercialDocHeader,
   CommercialDocTopHeader,
-  ExchangeRateDetailItem,
-  Row,
-  Col,
-  FormatDate,
-  DetailsMenu,
+  CustomerDrawerLink,
   DetailItem,
-} from '@/components';
+  DetailsMenu,
+  ExchangeRateDetailItem,
+  FormatDate,
+  Row,
+} from '@bigcapital/webapp/components';
 
 import { useReceiptDetailDrawerContext } from './ReceiptDetailDrawerProvider';
 import { ReceiptDetailsStatus } from './components';

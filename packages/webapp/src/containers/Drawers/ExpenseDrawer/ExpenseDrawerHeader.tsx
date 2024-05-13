@@ -1,20 +1,20 @@
+import { defaultTo } from 'lodash';
+import moment from 'moment';
 // @ts-nocheck
 import React from 'react';
-import moment from 'moment';
 import styled from 'styled-components';
-import { defaultTo } from 'lodash';
 
 import {
+  Col,
   CommercialDocHeader,
   CommercialDocTopHeader,
-  Row,
-  Col,
   DetailItem,
   DetailsMenu,
-  FormatDate,
   ExchangeRateDetailItem,
+  FormatDate,
+  Row,
   FormattedMessage as T,
-} from '@/components';
+} from '@bigcapital/webapp/components';
 import { useExpenseDrawerContext } from './ExpenseDrawerProvider';
 import { ExpenseDetailsStatus } from './components';
 

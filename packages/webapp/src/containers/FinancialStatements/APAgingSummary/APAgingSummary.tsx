@@ -1,12 +1,12 @@
+import moment from 'moment';
 // @ts-nocheck
 import React, { useCallback, useEffect } from 'react';
-import moment from 'moment';
 
+import { DashboardPageContent, FinancialStatement } from '@bigcapital/webapp/components';
 import { useAPAgingSummaryQuery } from './common';
-import { FinancialStatement, DashboardPageContent } from '@/components';
 
-import APAgingSummaryHeader from './APAgingSummaryHeader';
 import APAgingSummaryActionsBar from './APAgingSummaryActionsBar';
+import APAgingSummaryHeader from './APAgingSummaryHeader';
 
 import { APAgingSummaryBody } from './APAgingSummaryBody';
 import { APAgingSummaryProvider } from './APAgingSummaryProvider';
@@ -14,9 +14,9 @@ import { APAgingSummarySheetLoadingBar } from './components';
 
 import withAPAgingSummaryActions from './withAPAgingSummaryActions';
 
-import { compose } from '@/utils';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import { compose } from '@bigcapital/webapp/utils';
 import { APAgingSummaryPdfDialog } from './dialogs/APAgingSummaryPdfDialog';
-import { DialogsName } from '@/constants/dialogs';
 
 /**
  * A/P aging summary report.

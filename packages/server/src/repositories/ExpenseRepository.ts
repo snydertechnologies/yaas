@@ -1,4 +1,4 @@
-import { Expense } from 'models';
+import { Expense } from '@bigcapital/server/models';
 import moment from 'moment';
 import TenantRepository from './TenantRepository';
 

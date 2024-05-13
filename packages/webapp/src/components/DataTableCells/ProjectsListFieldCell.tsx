@@ -1,10 +1,10 @@
+import { Classes, FormGroup, Intent } from '@blueprintjs/core';
+import classNames from 'classnames';
 // @ts-nocheck
 import React, { useCallback } from 'react';
-import { FormGroup, Intent, Classes } from '@blueprintjs/core';
-import classNames from 'classnames';
 
-import { CellType } from '@/constants';
-import { ProjectSuggestField } from '@/containers/Projects/components';
+import { CellType } from '@bigcapital/webapp/constants';
+import { ProjectSuggestField } from '@bigcapital/webapp/containers/Projects/components';
 
 /**
  * projects list field cell.

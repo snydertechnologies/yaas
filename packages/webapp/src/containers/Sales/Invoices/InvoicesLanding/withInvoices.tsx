@@ -1,6 +1,9 @@
+import {
+  getInvoicesTableStateFactory,
+  isInvoicesTableStateChangedFactory,
+} from '@bigcapital/webapp/store/Invoice/invoices.selector';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { getInvoicesTableStateFactory, isInvoicesTableStateChangedFactory } from '@/store/Invoice/invoices.selector';
 
 export default (mapState) => {
   const getInvoicesTableState = getInvoicesTableStateFactory();

@@ -1,6 +1,6 @@
+import { MaterialProgressBar } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import React from 'react';
-import { MaterialProgressBar } from '@/components';
 
 /**
  * Financnail progress bar.

@@ -1,8 +1,8 @@
-import { ServiceError } from '@/exceptions';
-import { ICurrenciesService, ICurrency, ICurrencyDTO, ICurrencyEditDTO } from '@/interfaces';
-import { TransformerInjectable } from '@/lib/Transformer/TransformerInjectable';
-import TenancyService from '@/services/Tenancy/TenancyService';
-import { Tenant } from '@/system/models';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { ICurrenciesService, ICurrency, ICurrencyDTO, ICurrencyEditDTO } from '@bigcapital/server/interfaces';
+import { TransformerInjectable } from '@bigcapital/server/lib/Transformer/TransformerInjectable';
+import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import { Tenant } from '@bigcapital/server/system/models';
 import { Inject, Service } from 'typedi';
 import { CurrencyTransformer } from './CurrencyTransformer';
 

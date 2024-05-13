@@ -1,16 +1,16 @@
+import { defaultTo } from 'lodash';
+import * as R from 'ramda';
 // @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
-import * as R from 'ramda';
-import { defaultTo } from 'lodash';
 
-import { useDeepCompareEffect } from '@/hooks/utils';
+import { useDeepCompareEffect } from '@bigcapital/webapp/hooks/utils';
 
-import { DataTableEditable } from '@/components';
-import { compose, updateTableCell } from '@/utils';
-import { useReconcileVendorCreditTableColumns, maxAmountCreditFromRemaining } from './utils';
-import { maxCreditNoteAmountEntries } from '@/containers/Dialogs/ReconcileCreditNoteDialog/utils';
+import { DataTableEditable } from '@bigcapital/webapp/components';
+import { maxCreditNoteAmountEntries } from '@bigcapital/webapp/containers/Dialogs/ReconcileCreditNoteDialog/utils';
+import { compose, updateTableCell } from '@bigcapital/webapp/utils';
 import { useReconcileVendorCreditContext } from './ReconcileVendorCreditFormProvider';
+import { maxAmountCreditFromRemaining, useReconcileVendorCreditTableColumns } from './utils';
 
 /**
  * Reconcile vendor credit entries table.

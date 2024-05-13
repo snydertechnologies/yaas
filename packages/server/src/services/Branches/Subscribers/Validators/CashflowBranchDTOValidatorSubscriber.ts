@@ -1,5 +1,5 @@
-import { ICommandCashflowCreatingPayload } from '@/interfaces';
-import events from '@/subscribers/events';
+import { ICommandCashflowCreatingPayload } from '@bigcapital/server/interfaces';
+import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 import { ValidateBranchExistance } from '../../Integrations/ValidateBranchExistance';
 

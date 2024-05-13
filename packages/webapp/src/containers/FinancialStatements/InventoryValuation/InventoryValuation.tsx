@@ -1,20 +1,20 @@
-// @ts-nocheck
-import { useEffect, useCallback } from 'react';
 import moment from 'moment';
+// @ts-nocheck
+import { useCallback, useEffect } from 'react';
 
-import { DashboardPageContent } from '@/components';
+import { DashboardPageContent } from '@bigcapital/webapp/components';
 import InventoryValuationActionsBar from './InventoryValuationActionsBar';
 import InventoryValuationHeader from './InventoryValuationHeader';
 
-import { InventoryValuationProvider } from './InventoryValuationProvider';
+import { compose } from '@bigcapital/webapp/utils';
 import { InventoryValuationBody } from './InventoryValuationBody';
+import { InventoryValuationProvider } from './InventoryValuationProvider';
 import { InventoryValuationLoadingBar } from './components';
 import { useInventoryValuationQuery } from './utils';
-import { compose } from '@/utils';
 
-import withInventoryValuationActions from './withInventoryValuationActions';
-import withCurrentOrganization from '@/containers/Organization/withCurrentOrganization';
+import withCurrentOrganization from '@bigcapital/webapp/containers/Organization/withCurrentOrganization';
 import { InventoryValuationDialogs } from './InventoryValuationDialogs';
+import withInventoryValuationActions from './withInventoryValuationActions';
 
 /**
  * Inventory valuation.

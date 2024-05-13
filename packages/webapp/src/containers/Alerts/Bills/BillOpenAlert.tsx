@@ -1,14 +1,14 @@
+import { AppToaster, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Alert, Intent } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { AppToaster, FormattedMessage as T } from '@/components';
 import intl from 'react-intl-universal';
-import { Intent, Alert } from '@blueprintjs/core';
 
-import withAlertStoreConnect from '@/containers/Alert/withAlertStoreConnect';
-import withAlertActions from '@/containers/Alert/withAlertActions';
+import withAlertActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withAlertStoreConnect from '@bigcapital/webapp/containers/Alert/withAlertStoreConnect';
 
-import { useOpenBill } from '@/hooks/query';
-import { compose } from '@/utils';
+import { useOpenBill } from '@bigcapital/webapp/hooks/query';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Bill open alert.

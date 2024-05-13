@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { DialogsName } from '@/constants/dialogs';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
 import React from 'react';
 
 const InvoiceExchangeRateChangeAlert = React.lazy(() => import('./InvoiceExchangeRateChangeDialog'));

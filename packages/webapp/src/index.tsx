@@ -5,10 +5,10 @@ import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import { PersistGate } from 'redux-persist/integration/react';
 
-import '@/services/yup';
-import App from '@/components/App';
-import * as serviceWorker from '@/serviceWorker';
-import { store, persistor } from '@/store/createStore';
+import '@bigcapital/webapp/services/yup';
+import App from '@bigcapital/webapp/components/App';
+import * as serviceWorker from '@bigcapital/webapp/serviceWorker';
+import { persistor, store } from '@bigcapital/webapp/store/createStore';
 
 if (import.meta.env.NODE_ENV === 'development') {
   // import @welldone-software/why-did-you-render

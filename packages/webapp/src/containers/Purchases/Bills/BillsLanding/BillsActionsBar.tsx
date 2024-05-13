@@ -1,32 +1,32 @@
+import { Alignment, Button, Classes, Intent, NavbarDivider, NavbarGroup } from '@blueprintjs/core';
 // @ts-nocheck
 import React, { useState } from 'react';
-import { Button, Classes, NavbarDivider, NavbarGroup, Intent, Alignment } from '@blueprintjs/core';
 
 import { useHistory } from 'react-router-dom';
 
 import {
-  If,
-  Can,
-  Icon,
-  FormattedMessage as T,
-  DashboardActionViewsList,
-  DashboardFilterButton,
   AdvancedFilterPopover,
-  DashboardRowsHeightButton,
+  Can,
+  DashboardActionViewsList,
   DashboardActionsBar,
-} from '@/components';
-import { BillAction, AbilitySubject } from '@/constants/abilityOption';
+  DashboardFilterButton,
+  DashboardRowsHeightButton,
+  Icon,
+  If,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import { AbilitySubject, BillAction } from '@bigcapital/webapp/constants/abilityOption';
 
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import withSettingsActions from '@bigcapital/webapp/containers/Settings/withSettingsActions';
 import withBills from './withBills';
 import withBillsActions from './withBillsActions';
-import withSettings from '@/containers/Settings/withSettings';
-import withSettingsActions from '@/containers/Settings/withSettingsActions';
 
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { useRefreshBills } from '@bigcapital/webapp/hooks/query/bills';
+import { compose } from '@bigcapital/webapp/utils';
 import { useBillsListContext } from './BillsListProvider';
-import { useRefreshBills } from '@/hooks/query/bills';
-import { compose } from '@/utils';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { DialogsName } from '@/constants/dialogs';
 
 /**
  * Bills actions bar.

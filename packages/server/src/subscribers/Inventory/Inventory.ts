@@ -2,12 +2,12 @@ import {
   IComputeItemCostJobCompletedPayload,
   IInventoryTransactionsCreatedPayload,
   IInventoryTransactionsDeletedPayload,
-} from '@/interfaces';
-import InventoryService from '@/services/Inventory/Inventory';
-import InventoryItemsQuantitySync from '@/services/Inventory/InventoryItemsQuantitySync';
-import { SaleInvoicesCost } from '@/services/Sales/Invoices/SalesInvoicesCost';
-import { runAfterTransaction } from '@/services/UnitOfWork/TransactionsHooks';
-import events from '@/subscribers/events';
+} from '@bigcapital/server/interfaces';
+import InventoryService from '@bigcapital/server/services/Inventory/Inventory';
+import InventoryItemsQuantitySync from '@bigcapital/server/services/Inventory/InventoryItemsQuantitySync';
+import { SaleInvoicesCost } from '@bigcapital/server/services/Sales/Invoices/SalesInvoicesCost';
+import { runAfterTransaction } from '@bigcapital/server/services/UnitOfWork/TransactionsHooks';
+import events from '@bigcapital/server/subscribers/events';
 import { head, map } from 'lodash';
 import { Inject, Service } from 'typedi';
 

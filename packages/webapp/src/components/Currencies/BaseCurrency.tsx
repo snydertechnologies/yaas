@@ -1,6 +1,6 @@
+import { CurrencyTag } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import React from 'react';
-import { CurrencyTag } from '@/components';
 
 /**
  * base currecncy.

@@ -1,9 +1,9 @@
+import { Choose, FormatDateCell, Icon, If, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { safeCallback } from '@bigcapital/webapp/utils';
+import { Intent, Menu, MenuDivider, MenuItem, Tag } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { Intent, Tag, Menu, MenuItem, MenuDivider } from '@blueprintjs/core';
-import { safeCallback } from '@/utils';
-import { FormatDateCell, FormattedMessage as T, Choose, If, Icon } from '@/components';
 
 export function ActionsMenu({
   payload: { onEdit, onDelete, onViewDetails, onInitate, onTransfer },

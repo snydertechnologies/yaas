@@ -1,8 +1,10 @@
 // @ts-nocheck
 import React from 'react';
 
-const ExpenseDeleteAlert = React.lazy(() => import('@/containers/Alerts/Expenses/ExpenseDeleteAlert'));
-const ExpensePublishAlert = React.lazy(() => import('@/containers/Alerts/Expenses/ExpensePublishAlert'));
+const ExpenseDeleteAlert = React.lazy(() => import('@bigcapital/webapp/containers/Alerts/Expenses/ExpenseDeleteAlert'));
+const ExpensePublishAlert = React.lazy(
+  () => import('@bigcapital/webapp/containers/Alerts/Expenses/ExpensePublishAlert'),
+);
 
 /**
  * Accounts alert.

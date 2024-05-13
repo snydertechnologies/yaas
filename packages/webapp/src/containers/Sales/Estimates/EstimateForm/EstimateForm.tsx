@@ -1,34 +1,34 @@
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { Intent } from '@blueprintjs/core';
+import classNames from 'classnames';
+import { Form, Formik } from 'formik';
+import { defaultTo, isEmpty, sumBy } from 'lodash';
 // @ts-nocheck
 import intl from 'react-intl-universal';
-import classNames from 'classnames';
-import { Formik, Form } from 'formik';
-import { Intent } from '@blueprintjs/core';
-import { sumBy, isEmpty, defaultTo } from 'lodash';
 import { useHistory } from 'react-router-dom';
-import { CLASSES } from '@/constants/classes';
 
 import { CreateEstimateFormSchema, EditEstimateFormSchema } from './EstimateForm.schema';
 
+import EstimateFloatingActions from './EstimateFloatingActions';
+import EstimateFormDialogs from './EstimateFormDialogs';
+import EstimateFormFooter from './EstimateFormFooter';
 import EstimateFormHeader from './EstimateFormHeader';
 import EstimateItemsEntriesField from './EstimateItemsEntriesField';
-import EstimateFloatingActions from './EstimateFloatingActions';
-import EstimateFormFooter from './EstimateFormFooter';
-import EstimateFormDialogs from './EstimateFormDialogs';
 import EstimtaeFormTopBar from './EstimtaeFormTopBar';
 import { EstimateIncrementSyncSettingsToForm, EstimateSyncAutoExRateToForm } from './components';
 
-import withSettings from '@/containers/Settings/withSettings';
-import withCurrentOrganization from '@/containers/Organization/withCurrentOrganization';
+import withCurrentOrganization from '@bigcapital/webapp/containers/Organization/withCurrentOrganization';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
 
-import { AppToaster } from '@/components';
-import { compose, transactionNumber, orderingLinesIndexes } from '@/utils';
+import { AppToaster } from '@bigcapital/webapp/components';
+import { compose, orderingLinesIndexes, transactionNumber } from '@bigcapital/webapp/utils';
 import { useEstimateFormContext } from './EstimateFormProvider';
 import {
-  transformToEditForm,
   defaultEstimate,
-  transfromsFormValuesToRequest,
   handleErrors,
   resetFormState,
+  transformToEditForm,
+  transfromsFormValuesToRequest,
 } from './utils';
 
 /**

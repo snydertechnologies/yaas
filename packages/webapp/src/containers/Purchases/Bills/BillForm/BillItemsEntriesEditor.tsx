@@ -1,9 +1,9 @@
 // @ts-nocheck
-import ItemsEntriesTable from '@/containers/Entries/ItemsEntriesTable';
+import ItemsEntriesTable from '@bigcapital/webapp/containers/Entries/ItemsEntriesTable';
+import { ITEM_TYPE } from '@bigcapital/webapp/containers/Entries/utils';
 import { FastField } from 'formik';
 import { useBillFormContext } from './BillFormProvider';
 import { entriesFieldShouldUpdate } from './utils';
-import { ITEM_TYPE } from '@/containers/Entries/utils';
 
 /**
  * Bill form body.

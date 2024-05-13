@@ -1,6 +1,13 @@
+import {
+  deleteUser,
+  editUser,
+  fetchUser,
+  fetchUsers,
+  inactiveUser,
+  submitInvite,
+} from '@bigcapital/webapp/store/users/users.actions';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { fetchUsers, fetchUser, deleteUser, inactiveUser, editUser, submitInvite } from '@/store/users/users.actions';
 
 export const mapDispatchToProps = (dispatch) => ({
   requestFetchUsers: () => dispatch(fetchUsers({})),

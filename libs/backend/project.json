@@ -1,0 +1,26 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "name": "bigcapital-libs-backend",
+  "projectType": "library",
+  "sourceRoot": "libs/backend/src",
+  "tags": ["stack:edge", "lang:typescript", "framework:agnostic", "ecosystem:shared", "domain:shared", "type:domain"],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:swc",
+      "options": {
+        "assets": ["libs/backend/*.md"],
+        "main": "libs/backend/src/index.ts",
+        "outputPath": "dist/libs/backend",
+        "tsConfig": "libs/backend/tsconfig.lib.json"
+      },
+      "outputs": ["{options.outputPath}"]
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "options": {
+        "jestConfig": "libs/backend/jest.config.ts"
+      },
+      "outputs": ["{workspaceRoot}/coverage/libs/backend"]
+    }
+  }
+}

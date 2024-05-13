@@ -3,9 +3,17 @@ import React from 'react';
 import intl from 'react-intl-universal';
 import styled from 'styled-components';
 import { Button, Popover, PopoverInteractionKind, Position, MenuItem, Menu, Intent, Tag } from '@blueprintjs/core';
-import { getColumnWidth } from '@/utils';
-import { FormatNumberCell, Icon, FormattedMessage as T, Choose, Can, If, TextOverviewTooltipCell } from '@/components';
-import { SaleInvoiceAction, AbilitySubject } from '@/constants/abilityOption';
+import { getColumnWidth } from '@bigcapital/webapp/utils';
+import {
+  FormatNumberCell,
+  Icon,
+  FormattedMessage as T,
+  Choose,
+  Can,
+  If,
+  TextOverviewTooltipCell,
+} from '@bigcapital/webapp/components';
+import { SaleInvoiceAction, AbilitySubject } from '@bigcapital/webapp/constants/abilityOption';
 import { useInvoiceDetailDrawerContext } from './InvoiceDetailDrawerProvider';
 
 /**

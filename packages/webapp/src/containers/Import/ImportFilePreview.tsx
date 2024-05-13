@@ -1,15 +1,15 @@
+import { AppToaster, Box, Group, Stack } from '@bigcapital/webapp/components';
+import { Section, SectionCard } from '@bigcapital/webapp/components/Section';
+import { CLASSES } from '@bigcapital/webapp/constants';
+import { useImportFileProcess } from '@bigcapital/webapp/hooks/query/import';
 // @ts-nocheck
 import { Button, Callout, Intent, Text } from '@blueprintjs/core';
 import clsx from 'classnames';
+import { ImportFileContainer } from './ImportFileContainer';
+import styles from './ImportFilePreview.module.scss';
 import { ImportFilePreviewBootProvider, useImportFilePreviewBootContext } from './ImportFilePreviewBoot';
 import { useImportFileContext } from './ImportFileProvider';
-import { useImportFileProcess } from '@/hooks/query/import';
-import { AppToaster, Box, Group, Stack } from '@/components';
-import { CLASSES } from '@/constants';
 import { ImportStepperStep } from './_types';
-import { ImportFileContainer } from './ImportFileContainer';
-import { SectionCard, Section } from '@/components/Section';
-import styles from './ImportFilePreview.module.scss';
 
 export function ImportFilePreview() {
   const { importId } = useImportFileContext();

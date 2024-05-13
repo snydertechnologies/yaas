@@ -1,10 +1,10 @@
-// @ts-nocheck
-import React, { useMemo } from 'react';
+import { Money, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
 import classNames from 'classnames';
 import { useFormikContext } from 'formik';
 import { sumBy } from 'lodash';
-import { CLASSES } from '@/constants/classes';
-import { Money, FormattedMessage as T } from '@/components';
+// @ts-nocheck
+import React, { useMemo } from 'react';
 
 import PaymentMadeFormHeaderFields from './PaymentMadeFormHeaderFields';
 

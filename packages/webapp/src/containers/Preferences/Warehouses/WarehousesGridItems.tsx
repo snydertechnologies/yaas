@@ -1,16 +1,16 @@
+import { Intent } from '@blueprintjs/core';
+import { ContextMenu2 } from '@blueprintjs/popover2';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { Intent } from '@blueprintjs/core';
-import { ContextMenu2 } from '@blueprintjs/popover2';
 
-import { AppToaster } from '@/components';
+import { AppToaster } from '@bigcapital/webapp/components';
+import { useMarkWarehouseAsPrimary } from '@bigcapital/webapp/hooks/query';
 import { WarehouseContextMenu, WarehousesGridItemBox } from './components';
-import { useMarkWarehouseAsPrimary } from '@/hooks/query';
 
-import withAlertsActions from '@/containers/Alert/withAlertActions';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { compose } from '@/utils';
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  *  warehouse grid item.

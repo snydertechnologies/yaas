@@ -1,33 +1,33 @@
+import { Alignment, Button, Classes, Intent, NavbarDivider, NavbarGroup, Switch } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { NavbarGroup, NavbarDivider, Button, Classes, Intent, Switch, Alignment } from '@blueprintjs/core';
 import { useHistory } from 'react-router-dom';
 
 import {
-  If,
-  Icon,
-  Can,
-  FormattedMessage as T,
-  DashboardActionViewsList,
   AdvancedFilterPopover,
+  Can,
+  DashboardActionViewsList,
+  DashboardActionsBar,
   DashboardFilterButton,
   DashboardRowsHeightButton,
-  DashboardActionsBar,
-} from '@/components';
+  Icon,
+  If,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
 
+import { useRefreshCustomers } from '@bigcapital/webapp/hooks/query/customers';
 import { useCustomersListContext } from './CustomersListProvider';
-import { useRefreshCustomers } from '@/hooks/query/customers';
 
+import withAlertActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import withSettingsActions from '@bigcapital/webapp/containers/Settings/withSettingsActions';
 import withCustomers from './withCustomers';
 import withCustomersActions from './withCustomersActions';
-import withAlertActions from '@/containers/Alert/withAlertActions';
-import withSettingsActions from '@/containers/Settings/withSettingsActions';
-import withSettings from '@/containers/Settings/withSettings';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
 
-import { CustomerAction, AbilitySubject } from '@/constants/abilityOption';
-import { compose } from '@/utils';
-import { DialogsName } from '@/constants/dialogs';
+import { AbilitySubject, CustomerAction } from '@bigcapital/webapp/constants/abilityOption';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Customers actions bar.

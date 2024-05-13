@@ -1,19 +1,19 @@
+import { Tab, Tabs } from '@blueprintjs/core';
+import classNames from 'classnames';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
 import styled from 'styled-components';
-import classNames from 'classnames';
-import { Tabs, Tab } from '@blueprintjs/core';
 
-import { CLASSES } from '@/constants/classes';
+import { Card } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
 import SMSMessagesDataTable from './SMSMessagesDataTable';
-import { Card } from '@/components';
 
-import '@/style/pages/Preferences/SMSIntegration.scss';
+import '@bigcapital/webapp/style/pages/Preferences/SMSIntegration.scss';
 
-import withDashboardActions from '@/containers/Dashboard/withDashboardActions';
+import withDashboardActions from '@bigcapital/webapp/containers/Dashboard/withDashboardActions';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * SMS Integration Tabs.

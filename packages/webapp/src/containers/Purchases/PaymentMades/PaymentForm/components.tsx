@@ -1,11 +1,11 @@
+import { ExchangeRateInputGroup, Money } from '@bigcapital/webapp/components';
+import { MoneyFieldCell } from '@bigcapital/webapp/components/DataTableCells';
+import { useCurrentOrganization } from '@bigcapital/webapp/hooks/state';
+import { useFormikContext } from 'formik';
+import moment from 'moment';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import moment from 'moment';
-import { Money, ExchangeRateInputGroup } from '@/components';
-import { MoneyFieldCell } from '@/components/DataTableCells';
-import { useFormikContext } from 'formik';
-import { useCurrentOrganization } from '@/hooks/state';
 import { usePaymentMadeIsForeignCustomer } from './utils';
 
 function BillNumberAccessor(row) {

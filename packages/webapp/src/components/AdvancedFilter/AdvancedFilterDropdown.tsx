@@ -1,28 +1,28 @@
+import { Choose, Icon, ListSelect, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { useUpdateEffect } from '@bigcapital/webapp/hooks';
+import { Button, Classes, FormGroup, InputGroup, MenuItem } from '@blueprintjs/core';
+import { FastField, FieldArray, Formik } from 'formik';
+import { defaultTo, first, get, isEmpty, isEqual } from 'lodash';
 // @ts-nocheck
 import React from 'react';
-import { Formik, FastField, FieldArray } from 'formik';
-import { Button, FormGroup, Classes, InputGroup, MenuItem } from '@blueprintjs/core';
-import { get, first, defaultTo, isEqual, isEmpty } from 'lodash';
 import intl from 'react-intl-universal';
-import { Choose, Icon, FormattedMessage as T, ListSelect } from '@/components';
-import { useUpdateEffect } from '@/hooks';
+import { getFilterDropdownSchema } from './AdvancedFilter.schema';
+import AdvancedFilterCompatatorField from './AdvancedFilterCompatatorField';
 import {
   AdvancedFilterDropdownProvider,
   FilterConditionProvider,
-  useFilterCondition,
   useAdvancedFilterContext,
+  useFilterCondition,
 } from './AdvancedFilterDropdownContext';
-import AdvancedFilterCompatatorField from './AdvancedFilterCompatatorField';
 import AdvancedFilterValueField from './AdvancedFilterValueField';
+import { useAdvancedFilterAutoSubmit } from './components';
 import {
   filterConditionRoles,
-  getConditionalsOptions,
-  transformFieldsToOptions,
-  shouldFilterValueFieldUpdate,
   getConditionTypeCompatators,
+  getConditionalsOptions,
+  shouldFilterValueFieldUpdate,
+  transformFieldsToOptions,
 } from './utils';
-import { getFilterDropdownSchema } from './AdvancedFilter.schema';
-import { useAdvancedFilterAutoSubmit } from './components';
 
 /**
  * Condition item list renderer.

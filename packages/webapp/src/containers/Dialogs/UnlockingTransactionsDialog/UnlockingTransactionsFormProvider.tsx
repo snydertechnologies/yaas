@@ -1,7 +1,7 @@
+import { DialogContent } from '@bigcapital/webapp/components';
+import { useCancelLockingTransaction } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React from 'react';
-import { DialogContent } from '@/components';
-import { useCancelLockingTransaction } from '@/hooks/query';
 
 const UnlockingTransactionsContext = React.createContext();
 

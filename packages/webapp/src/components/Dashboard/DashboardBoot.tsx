@@ -1,9 +1,9 @@
+import { useWatch, useWatchImmediate, useWhen } from '@bigcapital/webapp/hooks';
+import { useAuthenticatedAccount, useCurrentOrganization, useDashboardMeta } from '@bigcapital/webapp/hooks/query';
+import { useSplashLoading } from '@bigcapital/webapp/hooks/state';
+import { getCookie, setCookie } from '@bigcapital/webapp/utils';
 // @ts-nocheck
 import React, { useEffect } from 'react';
-import { useAuthenticatedAccount, useCurrentOrganization, useDashboardMeta } from '@/hooks/query';
-import { useSplashLoading } from '@/hooks/state';
-import { useWatch, useWatchImmediate, useWhen } from '@/hooks';
-import { setCookie, getCookie } from '@/utils';
 
 /**
  * Dashboard meta async booting.

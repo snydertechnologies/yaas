@@ -1,15 +1,15 @@
+import { Button, Classes, Intent } from '@blueprintjs/core';
+import { Form, Formik } from 'formik';
 // @ts-nocheck
 import React, { useMemo } from 'react';
 import * as Yup from 'yup';
-import { Formik, Form } from 'formik';
-import { Intent, Button, Classes } from '@blueprintjs/core';
 
-import '@/style/pages/ReferenceNumber/ReferenceNumber.scss';
+import '@bigcapital/webapp/style/pages/ReferenceNumber/ReferenceNumber.scss';
 
-import { FormattedMessage as T, FormObserver } from '@/components';
+import { FormObserver, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { saveInvoke, transformToForm } from '@bigcapital/webapp/utils';
 import ReferenceNumberFormContent from './ReferenceNumberFormContent';
 import { transformValuesToForm } from './utils';
-import { saveInvoke, transformToForm } from '@/utils';
 
 const initialFormValues = {
   incrementMode: 'auto',

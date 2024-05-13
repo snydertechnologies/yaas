@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React from 'react';
-import { DrawerBody } from '@/components';
+import { DrawerBody } from '@bigcapital/webapp/components';
 
 import { BillDrawerProvider } from './BillDrawerProvider';
 import BillDrawerDetails from './BillDrawerDetails';

@@ -1,7 +1,7 @@
 // @ts-nocheck
 import { connect } from 'react-redux';
 
-import { setProjectsTableState, resetProjectsTableState } from '@/store/Project/projects.actions';
+import { resetProjectsTableState, setProjectsTableState } from '@bigcapital/webapp/store/Project/projects.actions';
 
 const mapDispatchToProps = (dispatch) => ({
   setProjectsTableState: (state) => dispatch(setProjectsTableState(state)),

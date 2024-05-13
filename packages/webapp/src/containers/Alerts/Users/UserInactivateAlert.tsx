@@ -1,14 +1,14 @@
+import { AppToaster, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { useInactivateUser } from '@bigcapital/webapp/hooks/query';
+import { Alert, Intent } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { AppToaster, FormattedMessage as T } from '@/components';
-import { Alert, Intent } from '@blueprintjs/core';
-import { useInactivateUser } from '@/hooks/query';
 
-import withAlertStoreConnect from '@/containers/Alert/withAlertStoreConnect';
-import withAlertActions from '@/containers/Alert/withAlertActions';
+import withAlertActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withAlertStoreConnect from '@bigcapital/webapp/containers/Alert/withAlertStoreConnect';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * User inactivate alert.

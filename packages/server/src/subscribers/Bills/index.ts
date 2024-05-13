@@ -1,5 +1,5 @@
-import BillsService from '@/services/Purchases/Bills';
-import TenancyService from '@/services/Tenancy/TenancyService';
+import BillsService from '@bigcapital/server/services/Purchases/Bills';
+import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { EventSubscriber } from 'event-dispatch';
 import { Container } from 'typedi';
 

@@ -1,12 +1,12 @@
-import { IManualJournal, IManualJournalEventPublishedPayload, IManualJournalPublishingPayload } from '@/interfaces';
-import TenancyService from '@/services/Tenancy/TenancyService';
-import events from '@/subscribers/events';
+import { IManualJournal, IManualJournalEventPublishedPayload, IManualJournalPublishingPayload } from '@bigcapital/server/interfaces';
+import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import events from '@bigcapital/server/subscribers/events';
 import { Knex } from 'knex';
 import moment from 'moment';
 import { Inject, Service } from 'typedi';
 
-import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';
-import UnitOfWork from '@/services/UnitOfWork';
+import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
+import UnitOfWork from '@bigcapital/server/services/UnitOfWork';
 import { CommandManualJournalValidators } from './CommandManualJournalValidators';
 
 @Service()

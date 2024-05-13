@@ -1,4 +1,4 @@
-import SystemModel from '@/system/models/SystemModel';
+import SystemModel from '@bigcapital/server/system/models/SystemModel';
 import moment from 'moment';
 
 export default class UserInvite extends SystemModel {

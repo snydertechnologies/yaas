@@ -1,17 +1,17 @@
-import AccountRepository from '@/repositories/AccountRepository';
-import AccountTransactionsRepository from '@/repositories/AccountTransactionRepository';
-import BillRepository from '@/repositories/BillRepository';
-import ContactRepository from '@/repositories/ContactRepository';
-import CustomerRepository from '@/repositories/CustomerRepository';
-import ExpenseEntryRepository from '@/repositories/ExpenseEntryRepository';
-import ExpenseRepository from '@/repositories/ExpenseRepository';
-import InventoryTransactionRepository from '@/repositories/InventoryTransactionRepository';
-import ItemRepository from '@/repositories/ItemRepository';
-import SaleInvoiceRepository from '@/repositories/SaleInvoiceRepository';
-import SettingRepository from '@/repositories/SettingRepository';
-import VendorRepository from '@/repositories/VendorRepository';
-import ViewRepository from '@/repositories/ViewRepository';
-import ViewRoleRepository from '@/repositories/ViewRoleRepository';
+import AccountRepository from '@bigcapital/server/repositories/AccountRepository';
+import AccountTransactionsRepository from '@bigcapital/server/repositories/AccountTransactionRepository';
+import BillRepository from '@bigcapital/server/repositories/BillRepository';
+import ContactRepository from '@bigcapital/server/repositories/ContactRepository';
+import CustomerRepository from '@bigcapital/server/repositories/CustomerRepository';
+import ExpenseEntryRepository from '@bigcapital/server/repositories/ExpenseEntryRepository';
+import ExpenseRepository from '@bigcapital/server/repositories/ExpenseRepository';
+import InventoryTransactionRepository from '@bigcapital/server/repositories/InventoryTransactionRepository';
+import ItemRepository from '@bigcapital/server/repositories/ItemRepository';
+import SaleInvoiceRepository from '@bigcapital/server/repositories/SaleInvoiceRepository';
+import SettingRepository from '@bigcapital/server/repositories/SettingRepository';
+import VendorRepository from '@bigcapital/server/repositories/VendorRepository';
+import ViewRepository from '@bigcapital/server/repositories/ViewRepository';
+import ViewRoleRepository from '@bigcapital/server/repositories/ViewRoleRepository';
 
 export default (knex, cache, i18n) => {
   return {

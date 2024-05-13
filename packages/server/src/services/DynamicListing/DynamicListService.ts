@@ -1,7 +1,7 @@
-import { ServiceError } from '@/exceptions';
-import { IDynamicListFilter, IDynamicListService, IModel } from '@/interfaces';
-import { DynamicFilter } from '@/lib/DynamicFilter';
-import TenancyService from '@/services/Tenancy/TenancyService';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { IDynamicListFilter, IDynamicListService, IModel } from '@bigcapital/server/interfaces';
+import { DynamicFilter } from '@bigcapital/server/lib/DynamicFilter';
+import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { NextFunction, Request, Response } from 'express';
 import { castArray, isEmpty } from 'lodash';
 import { Inject, Service } from 'typedi';

@@ -1,7 +1,7 @@
+import { DialogContent } from '@bigcapital/webapp/components';
+import { useCreateUnlockingPartialTransactions } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React from 'react';
-import { DialogContent } from '@/components';
-import { useCreateUnlockingPartialTransactions } from '@/hooks/query';
 
 const UnlockingPartialTransactionsContext = React.createContext();
 

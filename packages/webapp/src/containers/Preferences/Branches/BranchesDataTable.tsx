@@ -1,20 +1,20 @@
+import { Intent } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
 import styled from 'styled-components';
-import { Intent } from '@blueprintjs/core';
 
-import '@/style/pages/Preferences/branchesList.scss';
+import '@bigcapital/webapp/style/pages/Preferences/branchesList.scss';
 
-import { DataTable, Card, AppToaster, TableSkeletonRows } from '@/components';
-import { useBranchesTableColumns, ActionsMenu } from './components';
+import { AppToaster, Card, DataTable, TableSkeletonRows } from '@bigcapital/webapp/components';
+import { useMarkBranchAsPrimary } from '@bigcapital/webapp/hooks/query';
 import { useBranchesContext } from './BranchesProvider';
-import { useMarkBranchAsPrimary } from '@/hooks/query';
+import { ActionsMenu, useBranchesTableColumns } from './components';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import withAlertActions from '@/containers/Alert/withAlertActions';
+import withAlertActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Branches data table.

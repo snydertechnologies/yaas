@@ -1,28 +1,28 @@
+import { Classes, FormGroup, InputGroup, Position } from '@blueprintjs/core';
+import { DateInput } from '@blueprintjs/datetime';
+import classNames from 'classnames';
+import { ErrorMessage, FastField, useFormikContext } from 'formik';
 // @ts-nocheck
 import styled from 'styled-components';
-import classNames from 'classnames';
-import { FormGroup, InputGroup, Position, Classes } from '@blueprintjs/core';
-import { DateInput } from '@blueprintjs/datetime';
-import { FastField, ErrorMessage, useFormikContext } from 'formik';
 
 import {
-  FeatureCan,
-  FFormGroup,
-  FormattedMessage as T,
-  FieldRequiredHint,
-  Icon,
   CustomerDrawerLink,
   CustomersSelect,
-} from '@/components';
-import { momentFormatter, tansformDateValue, inputIntent, handleDateChange } from '@/utils';
-import { customersFieldShouldUpdate } from './utils';
-import { CLASSES } from '@/constants/classes';
-import { Features } from '@/constants';
-import { ProjectsSelect } from '@/containers/Projects/components';
-import { EstimateExchangeRateInputField, EstimateProjectSelectButton } from './components';
+  FFormGroup,
+  FeatureCan,
+  FieldRequiredHint,
+  Icon,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import { Features } from '@bigcapital/webapp/constants';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { useCustomerUpdateExRate } from '@bigcapital/webapp/containers/Entries/withExRateItemEntriesPriceRecalc';
+import { ProjectsSelect } from '@bigcapital/webapp/containers/Projects/components';
+import { handleDateChange, inputIntent, momentFormatter, tansformDateValue } from '@bigcapital/webapp/utils';
 import { EstimateFormEstimateNumberField } from './EstimateFormEstimateNumberField';
 import { useEstimateFormContext } from './EstimateFormProvider';
-import { useCustomerUpdateExRate } from '@/containers/Entries/withExRateItemEntriesPriceRecalc';
+import { EstimateExchangeRateInputField, EstimateProjectSelectButton } from './components';
+import { customersFieldShouldUpdate } from './utils';
 
 /**
  * Estimate form header.

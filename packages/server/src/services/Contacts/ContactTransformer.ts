@@ -1,7 +1,7 @@
-import { IContact } from '@/interfaces';
-import { Transformer } from '@/lib/Transformer/Transformer';
+import { IContact } from '@bigcapital/server/interfaces';
+import { Transformer } from '@bigcapital/server/lib/Transformer/Transformer';
+import { formatNumber } from '@bigcapital/server/utils';
 import { isNull } from 'lodash';
-import { formatNumber } from 'utils';
 
 export default class ContactTransfromer extends Transformer {
   /**

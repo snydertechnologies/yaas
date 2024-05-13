@@ -1,20 +1,20 @@
 // @ts-nocheck
 import _, { isEmpty, includes } from 'lodash';
-import React from 'react';
 import * as R from 'ramda';
+import React from 'react';
 import { useHistory } from 'react-router-dom';
 
-import { useAbilityContext } from '@/hooks';
+import { SidebarMenu } from '@bigcapital/webapp/constants/sidebarMenu';
+import { useAbilityContext } from '@bigcapital/webapp/hooks';
 import {
-  useSidebarSubmnuActions,
   useDialogActions,
-  useSubscription,
-  useSidebarSubmenu,
   useFeatureCan,
-} from '@/hooks/state';
-import { SidebarMenu } from '@/constants/sidebarMenu';
+  useSidebarSubmenu,
+  useSidebarSubmnuActions,
+  useSubscription,
+} from '@bigcapital/webapp/hooks/state';
+import { deepdash, filterValuesDeep } from '@bigcapital/webapp/utils';
 import { ISidebarMenuItemType, ISidebarSubscriptionAbility } from './interfaces';
-import { filterValuesDeep, deepdash } from '@/utils';
 
 const deepDashConfig = {
   childrenPath: 'children',

@@ -1,5 +1,5 @@
-import config from '@/config';
-import { PlaidClientWrapper } from '@/lib/Plaid';
+import config from '@bigcapital/server/config';
+import { PlaidClientWrapper } from '@bigcapital/server/lib/Plaid';
 import { Service } from 'typedi';
 
 @Service()

@@ -1,19 +1,19 @@
+import moment from 'moment';
 // @ts-nocheck
 import React, { useMemo, useCallback } from 'react';
-import moment from 'moment';
 import intl from 'react-intl-universal';
 
-import { If, FormattedMessage as T } from '@/components';
+import { If, FormattedMessage as T } from '@bigcapital/webapp/components';
 import {
-  FinancialSheetRoot,
-  FinancialSheetFooterCurrentTime,
-  FinancialSheetFooterBasis,
-  FinancialSheetFooter,
   FinancialSheetAccountingBasis,
-  FinancialSheetTable,
   FinancialSheetDate,
-  FinancialSheetType,
+  FinancialSheetFooter,
+  FinancialSheetFooterBasis,
+  FinancialSheetFooterCurrentTime,
+  FinancialSheetRoot,
+  FinancialSheetTable,
   FinancialSheetTitle,
+  FinancialSheetType,
 } from './StyledFinancialSheet';
 
 /**

@@ -1,4 +1,4 @@
-import knex from '@/database/knex';
+import knex from '@bigcapital/server/database/knex';
 // import cache from 'memory-cache';
 
 // Metadata

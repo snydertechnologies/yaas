@@ -1,11 +1,17 @@
+import {
+  AccountsSelect,
+  CardFooterActions,
+  FFormGroup,
+  FieldRequiredHint,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import { ACCOUNT_PARENT_TYPE, ACCOUNT_TYPE } from '@bigcapital/webapp/constants/accountTypes';
+import { Button, Intent } from '@blueprintjs/core';
+import { Form, useFormikContext } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { Form, useFormikContext } from 'formik';
-import { Button, Intent } from '@blueprintjs/core';
 import { useHistory } from 'react-router-dom';
 import styled from 'styled-components';
-import { AccountsSelect, FieldRequiredHint, FormattedMessage as T, FFormGroup, CardFooterActions } from '@/components';
-import { ACCOUNT_PARENT_TYPE, ACCOUNT_TYPE } from '@/constants/accountTypes';
 
 import { useItemPreferencesFormContext } from './ItemPreferencesFormProvider';
 

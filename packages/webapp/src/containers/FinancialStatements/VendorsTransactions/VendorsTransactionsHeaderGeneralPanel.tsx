@@ -4,7 +4,7 @@ import React from 'react';
 import FinancialStatementDateRange from '../FinancialStatementDateRange';
 import FinancialStatementsFilter from '../FinancialStatementsFilter';
 
-import { Row, Col, FormattedMessage as T, FFormGroup, VendorsMultiSelect } from '@/components';
+import { Col, FFormGroup, Row, FormattedMessage as T, VendorsMultiSelect } from '@bigcapital/webapp/components';
 import { filterVendorsOptions } from '../constants';
 
 import {

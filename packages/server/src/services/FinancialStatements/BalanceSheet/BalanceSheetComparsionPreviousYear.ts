@@ -3,7 +3,7 @@ import {
   IBalanceSheetCommonNode,
   IBalanceSheetDataNode,
   IBalanceSheetTotal,
-} from '@/interfaces';
+} from '@bigcapital/server/interfaces';
 import { isEmpty, sumBy } from 'lodash';
 import * as R from 'ramda';
 import { FinancialPreviousYear } from '../FinancialPreviousYear';

@@ -4,7 +4,7 @@ import { createReducer } from '@reduxjs/toolkit';
 import storage from 'redux-persist/lib/storage';
 import { persistReducer, purgeStoredState } from 'redux-persist';
 
-import t from '@/store/types';
+import t from '@bigcapital/webapp/store/types';
 
 const initialState = {
   data: {

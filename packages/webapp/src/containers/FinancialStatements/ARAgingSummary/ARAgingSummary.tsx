@@ -1,21 +1,21 @@
+import moment from 'moment';
 // @ts-nocheck
 import { useCallback, useEffect } from 'react';
-import moment from 'moment';
 
-import ARAgingSummaryHeader from './ARAgingSummaryHeader';
 import ARAgingSummaryActionsBar from './ARAgingSummaryActionsBar';
+import ARAgingSummaryHeader from './ARAgingSummaryHeader';
 
-import { FinancialStatement, DashboardPageContent } from '@/components';
+import { DashboardPageContent, FinancialStatement } from '@bigcapital/webapp/components';
+import { ARAgingSummaryBody } from './ARAgingSummaryBody';
 import { ARAgingSummaryProvider } from './ARAgingSummaryProvider';
 import { ARAgingSummarySheetLoadingBar } from './components';
-import { ARAgingSummaryBody } from './ARAgingSummaryBody';
 
 import withARAgingSummaryActions from './withARAgingSummaryActions';
 
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import { compose } from '@bigcapital/webapp/utils';
 import { useARAgingSummaryQuery } from './common';
 import { ARAgingSummaryPdfDialog } from './dialogs/ARAgingSummaryPdfDialog';
-import { DialogsName } from '@/constants/dialogs';
-import { compose } from '@/utils';
 
 /**
  * A/R aging summary report.

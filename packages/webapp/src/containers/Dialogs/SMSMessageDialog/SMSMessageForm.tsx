@@ -1,20 +1,20 @@
+import { Intent } from '@blueprintjs/core';
+import { Formik } from 'formik';
+import { omit } from 'lodash';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { Formik } from 'formik';
-import { omit } from 'lodash';
-import { Intent } from '@blueprintjs/core';
 
-import { AppToaster } from '@/components';
+import { AppToaster } from '@bigcapital/webapp/components';
 
-import SMSMessageFormContent from './SMSMessageFormContent';
-import { CreateSMSMessageFormSchema } from './SMSMessageForm.schema';
 import { useSMSMessageDialogContext } from './SMSMessageDialogProvider';
+import { CreateSMSMessageFormSchema } from './SMSMessageForm.schema';
+import SMSMessageFormContent from './SMSMessageFormContent';
 import { transformErrors } from './utils';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
 
-import { compose, transformToForm } from '@/utils';
+import { compose, transformToForm } from '@bigcapital/webapp/utils';
 
 const defaultInitialValues = {
   notification_key: '',

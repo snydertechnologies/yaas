@@ -2,12 +2,12 @@ import { NextFunction, Request, Response, Router } from 'express';
 import { ValidationChain, check, query } from 'express-validator';
 import { Inject, Service } from 'typedi';
 
-import ContactsController from '@/api/controllers/Contacts/Contacts';
-import CheckPolicies from '@/api/middleware/CheckPolicies';
-import asyncMiddleware from '@/api/middleware/asyncMiddleware';
-import { ServiceError } from '@/exceptions';
-import { AbilitySubject, IVendorEditDTO, IVendorNewDTO, IVendorsFilter, VendorAction } from '@/interfaces';
-import { VendorsApplication } from '@/services/Contacts/Vendors/VendorsApplication';
+import ContactsController from '@bigcapital/server/api/controllers/Contacts/Contacts';
+import CheckPolicies from '@bigcapital/server/api/middleware/CheckPolicies';
+import asyncMiddleware from '@bigcapital/server/api/middleware/asyncMiddleware';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { AbilitySubject, IVendorEditDTO, IVendorNewDTO, IVendorsFilter, VendorAction } from '@bigcapital/server/interfaces';
+import { VendorsApplication } from '@bigcapital/server/services/Contacts/Vendors/VendorsApplication';
 
 @Service()
 export default class VendorsController extends ContactsController {

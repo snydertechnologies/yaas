@@ -1,14 +1,14 @@
-// @ts-nocheck
-import React, { createContext, useContext } from 'react';
-import { DialogContent } from '@/components';
+import { DialogContent } from '@bigcapital/webapp/components';
 import {
-  useCreateAccount,
-  useAccountsTypes,
-  useCurrencies,
   useAccount,
   useAccounts,
+  useAccountsTypes,
+  useCreateAccount,
+  useCurrencies,
   useEditAccount,
-} from '@/hooks/query';
+} from '@bigcapital/webapp/hooks/query';
+// @ts-nocheck
+import React, { createContext, useContext } from 'react';
 import { AccountDialogAction, getDisabledFormFields } from './utils';
 
 const AccountDialogContext = createContext();

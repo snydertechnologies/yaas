@@ -1,12 +1,12 @@
 // @ts-nocheck
 import React from 'react';
 
-import { CommercialDocBox } from '@/components';
+import { CommercialDocBox } from '@bigcapital/webapp/components';
 
-import VendorCreditDetailHeader from './VendorCreditDetailHeader';
-import VendorCreditDetailTable from './VendorCreditDetailTable';
 import VendorCreditDetailDrawerFooter from './VendorCreditDetailDrawerFooter';
 import { VendorCreditDetailFooter } from './VendorCreditDetailFooter';
+import VendorCreditDetailHeader from './VendorCreditDetailHeader';
+import VendorCreditDetailTable from './VendorCreditDetailTable';
 
 /**
  * Vendor credit details panel.

@@ -1,9 +1,9 @@
-import BaseController from '@/api/controllers/BaseController';
-import CheckPolicies from '@/api/middleware/CheckPolicies';
-import { ServiceError } from '@/exceptions';
-import { AbilitySubject, AccountAction } from '@/interfaces';
-import TransactionsLockingService from '@/services/TransactionsLocking/CommandTransactionsLockingService';
-import QueryTransactionsLocking from '@/services/TransactionsLocking/QueryTransactionsLocking';
+import BaseController from '@bigcapital/server/api/controllers/BaseController';
+import CheckPolicies from '@bigcapital/server/api/middleware/CheckPolicies';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { AbilitySubject, AccountAction } from '@bigcapital/server/interfaces';
+import TransactionsLockingService from '@bigcapital/server/services/TransactionsLocking/CommandTransactionsLockingService';
+import QueryTransactionsLocking from '@bigcapital/server/services/TransactionsLocking/QueryTransactionsLocking';
 import { NextFunction, Request, Response, Router } from 'express';
 import { check, param } from 'express-validator';
 import { Inject, Service } from 'typedi';

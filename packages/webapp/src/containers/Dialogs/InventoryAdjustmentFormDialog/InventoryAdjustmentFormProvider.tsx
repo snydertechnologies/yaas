@@ -1,9 +1,15 @@
+import { DialogContent } from '@bigcapital/webapp/components';
+import { Features } from '@bigcapital/webapp/constants';
+import {
+  useAccounts,
+  useBranches,
+  useCreateInventoryAdjustment,
+  useItem,
+  useWarehouses,
+} from '@bigcapital/webapp/hooks/query';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
 // @ts-nocheck
 import React, { useState, createContext } from 'react';
-import { DialogContent } from '@/components';
-import { Features } from '@/constants';
-import { useFeatureCan } from '@/hooks/state';
-import { useItem, useAccounts, useBranches, useWarehouses, useCreateInventoryAdjustment } from '@/hooks/query';
 
 const InventoryAdjustmentContext = createContext();
 

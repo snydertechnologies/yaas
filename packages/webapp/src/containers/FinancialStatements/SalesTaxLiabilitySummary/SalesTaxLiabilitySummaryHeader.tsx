@@ -1,19 +1,19 @@
+import { Button, Intent, Tab, Tabs } from '@blueprintjs/core';
+import { Form, Formik } from 'formik';
+import moment from 'moment';
 // @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
-import moment from 'moment';
-import { Button, Intent, Tab, Tabs } from '@blueprintjs/core';
-import { Formik, Form } from 'formik';
 
-import { FormattedMessage as T } from '@/components';
-import { useFeatureCan } from '@/hooks/state';
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
 import FinancialStatementHeader from '../../FinancialStatements/FinancialStatementHeader';
 
-import { compose, transformToForm } from '@/utils';
+import { compose, transformToForm } from '@bigcapital/webapp/utils';
+import { SalesTaxLiabilitySummaryHeaderGeneral } from './SalesTaxLiabilitySummaryHeaderGeneralPanel';
 import { getDefaultSalesTaxLiablitySummaryQuery, getSalesTaxLiabilitySummaryQueryValidation } from './utils';
 import withSalesTaxLiabilitySummary from './withSalesTaxLiabilitySummary';
 import withSalesTaxLiabilitySummaryActions from './withSalesTaxLiabilitySummaryActions';
-import { SalesTaxLiabilitySummaryHeaderGeneral } from './SalesTaxLiabilitySummaryHeaderGeneralPanel';
 
 /**
  * Sales tax liability summary header.

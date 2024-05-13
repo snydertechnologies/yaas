@@ -1,9 +1,9 @@
+import { ExchangeRateMutedField } from '@bigcapital/webapp/components';
+import { useFormikContext } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { useFormikContext } from 'formik';
-import { useForeignAccount } from './utils';
-import { ExchangeRateMutedField } from '@/components';
 import { useMoneyOutFieldsContext } from './MoneyOutFieldsProvider';
+import { useForeignAccount } from './utils';
 
 /**
  * Money-out exchange rate field.

@@ -1,19 +1,19 @@
-import classNames from 'classnames';
-import React from 'react';
+import { CLASSES } from '@bigcapital/webapp/constants';
 import {
   Card,
   Collapse,
   type CollapseProps,
-  Elevation,
-  Utils,
   DISPLAYNAME_PREFIX,
+  Elevation,
   type HTMLDivProps,
+  IconName,
   type MaybeElement,
   type Props,
-  IconName,
+  Utils,
 } from '@blueprintjs/core';
 import { H6 } from '@blueprintjs/core';
-import { CLASSES } from '@/constants';
+import classNames from 'classnames';
+import React from 'react';
 import { Icon } from '../Icon';
 
 /**

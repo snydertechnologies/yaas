@@ -1,7 +1,7 @@
 // @ts-nocheck
 import styled from 'styled-components';
 
-import '@/style/pages/CashFlow/AccountTransactions/List.scss';
+import '@bigcapital/webapp/style/pages/CashFlow/AccountTransactions/List.scss';
 
 import AccountTransactionsUncategorizedTable from './AccountTransactionsUncategorizedTable';
 import { AccountUncategorizedTransactionsBoot } from './AllTransactionsUncategorizedBoot';

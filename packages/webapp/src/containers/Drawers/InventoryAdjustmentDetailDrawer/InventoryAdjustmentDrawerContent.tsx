@@ -1,9 +1,9 @@
 // @ts-nocheck
 import React from 'react';
 
-import { DrawerBody } from '@/components';
-import { InventoryAdjustmentDrawerProvider } from './InventoryAdjustmentDrawerProvider';
+import { DrawerBody } from '@bigcapital/webapp/components';
 import InventoryAdjustmentDetail from './InventoryAdjustmentDetail';
+import { InventoryAdjustmentDrawerProvider } from './InventoryAdjustmentDrawerProvider';
 
 /**
  * Inventory adjustment drawer content.

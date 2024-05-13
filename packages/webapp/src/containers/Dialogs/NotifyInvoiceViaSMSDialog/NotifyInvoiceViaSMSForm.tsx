@@ -1,16 +1,16 @@
+import { AppToaster } from '@bigcapital/webapp/components';
+import { Intent } from '@blueprintjs/core';
+import { pick } from 'lodash';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { pick } from 'lodash';
-import { Intent } from '@blueprintjs/core';
-import { AppToaster } from '@/components';
 
-import NotifyViaSMSForm from '@/containers/NotifyViaSMS/NotifyViaSMSForm';
+import NotifyViaSMSForm from '@bigcapital/webapp/containers/NotifyViaSMS/NotifyViaSMSForm';
+import { transformErrors } from '@bigcapital/webapp/containers/NotifyViaSMS/utils';
 import { useNotifyInvoiceViaSMSContext } from './NotifyInvoiceViaSMSFormProvider';
-import { transformErrors } from '@/containers/NotifyViaSMS/utils';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { compose } from '@/utils';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { compose } from '@bigcapital/webapp/utils';
 
 const transformFormValuesToRequest = (values) => {
   return pick(values, ['notification_key']);

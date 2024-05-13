@@ -1,8 +1,8 @@
 // @ts-nocheck
 import React from 'react';
 
-import { TableStyle } from '@/constants';
-import { CommercialDocEntriesTable } from '@/components';
+import { TableStyle } from '@bigcapital/webapp/constants';
+import { CommercialDocEntriesTable } from '@bigcapital/webapp/components';
 import { useWarehouseTransferReadOnlyEntriesColumns } from './utils';
 import { useWarehouseDetailDrawerContext } from './WarehouseTransferDetailDrawerProvider';
 

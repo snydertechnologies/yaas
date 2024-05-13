@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { transformTableStateToQuery } from '@/utils';
+import { transformTableStateToQuery } from '@bigcapital/webapp/utils';
 
 export const transformCustomersStateToQuery = (tableState) => {
   return {

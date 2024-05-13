@@ -1,6 +1,6 @@
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { setOrganizationSetupCompleted } from '@/store/organizations/organizations.actions';
+import { setOrganizationSetupCompleted } from '@bigcapital/webapp/store/organizations/organizations.actions';
 
 const mapDispatchToProps = (dispatch) => ({
   setOrganizationSetupCompleted: (congrats) => dispatch(setOrganizationSetupCompleted(congrats)),

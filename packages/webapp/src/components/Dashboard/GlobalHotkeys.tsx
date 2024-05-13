@@ -1,13 +1,13 @@
+import withDashboardActions from '@bigcapital/webapp/containers/Dashboard/withDashboardActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withUniversalSearchActions from '@bigcapital/webapp/containers/UniversalSearch/withUniversalSearchActions';
+import { getDashboardRoutes } from '@bigcapital/webapp/routes/dashboard';
 // @ts-nocheck
 import React from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import { useHistory } from 'react-router-dom';
-import { getDashboardRoutes } from '@/routes/dashboard';
-import withDashboardActions from '@/containers/Dashboard/withDashboardActions';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import withUniversalSearchActions from '@/containers/UniversalSearch/withUniversalSearchActions';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 function GlobalHotkeys({
   // #withDashboardActions

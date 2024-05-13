@@ -1,6 +1,6 @@
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { getCurrentOrganizationFactory } from '@/store/authentication/authentication.selectors';
+import { getCurrentOrganizationFactory } from '@bigcapital/webapp/store/authentication/authentication.selectors';
 
 export default (mapState) => {
   const getCurrentOrganization = getCurrentOrganizationFactory();

@@ -1,18 +1,18 @@
+import { AppToaster } from '@bigcapital/webapp/components';
+import { Intent } from '@blueprintjs/core';
+import { Formik } from 'formik';
 // @ts-nocheck
 import React, { useCallback } from 'react';
 import intl from 'react-intl-universal';
-import { Intent } from '@blueprintjs/core';
-import { Formik } from 'formik';
-import { AppToaster } from '@/components';
 
 import AccountDialogFormContent from './AccountDialogFormContent';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { EditAccountFormSchema, CreateAccountFormSchema } from './AccountForm.schema';
-import { compose, transformToForm } from '@/utils';
-import { transformApiErrors, transformAccountToForm, transformFormToReq } from './utils';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { compose, transformToForm } from '@bigcapital/webapp/utils';
+import { CreateAccountFormSchema, EditAccountFormSchema } from './AccountForm.schema';
+import { transformAccountToForm, transformApiErrors, transformFormToReq } from './utils';
 
-import '@/style/pages/Accounts/AccountFormDialog.scss';
+import '@bigcapital/webapp/style/pages/Accounts/AccountFormDialog.scss';
 import { useAccountDialogContext } from './AccountDialogProvider';
 
 // Default initial form values.

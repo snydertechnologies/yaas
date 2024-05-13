@@ -1,7 +1,7 @@
+import { DialogContent } from '@bigcapital/webapp/components';
+import { useSaleEstimateDefaultOptions } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React, { createContext } from 'react';
-import { useSaleEstimateDefaultOptions } from '@/hooks/query';
-import { DialogContent } from '@/components';
 
 interface EstimateMailDialogBootValues {
   estimateId: number;

@@ -1,27 +1,27 @@
-// @ts-nocheck
-import React from 'react';
-import classNames from 'classnames';
-import styled from 'styled-components';
 import { FormGroup, InputGroup, Position } from '@blueprintjs/core';
 import { DateInput } from '@blueprintjs/datetime';
-import { FastField, ErrorMessage, useFormikContext } from 'formik';
+import classNames from 'classnames';
+import { ErrorMessage, FastField, useFormikContext } from 'formik';
+// @ts-nocheck
+import React from 'react';
+import styled from 'styled-components';
 
-import { CLASSES } from '@/constants/classes';
 import {
+  CustomerDrawerLink,
+  CustomersSelect,
+  FFormGroup,
   FieldRequiredHint,
   Icon,
   FormattedMessage as T,
-  CustomerDrawerLink,
-  FFormGroup,
-  CustomersSelect,
-} from '@/components';
+} from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
 import { customerNameFieldShouldUpdate } from './utils';
 
+import { useCustomerUpdateExRate } from '@bigcapital/webapp/containers/Entries/withExRateItemEntriesPriceRecalc';
+import { handleDateChange, inputIntent, momentFormatter, tansformDateValue } from '@bigcapital/webapp/utils';
 import { useCreditNoteFormContext } from './CreditNoteFormProvider';
-import { CreditNoteExchangeRateInputField } from './components';
 import { CreditNoteTransactionNoField } from './CreditNoteTransactionNoField';
-import { momentFormatter, tansformDateValue, inputIntent, handleDateChange } from '@/utils';
-import { useCustomerUpdateExRate } from '@/containers/Entries/withExRateItemEntriesPriceRecalc';
+import { CreditNoteExchangeRateInputField } from './components';
 
 /**
  * Credit note form header fields.

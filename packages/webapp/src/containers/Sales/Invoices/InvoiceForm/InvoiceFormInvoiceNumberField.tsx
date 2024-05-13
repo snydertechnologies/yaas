@@ -1,19 +1,19 @@
-// @ts-nocheck
-import React from 'react';
-import { Position, ControlGroup } from '@blueprintjs/core';
-import { useFormikContext } from 'formik';
-import * as R from 'ramda';
 import {
   FFormGroup,
-  FormattedMessage as T,
+  FInputGroup,
   FieldRequiredHint,
   Icon,
   InputPrependButton,
-  FInputGroup,
-} from '@/components';
-import { DialogsName } from '@/constants/dialogs';
-import withSettings from '@/containers/Settings/withSettings';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import { ControlGroup, Position } from '@blueprintjs/core';
+import { useFormikContext } from 'formik';
+import * as R from 'ramda';
+// @ts-nocheck
+import React from 'react';
 
 /**
  * Invoice number field of invoice form.

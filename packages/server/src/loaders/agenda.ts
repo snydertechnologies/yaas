@@ -1,4 +1,4 @@
-import config from '@/config';
+import config from '@bigcapital/server/config';
 import Agenda from 'agenda';
 
 export default ({ mongoConnection }) => {

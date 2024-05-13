@@ -1,11 +1,11 @@
+import { useFormikContext } from 'formik';
 // @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
-import { useFormikContext } from 'formik';
 
-import { T, TotalLines, TotalLine, TotalLineBorderStyle, TotalLineTextStyle } from '@/components';
+import { T, TotalLine, TotalLineBorderStyle, TotalLineTextStyle, TotalLines } from '@bigcapital/webapp/components';
+import { TaxType } from '@bigcapital/webapp/interfaces/TaxRates';
 import { useInvoiceAggregatedTaxRates, useInvoiceTotals } from './utils';
-import { TaxType } from '@/interfaces/TaxRates';
 
 export function InvoiceFormFooterRight() {
   // Calculate the total due amount of invoice entries.

@@ -1,8 +1,8 @@
+import { Dialog, DialogSuspense, FormattedMessage as T } from '@bigcapital/webapp/components';
+import withDialogRedux from '@bigcapital/webapp/components/DialogReduxConnect';
+import { compose, saveInvoke } from '@bigcapital/webapp/utils';
 // @ts-nocheck
 import React, { lazy } from 'react';
-import { Dialog, DialogSuspense, FormattedMessage as T } from '@/components';
-import withDialogRedux from '@/components/DialogReduxConnect';
-import { saveInvoke, compose } from '@/utils';
 
 const EstimateNumberDialogContent = lazy(() => import('./EstimateNumberDialogContent'));
 

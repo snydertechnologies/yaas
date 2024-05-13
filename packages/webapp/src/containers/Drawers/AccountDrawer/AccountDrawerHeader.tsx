@@ -2,7 +2,7 @@
 import React from 'react';
 import { isEmpty } from 'lodash';
 
-import { Icon, DetailsMenu, DetailItem, FormattedMessage as T } from '@/components';
+import { Icon, DetailsMenu, DetailItem, FormattedMessage as T } from '@bigcapital/webapp/components';
 import { useAccountDrawerContext } from './AccountDrawerProvider';
 
 /**

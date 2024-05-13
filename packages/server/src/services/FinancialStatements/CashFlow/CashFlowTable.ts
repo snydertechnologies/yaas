@@ -5,12 +5,12 @@ import {
   IDateRange,
   ITableColumn,
   ITableRow,
-} from '@/interfaces';
+} from '@bigcapital/server/interfaces';
+import { dateRangeFromToCollection, tableRowMapper } from '@bigcapital/server/utils';
+import { mapValuesDeep } from '@bigcapital/server/utils/deepdash';
 import { isEmpty } from 'lodash';
 import moment from 'moment';
 import * as R from 'ramda';
-import { dateRangeFromToCollection, tableRowMapper } from 'utils';
-import { mapValuesDeep } from 'utils/deepdash';
 
 enum IROW_TYPE {
   AGGREGATE = 'AGGREGATE',

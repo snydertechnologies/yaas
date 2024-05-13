@@ -1,5 +1,5 @@
-import { ACCOUNT_TYPE } from '@/data/AccountTypes';
-import { BALANCE_SHEET_SCHEMA_NODE_ID, BALANCE_SHEET_SCHEMA_NODE_TYPE } from '@/interfaces';
+import { ACCOUNT_TYPE } from '@bigcapital/server/data/AccountTypes';
+import { BALANCE_SHEET_SCHEMA_NODE_ID, BALANCE_SHEET_SCHEMA_NODE_TYPE } from '@bigcapital/server/interfaces';
 import * as R from 'ramda';
 import { FinancialSchema } from '../FinancialSchema';
 

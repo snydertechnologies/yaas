@@ -1,4 +1,4 @@
-import { IJournalReportQuery, IJournalTable } from '@/interfaces';
+import { IJournalReportQuery, IJournalTable } from '@bigcapital/server/interfaces';
 import { Inject } from 'typedi';
 import { JournalSheetExportInjectable } from './JournalSheetExport';
 import { JournalSheetPdfInjectable } from './JournalSheetPdfInjectable';

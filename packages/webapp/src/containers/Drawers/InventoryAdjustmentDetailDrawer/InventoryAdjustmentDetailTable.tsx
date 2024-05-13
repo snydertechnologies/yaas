@@ -1,9 +1,9 @@
 // @ts-nocheck
 import React from 'react';
 
-import { CommercialDocEntriesTable } from '@/components';
-import { useInventoryAdjustmentEntriesColumns } from './utils';
+import { CommercialDocEntriesTable } from '@bigcapital/webapp/components';
 import { useInventoryAdjustmentDrawerContext } from './InventoryAdjustmentDrawerProvider';
+import { useInventoryAdjustmentEntriesColumns } from './utils';
 
 /**
  * Inventory adjustment detail entries table.

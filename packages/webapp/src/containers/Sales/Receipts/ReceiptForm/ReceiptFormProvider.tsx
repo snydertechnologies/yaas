@@ -1,20 +1,20 @@
+import { DashboardInsider } from '@bigcapital/webapp/components/Dashboard';
+import { Features } from '@bigcapital/webapp/constants';
+import { useProjects } from '@bigcapital/webapp/containers/Projects/hooks';
+import {
+  useAccounts,
+  useBranches,
+  useCreateReceipt,
+  useCustomers,
+  useEditReceipt,
+  useItems,
+  useReceipt,
+  useSettingsReceipts,
+  useWarehouses,
+} from '@bigcapital/webapp/hooks/query';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
 // @ts-nocheck
 import React, { createContext, useState } from 'react';
-import { Features } from '@/constants';
-import { useFeatureCan } from '@/hooks/state';
-import { DashboardInsider } from '@/components/Dashboard';
-import {
-  useReceipt,
-  useAccounts,
-  useSettingsReceipts,
-  useCustomers,
-  useWarehouses,
-  useBranches,
-  useItems,
-  useCreateReceipt,
-  useEditReceipt,
-} from '@/hooks/query';
-import { useProjects } from '@/containers/Projects/hooks';
 
 const ReceiptFormContext = createContext();
 

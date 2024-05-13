@@ -1,21 +1,21 @@
+import { Intent } from '@blueprintjs/core';
+import { Formik } from 'formik';
+import { get, omit } from 'lodash';
+import moment from 'moment';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import moment from 'moment';
-import { Intent } from '@blueprintjs/core';
-import { Formik } from 'formik';
-import { omit, get } from 'lodash';
 
-import '@/style/pages/Items/ItemAdjustmentDialog.scss';
+import '@bigcapital/webapp/style/pages/Items/ItemAdjustmentDialog.scss';
 
-import { AppToaster } from '@/components';
+import { AppToaster } from '@bigcapital/webapp/components';
 import { CreateInventoryAdjustmentFormSchema } from './InventoryAdjustmentForm.schema';
 
 import InventoryAdjustmentFormContent from './InventoryAdjustmentFormContent';
 import { useInventoryAdjContext } from './InventoryAdjustmentFormProvider';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { compose } from '@/utils';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { compose } from '@bigcapital/webapp/utils';
 
 const defaultInitialValues = {
   date: moment(new Date()).format('YYYY-MM-DD'),

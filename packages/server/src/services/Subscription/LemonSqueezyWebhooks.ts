@@ -1,5 +1,5 @@
-import config from '@/config';
-import { Plan } from '@/system/models';
+import config from '@bigcapital/server/config';
+import { Plan } from '@bigcapital/server/system/models';
 import { getPrice } from '@lemonsqueezy/lemonsqueezy.js';
 import { Inject, Service } from 'typedi';
 import { Subscription } from './Subscription';

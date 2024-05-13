@@ -1,6 +1,9 @@
+import {
+  getProjectsTableStateFactory,
+  isProjectsTableStateChangedFactory,
+} from '@bigcapital/webapp/store/Project/projects.selectors';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { getProjectsTableStateFactory, isProjectsTableStateChangedFactory } from '@/store/Project/projects.selectors';
 
 export default (mapState) => {
   const getProjectsTableState = getProjectsTableStateFactory();

@@ -1,6 +1,6 @@
+import { getInventroyAdjsTableStateFactory } from '@bigcapital/webapp/store/inventoryAdjustments/inventoryAdjustment.selector';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { getInventroyAdjsTableStateFactory } from '@/store/inventoryAdjustments/inventoryAdjustment.selector';
 
 export default (mapState) => {
   const getInventoryAdjustmentTableState = getInventroyAdjsTableStateFactory();

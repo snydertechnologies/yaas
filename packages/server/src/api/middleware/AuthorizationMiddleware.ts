@@ -1,5 +1,5 @@
-import { IRole, IRolePremission, ISystemUser } from '@/interfaces';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { IRole, IRolePremission, ISystemUser } from '@bigcapital/server/interfaces';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Ability } from '@casl/ability';
 import { NextFunction, Request, Response } from 'express';
 import LruCache from 'lru-cache';

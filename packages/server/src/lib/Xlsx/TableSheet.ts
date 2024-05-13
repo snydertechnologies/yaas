@@ -1,5 +1,5 @@
-import type { ITableData } from '@/interfaces';
-import { FinancialTableStructure } from '@/services/FinancialStatements/FinancialTableStructure';
+import type { ITableData } from '@bigcapital/server/interfaces';
+import { FinancialTableStructure } from '@bigcapital/server/services/FinancialStatements/FinancialTableStructure';
 import { type WorkBook, utils, write } from 'xlsx';
 
 interface ITableSheet {

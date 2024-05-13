@@ -2,8 +2,14 @@
 import React from 'react';
 import intl from 'react-intl-universal';
 import { Button, Popover, PopoverInteractionKind, Position, MenuItem, Menu, Tag, Intent } from '@blueprintjs/core';
-import { getColumnWidth } from '@/utils';
-import { Icon, FormattedMessage as T, TextOverviewTooltipCell, FormatNumberCell, Choose } from '@/components';
+import { getColumnWidth } from '@bigcapital/webapp/utils';
+import {
+  Icon,
+  FormattedMessage as T,
+  TextOverviewTooltipCell,
+  FormatNumberCell,
+  Choose,
+} from '@bigcapital/webapp/components';
 import { useCreditNoteDetailDrawerContext } from './CreditNoteDetailDrawerProvider';
 
 export const useCreditNoteReadOnlyEntriesColumns = () => {

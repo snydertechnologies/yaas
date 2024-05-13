@@ -1,17 +1,17 @@
 // @ts-nocheck
 import React from 'react';
 import { Button, Classes, NavbarGroup, Intent, NavbarDivider } from '@blueprintjs/core';
-import { DashboardActionsBar, Icon, Can, FormattedMessage as T } from '@/components';
+import { DashboardActionsBar, Icon, Can, FormattedMessage as T } from '@bigcapital/webapp/components';
 
-import { AccountAction, AbilitySubject } from '@/constants/abilityOption';
-import { DialogsName } from '@/constants/dialogs';
+import { AccountAction, AbilitySubject } from '@bigcapital/webapp/constants/abilityOption';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import withAlertsActions from '@/containers/Alert/withAlertActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
 
-import { AccountDialogAction } from '@/containers/Dialogs/AccountDialog/utils';
+import { AccountDialogAction } from '@bigcapital/webapp/containers/Dialogs/AccountDialog/utils';
 import { useAccountDrawerContext } from './AccountDrawerProvider';
-import { compose, safeCallback } from '@/utils';
+import { compose, safeCallback } from '@bigcapital/webapp/utils';
 
 /**
  * Account drawer action bar.

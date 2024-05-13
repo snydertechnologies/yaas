@@ -1,6 +1,6 @@
+import { Choose } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import React from 'react';
-import { Choose } from '@/components';
 import BigcapitalLoading from './BigcapitalLoading';
 
 /**

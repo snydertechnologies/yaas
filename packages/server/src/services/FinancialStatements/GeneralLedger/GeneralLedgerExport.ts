@@ -1,5 +1,5 @@
-import { IGeneralLedgerSheetQuery } from '@/interfaces';
-import { TableSheet } from '@/lib/Xlsx/TableSheet';
+import { IGeneralLedgerSheetQuery } from '@bigcapital/server/interfaces';
+import { TableSheet } from '@bigcapital/server/lib/Xlsx/TableSheet';
 import { Inject, Service } from 'typedi';
 import { GeneralLedgerTableInjectable } from './GeneralLedgerTableInjectable';
 

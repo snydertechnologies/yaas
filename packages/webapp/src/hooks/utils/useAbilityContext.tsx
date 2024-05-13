@@ -1,7 +1,7 @@
+import { AbilityContext } from '@bigcapital/webapp/components';
+import { useAbility } from '@casl/react';
 // @ts-nocheck
 import React from 'react';
-import { useAbility } from '@casl/react';
-import { AbilityContext } from '@/components';
 
 export const useAbilityContext = () => useAbility(AbilityContext);
 

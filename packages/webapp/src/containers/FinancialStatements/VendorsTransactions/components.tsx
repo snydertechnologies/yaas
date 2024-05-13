@@ -1,14 +1,14 @@
+import { Classes, Intent, Menu, MenuItem, ProgressBar, Text } from '@blueprintjs/core';
+import classNames from 'classnames';
 // @ts-nocheck
 import React, { useRef } from 'react';
 import intl from 'react-intl-universal';
-import { Classes, Intent, Menu, MenuItem, ProgressBar, Text } from '@blueprintjs/core';
-import classNames from 'classnames';
 
-import { AppToaster, If, Stack } from '@/components';
-import { useVendorsTransactionsContext } from './VendorsTransactionsProvider';
+import { AppToaster, If, Stack } from '@bigcapital/webapp/components';
+import { useVendorsTransactionsCsvExport, useVendorsTransactionsXlsxExport } from '@bigcapital/webapp/hooks/query';
+import { getColumnWidth } from '@bigcapital/webapp/utils';
 import FinancialLoadingBar from '../FinancialLoadingBar';
-import { getColumnWidth } from '@/utils';
-import { useVendorsTransactionsCsvExport, useVendorsTransactionsXlsxExport } from '@/hooks/query';
+import { useVendorsTransactionsContext } from './VendorsTransactionsProvider';
 
 /**
  * Retrieve vendors transactions columns.

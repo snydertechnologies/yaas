@@ -1,20 +1,20 @@
+import moment from 'moment';
 // @ts-nocheck
 import React, { useCallback, useEffect } from 'react';
-import moment from 'moment';
 
-import GeneralLedgerHeader from './GeneralLedgerHeader';
+import { DashboardPageContent, FinancialStatement } from '@bigcapital/webapp/components';
 import GeneralLedgerActionsBar from './GeneralLedgerActionsBar';
 import { GeneralLedgerBody } from './GeneralLedgerBody';
-import { useGeneralLedgerQuery } from './common';
+import GeneralLedgerHeader from './GeneralLedgerHeader';
 import { GeneralLedgerProvider } from './GeneralLedgerProvider';
-import { FinancialStatement, DashboardPageContent } from '@/components';
+import { useGeneralLedgerQuery } from './common';
 
 import { GeneralLedgerSheetAlerts, GeneralLedgerSheetLoadingBar } from './components';
 
-import withGeneralLedgerActions from './withGeneralLedgerActions';
-import { compose } from '@/utils';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import { compose } from '@bigcapital/webapp/utils';
 import { GeneralLedgerPdfDialog } from './dialogs/GeneralLedgerPdfDialog';
-import { DialogsName } from '@/constants/dialogs';
+import withGeneralLedgerActions from './withGeneralLedgerActions';
 
 /**
  * General Ledger (GL) sheet.

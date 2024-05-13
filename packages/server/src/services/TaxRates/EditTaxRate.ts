@@ -1,6 +1,6 @@
-import { IEditTaxRateDTO, ITaxRate, ITaxRateEditedPayload, ITaxRateEditingPayload } from '@/interfaces';
-import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';
-import events from '@/subscribers/events';
+import { IEditTaxRateDTO, ITaxRate, ITaxRateEditedPayload, ITaxRateEditingPayload } from '@bigcapital/server/interfaces';
+import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
+import events from '@bigcapital/server/subscribers/events';
 import { Knex } from 'knex';
 import { omit } from 'lodash';
 import { Inject, Service } from 'typedi';

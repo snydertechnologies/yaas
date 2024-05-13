@@ -1,4 +1,4 @@
-import { IItem, IItemCreateDTO, IItemEditDTO, IItemsFilter } from '@/interfaces';
+import { IItem, IItemCreateDTO, IItemEditDTO, IItemsFilter } from '@bigcapital/server/interfaces';
 import { Inject, Service } from 'typedi';
 import { ActivateItem } from './ActivateItem';
 import { CreateItem } from './CreateItem';

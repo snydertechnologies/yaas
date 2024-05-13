@@ -1,4 +1,4 @@
-import { ACCOUNT_ROOT_TYPE } from '@/data/AccountTypes';
+import { ACCOUNT_ROOT_TYPE } from '@bigcapital/server/data/AccountTypes';
 import {
   IAccount,
   ICashFlowCashBeginningNode,
@@ -17,14 +17,14 @@ import {
   ICashFlowStatementTotalSection,
   ILedger,
   INumberFormatQuery,
-} from '@/interfaces';
-import I18nService from '@/services/I18n/I18nService';
+} from '@bigcapital/server/interfaces';
+import I18nService from '@bigcapital/server/services/I18n/I18nService';
+import { accumSum, transformToMapBy } from '@bigcapital/server/utils';
 import { defaultTo, get, isEmpty, map, mapValues, set, sumBy } from 'lodash';
 import { compose } from 'lodash/fp';
 import * as mathjs from 'mathjs';
 import moment from 'moment';
 import * as R from 'ramda';
-import { accumSum, transformToMapBy } from 'utils';
 import FinancialSheet from '../FinancialSheet';
 import { FinancialSheetStructure } from '../FinancialSheetStructure';
 import { CashFlowStatementDatePeriods } from './CashFlowDatePeriods';

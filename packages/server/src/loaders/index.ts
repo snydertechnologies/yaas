@@ -1,14 +1,14 @@
-import objectionLoader from '@/database/objection';
-import databaseLoader from '@/loaders/database';
-import dependencyInjectorLoader from '@/loaders/dependencyInjector';
-import expressLoader from '@/loaders/express';
-import i18nConfig from '@/loaders/i18n';
-import jobsLoader from '@/loaders/jobs';
-import Logger from '@/loaders/logger';
-import mongooseLoader from '@/loaders/mongoose';
+import objectionLoader from '@bigcapital/server/database/objection';
+import databaseLoader from '@bigcapital/server/loaders/database';
+import dependencyInjectorLoader from '@bigcapital/server/loaders/dependencyInjector';
+import expressLoader from '@bigcapital/server/loaders/express';
+import i18nConfig from '@bigcapital/server/loaders/i18n';
+import jobsLoader from '@bigcapital/server/loaders/jobs';
+import Logger from '@bigcapital/server/loaders/logger';
+import mongooseLoader from '@bigcapital/server/loaders/mongoose';
 
 // We have to import at least all the events once so they can be triggered
-// import '@/loaders/events';
+// import '@bigcapital/server/loaders/events';
 
 export default async ({ expressApp }) => {
   const mongoConnection = await mongooseLoader();

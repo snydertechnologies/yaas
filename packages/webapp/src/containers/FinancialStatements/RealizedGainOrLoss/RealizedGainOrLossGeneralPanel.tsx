@@ -1,7 +1,7 @@
 // @ts-nocheck
 import React from 'react';
 
-import { Row, Col } from '@/components';
+import { Col, Row } from '@bigcapital/webapp/components';
 import FinancialStatementDateRange from '../FinancialStatementDateRange';
 import SelectDisplayColumnsBy from '../SelectDisplayColumnsBy';
 

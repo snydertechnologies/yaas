@@ -1,21 +1,27 @@
-// @ts-nocheck
-import React from 'react';
-import styled from 'styled-components';
-import classNames from 'classnames';
-import { Form } from 'formik';
 import { Button, FormGroup, Intent } from '@blueprintjs/core';
 import { TimezonePicker } from '@blueprintjs/timezone';
+import classNames from 'classnames';
+import { Form } from 'formik';
 import { ErrorMessage, FastField } from 'formik';
+// @ts-nocheck
+import React from 'react';
 import { useHistory } from 'react-router-dom';
+import styled from 'styled-components';
 
-import { FieldRequiredHint, FormattedMessage as T, FFormGroup, FInputGroup, FSelect } from '@/components';
-import { inputIntent } from '@/utils';
-import { CLASSES } from '@/constants/classes';
-import { getAllCurrenciesOptions } from '@/constants/currencies';
-import { getFiscalYear } from '@/constants/fiscalYearOptions';
-import { getLanguages } from '@/constants/languagesOptions';
+import {
+  FFormGroup,
+  FInputGroup,
+  FSelect,
+  FieldRequiredHint,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { getAllCurrenciesOptions } from '@bigcapital/webapp/constants/currencies';
+import { getFiscalYear } from '@bigcapital/webapp/constants/fiscalYearOptions';
+import { getLanguages } from '@bigcapital/webapp/constants/languagesOptions';
+import { inputIntent } from '@bigcapital/webapp/utils';
+import { getAllCountries } from '@bigcapital/webapp/utils/countries';
 import { useGeneralFormContext } from './GeneralFormProvider';
-import { getAllCountries } from '@/utils/countries';
 
 import { shouldBaseCurrencyUpdate } from './utils';
 

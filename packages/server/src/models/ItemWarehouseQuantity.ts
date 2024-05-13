@@ -1,4 +1,4 @@
-import TenantModel from 'models/TenantModel';
+import TenantModel from '@bigcapital/server/models/TenantModel';
 import { Model } from 'objection';
 
 export default class ItemWarehouseQuantity extends TenantModel {
@@ -10,8 +10,8 @@ export default class ItemWarehouseQuantity extends TenantModel {
   }
 
   static get relationMappings() {
-    const Item = require('models/Item');
-    const Warehouse = require('models/Warehouse');
+    const Item = require('@bigcapital/server/models/Item');
+    const Warehouse = require('@bigcapital/server/models/Warehouse');
 
     return {
       item: {

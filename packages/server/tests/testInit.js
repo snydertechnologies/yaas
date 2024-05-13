@@ -1,14 +1,14 @@
-import createTenantFactory from '@/database/factories';
-import createSystemFactory from '@/database/factories/system';
-import systemDb from '@/database/knex';
-import TenantsManager from '@/system/TenantsManager';
+import createTenantFactory from '@bigcapital/server/database/factories';
+import createSystemFactory from '@bigcapital/server/database/factories/system';
+import systemDb from '@bigcapital/server/database/knex';
+import TenantModel from '@bigcapital/server/models/TenantModel';
+import TenantsManager from '@bigcapital/server/system/TenantsManager';
+import { hashPassword } from '@bigcapital/server/utils';
 import app from 'app';
 import chai from 'chai';
 import chaiHttp from 'chai-http';
 import chaiThings from 'chai-things';
 import faker from 'faker';
-import TenantModel from 'models/TenantModel';
-import { hashPassword } from 'utils';
 
 const { expect } = chai;
 const request = () => chai.request(app);

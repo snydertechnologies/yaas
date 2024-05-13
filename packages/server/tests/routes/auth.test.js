@@ -1,8 +1,8 @@
-import knex from '@/database/knex';
-import PasswordReset from '@/system/models/PasswordReset';
-import SystemUser from '@/system/models/SystemUser';
-import TenantUser from 'models/TenantUser';
-import { hashPassword } from 'utils';
+import knex from '@bigcapital/server/database/knex';
+import TenantUser from '@bigcapital/server/models/TenantUser';
+import PasswordReset from '@bigcapital/server/system/models/PasswordReset';
+import SystemUser from '@bigcapital/server/system/models/SystemUser';
+import { hashPassword } from '@bigcapital/server/utils';
 import { systemFactory, tenantWebsite } from '~/dbInit';
 import { createUser, expect, request } from '~/testInit';
 

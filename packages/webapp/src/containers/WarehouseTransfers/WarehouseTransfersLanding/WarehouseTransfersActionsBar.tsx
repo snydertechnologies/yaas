@@ -1,24 +1,24 @@
+import {
+  AdvancedFilterPopover,
+  DashboardActionViewsList,
+  DashboardActionsBar,
+  DashboardFilterButton,
+  DashboardRowsHeightButton,
+  Icon,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import { Alignment, Button, Classes, NavbarDivider, NavbarGroup } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { Button, Classes, NavbarDivider, NavbarGroup, Alignment } from '@blueprintjs/core';
-import {
-  Icon,
-  FormattedMessage as T,
-  AdvancedFilterPopover,
-  DashboardFilterButton,
-  DashboardRowsHeightButton,
-  DashboardActionViewsList,
-  DashboardActionsBar,
-} from '@/components';
 
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import withSettingsActions from '@bigcapital/webapp/containers/Settings/withSettingsActions';
 import { useWarehouseTranfersListContext } from './WarehouseTransfersListProvider';
-import withSettings from '@/containers/Settings/withSettings';
-import withSettingsActions from '@/containers/Settings/withSettingsActions';
 import withWarehouseTransfers from './withWarehouseTransfers';
 import withWarehouseTransfersActions from './withWarehouseTransfersActions';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Warehouse Transfers actions bar.

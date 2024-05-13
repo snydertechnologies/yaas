@@ -2,15 +2,15 @@
 import React from 'react';
 import intl from 'react-intl-universal';
 
-import ReferenceNumberForm from '@/containers/JournalNumber/ReferenceNumberForm';
-import { useSaveSettings } from '@/hooks/query';
+import ReferenceNumberForm from '@bigcapital/webapp/containers/JournalNumber/ReferenceNumberForm';
+import { useSaveSettings } from '@bigcapital/webapp/hooks/query';
 import { WarehouseTransferNumberDialogProvider } from './WarehouseTransferNumberDialogProvider';
 
-import withSettings from '@/containers/Settings/withSettings';
-import withSettingsActions from '@/containers/Settings/withSettingsActions';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { compose } from '@/utils';
-import { transformFormToSettings, transformSettingsToForm } from '@/containers/JournalNumber/utils';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { transformFormToSettings, transformSettingsToForm } from '@bigcapital/webapp/containers/JournalNumber/utils';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import withSettingsActions from '@bigcapital/webapp/containers/Settings/withSettingsActions';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Warehouse transfer no dialog content.

@@ -1,12 +1,12 @@
 // @ts-nocheck
 import intl from 'react-intl-universal';
 
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
 
-import { RESOURCES_TYPES } from '@/constants/resourcesTypes';
-import { DRAWERS } from '@/constants/drawers';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import { RESOURCES_TYPES } from '@bigcapital/webapp/constants/resourcesTypes';
 
-import { AbilitySubject, ItemAction } from '@/constants/abilityOption';
+import { AbilitySubject, ItemAction } from '@bigcapital/webapp/constants/abilityOption';
 
 /**
  * Item univrsal search item select action.

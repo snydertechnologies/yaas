@@ -1,8 +1,8 @@
-// @ts-nocheck
-import React from 'react';
+import { Col, ListSelect, Row, FormattedMessage as T } from '@bigcapital/webapp/components';
 import { FormGroup } from '@blueprintjs/core';
 import { FastField } from 'formik';
-import { Row, Col, ListSelect, FormattedMessage as T } from '@/components';
+// @ts-nocheck
+import React from 'react';
 import { displayColumnsByOptions } from './constants';
 
 /**

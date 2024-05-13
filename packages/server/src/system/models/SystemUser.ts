@@ -1,5 +1,5 @@
-import SoftDeleteQueryBuilder from '@/collection/SoftDeleteQueryBuilder';
-import SystemModel from '@/system/models/SystemModel';
+import SoftDeleteQueryBuilder from '@bigcapital/server/collection/SoftDeleteQueryBuilder';
+import SystemModel from '@bigcapital/server/system/models/SystemModel';
 import bcrypt from 'bcryptjs';
 import { Model } from 'objection';
 
@@ -73,7 +73,7 @@ export default class SystemUser extends SystemModel {
    * Relationship mapping.
    */
   static get relationMappings() {
-    const Tenant = require('system/models/Tenant');
+    const Tenant = require('@bigcapital/server/system/models/Tenant');
 
     return {
       /**

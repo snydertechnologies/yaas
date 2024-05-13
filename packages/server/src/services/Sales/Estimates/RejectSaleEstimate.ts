@@ -1,8 +1,8 @@
-import { ServiceError } from '@/exceptions';
-import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';
-import TenancyService from '@/services/Tenancy/TenancyService';
-import UnitOfWork from '@/services/UnitOfWork';
-import events from '@/subscribers/events';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
+import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import UnitOfWork from '@bigcapital/server/services/UnitOfWork';
+import events from '@bigcapital/server/subscribers/events';
 import { Knex } from 'knex';
 import moment from 'moment';
 import { Inject, Service } from 'typedi';

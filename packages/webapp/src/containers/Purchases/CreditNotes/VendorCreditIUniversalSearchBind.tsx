@@ -1,13 +1,13 @@
+import { Intent, MenuItem } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { MenuItem, Intent } from '@blueprintjs/core';
 
-import { TextStatus, Icon, Choose, T } from '@/components';
-import { RESOURCES_TYPES } from '@/constants/resourcesTypes';
-import { AbilitySubject, VendorCreditAction } from '@/constants/abilityOption';
-import { DRAWERS } from '@/constants/drawers';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
+import { Choose, Icon, T, TextStatus } from '@bigcapital/webapp/components';
+import { AbilitySubject, VendorCreditAction } from '@bigcapital/webapp/constants/abilityOption';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import { RESOURCES_TYPES } from '@bigcapital/webapp/constants/resourcesTypes';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
 
 /**
  * Vendor credit universal search item select action.

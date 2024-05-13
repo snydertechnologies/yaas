@@ -1,4 +1,4 @@
-import { ACCOUNT_TYPES } from '@/data/AccountTypes';
+import { ACCOUNT_TYPES } from '@bigcapital/server/data/AccountTypes';
 import { get } from 'lodash';
 
 export default class AccountTypesUtils {

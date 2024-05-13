@@ -1,7 +1,7 @@
+import { DialogContent } from '@bigcapital/webapp/components';
+import { useCreateNotifyEstimateBySMS, useEstimateSMSDetail } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React from 'react';
-import { DialogContent } from '@/components';
-import { useEstimateSMSDetail, useCreateNotifyEstimateBySMS } from '@/hooks/query';
 
 const NotifyEstimateViaSMSContext = React.createContext();
 

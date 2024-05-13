@@ -1,4 +1,4 @@
-import { ServiceError } from '@/exceptions';
+import { ServiceError } from '@bigcapital/server/exceptions';
 import {
   IEditUserDTO,
   ISystemUser,
@@ -7,12 +7,12 @@ import {
   ITenantUserDeletedPayload,
   ITenantUserEditedPayload,
   ITenantUserInactivatedPayload,
-} from '@/interfaces';
-import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';
-import { TransformerInjectable } from '@/lib/Transformer/TransformerInjectable';
-import RolesService from '@/services/Roles/RolesService';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
-import events from '@/subscribers/events';
+} from '@bigcapital/server/interfaces';
+import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
+import { TransformerInjectable } from '@bigcapital/server/lib/Transformer/TransformerInjectable';
+import RolesService from '@bigcapital/server/services/Roles/RolesService';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 import { UserTransformer } from './UserTransformer';
 import { ERRORS } from './constants';

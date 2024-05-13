@@ -1,4 +1,4 @@
-import config from '@/config';
+import config from '@bigcapital/server/config';
 import {
   IInventoryItemCostScheduledPayload,
   IInventoryLotCost,
@@ -8,14 +8,14 @@ import {
   IItemEntry,
   IItemEntryTransactionType,
   TInventoryTransactionDirection,
-} from '@/interfaces';
-import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';
-import InventoryAverageCost from '@/services/Inventory/InventoryAverageCost';
-import InventoryCostLotTracker from '@/services/Inventory/InventoryCostLotTracker';
-import ItemsEntriesService from '@/services/Items/ItemsEntriesService';
-import TenancyService from '@/services/Tenancy/TenancyService';
-import UnitOfWork from '@/services/UnitOfWork';
-import events from '@/subscribers/events';
+} from '@bigcapital/server/interfaces';
+import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
+import InventoryAverageCost from '@bigcapital/server/services/Inventory/InventoryAverageCost';
+import InventoryCostLotTracker from '@bigcapital/server/services/Inventory/InventoryCostLotTracker';
+import ItemsEntriesService from '@bigcapital/server/services/Items/ItemsEntriesService';
+import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import UnitOfWork from '@bigcapital/server/services/UnitOfWork';
+import events from '@bigcapital/server/subscribers/events';
 import { Knex } from 'knex';
 import { pick } from 'lodash';
 import { Container, Inject, Service } from 'typedi';

@@ -1,7 +1,7 @@
 // @ts-nocheck
 import { createReducer } from '@reduxjs/toolkit';
 import { omit } from 'lodash';
-import t from '@/store/types';
+import t from '@bigcapital/webapp/store/types';
 
 const initialState = {
   data: {},

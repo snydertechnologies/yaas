@@ -1,5 +1,5 @@
-import MetableCollection from '@/lib/Metable/MetableCollection';
-import ResourceFieldMetadata from 'models/ResourceFieldMetadata';
+import MetableCollection from '@bigcapital/server/lib/Metable/MetableCollection';
+import ResourceFieldMetadata from '@bigcapital/server/models/ResourceFieldMetadata';
 
 export default class ResourceFieldMetadataCollection extends MetableCollection {
   /**

@@ -1,32 +1,32 @@
+import { Alignment, Button, Classes, Intent, NavbarDivider, NavbarGroup, Switch } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { NavbarGroup, NavbarDivider, Button, Classes, Intent, Switch, Alignment } from '@blueprintjs/core';
 
 import {
-  If,
-  Can,
-  Icon,
-  FormattedMessage as T,
-  DashboardActionViewsList,
-  DashboardFilterButton,
-  DashboardActionsBar,
-  DashboardRowsHeightButton,
   AdvancedFilterPopover,
-} from '@/components';
+  Can,
+  DashboardActionViewsList,
+  DashboardActionsBar,
+  DashboardFilterButton,
+  DashboardRowsHeightButton,
+  Icon,
+  If,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
 
-import { useRefreshVendors } from '@/hooks/query/vendors';
-import { VendorAction, AbilitySubject } from '@/constants/abilityOption';
-import { useVendorsListContext } from './VendorsListProvider';
+import { AbilitySubject, VendorAction } from '@bigcapital/webapp/constants/abilityOption';
+import { useRefreshVendors } from '@bigcapital/webapp/hooks/query/vendors';
 import { useHistory } from 'react-router-dom';
+import { useVendorsListContext } from './VendorsListProvider';
 
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import withSettingsActions from '@bigcapital/webapp/containers/Settings/withSettingsActions';
 import withVendors from './withVendors';
 import withVendorsActions from './withVendorsActions';
-import withSettings from '@/containers/Settings/withSettings';
-import withSettingsActions from '@/containers/Settings/withSettingsActions';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
 
-import { compose } from '@/utils';
-import { DialogsName } from '@/constants/dialogs';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Vendors actions bar.

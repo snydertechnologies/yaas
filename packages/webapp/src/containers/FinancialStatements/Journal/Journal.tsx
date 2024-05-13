@@ -1,21 +1,21 @@
+import moment from 'moment';
 // @ts-nocheck
 import React, { useCallback, useEffect } from 'react';
-import moment from 'moment';
 
-import { FinancialStatement, DashboardPageContent } from '@/components';
+import { DashboardPageContent, FinancialStatement } from '@bigcapital/webapp/components';
 
-import JournalHeader from './JournalHeader';
 import JournalActionsBar from './JournalActionsBar';
 import { JournalBody } from './JournalBody';
+import JournalHeader from './JournalHeader';
 import { JournalSheetProvider } from './JournalProvider';
-import { JournalSheetLoadingBar, JournalSheetAlerts } from './components';
+import { JournalSheetAlerts, JournalSheetLoadingBar } from './components';
 
-import withDashboardActions from '@/containers/Dashboard/withDashboardActions';
+import withDashboardActions from '@bigcapital/webapp/containers/Dashboard/withDashboardActions';
 import withJournalActions from './withJournalActions';
 
-import { useJournalQuery } from './utils';
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 import { JournalDialogs } from './JournalDialogs';
+import { useJournalQuery } from './utils';
 
 /**
  * Journal sheet.

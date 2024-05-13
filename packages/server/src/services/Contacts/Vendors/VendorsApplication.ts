@@ -1,4 +1,4 @@
-import { ISystemUser, IVendorEditDTO, IVendorNewDTO, IVendorOpeningBalanceEditDTO, IVendorsFilter } from '@/interfaces';
+import { ISystemUser, IVendorEditDTO, IVendorNewDTO, IVendorOpeningBalanceEditDTO, IVendorsFilter } from '@bigcapital/server/interfaces';
 import { Knex } from 'knex';
 import { Inject, Service } from 'typedi';
 import { CreateVendor } from './CRUD/CreateVendor';

@@ -1,6 +1,6 @@
-import BaseController from '@/api/controllers/BaseController';
-import { ServiceError } from '@/exceptions';
-import JobsService from '@/services/Jobs/JobsService';
+import BaseController from '@bigcapital/server/api/controllers/BaseController';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import JobsService from '@bigcapital/server/services/Jobs/JobsService';
 import { type NextFunction, type Request, type Response, Router } from 'express';
 import { Inject, Service } from 'typedi';
 

@@ -1,5 +1,5 @@
+import TenantModel from '@bigcapital/server/models/TenantModel';
 import { lowerCase } from 'lodash';
-import TenantModel from 'models/TenantModel';
 import { Model } from 'objection';
 
 export default class BillLandedCost extends TenantModel {
@@ -49,10 +49,10 @@ export default class BillLandedCost extends TenantModel {
    * Relationship mapping.
    */
   static get relationMappings() {
-    const BillLandedCostEntry = require('models/BillLandedCostEntry');
-    const Bill = require('models/Bill');
-    const ItemEntry = require('models/ItemEntry');
-    const ExpenseCategory = require('models/ExpenseCategory');
+    const BillLandedCostEntry = require('@bigcapital/server/models/BillLandedCostEntry');
+    const Bill = require('@bigcapital/server/models/Bill');
+    const ItemEntry = require('@bigcapital/server/models/ItemEntry');
+    const ExpenseCategory = require('@bigcapital/server/models/ExpenseCategory');
 
     return {
       bill: {

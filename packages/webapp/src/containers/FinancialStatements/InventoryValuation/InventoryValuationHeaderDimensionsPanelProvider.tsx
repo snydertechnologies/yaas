@@ -1,9 +1,9 @@
 // @ts-nocheck
 import React from 'react';
 
-import { Features } from '@/constants';
-import { useFeatureCan } from '@/hooks/state';
-import { useWarehouses, useBranches } from '@/hooks/query';
+import { Features } from '@bigcapital/webapp/constants';
+import { useBranches, useWarehouses } from '@bigcapital/webapp/hooks/query';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
 import { FinancialHeaderLoadingSkeleton } from '../FinancialHeaderLoadingSkeleton';
 
 const InventoryValuationHeaderDimensionsPanelContext = React.createContext();

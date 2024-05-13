@@ -1,19 +1,19 @@
+import { defaultTo } from 'lodash';
 // @ts-nocheck
 import React from 'react';
-import { defaultTo } from 'lodash';
 import styled from 'styled-components';
 
 import {
-  Row,
   Col,
-  DetailsMenu,
-  DetailItem,
-  FormattedMessage as T,
   CommercialDocHeader,
   CommercialDocTopHeader,
-} from '@/components';
-import { ManualJournalDetailsStatus } from './utils';
+  DetailItem,
+  DetailsMenu,
+  Row,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
 import { useManualJournalDrawerContext } from './ManualJournalDrawerProvider';
+import { ManualJournalDetailsStatus } from './utils';
 
 /**
  * Manual journal details header.

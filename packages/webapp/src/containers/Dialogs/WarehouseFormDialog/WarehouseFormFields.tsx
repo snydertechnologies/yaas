@@ -1,12 +1,12 @@
+import { inputIntent } from '@bigcapital/webapp/utils';
+import { Classes, ControlGroup, FormGroup, InputGroup } from '@blueprintjs/core';
+import { ErrorMessage, FastField } from 'formik';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
 import styled from 'styled-components';
-import { FastField, ErrorMessage } from 'formik';
-import { Classes, FormGroup, InputGroup, ControlGroup } from '@blueprintjs/core';
-import { inputIntent } from '@/utils';
 
-import { FieldRequiredHint, FormattedMessage as T } from '@/components';
+import { FieldRequiredHint, FormattedMessage as T } from '@bigcapital/webapp/components';
 
 /**
  * Warehouse form fields.

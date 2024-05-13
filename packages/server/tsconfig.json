@@ -32,13 +32,10 @@
     "sourceMap": true,
     // "outDir": "./build",
     "esModuleInterop": true,
-    "baseUrl": "./src",
-    "paths": {
-      "@/*": ["./*"]
-    },
     "types": [
       "bun-types" // add Bun global
     ]
   },
+  "extends": "../../tsconfig.base.json",
   "include": ["./src/**/*", "src/server.ts", "src/index.ts"]
 }

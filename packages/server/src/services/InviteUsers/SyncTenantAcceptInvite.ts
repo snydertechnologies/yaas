@@ -1,6 +1,6 @@
-import { IAcceptInviteEventPayload } from '@/interfaces';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
-import events from '@/subscribers/events';
+import { IAcceptInviteEventPayload } from '@bigcapital/server/interfaces';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import events from '@bigcapital/server/subscribers/events';
 import { omit } from 'lodash';
 import moment from 'moment';
 import { Inject, Service } from 'typedi';

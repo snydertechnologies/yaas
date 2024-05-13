@@ -1,8 +1,8 @@
-import { ACCOUNT_ROOT_TYPE } from '@/data/AccountTypes';
-import { ProjectProfitabilitySummaryQuery } from '@/interfaces';
-import Ledger from '@/services/Accounting/Ledger';
+import { ACCOUNT_ROOT_TYPE } from '@bigcapital/server/data/AccountTypes';
+import { ProjectProfitabilitySummaryQuery } from '@bigcapital/server/interfaces';
+import Project from '@bigcapital/server/models/Project';
+import Ledger from '@bigcapital/server/services/Accounting/Ledger';
 import { isEmpty, map } from 'lodash';
-import Project from 'models/Project';
 
 export class ProjectProfitabilitySummaryRespository {
   /**

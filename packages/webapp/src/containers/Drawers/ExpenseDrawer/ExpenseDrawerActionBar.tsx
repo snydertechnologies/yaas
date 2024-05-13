@@ -1,16 +1,16 @@
+import { Can, DrawerActionsBar, Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { AbilitySubject, ExpenseAction } from '@bigcapital/webapp/constants/abilityOption';
+import { Button, Classes, Intent, NavbarDivider, NavbarGroup } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { Button, Classes, NavbarGroup, Intent, NavbarDivider } from '@blueprintjs/core';
-import { Icon, DrawerActionsBar, Can, FormattedMessage as T } from '@/components';
-import { ExpenseAction, AbilitySubject } from '@/constants/abilityOption';
 import { useExpenseDrawerContext } from './ExpenseDrawerProvider';
 
-import withAlertsActions from '@/containers/Alert/withAlertActions';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
 
-import { compose } from '@/utils';
-import { DRAWERS } from '@/constants/drawers';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Expense drawer action bar.

@@ -1,8 +1,8 @@
+import { FEditableText, FFormGroup, FormattedMessage as T } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
 import styled from 'styled-components';
-import { FFormGroup, FEditableText, FormattedMessage as T } from '@/components';
 
 export function EstimateFormFooterLeft() {
   return (

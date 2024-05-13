@@ -1,31 +1,31 @@
+import { Alignment, Button, Classes, Intent, NavbarDivider, NavbarGroup } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Button, Classes, NavbarDivider, NavbarGroup, Intent, Alignment } from '@blueprintjs/core';
 import { useHistory } from 'react-router-dom';
 
 import {
-  FormattedMessage as T,
   AdvancedFilterPopover,
-  If,
-  Icon,
   Can,
   DashboardActionViewsList,
+  DashboardActionsBar,
   DashboardFilterButton,
   DashboardRowsHeightButton,
-  DashboardActionsBar,
-} from '@/components';
+  Icon,
+  If,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
 
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import withSettingsActions from '@bigcapital/webapp/containers/Settings/withSettingsActions';
 import withEstimates from './withEstimates';
 import withEstimatesActions from './withEstimatesActions';
-import withSettings from '@/containers/Settings/withSettings';
-import withSettingsActions from '@/containers/Settings/withSettingsActions';
 
+import { AbilitySubject, SaleEstimateAction } from '@bigcapital/webapp/constants/abilityOption';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { useRefreshEstimates } from '@bigcapital/webapp/hooks/query/estimates';
+import { compose } from '@bigcapital/webapp/utils';
 import { useEstimatesListContext } from './EstimatesListProvider';
-import { useRefreshEstimates } from '@/hooks/query/estimates';
-import { SaleEstimateAction, AbilitySubject } from '@/constants/abilityOption';
-import { compose } from '@/utils';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { DialogsName } from '@/constants/dialogs';
 
 /**
  * Estimates list actions bar.

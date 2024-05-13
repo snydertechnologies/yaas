@@ -1,9 +1,9 @@
+import {
+  resetCashflowAccountsTableState,
+  setCashflowAccountsTableState,
+} from '@bigcapital/webapp/store/CashflowAccounts/CashflowAccounts.actions';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import {
-  setCashflowAccountsTableState,
-  resetCashflowAccountsTableState,
-} from '@/store/CashflowAccounts/CashflowAccounts.actions';
 
 const mapActionsToProps = (dispatch) => ({
   setCashflowAccountsTableState: (queries) => dispatch(setCashflowAccountsTableState(queries)),

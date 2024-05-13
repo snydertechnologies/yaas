@@ -1,4 +1,4 @@
-import { SystemUser } from '@/system/models';
+import { SystemUser } from '@bigcapital/server/system/models';
 import { createCheckout } from '@lemonsqueezy/lemonsqueezy.js';
 import { Service } from 'typedi';
 import { configureLemonSqueezy } from './utils';

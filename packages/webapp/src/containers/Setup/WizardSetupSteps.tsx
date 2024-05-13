@@ -1,7 +1,7 @@
+import { getSetupWizardSteps } from '@bigcapital/webapp/constants/registerWizard';
+import classNames from 'classnames';
 // @ts-nocheck
 import React from 'react';
-import classNames from 'classnames';
-import { getSetupWizardSteps } from '@/constants/registerWizard';
 
 function WizardSetupStep({ label, isActive = false }) {
   return (

@@ -1,20 +1,20 @@
 // @ts-nocheck
 import React, { createContext, useContext } from 'react';
 
-import { DashboardInsider } from '@/components/Dashboard';
+import { DashboardInsider } from '@bigcapital/webapp/components/Dashboard';
+import { Features } from '@bigcapital/webapp/constants';
+import { useProjects } from '@bigcapital/webapp/containers/Projects/hooks';
 import {
-  useEstimate,
-  useCustomers,
-  useWarehouses,
   useBranches,
+  useCreateEstimate,
+  useCustomers,
+  useEditEstimate,
+  useEstimate,
   useItems,
   useSettingsEstimates,
-  useCreateEstimate,
-  useEditEstimate,
-} from '@/hooks/query';
-import { Features } from '@/constants';
-import { useProjects } from '@/containers/Projects/hooks';
-import { useFeatureCan } from '@/hooks/state';
+  useWarehouses,
+} from '@bigcapital/webapp/hooks/query';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
 import { ITEMS_FILTER_ROLES } from './utils';
 
 const EstimateFormContext = createContext();

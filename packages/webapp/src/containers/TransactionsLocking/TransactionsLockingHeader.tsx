@@ -1,11 +1,11 @@
+import { Intent } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
 import styled from 'styled-components';
-import { Intent } from '@blueprintjs/core';
 
+import { Alert, AlertDesc, AppToaster, ButtonLink, Join, FormattedMessage as T } from '@bigcapital/webapp/components';
 import { useTransactionsLockingContext } from './TransactionsLockingProvider';
-import { ButtonLink, AppToaster, Join, FormattedMessage as T, Alert, AlertDesc } from '@/components';
 import { validateMoveToFullLocking, validateMoveToPartialLocking } from './utils';
 
 /**

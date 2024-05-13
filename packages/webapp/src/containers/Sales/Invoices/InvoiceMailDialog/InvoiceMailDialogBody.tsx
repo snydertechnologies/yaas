@@ -1,8 +1,8 @@
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
 // @ts-nocheck
 import * as R from 'ramda';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
 import InvoiceMailDialogContent, { InvoiceMailDialogContentProps } from './InvoiceMailDialogContent';
-import { DialogsName } from '@/constants/dialogs';
 
 export interface InvoiceMailDialogBodyProps extends InvoiceMailDialogContentProps {}
 

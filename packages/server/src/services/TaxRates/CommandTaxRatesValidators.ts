@@ -1,5 +1,5 @@
-import { ServiceError } from '@/exceptions';
-import { IItemEntryDTO, ITaxRate } from '@/interfaces';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { IItemEntryDTO, ITaxRate } from '@bigcapital/server/interfaces';
 import { difference } from 'lodash';
 import { Inject, Service } from 'typedi';
 import HasTenancyService from '../Tenancy/TenancyService';

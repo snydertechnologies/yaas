@@ -1,5 +1,5 @@
-import SoftDeleteQueryBuilder from '@/collection/SoftDeleteQueryBuilder';
-import TenantModel from 'models/TenantModel';
+import SoftDeleteQueryBuilder from '@bigcapital/server/collection/SoftDeleteQueryBuilder';
+import TenantModel from '@bigcapital/server/models/TenantModel';
 import { mixin } from 'objection';
 import ModelSearchable from './ModelSearchable';
 

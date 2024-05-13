@@ -1,5 +1,5 @@
-import { ServiceError } from '@/exceptions';
-import RolesService from '@/services/Roles/RolesService';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import RolesService from '@bigcapital/server/services/Roles/RolesService';
 import { NextFunction, Request, Response, Router } from 'express';
 import { check, param } from 'express-validator';
 import { Inject, Service } from 'typedi';

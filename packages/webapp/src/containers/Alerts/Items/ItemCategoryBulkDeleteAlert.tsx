@@ -1,16 +1,16 @@
+import { FormattedHTMLMessage, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { AppToaster } from '@bigcapital/webapp/components';
+import { Alert, Intent } from '@blueprintjs/core';
+import { size } from 'lodash';
 // @ts-nocheck
 import React, { useState } from 'react';
 import intl from 'react-intl-universal';
-import { FormattedMessage as T, FormattedHTMLMessage } from '@/components';
-import { Intent, Alert } from '@blueprintjs/core';
-import { size } from 'lodash';
-import { AppToaster } from '@/components';
 
-import withItemCategoriesActions from '@/containers/ItemsCategories/withItemCategoriesActions';
-import withAlertStoreConnect from '@/containers/Alert/withAlertStoreConnect';
-import withAlertActions from '@/containers/Alert/withAlertActions';
+import withAlertActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withAlertStoreConnect from '@bigcapital/webapp/containers/Alert/withAlertStoreConnect';
+import withItemCategoriesActions from '@bigcapital/webapp/containers/ItemsCategories/withItemCategoriesActions';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Item category bulk delete alerts.

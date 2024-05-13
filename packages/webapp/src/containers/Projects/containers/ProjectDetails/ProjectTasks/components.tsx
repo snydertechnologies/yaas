@@ -1,10 +1,10 @@
+import { Choose, Icon, If, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { safeCallback } from '@bigcapital/webapp/utils';
+import { Intent, Menu, MenuItem, ProgressBar } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
 import styled from 'styled-components';
-import { Icon, If, Choose, FormattedMessage as T } from '@/components';
-import { Menu, MenuItem, Intent, ProgressBar } from '@blueprintjs/core';
-import { safeCallback } from '@/utils';
 
 /**
  * Table actions cell.

@@ -1,5 +1,5 @@
-import { DEFAULT_VIEWS } from '@/services/Expenses/constants';
-import TenantModel from 'models/TenantModel';
+import TenantModel from '@bigcapital/server/models/TenantModel';
+import { DEFAULT_VIEWS } from '@bigcapital/server/services/Expenses/constants';
 import moment from 'moment';
 import { Model, mixin, raw } from 'objection';
 import CustomViewBaseModel from './CustomViewBaseModel';
@@ -173,10 +173,10 @@ export default class Expense extends mixin(TenantModel, [ModelSetting, CustomVie
    * Relationship mapping.
    */
   static get relationMappings() {
-    const Account = require('models/Account');
-    const ExpenseCategory = require('models/ExpenseCategory');
-    const Media = require('models/Media');
-    const Branch = require('models/Branch');
+    const Account = require('@bigcapital/server/models/Account');
+    const ExpenseCategory = require('@bigcapital/server/models/ExpenseCategory');
+    const Media = require('@bigcapital/server/models/Media');
+    const Branch = require('@bigcapital/server/models/Branch');
 
     return {
       paymentAccount: {

@@ -1,16 +1,16 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Formik } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { Formik } from 'formik';
-import { FormattedMessage as T } from '@/components';
 
-import '@/style/pages/Setup/Organization.scss';
+import '@bigcapital/webapp/style/pages/Setup/Organization.scss';
 
 import SetupOrganizationForm from './SetupOrganizationForm';
 
-import { useOrganizationSetup } from '@/hooks/query';
-import withSettingsActions from '@/containers/Settings/withSettingsActions';
+import withSettingsActions from '@bigcapital/webapp/containers/Settings/withSettingsActions';
+import { useOrganizationSetup } from '@bigcapital/webapp/hooks/query';
 
-import { setCookie, compose, transfromToSnakeCase } from '@/utils';
+import { compose, setCookie, transfromToSnakeCase } from '@bigcapital/webapp/utils';
 import { getSetupOrganizationValidation } from './SetupOrganization.schema';
 
 // Initial values.

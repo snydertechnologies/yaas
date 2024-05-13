@@ -1,9 +1,9 @@
+import { DrawerHeaderContent, DrawerLoading } from '@bigcapital/webapp/components';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import { useWarehouseTransfer } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { useWarehouseTransfer } from '@/hooks/query';
-import { DrawerHeaderContent, DrawerLoading } from '@/components';
-import { DRAWERS } from '@/constants/drawers';
 
 const WarehouseTransferDetailDrawerContext = React.createContext();
 

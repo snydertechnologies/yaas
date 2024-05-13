@@ -1,19 +1,19 @@
+import { Intent } from '@blueprintjs/core';
+import { Formik } from 'formik';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import * as Yup from 'yup';
-import { Formik } from 'formik';
-import { Intent } from '@blueprintjs/core';
 import { useHistory } from 'react-router-dom';
+import * as Yup from 'yup';
 
-import '@/style/pages/Setup/PaymentViaVoucherDialog.scss';
+import '@bigcapital/webapp/style/pages/Setup/PaymentViaVoucherDialog.scss';
 
-import { usePaymentByVoucher } from '@/hooks/query';
-import { AppToaster as Toaster, DialogContent } from '@/components';
+import { DialogContent, AppToaster as Toaster } from '@bigcapital/webapp/components';
+import { usePaymentByVoucher } from '@bigcapital/webapp/hooks/query';
 import PaymentViaLicenseForm from './PaymentViaVoucherForm';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { compose } from '@/utils';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Payment via license dialog content.

@@ -1,15 +1,15 @@
+import { compose } from '@bigcapital/webapp/utils';
 // @ts-nocheck
 import React, { useCallback } from 'react';
-import { compose } from '@/utils';
 
-import { DataTable, TableSkeletonRows } from '@/components';
+import { DataTable, TableSkeletonRows } from '@bigcapital/webapp/components';
 
 import { useCurrenciesContext } from './CurrenciesProvider';
 
 import { ActionMenuList, useCurrenciesTableColumns } from './components';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import withAlertActions from '@/containers/Alert/withAlertActions';
+import withAlertActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
 import styled from 'styled-components';
 
 /**

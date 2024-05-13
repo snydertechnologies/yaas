@@ -1,9 +1,9 @@
+import { Can, Icon } from '@bigcapital/webapp/components';
+import { AbilitySubject, TaxRateAction } from '@bigcapital/webapp/constants/abilityOption';
+import { safeCallback } from '@bigcapital/webapp/utils';
+import { Intent, Menu, MenuDivider, MenuItem } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Can, Icon } from '@/components';
-import { AbilitySubject, TaxRateAction } from '@/constants/abilityOption';
-import { safeCallback } from '@/utils';
-import { Intent, Menu, MenuDivider, MenuItem } from '@blueprintjs/core';
 
 /**
  * Tax rates table actions menu.

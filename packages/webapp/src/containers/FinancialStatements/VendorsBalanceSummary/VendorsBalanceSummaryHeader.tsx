@@ -1,19 +1,19 @@
 // @ts-nocheck
 import React from 'react';
 
+import { Button, Intent, Tab, Tabs } from '@blueprintjs/core';
+import { Form, Formik } from 'formik';
 import moment from 'moment';
 import styled from 'styled-components';
-import { Formik, Form } from 'formik';
-import { Tabs, Tab, Button, Intent } from '@blueprintjs/core';
 
-import { FormattedMessage as T } from '@/components';
-import { compose, transformToForm } from '@/utils';
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { compose, transformToForm } from '@bigcapital/webapp/utils';
 
 import FinancialStatementHeader from '../FinancialStatementHeader';
 import VendorsBalanceSummaryHeaderGeneral from './VendorsBalanceSummaryHeaderGeneral';
+import { getVendorsBalanceQuerySchema } from './utils';
 import withVendorsBalanceSummary from './withVendorsBalanceSummary';
 import withVendorsBalanceSummaryActions from './withVendorsBalanceSummaryActions';
-import { getVendorsBalanceQuerySchema } from './utils';
 
 /**
  * Vendors balance summary drawer header.

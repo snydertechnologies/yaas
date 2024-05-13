@@ -1,7 +1,7 @@
+import { DashboardInsider, DrawerHeaderContent } from '@bigcapital/webapp/components';
+import { useContact } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React from 'react';
-import { DrawerHeaderContent, DashboardInsider } from '@/components';
-import { useContact } from '@/hooks/query';
 
 const ContactDetailDrawerContext = React.createContext();
 

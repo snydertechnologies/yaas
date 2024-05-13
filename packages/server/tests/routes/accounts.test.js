@@ -1,4 +1,4 @@
-import Account from 'models/Account';
+import Account from '@bigcapital/server/models/Account';
 import { loginRes, tenantFactory, tenantWebsite } from '~/dbInit';
 import { expect, request } from '~/testInit';
 

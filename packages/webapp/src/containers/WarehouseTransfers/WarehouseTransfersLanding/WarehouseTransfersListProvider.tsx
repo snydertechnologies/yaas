@@ -1,10 +1,15 @@
+import { DashboardInsider } from '@bigcapital/webapp/components/Dashboard';
+import {
+  useRefreshWarehouseTransfers,
+  useResourceMeta,
+  useResourceViews,
+  useWarehousesTransfers,
+} from '@bigcapital/webapp/hooks/query';
+import { isEmpty } from 'lodash';
 // @ts-nocheck
 import React from 'react';
-import { isEmpty } from 'lodash';
-import { DashboardInsider } from '@/components/Dashboard';
-import { useResourceViews, useResourceMeta, useWarehousesTransfers, useRefreshWarehouseTransfers } from '@/hooks/query';
 
-import { getFieldsFromResourceMeta } from '@/utils';
+import { getFieldsFromResourceMeta } from '@bigcapital/webapp/utils';
 
 const WarehouseTransfersListContext = React.createContext();
 

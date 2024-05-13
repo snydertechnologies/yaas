@@ -1,27 +1,27 @@
+import { Intent } from '@blueprintjs/core';
+import classNames from 'classnames';
+import { Form, Formik } from 'formik';
 // @ts-nocheck
 import React, { useMemo } from 'react';
 import intl from 'react-intl-universal';
-import { Formik, Form } from 'formik';
-import { Intent } from '@blueprintjs/core';
-import classNames from 'classnames';
 import styled from 'styled-components';
 
-import { CLASSES } from '@/constants/classes';
-import { AppToaster } from '@/components';
+import { AppToaster } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
 import { CreateVendorFormSchema, EditVendorFormSchema } from './VendorForm.schema';
 
-import VendorTabs from './VendorsTabs';
-import VendorFormPrimarySection from './VendorFormPrimarySection';
-import VendorFormAfterPrimarySection from './VendorFormAfterPrimarySection';
 import VendorFloatingActions from './VendorFloatingActions';
+import VendorFormAfterPrimarySection from './VendorFormAfterPrimarySection';
+import VendorFormPrimarySection from './VendorFormPrimarySection';
+import VendorTabs from './VendorsTabs';
 
-import withCurrentOrganization from '@/containers/Organization/withCurrentOrganization';
+import withCurrentOrganization from '@bigcapital/webapp/containers/Organization/withCurrentOrganization';
 
+import { compose, safeInvoke, transformToForm } from '@bigcapital/webapp/utils';
 import { useVendorFormContext } from './VendorFormProvider';
-import { compose, transformToForm, safeInvoke } from '@/utils';
 import { defaultInitialValues } from './utils';
 
-import '@/style/pages/Vendors/Form.scss';
+import '@bigcapital/webapp/style/pages/Vendors/Form.scss';
 
 /**
  * Vendor form.

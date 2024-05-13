@@ -1,9 +1,9 @@
+import moment from 'moment';
 // @ts-nocheck
 import React from 'react';
-import moment from 'moment';
 
-import { useAppQueryString } from '@/hooks';
-import { transformToForm } from '@/utils';
+import { useAppQueryString } from '@bigcapital/webapp/hooks';
+import { transformToForm } from '@bigcapital/webapp/utils';
 
 /**
  * Retrieves the default journal report query.

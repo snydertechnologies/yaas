@@ -1,8 +1,8 @@
+import { Form, Formik } from 'formik';
 // @ts-nocheck
 import React, { useCallback } from 'react';
-import { Formik, Form } from 'formik';
 
-import '@/style/pages/FinancialStatements/NumberFormatDropdown.scss';
+import '@bigcapital/webapp/style/pages/FinancialStatements/NumberFormatDropdown.scss';
 
 import NumberFormatFields from './NumberFormatFields';
 import NumberFormatFooter from './NumberFormatFooter';

@@ -1,9 +1,9 @@
+import { Money } from '@bigcapital/webapp/components';
+import { DetailItem } from '@bigcapital/webapp/components/Details';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { Money } from '@/components';
 import { useContactDetailDrawerContext } from './ContactDetailDrawerProvider';
-import { DetailItem } from '@/components/Details';
 
 export default function ContactDetailList({}) {
   const { contact } = useContactDetailDrawerContext();

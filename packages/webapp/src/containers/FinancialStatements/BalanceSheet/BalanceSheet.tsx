@@ -1,19 +1,19 @@
+import moment from 'moment';
 // @ts-nocheck
 import React, { useEffect } from 'react';
-import moment from 'moment';
 
+import { DashboardPageContent, FinancialStatement } from '@bigcapital/webapp/components';
 import { BalanceSheetAlerts, BalanceSheetLoadingBar } from './components';
-import { FinancialStatement, DashboardPageContent } from '@/components';
 
-import BalanceSheetHeader from './BalanceSheetHeader';
+import { compose } from '@bigcapital/webapp/utils';
 import BalanceSheetActionsBar from './BalanceSheetActionsBar';
-import { BalanceSheetProvider } from './BalanceSheetProvider';
 import { BalanceSheetBody } from './BalanceSheetBody';
+import BalanceSheetHeader from './BalanceSheetHeader';
+import { BalanceSheetProvider } from './BalanceSheetProvider';
 import { useBalanceSheetQuery } from './utils';
-import { compose } from '@/utils';
 
-import withBalanceSheetActions from './withBalanceSheetActions';
 import { BalanceSheetDialogs } from './BalanceSheetDialogs';
+import withBalanceSheetActions from './withBalanceSheetActions';
 
 /**
  * Balance sheet.

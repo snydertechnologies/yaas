@@ -1,10 +1,10 @@
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { useCashflowTransaction } from '@/hooks/query';
+import { useCashflowTransaction } from '@bigcapital/webapp/hooks/query';
 
-import { DrawerLoading, DrawerHeaderContent } from '@/components';
-import { DRAWERS } from '@/constants/drawers';
+import { DrawerLoading, DrawerHeaderContent } from '@bigcapital/webapp/components';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
 
 const CashflowTransactionDrawerContext = React.createContext();
 

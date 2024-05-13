@@ -2,22 +2,27 @@
 import React, { useCallback } from 'react';
 import { useHistory } from 'react-router-dom';
 
-import { compose } from '@/utils';
+import {
+  DashboardContentTable,
+  DataTable,
+  TableSkeletonHeader,
+  TableSkeletonRows,
+} from '@bigcapital/webapp/components';
+import { TABLES } from '@bigcapital/webapp/constants/tables';
+import { useMemorizedColumnsWidths } from '@bigcapital/webapp/hooks';
+import { compose } from '@bigcapital/webapp/utils';
 import { useExpensesListContext } from './ExpensesListProvider';
-import { useMemorizedColumnsWidths } from '@/hooks';
-import { DashboardContentTable, DataTable, TableSkeletonRows, TableSkeletonHeader } from '@/components';
-import { TABLES } from '@/constants/tables';
 
 import ExpensesEmptyStatus from './ExpensesEmptyStatus';
 
-import withDashboardActions from '@/containers/Dashboard/withDashboardActions';
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDashboardActions from '@bigcapital/webapp/containers/Dashboard/withDashboardActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
 import withExpensesActions from './withExpensesActions';
-import withAlertsActions from '@/containers/Alert/withAlertActions';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
-import withSettings from '@/containers/Settings/withSettings';
 
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
 import { ActionsMenu, useExpensesTableColumns } from './components';
-import { DRAWERS } from '@/constants/drawers';
 
 /**
  * Expenses datatable.

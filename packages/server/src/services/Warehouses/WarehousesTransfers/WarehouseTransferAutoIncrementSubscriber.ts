@@ -1,5 +1,5 @@
-import { IWarehouseTransferCreated } from '@/interfaces';
-import events from '@/subscribers/events';
+import { IWarehouseTransferCreated } from '@bigcapital/server/interfaces';
+import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 import { WarehouseTransferAutoIncrement } from './WarehouseTransferAutoIncrement';
 

@@ -1,15 +1,15 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Button, FormGroup, InputGroup, Intent } from '@blueprintjs/core';
+import { ErrorMessage, FastField, Form, useFormikContext } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { Button, FormGroup, InputGroup, Intent } from '@blueprintjs/core';
-import { Form, FastField, ErrorMessage, useFormikContext } from 'formik';
-import { FormattedMessage as T } from '@/components';
 import { compose } from 'redux';
 
-import { CLASSES } from '@/constants/classes';
-import { inputIntent } from '@/utils';
-import { useAutofocus } from '@/hooks';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { useAutofocus } from '@bigcapital/webapp/hooks';
+import { inputIntent } from '@bigcapital/webapp/utils';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
 
 /**
  * Payment via license form.

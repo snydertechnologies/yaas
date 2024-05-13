@@ -1,8 +1,8 @@
+import { defaultFastFieldShouldUpdate } from '@bigcapital/webapp/utils';
+import { isUndefined } from 'lodash';
+import * as R from 'ramda';
 // @ts-nocheck
 import intl from 'react-intl-universal';
-import * as R from 'ramda';
-import { isUndefined } from 'lodash';
-import { defaultFastFieldShouldUpdate } from '@/utils';
 
 export const AccountDialogAction = {
   Edit: 'edit',

@@ -1,4 +1,4 @@
-import { Import } from '@/system/models';
+import { Import } from '@bigcapital/server/system/models';
 import { Inject, Service } from 'typedi';
 import ResourceService from '../Resource/ResourceService';
 import { ImportFileCommon } from './ImportFileCommon';

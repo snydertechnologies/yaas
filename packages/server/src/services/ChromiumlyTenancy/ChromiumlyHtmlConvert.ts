@@ -1,8 +1,8 @@
 import { promises as fs } from 'fs';
 import path from 'path';
-import { Chromiumly } from '@/lib/Chromiumly/Chromiumly';
-import { UrlConverter } from '@/lib/Chromiumly/UrlConvert';
-import { PageProperties, PdfFormat } from '@/lib/Chromiumly/_types';
+import { Chromiumly } from '@bigcapital/server/lib/Chromiumly/Chromiumly';
+import { UrlConverter } from '@bigcapital/server/lib/Chromiumly/UrlConvert';
+import { PageProperties, PdfFormat } from '@bigcapital/server/lib/Chromiumly/_types';
 import { Inject, Service } from 'typedi';
 import HasTenancyService from '../Tenancy/TenancyService';
 import { PDF_FILE_EXPIRE_IN, getPdfFilesStorageDir } from './utils';

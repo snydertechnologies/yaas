@@ -1,5 +1,5 @@
-import { PlanSubscription } from '@/system/models';
-import SystemRepository from '@/system/repositories/SystemRepository';
+import { PlanSubscription } from '@bigcapital/server/system/models';
+import SystemRepository from '@bigcapital/server/system/repositories/SystemRepository';
 
 export default class SubscriptionRepository extends SystemRepository {
   /**

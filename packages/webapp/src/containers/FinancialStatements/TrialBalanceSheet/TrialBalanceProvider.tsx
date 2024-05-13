@@ -1,7 +1,7 @@
+import { useTrialBalanceSheet } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import { createContext, useContext, useMemo } from 'react';
 import FinancialReportPage from '../FinancialReportPage';
-import { useTrialBalanceSheet } from '@/hooks/query';
 import { transformFilterFormToQuery } from '../common';
 
 const TrialBalanceSheetContext = createContext();

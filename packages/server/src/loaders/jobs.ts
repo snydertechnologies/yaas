@@ -1,18 +1,18 @@
-import { SendVerifyMailJob } from '@/services/Authentication/jobs/SendVerifyMailJob';
-import { PlaidFetchTransactionsJob } from '@/services/Banking/Plaid/PlaidFetchTransactionsJob';
-import { ImportDeleteExpiredFilesJobs } from '@/services/Import/jobs/ImportDeleteExpiredFilesJob';
-import { SendSaleEstimateMailJob } from '@/services/Sales/Estimates/SendSaleEstimateMailJob';
-import { SendSaleInvoiceMailJob } from '@/services/Sales/Invoices/SendSaleInvoiceMailJob';
-import { SendSaleInvoiceReminderMailJob } from '@/services/Sales/Invoices/SendSaleInvoiceMailReminderJob';
-import { PaymentReceiveMailNotificationJob } from '@/services/Sales/PaymentReceives/PaymentReceiveMailNotificationJob';
-import { SaleReceiptMailNotificationJob } from '@/services/Sales/Receipts/SaleReceiptMailNotificationJob';
+import ComputeItemCost from '@bigcapital/server/jobs/ComputeItemCost';
+import OrganizationSetupJob from '@bigcapital/server/jobs/OrganizationSetup';
+import OrganizationUpgrade from '@bigcapital/server/jobs/OrganizationUpgrade';
+import ResetPasswordMailJob from '@bigcapital/server/jobs/ResetPasswordMail';
+import UserInviteMailJob from '@bigcapital/server/jobs/UserInviteMail';
+import RewriteInvoicesJournalEntries from '@bigcapital/server/jobs/WriteInvoicesJEntries';
+import { SendVerifyMailJob } from '@bigcapital/server/services/Authentication/jobs/SendVerifyMailJob';
+import { PlaidFetchTransactionsJob } from '@bigcapital/server/services/Banking/Plaid/PlaidFetchTransactionsJob';
+import { ImportDeleteExpiredFilesJobs } from '@bigcapital/server/services/Import/jobs/ImportDeleteExpiredFilesJob';
+import { SendSaleEstimateMailJob } from '@bigcapital/server/services/Sales/Estimates/SendSaleEstimateMailJob';
+import { SendSaleInvoiceMailJob } from '@bigcapital/server/services/Sales/Invoices/SendSaleInvoiceMailJob';
+import { SendSaleInvoiceReminderMailJob } from '@bigcapital/server/services/Sales/Invoices/SendSaleInvoiceMailReminderJob';
+import { PaymentReceiveMailNotificationJob } from '@bigcapital/server/services/Sales/PaymentReceives/PaymentReceiveMailNotificationJob';
+import { SaleReceiptMailNotificationJob } from '@bigcapital/server/services/Sales/Receipts/SaleReceiptMailNotificationJob';
 import type Agenda from 'agenda';
-import ComputeItemCost from 'jobs/ComputeItemCost';
-import OrganizationSetupJob from 'jobs/OrganizationSetup';
-import OrganizationUpgrade from 'jobs/OrganizationUpgrade';
-import ResetPasswordMailJob from 'jobs/ResetPasswordMail';
-import UserInviteMailJob from 'jobs/UserInviteMail';
-import RewriteInvoicesJournalEntries from 'jobs/WriteInvoicesJEntries';
 
 export default ({ agenda }: { agenda: Agenda }) => {
   new ResetPasswordMailJob(agenda);

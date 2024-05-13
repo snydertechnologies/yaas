@@ -1,6 +1,6 @@
-import { ServiceError } from '@/exceptions';
-import { IAccount, IUncategorizedCashflowTransaction } from '@/interfaces';
-import CashflowTransaction from '@/models/CashflowTransaction';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { IAccount, IUncategorizedCashflowTransaction } from '@bigcapital/server/interfaces';
+import CashflowTransaction from '@bigcapital/server/models/CashflowTransaction';
 import { camelCase, includes, upperFirst } from 'lodash';
 import { Service } from 'typedi';
 import { CASHFLOW_DIRECTION, CASHFLOW_TRANSACTION_TYPE, ERRORS } from './constants';

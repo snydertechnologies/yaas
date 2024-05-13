@@ -1,7 +1,7 @@
+import { Align } from '@bigcapital/webapp/constants';
 // @ts-nocheck
-import { getColumnWidth } from '@/utils';
+import { getColumnWidth } from '@bigcapital/webapp/utils';
 import * as R from 'ramda';
-import { Align } from '@/constants';
 import { useSalesByItemsContext } from './SalesByItemProvider';
 
 const getTableCellValueAccessor = (index) => `cells[${index}].value`;

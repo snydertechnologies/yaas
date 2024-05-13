@@ -1,4 +1,4 @@
-import { TenantSeeder } from '@/lib/Seeder/TenantSeeder';
+import { TenantSeeder } from '@bigcapital/server/lib/Seeder/TenantSeeder';
 import AccountsData from '../data/accounts';
 
 export default class SeedAccounts extends TenantSeeder {

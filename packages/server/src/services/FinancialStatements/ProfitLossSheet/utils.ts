@@ -1,4 +1,4 @@
-import { IProfitLossSheetQuery } from '@/interfaces';
+import { IProfitLossSheetQuery } from '@bigcapital/server/interfaces';
 import { merge } from 'lodash';
 import moment from 'moment';
 

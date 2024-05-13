@@ -1,6 +1,6 @@
+import { toggleBalanceSheetFilterDrawer } from '@bigcapital/webapp/store/financialStatement/financialStatements.actions';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { toggleBalanceSheetFilterDrawer } from '@/store/financialStatement/financialStatements.actions';
 
 const mapDispatchToProps = (dispatch) => ({
   toggleBalanceSheetFilterDrawer: (toggle) => dispatch(toggleBalanceSheetFilterDrawer(toggle)),

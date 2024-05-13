@@ -1,19 +1,19 @@
+import { Callout, Classes, Intent } from '@blueprintjs/core';
+import { Form, Formik, useFormikContext } from 'formik';
+import { castArray, includes } from 'lodash';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { castArray, includes } from 'lodash';
-import { Formik, Form, useFormikContext } from 'formik';
 import styled from 'styled-components';
-import { Callout, Classes, Intent } from '@blueprintjs/core';
 
-import '@/style/pages/NotifyConactViaSMS/NotifyConactViaSMSDialog.scss';
+import '@bigcapital/webapp/style/pages/NotifyConactViaSMS/NotifyConactViaSMSDialog.scss';
 
+import { FormObserver, SMSMessagePreview } from '@bigcapital/webapp/components';
 import { CreateNotifyViaSMSFormSchema } from './NotifyViaSMSForm.schema';
 import NotifyViaSMSFormFields from './NotifyViaSMSFormFields';
 import NotifyViaSMSFormFloatingActions from './NotifyViaSMSFormFloatingActions';
-import { FormObserver, SMSMessagePreview } from '@/components';
 
-import { transformToForm, safeInvoke } from '@/utils';
+import { safeInvoke, transformToForm } from '@bigcapital/webapp/utils';
 import { getSMSUnits } from './utils';
 
 const defaultInitialValues = {

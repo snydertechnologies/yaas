@@ -1,7 +1,7 @@
-import CheckPolicies from '@/api/middleware/CheckPolicies';
-import { AbilitySubject, ReportsAction } from '@/interfaces';
-import { ACCEPT_TYPE } from '@/interfaces/Http';
-import { ARAgingSummaryApplication } from '@/services/FinancialStatements/AgingSummary/ARAgingSummaryApplication';
+import CheckPolicies from '@bigcapital/server/api/middleware/CheckPolicies';
+import { AbilitySubject, ReportsAction } from '@bigcapital/server/interfaces';
+import { ACCEPT_TYPE } from '@bigcapital/server/interfaces/Http';
+import { ARAgingSummaryApplication } from '@bigcapital/server/services/FinancialStatements/AgingSummary/ARAgingSummaryApplication';
 import { Request, Response, Router } from 'express';
 import { query } from 'express-validator';
 import { Inject, Service } from 'typedi';

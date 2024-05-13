@@ -1,7 +1,7 @@
+import { useUncontrolled } from '@bigcapital/webapp/hooks/useUncontrolled';
 // @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
-import { useUncontrolled } from '@/hooks/useUncontrolled';
 
 const ContentTabsRoot = styled('div')`
   display: flex;

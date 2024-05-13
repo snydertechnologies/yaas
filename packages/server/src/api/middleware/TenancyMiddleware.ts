@@ -1,5 +1,5 @@
-import tenantDependencyInjection from '@/api/middleware/TenantDependencyInjection';
-import { Tenant } from '@/system/models';
+import tenantDependencyInjection from '@bigcapital/server/api/middleware/TenantDependencyInjection';
+import { Tenant } from '@bigcapital/server/system/models';
 import { NextFunction, Request, Response } from 'express';
 import { Container } from 'typedi';
 

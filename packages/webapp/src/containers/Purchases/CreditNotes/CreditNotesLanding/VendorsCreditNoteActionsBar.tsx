@@ -1,30 +1,30 @@
+import {
+  AdvancedFilterPopover,
+  Can,
+  DashboardActionViewsList,
+  DashboardActionsBar,
+  DashboardFilterButton,
+  DashboardRowsHeightButton,
+  Icon,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import { Alignment, Button, Classes, Intent, NavbarDivider, NavbarGroup } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { Button, Classes, NavbarDivider, NavbarGroup, Intent, Alignment } from '@blueprintjs/core';
-import {
-  Icon,
-  Can,
-  FormattedMessage as T,
-  DashboardActionViewsList,
-  AdvancedFilterPopover,
-  DashboardFilterButton,
-  DashboardRowsHeightButton,
-  DashboardActionsBar,
-} from '@/components';
 
+import { AbilitySubject, VendorCreditAction } from '@bigcapital/webapp/constants/abilityOption';
 import { useVendorsCreditNoteListContext } from './VendorsCreditNoteListProvider';
-import { VendorCreditAction, AbilitySubject } from '@/constants/abilityOption';
 
-import withVendorsCreditNotesActions from './withVendorsCreditNotesActions';
-import withSettings from '@/containers/Settings/withSettings';
-import withSettingsActions from '@/containers/Settings/withSettingsActions';
-import withVendorsCreditNotes from './withVendorsCreditNotes';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import withSettingsActions from '@bigcapital/webapp/containers/Settings/withSettingsActions';
 import withVendorActions from './withVendorActions';
+import withVendorsCreditNotes from './withVendorsCreditNotes';
+import withVendorsCreditNotesActions from './withVendorsCreditNotesActions';
 
-import { compose } from '@/utils';
-import { DialogsName } from '@/constants/dialogs';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Vendors Credit note  table actions bar.

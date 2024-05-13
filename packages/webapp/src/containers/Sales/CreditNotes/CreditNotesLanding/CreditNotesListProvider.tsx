@@ -1,11 +1,16 @@
+import { isEmpty } from 'lodash';
 // @ts-nocheck
 import React from 'react';
-import { isEmpty } from 'lodash';
 
-import { DashboardInsider } from '@/components/Dashboard';
-import { useResourceViews, useResourceMeta, useCreditNotes, useRefreshCreditNotes } from '@/hooks/query';
+import { DashboardInsider } from '@bigcapital/webapp/components/Dashboard';
+import {
+  useCreditNotes,
+  useRefreshCreditNotes,
+  useResourceMeta,
+  useResourceViews,
+} from '@bigcapital/webapp/hooks/query';
 
-import { getFieldsFromResourceMeta } from '@/utils';
+import { getFieldsFromResourceMeta } from '@bigcapital/webapp/utils';
 
 const CreditNoteListContext = React.createContext();
 

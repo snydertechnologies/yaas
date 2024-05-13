@@ -1,11 +1,11 @@
+import { DrawerBody } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import React from 'react';
-import { DrawerBody } from '@/components';
 
-import '@/style/components/Drawers/AccountDrawer.scss';
+import '@bigcapital/webapp/style/components/Drawers/AccountDrawer.scss';
 
-import { AccountDrawerProvider } from './AccountDrawerProvider';
 import AccountDrawerDetails from './AccountDrawerDetails';
+import { AccountDrawerProvider } from './AccountDrawerProvider';
 
 /**
  * Account drawer content.

@@ -1,4 +1,4 @@
-import { PageProperties, PdfFormat } from '@/lib/Chromiumly/_types';
+import { PageProperties, PdfFormat } from '@bigcapital/server/lib/Chromiumly/_types';
 import { Inject, Service } from 'typedi';
 import { ChromiumlyHtmlConvert } from './ChromiumlyHtmlConvert';
 

@@ -1,6 +1,6 @@
-import { IFeatureAllItem, ISystemUser } from '@/interfaces';
-import { FeaturesManager } from '@/services/Features/FeaturesManager';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { IFeatureAllItem, ISystemUser } from '@bigcapital/server/interfaces';
+import { FeaturesManager } from '@bigcapital/server/services/Features/FeaturesManager';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject, Service } from 'typedi';
 
 interface IRoleAbility {

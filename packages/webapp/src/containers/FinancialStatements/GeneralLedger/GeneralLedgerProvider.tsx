@@ -1,8 +1,8 @@
 // @ts-nocheck
 import React, { createContext, useContext } from 'react';
 
+import { useGeneralLedgerSheet } from '@bigcapital/webapp/hooks/query';
 import FinancialReportPage from '../FinancialReportPage';
-import { useGeneralLedgerSheet } from '@/hooks/query';
 import { transformFilterFormToQuery } from '../common';
 
 const GeneralLedgerContext = createContext();

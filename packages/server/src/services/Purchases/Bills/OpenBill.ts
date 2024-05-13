@@ -1,9 +1,9 @@
-import { ServiceError } from '@/exceptions';
-import { IBillOpenedPayload, IBillOpeningPayload } from '@/interfaces';
-import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
-import UnitOfWork from '@/services/UnitOfWork';
-import events from '@/subscribers/events';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { IBillOpenedPayload, IBillOpeningPayload } from '@bigcapital/server/interfaces';
+import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import UnitOfWork from '@bigcapital/server/services/UnitOfWork';
+import events from '@bigcapital/server/subscribers/events';
 import moment from 'moment';
 import { Inject, Service } from 'typedi';
 import { BillsValidators } from './BillsValidators';

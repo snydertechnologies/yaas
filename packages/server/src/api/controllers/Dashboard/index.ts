@@ -1,4 +1,4 @@
-import DashboardService from '@/services/Dashboard/DashboardService';
+import DashboardService from '@bigcapital/server/services/Dashboard/DashboardService';
 import { NextFunction, Request, Response, Router } from 'express';
 import { Inject, Service } from 'typedi';
 

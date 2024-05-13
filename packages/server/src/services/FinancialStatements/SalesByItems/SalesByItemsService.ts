@@ -1,6 +1,6 @@
-import { ISalesByItemsReportQuery, ISalesByItemsSheet } from '@/interfaces';
-import TenancyService from '@/services/Tenancy/TenancyService';
-import { Tenant } from '@/system/models';
+import { ISalesByItemsReportQuery, ISalesByItemsSheet } from '@bigcapital/server/interfaces';
+import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import { Tenant } from '@bigcapital/server/system/models';
 import moment from 'moment';
 import { Inject, Service } from 'typedi';
 import SalesByItems from './SalesByItems';

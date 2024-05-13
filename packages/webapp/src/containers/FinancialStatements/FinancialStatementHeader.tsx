@@ -1,8 +1,8 @@
+import { Drawer, Position } from '@blueprintjs/core';
+import classNames from 'classnames';
 // @ts-nocheck
 import React, { useEffect, useState } from 'react';
-import classNames from 'classnames';
-import { Position, Drawer } from '@blueprintjs/core';
-import '@/style/containers/FinancialStatements/DrawerHeader.scss';
+import '@bigcapital/webapp/style/containers/FinancialStatements/DrawerHeader.scss';
 
 /**
  * Financial statement header.

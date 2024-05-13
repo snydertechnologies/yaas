@@ -1,4 +1,4 @@
-import { ITransactionsLockingSchema, TransactionsLockingGroup } from '@/interfaces';
+import { ITransactionsLockingSchema, TransactionsLockingGroup } from '@bigcapital/server/interfaces';
 
 export const ERRORS = {
   TRANSACTIONS_DATE_LOCKED: 'TRANSACTIONS_DATE_LOCKED',

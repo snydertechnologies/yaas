@@ -1,8 +1,8 @@
-import { ICustomer, ISaleEstimate, ISaleEstimateDTO } from '@/interfaces';
-import { BranchTransactionDTOTransform } from '@/services/Branches/Integrations/BranchTransactionDTOTransform';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
-import { WarehouseTransactionDTOTransform } from '@/services/Warehouses/Integrations/WarehouseTransactionDTOTransform';
-import { formatDateFields } from '@/utils';
+import { ICustomer, ISaleEstimate, ISaleEstimateDTO } from '@bigcapital/server/interfaces';
+import { BranchTransactionDTOTransform } from '@bigcapital/server/services/Branches/Integrations/BranchTransactionDTOTransform';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import { WarehouseTransactionDTOTransform } from '@bigcapital/server/services/Warehouses/Integrations/WarehouseTransactionDTOTransform';
+import { formatDateFields } from '@bigcapital/server/utils';
 import { omit, sumBy } from 'lodash';
 import moment from 'moment';
 import * as R from 'ramda';

@@ -1,19 +1,19 @@
+import moment from 'moment';
 // @ts-nocheck
 import React, { useEffect, useCallback } from 'react';
-import moment from 'moment';
 
-import { SalesByItemsBody } from './SalesByItemsBody';
+import { DashboardPageContent, FinancialStatement } from '@bigcapital/webapp/components';
 import { SalesByItemProvider } from './SalesByItemProvider';
-import { SalesByItemsLoadingBar } from './components';
-import { FinancialStatement, DashboardPageContent } from '@/components';
 import SalesByItemsActionsBar from './SalesByItemsActionsBar';
+import { SalesByItemsBody } from './SalesByItemsBody';
 import SalesByItemsHeader from './SalesByItemsHeader';
+import { SalesByItemsLoadingBar } from './components';
 
 import withSalesByItemsActions from './withSalesByItemsActions';
 
-import { useSalesByItemsQuery } from './utils';
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 import { SalesByItemsDialogs } from './SalesByitemsDialogs';
+import { useSalesByItemsQuery } from './utils';
 
 /**
  * Sales by items.

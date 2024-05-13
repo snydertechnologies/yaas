@@ -1,16 +1,16 @@
-// @ts-nocheck
-import React, { useContext, createContext } from 'react';
-import { pick } from 'lodash';
-import { DialogContent } from '@/components';
-import { Features } from '@/constants';
-import { useFeatureCan } from '@/hooks/state';
+import { DialogContent } from '@bigcapital/webapp/components';
+import { Features } from '@bigcapital/webapp/constants';
 import {
   useAccounts,
-  useInvoice,
   useBranches,
-  useSettingsPaymentReceives,
   useCreatePaymentReceive,
-} from '@/hooks/query';
+  useInvoice,
+  useSettingsPaymentReceives,
+} from '@bigcapital/webapp/hooks/query';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
+import { pick } from 'lodash';
+// @ts-nocheck
+import React, { useContext, createContext } from 'react';
 
 const QuickPaymentReceiveContext = createContext();
 

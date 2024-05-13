@@ -1,7 +1,7 @@
+import { DrawerLoading } from '@bigcapital/webapp/components';
+import { useTaxRate } from '@bigcapital/webapp/hooks/query/taxRates';
 // @ts-nocheck
 import React, { createContext, useContext } from 'react';
-import { DrawerLoading } from '@/components';
-import { useTaxRate } from '@/hooks/query/taxRates';
 
 const TaxRateDetailsContext = createContext();
 

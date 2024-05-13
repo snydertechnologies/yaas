@@ -1,8 +1,8 @@
 const dotenv = require('dotenv');
 const toInteger = require('lodash/toInteger');
 
-const castCommaListEnvVarToArray = require('@/utils').castCommaListEnvVarToArray;
-const parseBoolean = require('@/utils').parseBoolean;
+const castCommaListEnvVarToArray = require('@bigcapital/server/utils').castCommaListEnvVarToArray;
+const parseBoolean = require('@bigcapital/server/utils').parseBoolean;
 const path = require('node:path');
 
 dotenv.config();

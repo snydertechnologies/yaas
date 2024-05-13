@@ -1,8 +1,12 @@
+import { DialogContent } from '@bigcapital/webapp/components';
+import {
+  useCreateReconcileVendorCredit,
+  useReconcileVendorCredit,
+  useVendorCredit,
+} from '@bigcapital/webapp/hooks/query';
+import { isEmpty } from 'lodash';
 // @ts-nocheck
 import React from 'react';
-import { DialogContent } from '@/components';
-import { useVendorCredit, useReconcileVendorCredit, useCreateReconcileVendorCredit } from '@/hooks/query';
-import { isEmpty } from 'lodash';
 
 const ReconcileVendorCreditFormContext = React.createContext();
 

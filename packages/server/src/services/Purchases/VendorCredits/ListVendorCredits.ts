@@ -1,6 +1,6 @@
-import { IVendorCreditsQueryDTO } from '@/interfaces';
-import { TransformerInjectable } from '@/lib/Transformer/TransformerInjectable';
-import DynamicListingService from '@/services/DynamicListing/DynamicListService';
+import { IVendorCreditsQueryDTO } from '@bigcapital/server/interfaces';
+import { TransformerInjectable } from '@bigcapital/server/lib/Transformer/TransformerInjectable';
+import DynamicListingService from '@bigcapital/server/services/DynamicListing/DynamicListService';
 import * as R from 'ramda';
 import { Inject, Service } from 'typedi';
 import BaseVendorCredit from './BaseVendorCredit';

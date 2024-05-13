@@ -1,7 +1,7 @@
+import { useInventoryItemDetailsReport } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React from 'react';
 import FinancialReportPage from '../FinancialReportPage';
-import { useInventoryItemDetailsReport } from '@/hooks/query';
 import { transformFilterFormToQuery } from '../common';
 
 const InventoryItemDetailsContext = React.createContext();

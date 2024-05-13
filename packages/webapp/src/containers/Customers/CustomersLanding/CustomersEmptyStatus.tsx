@@ -1,9 +1,9 @@
+import { Can, EmptyStatus, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { AbilitySubject, CustomerAction } from '@bigcapital/webapp/constants/abilityOption';
+import { Button, Intent } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Button, Intent } from '@blueprintjs/core';
 import { useHistory } from 'react-router-dom';
-import { Can, FormattedMessage as T, EmptyStatus } from '@/components';
-import { AbilitySubject, CustomerAction } from '@/constants/abilityOption';
 
 export default function CustomersEmptyStatus() {
   const history = useHistory();

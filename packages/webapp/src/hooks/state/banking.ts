@@ -1,4 +1,4 @@
-import { getPlaidToken, setPlaidId, resetPlaidId } from '@/store/banking/banking.reducer';
+import { getPlaidToken, resetPlaidId, setPlaidId } from '@bigcapital/webapp/store/banking/banking.reducer';
 import { useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 

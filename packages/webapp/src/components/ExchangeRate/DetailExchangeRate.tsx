@@ -1,11 +1,11 @@
+import { DetailItem } from '@bigcapital/webapp/components';
+import { isEqual } from 'lodash';
+import * as R from 'ramda';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import * as R from 'ramda';
-import { DetailItem } from '@/components';
-import { isEqual } from 'lodash';
 
-import withCurrentOrganization from '@/containers/Organization/withCurrentOrganization';
+import withCurrentOrganization from '@bigcapital/webapp/containers/Organization/withCurrentOrganization';
 
 /**
  * Detail exchange rate item.

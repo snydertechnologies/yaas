@@ -1,7 +1,7 @@
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import InvoiceNumberDialog from '@bigcapital/webapp/containers/Dialogs/InvoiceNumberDialog';
 // @ts-nocheck
 import { useFormikContext } from 'formik';
-import InvoiceNumberDialog from '@/containers/Dialogs/InvoiceNumberDialog';
-import { DialogsName } from '@/constants/dialogs';
 import InvoiceFormMailDeliverDialog from './Dialogs/InvoiceFormMailDeliverDialog/InvoiceFormMailDeliverDialog';
 
 /**

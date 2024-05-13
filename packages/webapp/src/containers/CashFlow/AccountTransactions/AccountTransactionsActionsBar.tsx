@@ -1,19 +1,24 @@
+import {
+  DashboardActionsBar,
+  DashboardRowsHeightButton,
+  Icon,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import { Alignment, Button, Classes, NavbarDivider, NavbarGroup } from '@blueprintjs/core';
 // @ts-nocheck
 import React, { useMemo } from 'react';
-import { Button, NavbarGroup, Classes, NavbarDivider, Alignment } from '@blueprintjs/core';
 import { useHistory } from 'react-router-dom';
-import { Icon, DashboardActionsBar, DashboardRowsHeightButton, FormattedMessage as T } from '@/components';
 
-import { CashFlowMenuItems } from './utils';
-import { getAddMoneyOutOptions, getAddMoneyInOptions } from '@/constants/cashflowOptions';
-import { useRefreshCashflowTransactionsInfinity } from '@/hooks/query';
+import { getAddMoneyInOptions, getAddMoneyOutOptions } from '@bigcapital/webapp/constants/cashflowOptions';
+import { useRefreshCashflowTransactionsInfinity } from '@bigcapital/webapp/hooks/query';
 import { useAccountTransactionsContext } from './AccountTransactionsProvider';
+import { CashFlowMenuItems } from './utils';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import withSettings from '@/containers/Settings/withSettings';
-import withSettingsActions from '@/containers/Settings/withSettingsActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import withSettingsActions from '@bigcapital/webapp/containers/Settings/withSettingsActions';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 function AccountTransactionsActionsBar({
   // #withDialogActions

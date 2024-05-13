@@ -1,6 +1,6 @@
 // @ts-nocheck
-import { paginationLocationQuery } from '@/store/selectors';
-import { createDeepEqualSelector } from '@/utils';
+import { paginationLocationQuery } from '@bigcapital/webapp/store/selectors';
+import { createDeepEqualSelector } from '@bigcapital/webapp/utils';
 
 // Items categories table state.
 const itemsCategoriesTableStateSelector = (state) => state.itemsCategories.tableState;

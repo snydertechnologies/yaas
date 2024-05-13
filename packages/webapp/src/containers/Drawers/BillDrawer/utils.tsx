@@ -3,8 +3,14 @@ import React from 'react';
 import intl from 'react-intl-universal';
 import styled from 'styled-components';
 import { Button, Popover, PopoverInteractionKind, Position, MenuItem, Menu, Intent, Tag } from '@blueprintjs/core';
-import { FormatNumberCell, TextOverviewTooltipCell, FormattedMessage as T, Choose, Icon } from '@/components';
-import { getColumnWidth } from '@/utils';
+import {
+  FormatNumberCell,
+  TextOverviewTooltipCell,
+  FormattedMessage as T,
+  Choose,
+  Icon,
+} from '@bigcapital/webapp/components';
+import { getColumnWidth } from '@bigcapital/webapp/utils';
 import { useBillDrawerContext } from './BillDrawerProvider';
 
 /**

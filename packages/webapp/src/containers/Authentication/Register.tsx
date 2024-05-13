@@ -1,16 +1,16 @@
+import { Intent } from '@blueprintjs/core';
+import { Formik } from 'formik';
 // @ts-nocheck
 import intl from 'react-intl-universal';
-import { Formik } from 'formik';
 import { Link } from 'react-router-dom';
-import { Intent } from '@blueprintjs/core';
 
-import { AppToaster, FormattedMessage as T } from '@/components';
-import AuthInsider from '@/containers/Authentication/AuthInsider';
-import { useAuthLogin, useAuthRegister } from '@/hooks/query/authentication';
+import { AppToaster, FormattedMessage as T } from '@bigcapital/webapp/components';
+import AuthInsider from '@bigcapital/webapp/containers/Authentication/AuthInsider';
+import { useAuthLogin, useAuthRegister } from '@bigcapital/webapp/hooks/query/authentication';
 
 import RegisterForm from './RegisterForm';
+import { AuthFooterLink, AuthFooterLinks, AuthInsiderCard } from './_components';
 import { RegisterSchema, transformRegisterErrorsToForm, transformRegisterToastMessages } from './utils';
-import { AuthFooterLinks, AuthFooterLink, AuthInsiderCard } from './_components';
 
 const initialValues = {
   first_name: '',

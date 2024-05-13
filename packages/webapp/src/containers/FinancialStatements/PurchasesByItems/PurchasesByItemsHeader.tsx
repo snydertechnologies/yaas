@@ -1,18 +1,18 @@
+import { Button, Intent, Tab, Tabs } from '@blueprintjs/core';
+import { Form, Formik } from 'formik';
+import moment from 'moment';
 // @ts-nocheck
 import React from 'react';
-import moment from 'moment';
 import styled from 'styled-components';
-import { Formik, Form } from 'formik';
-import { Tabs, Tab, Button, Intent } from '@blueprintjs/core';
 
-import { FormattedMessage as T } from '@/components';
-import FinancialStatementHeader from '@/containers/FinancialStatements/FinancialStatementHeader';
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import FinancialStatementHeader from '@bigcapital/webapp/containers/FinancialStatements/FinancialStatementHeader';
 import PurchasesByItemsGeneralPanel from './PurchasesByItemsGeneralPanel';
 
 import withPurchasesByItems from './withPurchasesByItems';
 import withPurchasesByItemsActions from './withPurchasesByItemsActions';
 
-import { compose, transformToForm } from '@/utils';
+import { compose, transformToForm } from '@bigcapital/webapp/utils';
 import { getDefaultPurchasesByItemsQuery, getPurchasesByItemsQuerySchema } from './utils';
 
 /**

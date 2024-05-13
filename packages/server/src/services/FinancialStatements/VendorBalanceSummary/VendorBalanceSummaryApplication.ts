@@ -1,4 +1,4 @@
-import { IVendorBalanceSummaryQuery } from '@/interfaces';
+import { IVendorBalanceSummaryQuery } from '@bigcapital/server/interfaces';
 import { Inject, Service } from 'typedi';
 import { VendorBalanceSummaryExportInjectable } from './VendorBalanceSummaryExportInjectable';
 import { VendorBalanceSummaryPdf } from './VendorBalanceSummaryPdf';

@@ -13,9 +13,9 @@ import {
 } from '@blueprintjs/core';
 import * as R from 'ramda';
 
-import { Icon, T, Choose, Can } from '@/components';
-import { AbilitySubject, SaleEstimateAction } from '@/constants/abilityOption';
-import withAlertsActions from '@/containers/Alert/withAlertActions';
+import { Icon, T, Choose, Can } from '@bigcapital/webapp/components';
+import { AbilitySubject, SaleEstimateAction } from '@bigcapital/webapp/constants/abilityOption';
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
 import { useEstimateDetailDrawerContext } from './EstimateDetailDrawerProvider';
 
 /**

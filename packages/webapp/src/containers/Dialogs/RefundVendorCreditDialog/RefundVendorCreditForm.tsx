@@ -1,18 +1,18 @@
+import { Intent } from '@blueprintjs/core';
+import { Formik } from 'formik';
+import { omit } from 'lodash';
+import moment from 'moment';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import moment from 'moment';
-import { Formik } from 'formik';
-import { Intent } from '@blueprintjs/core';
-import { omit } from 'lodash';
 
-import { AppToaster } from '@/components';
-import { useRefundVendorCreditContext } from './RefundVendorCreditFormProvider';
+import { AppToaster } from '@bigcapital/webapp/components';
 import { CreateVendorRefundCreditFormSchema } from './RefundVendorCreditForm.schema';
 import RefundVendorCreditFormContent from './RefundVendorCreditFormContent';
+import { useRefundVendorCreditContext } from './RefundVendorCreditFormProvider';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { compose } from '@/utils';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { compose } from '@bigcapital/webapp/utils';
 
 const defaultInitialValues = {
   deposit_account_id: '',

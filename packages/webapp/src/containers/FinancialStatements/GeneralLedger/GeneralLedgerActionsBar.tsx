@@ -1,25 +1,25 @@
-// @ts-nocheck
-import React from 'react';
 import {
-  NavbarGroup,
   Button,
   Classes,
   NavbarDivider,
+  NavbarGroup,
   Popover,
   PopoverInteractionKind,
   Position,
 } from '@blueprintjs/core';
 import classNames from 'classnames';
+// @ts-nocheck
+import React from 'react';
 
-import { DashboardActionsBar, FormattedMessage as T, Icon } from '@/components';
-import { GeneralLedgerSheetExportMenu } from './components';
+import { DashboardActionsBar, Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { compose } from '@bigcapital/webapp/utils';
 import { useGeneralLedgerContext } from './GeneralLedgerProvider';
-import { compose } from '@/utils';
+import { GeneralLedgerSheetExportMenu } from './components';
 
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
 import withGeneralLedger from './withGeneralLedger';
 import withGeneralLedgerActions from './withGeneralLedgerActions';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { DialogsName } from '@/constants/dialogs';
 
 /**
  * General ledger - Actions bar.

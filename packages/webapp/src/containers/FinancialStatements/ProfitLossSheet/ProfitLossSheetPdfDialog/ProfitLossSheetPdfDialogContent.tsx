@@ -1,7 +1,7 @@
 // @ts-nocheck
-import { DialogContent, PdfDocumentPreview, FormattedMessage as T } from '@/components';
+import { DialogContent, PdfDocumentPreview, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { useProfitLossSheetPdf } from '@bigcapital/webapp/hooks/query';
 import { AnchorButton } from '@blueprintjs/core';
-import { useProfitLossSheetPdf } from '@/hooks/query';
 import { useProfitLossSheetContext } from '../ProfitLossProvider';
 
 export default function ProfitLossSheetPdfDialogContent() {

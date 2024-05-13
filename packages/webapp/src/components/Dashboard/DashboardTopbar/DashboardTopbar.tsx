@@ -1,20 +1,20 @@
+import { Hint, Icon, If, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Button, Classes, Navbar, NavbarDivider, NavbarGroup, Position, Tooltip } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import { useHistory } from 'react-router';
-import { Navbar, NavbarGroup, NavbarDivider, Button, Classes, Tooltip, Position } from '@blueprintjs/core';
-import { FormattedMessage as T, Icon, Hint, If } from '@/components';
 
-import DashboardTopbarUser from '@/components/Dashboard/TopbarUser';
-import DashboardBreadcrumbs from '@/components/Dashboard/DashboardBreadcrumbs';
-import DashboardBackLink from '@/components/Dashboard/DashboardBackLink';
+import DashboardBackLink from '@bigcapital/webapp/components/Dashboard/DashboardBackLink';
+import DashboardBreadcrumbs from '@bigcapital/webapp/components/Dashboard/DashboardBreadcrumbs';
+import DashboardTopbarUser from '@bigcapital/webapp/components/Dashboard/TopbarUser';
 
-import withUniversalSearchActions from '@/containers/UniversalSearch/withUniversalSearchActions';
-import withDashboardActions from '@/containers/Dashboard/withDashboardActions';
-import withDashboard from '@/containers/Dashboard/withDashboard';
+import withDashboard from '@bigcapital/webapp/containers/Dashboard/withDashboard';
+import withDashboardActions from '@bigcapital/webapp/containers/Dashboard/withDashboardActions';
+import withUniversalSearchActions from '@bigcapital/webapp/containers/UniversalSearch/withUniversalSearchActions';
 
-import QuickNewDropdown from '@/containers/QuickNewDropdown/QuickNewDropdown';
+import QuickNewDropdown from '@bigcapital/webapp/containers/QuickNewDropdown/QuickNewDropdown';
+import { compose } from '@bigcapital/webapp/utils';
 import { DashboardHamburgerButton, DashboardQuickSearchButton } from './_components';
-import { compose } from '@/utils';
 
 /**
  * Dashboard topbar.

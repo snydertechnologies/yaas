@@ -1,5 +1,5 @@
-import { IAllocatedLandedCostCreatedPayload, IAllocatedLandedCostDeletedPayload } from '@/interfaces';
-import events from '@/subscribers/events';
+import { IAllocatedLandedCostCreatedPayload, IAllocatedLandedCostDeletedPayload } from '@bigcapital/server/interfaces';
+import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 import LandedCostInventoryTransactions from './LandedCostInventoryTransactions';
 

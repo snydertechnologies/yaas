@@ -1,5 +1,5 @@
-import { ITableRow } from '@/interfaces';
-import { flatNestedTree } from '@/utils/deepdash';
+import { ITableRow } from '@bigcapital/server/interfaces';
+import { flatNestedTree } from '@bigcapital/server/utils/deepdash';
 import { repeat } from 'lodash';
 
 interface FlatNestTreeOpts {

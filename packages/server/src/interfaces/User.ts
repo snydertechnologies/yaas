@@ -1,4 +1,4 @@
-import type { Tenant } from '@/system/models';
+import type { Tenant } from '@bigcapital/server/system/models';
 import type { Model } from 'objection';
 
 export interface ISystemUser extends Model {

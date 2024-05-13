@@ -1,4 +1,4 @@
-import { IInventoryValuationReportQuery, IInventoryValuationSheet, IInventoryValuationTable } from '@/interfaces';
+import { IInventoryValuationReportQuery, IInventoryValuationSheet, IInventoryValuationTable } from '@bigcapital/server/interfaces';
 import { Inject, Service } from 'typedi';
 import { InventoryValuationSheetExportable } from './InventoryValuationSheetExportable';
 import { InventoryValuationSheetPdf } from './InventoryValuationSheetPdf';

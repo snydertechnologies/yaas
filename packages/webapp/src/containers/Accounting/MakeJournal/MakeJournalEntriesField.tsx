@@ -1,11 +1,11 @@
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import classNames from 'classnames';
+import { FastField } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { FastField } from 'formik';
-import classNames from 'classnames';
-import { CLASSES } from '@/constants/classes';
-import { entriesFieldShouldUpdate, defaultEntry, MIN_LINES_NUMBER } from './utils';
-import { useMakeJournalFormContext } from './MakeJournalProvider';
 import MakeJournalEntriesTable from './MakeJournalEntriesTable';
+import { useMakeJournalFormContext } from './MakeJournalProvider';
+import { MIN_LINES_NUMBER, defaultEntry, entriesFieldShouldUpdate } from './utils';
 
 /**
  * Make journal entries field.

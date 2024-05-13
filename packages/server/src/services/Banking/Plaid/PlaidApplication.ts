@@ -1,4 +1,4 @@
-import { PlaidItemDTO } from '@/interfaces';
+import { PlaidItemDTO } from '@bigcapital/server/interfaces';
 import { Inject, Service } from 'typedi';
 import { PlaidItemService } from './PlaidItem';
 import { PlaidLinkTokenService } from './PlaidLinkToken';

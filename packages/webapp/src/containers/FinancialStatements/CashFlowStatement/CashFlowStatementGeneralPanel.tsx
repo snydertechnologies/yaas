@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { Row, Col } from '@/components';
+import { Col, Row } from '@bigcapital/webapp/components';
 import FinancialStatementDateRange from '../FinancialStatementDateRange';
 import FinancialStatementsFilter from '../FinancialStatementsFilter';
 import RadiosAccountingBasis from '../RadiosAccountingBasis';

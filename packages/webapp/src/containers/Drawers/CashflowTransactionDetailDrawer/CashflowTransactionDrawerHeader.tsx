@@ -9,7 +9,7 @@ import {
   Row,
   Col,
   CommercialDocHeader,
-} from '@/components';
+} from '@bigcapital/webapp/components';
 import { useCashflowTransactionDrawerContext } from './CashflowTransactionDrawerProvider';
 
 /**

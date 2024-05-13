@@ -1,12 +1,12 @@
+import { AppToaster, Stack } from '@bigcapital/webapp/components';
+import { useAuthSignUpVerifyResendMail } from '@bigcapital/webapp/hooks/query';
+import { useAuthActions } from '@bigcapital/webapp/hooks/state';
 // @ts-nocheck
 import { Button, Intent } from '@blueprintjs/core';
-import AuthInsider from './AuthInsider';
-import { AuthInsiderCard } from './_components';
-import styles from './RegisterVerify.module.scss';
-import { AppToaster, Stack } from '@/components';
-import { useAuthActions } from '@/hooks/state';
-import { useAuthSignUpVerifyResendMail } from '@/hooks/query';
 import { AuthContainer } from './AuthContainer';
+import AuthInsider from './AuthInsider';
+import styles from './RegisterVerify.module.scss';
+import { AuthInsiderCard } from './_components';
 
 export default function RegisterVerify() {
   const { setLogout } = useAuthActions();

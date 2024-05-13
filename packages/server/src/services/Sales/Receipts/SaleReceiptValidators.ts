@@ -1,7 +1,7 @@
-import { ACCOUNT_PARENT_TYPE } from '@/data/AccountTypes';
-import { ServiceError } from '@/exceptions';
-import { SaleReceipt } from '@/models';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { ACCOUNT_PARENT_TYPE } from '@bigcapital/server/data/AccountTypes';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { SaleReceipt } from '@bigcapital/server/models';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject, Service } from 'typedi';
 import { ERRORS } from './constants';
 

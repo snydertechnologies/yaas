@@ -1,17 +1,17 @@
+import { Intent } from '@blueprintjs/core';
+import { Formik } from 'formik';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { Formik } from 'formik';
-import { Intent } from '@blueprintjs/core';
 
-import '@/style/pages/ReconcileVendorCredit/ReconcileVendorCreditForm.scss';
+import '@bigcapital/webapp/style/pages/ReconcileVendorCredit/ReconcileVendorCreditForm.scss';
 
-import { AppToaster } from '@/components';
+import { AppToaster } from '@bigcapital/webapp/components';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { compose, transformToForm } from '@bigcapital/webapp/utils';
 import { CreateReconcileVendorCreditFormSchema } from './ReconcileVendorCreditForm.schema';
-import { useReconcileVendorCreditContext } from './ReconcileVendorCreditFormProvider';
 import ReconcileVendorCreditFormContent from './ReconcileVendorCreditFormContent';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { compose, transformToForm } from '@/utils';
+import { useReconcileVendorCreditContext } from './ReconcileVendorCreditFormProvider';
 
 // Default form initial values.
 const defaultInitialValues = {

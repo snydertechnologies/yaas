@@ -1,23 +1,29 @@
+import {
+  AppToaster,
+  DashboardContentTable,
+  DataTable,
+  TableSkeletonHeader,
+  TableSkeletonRows,
+} from '@bigcapital/webapp/components';
+import { Intent } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Intent } from '@blueprintjs/core';
-import { DataTable, DashboardContentTable, TableSkeletonHeader, TableSkeletonRows, AppToaster } from '@/components';
 
-import withAlertsActions from '@/containers/Alert/withAlertActions';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import withDashboardActions from '@/containers/Dashboard/withDashboardActions';
-import withSettings from '@/containers/Settings/withSettings';
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDashboardActions from '@bigcapital/webapp/containers/Dashboard/withDashboardActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
 
-import { useTaxRatesTableColumns } from './_utils';
-import { useTaxRatesLandingContext } from './TaxRatesLandingProvider';
 import { TaxRatesLandingEmptyState } from './TaxRatesLandingEmptyState';
+import { useTaxRatesLandingContext } from './TaxRatesLandingProvider';
 import { TaxRatesTableActionsMenu } from './_components';
+import { useTaxRatesTableColumns } from './_utils';
 
-import { compose } from '@/utils';
-import { DRAWERS } from '@/constants/drawers';
-import { DialogsName } from '@/constants/dialogs';
-import { useActivateTaxRate, useInactivateTaxRate } from '@/hooks/query/taxRates';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import { useActivateTaxRate, useInactivateTaxRate } from '@bigcapital/webapp/hooks/query/taxRates';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Invoices datatable.

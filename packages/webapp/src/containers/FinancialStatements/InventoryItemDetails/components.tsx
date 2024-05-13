@@ -1,14 +1,14 @@
-// @ts-nocheck
-import React, { useRef } from 'react';
+import { AppToaster, Icon, If, Stack, FormattedMessage as T } from '@bigcapital/webapp/components';
 import { Button, Classes, Intent, Menu, MenuItem, ProgressBar, Text } from '@blueprintjs/core';
 import classNames from 'classnames';
-import { AppToaster, Icon, If, Stack, FormattedMessage as T } from '@/components';
+// @ts-nocheck
+import React, { useRef } from 'react';
 
-import { dynamicColumns } from './utils';
+import { useInventoryItemDetailsCsvExport, useInventoryItemDetailsXlsxExport } from '@bigcapital/webapp/hooks/query';
 import FinancialLoadingBar from '../FinancialLoadingBar';
-import { useInventoryItemDetailsCsvExport, useInventoryItemDetailsXlsxExport } from '@/hooks/query';
-import { useInventoryItemDetailsContext } from './InventoryItemDetailsProvider';
 import { FinancialComputeAlert } from '../FinancialReportPage';
+import { useInventoryItemDetailsContext } from './InventoryItemDetailsProvider';
+import { dynamicColumns } from './utils';
 import { useInventoryValuationHttpQuery } from './utils2';
 
 /**

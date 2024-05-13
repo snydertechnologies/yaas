@@ -1,24 +1,24 @@
-// @ts-nocheck
-import React from 'react';
-import { Button, NavbarGroup, Classes, NavbarDivider, Alignment } from '@blueprintjs/core';
 import {
-  Icon,
   Can,
   DashboardActionViewsList,
-  DashboardRowsHeightButton,
-  FormattedMessage as T,
   DashboardActionsBar,
-} from '@/components';
-import { ProjectAction, AbilitySubject } from '@/constants/abilityOption';
+  DashboardRowsHeightButton,
+  Icon,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import { AbilitySubject, ProjectAction } from '@bigcapital/webapp/constants/abilityOption';
+import { Alignment, Button, Classes, NavbarDivider, NavbarGroup } from '@blueprintjs/core';
+// @ts-nocheck
+import React from 'react';
 
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import withSettingsActions from '@bigcapital/webapp/containers/Settings/withSettingsActions';
 import withProjects from './withProjects';
 import withProjectsActions from './withProjectsActions';
-import withSettings from '@/containers/Settings/withSettings';
-import withSettingsActions from '@/containers/Settings/withSettingsActions';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
 
-import { compose } from '@/utils';
-import { DialogsName } from '@/constants/dialogs';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Projects actions bar.

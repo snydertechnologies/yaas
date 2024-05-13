@@ -1,10 +1,10 @@
+import { FormatDate } from '@bigcapital/webapp/components';
+import { calculateStatus } from '@bigcapital/webapp/utils';
+import { Intent } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Intent } from '@blueprintjs/core';
-import { FormatDate } from '@/components';
-import { DetailFinancialCard, DetailFinancialSection, FinancialProgressBar, FinancialCardText } from '../components';
+import { DetailFinancialCard, DetailFinancialSection, FinancialCardText, FinancialProgressBar } from '../components';
 import { useProjectTaskContext } from './ProjectTaskProvider';
-import { calculateStatus } from '@/utils';
 
 /**
  * Project Tasks header.

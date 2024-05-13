@@ -1,12 +1,12 @@
 // @ts-nocheck
 import React from 'react';
 
-import { CommercialDocEntriesTable } from '@/components';
+import { CommercialDocEntriesTable } from '@bigcapital/webapp/components';
 
 import { useInvoiceReadonlyEntriesColumns } from './utils';
 import { useInvoiceDetailDrawerContext } from './InvoiceDetailDrawerProvider';
 
-import { TableStyle } from '@/constants';
+import { TableStyle } from '@bigcapital/webapp/constants';
 
 /**
  * Invoice readonly details entries table columns.

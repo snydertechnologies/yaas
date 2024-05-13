@@ -1,4 +1,4 @@
-import { IManualJournalsFilter } from '@/interfaces';
+import { IManualJournalsFilter } from '@bigcapital/server/interfaces';
 import { Inject, Service } from 'typedi';
 import { Exportable } from '../Export/Exportable';
 import { ManualJournalsApplication } from './ManualJournalsApplication';

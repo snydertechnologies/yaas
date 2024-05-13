@@ -1,9 +1,9 @@
+import { AbilitySubject, ManualJournalAction } from '@bigcapital/webapp/constants/abilityOption';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import { RESOURCES_TYPES } from '@bigcapital/webapp/constants/resourcesTypes';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
 // @ts-nocheck
 import intl from 'react-intl-universal';
-import { RESOURCES_TYPES } from '@/constants/resourcesTypes';
-import { AbilitySubject, ManualJournalAction } from '@/constants/abilityOption';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
-import { DRAWERS } from '@/constants/drawers';
 
 /**
  * Universal search manual journal item select action.

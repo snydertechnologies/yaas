@@ -1,15 +1,15 @@
 // @ts-nocheck
 import React from 'react';
 
-import '@/style/pages/ManualJournal/List.scss';
+import '@bigcapital/webapp/style/pages/ManualJournal/List.scss';
 
-import { DashboardPageContent } from '@/components';
-import { transformTableStateToQuery, compose } from '@/utils';
+import { DashboardPageContent } from '@bigcapital/webapp/components';
+import { compose, transformTableStateToQuery } from '@bigcapital/webapp/utils';
 
+import ManualJournalsActionsBar from './ManualJournalActionsBar';
+import ManualJournalsDataTable from './ManualJournalsDataTable';
 import { ManualJournalsListProvider } from './ManualJournalsListProvider';
 import ManualJournalsViewTabs from './ManualJournalsViewTabs';
-import ManualJournalsDataTable from './ManualJournalsDataTable';
-import ManualJournalsActionsBar from './ManualJournalActionsBar';
 import withManualJournals from './withManualJournals';
 
 /**

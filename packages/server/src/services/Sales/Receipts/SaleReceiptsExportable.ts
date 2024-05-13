@@ -1,5 +1,5 @@
-import { ISalesReceiptsFilter } from '@/interfaces';
-import { Exportable } from '@/services/Export/Exportable';
+import { ISalesReceiptsFilter } from '@bigcapital/server/interfaces';
+import { Exportable } from '@bigcapital/server/services/Export/Exportable';
 import { Inject, Service } from 'typedi';
 import { SaleReceiptApplication } from './SaleReceiptApplication';
 

@@ -1,34 +1,34 @@
+import { Alignment, Button, Classes, Intent, NavbarDivider, NavbarGroup, Switch } from '@blueprintjs/core';
+import { isEmpty } from 'lodash';
 // @ts-nocheck
 import React from 'react';
-import { isEmpty } from 'lodash';
-import { Button, NavbarGroup, Classes, NavbarDivider, Intent, Switch, Alignment } from '@blueprintjs/core';
 
 import {
   AdvancedFilterPopover,
-  If,
   Can,
-  Icon,
-  FormattedMessage as T,
   DashboardActionViewsList,
+  DashboardActionsBar,
   DashboardFilterButton,
   DashboardRowsHeightButton,
-  DashboardActionsBar,
-} from '@/components';
+  Icon,
+  If,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
 
-import { AccountAction, AbilitySubject } from '@/constants/abilityOption';
-import { DialogsName } from '@/constants/dialogs';
+import { AbilitySubject, AccountAction } from '@bigcapital/webapp/constants/abilityOption';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
 
-import { useRefreshAccounts } from '@/hooks/query/accounts';
+import { useRefreshAccounts } from '@bigcapital/webapp/hooks/query/accounts';
 import { useAccountsChartContext } from './AccountsChartProvider';
 
+import withAlertActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import withSettingsActions from '@bigcapital/webapp/containers/Settings/withSettingsActions';
 import withAccounts from './withAccounts';
 import withAccountsTableActions from './withAccountsTableActions';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import withAlertActions from '@/containers/Alert/withAlertActions';
-import withSettings from '@/containers/Settings/withSettings';
-import withSettingsActions from '@/containers/Settings/withSettingsActions';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 import { useHistory } from 'react-router-dom';
 
 /**

@@ -1,7 +1,7 @@
+import { DATATYPES_LENGTH } from '@bigcapital/webapp/constants/dataTypes';
+import intl from 'react-intl-universal';
 // @ts-nocheck
 import * as Yup from 'yup';
-import intl from 'react-intl-universal';
-import { DATATYPES_LENGTH } from '@/constants/dataTypes';
 
 const Schema = Yup.object().shape({
   expense_account_id: Yup.number().required().label(intl.get('expense_account_id')),

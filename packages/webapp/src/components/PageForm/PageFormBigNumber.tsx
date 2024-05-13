@@ -1,10 +1,10 @@
+import { Money } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import classNames from 'classnames';
 // @ts-nocheck
 import React from 'react';
-import classNames from 'classnames';
-import { CLASSES } from '@/constants/classes';
-import { Money } from '@/components';
 
-import '@/style/components/BigAmount.scss';
+import '@bigcapital/webapp/style/components/BigAmount.scss';
 
 export function PageFormBigNumber({ label, amount, currencyCode }) {
   return (

@@ -1,12 +1,12 @@
+import { DashboardPageContent } from '@bigcapital/webapp/components';
+import withDashboardActions from '@bigcapital/webapp/containers/Dashboard/withDashboardActions';
+import { compose } from '@bigcapital/webapp/utils';
 // @ts-nocheck
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import ProjectDetailActionsBar from './ProjectDetailActionsBar';
-import ProjectDetailTabs from './ProjectDetailTabs';
-import { DashboardPageContent } from '@/components';
 import { ProjectDetailProvider } from './ProjectDetailProvider';
-import withDashboardActions from '@/containers/Dashboard/withDashboardActions';
-import { compose } from '@/utils';
+import ProjectDetailTabs from './ProjectDetailTabs';
 
 /**
  * Project tabs.

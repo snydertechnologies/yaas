@@ -1,7 +1,7 @@
-import { ACCOUNT_PARENT_TYPE, ACCOUNT_ROOT_TYPE } from '@/data/AccountTypes';
-import { ServiceError } from '@/exceptions';
-import { IAccount, IExpense, IExpenseCreateDTO, IExpenseEditDTO } from '@/interfaces';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { ACCOUNT_PARENT_TYPE, ACCOUNT_ROOT_TYPE } from '@bigcapital/server/data/AccountTypes';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { IAccount, IExpense, IExpenseCreateDTO, IExpenseEditDTO } from '@bigcapital/server/interfaces';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { difference, sumBy } from 'lodash';
 import { Inject, Service } from 'typedi';
 import { ERRORS } from '../constants';

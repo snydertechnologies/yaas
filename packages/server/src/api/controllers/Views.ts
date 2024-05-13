@@ -1,7 +1,7 @@
-import BaseController from '@/api/controllers/BaseController';
-import asyncMiddleware from '@/api/middleware/asyncMiddleware';
-import { ServiceError } from '@/exceptions';
-import ViewsService from '@/services/Views/ViewsService';
+import BaseController from '@bigcapital/server/api/controllers/BaseController';
+import asyncMiddleware from '@bigcapital/server/api/middleware/asyncMiddleware';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import ViewsService from '@bigcapital/server/services/Views/ViewsService';
 import { NextFunction, Request, Response, Router } from 'express';
 import { param } from 'express-validator';
 import { Inject, Service } from 'typedi';

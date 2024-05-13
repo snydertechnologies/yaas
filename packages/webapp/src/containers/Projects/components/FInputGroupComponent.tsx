@@ -1,7 +1,7 @@
+import { FInputGroup } from '@bigcapital/webapp/components';
+import { useFormikContext } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { FInputGroup } from '@/components';
-import { useFormikContext } from 'formik';
 
 export function FInputGroupComponent({ toField, ...props }) {
   const { values, setFieldValue } = useFormikContext();

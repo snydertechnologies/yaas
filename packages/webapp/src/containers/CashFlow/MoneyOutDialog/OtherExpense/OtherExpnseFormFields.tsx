@@ -1,32 +1,32 @@
-// @ts-nocheck
-import React from 'react';
-import { FastField, ErrorMessage } from 'formik';
-import { FormGroup, Position, ControlGroup } from '@blueprintjs/core';
-import classNames from 'classnames';
 import {
-  FormattedMessage as T,
   AccountsSuggestField,
-  InputPrependText,
-  FieldRequiredHint,
-  Col,
-  Row,
-  FeatureCan,
   BranchSelect,
   BranchSelectButton,
-  FTextArea,
+  Col,
   FFormGroup,
   FInputGroup,
   FMoneyInputGroup,
-} from '@/components';
+  FTextArea,
+  FeatureCan,
+  FieldRequiredHint,
+  InputPrependText,
+  Row,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import { ACCOUNT_TYPE, Features } from '@bigcapital/webapp/constants';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { handleDateChange, inputIntent, momentFormatter, tansformDateValue } from '@bigcapital/webapp/utils';
+import { ControlGroup, FormGroup, Position } from '@blueprintjs/core';
 import { DateInput } from '@blueprintjs/datetime';
-import { Features, ACCOUNT_TYPE } from '@/constants';
-import { inputIntent, momentFormatter, tansformDateValue, handleDateChange } from '@/utils';
-import { CLASSES } from '@/constants/classes';
-import { useMoneyOutDialogContext } from '../MoneyOutDialogProvider';
-import { useSetPrimaryBranchToForm, BranchRowDivider } from '../utils';
+import classNames from 'classnames';
+import { ErrorMessage, FastField } from 'formik';
+// @ts-nocheck
+import React from 'react';
 import { MoneyInOutTransactionNoField } from '../../_components';
+import { useMoneyOutDialogContext } from '../MoneyOutDialogProvider';
 import { MoneyOutExchangeRateField } from '../MoneyOutExchangeRateField';
 import { useMoneyOutFieldsContext } from '../MoneyOutFieldsProvider';
+import { BranchRowDivider, useSetPrimaryBranchToForm } from '../utils';
 
 /**
  * Other expense form fields.

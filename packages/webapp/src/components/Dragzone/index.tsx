@@ -1,8 +1,8 @@
+import { Icon } from '@bigcapital/webapp/components/Icon';
+import classNames from 'classnames';
 // @ts-nocheck
 import React, { useState, useCallback, useEffect } from 'react';
 import { useDropzone } from 'react-dropzone';
-import classNames from 'classnames';
-import { Icon } from '@/components/Icon';
 import intl from 'react-intl-universal';
 
 // const initialFile: {

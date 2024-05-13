@@ -1,4 +1,4 @@
-import config from '@/config';
+import config from '@bigcapital/server/config';
 import mongoose from 'mongoose';
 
 export default async (): Promise<mongoose.Connection> => {

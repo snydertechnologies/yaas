@@ -1,7 +1,7 @@
-import React, { cloneElement } from 'react';
+import { isElement } from '@bigcapital/webapp/utils/is-element';
 import { upperFirst } from 'lodash';
+import React, { cloneElement } from 'react';
 import { DropzoneContextValue, useDropzoneContext } from './DropzoneProvider';
-import { isElement } from '@/utils/is-element';
 
 export interface DropzoneStatusProps {
   children: React.ReactNode;

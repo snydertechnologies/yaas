@@ -1,8 +1,8 @@
-import { ServiceError } from '@/exceptions';
-import { IAuthSignUpVerifiedEventPayload, IAuthSignUpVerifingEventPayload } from '@/interfaces';
-import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';
-import events from '@/subscribers/events';
-import { SystemUser } from '@/system/models';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { IAuthSignUpVerifiedEventPayload, IAuthSignUpVerifingEventPayload } from '@bigcapital/server/interfaces';
+import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
+import events from '@bigcapital/server/subscribers/events';
+import { SystemUser } from '@bigcapital/server/system/models';
 import { Inject, Service } from 'typedi';
 import { ERRORS } from './_constants';
 

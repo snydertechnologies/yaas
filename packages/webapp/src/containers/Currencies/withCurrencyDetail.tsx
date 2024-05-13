@@ -1,6 +1,6 @@
+import { getCurrencyByCode } from '@bigcapital/webapp/store/currencies/currencies.selector';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { getCurrencyByCode } from '@/store/currencies/currencies.selector';
 
 const mapStateToProps = (state, props) => ({
   currency: getCurrencyByCode(state, props),

@@ -1,11 +1,11 @@
+import { Intent, Tag } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { Intent, Tag } from '@blueprintjs/core';
 
-import { If, AppToaster } from '@/components';
-import { NormalCell, BalanceCell, BankBalanceCell } from './components';
-import { transformTableStateToQuery, isBlank } from '@/utils';
+import { AppToaster, If } from '@bigcapital/webapp/components';
+import { isBlank, transformTableStateToQuery } from '@bigcapital/webapp/utils';
+import { BalanceCell, BankBalanceCell, NormalCell } from './components';
 
 /**
  * Account name accessor.

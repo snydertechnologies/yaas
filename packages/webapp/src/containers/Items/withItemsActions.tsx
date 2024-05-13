@@ -1,6 +1,6 @@
+import { resetItemsTableState, setItemsTableState } from '@bigcapital/webapp/store/items/items.actions';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { setItemsTableState, resetItemsTableState } from '@/store/items/items.actions';
 
 export const mapDispatchToProps = (dispatch) => ({
   setItemsTableState: (queries) => dispatch(setItemsTableState(queries)),

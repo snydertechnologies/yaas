@@ -1,9 +1,9 @@
-import AttachCurrentTenantUser from '@/api/middleware/AttachCurrentTenantUser';
-import TenancyMiddleware from '@/api/middleware/TenancyMiddleware';
-import asyncMiddleware from '@/api/middleware/asyncMiddleware';
-import JWTAuth from '@/api/middleware/jwtAuth';
-import { LemonSqueezyService } from '@/services/Subscription/LemonSqueezyService';
-import SubscriptionService from '@/services/Subscription/SubscriptionService';
+import AttachCurrentTenantUser from '@bigcapital/server/api/middleware/AttachCurrentTenantUser';
+import TenancyMiddleware from '@bigcapital/server/api/middleware/TenancyMiddleware';
+import asyncMiddleware from '@bigcapital/server/api/middleware/asyncMiddleware';
+import JWTAuth from '@bigcapital/server/api/middleware/jwtAuth';
+import { LemonSqueezyService } from '@bigcapital/server/services/Subscription/LemonSqueezyService';
+import SubscriptionService from '@bigcapital/server/services/Subscription/SubscriptionService';
 import { NextFunction, Request, Response, Router } from 'express';
 import { body } from 'express-validator';
 import { Inject, Service } from 'typedi';

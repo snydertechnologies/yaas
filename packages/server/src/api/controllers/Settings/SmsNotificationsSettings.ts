@@ -2,12 +2,12 @@ import { NextFunction, Request, Response, Router } from 'express';
 import { check, oneOf, param } from 'express-validator';
 import { Inject, Service } from 'typedi';
 
-import SmsNotificationsSettingsService from '@/services/Settings/SmsNotificationsSettings';
+import SmsNotificationsSettingsService from '@bigcapital/server/services/Settings/SmsNotificationsSettings';
 import BaseController from '../BaseController';
 
-import CheckPolicies from '@/api/middleware/CheckPolicies';
-import { ServiceError } from '@/exceptions';
-import { AbilitySubject, IEditSmsNotificationDTO, PreferencesAction } from '@/interfaces';
+import CheckPolicies from '@bigcapital/server/api/middleware/CheckPolicies';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { AbilitySubject, IEditSmsNotificationDTO, PreferencesAction } from '@bigcapital/server/interfaces';
 
 @Service()
 export default class SettingsController extends BaseController {

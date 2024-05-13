@@ -6,9 +6,9 @@ import {
   ICustomerBalanceSummaryTotal,
   ITableColumn,
   ITableRow,
-} from '@/interfaces';
+} from '@bigcapital/server/interfaces';
+import { tableMapper, tableRowMapper } from '@bigcapital/server/utils';
 import * as R from 'ramda';
-import { tableMapper, tableRowMapper } from 'utils';
 
 enum TABLE_ROWS_TYPES {
   CUSTOMER = 'CUSTOMER',

@@ -1,6 +1,6 @@
 // @ts-nocheck
 import ApiService from 'services/ApiService';
-import t from '@/store/types';
+import t from '@bigcapital/webapp/store/types';
 
 export const fetchResourceColumns = ({ resourceSlug }) => {
   return (dispatch) =>

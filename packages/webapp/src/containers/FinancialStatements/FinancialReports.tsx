@@ -1,11 +1,11 @@
+import { DashboardInsider, For } from '@bigcapital/webapp/components';
+import { financialReportMenus } from '@bigcapital/webapp/constants/financialReportsMenu';
 // @ts-nocheck
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { For, DashboardInsider } from '@/components';
 import useFilterFinancialReports from './FilterFinancialReports';
-import { financialReportMenus } from '@/constants/financialReportsMenu';
 
-import '@/style/pages/FinancialStatements/FinancialSheets.scss';
+import '@bigcapital/webapp/style/pages/FinancialStatements/FinancialSheets.scss';
 
 function FinancialReportsItem({ title, desc, link }) {
   return (

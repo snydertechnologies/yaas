@@ -1,17 +1,17 @@
+import { Button, Classes, Intent, NavbarDivider, NavbarGroup } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
 import { useHistory } from 'react-router-dom';
-import { Button, NavbarGroup, Classes, NavbarDivider, Intent } from '@blueprintjs/core';
 
 import { useContactDetailDrawerContext } from './ContactDetailDrawerProvider';
 
-import withAlertsActions from '@/containers/Alert/withAlertActions';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
 
-import { DashboardActionsBar, Icon, FormattedMessage as T } from '@/components';
+import { DashboardActionsBar, Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
 
-import { safeCallback, compose } from '@/utils';
+import { compose, safeCallback } from '@bigcapital/webapp/utils';
 
 function ContactDetailActionsBar({
   // #withAlertsActions

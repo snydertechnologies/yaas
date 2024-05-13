@@ -1,12 +1,12 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Menu, MenuItem } from '@blueprintjs/core';
+import { Suggest } from '@blueprintjs/select';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { Menu, MenuItem } from '@blueprintjs/core';
-import { Suggest } from '@blueprintjs/select';
-import { FormattedMessage as T } from '@/components';
 
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
 import classNames from 'classnames';
-import { CLASSES } from '@/constants/classes';
 
 /**
  * @param {*} billableType

@@ -2,9 +2,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Card } from '@/components';
+import { Card } from '@bigcapital/webapp/components';
 
-import { useTransactionsByReference } from '@/hooks/query';
+import { useTransactionsByReference } from '@bigcapital/webapp/hooks/query';
 import { useBillDrawerContext } from './BillDrawerProvider';
 
 import JournalEntriesTable, { AmountDisplayedBaseCurrencyMessage } from '../../JournalEntriesTable/JournalEntriesTable';

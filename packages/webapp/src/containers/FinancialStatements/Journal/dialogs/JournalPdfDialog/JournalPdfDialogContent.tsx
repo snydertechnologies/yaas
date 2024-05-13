@@ -1,6 +1,6 @@
 // @ts-nocheck
-import { DialogContent, PdfDocumentPreview, FormattedMessage as T } from '@/components';
-import { useJournalSheetPdf } from '@/hooks/query';
+import { DialogContent, PdfDocumentPreview, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { useJournalSheetPdf } from '@bigcapital/webapp/hooks/query';
 import { AnchorButton } from '@blueprintjs/core';
 import { useJournalSheetContext } from '../../JournalProvider';
 

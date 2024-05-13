@@ -1,7 +1,7 @@
+import JournalNumberDialog from '@bigcapital/webapp/containers/Dialogs/JournalNumberDialog';
+import { useFormikContext } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { useFormikContext } from 'formik';
-import JournalNumberDialog from '@/containers/Dialogs/JournalNumberDialog';
 
 /**
  * Make journal form dialogs.

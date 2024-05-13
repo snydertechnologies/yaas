@@ -1,21 +1,21 @@
-// @ts-nocheck
-import React from 'react';
+import { AppToaster } from '@bigcapital/webapp/components';
 import { Classes, Intent } from '@blueprintjs/core';
 import { Form, Formik } from 'formik';
-import { AppToaster } from '@/components';
+// @ts-nocheck
+import React from 'react';
 
 import TaxRateFormDialogFormContent from './TaxRateFormDialogFormContent';
 
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
+import { useCreateTaxRate, useEditTaxRate } from '@bigcapital/webapp/hooks/query/taxRates';
+import { compose } from '@bigcapital/webapp/utils';
 import { CreateTaxRateFormSchema, EditTaxRateFormSchema } from './TaxRateForm.schema';
-import { isTaxRateChange, transformApiErrors, transformFormToReq, transformTaxRateToForm } from './utils';
-import { useCreateTaxRate, useEditTaxRate } from '@/hooks/query/taxRates';
 import { useTaxRateFormDialogContext } from './TaxRateFormDialogBoot';
-import { TaxRateFormDialogFormFooter } from './TaxRateFormDialogFormFooter';
 import { TaxRateFormDialogFormErrors } from './TaxRateFormDialogFormErrors';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { DRAWERS } from '@/constants/drawers';
-import { compose } from '@/utils';
+import { TaxRateFormDialogFormFooter } from './TaxRateFormDialogFormFooter';
+import { isTaxRateChange, transformApiErrors, transformFormToReq, transformTaxRateToForm } from './utils';
 
 /**
  * Tax rate form dialog content.

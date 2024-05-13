@@ -1,5 +1,5 @@
-import { ICustomerBalanceSummaryQuery, ICustomerBalanceSummaryTable } from '@/interfaces';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { ICustomerBalanceSummaryQuery, ICustomerBalanceSummaryTable } from '@bigcapital/server/interfaces';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject, Service } from 'typedi';
 import { CustomerBalanceSummaryService } from './CustomerBalanceSummaryService';
 import { CustomerBalanceSummaryTable } from './CustomerBalanceSummaryTableRows';

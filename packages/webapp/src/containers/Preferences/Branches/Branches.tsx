@@ -5,10 +5,10 @@ import intl from 'react-intl-universal';
 import BranchesDataTable from './BranchesDataTable';
 import BranchesEmptyStatus from './BranchesEmptyStatus';
 
-import withDashboardActions from '@/containers/Dashboard/withDashboardActions';
+import withDashboardActions from '@bigcapital/webapp/containers/Dashboard/withDashboardActions';
 import { useBranchesContext } from './BranchesProvider';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 function Branches({
   // #withDashboardActions

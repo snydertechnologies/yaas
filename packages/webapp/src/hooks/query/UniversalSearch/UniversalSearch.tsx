@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { getUniversalSearchBind } from '@/containers/UniversalSearch/utils';
+import { getUniversalSearchBind } from '@bigcapital/webapp/containers/UniversalSearch/utils';
 import { useResourceData } from '../GenericResource';
 
 /**

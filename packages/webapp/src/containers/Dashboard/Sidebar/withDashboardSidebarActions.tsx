@@ -1,6 +1,6 @@
+import { closeSidebarSubmenu, openSidebarSubmenu } from '@bigcapital/webapp/store/dashboard/dashboard.actions';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { closeSidebarSubmenu, openSidebarSubmenu } from '@/store/dashboard/dashboard.actions';
 
 const mapActionsToProps = (dispatch) => ({
   // Opens the dashboard submenu sidebar.

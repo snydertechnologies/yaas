@@ -1,7 +1,9 @@
 // @ts-nocheck
 import React from 'react';
 
-const WarehouseDeleteAlert = React.lazy(() => import('@/containers/Alerts/Warehouses/WarehouseDeleteAlert'));
+const WarehouseDeleteAlert = React.lazy(
+  () => import('@bigcapital/webapp/containers/Alerts/Warehouses/WarehouseDeleteAlert'),
+);
 
 /**
  * Warehouses alerts.

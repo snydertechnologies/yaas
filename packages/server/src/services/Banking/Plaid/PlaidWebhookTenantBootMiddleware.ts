@@ -1,5 +1,5 @@
-import tenantDependencyInjection from '@/api/middleware/TenantDependencyInjection';
-import { SystemPlaidItem, Tenant } from '@/system/models';
+import tenantDependencyInjection from '@bigcapital/server/api/middleware/TenantDependencyInjection';
+import { SystemPlaidItem, Tenant } from '@bigcapital/server/system/models';
 import { NextFunction, Request, Response } from 'express';
 
 export const PlaidWebhookTenantBootMiddleware = async (req: Request, res: Response, next: NextFunction) => {

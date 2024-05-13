@@ -1,28 +1,28 @@
-// @ts-nocheck
-import React from 'react';
-import { Button, Classes, NavbarDivider, NavbarGroup, Alignment } from '@blueprintjs/core';
-import { useHistory } from 'react-router-dom';
 import {
-  Icon,
-  Can,
-  FormattedMessage as T,
-  DashboardActionViewsList,
   AdvancedFilterPopover,
+  Can,
+  DashboardActionViewsList,
+  DashboardActionsBar,
   DashboardFilterButton,
   DashboardRowsHeightButton,
-  DashboardActionsBar,
-} from '@/components';
+  Icon,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import { Alignment, Button, Classes, NavbarDivider, NavbarGroup } from '@blueprintjs/core';
+// @ts-nocheck
+import React from 'react';
+import { useHistory } from 'react-router-dom';
 
+import { AbilitySubject, CreditNoteAction } from '@bigcapital/webapp/constants/abilityOption';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import withSettingsActions from '@bigcapital/webapp/containers/Settings/withSettingsActions';
 import { useCreditNoteListContext } from './CreditNotesListProvider';
-import { CreditNoteAction, AbilitySubject } from '@/constants/abilityOption';
 import withCreditNotes from './withCreditNotes';
 import withCreditNotesActions from './withCreditNotesActions';
-import withSettings from '@/containers/Settings/withSettings';
-import withSettingsActions from '@/containers/Settings/withSettingsActions';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
 
-import { compose } from '@/utils';
-import { DialogsName } from '@/constants/dialogs';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Credit note table actions bar.

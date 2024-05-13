@@ -1,6 +1,6 @@
-import { DEFAULT_VIEWS } from '@/services/Sales/Invoices/constants';
+import TenantModel from '@bigcapital/server/models/TenantModel';
+import { DEFAULT_VIEWS } from '@bigcapital/server/services/Sales/Invoices/constants';
 import { castArray } from 'lodash';
-import TenantModel from 'models/TenantModel';
 import moment from 'moment';
 import { Model, mixin, raw } from 'objection';
 import CustomViewBaseModel from './CustomViewBaseModel';
@@ -394,14 +394,14 @@ export default class SaleInvoice extends mixin(TenantModel, [ModelSetting, Custo
    * Relationship mapping.
    */
   static get relationMappings() {
-    const AccountTransaction = require('models/AccountTransaction');
-    const ItemEntry = require('models/ItemEntry');
-    const Customer = require('models/Customer');
-    const InventoryCostLotTracker = require('models/InventoryCostLotTracker');
-    const PaymentReceiveEntry = require('models/PaymentReceiveEntry');
-    const Branch = require('models/Branch');
-    const Account = require('models/Account');
-    const TaxRateTransaction = require('models/TaxRateTransaction');
+    const AccountTransaction = require('@bigcapital/server/models/AccountTransaction');
+    const ItemEntry = require('@bigcapital/server/models/ItemEntry');
+    const Customer = require('@bigcapital/server/models/Customer');
+    const InventoryCostLotTracker = require('@bigcapital/server/models/InventoryCostLotTracker');
+    const PaymentReceiveEntry = require('@bigcapital/server/models/PaymentReceiveEntry');
+    const Branch = require('@bigcapital/server/models/Branch');
+    const Account = require('@bigcapital/server/models/Account');
+    const TaxRateTransaction = require('@bigcapital/server/models/TaxRateTransaction');
 
     return {
       /**

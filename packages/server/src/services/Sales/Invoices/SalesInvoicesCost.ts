@@ -1,8 +1,8 @@
-import { IInventoryCostLotsGLEntriesWriteEvent, IInventoryTransaction } from '@/interfaces';
-import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';
-import InventoryService from '@/services/Inventory/Inventory';
-import UnitOfWork from '@/services/UnitOfWork';
-import events from '@/subscribers/events';
+import { IInventoryCostLotsGLEntriesWriteEvent, IInventoryTransaction } from '@bigcapital/server/interfaces';
+import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
+import InventoryService from '@bigcapital/server/services/Inventory/Inventory';
+import UnitOfWork from '@bigcapital/server/services/UnitOfWork';
+import events from '@bigcapital/server/subscribers/events';
 import { Knex } from 'knex';
 import { chain } from 'lodash';
 import moment from 'moment';

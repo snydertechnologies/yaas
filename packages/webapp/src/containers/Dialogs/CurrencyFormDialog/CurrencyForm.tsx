@@ -1,16 +1,16 @@
+import { AppToaster } from '@bigcapital/webapp/components';
+import { Intent } from '@blueprintjs/core';
+import { Formik } from 'formik';
 // @ts-nocheck
 import React, { useMemo } from 'react';
 import intl from 'react-intl-universal';
-import { Intent } from '@blueprintjs/core';
-import { Formik } from 'formik';
-import { AppToaster } from '@/components';
 import CurrencyFormContent from './CurrencyFormContent';
 
-import { useCurrencyFormContext } from './CurrencyFormProvider';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
 import { CreateCurrencyFormSchema, EditCurrencyFormSchema } from './CurrencyForm.schema';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
+import { useCurrencyFormContext } from './CurrencyFormProvider';
 
-import { compose, transformToForm } from '@/utils';
+import { compose, transformToForm } from '@bigcapital/webapp/utils';
 
 const defaultInitialValues = {
   currency_name: '',

@@ -1,6 +1,6 @@
+import { useApplicationBoot } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import React from 'react';
-import { useApplicationBoot } from '@/components';
 
 /**
  * Private pages provider.

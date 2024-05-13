@@ -1,9 +1,9 @@
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
+import * as R from 'ramda';
 // @ts-nocheck
 import React, { useCallback } from 'react';
-import * as R from 'ramda';
 import { FMultiSelect } from '../Forms';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
-import { DRAWERS } from '@/constants/drawers';
 
 /**
  * Contacts multi-select component.

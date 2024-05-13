@@ -4,8 +4,8 @@ import { persistReducer } from 'redux-persist';
 import purgeStoredState from 'redux-persist/es/purgeStoredState';
 import storage from 'redux-persist/lib/storage';
 import { isUndefined } from 'lodash';
-import { getCookie } from '@/utils';
-import t from '@/store/types';
+import { getCookie } from '@bigcapital/webapp/utils';
+import t from '@bigcapital/webapp/store/types';
 
 // Read stored data in cookies and merge it with the initial state.
 const initialState = {

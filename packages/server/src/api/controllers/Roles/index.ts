@@ -3,7 +3,7 @@ import { Router } from 'express';
 import { Container, Inject, Service } from 'typedi';
 import BaseController from '../BaseController';
 
-import RolesService from '@/services/Roles/RolesService';
+import RolesService from '@bigcapital/server/services/Roles/RolesService';
 import PermissionsSchema from './PermissionsSchema';
 import RolesController from './Roles';
 @Service()

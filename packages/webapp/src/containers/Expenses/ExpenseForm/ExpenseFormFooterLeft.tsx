@@ -1,7 +1,7 @@
+import { FEditableText, FFormGroup, FormattedMessage as T } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
-import { FFormGroup, FEditableText, FormattedMessage as T } from '@/components';
 
 export function ExpenseFormFooterLeft() {
   return (

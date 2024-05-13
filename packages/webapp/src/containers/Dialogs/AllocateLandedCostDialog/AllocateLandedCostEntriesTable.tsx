@@ -2,9 +2,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { DataTableEditable } from '@/components';
+import { DataTableEditable } from '@bigcapital/webapp/components';
 
-import { compose, updateTableCell } from '@/utils';
+import { compose, updateTableCell } from '@bigcapital/webapp/utils';
 import { useAllocateLandedCostEntriesTableColumns } from './utils';
 
 /**

@@ -1,4 +1,4 @@
-import { IBalanceSheetMeta, IBalanceSheetQuery } from '@/interfaces';
+import { IBalanceSheetMeta, IBalanceSheetQuery } from '@bigcapital/server/interfaces';
 import moment from 'moment';
 import { Inject, Service } from 'typedi';
 import { FinancialSheetMeta } from '../FinancialSheetMeta';

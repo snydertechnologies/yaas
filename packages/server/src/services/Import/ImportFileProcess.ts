@@ -1,5 +1,5 @@
-import { ServiceError } from '@/exceptions';
-import { Import } from '@/system/models';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { Import } from '@bigcapital/server/system/models';
 import { Knex } from 'knex';
 import { chain } from 'lodash';
 import { Inject, Service } from 'typedi';

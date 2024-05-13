@@ -2,8 +2,8 @@
 import { createReducer } from '@reduxjs/toolkit';
 import { persistReducer, purgeStoredState } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
-import { createTableStateReducers } from '@/store/tableState.reducer';
-import t from '@/store/types';
+import { createTableStateReducers } from '@bigcapital/webapp/store/tableState.reducer';
+import t from '@bigcapital/webapp/store/types';
 
 export const defaultTableQuery = {
   filterRoles: [],

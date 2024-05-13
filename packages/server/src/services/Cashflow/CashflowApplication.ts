@@ -5,7 +5,7 @@ import {
   ICashflowNewCommandDTO,
   ICategorizeCashflowTransactioDTO,
   IGetUncategorizedTransactionsQuery,
-} from '@/interfaces';
+} from '@bigcapital/server/interfaces';
 import { Inject, Service } from 'typedi';
 import { CategorizeCashflowTransaction } from './CategorizeCashflowTransaction';
 import { CategorizeTransactionAsExpense } from './CategorizeTransactionAsExpense';

@@ -1,10 +1,10 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { Button, MenuItem } from '@blueprintjs/core';
+import { Select } from '@blueprintjs/select';
+import classNames from 'classnames';
 // @ts-nocheck
 import React, { useCallback, useEffect, useState } from 'react';
-import { FormattedMessage as T } from '@/components';
-import { CLASSES } from '@/constants/classes';
-import classNames from 'classnames';
-import { MenuItem, Button } from '@blueprintjs/core';
-import { Select } from '@blueprintjs/select';
 
 export function CurrencySelectList({
   currenciesList,

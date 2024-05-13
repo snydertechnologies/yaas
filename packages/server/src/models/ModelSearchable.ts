@@ -1,4 +1,4 @@
-import type { IModelMeta, ISearchRole } from '@/interfaces';
+import type { IModelMeta, ISearchRole } from '@bigcapital/server/interfaces';
 
 export default (Model) =>
   class ModelSearchable extends Model {

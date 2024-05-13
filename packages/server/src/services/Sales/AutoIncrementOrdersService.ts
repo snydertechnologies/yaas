@@ -1,6 +1,6 @@
-import TenancyService from '@/services/Tenancy/TenancyService';
+import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import { parseBoolean, transactionIncrement } from '@bigcapital/server/utils';
 import { Inject, Service } from 'typedi';
-import { parseBoolean, transactionIncrement } from 'utils';
 
 /**
  * Auto increment orders service.

@@ -1,10 +1,10 @@
+import { Button, MenuItem, PopoverInteractionKind, Position } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Button, PopoverInteractionKind, MenuItem, Position } from '@blueprintjs/core';
 
+import { Icon } from '@bigcapital/webapp/components';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
 import { Select } from '@blueprintjs/select';
-import { Icon } from '@/components';
-import { DRAWERS } from '@/constants/drawers';
 
 export const CashFlowMenuItems = ({ text, items, onItemSelect, buttonProps }) => {
   // Menu items renderer.

@@ -1,10 +1,10 @@
+import { Icon } from '@bigcapital/webapp/components/Icon';
+import { Classes } from '@blueprintjs/core';
+import clsx from 'classnames';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
 import styled from 'styled-components';
-import clsx from 'classnames';
-import { Classes } from '@blueprintjs/core';
-import { Icon } from '@/components/Icon';
 
 const ACCOUNT_TYPE = {
   CASH: 'cash',

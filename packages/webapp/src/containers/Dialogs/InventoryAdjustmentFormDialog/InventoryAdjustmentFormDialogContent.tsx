@@ -1,10 +1,10 @@
 // @ts-nocheck
 import React from 'react';
 
-import '@/style/pages/Items/ItemAdjustmentDialog.scss';
+import '@bigcapital/webapp/style/pages/Items/ItemAdjustmentDialog.scss';
 
-import { InventoryAdjustmentFormProvider } from './InventoryAdjustmentFormProvider';
 import InventoryAdjustmentForm from './InventoryAdjustmentForm';
+import { InventoryAdjustmentFormProvider } from './InventoryAdjustmentFormProvider';
 
 /**
  * Inventory adjustment form dialog content.

@@ -1,17 +1,17 @@
 // @ts-nocheck
 import React from 'react';
 
-import { FinancialStatement, DashboardPageContent } from '@/components';
+import { DashboardPageContent, FinancialStatement } from '@bigcapital/webapp/components';
 
-import RealizedGainOrLossHeader from './RealizedGainOrLossHeader';
 import RealizedGainOrLossActionsBar from './RealizedGainOrLossActionsBar';
-import { RealizedGainOrLossLoadingBar } from './components';
+import RealizedGainOrLossHeader from './RealizedGainOrLossHeader';
 import { RealizedGainOrLossProvider } from './RealizedGainOrLossProvider';
+import { RealizedGainOrLossLoadingBar } from './components';
 
 import withCurrentOrganization from '../../Organization/withCurrentOrganization';
 import withRealizedGainOrLossActions from './withRealizedGainOrLossActions';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Realized Gain or Loss.

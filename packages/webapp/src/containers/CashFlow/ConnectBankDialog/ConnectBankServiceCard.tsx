@@ -1,5 +1,5 @@
+import { Group } from '@bigcapital/webapp/components';
 import styled from 'styled-components';
-import { Group } from '@/components';
 
 const BankServiceIcon = styled('div')`
   height: 40px;

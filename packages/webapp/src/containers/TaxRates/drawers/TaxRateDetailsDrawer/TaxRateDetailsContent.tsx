@@ -1,10 +1,10 @@
+import { DrawerBody, DrawerHeaderContent } from '@bigcapital/webapp/components';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
 // @ts-nocheck
 import React from 'react';
 import TaxRateDetailsContentActionsBar from './TaxRateDetailsContentActionsBar';
 import { TaxRateDetailsContentBoot } from './TaxRateDetailsContentBoot';
-import { DrawerBody, DrawerHeaderContent } from '@/components';
 import TaxRateDetailsContentDetails from './TaxRateDetailsContentDetails';
-import { DRAWERS } from '@/constants/drawers';
 
 interface TaxRateDetailsContentProps {
   taxRateid: number;

@@ -1,14 +1,19 @@
+import * as R from 'ramda';
 // @ts-nocheck
 import React from 'react';
-import * as R from 'ramda';
 import styled from 'styled-components';
 
-import { Card, DrawerLoading } from '@/components';
-import { CustomerFormProvider, useCustomerFormContext } from '@/containers/Customers/CustomerForm/CustomerFormProvider';
-import CustomerFormFormik, { CustomerFormHeaderPrimary } from '@/containers/Customers/CustomerForm/CustomerFormFormik';
+import { Card, DrawerLoading } from '@bigcapital/webapp/components';
+import CustomerFormFormik, {
+  CustomerFormHeaderPrimary,
+} from '@bigcapital/webapp/containers/Customers/CustomerForm/CustomerFormFormik';
+import {
+  CustomerFormProvider,
+  useCustomerFormContext,
+} from '@bigcapital/webapp/containers/Customers/CustomerForm/CustomerFormProvider';
 
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
-import { DRAWERS } from '@/constants/drawers';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
 
 /**
  * Drawer customer form loading wrapper.

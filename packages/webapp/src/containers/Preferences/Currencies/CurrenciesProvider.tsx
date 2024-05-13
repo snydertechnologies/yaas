@@ -1,6 +1,6 @@
+import { useCurrencies } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React, { createContext, useContext } from 'react';
-import { useCurrencies } from '@/hooks/query';
 
 const CurrenciesContext = createContext();
 

@@ -1,8 +1,8 @@
 import fs from 'fs';
-import asyncMiddleware from '@/api/middleware/asyncMiddleware';
-import { ServiceError } from '@/exceptions';
-import { IMediaLinkDTO } from '@/interfaces';
-import MediaService from '@/services/Media/MediaService';
+import asyncMiddleware from '@bigcapital/server/api/middleware/asyncMiddleware';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { IMediaLinkDTO } from '@bigcapital/server/interfaces';
+import MediaService from '@bigcapital/server/services/Media/MediaService';
 import { NextFunction, Request, Response, Router } from 'express';
 import { check, param, query } from 'express-validator';
 import { camelCase, upperFirst } from 'lodash';

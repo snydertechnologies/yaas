@@ -3,9 +3,14 @@ import { useMemo } from 'react';
 import intl from 'react-intl-universal';
 import styled from 'styled-components';
 
-import { TableStyle } from '@/constants';
-import { defaultExpanderReducer, tableRowTypesToClassnames } from '@/utils';
-import { FinancialSheet, ReportDataTable, TableFastCell, TableVirtualizedListRows } from '@/components';
+import {
+  FinancialSheet,
+  ReportDataTable,
+  TableFastCell,
+  TableVirtualizedListRows,
+} from '@bigcapital/webapp/components';
+import { TableStyle } from '@bigcapital/webapp/constants';
+import { defaultExpanderReducer, tableRowTypesToClassnames } from '@bigcapital/webapp/utils';
 
 import { useGeneralLedgerContext } from './GeneralLedgerProvider';
 import { useGeneralLedgerTableColumns } from './dynamicColumns';

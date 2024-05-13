@@ -1,6 +1,6 @@
 // @ts-nocheck
 import axios from 'axios';
-import { store } from '@/store/createStore';
+import { store } from '@bigcapital/webapp/store/createStore';
 const http = axios.create();
 
 http.interceptors.request.use(

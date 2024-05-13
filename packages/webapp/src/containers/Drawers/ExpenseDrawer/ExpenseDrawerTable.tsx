@@ -1,12 +1,12 @@
 // @ts-nocheck
 import React from 'react';
 
-import { CommercialDocEntriesTable } from '@/components';
+import { CommercialDocEntriesTable } from '@bigcapital/webapp/components';
 
-import { useExpenseReadEntriesColumns } from './utils';
 import { useExpenseDrawerContext } from './ExpenseDrawerProvider';
+import { useExpenseReadEntriesColumns } from './utils';
 
-import { TableStyle } from '@/constants';
+import { TableStyle } from '@bigcapital/webapp/constants';
 
 /**
  * Expense details table.

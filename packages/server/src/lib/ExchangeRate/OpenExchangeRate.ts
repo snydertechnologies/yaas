@@ -1,5 +1,5 @@
-import config from '@/config';
-import { ServiceError } from '@/exceptions';
+import config from '@bigcapital/server/config';
+import { ServiceError } from '@bigcapital/server/exceptions';
 import Axios from 'axios';
 import { EchangeRateErrors, IExchangeRateService, OPEN_EXCHANGE_RATE_LATEST_URL } from './types';
 

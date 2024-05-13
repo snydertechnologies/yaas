@@ -1,11 +1,11 @@
-// @ts-nocheck
-import * as R from 'ramda';
+import { Group } from '@bigcapital/webapp/components';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
 import { Button, Classes, Intent } from '@blueprintjs/core';
 import { useFormikContext } from 'formik';
+// @ts-nocheck
+import * as R from 'ramda';
 import styled from 'styled-components';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
-import { DRAWERS } from '@/constants/drawers';
-import { Group } from '@/components';
 
 function CategorizeTransactionFormFooterRoot({
   // #withDrawerActions

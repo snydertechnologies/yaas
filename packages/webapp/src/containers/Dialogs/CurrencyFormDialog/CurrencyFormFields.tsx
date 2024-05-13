@@ -1,16 +1,16 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Classes, FormGroup, InputGroup } from '@blueprintjs/core';
+import classNames from 'classnames';
+import { FastField } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { Classes, FormGroup, InputGroup } from '@blueprintjs/core';
-import { FastField } from 'formik';
-import { FormattedMessage as T } from '@/components';
-import classNames from 'classnames';
 
-import { CLASSES } from '@/constants/classes';
+import { ErrorMessage, FieldRequiredHint, ListSelect } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
 import { useCurrencyFormContext } from './CurrencyFormProvider';
-import { ErrorMessage, FieldRequiredHint, ListSelect } from '@/components';
 
-import { useAutofocus } from '@/hooks';
-import { inputIntent, currenciesOptions } from '@/utils';
+import { useAutofocus } from '@bigcapital/webapp/hooks';
+import { currenciesOptions, inputIntent } from '@bigcapital/webapp/utils';
 
 /**
  * Currency form fields.

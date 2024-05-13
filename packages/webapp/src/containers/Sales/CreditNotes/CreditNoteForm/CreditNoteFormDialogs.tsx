@@ -1,7 +1,7 @@
+import CreditNoteNumberDialog from '@bigcapital/webapp/containers/Dialogs/CreditNoteNumberDialog';
+import { useFormikContext } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { useFormikContext } from 'formik';
-import CreditNoteNumberDialog from '@/containers/Dialogs/CreditNoteNumberDialog';
 
 /**
  * Credit note form dialogs.

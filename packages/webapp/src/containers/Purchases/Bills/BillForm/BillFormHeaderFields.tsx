@@ -1,22 +1,22 @@
+import { Classes, FormGroup, InputGroup, Position } from '@blueprintjs/core';
+import { DateInput } from '@blueprintjs/datetime';
+import classNames from 'classnames';
+import { ErrorMessage, FastField, useFormikContext } from 'formik';
 // @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
-import classNames from 'classnames';
-import { FastField, ErrorMessage, useFormikContext } from 'formik';
-import { FormGroup, InputGroup, Classes, Position } from '@blueprintjs/core';
-import { DateInput } from '@blueprintjs/datetime';
 
-import { FeatureCan, FormattedMessage as T } from '@/components';
-import { CLASSES } from '@/constants/classes';
-import { FFormGroup, FieldRequiredHint, Icon, VendorDrawerLink, VendorsSelect } from '@/components';
+import { FeatureCan, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { FFormGroup, FieldRequiredHint, Icon, VendorDrawerLink, VendorsSelect } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
 
+import { Features } from '@bigcapital/webapp/constants';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { ProjectsSelect } from '@bigcapital/webapp/containers/Projects/components';
+import { compose, handleDateChange, inputIntent, momentFormatter, tansformDateValue } from '@bigcapital/webapp/utils';
 import { useBillFormContext } from './BillFormProvider';
-import { vendorsFieldShouldUpdate } from './utils';
 import { BillExchangeRateInputField, BillProjectSelectButton } from './components';
-import { ProjectsSelect } from '@/containers/Projects/components';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { momentFormatter, compose, tansformDateValue, handleDateChange, inputIntent } from '@/utils';
-import { Features } from '@/constants';
+import { vendorsFieldShouldUpdate } from './utils';
 
 /**
  * Fill form header.

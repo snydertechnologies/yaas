@@ -1,6 +1,6 @@
-import { IAccountChange, IAccountsChange, IJournalEntry, IJournalPoster } from '@/interfaces';
-import JournalEntry from '@/services/Accounting/JournalEntry';
-import TenancyService from '@/services/Tenancy/TenancyService';
+import { IAccountChange, IAccountsChange, IJournalEntry, IJournalPoster } from '@bigcapital/server/interfaces';
+import JournalEntry from '@bigcapital/server/services/Accounting/JournalEntry';
+import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import async from 'async';
 import Knex from 'knex';
 import { chain, get, omit } from 'lodash';

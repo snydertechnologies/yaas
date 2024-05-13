@@ -1,15 +1,15 @@
+import { Alignment, Navbar, NavbarGroup } from '@blueprintjs/core';
 // @ts-nocheck
 import React, { useCallback } from 'react';
-import { Alignment, Navbar, NavbarGroup } from '@blueprintjs/core';
 import intl from 'react-intl-universal';
 
-import { DashboardViewsTabs } from '@/components';
+import { DashboardViewsTabs } from '@bigcapital/webapp/components';
 import { useAccountsChartContext } from './AccountsChartProvider';
 
 import withAccounts from './withAccounts';
 import withAccountsTableActions from './withAccountsTableActions';
 
-import { compose, transfromViewsToTabs } from '@/utils';
+import { compose, transfromViewsToTabs } from '@bigcapital/webapp/utils';
 
 /**
  * Accounts views tabs.

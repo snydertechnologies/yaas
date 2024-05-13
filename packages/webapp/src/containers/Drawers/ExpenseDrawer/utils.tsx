@@ -2,9 +2,9 @@
 import React from 'react';
 import intl from 'react-intl-universal';
 
-import { FormatNumberCell, TextOverviewTooltipCell } from '@/components';
+import { FormatNumberCell, TextOverviewTooltipCell } from '@bigcapital/webapp/components';
+import { getColumnWidth } from '@bigcapital/webapp/utils';
 import { useExpenseDrawerContext } from './ExpenseDrawerProvider';
-import { getColumnWidth } from '@/utils';
 
 /**
  * Retrieve expense readonly details entries table columns.

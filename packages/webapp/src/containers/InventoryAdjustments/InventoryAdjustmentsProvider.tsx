@@ -1,7 +1,7 @@
+import { DashboardInsider } from '@bigcapital/webapp/components/Dashboard';
+import { useInventoryAdjustments } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React, { createContext } from 'react';
-import { DashboardInsider } from '@/components/Dashboard';
-import { useInventoryAdjustments } from '@/hooks/query';
 
 const InventoryAdjustmentsContext = createContext();
 

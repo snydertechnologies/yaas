@@ -1,5 +1,5 @@
+import { transformToForm } from '@bigcapital/webapp/utils';
 import { castArray, first } from 'lodash';
-import { transformToForm } from '@/utils';
 
 export const initialMailNotificationValues = {
   from: [],

@@ -1,9 +1,9 @@
+import { Icon, If, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { firstLettersArgs, safeCallback } from '@bigcapital/webapp/utils';
+import { Button, Intent, Menu, MenuDivider, MenuItem, Popover, Position, Tag } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { FormattedMessage as T, Icon, If } from '@/components';
-import { Intent, Button, Popover, Menu, MenuDivider, Tag, MenuItem, Position } from '@blueprintjs/core';
-import { safeCallback, firstLettersArgs } from '@/utils';
 
 /**
  * Avatar cell.

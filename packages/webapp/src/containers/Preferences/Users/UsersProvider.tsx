@@ -1,6 +1,6 @@
+import { useUsers } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React, { createContext } from 'react';
-import { useUsers } from '@/hooks/query';
 
 const UsersListContext = createContext();
 

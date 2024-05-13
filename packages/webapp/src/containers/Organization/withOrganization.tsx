@@ -7,7 +7,7 @@ import {
   isOrganizationSubscribedFactory,
   isOrganizationCongratsFactory,
   isOrganizationBuildRunningFactory,
-} from '@/store/organizations/organizations.selectors';
+} from '@bigcapital/webapp/store/organizations/organizations.selectors';
 
 export default (mapState) => {
   const getOrganizationById = getOrganizationByIdFactory();

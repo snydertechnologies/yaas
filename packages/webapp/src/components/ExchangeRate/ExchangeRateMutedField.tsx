@@ -1,9 +1,9 @@
+import { ExchangeRateInputGroup, Icon } from '@bigcapital/webapp/components';
+import { Button, Classes, FormGroup, Popover, PopoverInteractionKind, Position } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import styled from 'styled-components';
 import intl from 'react-intl-universal';
-import { Button, Popover, PopoverInteractionKind, FormGroup, Position, Classes } from '@blueprintjs/core';
-import { ExchangeRateInputGroup, Icon } from '@/components';
+import styled from 'styled-components';
 
 export function ExchangeRateMutedField({
   name,

@@ -1,5 +1,5 @@
-import { IBillsFilter } from '@/interfaces';
-import { Exportable } from '@/services/Export/Exportable';
+import { IBillsFilter } from '@bigcapital/server/interfaces';
+import { Exportable } from '@bigcapital/server/services/Export/Exportable';
 import { Inject, Service } from 'typedi';
 import { BillsApplication } from './BillsApplication';
 

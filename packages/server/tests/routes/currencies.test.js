@@ -1,4 +1,4 @@
-import Currency from 'models/Currency';
+import Currency from '@bigcapital/server/models/Currency';
 import { loginRes, tenantFactory, tenantWebsite } from '~/dbInit';
 import { expect, request } from '~/testInit';
 

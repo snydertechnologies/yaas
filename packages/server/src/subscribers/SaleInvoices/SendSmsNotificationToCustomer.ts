@@ -1,7 +1,7 @@
-import { ISaleInvoiceCreatedPayload } from '@/interfaces';
-import { SaleInvoiceNotifyBySms } from '@/services/Sales/Invoices/SaleInvoiceNotifyBySms';
-import { runAfterTransaction } from '@/services/UnitOfWork/TransactionsHooks';
-import events from '@/subscribers/events';
+import { ISaleInvoiceCreatedPayload } from '@bigcapital/server/interfaces';
+import { SaleInvoiceNotifyBySms } from '@bigcapital/server/services/Sales/Invoices/SaleInvoiceNotifyBySms';
+import { runAfterTransaction } from '@bigcapital/server/services/UnitOfWork/TransactionsHooks';
+import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 
 @Service()

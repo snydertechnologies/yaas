@@ -2,12 +2,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { TableStyle } from '@/constants';
-import { DataTable, TableSkeletonRows, Card } from '@/components';
+import { TableStyle } from '@bigcapital/webapp/constants';
+import { DataTable, TableSkeletonRows, Card } from '@bigcapital/webapp/components';
 
 import { useItemDetailDrawerContext } from '../ItemDetailDrawerProvider';
 import { useWarehouseLocationsColumns } from './components';
-import { useItemWarehouseLocation } from '@/hooks/query';
+import { useItemWarehouseLocation } from '@bigcapital/webapp/hooks/query';
 
 /**
  * Warehouses locations table columns.

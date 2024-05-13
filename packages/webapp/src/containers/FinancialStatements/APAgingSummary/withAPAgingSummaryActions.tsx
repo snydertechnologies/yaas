@@ -1,6 +1,6 @@
+import { toggleAPAgingSummaryFilterDrawer } from '@bigcapital/webapp/store/financialStatement/financialStatements.actions';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { toggleAPAgingSummaryFilterDrawer } from '@/store/financialStatement/financialStatements.actions';
 
 const mapActionsToProps = (dispatch) => ({
   toggleAPAgingSummaryFilterDrawer: (toggle) => dispatch(toggleAPAgingSummaryFilterDrawer(toggle)),

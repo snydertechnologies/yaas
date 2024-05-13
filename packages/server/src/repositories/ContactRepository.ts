@@ -1,5 +1,5 @@
-import TenantRepository from '@/repositories/TenantRepository';
-import { Contact } from 'models';
+import { Contact } from '@bigcapital/server/models';
+import TenantRepository from '@bigcapital/server/repositories/TenantRepository';
 
 export default class ContactRepository extends TenantRepository {
   /**

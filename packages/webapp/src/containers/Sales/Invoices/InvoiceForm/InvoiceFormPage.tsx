@@ -2,11 +2,11 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
-import '@/style/pages/SaleInvoice/PageForm.scss';
+import '@bigcapital/webapp/style/pages/SaleInvoice/PageForm.scss';
 
+import { AutoExchangeRateProvider } from '@bigcapital/webapp/containers/Entries/AutoExchangeProvider';
 import InvoiceForm from './InvoiceForm';
 import { InvoiceFormProvider } from './InvoiceFormProvider';
-import { AutoExchangeRateProvider } from '@/containers/Entries/AutoExchangeProvider';
 
 /**
  * Invoice form page.

@@ -1,34 +1,34 @@
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { Intent } from '@blueprintjs/core';
+import classNames from 'classnames';
+import { Form, Formik } from 'formik';
+import { isEmpty } from 'lodash';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import classNames from 'classnames';
 import { useHistory } from 'react-router-dom';
-import { Formik, Form } from 'formik';
-import { Intent } from '@blueprintjs/core';
-import { isEmpty } from 'lodash';
-import { CLASSES } from '@/constants/classes';
 import { CreateCreditNoteFormSchema, EditCreditNoteFormSchema } from './VendorCreditNoteForm.schema';
 
-import VendorCreditNoteFormHeader from './VendorCreditNoteFormHeader';
-import VendorCreditNoteItemsEntriesEditor from './VendorCreditNoteItemsEntriesEditor';
-import VendorCreditNoteFormFooter from './VendorCreditNoteFormFooter';
 import VendorCreditNoteFloatingActions from './VendorCreditNoteFloatingActions';
 import VendorCreditNoteFormDialogs from './VendorCreditNoteFormDialogs';
+import VendorCreditNoteFormFooter from './VendorCreditNoteFormFooter';
+import VendorCreditNoteFormHeader from './VendorCreditNoteFormHeader';
 import VendorCreditNoteFormTopBar from './VendorCreditNoteFormTopBar';
+import VendorCreditNoteItemsEntriesEditor from './VendorCreditNoteItemsEntriesEditor';
 
 import { useVendorCreditNoteFormContext } from './VendorCreditNoteFormProvider';
 
-import { AppToaster } from '@/components';
-import { compose, safeSumBy, transactionNumber } from '@/utils';
+import { AppToaster } from '@bigcapital/webapp/components';
+import { compose, safeSumBy, transactionNumber } from '@bigcapital/webapp/utils';
 import {
   defaultVendorsCreditNote,
   filterNonZeroEntries,
-  transformToEditForm,
   transformFormValuesToRequest,
+  transformToEditForm,
 } from './utils';
 
-import withSettings from '@/containers/Settings/withSettings';
-import withCurrentOrganization from '@/containers/Organization/withCurrentOrganization';
+import withCurrentOrganization from '@bigcapital/webapp/containers/Organization/withCurrentOrganization';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
 
 /**
  * Vendor Credit note form.

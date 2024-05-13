@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { IMailAttachment } from '@/interfaces';
+import { IMailAttachment } from '@bigcapital/server/interfaces';
 import Mustache from 'mustache';
 import { Container } from 'typedi';
 

@@ -1,12 +1,12 @@
+import { Money } from '@bigcapital/webapp/components';
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import classNames from 'classnames';
+import { useFormikContext } from 'formik';
+import { sumBy } from 'lodash';
 // @ts-nocheck
 import React, { useMemo } from 'react';
-import classNames from 'classnames';
-import { sumBy } from 'lodash';
-import { useFormikContext } from 'formik';
-import { Money } from '@/components';
-import { FormattedMessage as T } from '@/components';
 
-import { CLASSES } from '@/constants/classes';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
 import PaymentReceiveHeaderFields from './PaymentReceiveHeaderFields';
 
 /**

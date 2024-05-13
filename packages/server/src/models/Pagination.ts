@@ -1,4 +1,4 @@
-import { ServiceError } from '@/exceptions';
+import { ServiceError } from '@bigcapital/server/exceptions';
 import { isEmpty } from 'lodash';
 import { Model } from 'objection';
 

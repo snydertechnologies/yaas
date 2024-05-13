@@ -1,9 +1,9 @@
-// @ts-nocheck
-import React from 'react';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import ItemsEntriesTable from '@bigcapital/webapp/containers/Entries/ItemsEntriesTable';
 import classNames from 'classnames';
 import { FastField } from 'formik';
-import { CLASSES } from '@/constants/classes';
-import ItemsEntriesTable from '@/containers/Entries/ItemsEntriesTable';
+// @ts-nocheck
+import React from 'react';
 import { useCreditNoteFormContext } from './CreditNoteFormProvider';
 import { entriesFieldShouldUpdate } from './utils';
 

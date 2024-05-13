@@ -1,4 +1,4 @@
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import Currencies from 'js-money/lib/currency';
 import { uniq } from 'lodash';
 import { Inject, Service } from 'typedi';

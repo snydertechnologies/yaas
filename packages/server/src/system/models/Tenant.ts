@@ -1,5 +1,5 @@
-import SubscriptionPeriod from '@/services/Subscription/SubscriptionPeriod';
-import BaseModel from 'models/Model';
+import BaseModel from '@bigcapital/server/models/Model';
+import SubscriptionPeriod from '@bigcapital/server/services/Subscription/SubscriptionPeriod';
 import moment from 'moment';
 import { Model } from 'objection';
 import uniqid from 'uniqid';

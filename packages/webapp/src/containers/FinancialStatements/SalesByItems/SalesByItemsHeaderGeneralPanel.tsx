@@ -1,6 +1,6 @@
+import { Col, FFormGroup, ItemsMultiSelect, Row, FormattedMessage as T } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import React from 'react';
-import { Row, Col, ItemsMultiSelect, FormattedMessage as T, FFormGroup } from '@/components';
 import FinancialStatementDateRange from '../FinancialStatementDateRange';
 import FinancialStatementsFilter from '../FinancialStatementsFilter';
 import { filterItemsOptions } from '../constants';

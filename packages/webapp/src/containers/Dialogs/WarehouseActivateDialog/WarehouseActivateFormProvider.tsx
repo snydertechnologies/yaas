@@ -1,8 +1,8 @@
 // @ts-nocheck
 import React from 'react';
 
-import { DialogContent } from '@/components';
-import { useActivateWarehouses } from '@/hooks/query';
+import { DialogContent } from '@bigcapital/webapp/components';
+import { useActivateWarehouses } from '@bigcapital/webapp/hooks/query';
 
 const WarehouseActivateContext = React.createContext();
 

@@ -1,31 +1,31 @@
-// @ts-nocheck
-import React from 'react';
-import { FastField, ErrorMessage } from 'formik';
-import { DateInput } from '@blueprintjs/datetime';
-import { FormGroup, Position, ControlGroup } from '@blueprintjs/core';
-import classNames from 'classnames';
 import {
-  FormattedMessage as T,
   AccountsSuggestField,
-  InputPrependText,
-  FieldRequiredHint,
-  Col,
-  Row,
-  FeatureCan,
   BranchSelect,
   BranchSelectButton,
-  FMoneyInputGroup,
-  FInputGroup,
+  Col,
   FFormGroup,
+  FInputGroup,
+  FMoneyInputGroup,
   FTextArea,
-} from '@/components';
+  FeatureCan,
+  FieldRequiredHint,
+  InputPrependText,
+  Row,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import { ACCOUNT_TYPE, CLASSES, Features } from '@bigcapital/webapp/constants';
+import { handleDateChange, inputIntent, momentFormatter, tansformDateValue } from '@bigcapital/webapp/utils';
+import { ControlGroup, FormGroup, Position } from '@blueprintjs/core';
+import { DateInput } from '@blueprintjs/datetime';
+import classNames from 'classnames';
+import { ErrorMessage, FastField } from 'formik';
+// @ts-nocheck
+import React from 'react';
+import { BranchRowDivider, useSetPrimaryBranchToForm } from '../../MoneyInDialog/utils';
 import { MoneyInOutTransactionNoField } from '../../_components';
-import { MoneyInExchangeRateField } from '../MoneyInExchangeRateField';
-import { CLASSES, ACCOUNT_TYPE, Features } from '@/constants';
-import { inputIntent, momentFormatter, tansformDateValue, handleDateChange } from '@/utils';
 import { useMoneyInDailogContext } from '../MoneyInDialogProvider';
+import { MoneyInExchangeRateField } from '../MoneyInExchangeRateField';
 import { useMoneyInFieldsContext } from '../MoneyInFieldsProvider';
-import { useSetPrimaryBranchToForm, BranchRowDivider } from '../../MoneyInDialog/utils';
 
 /**
  * Transfer from account form fields.

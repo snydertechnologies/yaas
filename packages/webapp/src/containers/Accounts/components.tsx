@@ -1,10 +1,10 @@
+import { Can, Icon, If } from '@bigcapital/webapp/components';
+import { AbilitySubject, AccountAction } from '@bigcapital/webapp/constants/abilityOption';
+import { safeCallback } from '@bigcapital/webapp/utils';
+import { Classes, Intent, Menu, MenuDivider, MenuItem, Position, Tooltip } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { Position, Classes, Tooltip, MenuItem, Menu, MenuDivider, Intent } from '@blueprintjs/core';
-import { Can, Icon, If } from '@/components';
-import { safeCallback } from '@/utils';
-import { AbilitySubject, AccountAction } from '@/constants/abilityOption';
 
 /**
  * Accounts table actions menu.

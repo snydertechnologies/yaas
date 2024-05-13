@@ -1,16 +1,16 @@
+import { DashboardContentTable, DashboardPageContent } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import React from 'react';
-import { DashboardPageContent, DashboardContentTable } from '@/components';
 
 import ProjectsActionsBar from './ProjectsActionsBar';
-import ProjectsViewTabs from './ProjectsViewTabs';
 import ProjectsDataTable from './ProjectsDataTable';
+import ProjectsViewTabs from './ProjectsViewTabs';
 
 import withProjects from './withProjects';
 import withProjectsActions from './withProjectsActions';
 
+import { compose, transformTableStateToQuery } from '@bigcapital/webapp/utils';
 import { ProjectsListProvider } from './ProjectsListProvider';
-import { compose, transformTableStateToQuery } from '@/utils';
 
 /**
  * Projects list.

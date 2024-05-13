@@ -1,26 +1,26 @@
+import { Intent } from '@blueprintjs/core';
+import classNames from 'classnames';
+import { Form, Formik } from 'formik';
 // @ts-nocheck
 import React, { useMemo } from 'react';
 import intl from 'react-intl-universal';
-import classNames from 'classnames';
-import { Formik, Form } from 'formik';
-import { Intent } from '@blueprintjs/core';
 import styled from 'styled-components';
 
-import { CLASSES } from '@/constants/classes';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { compose, saveInvoke, transformToForm } from '@bigcapital/webapp/utils';
 import { CreateCustomerForm, EditCustomerForm } from './CustomerForm.schema';
-import { compose, transformToForm, saveInvoke } from '@/utils';
 import { useCustomerFormContext } from './CustomerFormProvider';
 import { defaultInitialValues } from './utils';
 
-import { AppToaster } from '@/components';
-import CustomerFormPrimarySection from './CustomerFormPrimarySection';
-import CustomerFormAfterPrimarySection from './CustomerFormAfterPrimarySection';
-import CustomersTabs from './CustomersTabs';
+import { AppToaster } from '@bigcapital/webapp/components';
 import CustomerFloatingActions from './CustomerFloatingActions';
+import CustomerFormAfterPrimarySection from './CustomerFormAfterPrimarySection';
+import CustomerFormPrimarySection from './CustomerFormPrimarySection';
+import CustomersTabs from './CustomersTabs';
 
-import withCurrentOrganization from '@/containers/Organization/withCurrentOrganization';
+import withCurrentOrganization from '@bigcapital/webapp/containers/Organization/withCurrentOrganization';
 
-import '@/style/pages/Customers/Form.scss';
+import '@bigcapital/webapp/style/pages/Customers/Form.scss';
 
 /**
  * Customer form.

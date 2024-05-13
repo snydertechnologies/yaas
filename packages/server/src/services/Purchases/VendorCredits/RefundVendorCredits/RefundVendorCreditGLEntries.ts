@@ -1,8 +1,8 @@
-import { AccountNormal, ILedgerEntry } from '@/interfaces';
-import { IRefundVendorCredit } from '@/interfaces';
-import LedgerRepository from '@/services/Ledger/LedgerRepository';
-import JournalPosterService from '@/services/Sales/JournalPosterService';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { AccountNormal, ILedgerEntry } from '@bigcapital/server/interfaces';
+import { IRefundVendorCredit } from '@bigcapital/server/interfaces';
+import LedgerRepository from '@bigcapital/server/services/Ledger/LedgerRepository';
+import JournalPosterService from '@bigcapital/server/services/Sales/JournalPosterService';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Knex } from 'knex';
 import { Inject, Service } from 'typedi';
 

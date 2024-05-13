@@ -1,11 +1,11 @@
+import { FCheckbox, FFormGroup, FInputGroup, Hint } from '@bigcapital/webapp/components';
+import { Tag, Text } from '@blueprintjs/core';
+import { useFormikContext } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { useFormikContext } from 'formik';
-import { Tag, Text } from '@blueprintjs/core';
 import styled from 'styled-components';
-import { FCheckbox, FFormGroup, FInputGroup, Hint } from '@/components';
-import { transformTaxRateCodeValue, useIsTaxRateChanged } from './utils';
 import { useTaxRateFormDialogContext } from './TaxRateFormDialogBoot';
+import { transformTaxRateCodeValue, useIsTaxRateChanged } from './utils';
 
 /**
  * Tax rate form content.

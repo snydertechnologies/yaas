@@ -1,13 +1,13 @@
 // @ts-nocheck
-import { AppToaster } from '@/components';
-import { useImportFileUpload } from '@/hooks/query/import';
+import { AppToaster } from '@bigcapital/webapp/components';
+import { useImportFileUpload } from '@bigcapital/webapp/hooks/query/import';
 import { Intent } from '@blueprintjs/core';
 import { Formik, Form, FormikHelpers } from 'formik';
 import * as Yup from 'yup';
 import { useImportFileContext } from './ImportFileProvider';
 import { ImportAlert, ImportStepperStep } from './_types';
 import { useAlertsManager } from './AlertsManager';
-import { transformToCamelCase } from '@/utils';
+import { transformToCamelCase } from '@bigcapital/webapp/utils';
 
 const initialValues = {
   file: null,

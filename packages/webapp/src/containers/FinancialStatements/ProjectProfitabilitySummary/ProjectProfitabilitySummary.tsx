@@ -1,17 +1,17 @@
+import moment from 'moment';
 // @ts-nocheck
 import React, { useEffect } from 'react';
-import moment from 'moment';
 
+import { DashboardPageContent, FinancialStatement } from '@bigcapital/webapp/components';
 import { ProjectProfitabilitySummaryAlerts, ProjectProfitabilitySummaryLoadingBar } from './components';
-import { FinancialStatement, DashboardPageContent } from '@/components';
 
-import ProjectProfitabilitySummaryHeader from './ProjectProfitabilitySummaryHeader';
+import { compose } from '@bigcapital/webapp/utils';
 import ProjectProfitabilitySummaryActionsBar from './ProjectProfitabilitySummaryActionsBar';
 import { ProjectProfitabilitySummaryBody } from './ProjectProfitabilitySummaryBody';
+import ProjectProfitabilitySummaryHeader from './ProjectProfitabilitySummaryHeader';
 import { ProjectProfitabilitySummaryProvider } from './ProjectProfitabilitySummaryProvider';
 import { useProjectProfitabilitySummaryQuery } from './utils';
 import withProjectProfitabilitySummaryActions from './withProjectProfitabilitySummaryActions';
-import { compose } from '@/utils';
 
 /**
  * Project profitability summary.

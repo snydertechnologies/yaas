@@ -2,9 +2,9 @@
 import React from 'react';
 import intl from 'react-intl-universal';
 
-import { Intent, Menu, MenuItem, MenuDivider } from '@blueprintjs/core';
-import { safeCallback } from '@/utils';
-import { Icon } from '@/components';
+import { Icon } from '@bigcapital/webapp/components';
+import { safeCallback } from '@bigcapital/webapp/utils';
+import { Intent, Menu, MenuDivider, MenuItem } from '@blueprintjs/core';
 
 /**
  * Context menu of roles.

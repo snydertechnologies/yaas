@@ -1,11 +1,11 @@
-import { IBillLandedCostTransaction } from '@/interfaces';
-import I18nService from '@/services/I18n/I18nService';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { IBillLandedCostTransaction } from '@bigcapital/server/interfaces';
+import I18nService from '@bigcapital/server/services/I18n/I18nService';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import { formatNumber } from '@bigcapital/server/utils';
 import { omit } from 'lodash';
 import * as qim from 'qim';
 import * as R from 'ramda';
 import { Inject, Service } from 'typedi';
-import { formatNumber } from 'utils';
 
 @Service()
 export default class BillAllocatedLandedCostTransactions {

@@ -1,5 +1,5 @@
-import { IApplyCreditToInvoicesCreatedPayload, IApplyCreditToInvoicesDeletedPayload } from '@/interfaces';
-import events from '@/subscribers/events';
+import { IApplyCreditToInvoicesCreatedPayload, IApplyCreditToInvoicesDeletedPayload } from '@bigcapital/server/interfaces';
+import events from '@bigcapital/server/subscribers/events';
 import { sumBy } from 'lodash';
 import { Inject, Service } from 'typedi';
 import CreditNoteApplySyncCredit from './CreditNoteApplySyncCredit';

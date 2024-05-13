@@ -1,8 +1,8 @@
+import { Dialog, DialogSuspense } from '@bigcapital/webapp/components';
+import withDialogRedux from '@bigcapital/webapp/components/DialogReduxConnect';
+import { compose } from '@bigcapital/webapp/utils';
 // @ts-nocheck
 import React from 'react';
-import { Dialog, DialogSuspense } from '@/components';
-import withDialogRedux from '@/components/DialogReduxConnect';
-import { compose } from '@/utils';
 
 const ConnectBankDialogBody = React.lazy(() => import('./ConnectBankDialogBody'));
 

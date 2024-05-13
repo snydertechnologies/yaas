@@ -1,8 +1,8 @@
-// @ts-nocheck
-import React from 'react';
-import { Alert } from '@/components';
+import { Alert } from '@bigcapital/webapp/components';
 import { Intent } from '@blueprintjs/core';
 import { useFormikContext } from 'formik';
+// @ts-nocheck
+import React from 'react';
 
 export function TaxRateFormDialogFormErrors() {
   const { errors } = useFormikContext();

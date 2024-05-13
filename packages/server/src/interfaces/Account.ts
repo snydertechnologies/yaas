@@ -1,4 +1,4 @@
-import type { IDynamicListFilter } from '@/interfaces/DynamicFilter';
+import type { IDynamicListFilter } from '@bigcapital/server/interfaces/DynamicFilter';
 import type { Knex } from 'knex';
 
 export interface IAccountDTO {

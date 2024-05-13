@@ -1,6 +1,6 @@
-import BaseController from '@/api/controllers/BaseController';
-import asyncMiddleware from '@/api/middleware/asyncMiddleware';
-import AccountsTypesService from '@/services/Accounts/AccountsTypesServices';
+import BaseController from '@bigcapital/server/api/controllers/BaseController';
+import asyncMiddleware from '@bigcapital/server/api/middleware/asyncMiddleware';
+import AccountsTypesService from '@bigcapital/server/services/Accounts/AccountsTypesServices';
 import { NextFunction, Request, Response, Router } from 'express';
 import { Inject, Service } from 'typedi';
 

@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { transformToForm, transfromToSnakeCase } from '@/utils';
+import { transformToForm, transfromToSnakeCase } from '@bigcapital/webapp/utils';
 
 // Default initial form values.
 export const defaultInitialValues = {

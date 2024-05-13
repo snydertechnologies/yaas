@@ -1,10 +1,10 @@
 // @ts-nocheck
 import React from 'react';
-import AccountsReceivableSection from './AccountsReceivableSection';
 import AccountsPayableSection from './AccountsPayableSection';
+import AccountsReceivableSection from './AccountsReceivableSection';
 import FinancialAccountingSection from './FinancialAccountingSection';
 import ProductsServicesSection from './ProductsServicesSection';
-import '@/style/pages/HomePage/HomePage.scss';
+import '@bigcapital/webapp/style/pages/HomePage/HomePage.scss';
 
 function HomepageContent() {
   return (

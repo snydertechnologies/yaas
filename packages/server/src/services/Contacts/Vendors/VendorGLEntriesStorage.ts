@@ -1,5 +1,5 @@
-import LedgerStorageService from '@/services/Accounting/LedgerStorageService';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import LedgerStorageService from '@bigcapital/server/services/Accounting/LedgerStorageService';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Knex } from 'knex';
 import { Inject, Service } from 'typedi';
 import { VendorGLEntries } from './VendorGLEntries';

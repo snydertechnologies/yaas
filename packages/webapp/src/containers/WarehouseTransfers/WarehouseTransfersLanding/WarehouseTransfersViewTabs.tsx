@@ -1,12 +1,12 @@
+import { DashboardViewsTabs } from '@bigcapital/webapp/components';
+import { Alignment, Navbar, NavbarGroup } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Alignment, Navbar, NavbarGroup } from '@blueprintjs/core';
-import { DashboardViewsTabs } from '@/components';
 
+import { compose, transfromViewsToTabs } from '@bigcapital/webapp/utils';
+import { useWarehouseTranfersListContext } from './WarehouseTransfersListProvider';
 import withWarehouseTransfers from './withWarehouseTransfers';
 import withWarehouseTransfersActions from './withWarehouseTransfersActions';
-import { useWarehouseTranfersListContext } from './WarehouseTransfersListProvider';
-import { compose, transfromViewsToTabs } from '@/utils';
 
 /**
  * Warehouse transfer view tabs.

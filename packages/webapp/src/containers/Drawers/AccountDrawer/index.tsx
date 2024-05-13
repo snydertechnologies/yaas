@@ -1,9 +1,9 @@
 // @ts-nocheck
 import React, { lazy } from 'react';
-import { Drawer, DrawerSuspense } from '@/components';
-import withDrawers from '@/containers/Drawer/withDrawers';
+import { Drawer, DrawerSuspense } from '@bigcapital/webapp/components';
+import withDrawers from '@bigcapital/webapp/containers/Drawer/withDrawers';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 const AccountDrawerContent = lazy(() => import('./AccountDrawerContent'));
 

@@ -1,9 +1,9 @@
+import { DialogContent } from '@bigcapital/webapp/components';
+import { useBill, useCreateLandedCost, useLandedCostTransaction } from '@bigcapital/webapp/hooks/query';
+import { defaultTo, get } from 'lodash';
 // @ts-nocheck
 import React from 'react';
-import { defaultTo, get } from 'lodash';
-import { DialogContent } from '@/components';
-import { useBill, useCreateLandedCost, useLandedCostTransaction } from '@/hooks/query';
-import { getEntriesByTransactionId, getCostTransactionById, getTransactionEntryById } from './utils';
+import { getCostTransactionById, getEntriesByTransactionId, getTransactionEntryById } from './utils';
 
 const AllocateLandedCostDialogContext = React.createContext();
 

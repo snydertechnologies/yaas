@@ -1,2 +1,2 @@
 // @ts-nocheck
-import dashboard from '@/routes/dashboard';
+import dashboard from '@bigcapital/webapp/routes/dashboard';

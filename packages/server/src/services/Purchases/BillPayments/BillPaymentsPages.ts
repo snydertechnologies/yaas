@@ -1,6 +1,6 @@
-import { ServiceError } from '@/exceptions';
-import { IBill, IBillPayment, IBillReceivePageEntry } from '@/interfaces';
-import TenancyService from '@/services/Tenancy/TenancyService';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { IBill, IBillPayment, IBillReceivePageEntry } from '@bigcapital/server/interfaces';
+import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { omit } from 'lodash';
 import { Inject, Service } from 'typedi';
 import { ERRORS } from './constants';

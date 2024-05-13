@@ -1,9 +1,9 @@
-// @ts-nocheck
-import { connect } from 'react-redux';
 import {
   getEstimatesTableStateFactory,
   isEstimatesTableStateChangedFactory,
-} from '@/store/Estimate/estimates.selectors';
+} from '@bigcapital/webapp/store/Estimate/estimates.selectors';
+// @ts-nocheck
+import { connect } from 'react-redux';
 
 export default (mapState) => {
   const getEstimatesTableState = getEstimatesTableStateFactory();

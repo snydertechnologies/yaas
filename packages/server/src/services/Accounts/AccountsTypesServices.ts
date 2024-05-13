@@ -1,6 +1,6 @@
-import { IAccountType, IAccountsTypesService } from '@/interfaces';
-import AccountTypesUtils from '@/lib/AccountTypes';
-import I18nService from '@/services/I18n/I18nService';
+import { IAccountType, IAccountsTypesService } from '@bigcapital/server/interfaces';
+import AccountTypesUtils from '@bigcapital/server/lib/AccountTypes';
+import I18nService from '@bigcapital/server/services/I18n/I18nService';
 import { Inject, Service } from 'typedi';
 
 @Service()

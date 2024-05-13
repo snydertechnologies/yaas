@@ -1,11 +1,11 @@
+import { Callout, Classes, Intent } from '@blueprintjs/core';
+import clsx from 'classnames';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import clsx from 'classnames';
-import { Callout, Intent, Classes } from '@blueprintjs/core';
 
-import { CLASSES } from '@/constants/classes';
-import { T, MoneyFieldCell, FormatDateCell } from '@/components';
+import { FormatDateCell, MoneyFieldCell, T } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
 
 export const transformErrors = (errors, { setErrors }) => {};
 

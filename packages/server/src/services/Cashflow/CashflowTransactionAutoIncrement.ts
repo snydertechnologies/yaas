@@ -1,4 +1,4 @@
-import AutoIncrementOrdersService from '@/services/Sales/AutoIncrementOrdersService';
+import AutoIncrementOrdersService from '@bigcapital/server/services/Sales/AutoIncrementOrdersService';
 import { Inject, Service } from 'typedi';
 
 @Service()

@@ -1,5 +1,5 @@
-import { IVendorBalanceSummaryQuery } from '@/interfaces';
-import { TableSheet } from '@/lib/Xlsx/TableSheet';
+import { IVendorBalanceSummaryQuery } from '@bigcapital/server/interfaces';
+import { TableSheet } from '@bigcapital/server/lib/Xlsx/TableSheet';
 import { Inject, Service } from 'typedi';
 import { VendorBalanceSummaryTableInjectable } from './VendorBalanceSummaryTableInjectable';
 

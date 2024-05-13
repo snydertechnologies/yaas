@@ -1,6 +1,6 @@
-import { CategorizeTransactionAsExpenseDTO, ICashflowTransactionCategorizedPayload } from '@/interfaces';
-import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';
-import events from '@/subscribers/events';
+import { CategorizeTransactionAsExpenseDTO, ICashflowTransactionCategorizedPayload } from '@bigcapital/server/interfaces';
+import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
+import events from '@bigcapital/server/subscribers/events';
 import { Knex } from 'knex';
 import { Inject, Service } from 'typedi';
 import { CreateExpense } from '../Expenses/CRUD/CreateExpense';

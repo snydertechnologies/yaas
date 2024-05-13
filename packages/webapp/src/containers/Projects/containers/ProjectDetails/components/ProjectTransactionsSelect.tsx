@@ -1,8 +1,8 @@
+import { Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Button, MenuItem, PopoverInteractionKind, Position } from '@blueprintjs/core';
+import { Select } from '@blueprintjs/select';
 // @ts-nocheck
 import React from 'react';
-import { MenuItem, Button, Position, PopoverInteractionKind } from '@blueprintjs/core';
-import { Select } from '@blueprintjs/select';
-import { Icon, FormattedMessage as T } from '@/components';
 
 /**
  *

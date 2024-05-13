@@ -1,11 +1,11 @@
+import { isEmpty } from 'lodash';
 // @ts-nocheck
 import React, { createContext } from 'react';
-import { isEmpty } from 'lodash';
 
-import { DashboardInsider } from '@/components/Dashboard';
+import { DashboardInsider } from '@bigcapital/webapp/components/Dashboard';
 
-import { useResourceMeta, useResourceViews, useReceipts } from '@/hooks/query';
-import { getFieldsFromResourceMeta } from '@/utils';
+import { useReceipts, useResourceMeta, useResourceViews } from '@bigcapital/webapp/hooks/query';
+import { getFieldsFromResourceMeta } from '@bigcapital/webapp/utils';
 
 const ReceiptsListContext = createContext();
 

@@ -1,15 +1,15 @@
+import { AppToaster, FormattedHTMLMessage, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Alert, Intent } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { Intent, Alert } from '@blueprintjs/core';
-import { AppToaster, FormattedMessage as T, FormattedHTMLMessage } from '@/components';
 
-import withAlertStoreConnect from '@/containers/Alert/withAlertStoreConnect';
-import withAlertActions from '@/containers/Alert/withAlertActions';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
+import withAlertActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withAlertStoreConnect from '@bigcapital/webapp/containers/Alert/withAlertStoreConnect';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
 
-import { useDeleteReconcileVendorCredit } from '@/hooks/query';
-import { compose } from '@/utils';
+import { useDeleteReconcileVendorCredit } from '@bigcapital/webapp/hooks/query';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Reconcile vendor credit delete alert.

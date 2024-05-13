@@ -1,10 +1,10 @@
+import { Icon } from '@bigcapital/webapp/components';
+import { getColumnWidth } from '@bigcapital/webapp/utils';
+import { Button, Menu, MenuItem, Popover, PopoverInteractionKind, Position } from '@blueprintjs/core';
+import moment from 'moment';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import moment from 'moment';
-import { Button, Popover, PopoverInteractionKind, Position, MenuItem, Menu } from '@blueprintjs/core';
-import { Icon } from '@/components';
-import { getColumnWidth } from '@/utils';
 import { usePaymentReceiveDetailContext } from './PaymentReceiveDetailProvider';
 
 /**

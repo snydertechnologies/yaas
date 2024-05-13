@@ -1,12 +1,12 @@
-import { ServiceError } from '@/exceptions';
-import { ICustomer, ISaleReceipt, ISaleReceiptSmsDetails, SMS_NOTIFICATION_KEY } from '@/interfaces';
-import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';
-import SmsNotificationsSettingsService from '@/services/Settings/SmsNotificationsSettings';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
-import events from '@/subscribers/events';
-import { TenantMetadata } from '@/system/models';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { ICustomer, ISaleReceipt, ISaleReceiptSmsDetails, SMS_NOTIFICATION_KEY } from '@bigcapital/server/interfaces';
+import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
+import SmsNotificationsSettingsService from '@bigcapital/server/services/Settings/SmsNotificationsSettings';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import events from '@bigcapital/server/subscribers/events';
+import { TenantMetadata } from '@bigcapital/server/system/models';
+import { formatNumber, formatSmsMessage } from '@bigcapital/server/utils';
 import { Inject, Service } from 'typedi';
-import { formatNumber, formatSmsMessage } from 'utils';
 import SaleNotifyBySms from '../SaleNotifyBySms';
 import { ERRORS } from './constants';
 

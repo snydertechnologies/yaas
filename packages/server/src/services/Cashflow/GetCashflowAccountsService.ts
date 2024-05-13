@@ -1,7 +1,7 @@
-import { ICashflowAccount, ICashflowAccountsFilter } from '@/interfaces';
-import { TransformerInjectable } from '@/lib/Transformer/TransformerInjectable';
-import DynamicListingService from '@/services/DynamicListing/DynamicListService';
-import TenancyService from '@/services/Tenancy/TenancyService';
+import { ICashflowAccount, ICashflowAccountsFilter } from '@bigcapital/server/interfaces';
+import { TransformerInjectable } from '@bigcapital/server/lib/Transformer/TransformerInjectable';
+import DynamicListingService from '@bigcapital/server/services/DynamicListing/DynamicListService';
+import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject, Service } from 'typedi';
 import { CashflowAccountTransformer } from './CashflowAccountTransformer';
 

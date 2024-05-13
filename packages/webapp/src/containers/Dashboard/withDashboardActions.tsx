@@ -1,8 +1,8 @@
+import { toggleExpendSidebar } from '@bigcapital/webapp/store/dashboard/dashboard.actions';
+import { splashStartLoading, splashStopLoading } from '@bigcapital/webapp/store/dashboard/dashboard.actions';
+import t from '@bigcapital/webapp/store/types';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import t from '@/store/types';
-import { toggleExpendSidebar } from '@/store/dashboard/dashboard.actions';
-import { splashStartLoading, splashStopLoading } from '@/store/dashboard/dashboard.actions';
 
 const mapActionsToProps = (dispatch) => ({
   changePageTitle: (pageTitle) =>

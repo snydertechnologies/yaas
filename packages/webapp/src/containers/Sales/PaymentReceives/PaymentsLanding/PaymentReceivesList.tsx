@@ -1,18 +1,18 @@
 // @ts-nocheck
 import React from 'react';
 
-import '@/style/pages/PaymentReceive/List.scss';
+import '@bigcapital/webapp/style/pages/PaymentReceive/List.scss';
 
-import { DashboardPageContent } from '@/components';
+import { DashboardPageContent } from '@bigcapital/webapp/components';
 import { PaymentReceivesListProvider } from './PaymentReceiptsListProvider';
+import PaymentReceiveActionsBar from './PaymentReceiveActionsBar';
 import PaymentReceiveViewTabs from './PaymentReceiveViewTabs';
 import PaymentReceivesTable from './PaymentReceivesTable';
-import PaymentReceiveActionsBar from './PaymentReceiveActionsBar';
 
 import withPaymentReceives from './withPaymentReceives';
 import withPaymentReceivesActions from './withPaymentReceivesActions';
 
-import { compose, transformTableStateToQuery } from '@/utils';
+import { compose, transformTableStateToQuery } from '@bigcapital/webapp/utils';
 
 /**
  * Payment receives list.

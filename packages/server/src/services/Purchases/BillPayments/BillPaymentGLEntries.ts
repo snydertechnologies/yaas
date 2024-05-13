@@ -1,8 +1,8 @@
-import { AccountNormal, IBillPayment, ILedgerEntry } from '@/interfaces';
-import Ledger from '@/services/Accounting/Ledger';
-import LedgerStorageService from '@/services/Accounting/LedgerStorageService';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
-import { TenantMetadata } from '@/system/models';
+import { AccountNormal, IBillPayment, ILedgerEntry } from '@bigcapital/server/interfaces';
+import Ledger from '@bigcapital/server/services/Accounting/Ledger';
+import LedgerStorageService from '@bigcapital/server/services/Accounting/LedgerStorageService';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import { TenantMetadata } from '@bigcapital/server/system/models';
 import { Knex } from 'knex';
 import { sumBy } from 'lodash';
 import moment from 'moment';

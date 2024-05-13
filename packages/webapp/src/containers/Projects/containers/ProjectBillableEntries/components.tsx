@@ -1,7 +1,7 @@
+import { ButtonLink, FormatDate, FormattedMessage as T } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
-import { FormattedMessage as T, ButtonLink, FormatDate } from '@/components';
 
 function BillableEntry({ label, children }) {
   return (

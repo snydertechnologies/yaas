@@ -1,11 +1,11 @@
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import classNames from 'classnames';
+import { FastField } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { FastField } from 'formik';
-import classNames from 'classnames';
-import { CLASSES } from '@/constants/classes';
-import { useWarehouseTransferFormContext } from './WarehouseTransferFormProvider';
 import WarehouseTransferFormEntriesTable from './WarehouseTransferFormEntriesTable';
-import { entriesFieldShouldUpdate, defaultWarehouseTransferEntry, useWatchItemsCostSetCostEntries } from './utils';
+import { useWarehouseTransferFormContext } from './WarehouseTransferFormProvider';
+import { defaultWarehouseTransferEntry, entriesFieldShouldUpdate, useWatchItemsCostSetCostEntries } from './utils';
 
 /**
  * Warehouse transafer editor field.

@@ -1,17 +1,17 @@
 // @ts-nocheck
 import React, { useCallback } from 'react';
 
-import { DataTableEditable } from '@/components';
+import { DataTableEditable } from '@bigcapital/webapp/components';
+import {
+  compose,
+  saveInvoke,
+  updateAutoAddNewLine,
+  updateMinEntriesLines,
+  updateRemoveLineByIndex,
+  updateTableCell,
+} from '@bigcapital/webapp/utils';
 import { useExpenseFormContext } from './ExpenseFormPageProvider';
 import { useExpenseFormTableColumns } from './components';
-import {
-  saveInvoke,
-  compose,
-  updateTableCell,
-  updateMinEntriesLines,
-  updateAutoAddNewLine,
-  updateRemoveLineByIndex,
-} from '@/utils';
 
 /**
  * Expenses form entries.

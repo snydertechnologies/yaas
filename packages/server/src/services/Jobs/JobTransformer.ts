@@ -1,4 +1,4 @@
-import { Transformer } from '@/lib/Transformer/Transformer';
+import { Transformer } from '@bigcapital/server/lib/Transformer/Transformer';
 import moment from 'moment';
 import { Service } from 'typedi';
 

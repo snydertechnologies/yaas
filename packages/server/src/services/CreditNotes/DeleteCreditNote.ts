@@ -1,8 +1,8 @@
-import { ServiceError } from '@/exceptions';
-import { ICreditNoteDeletedPayload, ICreditNoteDeletingPayload } from '@/interfaces';
-import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';
-import UnitOfWork from '@/services/UnitOfWork';
-import events from '@/subscribers/events';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { ICreditNoteDeletedPayload, ICreditNoteDeletingPayload } from '@bigcapital/server/interfaces';
+import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
+import UnitOfWork from '@bigcapital/server/services/UnitOfWork';
+import events from '@bigcapital/server/subscribers/events';
 import Knex from 'knex';
 import { Inject, Service } from 'typedi';
 import BaseCreditNotes from './CreditNotes';

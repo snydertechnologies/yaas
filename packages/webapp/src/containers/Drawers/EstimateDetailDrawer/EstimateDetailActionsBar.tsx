@@ -5,16 +5,16 @@ import { Button, NavbarGroup, Classes, NavbarDivider, Intent } from '@blueprintj
 
 import { useEstimateDetailDrawerContext } from './EstimateDetailDrawerProvider';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import withAlertsActions from '@/containers/Alert/withAlertActions';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
-import { SaleEstimateAction, AbilitySubject, SaleInvoiceAction } from '@/constants/abilityOption';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
+import { SaleEstimateAction, AbilitySubject, SaleInvoiceAction } from '@bigcapital/webapp/constants/abilityOption';
 import { EstimateMoreMenuItems } from './components';
-import { DrawerActionsBar, Icon, FormattedMessage as T, Can, If } from '@/components';
+import { DrawerActionsBar, Icon, FormattedMessage as T, Can, If } from '@bigcapital/webapp/components';
 
-import { compose } from '@/utils';
-import { DRAWERS } from '@/constants/drawers';
-import { DialogsName } from '@/constants/dialogs';
+import { compose } from '@bigcapital/webapp/utils';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
 
 /**
  * Estimate read-only details actions bar of the drawer.

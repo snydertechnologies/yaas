@@ -1,11 +1,11 @@
+import { ContextMenu } from '@bigcapital/webapp/components';
+import classNames from 'classnames';
 // @ts-nocheck
 import React, { useCallback, useContext } from 'react';
-import { ContextMenu } from '@/components';
-import classNames from 'classnames';
 import useContextMenu from 'react-use-context-menu';
 
+import { ConditionalWrapper, saveInvoke } from '@bigcapital/webapp/utils';
 import TableContext from './TableContext';
-import { saveInvoke, ConditionalWrapper } from '@/utils';
 
 /**
  * Table row context wrapper.

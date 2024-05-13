@@ -1,6 +1,6 @@
 // @ts-nocheck
 import { createSelector } from '@reduxjs/toolkit';
-import { paginationLocationQuery } from '@/store/selectors';
+import { paginationLocationQuery } from '@bigcapital/webapp/store/selectors';
 
 const inventoryAdjustmentTableState = (state) => state.inventoryAdjustments.tableState;
 

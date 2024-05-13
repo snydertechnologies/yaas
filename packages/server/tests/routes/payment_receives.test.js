@@ -1,4 +1,4 @@
-import { PaymentReceive } from 'models';
+import { PaymentReceive } from '@bigcapital/server/models';
 import { loginRes, tenantFactory, tenantWebsite } from '~/dbInit';
 import { expect, request } from '~/testInit';
 

@@ -1,14 +1,14 @@
-// @ts-nocheck
-import React from 'react';
-import { DataTableEditable } from '@/components';
+import { DataTableEditable } from '@bigcapital/webapp/components';
 import {
   compose,
   saveInvoke,
+  updateAutoAddNewLine,
   updateMinEntriesLines,
   updateRemoveLineByIndex,
-  updateAutoAddNewLine,
   updateTableCell,
-} from '@/utils';
+} from '@bigcapital/webapp/utils';
+// @ts-nocheck
+import React from 'react';
 import { useMakeJournalFormContext } from './MakeJournalProvider';
 import { useJournalTableEntriesColumns } from './components';
 import { updateAdjustEntries } from './utils';

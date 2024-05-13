@@ -1,17 +1,17 @@
+import { usePlaidExchangeToken } from '@bigcapital/webapp/hooks/query';
+import { useResetBankingPlaidToken } from '@bigcapital/webapp/hooks/state/banking';
 // @ts-nocheck
 import React, { useEffect } from 'react';
 import {
-  usePlaidLink,
-  PlaidLinkOnSuccessMetadata,
-  PlaidLinkOnExitMetadata,
   PlaidLinkError,
-  PlaidLinkOptionsWithLinkToken,
   PlaidLinkOnEventMetadata,
+  PlaidLinkOnExitMetadata,
+  PlaidLinkOnSuccessMetadata,
+  PlaidLinkOptionsWithLinkToken,
   PlaidLinkStableEvent,
+  usePlaidLink,
 } from 'react-plaid-link';
 import { logEvent, logExit, logSuccess } from './_utils';
-import { usePlaidExchangeToken } from '@/hooks/query';
-import { useResetBankingPlaidToken } from '@/hooks/state/banking';
 
 interface PlaidLaunchLinkProps {
   token: string;

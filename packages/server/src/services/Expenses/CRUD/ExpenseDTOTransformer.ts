@@ -1,6 +1,6 @@
-import { IExpense, IExpenseCommonDTO, IExpenseCreateDTO, IExpenseEditDTO, ISystemUser } from '@/interfaces';
-import { BranchTransactionDTOTransform } from '@/services/Branches/Integrations/BranchTransactionDTOTransform';
-import { TenantMetadata } from '@/system/models';
+import { IExpense, IExpenseCommonDTO, IExpenseCreateDTO, IExpenseEditDTO, ISystemUser } from '@bigcapital/server/interfaces';
+import { BranchTransactionDTOTransform } from '@bigcapital/server/services/Branches/Integrations/BranchTransactionDTOTransform';
+import { TenantMetadata } from '@bigcapital/server/system/models';
 import { omit, sumBy } from 'lodash';
 import moment from 'moment';
 import * as R from 'ramda';

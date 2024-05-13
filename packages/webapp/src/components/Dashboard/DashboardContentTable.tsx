@@ -1,7 +1,7 @@
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import classNames from 'classnames';
 // @ts-nocheck
 import React from 'react';
-import classNames from 'classnames';
-import { CLASSES } from '@/constants/classes';
 
 /**
  * Dashboard content table.

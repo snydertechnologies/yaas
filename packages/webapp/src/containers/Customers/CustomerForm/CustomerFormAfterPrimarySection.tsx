@@ -1,10 +1,10 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { inputIntent } from '@bigcapital/webapp/utils';
+import { ControlGroup, FormGroup, InputGroup } from '@blueprintjs/core';
+import { ErrorMessage, FastField } from 'formik';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { FormGroup, InputGroup, ControlGroup } from '@blueprintjs/core';
-import { FastField, ErrorMessage } from 'formik';
-import { FormattedMessage as T } from '@/components';
-import { inputIntent } from '@/utils';
 
 export default function CustomerFormAfterPrimarySection({}) {
   return (

@@ -1,12 +1,12 @@
+import { Tab } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
 import styled from 'styled-components';
-import { Tab } from '@blueprintjs/core';
 
-import { DrawerMainTabs } from '@/components';
-import ReceiptDetailTab from './ReceiptDetailTab';
+import { DrawerMainTabs } from '@bigcapital/webapp/components';
 import ReceiptDetailActionBar from './ReceiptDetailActionBar';
+import ReceiptDetailTab from './ReceiptDetailTab';
 import { ReceiptDetailsGLEntriesPanel } from './ReceiptDetailsGLEntriesPanel';
 
 /**

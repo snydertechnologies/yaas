@@ -7,9 +7,9 @@ import {
   ISalesByItemsReportQuery,
   ISalesByItemsSheetData,
   ISalesByItemsTotal,
-} from '@/interfaces';
+} from '@bigcapital/server/interfaces';
+import { allPassedConditionsPass, transformToMap } from '@bigcapital/server/utils';
 import * as R from 'ramda';
-import { allPassedConditionsPass, transformToMap } from 'utils';
 import FinancialSheet from '../FinancialSheet';
 
 export default class SalesByItemsReport extends FinancialSheet {

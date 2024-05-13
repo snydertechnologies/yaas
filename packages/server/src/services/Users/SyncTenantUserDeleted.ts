@@ -1,6 +1,6 @@
-import { ITenantUserDeletedPayload } from '@/interfaces';
-import events from '@/subscribers/events';
-import { SystemUser } from '@/system/models';
+import { ITenantUserDeletedPayload } from '@bigcapital/server/interfaces';
+import events from '@bigcapital/server/subscribers/events';
+import { SystemUser } from '@bigcapital/server/system/models';
 
 export class SyncTenantUserDelete {
   /**

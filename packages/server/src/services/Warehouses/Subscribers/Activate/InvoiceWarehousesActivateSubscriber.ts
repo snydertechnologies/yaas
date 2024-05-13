@@ -1,5 +1,5 @@
-import { IWarehousesActivatedPayload } from '@/interfaces';
-import events from '@/subscribers/events';
+import { IWarehousesActivatedPayload } from '@bigcapital/server/interfaces';
+import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 import { InvoicesActivateWarehouses } from '../../Activate/InvoiceWarehousesActivate';
 

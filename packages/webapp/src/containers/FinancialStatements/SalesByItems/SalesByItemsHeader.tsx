@@ -1,10 +1,10 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Button, Intent, Tab, Tabs } from '@blueprintjs/core';
+import { Form, Formik } from 'formik';
+import moment from 'moment';
 // @ts-nocheck
 import React from 'react';
-import moment from 'moment';
 import styled from 'styled-components';
-import { Formik, Form } from 'formik';
-import { Tabs, Tab, Button, Intent } from '@blueprintjs/core';
-import { FormattedMessage as T } from '@/components';
 
 import FinancialStatementHeader from '../FinancialStatementHeader';
 import SalesByItemsHeaderGeneralPanel from './SalesByItemsHeaderGeneralPanel';
@@ -12,7 +12,7 @@ import SalesByItemsHeaderGeneralPanel from './SalesByItemsHeaderGeneralPanel';
 import withSalesByItems from './withSalesByItems';
 import withSalesByItemsActions from './withSalesByItemsActions';
 
-import { compose, transformToForm } from '@/utils';
+import { compose, transformToForm } from '@bigcapital/webapp/utils';
 import { getDefaultSalesByItemsQuery, getSalesByItemsQueryShema } from './utils';
 
 /**

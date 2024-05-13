@@ -1,7 +1,7 @@
-import { ServiceError } from '@/exceptions';
-import { AbilitySubject, InventoryAdjustmentAction } from '@/interfaces';
-import DynamicListingService from '@/services/DynamicListing/DynamicListService';
-import InventoryAdjustmentService from '@/services/Inventory/InventoryAdjustmentService';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { AbilitySubject, InventoryAdjustmentAction } from '@bigcapital/server/interfaces';
+import DynamicListingService from '@bigcapital/server/services/DynamicListing/DynamicListService';
+import InventoryAdjustmentService from '@bigcapital/server/services/Inventory/InventoryAdjustmentService';
 import { NextFunction, Request, Response, Router } from 'express';
 import { check, param, query } from 'express-validator';
 import { Inject, Service } from 'typedi';

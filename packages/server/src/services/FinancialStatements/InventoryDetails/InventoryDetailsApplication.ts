@@ -1,4 +1,4 @@
-import { IInventoryDetailsQuery, IInvetoryItemDetailsTable } from '@/interfaces';
+import { IInventoryDetailsQuery, IInvetoryItemDetailsTable } from '@bigcapital/server/interfaces';
 import { Inject, Service } from 'typedi';
 import { InventoryDetailsExportInjectable } from './InventoryDetailsExportInjectable';
 import { InventoryDetailsService } from './InventoryDetailsService';

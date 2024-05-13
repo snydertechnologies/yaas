@@ -1,14 +1,14 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Icon } from '@bigcapital/webapp/components';
+import { Button, ButtonGroup, HTMLSelect, Intent } from '@blueprintjs/core';
+import classNames from 'classnames';
+import { range } from 'lodash';
+import PropTypes from 'prop-types';
 // @ts-nocheck
 import React, { useReducer, useEffect } from 'react';
-import classNames from 'classnames';
-import { Button, ButtonGroup, Intent, HTMLSelect } from '@blueprintjs/core';
-import { FormattedMessage as T } from '@/components';
 import intl from 'react-intl-universal';
-import PropTypes from 'prop-types';
-import { range } from 'lodash';
-import { Icon } from '@/components';
 
-import '@/style/components/DataTable/Pagination.scss';
+import '@bigcapital/webapp/style/components/DataTable/Pagination.scss';
 
 const TYPE = {
   PAGE_CHANGE: 'PAGE_CHANGE',

@@ -1,10 +1,10 @@
+import { EmptyStatus, FormattedMessage as T } from '@bigcapital/webapp/components';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { Button, Intent } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Button, Intent } from '@blueprintjs/core';
-import { FormattedMessage as T, EmptyStatus } from '@/components';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 function WarehousesEmptyStatus({
   // #withDialogActions

@@ -5,10 +5,10 @@ import {
   IProjectProfitabilitySummaryTotalNode,
   ITableColumn,
   ITableRow,
-} from '@/interfaces';
+} from '@bigcapital/server/interfaces';
+import { tableRowMapper } from '@bigcapital/server/utils';
 import { map } from 'lodash/fp';
 import * as R from 'ramda';
-import { tableRowMapper } from 'utils';
 
 export class ProjectProfitabilitySummaryTable {
   /**

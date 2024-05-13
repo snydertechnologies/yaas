@@ -1,16 +1,16 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { AppToaster } from '@bigcapital/webapp/components';
+import { Alert, Intent } from '@blueprintjs/core';
 // @ts-nocheck
 import React, { useState } from 'react';
-import { FormattedMessage as T } from '@/components';
 import intl from 'react-intl-universal';
-import { Intent, Alert } from '@blueprintjs/core';
-import { queryCache } from 'react-query';
-import { AppToaster } from '@/components';
+import { QueryCache } from 'react-query';
 
-import withAccountsActions from '@/containers/Accounts/withAccountsTableActions';
-import withAlertStoreConnect from '@/containers/Alert/withAlertStoreConnect';
-import withAlertActions from '@/containers/Alert/withAlertActions';
+import withAccountsActions from '@bigcapital/webapp/containers/Accounts/withAccountsTableActions';
+import withAlertActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withAlertStoreConnect from '@bigcapital/webapp/containers/Alert/withAlertStoreConnect';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 function AccountBulkInactivateAlert({
   name,
@@ -38,7 +38,7 @@ function AccountBulkInactivateAlert({
           message: intl.get('the_accounts_have_been_successfully_inactivated'),
           intent: Intent.SUCCESS,
         });
-        queryCache.invalidateQueries('accounts-table');
+        QueryCache.invalidateQueries('accounts-table');
       })
       .catch((errors) => {})
       .finally(() => {

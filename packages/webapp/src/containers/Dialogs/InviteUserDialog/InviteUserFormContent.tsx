@@ -1,14 +1,20 @@
+import {
+  FFormGroup,
+  FInputGroup,
+  FieldRequiredHint,
+  ListSelect,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { compose, inputIntent } from '@bigcapital/webapp/utils';
+import { Button, FormGroup, InputGroup, Intent } from '@blueprintjs/core';
+import classNames from 'classnames';
+import { ErrorMessage, FastField, Form, useFormikContext } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { FormGroup, InputGroup, Intent, Button } from '@blueprintjs/core';
-import { FastField, Form, useFormikContext, ErrorMessage } from 'formik';
-import { ListSelect, FieldRequiredHint, FormattedMessage as T, FFormGroup, FInputGroup } from '@/components';
-import { CLASSES } from '@/constants/classes';
-import classNames from 'classnames';
-import { compose, inputIntent } from '@/utils';
 import { useInviteUserFormContext } from './InviteUserFormProvider';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
 
 function InviteUserFormContent({
   // #withDialogActions

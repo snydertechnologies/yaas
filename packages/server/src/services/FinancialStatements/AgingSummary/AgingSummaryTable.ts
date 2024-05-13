@@ -7,8 +7,8 @@ import {
   ITableColumn,
   ITableColumnAccessor,
   ITableRow,
-} from '@/interfaces';
-import { tableRowMapper } from '@/utils';
+} from '@bigcapital/server/interfaces';
+import { tableRowMapper } from '@bigcapital/server/utils';
 import * as R from 'ramda';
 import { FinancialSheetStructure } from '../FinancialSheetStructure';
 import { FinancialTable } from '../FinancialTable';

@@ -1,5 +1,5 @@
-import { IInventoryTransaction, IItemsQuantityChanges } from '@/interfaces';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { IInventoryTransaction, IItemsQuantityChanges } from '@bigcapital/server/interfaces';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import Knex from 'knex';
 import { toSafeInteger } from 'lodash';
 import { Inject, Service } from 'typedi';

@@ -1,8 +1,8 @@
-import { ServiceError } from '@/exceptions';
-import ApplyVendorCreditToBills from '@/services/Purchases/VendorCredits/ApplyVendorCreditToBills/ApplyVendorCreditToBills';
-import DeleteApplyVendorCreditToBill from '@/services/Purchases/VendorCredits/ApplyVendorCreditToBills/DeleteApplyVendorCreditToBill';
-import GetAppliedBillsToVendorCredit from '@/services/Purchases/VendorCredits/ApplyVendorCreditToBills/GetAppliedBillsToVendorCredit';
-import GetVendorCreditToApplyBills from '@/services/Purchases/VendorCredits/ApplyVendorCreditToBills/GetVendorCreditToApplyBills';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import ApplyVendorCreditToBills from '@bigcapital/server/services/Purchases/VendorCredits/ApplyVendorCreditToBills/ApplyVendorCreditToBills';
+import DeleteApplyVendorCreditToBill from '@bigcapital/server/services/Purchases/VendorCredits/ApplyVendorCreditToBills/DeleteApplyVendorCreditToBill';
+import GetAppliedBillsToVendorCredit from '@bigcapital/server/services/Purchases/VendorCredits/ApplyVendorCreditToBills/GetAppliedBillsToVendorCredit';
+import GetVendorCreditToApplyBills from '@bigcapital/server/services/Purchases/VendorCredits/ApplyVendorCreditToBills/GetVendorCreditToApplyBills';
 import { NextFunction, Request, Response, Router } from 'express';
 import { check, param } from 'express-validator';
 import { Inject, Service } from 'typedi';

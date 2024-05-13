@@ -1,7 +1,7 @@
 // @ts-nocheck
-import monitorReducerEnhancer from '@/store/enhancers/monitorReducer';
-import loggerMiddleware from '@/store/logger.middleware';
-import rootReducer from '@/store/reducers';
+import monitorReducerEnhancer from '@bigcapital/webapp/store/enhancers/monitorReducer';
+import loggerMiddleware from '@bigcapital/webapp/store/logger.middleware';
+import rootReducer from '@bigcapital/webapp/store/reducers';
 import { applyMiddleware, compose, createStore as createReduxStore } from 'redux';
 import { persistStore } from 'redux-persist';
 import thunkMiddleware from 'redux-thunk';

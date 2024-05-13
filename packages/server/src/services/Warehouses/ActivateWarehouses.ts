@@ -1,13 +1,13 @@
 import { Knex } from 'knex';
 import { Inject, Service } from 'typedi';
 
-import { ServiceError } from '@/exceptions';
-import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';
-import UnitOfWork from '@/services/UnitOfWork';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
+import UnitOfWork from '@bigcapital/server/services/UnitOfWork';
 import { CreateInitialWarehouse } from './CreateInitialWarehouse';
 import { WarehousesSettings } from './WarehousesSettings';
 
-import events from '@/subscribers/events';
+import events from '@bigcapital/server/subscribers/events';
 import { ERRORS } from './contants';
 
 @Service()

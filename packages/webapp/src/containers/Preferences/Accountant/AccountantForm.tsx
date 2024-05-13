@@ -1,21 +1,21 @@
+import { Button, FormGroup, Intent, Radio } from '@blueprintjs/core';
+import { Form, useFormikContext } from 'formik';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { Form, useFormikContext } from 'formik';
-import styled from 'styled-components';
-import { FormGroup, Radio, Button, Intent } from '@blueprintjs/core';
 import { useHistory } from 'react-router-dom';
+import styled from 'styled-components';
 
 import {
-  FormattedMessage as T,
   AccountsSelect,
-  FieldRequiredHint,
   CardFooterActions,
-  FFormGroup,
   FCheckbox,
+  FFormGroup,
   FRadioGroup,
-} from '@/components';
-import { ACCOUNT_PARENT_TYPE, ACCOUNT_TYPE } from '@/constants/accountTypes';
+  FieldRequiredHint,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import { ACCOUNT_PARENT_TYPE, ACCOUNT_TYPE } from '@bigcapital/webapp/constants/accountTypes';
 import { useAccountantFormContext } from './AccountantFormProvider';
 
 /**

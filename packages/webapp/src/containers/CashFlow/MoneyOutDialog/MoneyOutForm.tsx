@@ -1,25 +1,25 @@
-// @ts-nocheck
-import React from 'react';
-import intl from 'react-intl-universal';
-import moment from 'moment';
 import { Intent } from '@blueprintjs/core';
 import { Formik } from 'formik';
 import { omit } from 'lodash';
+import moment from 'moment';
+// @ts-nocheck
+import React from 'react';
+import intl from 'react-intl-universal';
 
-import '@/style/pages/CashFlow/CashflowTransactionForm.scss';
+import '@bigcapital/webapp/style/pages/CashFlow/CashflowTransactionForm.scss';
 
-import { AppToaster } from '@/components';
+import { AppToaster } from '@bigcapital/webapp/components';
 
-import MoneyOutFormContent from './MoneyOutFormContent';
 import { CreateMoneyOutSchema } from './MoneyOutForm.schema';
+import MoneyOutFormContent from './MoneyOutFormContent';
 
 import { useMoneyOutDialogContext } from './MoneyOutDialogProvider';
 
-import withSettings from '@/containers/Settings/withSettings';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import withCurrentOrganization from '@/containers/Organization/withCurrentOrganization';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withCurrentOrganization from '@bigcapital/webapp/containers/Organization/withCurrentOrganization';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
 
-import { compose, transactionNumber } from '@/utils';
+import { compose, transactionNumber } from '@bigcapital/webapp/utils';
 
 const defaultInitialValues = {
   date: moment(new Date()).format('YYYY-MM-DD'),

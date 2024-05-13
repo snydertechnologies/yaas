@@ -1,16 +1,16 @@
+import { Button, Classes, FormGroup, InputGroup, Intent } from '@blueprintjs/core';
+import classNames from 'classnames';
+import { ErrorMessage, FastField, Form, useFormikContext } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { FormGroup, InputGroup, Intent, Classes, Button } from '@blueprintjs/core';
-import { FastField, Form, useFormikContext, ErrorMessage } from 'formik';
-import classNames from 'classnames';
 
-import { FFormGroup, FInputGroup, FormattedMessage as T } from '@/components';
-import { CLASSES } from '@/constants/classes';
-import { inputIntent } from '@/utils';
-import { ListSelect, FieldRequiredHint } from '@/components';
+import { FFormGroup, FInputGroup, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { FieldRequiredHint, ListSelect } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { inputIntent } from '@bigcapital/webapp/utils';
+import { compose } from '@bigcapital/webapp/utils';
 import { useUserFormContext } from './UserFormProvider';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { compose } from '@/utils';
 import { UserFormCalloutAlerts } from './components';
 
 /**

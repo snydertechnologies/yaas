@@ -1,13 +1,13 @@
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { useWarehouses } from '@bigcapital/webapp/hooks/query';
+import classNames from 'classnames';
+import { isEmpty } from 'lodash';
 // @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
-import classNames from 'classnames';
-import { CLASSES } from '@/constants/classes';
-import { useWarehouses } from '@/hooks/query';
-import { isEmpty } from 'lodash';
 
-import { Features } from '@/constants';
-import { useFeatureCan } from '@/hooks/state';
+import { Features } from '@bigcapital/webapp/constants';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
 
 const WarehousesContext = React.createContext();
 

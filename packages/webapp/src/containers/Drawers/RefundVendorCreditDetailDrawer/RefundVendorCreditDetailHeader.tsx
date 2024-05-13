@@ -1,9 +1,9 @@
+import { defaultTo } from 'lodash';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { defaultTo } from 'lodash';
 
-import { CommercialDocHeader, FormatDate, DetailsMenu, DetailItem } from '@/components';
+import { CommercialDocHeader, DetailItem, DetailsMenu, FormatDate } from '@bigcapital/webapp/components';
 
 import { useRefundVendorCreditNoteDrawerContext } from './RefundVendorCreditDrawerProvider';
 

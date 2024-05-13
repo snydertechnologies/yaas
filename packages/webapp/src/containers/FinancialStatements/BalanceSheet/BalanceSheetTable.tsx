@@ -1,13 +1,13 @@
 // @ts-nocheck
 import React from 'react';
-import styled from 'styled-components';
 import intl from 'react-intl-universal';
+import styled from 'styled-components';
 
-import { TableStyle } from '@/constants';
-import { ReportDataTable, FinancialSheet } from '@/components';
+import { FinancialSheet, ReportDataTable } from '@bigcapital/webapp/components';
+import { TableStyle } from '@bigcapital/webapp/constants';
+import { defaultExpanderReducer, tableRowTypesToClassnames } from '@bigcapital/webapp/utils';
 import { useBalanceSheetContext } from './BalanceSheetProvider';
 import { useBalanceSheetColumns } from './components';
-import { defaultExpanderReducer, tableRowTypesToClassnames } from '@/utils';
 
 /**
  * Balance sheet table.

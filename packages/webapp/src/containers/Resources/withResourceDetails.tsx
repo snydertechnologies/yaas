@@ -1,11 +1,11 @@
-// @ts-nocheck
-import { connect } from 'react-redux';
 import {
   getResourceColumns,
-  getResourceMetadata,
-  getResourceFieldsFactory,
   getResourceDataFactory,
-} from '@/store/resources/resources.selectors';
+  getResourceFieldsFactory,
+  getResourceMetadata,
+} from '@bigcapital/webapp/store/resources/resources.selectors';
+// @ts-nocheck
+import { connect } from 'react-redux';
 
 export default (mapState) => {
   const getResourceFields = getResourceFieldsFactory();

@@ -1,11 +1,11 @@
+import { compose } from '@bigcapital/webapp/utils';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { compose } from '@/utils';
 
-import withDashboardActions from '@/containers/Dashboard/withDashboardActions';
-import withResourceDetail from '@/containers/Resources/withResourceDetails';
-import withViewsActions from '@/containers/Views/withViewsActions';
-import withViewsDetails from '@/containers/Views/withViewDetails';
+import withDashboardActions from '@bigcapital/webapp/containers/Dashboard/withDashboardActions';
+import withResourceDetail from '@bigcapital/webapp/containers/Resources/withResourceDetails';
+import withViewsDetails from '@bigcapital/webapp/containers/Views/withViewDetails';
+import withViewsActions from '@bigcapital/webapp/containers/Views/withViewsActions';
 
 const mapStateToProps = (state, ownProps) => {
   return {

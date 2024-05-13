@@ -3,8 +3,8 @@ import {
   ITenantUserDeletedPayload,
   ITenantUserEditedPayload,
   ITenantUserInactivatedPayload,
-} from '@/interfaces';
-import events from '@/subscribers/events';
+} from '@bigcapital/server/interfaces';
+import events from '@bigcapital/server/subscribers/events';
 import { ABILITIES_CACHE } from '../../api/middleware/AuthorizationMiddleware';
 
 export default class PurgeUserAbilityCache {

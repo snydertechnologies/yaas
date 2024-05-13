@@ -1,4 +1,4 @@
-import { IBalanceSheetDataNode, IBalanceSheetSchemaNode } from '@/interfaces';
+import { IBalanceSheetDataNode, IBalanceSheetSchemaNode } from '@bigcapital/server/interfaces';
 import * as R from 'ramda';
 
 export const BalanceSheetBase = (Base) =>

@@ -4,7 +4,7 @@ import {
   IExpenseCategory,
   ILandedCostTransaction,
   ILandedCostTransactionEntry,
-} from '@/interfaces';
+} from '@bigcapital/server/interfaces';
 import { isEmpty } from 'lodash';
 import { Service } from 'typedi';
 

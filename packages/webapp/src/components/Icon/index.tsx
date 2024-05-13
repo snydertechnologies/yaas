@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-import IconSvgPaths from '@/static/json/icons';
+import IconSvgPaths from '@bigcapital/webapp/static/json/icons';
 import { Classes, Props } from '@blueprintjs/core';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';

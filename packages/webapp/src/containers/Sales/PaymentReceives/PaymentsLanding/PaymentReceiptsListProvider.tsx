@@ -1,10 +1,10 @@
+import { isEmpty } from 'lodash';
 // @ts-nocheck
 import React, { createContext, useContext } from 'react';
-import { isEmpty } from 'lodash';
 
-import { DashboardInsider } from '@/components/Dashboard';
-import { useResourceViews, useResourceMeta, usePaymentReceives } from '@/hooks/query';
-import { getFieldsFromResourceMeta } from '@/utils';
+import { DashboardInsider } from '@bigcapital/webapp/components/Dashboard';
+import { usePaymentReceives, useResourceMeta, useResourceViews } from '@bigcapital/webapp/hooks/query';
+import { getFieldsFromResourceMeta } from '@bigcapital/webapp/utils';
 
 const PaymentReceivesListContext = createContext();
 

@@ -1,9 +1,9 @@
+import { DialogContent } from '@bigcapital/webapp/components';
+import { Features } from '@bigcapital/webapp/constants';
+import { useBranches, useEditVendorOpeningBalance, useVendor } from '@bigcapital/webapp/hooks/query';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
 // @ts-nocheck
 import React from 'react';
-import { DialogContent } from '@/components';
-import { useBranches, useVendor, useEditVendorOpeningBalance } from '@/hooks/query';
-import { useFeatureCan } from '@/hooks/state';
-import { Features } from '@/constants';
 import { transfromVendorToForm } from './utils';
 
 const VendorOpeningBalanceContext = React.createContext();

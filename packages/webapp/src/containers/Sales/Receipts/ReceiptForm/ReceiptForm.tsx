@@ -1,37 +1,37 @@
+import { Intent } from '@blueprintjs/core';
+import classNames from 'classnames';
+import { Form, Formik } from 'formik';
+import { isEmpty, sumBy } from 'lodash';
 // @ts-nocheck
 import intl from 'react-intl-universal';
-import classNames from 'classnames';
-import { Formik, Form } from 'formik';
-import { Intent } from '@blueprintjs/core';
-import { sumBy, isEmpty } from 'lodash';
 import { useHistory } from 'react-router-dom';
 
-import { CLASSES } from '@/constants/classes';
-import { EditReceiptFormSchema, CreateReceiptFormSchema } from './ReceiptForm.schema';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { CreateReceiptFormSchema, EditReceiptFormSchema } from './ReceiptForm.schema';
 
 import { useReceiptFormContext } from './ReceiptFormProvider';
 
-import ReceiptFromHeader from './ReceiptFormHeader';
-import ReceiptItemsEntriesEditor from './ReceiptItemsEntriesEditor';
+import ReceiptFormDialogs from './ReceiptFormDialogs';
 import ReceiptFormFloatingActions from './ReceiptFormFloatingActions';
 import ReceiptFormFooter from './ReceiptFormFooter';
-import ReceiptFormDialogs from './ReceiptFormDialogs';
+import ReceiptFromHeader from './ReceiptFormHeader';
 import ReceiptFormTopBar from './ReceiptFormTopbar';
+import ReceiptItemsEntriesEditor from './ReceiptItemsEntriesEditor';
 
-import withDashboardActions from '@/containers/Dashboard/withDashboardActions';
-import withSettings from '@/containers/Settings/withSettings';
-import withCurrentOrganization from '@/containers/Organization/withCurrentOrganization';
+import withDashboardActions from '@bigcapital/webapp/containers/Dashboard/withDashboardActions';
+import withCurrentOrganization from '@bigcapital/webapp/containers/Organization/withCurrentOrganization';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
 
-import { AppToaster } from '@/components';
-import { compose, orderingLinesIndexes, transactionNumber } from '@/utils';
+import { AppToaster } from '@bigcapital/webapp/components';
+import { compose, orderingLinesIndexes, transactionNumber } from '@bigcapital/webapp/utils';
+import { ReceiptSyncAutoExRateToForm, ReceiptSyncIncrementSettingsToForm } from './components';
 import {
-  transformToEditForm,
   defaultReceipt,
   handleErrors,
-  transformFormValuesToRequest,
   resetFormState,
+  transformFormValuesToRequest,
+  transformToEditForm,
 } from './utils';
-import { ReceiptSyncAutoExRateToForm, ReceiptSyncIncrementSettingsToForm } from './components';
 
 /**
  * Receipt form.

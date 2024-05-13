@@ -1,5 +1,5 @@
-import { Tenant } from '@/system/models';
-import { templateRender } from '@/utils';
+import { Tenant } from '@bigcapital/server/system/models';
+import { templateRender } from '@bigcapital/server/utils';
 import { Inject, Service } from 'typedi';
 import HasTenancyService from '../Tenancy/TenancyService';
 

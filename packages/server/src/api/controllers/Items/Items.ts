@@ -1,10 +1,10 @@
-import BaseController from '@/api/controllers/BaseController';
-import CheckAbilities from '@/api/middleware/CheckPolicies';
-import { DATATYPES_LENGTH } from '@/data/DataTypes';
-import { ServiceError } from '@/exceptions';
-import { AbilitySubject, IItemDTO, ItemAction } from '@/interfaces';
-import DynamicListingService from '@/services/DynamicListing/DynamicListService';
-import { ItemsApplication } from '@/services/Items/ItemsApplication';
+import BaseController from '@bigcapital/server/api/controllers/BaseController';
+import CheckAbilities from '@bigcapital/server/api/middleware/CheckPolicies';
+import { DATATYPES_LENGTH } from '@bigcapital/server/data/DataTypes';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { AbilitySubject, IItemDTO, ItemAction } from '@bigcapital/server/interfaces';
+import DynamicListingService from '@bigcapital/server/services/DynamicListing/DynamicListService';
+import { ItemsApplication } from '@bigcapital/server/services/Items/ItemsApplication';
 import { NextFunction, Request, Response, Router } from 'express';
 import { ValidationChain, check, param, query } from 'express-validator';
 import { Inject, Service } from 'typedi';

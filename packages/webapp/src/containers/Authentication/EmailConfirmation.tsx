@@ -1,9 +1,9 @@
+import { AppToaster } from '@bigcapital/webapp/components';
+import { useAuthSignUpVerify } from '@bigcapital/webapp/hooks/query';
+import { Intent } from '@blueprintjs/core';
 // @ts-nocheck
 import { useEffect, useMemo } from 'react';
-import { useLocation, useHistory } from 'react-router-dom';
-import { useAuthSignUpVerify } from '@/hooks/query';
-import { AppToaster } from '@/components';
-import { Intent } from '@blueprintjs/core';
+import { useHistory, useLocation } from 'react-router-dom';
 
 function useQuery() {
   const { search } = useLocation();

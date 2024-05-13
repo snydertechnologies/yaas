@@ -1,5 +1,5 @@
-import { ACCOUNT_TYPE } from '@/data/AccountTypes';
-import { CASH_FLOW_SECTION_ID, ICashFlowSchemaSection, ICashFlowStatementSectionType } from '@/interfaces';
+import { ACCOUNT_TYPE } from '@bigcapital/server/data/AccountTypes';
+import { CASH_FLOW_SECTION_ID, ICashFlowSchemaSection, ICashFlowStatementSectionType } from '@bigcapital/server/interfaces';
 
 export default [
   {

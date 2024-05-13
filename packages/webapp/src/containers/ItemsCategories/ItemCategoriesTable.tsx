@@ -2,15 +2,15 @@
 import React from 'react';
 import intl from 'react-intl-universal';
 
-import { DataTable, TableSkeletonRows } from '@/components';
+import { DataTable, TableSkeletonRows } from '@bigcapital/webapp/components';
 
 import { useItemsCategoriesContext } from './ItemsCategoriesProvider';
-import { useItemsCategoriesTableColumns, ActionMenuList } from './components';
+import { ActionMenuList, useItemsCategoriesTableColumns } from './components';
 
-import withAlertActions from '@/containers/Alert/withAlertActions';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
+import withAlertActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Items categories table.

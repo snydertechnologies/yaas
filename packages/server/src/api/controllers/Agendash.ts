@@ -1,4 +1,4 @@
-import config from '@/config';
+import config from '@bigcapital/server/config';
 import agendash from 'agendash';
 import { Router } from 'express';
 import basicAuth from 'express-basic-auth';

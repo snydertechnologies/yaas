@@ -1,6 +1,6 @@
 import { difference } from 'lodash';
 
-import { IFilterRole, IModel } from '@/interfaces';
+import { IFilterRole, IModel } from '@bigcapital/server/interfaces';
 
 /**
  * Get field column metadata and its relation with other tables.

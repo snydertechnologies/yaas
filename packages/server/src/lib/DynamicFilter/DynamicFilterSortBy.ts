@@ -1,4 +1,4 @@
-import DynamicFilterRoleAbstractor from '@/lib/DynamicFilter/DynamicFilterRoleAbstractor';
+import DynamicFilterRoleAbstractor from '@bigcapital/server/lib/DynamicFilter/DynamicFilterRoleAbstractor';
 import { FIELD_TYPE } from './constants';
 
 interface ISortRole {

@@ -2,7 +2,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
-import '@/style/pages/Expense/PageForm.scss';
+import '@bigcapital/webapp/style/pages/Expense/PageForm.scss';
 
 import ExpenseForm from './ExpenseForm';
 import { ExpenseFormPageProvider } from './ExpenseFormPageProvider';

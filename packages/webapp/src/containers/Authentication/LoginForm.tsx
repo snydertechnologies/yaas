@@ -1,10 +1,10 @@
+import { Button, Intent } from '@blueprintjs/core';
+import { Tooltip2 } from '@blueprintjs/popover2';
+import { Form } from 'formik';
 // @ts-nocheck
 import React, { useState } from 'react';
-import { Button, Intent } from '@blueprintjs/core';
-import { Form } from 'formik';
-import { Tooltip2 } from '@blueprintjs/popover2';
 
-import { FFormGroup, FInputGroup, FCheckbox, T } from '@/components';
+import { FCheckbox, FFormGroup, FInputGroup, T } from '@bigcapital/webapp/components';
 import { AuthSubmitButton } from './_components';
 
 /**

@@ -1,4 +1,4 @@
-import { IBalanceSheetQuery } from '@/interfaces';
+import { IBalanceSheetQuery } from '@bigcapital/server/interfaces';
 import { Inject, Service } from 'typedi';
 import { TableSheetPdf } from '../TableSheetPdf';
 import { BalanceSheetTableInjectable } from './BalanceSheetTableInjectable';

@@ -4,18 +4,18 @@ import intl from 'react-intl-universal';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-import { TableStyle } from '@/constants';
-import { Card, DataTable, If } from '@/components';
+import { TableStyle } from '@bigcapital/webapp/constants';
+import { Card, DataTable, If } from '@bigcapital/webapp/components';
 import { AccountDrawerTableOptionsProvider } from './AccountDrawerTableOptionsProvider';
 import { AccountDrawerTableHeader } from './AccountDrawerTableHeader';
 
 import { useAccountReadEntriesColumns } from './utils';
-import { useAppIntlContext } from '@/components/AppIntlProvider';
+import { useAppIntlContext } from '@bigcapital/webapp/components/AppIntlProvider';
 import { useAccountDrawerContext } from './AccountDrawerProvider';
 
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * account drawer table.

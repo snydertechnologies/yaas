@@ -9,9 +9,9 @@ import {
   ITableRow,
   ProfitLossNodeType,
   ProfitLossSheetRowType,
-} from '@/interfaces';
+} from '@bigcapital/server/interfaces';
+import { tableRowMapper } from '@bigcapital/server/utils';
 import * as R from 'ramda';
-import { tableRowMapper } from 'utils';
 import { FinancialSheetStructure } from '../FinancialSheetStructure';
 import { FinancialTable } from '../FinancialTable';
 import { ProfitLossSheetBase } from './ProfitLossSheetBase';

@@ -1,6 +1,6 @@
-import { PlaidApplication } from '@/services/Banking/Plaid/PlaidApplication';
-import { PlaidWebhookTenantBootMiddleware } from '@/services/Banking/Plaid/PlaidWebhookTenantBootMiddleware';
-import { LemonSqueezyWebhooks } from '@/services/Subscription/LemonSqueezyWebhooks';
+import { PlaidApplication } from '@bigcapital/server/services/Banking/Plaid/PlaidApplication';
+import { PlaidWebhookTenantBootMiddleware } from '@bigcapital/server/services/Banking/Plaid/PlaidWebhookTenantBootMiddleware';
+import { LemonSqueezyWebhooks } from '@bigcapital/server/services/Subscription/LemonSqueezyWebhooks';
 import { Router } from 'express';
 import { Request, Response } from 'express';
 import { Inject, Service } from 'typedi';

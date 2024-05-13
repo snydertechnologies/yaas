@@ -1,21 +1,21 @@
-// @ts-nocheck
-import React from 'react';
 import moment from 'moment';
 import * as R from 'ramda';
+// @ts-nocheck
+import React from 'react';
 
-import ProfitLossSheetHeader from './ProfitLossSheetHeader';
 import ProfitLossActionsBar from './ProfitLossActionsBar';
+import ProfitLossSheetHeader from './ProfitLossSheetHeader';
 
-import { DashboardPageContent } from '@/components';
+import { DashboardPageContent } from '@bigcapital/webapp/components';
 
-import withDashboardActions from '@/containers/Dashboard/withDashboardActions';
+import withDashboardActions from '@bigcapital/webapp/containers/Dashboard/withDashboardActions';
 import withProfitLossActions from './withProfitLossActions';
 
-import { useProfitLossSheetQuery } from './utils';
-import { ProfitLossSheetProvider } from './ProfitLossProvider';
-import { ProfitLossSheetAlerts, ProfitLossSheetLoadingBar } from './components';
 import { ProfitLossBody } from './ProfitLossBody';
+import { ProfitLossSheetProvider } from './ProfitLossProvider';
 import { ProfitLossSheetDialogs } from './ProfitLossSheetDialogs';
+import { ProfitLossSheetAlerts, ProfitLossSheetLoadingBar } from './components';
+import { useProfitLossSheetQuery } from './utils';
 
 /**
  * Profit/Loss financial statement sheet.

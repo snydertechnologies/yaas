@@ -2,9 +2,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Button, MenuItem, Menu, Popover, PopoverInteractionKind, Position } from '@blueprintjs/core';
-import { FormattedMessage as T } from '@/components';
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
 import { useItemDetailDrawerContext } from '../ItemDetailDrawerProvider';
-import { useGetItemPaymentTransactionsMenu } from '@/constants/itemPaymentTranactionsOption';
+import { useGetItemPaymentTransactionsMenu } from '@bigcapital/webapp/constants/itemPaymentTranactionsOption';
 
 export const ItemManuTransaction = ({ onChange }) => {
   const { value, setValue } = useItemDetailDrawerContext();

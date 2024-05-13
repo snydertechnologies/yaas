@@ -1,6 +1,6 @@
-import config from '@/config';
-import { IAuthSignedUpEventPayload } from '@/interfaces';
-import events from '@/subscribers/events';
+import config from '@bigcapital/server/config';
+import { IAuthSignedUpEventPayload } from '@bigcapital/server/interfaces';
+import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 import { Subscription } from '../Subscription';
 

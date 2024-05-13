@@ -1,18 +1,18 @@
+import * as R from 'ramda';
 // @ts-nocheck
 import React from 'react';
-import * as R from 'ramda';
 import styled from 'styled-components';
 
-import { Card, DrawerLoading } from '@/components';
+import { Card, DrawerLoading } from '@bigcapital/webapp/components';
 
 import ItemFormFormik from '../../Items/ItemFormFormik';
 import { ItemFormProvider, useItemFormContext } from '../../Items/ItemFormProvider';
 
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
-import withDashboardActions from '@/containers/Dashboard/withDashboardActions';
+import withDashboardActions from '@bigcapital/webapp/containers/Dashboard/withDashboardActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
 
-import { useDrawerContext } from '@/components/Drawer/DrawerProvider';
-import { DRAWERS } from '@/constants/drawers';
+import { useDrawerContext } from '@bigcapital/webapp/components/Drawer/DrawerProvider';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
 
 /**
  * Quick create/edit item drawer form.

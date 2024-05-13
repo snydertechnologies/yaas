@@ -1,26 +1,26 @@
-// @ts-nocheck
-import React from 'react';
+import { DashboardActionsBar, Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
 import {
-  NavbarGroup,
   Button,
   Classes,
   NavbarDivider,
+  NavbarGroup,
   Popover,
   PopoverInteractionKind,
   Position,
 } from '@blueprintjs/core';
 import classNames from 'classnames';
-import { DashboardActionsBar, FormattedMessage as T, Icon } from '@/components';
+// @ts-nocheck
+import React from 'react';
 
-import NumberFormatDropdown from '@/components/NumberFormatDropdown';
+import NumberFormatDropdown from '@bigcapital/webapp/components/NumberFormatDropdown';
 
-import withTrialBalance from './withTrialBalance';
-import withTrialBalanceActions from './withTrialBalanceActions';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { compose, saveInvoke } from '@/utils';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { compose, saveInvoke } from '@bigcapital/webapp/utils';
 import { useTrialBalanceSheetContext } from './TrialBalanceProvider';
 import { TrialBalanceSheetExportMenu } from './components';
-import { DialogsName } from '@/constants/dialogs';
+import withTrialBalance from './withTrialBalance';
+import withTrialBalanceActions from './withTrialBalanceActions';
 
 function TrialBalanceActionsBar({
   // #withTrialBalance

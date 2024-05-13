@@ -1,5 +1,5 @@
-import { TransformerInjectable } from '@/lib/Transformer/TransformerInjectable';
-import { Import } from '@/system/models';
+import { TransformerInjectable } from '@bigcapital/server/lib/Transformer/TransformerInjectable';
+import { Import } from '@bigcapital/server/system/models';
 import { Inject, Service } from 'typedi';
 import HasTenancyService from '../Tenancy/TenancyService';
 import { ImportFileMetaTransformer } from './ImportFileMetaTransformer';

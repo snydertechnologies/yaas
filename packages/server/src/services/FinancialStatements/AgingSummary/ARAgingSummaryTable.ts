@@ -1,4 +1,4 @@
-import { IARAgingSummaryData, IAgingSummaryQuery, ITableColumnAccessor, ITableRow } from '@/interfaces';
+import { IARAgingSummaryData, IAgingSummaryQuery, ITableColumnAccessor, ITableRow } from '@bigcapital/server/interfaces';
 import AgingSummaryTable from './AgingSummaryTable';
 
 export default class ARAgingSummaryTable extends AgingSummaryTable {

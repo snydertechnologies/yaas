@@ -1,8 +1,8 @@
-import config from '@/config';
-import { tenantKnexConfig, tenantSeedConfig } from '@/config/knexConfig';
-import { TenantDBAlreadyExists } from '@/exceptions';
-import { ITenant, ITenantDBManager } from '@/interfaces';
-import SystemService from '@/services/Tenancy/SystemService';
+import config from '@bigcapital/server/config';
+import { tenantKnexConfig, tenantSeedConfig } from '@bigcapital/server/config/knexConfig';
+import { TenantDBAlreadyExists } from '@bigcapital/server/exceptions';
+import { ITenant, ITenantDBManager } from '@bigcapital/server/interfaces';
+import SystemService from '@bigcapital/server/services/Tenancy/SystemService';
 import Knex from 'knex';
 import { knexSnakeCaseMappers } from 'objection';
 import { Container } from 'typedi';

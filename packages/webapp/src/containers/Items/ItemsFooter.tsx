@@ -1,7 +1,7 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Button, Intent } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Intent, Button } from '@blueprintjs/core';
-import { FormattedMessage as T } from '@/components';
 
 export default function ItemFloatingFooter({ formik: { isSubmitting }, onSubmitClick, onCancelClick, itemDetail }) {
   return (

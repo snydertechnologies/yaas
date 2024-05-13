@@ -1,5 +1,5 @@
-import { Transformer } from '@/lib/Transformer/Transformer';
-import { formatNumber } from 'utils';
+import { Transformer } from '@bigcapital/server/lib/Transformer/Transformer';
+import { formatNumber } from '@bigcapital/server/utils';
 import { ItemEntryTransformer } from '../Sales/Invoices/ItemEntryTransformer';
 
 export class CreditNoteTransformer extends Transformer {

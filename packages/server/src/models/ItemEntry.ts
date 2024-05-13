@@ -1,5 +1,5 @@
-import { getExlusiveTaxAmount, getInclusiveTaxAmount } from '@/utils/taxRate';
-import TenantModel from 'models/TenantModel';
+import TenantModel from '@bigcapital/server/models/TenantModel';
+import { getExlusiveTaxAmount, getInclusiveTaxAmount } from '@bigcapital/server/utils/taxRate';
 import { Model } from 'objection';
 
 export default class ItemEntry extends TenantModel {
@@ -104,15 +104,15 @@ export default class ItemEntry extends TenantModel {
    * Item entry relations.
    */
   static get relationMappings() {
-    const Item = require('models/Item');
-    const BillLandedCostEntry = require('models/BillLandedCostEntry');
-    const SaleInvoice = require('models/SaleInvoice');
-    const Bill = require('models/Bill');
-    const SaleReceipt = require('models/SaleReceipt');
-    const SaleEstimate = require('models/SaleEstimate');
-    const ProjectTask = require('models/Task');
-    const Expense = require('models/Expense');
-    const TaxRate = require('models/TaxRate');
+    const Item = require('@bigcapital/server/models/Item');
+    const BillLandedCostEntry = require('@bigcapital/server/models/BillLandedCostEntry');
+    const SaleInvoice = require('@bigcapital/server/models/SaleInvoice');
+    const Bill = require('@bigcapital/server/models/Bill');
+    const SaleReceipt = require('@bigcapital/server/models/SaleReceipt');
+    const SaleEstimate = require('@bigcapital/server/models/SaleEstimate');
+    const ProjectTask = require('@bigcapital/server/models/Task');
+    const Expense = require('@bigcapital/server/models/Expense');
+    const TaxRate = require('@bigcapital/server/models/TaxRate');
 
     return {
       item: {

@@ -1,12 +1,12 @@
+import { Button, Menu, MenuItem } from '@blueprintjs/core';
+import { Popover2 } from '@blueprintjs/popover2';
+import { find, get } from 'lodash';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { find, get } from 'lodash';
-import { Button, Menu, MenuItem } from '@blueprintjs/core';
-import { Popover2 } from '@blueprintjs/popover2';
 
-import { Align, CellType } from '@/constants';
-import { MoneyFieldCell, Icon, ItemsListCell, InputGroupCell } from '@/components';
+import { Icon, InputGroupCell, ItemsListCell, MoneyFieldCell } from '@bigcapital/webapp/components';
+import { Align, CellType } from '@bigcapital/webapp/constants';
 
 /**
  * Actions cell renderer component.

@@ -1,5 +1,5 @@
-import { IPurchasesByItemsReportQuery } from '@/interfaces/PurchasesByItemsSheet';
-import { TableSheet } from '@/lib/Xlsx/TableSheet';
+import { IPurchasesByItemsReportQuery } from '@bigcapital/server/interfaces/PurchasesByItemsSheet';
+import { TableSheet } from '@bigcapital/server/lib/Xlsx/TableSheet';
 import { Inject, Service } from 'typedi';
 import { PurchasesByItemsTableInjectable } from './PurchasesByItemsTableInjectable';
 

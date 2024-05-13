@@ -1,10 +1,10 @@
+import { Button, Intent } from '@blueprintjs/core';
+import { Form } from 'formik';
+import { useHistory } from 'react-router-dom';
 // @ts-nocheck
 import styled from 'styled-components';
-import { Form } from 'formik';
-import { Button, Intent } from '@blueprintjs/core';
-import { useHistory } from 'react-router-dom';
 
-import { FormattedMessage as T, FFormGroup, FTextArea } from '@/components';
+import { FFormGroup, FTextArea, FormattedMessage as T } from '@bigcapital/webapp/components';
 
 /**
  * Preferences general form.

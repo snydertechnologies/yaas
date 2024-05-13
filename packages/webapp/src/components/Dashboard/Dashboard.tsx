@@ -1,20 +1,20 @@
 // @ts-nocheck
 import React from 'react';
-import { Switch, Route } from 'react-router';
+import { Route, Switch } from 'react-router';
 
-import '@/style/pages/Dashboard/Dashboard.scss';
+import '@bigcapital/webapp/style/pages/Dashboard/Dashboard.scss';
 
-import { Sidebar } from '@/containers/Dashboard/Sidebar/Sidebar';
-import DashboardContent from '@/components/Dashboard/DashboardContent';
-import DialogsContainer from '@/components/DialogsContainer';
-import PreferencesPage from '@/components/Preferences/PreferencesPage';
-import DashboardUniversalSearch from '@/containers/UniversalSearch/DashboardUniversalSearch';
-import DashboardSplitPane from '@/components/Dashboard/DashboardSplitePane';
-import GlobalHotkeys from './GlobalHotkeys';
+import DashboardContent from '@bigcapital/webapp/components/Dashboard/DashboardContent';
+import DashboardSplitPane from '@bigcapital/webapp/components/Dashboard/DashboardSplitePane';
+import DialogsContainer from '@bigcapital/webapp/components/DialogsContainer';
+import DrawersContainer from '@bigcapital/webapp/components/DrawersContainer';
+import PreferencesPage from '@bigcapital/webapp/components/Preferences/PreferencesPage';
+import AlertsContainer from '@bigcapital/webapp/containers/AlertsContainer';
+import { Sidebar } from '@bigcapital/webapp/containers/Dashboard/Sidebar/Sidebar';
+import DashboardUniversalSearch from '@bigcapital/webapp/containers/UniversalSearch/DashboardUniversalSearch';
 import DashboardProvider from './DashboardProvider';
-import DrawersContainer from '@/components/DrawersContainer';
-import AlertsContainer from '@/containers/AlertsContainer';
 import { DashboardSockets } from './DashboardSockets';
+import GlobalHotkeys from './GlobalHotkeys';
 
 /**
  * Dashboard preferences.

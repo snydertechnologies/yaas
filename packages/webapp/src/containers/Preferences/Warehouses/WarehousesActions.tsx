@@ -1,11 +1,11 @@
+import { Button, Intent } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Button, Intent } from '@blueprintjs/core';
 
-import { Features } from '@/constants';
-import { FeatureCan, FormattedMessage as T, Icon } from '@/components';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { compose } from '@/utils';
+import { FeatureCan, Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Features } from '@bigcapital/webapp/constants';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Warehouse actions.

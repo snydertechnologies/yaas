@@ -1,5 +1,5 @@
-import { ServiceError } from '@/exceptions';
-import { SystemUser } from '@/system/models';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { SystemUser } from '@bigcapital/server/system/models';
 import { Inject, Service } from 'typedi';
 import { ERRORS } from './_constants';
 

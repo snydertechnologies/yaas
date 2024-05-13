@@ -1,10 +1,10 @@
-import { TenantAlreadyInitialized, TenantAlreadySeeded, TenantDatabaseNotBuilt } from '@/exceptions';
-import { ITenant, ITenantDBManager, ITenantManager } from '@/interfaces';
-import { SeedMigration } from '@/lib/Seeder/SeedMigration';
-import TenantDBManager from '@/services/Tenancy/TenantDBManager';
-import events from '@/subscribers/events';
-import { Tenant } from '@/system/models';
-import { EventDispatcher, EventDispatcherInterface } from 'decorators/eventDispatcher';
+import { EventDispatcher, EventDispatcherInterface } from '@bigcapital/server/decorators/eventDispatcher';
+import { TenantAlreadyInitialized, TenantAlreadySeeded, TenantDatabaseNotBuilt } from '@bigcapital/server/exceptions';
+import { ITenant, ITenantDBManager, ITenantManager } from '@bigcapital/server/interfaces';
+import { SeedMigration } from '@bigcapital/server/lib/Seeder/SeedMigration';
+import TenantDBManager from '@bigcapital/server/services/Tenancy/TenantDBManager';
+import events from '@bigcapital/server/subscribers/events';
+import { Tenant } from '@bigcapital/server/system/models';
 import { Inject, Service } from 'typedi';
 import i18n from '../../loaders/i18n';
 

@@ -1,6 +1,6 @@
+import { setGlobalErrors } from '@bigcapital/webapp/store/globalErrors/globalErrors.actions';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { setGlobalErrors } from '@/store/globalErrors/globalErrors.actions';
 
 export const mapDispatchToProps = (dispatch) => ({
   globalErrorsSet: (errors) => dispatch(setGlobalErrors(errors)),

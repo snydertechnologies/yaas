@@ -1,8 +1,8 @@
 import * as qim from 'qim';
 import { Inject, Service } from 'typedi';
 
-import I18nService from '@/services/I18n/I18nService';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import I18nService from '@bigcapital/server/services/I18n/I18nService';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { AbilitySchema } from './AbilitySchema';
 
 @Service()

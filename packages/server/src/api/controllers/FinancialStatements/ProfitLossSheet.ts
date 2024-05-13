@@ -1,7 +1,7 @@
-import CheckPolicies from '@/api/middleware/CheckPolicies';
-import { AbilitySubject, ReportsAction } from '@/interfaces';
-import { ACCEPT_TYPE } from '@/interfaces/Http';
-import { ProfitLossSheetApplication } from '@/services/FinancialStatements/ProfitLossSheet/ProfitLossSheetApplication';
+import CheckPolicies from '@bigcapital/server/api/middleware/CheckPolicies';
+import { AbilitySubject, ReportsAction } from '@bigcapital/server/interfaces';
+import { ACCEPT_TYPE } from '@bigcapital/server/interfaces/Http';
+import { ProfitLossSheetApplication } from '@bigcapital/server/services/FinancialStatements/ProfitLossSheet/ProfitLossSheetApplication';
 import { NextFunction, Request, Response, Router } from 'express';
 import { ValidationChain, query } from 'express-validator';
 import { Inject, Service } from 'typedi';

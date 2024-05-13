@@ -1,6 +1,6 @@
+import { Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import React from 'react';
-import { FormattedMessage as T, Icon } from '@/components';
 
 export default function DashboardErrorBoundary({}) {
   return (

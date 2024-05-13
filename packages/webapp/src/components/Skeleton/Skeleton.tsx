@@ -1,8 +1,8 @@
 // @ts-nocheck
 import React, { useMemo } from 'react';
-import '@/style/components/Skeleton.scss';
+import '@bigcapital/webapp/style/components/Skeleton.scss';
 
-import { randomNumber } from '@/utils';
+import { randomNumber } from '@bigcapital/webapp/utils';
 
 /**
  * Skeleton component.

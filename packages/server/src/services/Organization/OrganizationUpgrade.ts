@@ -1,9 +1,9 @@
-import { ServiceError } from '@/exceptions';
-import { SeedMigration } from '@/lib/Seeder/SeedMigration';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
-import TenantDBManager from '@/services/Tenancy/TenantDBManager';
-import TenantsManagerService from '@/services/Tenancy/TenantsManager';
-import { Tenant } from '@/system/models';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { SeedMigration } from '@bigcapital/server/lib/Seeder/SeedMigration';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import TenantDBManager from '@bigcapital/server/services/Tenancy/TenantDBManager';
+import TenantsManagerService from '@bigcapital/server/services/Tenancy/TenantsManager';
+import { Tenant } from '@bigcapital/server/system/models';
 import { ObjectId } from 'mongodb';
 import { Inject, Service } from 'typedi';
 import config from '../../config';

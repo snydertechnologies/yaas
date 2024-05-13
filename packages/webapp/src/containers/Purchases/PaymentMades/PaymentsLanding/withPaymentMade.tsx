@@ -1,9 +1,9 @@
-// @ts-nocheck
-import { connect } from 'react-redux';
 import {
   getPaymentMadesTableStateFactory,
   paymentsTableStateChangedFactory,
-} from '@/store/PaymentMades/paymentMades.selector';
+} from '@bigcapital/webapp/store/PaymentMades/paymentMades.selector';
+// @ts-nocheck
+import { connect } from 'react-redux';
 
 export default (mapState) => {
   const getPaymentMadesTableState = getPaymentMadesTableStateFactory();

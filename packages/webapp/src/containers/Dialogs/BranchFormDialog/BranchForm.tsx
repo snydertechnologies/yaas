@@ -2,18 +2,18 @@
 import React from 'react';
 import intl from 'react-intl-universal';
 
-import { Formik } from 'formik';
 import { Intent } from '@blueprintjs/core';
+import { Formik } from 'formik';
 
-import { AppToaster } from '@/components';
+import { AppToaster } from '@bigcapital/webapp/components';
 import { CreateBranchFormSchema } from './BranchForm.schema';
 import { transformErrors } from './utils';
 
 import BranchFormContent from './BranchFormContent';
 import { useBranchFormContext } from './BranchFormProvider';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { compose, transformToForm } from '@/utils';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { compose, transformToForm } from '@bigcapital/webapp/utils';
 
 const defaultInitialValues = {
   name: '',

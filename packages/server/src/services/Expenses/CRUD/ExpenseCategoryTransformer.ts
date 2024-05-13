@@ -1,6 +1,6 @@
-import { Transformer } from '@/lib/Transformer/Transformer';
-import { ExpenseCategory } from '@/models';
-import { formatNumber } from '@/utils';
+import { Transformer } from '@bigcapital/server/lib/Transformer/Transformer';
+import { ExpenseCategory } from '@bigcapital/server/models';
+import { formatNumber } from '@bigcapital/server/utils';
 
 export class ExpenseCategoryTransformer extends Transformer {
   /**

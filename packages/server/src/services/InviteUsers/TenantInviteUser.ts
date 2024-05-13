@@ -1,4 +1,4 @@
-import { ServiceError } from '@/exceptions';
+import { ServiceError } from '@bigcapital/server/exceptions';
 import {
   IInviteUserService,
   ISystemUser,
@@ -6,11 +6,11 @@ import {
   IUserInviteResendEventPayload,
   IUserInvitedEventPayload,
   IUserSendInviteDTO,
-} from '@/interfaces';
-import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';
-import RolesService from '@/services/Roles/RolesService';
-import TenancyService from '@/services/Tenancy/TenancyService';
-import events from '@/subscribers/events';
+} from '@bigcapital/server/interfaces';
+import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
+import RolesService from '@bigcapital/server/services/Roles/RolesService';
+import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import events from '@bigcapital/server/subscribers/events';
 import moment from 'moment';
 import { Inject, Service } from 'typedi';
 import uniqid from 'uniqid';

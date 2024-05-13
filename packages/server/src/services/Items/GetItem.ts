@@ -1,6 +1,6 @@
-import { IItem } from '@/interfaces';
-import { TransformerInjectable } from '@/lib/Transformer/TransformerInjectable';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { IItem } from '@bigcapital/server/interfaces';
+import { TransformerInjectable } from '@bigcapital/server/lib/Transformer/TransformerInjectable';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject } from 'typedi';
 import ItemTransformer from './ItemTransformer';
 

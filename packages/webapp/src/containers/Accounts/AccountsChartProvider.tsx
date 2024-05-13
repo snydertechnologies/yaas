@@ -1,8 +1,8 @@
+import { DashboardInsider } from '@bigcapital/webapp/components';
+import { useAccounts, useResourceMeta, useResourceViews } from '@bigcapital/webapp/hooks/query';
+import { getFieldsFromResourceMeta } from '@bigcapital/webapp/utils';
 // @ts-nocheck
 import React, { createContext } from 'react';
-import { DashboardInsider } from '@/components';
-import { useResourceViews, useResourceMeta, useAccounts } from '@/hooks/query';
-import { getFieldsFromResourceMeta } from '@/utils';
 
 const AccountsChartContext = createContext();
 

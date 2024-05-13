@@ -1,8 +1,8 @@
+import { useFormikContext } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { useFormikContext } from 'formik';
 
-import { BaseCurrency, BaseCurrencyRoot } from '@/components';
+import { BaseCurrency, BaseCurrencyRoot } from '@bigcapital/webapp/components';
 import { useInvoiceFormContext } from './InvoiceFormProvider';
 
 /**

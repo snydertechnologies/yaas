@@ -1,7 +1,7 @@
+import { DashboardInsider } from '@bigcapital/webapp/components/Dashboard';
+import { usePaymentMades, useResourceFields, useResourceViews } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React, { createContext } from 'react';
-import { DashboardInsider } from '@/components/Dashboard';
-import { useResourceViews, useResourceFields, usePaymentMades } from '@/hooks/query';
 
 const PaymentMadesContext = createContext();
 

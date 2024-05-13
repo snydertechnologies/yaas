@@ -1,11 +1,11 @@
+import { FFormGroup, FSelect } from '@bigcapital/webapp/components';
+import { InclusiveTaxOptions } from '@bigcapital/webapp/constants/InclusiveTaxOptions';
+import { useFormikContext } from 'formik';
 // @ts-nocheck
 import styled from 'styled-components';
-import { useFormikContext } from 'formik';
-import { FFormGroup, FSelect } from '@/components';
-import { InclusiveTaxOptions } from '@/constants/InclusiveTaxOptions';
 
+import { EntriesActionsBar } from '@bigcapital/webapp/containers/Entries/EntriesActionBar';
 import { composeEntriesOnEditInclusiveTax } from './utils';
-import { EntriesActionsBar } from '@/containers/Entries/EntriesActionBar';
 
 export function BillFormEntriesActions() {
   return (

@@ -1,6 +1,6 @@
+import { resetVendorsTableState, setVendorsTableState } from '@bigcapital/webapp/store/vendors/vendors.actions';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { setVendorsTableState, resetVendorsTableState } from '@/store/vendors/vendors.actions';
 
 const mapDispatchToProps = (dispatch) => ({
   setVendorsTableState: (queries) => dispatch(setVendorsTableState(queries)),

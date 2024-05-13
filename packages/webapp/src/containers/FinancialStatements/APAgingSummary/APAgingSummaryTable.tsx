@@ -3,13 +3,13 @@ import React from 'react';
 import intl from 'react-intl-universal';
 import styled from 'styled-components';
 
-import { TableStyle } from '@/constants';
-import { ReportDataTable, FinancialSheet } from '@/components';
+import { FinancialSheet, ReportDataTable } from '@bigcapital/webapp/components';
+import { TableStyle } from '@bigcapital/webapp/constants';
 
 import { useAPAgingSummaryContext } from './APAgingSummaryProvider';
 import { useAPAgingSummaryColumns } from './components';
 
-import { tableRowTypesToClassnames } from '@/utils';
+import { tableRowTypesToClassnames } from '@bigcapital/webapp/utils';
 
 /**
  * AP aging summary table sheet.

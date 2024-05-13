@@ -2,22 +2,22 @@
 import React from 'react';
 import intl from 'react-intl-universal';
 
-import { Formik } from 'formik';
 import { Intent } from '@blueprintjs/core';
+import { Formik } from 'formik';
 import { omit } from 'lodash';
 
-import { AppToaster } from '@/components';
+import { AppToaster } from '@bigcapital/webapp/components';
 import { CreateBadDebtFormSchema } from './BadDebtForm.schema';
 import { transformErrors } from './utils';
 
 import BadDebtFormContent from './BadDebtFormContent';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import withCurrentOrganization from '@/containers/Organization/withCurrentOrganization';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withCurrentOrganization from '@bigcapital/webapp/containers/Organization/withCurrentOrganization';
 
 import { useBadDebtContext } from './BadDebtFormProvider';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 const defaultInitialValues = {
   expense_account_id: '',

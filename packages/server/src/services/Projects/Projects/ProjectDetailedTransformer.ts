@@ -1,8 +1,8 @@
-import { Transformer } from '@/lib/Transformer/Transformer';
+import { Transformer } from '@bigcapital/server/lib/Transformer/Transformer';
+import Project from '@bigcapital/server/models/Project';
+import { formatNumber } from '@bigcapital/server/utils';
+import { formatMinutes } from '@bigcapital/server/utils/formatMinutes';
 import { sumBy } from 'lodash';
-import Project from 'models/Project';
-import { formatNumber } from 'utils';
-import { formatMinutes } from 'utils/formatMinutes';
 
 export class ProjectDetailedTransformer extends Transformer {
   /**

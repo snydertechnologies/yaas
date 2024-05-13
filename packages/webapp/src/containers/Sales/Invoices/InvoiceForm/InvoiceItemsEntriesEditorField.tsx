@@ -1,11 +1,11 @@
+import ItemsEntriesTable from '@bigcapital/webapp/containers/Entries/ItemsEntriesTable';
+import { ITEM_TYPE } from '@bigcapital/webapp/containers/Entries/utils';
+import { TaxType } from '@bigcapital/webapp/interfaces/TaxRates';
+import { FastField } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { FastField } from 'formik';
-import ItemsEntriesTable from '@/containers/Entries/ItemsEntriesTable';
 import { useInvoiceFormContext } from './InvoiceFormProvider';
 import { entriesFieldShouldUpdate } from './utils';
-import { TaxType } from '@/interfaces/TaxRates';
-import { ITEM_TYPE } from '@/containers/Entries/utils';
 
 /**
  * Invoice items entries editor field.

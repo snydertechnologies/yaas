@@ -1,4 +1,4 @@
-import { TransformerInjectable } from '@/lib/Transformer/TransformerInjectable';
+import { TransformerInjectable } from '@bigcapital/server/lib/Transformer/TransformerInjectable';
 import { Inject, Service } from 'typedi';
 import BaseVendorCredit from '../BaseVendorCredit';
 import { VendorCreditToApplyBillTransformer } from './VendorCreditToApplyBillTransformer';

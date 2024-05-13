@@ -1,4 +1,4 @@
-import SystemModel from '@/system/models/SystemModel';
+import SystemModel from '@bigcapital/server/system/models/SystemModel';
 import { Model } from 'objection';
 
 export default class SystemPlaidItem extends SystemModel {
@@ -30,7 +30,7 @@ export default class SystemPlaidItem extends SystemModel {
    * Relationship mapping.
    */
   static get relationMappings() {
-    const Tenant = require('system/models/Tenant');
+    const Tenant = require('@bigcapital/server/system/models/Tenant');
 
     return {
       /**

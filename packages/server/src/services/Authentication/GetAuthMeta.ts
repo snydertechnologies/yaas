@@ -1,5 +1,5 @@
-import config from '@/config';
-import { IAuthGetMetaPOJO } from '@/interfaces';
+import config from '@bigcapital/server/config';
+import { IAuthGetMetaPOJO } from '@bigcapital/server/interfaces';
 import { Service } from 'typedi';
 
 @Service()

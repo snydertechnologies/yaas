@@ -1,12 +1,12 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Button, Classes, H4, Icon } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { FormattedMessage as T } from '@/components';
-import { Classes, Icon, H4, Button } from '@blueprintjs/core';
 
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
 
+import { compose } from '@bigcapital/webapp/utils';
 import styled from 'styled-components';
-import { compose } from '@/utils';
 
 /**
  * Drawer header content.

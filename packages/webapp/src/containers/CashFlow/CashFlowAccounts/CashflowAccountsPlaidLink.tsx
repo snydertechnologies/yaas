@@ -1,5 +1,5 @@
-import { LaunchLink } from '@/containers/Banking/Plaid/PlaidLanchLink';
-import { useGetBankingPlaidToken } from '@/hooks/state/banking';
+import { LaunchLink } from '@bigcapital/webapp/containers/Banking/Plaid/PlaidLanchLink';
+import { useGetBankingPlaidToken } from '@bigcapital/webapp/hooks/state/banking';
 
 export function CashflowAccountsPlaidLink() {
   const plaidToken = useGetBankingPlaidToken();

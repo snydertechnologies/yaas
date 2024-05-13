@@ -2,9 +2,9 @@
 import React from 'react';
 import intl from 'react-intl-universal';
 
-import { FormatDateCell, Icon, FormattedMessage as T } from '@/components';
-import { Menu, MenuItem, Intent } from '@blueprintjs/core';
-import { safeCallback } from '@/utils';
+import { FormatDateCell, Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { safeCallback } from '@bigcapital/webapp/utils';
+import { Intent, Menu, MenuItem } from '@blueprintjs/core';
 
 /**
  * Table actions cell.

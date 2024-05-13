@@ -1,4 +1,4 @@
-import CacheService from '@/services/Cache';
+import CacheService from '@bigcapital/server/services/Cache';
 
 export default (Model) => {
   return class CachableModel extends Model {

@@ -1,19 +1,19 @@
-// @ts-nocheck
-import React, { useEffect, useRef } from 'react';
-import { useFormikContext } from 'formik';
-import * as R from 'ramda';
-import { ExchangeRateInputGroup } from '@/components';
-import { useCurrentOrganization } from '@/hooks/state';
-import { useCreditNoteIsForeignCustomer, useCreditNoteTotals } from './utils';
-import withSettings from '@/containers/Settings/withSettings';
-import { transactionNumber } from '@/utils';
+import { ExchangeRateInputGroup } from '@bigcapital/webapp/components';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
 import {
   useSyncExRateToForm,
   withExchangeRateFetchingLoading,
   withExchangeRateItemEntriesPriceRecalc,
-} from '@/containers/Entries/withExRateItemEntriesPriceRecalc';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { DialogsName } from '@/constants/dialogs';
+} from '@bigcapital/webapp/containers/Entries/withExRateItemEntriesPriceRecalc';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import { useCurrentOrganization } from '@bigcapital/webapp/hooks/state';
+import { transactionNumber } from '@bigcapital/webapp/utils';
+import { useFormikContext } from 'formik';
+import * as R from 'ramda';
+// @ts-nocheck
+import React, { useEffect, useRef } from 'react';
+import { useCreditNoteIsForeignCustomer, useCreditNoteTotals } from './utils';
 
 /**
  * Credit note exchange rate input field.

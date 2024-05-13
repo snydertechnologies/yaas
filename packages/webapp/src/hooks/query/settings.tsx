@@ -1,10 +1,10 @@
+import { useSetSettings } from '@bigcapital/webapp/hooks/state';
+import { useEffect } from 'react';
 // @ts-nocheck
 import { useMutation, useQueryClient } from 'react-query';
 import { useRequestQuery } from '../useQueryRequest';
 import useApiRequest from '../useRequest';
-import { useSetSettings } from '@/hooks/state';
 import t from './types';
-import { useEffect } from 'react';
 
 /**
  * Saves the settings.

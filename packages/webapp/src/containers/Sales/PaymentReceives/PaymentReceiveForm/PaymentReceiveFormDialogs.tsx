@@ -1,7 +1,7 @@
+import PaymentReceiveNumberDialog from '@bigcapital/webapp/containers/Dialogs/PaymentReceiveNumberDialog';
+import { useFormikContext } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { useFormikContext } from 'formik';
-import PaymentReceiveNumberDialog from '@/containers/Dialogs/PaymentReceiveNumberDialog';
 
 /**
  * Payment receive form dialogs.

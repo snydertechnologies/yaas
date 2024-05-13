@@ -1,6 +1,6 @@
 // @ts-nocheck
 import { createReducer } from '@reduxjs/toolkit';
-import t from '@/store/types';
+import t from '@bigcapital/webapp/store/types';
 
 const initialState = {
   views: {},

@@ -2,16 +2,16 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Align, TableStyle } from '@/constants';
-import { SkeletonText } from '@/components';
-import { DataTable, TableSkeletonRows, TableSkeletonHeader } from '../Datatable';
+import { SkeletonText } from '@bigcapital/webapp/components';
+import { Align, TableStyle } from '@bigcapital/webapp/constants';
+import { DataTable, TableSkeletonHeader, TableSkeletonRows } from '../Datatable';
 
 import {
+  FinancialSheetDate,
   FinancialSheetRoot,
+  FinancialSheetTable,
   FinancialSheetTitle,
   FinancialSheetType,
-  FinancialSheetDate,
-  FinancialSheetTable,
 } from './StyledFinancialSheet';
 
 /**

@@ -1,9 +1,15 @@
+import {
+  Choose,
+  FormatNumberCell,
+  Icon,
+  FormattedMessage as T,
+  TextOverviewTooltipCell,
+} from '@bigcapital/webapp/components';
+import { getColumnWidth } from '@bigcapital/webapp/utils';
+import { Button, Intent, Menu, MenuItem, Popover, PopoverInteractionKind, Position, Tag } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { Button, Popover, PopoverInteractionKind, Position, MenuItem, Menu, Tag, Intent } from '@blueprintjs/core';
-import { getColumnWidth } from '@/utils';
-import { Icon, FormattedMessage as T, TextOverviewTooltipCell, FormatNumberCell, Choose } from '@/components';
 import { useVendorCreditDetailDrawerContext } from './VendorCreditDetailDrawerProvider';
 
 /**

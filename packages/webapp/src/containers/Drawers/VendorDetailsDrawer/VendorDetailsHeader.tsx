@@ -1,10 +1,10 @@
+import clsx from 'classnames';
+import { defaultTo } from 'lodash';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import clsx from 'classnames';
-import { defaultTo } from 'lodash';
 
-import { T, DetailsMenu, DetailItem } from '@/components';
+import { DetailItem, DetailsMenu, T } from '@bigcapital/webapp/components';
 
 import { useVendorDetailsDrawerContext } from './VendorDetailsDrawerProvider';
 

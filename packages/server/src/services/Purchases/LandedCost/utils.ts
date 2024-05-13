@@ -1,5 +1,5 @@
-import { IBillLandedCostTransactionEntry, IItemEntry } from '@/interfaces';
-import { transformToMap } from 'utils';
+import { IBillLandedCostTransactionEntry, IItemEntry } from '@bigcapital/server/interfaces';
+import { transformToMap } from '@bigcapital/server/utils';
 
 export const ERRORS = {
   COST_TYPE_UNDEFINED: 'COST_TYPE_UNDEFINED',

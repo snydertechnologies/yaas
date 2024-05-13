@@ -5,7 +5,7 @@ import {
   ISalesReceiptsFilter,
   SaleReceiptMailOpts,
   SaleReceiptMailOptsDTO,
-} from '@/interfaces';
+} from '@bigcapital/server/interfaces';
 import { Inject, Service } from 'typedi';
 import { CloseSaleReceipt } from './CloseSaleReceipt';
 import { CreateSaleReceipt } from './CreateSaleReceipt';

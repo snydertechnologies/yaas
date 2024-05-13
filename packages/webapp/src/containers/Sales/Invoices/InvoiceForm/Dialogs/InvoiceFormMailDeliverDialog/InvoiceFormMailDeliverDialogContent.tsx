@@ -1,9 +1,9 @@
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
 // @ts-nocheck
 import * as R from 'ramda';
 import { useHistory } from 'react-router-dom';
 import InvoiceMailDialogContent from '../../../InvoiceMailDialog/InvoiceMailDialogContent';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { DialogsName } from '@/constants/dialogs';
 
 interface InvoiceFormDeliverDialogContent {
   invoiceId: number;

@@ -1,12 +1,12 @@
+import { FSelect, MenuItemNestedText } from '@bigcapital/webapp/components';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { MenuItem } from '@blueprintjs/core';
+import * as R from 'ramda';
 // @ts-nocheck
 import React from 'react';
-import * as R from 'ramda';
 import intl from 'react-intl-universal';
-import { MenuItem } from '@blueprintjs/core';
-import { MenuItemNestedText, FSelect } from '@/components';
 import { accountPredicate } from './_components';
-import { DialogsName } from '@/constants/dialogs';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
 import { usePreprocessingAccounts } from './_hooks';
 
 // Create new account renderer.

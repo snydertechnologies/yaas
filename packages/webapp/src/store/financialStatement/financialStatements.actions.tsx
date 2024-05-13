@@ -1,5 +1,5 @@
 // @ts-nocheck
-import t from '@/store/types';
+import t from '@bigcapital/webapp/store/types';
 
 /**
  * Toggles display of the balance sheet filter drawer.

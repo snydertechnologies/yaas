@@ -1,13 +1,13 @@
+import * as R from 'ramda';
 // @ts-nocheck
 import React from 'react';
-import * as R from 'ramda';
 
-import CashFlowStatementTable from './CashFlowStatementTable';
+import { FinancialSheetSkeleton } from '@bigcapital/webapp/components/FinancialSheet';
 import { FinancialReportBody } from '../FinancialReportPage';
-import { FinancialSheetSkeleton } from '@/components/FinancialSheet';
+import CashFlowStatementTable from './CashFlowStatementTable';
 
+import withCurrentOrganization from '@bigcapital/webapp/containers/Organization/withCurrentOrganization';
 import { useCashFlowStatementContext } from './CashFlowStatementProvider';
-import withCurrentOrganization from '@/containers/Organization/withCurrentOrganization';
 
 /**
  * Cashflow stement body.

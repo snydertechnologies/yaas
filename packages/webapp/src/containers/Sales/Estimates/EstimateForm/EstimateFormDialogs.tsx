@@ -1,9 +1,9 @@
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import EstimateNumberDialog from '@bigcapital/webapp/containers/Dialogs/EstimateNumberDialog';
+import { useFormikContext } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { useFormikContext } from 'formik';
-import EstimateNumberDialog from '@/containers/Dialogs/EstimateNumberDialog';
 import EstimateFormMailDeliverDialog from './Dialogs/EstimateFormMailDeliverDialog';
-import { DialogsName } from '@/constants/dialogs';
 
 /**
  * Estimate form dialogs.

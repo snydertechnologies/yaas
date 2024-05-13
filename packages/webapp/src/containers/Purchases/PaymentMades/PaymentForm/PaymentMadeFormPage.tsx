@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 import PaymentMadeForm from './PaymentMadeForm';
 import { PaymentMadeFormProvider } from './PaymentMadeFormProvider';
 
-import '@/style/pages/PaymentMade/PageForm.scss';
+import '@bigcapital/webapp/style/pages/PaymentMade/PageForm.scss';
 
 /**
  * Payment made - Page form.

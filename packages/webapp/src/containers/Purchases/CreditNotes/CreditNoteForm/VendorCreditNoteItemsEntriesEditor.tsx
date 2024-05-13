@@ -1,11 +1,11 @@
-// @ts-nocheck
-import React from 'react';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import ItemsEntriesTable from '@bigcapital/webapp/containers/Entries/ItemsEntriesTable';
 import classNames from 'classnames';
 import { FastField } from 'formik';
-import { CLASSES } from '@/constants/classes';
-import { entriesFieldShouldUpdate } from './utils';
+// @ts-nocheck
+import React from 'react';
 import { useVendorCreditNoteFormContext } from './VendorCreditNoteFormProvider';
-import ItemsEntriesTable from '@/containers/Entries/ItemsEntriesTable';
+import { entriesFieldShouldUpdate } from './utils';
 
 export default function VendorCreditNoteItemsEntriesEditor() {
   const { items } = useVendorCreditNoteFormContext();

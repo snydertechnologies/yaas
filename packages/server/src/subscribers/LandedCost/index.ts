@@ -1,6 +1,6 @@
-import BillsService from '@/services/Purchases/Bills';
-import TenancyService from '@/services/Tenancy/TenancyService';
-import events from '@/subscribers/events';
+import BillsService from '@bigcapital/server/services/Purchases/Bills';
+import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import events from '@bigcapital/server/subscribers/events';
 import { EventSubscriber, On } from 'event-dispatch';
 import { Container } from 'typedi';
 

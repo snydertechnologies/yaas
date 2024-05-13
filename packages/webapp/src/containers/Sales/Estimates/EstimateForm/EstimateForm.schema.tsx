@@ -1,9 +1,9 @@
+import { DATATYPES_LENGTH } from '@bigcapital/webapp/constants/dataTypes';
+import { isBlank } from '@bigcapital/webapp/utils';
+import moment from 'moment';
+import intl from 'react-intl-universal';
 // @ts-nocheck
 import * as Yup from 'yup';
-import intl from 'react-intl-universal';
-import moment from 'moment';
-import { DATATYPES_LENGTH } from '@/constants/dataTypes';
-import { isBlank } from '@/utils';
 
 const Schema = Yup.object().shape({
   customer_id: Yup.number().label(intl.get('customer_name_')).required(),

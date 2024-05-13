@@ -1,8 +1,8 @@
+import { Features } from '@bigcapital/webapp/constants';
+import { useBranches } from '@bigcapital/webapp/hooks/query';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
 // @ts-nocheck
 import React from 'react';
-import { Features } from '@/constants';
-import { useFeatureCan } from '@/hooks/state';
-import { useBranches } from '@/hooks/query';
 import { FinancialHeaderLoadingSkeleton } from '../FinancialHeaderLoadingSkeleton';
 
 const APAgingSummaryHeaderDimensonsContext = React.createContext();

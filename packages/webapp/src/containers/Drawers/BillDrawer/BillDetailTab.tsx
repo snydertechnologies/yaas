@@ -4,7 +4,7 @@ import React from 'react';
 import BillDetailHeader from './BillDetailHeader';
 import BillDetailTable from './BillDetailTable';
 import BillDetailFooter from './BillDetailFooter';
-import { CommercialDocBox } from '@/components';
+import { CommercialDocBox } from '@bigcapital/webapp/components';
 import { BillDetailTableFooter } from './BillDetailTableFooter';
 
 /**

@@ -1,15 +1,15 @@
-// @ts-nocheck
-import React, { useState } from 'react';
-import { DialogContent } from '@/components';
-import { Features } from '@/constants';
-import { useFeatureCan } from '@/hooks/state';
+import { DialogContent } from '@bigcapital/webapp/components';
+import { Features } from '@bigcapital/webapp/constants';
 import {
   useAccounts,
   useBranches,
-  useCreateCashflowTransaction,
   useCashflowAccounts,
+  useCreateCashflowTransaction,
   useSettingCashFlow,
-} from '@/hooks/query';
+} from '@bigcapital/webapp/hooks/query';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
+// @ts-nocheck
+import React, { useState } from 'react';
 
 const MoneyInDialogContent = React.createContext();
 

@@ -1,19 +1,19 @@
+import { FieldRequiredHint, ListSelect } from '@bigcapital/webapp/components';
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { inputIntent } from '@bigcapital/webapp/utils';
+import { Button, Classes, FormGroup, Intent } from '@blueprintjs/core';
+import { ErrorMessage, Field, Form, Formik } from 'formik';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import * as Yup from 'yup';
-import { Formik, Form, Field, ErrorMessage } from 'formik';
-import { inputIntent } from '@/utils';
-import { ListSelect, FieldRequiredHint } from '@/components';
-import { Button, FormGroup, Intent, Classes } from '@blueprintjs/core';
-import { FormattedMessage as T } from '@/components';
 import { useHistory } from 'react-router-dom';
+import * as Yup from 'yup';
 import { useContactDuplicateFromContext } from './ContactDuplicateProvider';
 
-import Contacts from '@/constants/contactsOptions';
+import Contacts from '@bigcapital/webapp/constants/contactsOptions';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { compose } from '@/utils';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { compose } from '@bigcapital/webapp/utils';
 
 function ContactDuplicateForm({
   // #withDialogActions

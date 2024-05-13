@@ -1,24 +1,24 @@
-// @ts-nocheck
-import React from 'react';
-import { InputGroup, FormGroup, Position, Classes } from '@blueprintjs/core';
-import { DateInput } from '@blueprintjs/datetime';
-import { FastField, ErrorMessage } from 'formik';
-import { CustomersSelect, FormattedMessage as T } from '@/components';
-import classNames from 'classnames';
-import { CLASSES } from '@/constants/classes';
-import { momentFormatter, tansformDateValue, inputIntent, handleDateChange } from '@/utils';
-import { customersFieldShouldUpdate, accountsFieldShouldUpdate } from './utils';
+import { CustomersSelect, FormattedMessage as T } from '@bigcapital/webapp/components';
 import {
+  AccountsSelect,
   CurrencySelectList,
   CustomerSelectField,
   FFormGroup,
-  AccountsSelect,
   FieldRequiredHint,
   Hint,
-} from '@/components';
-import { ExpensesExchangeRateInputField } from './components';
-import { ACCOUNT_PARENT_TYPE } from '@/constants/accountTypes';
+} from '@bigcapital/webapp/components';
+import { ACCOUNT_PARENT_TYPE } from '@bigcapital/webapp/constants/accountTypes';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { handleDateChange, inputIntent, momentFormatter, tansformDateValue } from '@bigcapital/webapp/utils';
+import { Classes, FormGroup, InputGroup, Position } from '@blueprintjs/core';
+import { DateInput } from '@blueprintjs/datetime';
+import classNames from 'classnames';
+import { ErrorMessage, FastField } from 'formik';
+// @ts-nocheck
+import React from 'react';
 import { useExpenseFormContext } from './ExpenseFormPageProvider';
+import { ExpensesExchangeRateInputField } from './components';
+import { accountsFieldShouldUpdate, customersFieldShouldUpdate } from './utils';
 
 /**
  * Expense form header.

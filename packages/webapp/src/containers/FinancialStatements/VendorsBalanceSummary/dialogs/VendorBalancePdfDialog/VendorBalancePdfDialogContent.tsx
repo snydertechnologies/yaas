@@ -1,6 +1,6 @@
 // @ts-nocheck
-import { DialogContent, PdfDocumentPreview, FormattedMessage as T } from '@/components';
-import { useVendorBalanceSummaryPdfExport } from '@/hooks/query';
+import { DialogContent, PdfDocumentPreview, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { useVendorBalanceSummaryPdfExport } from '@bigcapital/webapp/hooks/query';
 import { AnchorButton } from '@blueprintjs/core';
 import { useVendorsBalanceSummaryContext } from '../../VendorsBalanceSummaryProvider';
 

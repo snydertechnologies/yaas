@@ -1,4 +1,4 @@
-import { IGeneralLedgerSheetQuery } from '@/interfaces';
+import { IGeneralLedgerSheetQuery } from '@bigcapital/server/interfaces';
 import { Inject, Service } from 'typedi';
 import { TableSheetPdf } from '../TableSheetPdf';
 import { GeneralLedgerTableInjectable } from './GeneralLedgerTableInjectable';

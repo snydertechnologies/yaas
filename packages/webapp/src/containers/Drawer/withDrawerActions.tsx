@@ -1,6 +1,6 @@
+import t from '@bigcapital/webapp/store/types';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import t from '@/store/types';
 
 export const mapStateToProps = (state, props) => {
   return {};

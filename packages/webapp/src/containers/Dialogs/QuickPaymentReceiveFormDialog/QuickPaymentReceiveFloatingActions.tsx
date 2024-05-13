@@ -1,12 +1,12 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Button, Classes, Intent } from '@blueprintjs/core';
+import { useFormikContext } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { Intent, Button, Classes } from '@blueprintjs/core';
-import { useFormikContext } from 'formik';
-import { FormattedMessage as T } from '@/components';
 
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { compose } from '@bigcapital/webapp/utils';
 import { useQuickPaymentReceiveContext } from './QuickPaymentReceiveFormProvider';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { compose } from '@/utils';
 
 function QuickPaymentReceiveFloatingActions({
   // #withDialogActions

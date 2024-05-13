@@ -1,6 +1,9 @@
+import {
+  expensesTableStateChangedFactory,
+  getExpensesTableStateFactory,
+} from '@bigcapital/webapp/store/expenses/expenses.selectors';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { expensesTableStateChangedFactory, getExpensesTableStateFactory } from '@/store/expenses/expenses.selectors';
 
 export default (mapState) => {
   const getExpensesTableState = getExpensesTableStateFactory();

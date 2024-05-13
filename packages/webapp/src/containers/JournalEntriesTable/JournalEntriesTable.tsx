@@ -4,10 +4,10 @@ import styled from 'styled-components';
 import intl from 'react-intl-universal';
 import * as R from 'ramda';
 
-import { DataTable, CurrencyTag, TableSkeletonRows } from '@/components';
-import { TableStyle } from '@/constants';
+import { DataTable, CurrencyTag, TableSkeletonRows } from '@bigcapital/webapp/components';
+import { TableStyle } from '@bigcapital/webapp/constants';
 
-import withCurrentOrganization from '@/containers/Organization/withCurrentOrganization';
+import withCurrentOrganization from '@bigcapital/webapp/containers/Organization/withCurrentOrganization';
 import { useGLEntriesTableColumns } from './utils';
 
 /**

@@ -3,12 +3,12 @@ import React from 'react';
 import intl from 'react-intl-universal';
 import styled from 'styled-components';
 
-import { ReportDataTable, FinancialSheet } from '@/components';
+import { FinancialSheet, ReportDataTable } from '@bigcapital/webapp/components';
 
 import { usePurchaseByItemsContext } from './PurchasesByItemsProvider';
 
-import { tableRowTypesToClassnames } from '@/utils';
-import { TableStyle } from '@/constants';
+import { TableStyle } from '@bigcapital/webapp/constants';
+import { tableRowTypesToClassnames } from '@bigcapital/webapp/utils';
 import { usePurchasesByItemsTableColumns } from './dynamicColumns';
 
 /**

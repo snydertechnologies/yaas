@@ -2,7 +2,7 @@ import {
   IPurchasesByItemsReportQuery,
   IPurchasesByItemsSheet,
   IPurchasesByItemsTable,
-} from '@/interfaces/PurchasesByItemsSheet';
+} from '@bigcapital/server/interfaces/PurchasesByItemsSheet';
 import { Inject, Service } from 'typedi';
 import { PurchasesByItemsExport } from './PurchasesByItemsExport';
 import { PurchasesByItemsPdf } from './PurchasesByItemsPdf';

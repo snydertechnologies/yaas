@@ -1,7 +1,7 @@
+import { DialogContent, PdfDocumentPreview, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { usePurchasesByItemsPdfExport } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import { AnchorButton } from '@blueprintjs/core';
-import { DialogContent, PdfDocumentPreview, FormattedMessage as T } from '@/components';
-import { usePurchasesByItemsPdfExport } from '@/hooks/query';
 import { usePurchaseByItemsContext } from '../../PurchasesByItemsProvider';
 
 export default function PurchasesByItemsPdfDialogContent() {

@@ -1,5 +1,5 @@
-import { IModel } from '@/interfaces';
-import DynamicFilterSearch from '@/lib/DynamicFilter/DynamicFilterSearch';
+import { IModel } from '@bigcapital/server/interfaces';
+import DynamicFilterSearch from '@bigcapital/server/lib/DynamicFilter/DynamicFilterSearch';
 import { Service } from 'typedi';
 import DynamicListAbstract from './DynamicListAbstract';
 

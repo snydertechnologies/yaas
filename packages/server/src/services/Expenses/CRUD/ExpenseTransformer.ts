@@ -1,6 +1,6 @@
-import { IExpense } from '@/interfaces';
-import { Transformer } from '@/lib/Transformer/Transformer';
-import { formatNumber } from 'utils';
+import { IExpense } from '@bigcapital/server/interfaces';
+import { Transformer } from '@bigcapital/server/lib/Transformer/Transformer';
+import { formatNumber } from '@bigcapital/server/utils';
 import { ExpenseCategoryTransformer } from './ExpenseCategoryTransformer';
 
 export class ExpenseTransfromer extends Transformer {

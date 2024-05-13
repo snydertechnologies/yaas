@@ -1,4 +1,4 @@
-import OrganizationUpgrade from '@/services/Organization/OrganizationUpgrade';
+import OrganizationUpgrade from '@bigcapital/server/services/Organization/OrganizationUpgrade';
 import { Container } from 'typedi';
 
 export default class OrganizationUpgradeJob {

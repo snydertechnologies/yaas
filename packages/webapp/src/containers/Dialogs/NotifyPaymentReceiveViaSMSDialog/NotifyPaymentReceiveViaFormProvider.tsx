@@ -1,7 +1,7 @@
+import { DialogContent } from '@bigcapital/webapp/components';
+import { useCreateNotifyPaymentReceiveBySMS, usePaymentReceiveSMSDetail } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React from 'react';
-import { DialogContent } from '@/components';
-import { useCreateNotifyPaymentReceiveBySMS, usePaymentReceiveSMSDetail } from '@/hooks/query';
 
 const NotifyPaymentReceiveViaSMSContext = React.createContext();
 

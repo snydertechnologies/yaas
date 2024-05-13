@@ -1,29 +1,29 @@
-// @ts-nocheck
-import React from 'react';
-import { Form, useFormikContext } from 'formik';
-import { Button, Classes, FormGroup, Intent } from '@blueprintjs/core';
 import {
-  If,
-  FieldRequiredHint,
-  Hint,
   AccountsSelect,
   AccountsTypesSelect,
   CurrencySelect,
-  FormattedMessage as T,
+  FCheckbox,
   FFormGroup,
   FInputGroup,
-  FCheckbox,
   FTextArea,
-} from '@/components';
-import withAccounts from '@/containers/Accounts/withAccounts';
+  FieldRequiredHint,
+  Hint,
+  If,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import withAccounts from '@bigcapital/webapp/containers/Accounts/withAccounts';
+import { Button, Classes, FormGroup, Intent } from '@blueprintjs/core';
+import { Form, useFormikContext } from 'formik';
+// @ts-nocheck
+import React from 'react';
 
-import { FOREIGN_CURRENCY_ACCOUNTS } from '@/constants/accountTypes';
+import { FOREIGN_CURRENCY_ACCOUNTS } from '@bigcapital/webapp/constants/accountTypes';
 
-import { useAutofocus } from '@/hooks';
+import { useAutofocus } from '@bigcapital/webapp/hooks';
 import { useAccountDialogContext } from './AccountDialogProvider';
 
+import { compose } from '@bigcapital/webapp/utils';
 import { parentAccountShouldUpdate } from './utils';
-import { compose } from '@/utils';
 
 /**
  * Account form dialogs fields.

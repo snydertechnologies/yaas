@@ -1,8 +1,8 @@
+import { Dialog, DialogSuspense, FormattedMessage as T } from '@bigcapital/webapp/components';
+import withDialogRedux from '@bigcapital/webapp/components/DialogReduxConnect';
+import { compose } from '@bigcapital/webapp/utils';
 // @ts-nocheck
 import React from 'react';
-import { FormattedMessage as T, Dialog, DialogSuspense } from '@/components';
-import withDialogRedux from '@/components/DialogReduxConnect';
-import { compose } from '@/utils';
 
 const ReconcileVendorCreditDialogContent = React.lazy(() => import('./ReconcileVendorCreditDialogContent'));
 

@@ -1,7 +1,7 @@
+import { Align } from '@bigcapital/webapp/constants';
+import { getColumnWidth } from '@bigcapital/webapp/utils';
 // @ts-nocheck
 import * as R from 'ramda';
-import { Align } from '@/constants';
-import { getColumnWidth } from '@/utils';
 
 const ACCOUNT_NAME_COLUMN_WIDTH = 320;
 const AMOUNT_COLUMNS_MIN_WIDTH = 120;

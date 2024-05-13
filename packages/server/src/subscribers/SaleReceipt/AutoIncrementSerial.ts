@@ -1,6 +1,6 @@
-import { ISaleReceiptCreatedPayload } from '@/interfaces';
-import { SaleReceiptIncrement } from '@/services/Sales/Receipts/SaleReceiptIncrement';
-import events from '@/subscribers/events';
+import { ISaleReceiptCreatedPayload } from '@bigcapital/server/interfaces';
+import { SaleReceiptIncrement } from '@bigcapital/server/services/Sales/Receipts/SaleReceiptIncrement';
+import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 
 @Service()

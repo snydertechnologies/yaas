@@ -1,11 +1,11 @@
 // @ts-nocheck
 import React from 'react';
 import { Button, Classes, NavbarGroup, Intent, NavbarDivider } from '@blueprintjs/core';
-import { Can, FormattedMessage as T, DrawerActionsBar, Icon, If } from '@/components';
-import withAlertsActions from '@/containers/Alert/withAlertActions';
+import { Can, FormattedMessage as T, DrawerActionsBar, Icon, If } from '@bigcapital/webapp/components';
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
 import { useCashflowTransactionDrawerContext } from './CashflowTransactionDrawerProvider';
-import { AbilitySubject, CashflowAction } from '@/constants/abilityOption';
-import { compose } from '@/utils';
+import { AbilitySubject, CashflowAction } from '@bigcapital/webapp/constants/abilityOption';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Cashflow transaction drawer action bar.

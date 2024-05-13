@@ -1,10 +1,10 @@
+import { Classes, FormGroup, Intent } from '@blueprintjs/core';
+import classNames from 'classnames';
 // @ts-nocheck
 import React, { useCallback } from 'react';
-import { FormGroup, Intent, Classes } from '@blueprintjs/core';
-import classNames from 'classnames';
 
-import { CellType } from '@/constants';
-import { ContactsSuggestField } from '@/components';
+import { ContactsSuggestField } from '@bigcapital/webapp/components';
+import { CellType } from '@bigcapital/webapp/constants';
 export default function ContactsListCellRenderer({
   column: { id },
   row: { index, original },

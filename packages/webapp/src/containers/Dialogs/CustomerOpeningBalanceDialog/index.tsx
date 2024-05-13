@@ -1,10 +1,10 @@
 // @ts-nocheck
 import React from 'react';
 
-import { FormattedMessage as T } from '@/components';
-import { Dialog, DialogSuspense } from '@/components';
-import withDialogRedux from '@/components/DialogReduxConnect';
-import { compose } from '@/utils';
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Dialog, DialogSuspense } from '@bigcapital/webapp/components';
+import withDialogRedux from '@bigcapital/webapp/components/DialogReduxConnect';
+import { compose } from '@bigcapital/webapp/utils';
 
 const CustomerOpeningBalanceDialogContent = React.lazy(() => import('./CustomerOpeningBalanceDialogContent'));
 

@@ -1,5 +1,5 @@
-import { ISaleInvoiceEditingPayload } from '@/interfaces';
-import events from '@/subscribers/events';
+import { ISaleInvoiceEditingPayload } from '@bigcapital/server/interfaces';
+import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 import { InvoicePaymentsGLEntriesRewrite } from '../InvoicePaymentsGLRewrite';
 

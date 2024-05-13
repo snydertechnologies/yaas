@@ -4,7 +4,7 @@ import {
   INumberFormatQuery,
   ITransactionsByReferenceQuery,
   ITransactionsByReferenceTransaction,
-} from '@/interfaces';
+} from '@bigcapital/server/interfaces';
 import FinancialSheet from '../FinancialSheet';
 
 export default class TransactionsByReference extends FinancialSheet {

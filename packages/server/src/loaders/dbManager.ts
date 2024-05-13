@@ -1,4 +1,4 @@
-import { systemDbManager, systemKnexConfig } from 'config/knexConfig';
+import { systemDbManager, systemKnexConfig } from '@bigcapital/server/config/knexConfig';
 import knexManager from 'knex-db-manager';
 
 export default () =>

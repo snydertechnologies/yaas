@@ -1,7 +1,7 @@
 // @ts-nocheck
-import { DialogContent, PdfDocumentPreview, FormattedMessage as T } from '@/components';
+import { DialogContent, PdfDocumentPreview, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { useCustomerBalanceSummaryPdf } from '@bigcapital/webapp/hooks/query';
 import { AnchorButton } from '@blueprintjs/core';
-import { useCustomerBalanceSummaryPdf } from '@/hooks/query';
 import { useCustomersBalanceSummaryContext } from '../CustomersBalanceSummaryProvider';
 
 export default function CustomerBalanceSummaryPdfDialogContent() {

@@ -1,6 +1,6 @@
-import { IOrganizationBuildEventPayload } from '@/interfaces';
-import OrganizationService from '@/services/Organization/OrganizationService';
-import events from '@/subscribers/events';
+import { IOrganizationBuildEventPayload } from '@bigcapital/server/interfaces';
+import OrganizationService from '@bigcapital/server/services/Organization/OrganizationService';
+import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 
 @Service()

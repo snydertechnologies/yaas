@@ -1,8 +1,8 @@
-import { CommonMailOptions } from '@/interfaces';
-import { MailTenancy } from '@/services/MailTenancy/MailTenancy';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
-import { Tenant } from '@/system/models';
-import { formatSmsMessage } from '@/utils';
+import { CommonMailOptions } from '@bigcapital/server/interfaces';
+import { MailTenancy } from '@bigcapital/server/services/MailTenancy/MailTenancy';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import { Tenant } from '@bigcapital/server/system/models';
+import { formatSmsMessage } from '@bigcapital/server/utils';
 import { Inject, Service } from 'typedi';
 
 @Service()

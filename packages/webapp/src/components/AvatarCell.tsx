@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React from 'react';
-import { firstLettersArgs } from '@/utils';
+import { firstLettersArgs } from '@bigcapital/webapp/utils';
 
 export default function AvatarCell({ row: { original }, size }) {
   return (

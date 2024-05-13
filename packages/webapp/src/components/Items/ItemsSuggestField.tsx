@@ -1,17 +1,17 @@
-// @ts-nocheck
-import React, { useState, useCallback, useEffect, useMemo } from 'react';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
 import { MenuItem } from '@blueprintjs/core';
 import { Suggest } from '@blueprintjs/select';
 import classNames from 'classnames';
 import * as R from 'ramda';
+// @ts-nocheck
+import React, { useState, useCallback, useEffect, useMemo } from 'react';
 import intl from 'react-intl-universal';
-import { CLASSES } from '@/constants/classes';
 
-import { FormattedMessage as T } from '@/components';
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
 
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
 
-import { DRAWERS } from '@/constants/drawers';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
 
 // Creates a new item from query.
 const createNewItemFromQuery = (name) => {

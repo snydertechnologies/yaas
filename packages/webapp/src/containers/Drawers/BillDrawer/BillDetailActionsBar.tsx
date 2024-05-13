@@ -6,16 +6,16 @@ import { Button, NavbarGroup, Classes, NavbarDivider, Intent } from '@blueprintj
 
 import { useBillDrawerContext } from './BillDrawerProvider';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import withAlertsActions from '@/containers/Alert/withAlertActions';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
 
-import { Can, If, Icon, DrawerActionsBar, FormattedMessage as T } from '@/components';
-import { BillAction, PaymentMadeAction, AbilitySubject } from '@/constants/abilityOption';
+import { Can, If, Icon, DrawerActionsBar, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { BillAction, PaymentMadeAction, AbilitySubject } from '@bigcapital/webapp/constants/abilityOption';
 import { BillMenuItem } from './utils';
 
-import { safeCallback, compose } from '@/utils';
-import { DRAWERS } from '@/constants/drawers';
+import { safeCallback, compose } from '@bigcapital/webapp/utils';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
 
 function BillDetailActionsBar({
   // #withDialogActions

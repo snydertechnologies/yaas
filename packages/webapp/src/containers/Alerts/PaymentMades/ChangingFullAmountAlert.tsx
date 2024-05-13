@@ -1,11 +1,11 @@
+import { Alert, Intent } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Intent, Alert } from '@blueprintjs/core';
 
-import withAlertActions from '@/containers/Alert/withAlertActions';
-import withAlertStoreConnect from '@/containers/Alert/withAlertStoreConnect';
+import withAlertActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withAlertStoreConnect from '@bigcapital/webapp/containers/Alert/withAlertStoreConnect';
 
-import { compose, saveInvoke } from '@/utils';
+import { compose, saveInvoke } from '@bigcapital/webapp/utils';
 
 /**
  * Changing full-amount alert in payment made form.

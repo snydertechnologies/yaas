@@ -1,10 +1,10 @@
+import {
+  isSubscriptionActiveFactory,
+  isSubscriptionInactiveFactory,
+  isSubscriptionOnTrialFactory,
+} from '@bigcapital/webapp/store/subscription/subscription.selectors';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import {
-  isSubscriptionOnTrialFactory,
-  isSubscriptionInactiveFactory,
-  isSubscriptionActiveFactory,
-} from '@/store/subscription/subscription.selectors';
 
 export default (mapState, slug) => {
   const isSubscriptionOnTrial = isSubscriptionOnTrialFactory(slug);

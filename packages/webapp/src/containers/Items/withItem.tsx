@@ -1,6 +1,6 @@
+import { getItemById } from '@bigcapital/webapp/store/items/items.reducer';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { getItemById } from '@/store/items/items.reducer';
 
 export default (mapState) => {
   const mapStateToProps = (state, props) => {

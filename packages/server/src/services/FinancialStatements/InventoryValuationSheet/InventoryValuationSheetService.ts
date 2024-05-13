@@ -1,7 +1,7 @@
-import { IInventoryValuationReportQuery, IInventoryValuationSheet } from '@/interfaces';
-import InventoryService from '@/services/Inventory/Inventory';
-import TenancyService from '@/services/Tenancy/TenancyService';
-import { Tenant } from '@/system/models';
+import { IInventoryValuationReportQuery, IInventoryValuationSheet } from '@bigcapital/server/interfaces';
+import InventoryService from '@bigcapital/server/services/Inventory/Inventory';
+import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import { Tenant } from '@bigcapital/server/system/models';
 import { isEmpty } from 'lodash';
 import moment from 'moment';
 import { Inject, Service } from 'typedi';

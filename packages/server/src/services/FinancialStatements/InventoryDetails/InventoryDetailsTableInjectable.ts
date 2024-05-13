@@ -1,5 +1,5 @@
-import { IInventoryDetailsQuery, IInvetoryItemDetailsTable } from '@/interfaces';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { IInventoryDetailsQuery, IInvetoryItemDetailsTable } from '@bigcapital/server/interfaces';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject, Service } from 'typedi';
 import { InventoryDetailsService } from './InventoryDetailsService';
 import { InventoryDetailsTable } from './InventoryDetailsTable';

@@ -1,10 +1,10 @@
-import { ServiceError } from '@/exceptions';
-import { IItem, IItemEntry, IItemEntryDTO } from '@/interfaces';
-import { ItemEntry } from '@/models';
-import TenancyService from '@/services/Tenancy/TenancyService';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { IItem, IItemEntry, IItemEntryDTO } from '@bigcapital/server/interfaces';
+import { ItemEntry } from '@bigcapital/server/models';
+import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import { entriesAmountDiff } from '@bigcapital/server/utils';
 import { difference, map, sumBy } from 'lodash';
 import { Inject, Service } from 'typedi';
-import { entriesAmountDiff } from 'utils';
 
 const ERRORS = {
   ITEMS_NOT_FOUND: 'ITEMS_NOT_FOUND',

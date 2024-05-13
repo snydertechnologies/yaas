@@ -1,9 +1,9 @@
+import { AppToaster } from '@bigcapital/webapp/components';
+import t from '@bigcapital/webapp/hooks/query/types';
+import { Intent } from '@blueprintjs/core';
 import { useEffect, useRef } from 'react';
 import { useQueryClient } from 'react-query';
 import { io } from 'socket.io-client';
-import t from '@/hooks/query/types';
-import { AppToaster } from '@/components';
-import { Intent } from '@blueprintjs/core';
 
 export function DashboardSockets() {
   const socket = useRef<any>();

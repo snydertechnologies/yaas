@@ -1,4 +1,4 @@
-import type { ISystemUser } from '@/interfaces';
+import type { ISystemUser } from '@bigcapital/server/interfaces';
 
 export interface IOrganizationSetupDTO {
   organizationName: string;

@@ -1,11 +1,17 @@
+import {
+  FFormGroup,
+  FInputGroup,
+  Icon,
+  InputPrependButton,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import { ControlGroup, Position } from '@blueprintjs/core';
+import { useFormikContext } from 'formik';
+import * as R from 'ramda';
 // @ts-nocheck
 import React from 'react';
-import * as R from 'ramda';
-import { Position, ControlGroup } from '@blueprintjs/core';
-import { useFormikContext } from 'formik';
-import { FFormGroup, FInputGroup, FormattedMessage as T, Icon, InputPrependButton } from '@/components';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import withSettings from '@/containers/Settings/withSettings';
 
 /**
  * Estimate number field of estimate form.

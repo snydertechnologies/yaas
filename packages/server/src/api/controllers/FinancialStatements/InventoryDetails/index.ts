@@ -1,8 +1,8 @@
-import BaseController from '@/api/controllers/BaseController';
-import CheckPolicies from '@/api/middleware/CheckPolicies';
-import { AbilitySubject, ReportsAction } from '@/interfaces';
-import { ACCEPT_TYPE } from '@/interfaces/Http';
-import { InventortyDetailsApplication } from '@/services/FinancialStatements/InventoryDetails/InventoryDetailsApplication';
+import BaseController from '@bigcapital/server/api/controllers/BaseController';
+import CheckPolicies from '@bigcapital/server/api/middleware/CheckPolicies';
+import { AbilitySubject, ReportsAction } from '@bigcapital/server/interfaces';
+import { ACCEPT_TYPE } from '@bigcapital/server/interfaces/Http';
+import { InventortyDetailsApplication } from '@bigcapital/server/services/FinancialStatements/InventoryDetails/InventoryDetailsApplication';
 import { NextFunction, Request, Response, Router, ValidationChain } from 'express';
 import { query } from 'express-validator';
 import { Inject, Service } from 'typedi';

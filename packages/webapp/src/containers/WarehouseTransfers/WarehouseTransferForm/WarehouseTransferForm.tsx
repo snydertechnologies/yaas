@@ -1,28 +1,28 @@
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { Intent } from '@blueprintjs/core';
+import classNames from 'classnames';
+import { Form, Formik } from 'formik';
+import { isEmpty } from 'lodash';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { Formik, Form } from 'formik';
-import { isEmpty } from 'lodash';
-import { Intent } from '@blueprintjs/core';
 import { useHistory } from 'react-router-dom';
-import { CLASSES } from '@/constants/classes';
-import classNames from 'classnames';
 
 import { CreateWarehouseFormSchema, EditWarehouseFormSchema } from './WarehouseTransferForm.schema';
 
-import WarehouseTransferFormHeader from './WarehouseTransferFormHeader';
+import withDashboardActions from '@bigcapital/webapp/containers/Dashboard/withDashboardActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
 import WarehouseTransferEditorField from './WarehouseTransferEditorField';
-import WarehouseTransferFormFooter from './WarehouseTransferFormFooter';
 import WarehouseTransferFloatingActions from './WarehouseTransferFloatingActions';
 import WarehouseTransferFormDialog from './WarehouseTransferFormDialog';
-import withDashboardActions from '@/containers/Dashboard/withDashboardActions';
-import withSettings from '@/containers/Settings/withSettings';
+import WarehouseTransferFormFooter from './WarehouseTransferFormFooter';
+import WarehouseTransferFormHeader from './WarehouseTransferFormHeader';
 
-import { AppToaster } from '@/components';
+import { AppToaster } from '@bigcapital/webapp/components';
+import { compose, orderingLinesIndexes, transactionNumber } from '@bigcapital/webapp/utils';
 import { useWarehouseTransferFormContext } from './WarehouseTransferFormProvider';
-import { compose, orderingLinesIndexes, transactionNumber } from '@/utils';
 import { WarehouseTransferObserveItemsCost } from './components';
-import { defaultWarehouseTransfer, transformValueToRequest, transformErrors, transformToEditForm } from './utils';
+import { defaultWarehouseTransfer, transformErrors, transformToEditForm, transformValueToRequest } from './utils';
 
 function WarehouseTransferForm({
   // #withSettings

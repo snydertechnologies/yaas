@@ -1,7 +1,7 @@
+import { T, TotalLine, TotalLineBorderStyle, TotalLineTextStyle, TotalLines } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
-import { T, TotalLines, TotalLine, TotalLineBorderStyle, TotalLineTextStyle } from '@/components';
 import { useEstimateTotals } from './utils';
 
 export function EstimateFormFooterRight() {

@@ -1,13 +1,13 @@
+import { defaultTo } from 'lodash';
 // @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
-import { defaultTo } from 'lodash';
 
-import { DataTableEditable } from '@/components';
-import { compose, updateTableCell } from '@/utils';
-import { useDeepCompareEffect } from '@/hooks/utils';
-import { useReconcileCreditNoteTableColumns, maxAmountCreditFromRemaining, maxCreditNoteAmountEntries } from './utils';
+import { DataTableEditable } from '@bigcapital/webapp/components';
+import { useDeepCompareEffect } from '@bigcapital/webapp/hooks/utils';
+import { compose, updateTableCell } from '@bigcapital/webapp/utils';
 import { useReconcileCreditNoteContext } from './ReconcileCreditNoteFormProvider';
+import { maxAmountCreditFromRemaining, maxCreditNoteAmountEntries, useReconcileCreditNoteTableColumns } from './utils';
 
 /**
  * Reconcile credit note entries table.

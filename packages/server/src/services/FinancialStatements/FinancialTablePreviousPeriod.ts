@@ -1,4 +1,4 @@
-import { IDateRange, ITableColumn, ITableColumnAccessor } from '@/interfaces';
+import { IDateRange, ITableColumn, ITableColumnAccessor } from '@bigcapital/server/interfaces';
 import moment from 'moment';
 
 export const FinancialTablePreviousPeriod = (Base) =>

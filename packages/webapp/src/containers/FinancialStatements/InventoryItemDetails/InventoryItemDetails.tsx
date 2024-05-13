@@ -1,20 +1,20 @@
+import moment from 'moment';
 // @ts-nocheck
 import React, { useEffect } from 'react';
-import moment from 'moment';
 
-import { FinancialStatement, DashboardPageContent } from '@/components';
+import { DashboardPageContent, FinancialStatement } from '@bigcapital/webapp/components';
 
 import InventoryItemDetailsActionsBar from './InventoryItemDetailsActionsBar';
 import InventoryItemDetailsHeader from './InventoryItemDetailsHeader';
 
-import withInventoryItemDetailsActions from './withInventoryItemDetailsActions';
 import { InventoryItemDetailsProvider } from './InventoryItemDetailsProvider';
-import { InventoryItemDetailsLoadingBar, InventoryItemDetailsAlerts } from './components';
+import { InventoryItemDetailsAlerts, InventoryItemDetailsLoadingBar } from './components';
+import withInventoryItemDetailsActions from './withInventoryItemDetailsActions';
 
+import { compose } from '@bigcapital/webapp/utils';
 import { InventoryItemDetailsBody } from './InventoryItemDetailsBody';
 import { InventoryItemDetailsDialogs } from './InventoryItemDetailsDialogs';
 import { useInventoryValuationQuery } from './utils2';
-import { compose } from '@/utils';
 
 /**
  * inventory item details.

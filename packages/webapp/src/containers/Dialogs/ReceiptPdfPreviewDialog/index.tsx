@@ -1,11 +1,11 @@
+import { Dialog, DialogSuspense, T } from '@bigcapital/webapp/components';
+import withDialogRedux from '@bigcapital/webapp/components/DialogReduxConnect';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import classNames from 'classnames';
 // @ts-nocheck
 import React from 'react';
-import { T, Dialog, DialogSuspense } from '@/components';
-import classNames from 'classnames';
-import { CLASSES } from '@/constants/classes';
-import withDialogRedux from '@/components/DialogReduxConnect';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 // Lazy loading the content.
 const PdfPreviewDialogContent = React.lazy(() => import('./ReceiptPdfPreviewDialogContent'));

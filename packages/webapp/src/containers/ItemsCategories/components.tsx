@@ -1,9 +1,9 @@
+import { Icon } from '@bigcapital/webapp/components';
+import { safeCallback } from '@bigcapital/webapp/utils';
+import { Button, Intent, Menu, MenuDivider, MenuItem, Popover, Position } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { Menu, Popover, Button, Position, MenuItem, MenuDivider, Intent } from '@blueprintjs/core';
-import { Icon } from '@/components';
-import { safeCallback } from '@/utils';
 
 /**
  * Row actions menu list.

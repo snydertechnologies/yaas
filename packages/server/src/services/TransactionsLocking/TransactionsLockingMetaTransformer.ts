@@ -1,5 +1,5 @@
-import { TransactionsLockingGroup } from '@/interfaces';
-import { Transformer } from '@/lib/Transformer/Transformer';
+import { TransactionsLockingGroup } from '@bigcapital/server/interfaces';
+import { Transformer } from '@bigcapital/server/lib/Transformer/Transformer';
 import { get } from 'lodash';
 import { getTransactionsLockingSchemaMeta } from './constants';
 

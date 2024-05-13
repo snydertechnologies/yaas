@@ -1,8 +1,8 @@
-import BaseController from '@/api/controllers/BaseController';
-import { DATATYPES_LENGTH } from '@/data/DataTypes';
-import { ServiceError } from '@/exceptions';
-import ContactsService from '@/services/Contacts/ContactsService';
-import DynamicListingService from '@/services/DynamicListing/DynamicListService';
+import BaseController from '@bigcapital/server/api/controllers/BaseController';
+import { DATATYPES_LENGTH } from '@bigcapital/server/data/DataTypes';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import ContactsService from '@bigcapital/server/services/Contacts/ContactsService';
+import DynamicListingService from '@bigcapital/server/services/DynamicListing/DynamicListService';
 import { NextFunction, Request, Response, Router } from 'express';
 import { ValidationChain, body, check, param, query } from 'express-validator';
 import { Inject, Service } from 'typedi';

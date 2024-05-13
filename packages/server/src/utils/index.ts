@@ -4,7 +4,7 @@ import _, { isEmpty } from 'lodash';
 import moment from 'moment';
 import * as R from 'ramda';
 
-import definedOptions from '@/data/options';
+import definedOptions from '@bigcapital/server/data/options';
 import accounting from 'accounting';
 import Currencies from 'js-money/lib/currency';
 import pug from 'pug';

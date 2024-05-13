@@ -1,4 +1,4 @@
-import { SubscriptionRepository, SystemUserRepository, TenantRepository } from '@/system/repositories';
+import { SubscriptionRepository, SystemUserRepository, TenantRepository } from '@bigcapital/server/system/repositories';
 import Container from 'typedi';
 
 export default () => {

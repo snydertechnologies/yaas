@@ -1,9 +1,9 @@
+import { Menu } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Menu } from '@blueprintjs/core';
 
-import { MenuItem, MenuItemLabel } from '@/components';
-import { ISidebarMenuItemType } from '@/containers/Dashboard/Sidebar/interfaces';
+import { MenuItem, MenuItemLabel } from '@bigcapital/webapp/components';
+import { ISidebarMenuItemType } from '@bigcapital/webapp/containers/Dashboard/Sidebar/interfaces';
 import { useIsSidebarMenuItemActive } from './hooks';
 
 /**

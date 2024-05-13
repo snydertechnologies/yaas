@@ -1,5 +1,5 @@
-import type { AbilitySubject } from '@/interfaces';
-import type { IFilterRole } from '@/interfaces/DynamicFilter';
+import type { AbilitySubject } from '@bigcapital/server/interfaces';
+import type { IFilterRole } from '@bigcapital/server/interfaces/DynamicFilter';
 import type { Knex } from 'knex';
 
 export interface IItem {

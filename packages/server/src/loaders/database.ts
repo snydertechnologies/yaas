@@ -1,4 +1,4 @@
-import { systemKnexConfig } from '@/config/knexConfig';
+import { systemKnexConfig } from '@bigcapital/server/config/knexConfig';
 import Knex from 'knex';
 import { knexSnakeCaseMappers } from 'objection';
 

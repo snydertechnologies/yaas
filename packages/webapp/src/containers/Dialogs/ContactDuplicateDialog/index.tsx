@@ -1,9 +1,9 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Dialog, DialogSuspense } from '@bigcapital/webapp/components';
+import withDialogRedux from '@bigcapital/webapp/components/DialogReduxConnect';
+import { compose } from '@bigcapital/webapp/utils';
 // @ts-nocheck
 import React, { lazy } from 'react';
-import { FormattedMessage as T } from '@/components';
-import { Dialog, DialogSuspense } from '@/components';
-import withDialogRedux from '@/components/DialogReduxConnect';
-import { compose } from '@/utils';
 
 const ContactDialogContent = lazy(() => import('./ContactDuplicateDialogContent'));
 /**

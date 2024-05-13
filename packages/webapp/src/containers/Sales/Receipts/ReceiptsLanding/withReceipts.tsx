@@ -1,6 +1,9 @@
+import {
+  getReceiptsTableStateFactory,
+  receiptsTableStateChangedFactory,
+} from '@bigcapital/webapp/store/receipts/receipts.selector';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { getReceiptsTableStateFactory, receiptsTableStateChangedFactory } from '@/store/receipts/receipts.selector';
 
 export default (mapState) => {
   const getReceiptsTableState = getReceiptsTableStateFactory();

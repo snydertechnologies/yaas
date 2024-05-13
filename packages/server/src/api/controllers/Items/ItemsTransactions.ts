@@ -1,4 +1,4 @@
-import ItemTransactionsService from '@/services/Items/ItemTransactionsService';
+import ItemTransactionsService from '@bigcapital/server/services/Items/ItemTransactionsService';
 import { NextFunction, Request, Response, Router } from 'express';
 import { Inject, Service } from 'typedi';
 import BaseController from '../BaseController';

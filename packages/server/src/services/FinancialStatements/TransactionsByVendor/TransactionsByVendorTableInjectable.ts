@@ -1,5 +1,5 @@
-import { ITransactionsByVendorTable, ITransactionsByVendorsFilter } from '@/interfaces';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { ITransactionsByVendorTable, ITransactionsByVendorsFilter } from '@bigcapital/server/interfaces';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject, Service } from 'typedi';
 import { TransactionsByVendorsInjectable } from './TransactionsByVendorInjectable';
 import { TransactionsByVendorsTable } from './TransactionsByVendorTable';

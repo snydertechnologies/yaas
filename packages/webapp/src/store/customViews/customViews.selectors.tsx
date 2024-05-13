@@ -1,7 +1,7 @@
 // @ts-nocheck
 import { createSelector } from 'reselect';
-import { pickItemsFromIds } from '@/store/selectors';
-import { getResourceColumn } from '@/store/resources/resources.reducer';
+import { pickItemsFromIds } from '@bigcapital/webapp/store/selectors';
+import { getResourceColumn } from '@bigcapital/webapp/store/resources/resources.reducer';
 
 const resourceViewsIdsSelector = (state, props, resourceName) => state.views.resourceViews[resourceName];
 

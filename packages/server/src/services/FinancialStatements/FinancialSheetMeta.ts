@@ -1,5 +1,5 @@
-import { IFinancialSheetCommonMeta } from '@/interfaces';
-import { TenantMetadata } from '@/system/models';
+import { IFinancialSheetCommonMeta } from '@bigcapital/server/interfaces';
+import { TenantMetadata } from '@bigcapital/server/system/models';
 import { Inject, Service } from 'typedi';
 import InventoryService from '../Inventory/Inventory';
 

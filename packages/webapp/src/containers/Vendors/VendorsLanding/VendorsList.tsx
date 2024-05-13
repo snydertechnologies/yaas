@@ -1,19 +1,19 @@
 // @ts-nocheck
 import React, { useEffect } from 'react';
 
-import '@/style/pages/Vendors/List.scss';
+import '@bigcapital/webapp/style/pages/Vendors/List.scss';
 
-import { DashboardPageContent } from '@/components';
+import { DashboardPageContent } from '@bigcapital/webapp/components';
 
-import { VendorsListProvider } from './VendorsListProvider';
 import VendorActionsBar from './VendorActionsBar';
 import VendorViewsTabs from './VendorViewsTabs';
+import { VendorsListProvider } from './VendorsListProvider';
 import VendorsTable from './VendorsTable';
 
 import withVendors from './withVendors';
 import withVendorsActions from './withVendorsActions';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * Vendors list page.

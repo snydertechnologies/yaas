@@ -1,25 +1,25 @@
+import { DashboardActionsBar, Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
 // @ts-nocheck
 import {
-  NavbarGroup,
   Button,
   Classes,
   NavbarDivider,
+  NavbarGroup,
   Popover,
   PopoverInteractionKind,
   Position,
 } from '@blueprintjs/core';
-import { Icon, FormattedMessage as T, DashboardActionsBar } from '@/components';
 import classNames from 'classnames';
 
-import NumberFormatDropdown from '@/components/NumberFormatDropdown';
+import NumberFormatDropdown from '@bigcapital/webapp/components/NumberFormatDropdown';
 
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import { compose, saveInvoke } from '@bigcapital/webapp/utils';
+import { useCustomersBalanceSummaryContext } from './CustomersBalanceSummaryProvider';
+import { CustomerBalanceSummaryExportMenu } from './components';
 import withCustomersBalanceSummary from './withCustomersBalanceSummary';
 import withCustomersBalanceSummaryActions from './withCustomersBalanceSummaryActions';
-import { useCustomersBalanceSummaryContext } from './CustomersBalanceSummaryProvider';
-import { compose, saveInvoke } from '@/utils';
-import { CustomerBalanceSummaryExportMenu } from './components';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { DialogsName } from '@/constants/dialogs';
 
 /**
  * customer balance summary action bar.

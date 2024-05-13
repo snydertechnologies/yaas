@@ -1,23 +1,23 @@
-// @ts-nocheck
-import { NavbarGroup, NavbarDivider, Button, Classes, Intent } from '@blueprintjs/core';
 import {
-  If,
-  Icon,
-  FormattedMessage as T,
   AdvancedFilterPopover,
-  DashboardFilterButton,
   DashboardActionsBar,
-} from '@/components';
+  DashboardFilterButton,
+  Icon,
+  If,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+// @ts-nocheck
+import { Button, Classes, Intent, NavbarDivider, NavbarGroup } from '@blueprintjs/core';
 
+import withAlertActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
 import withItemCategories from './withItemCategories';
 import withItemCategoriesActions from './withItemCategoriesActions';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import withAlertActions from '@/containers/Alert/withAlertActions';
 
-import { compose } from '@/utils';
-import { useItemsCategoriesContext } from './ItemsCategoriesProvider';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import { compose } from '@bigcapital/webapp/utils';
 import { useHistory } from 'react-router-dom';
-import { DialogsName } from '@/constants/dialogs';
+import { useItemsCategoriesContext } from './ItemsCategoriesProvider';
 
 /**
  * Items categories actions bar.

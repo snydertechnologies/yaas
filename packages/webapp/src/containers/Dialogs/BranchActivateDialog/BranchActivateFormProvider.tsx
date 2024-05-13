@@ -1,8 +1,8 @@
 // @ts-nocheck
 import React from 'react';
 
-import { DialogContent } from '@/components';
-import { useActivateBranches } from '@/hooks/query';
+import { DialogContent } from '@bigcapital/webapp/components';
+import { useActivateBranches } from '@bigcapital/webapp/hooks/query';
 
 const BranchActivateContext = React.createContext();
 

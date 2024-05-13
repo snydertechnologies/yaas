@@ -1,9 +1,9 @@
+import { Icon } from '@bigcapital/webapp/components';
+import { safeCallback } from '@bigcapital/webapp/utils';
+import { Intent, Menu, MenuItem } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { Icon } from '@/components';
-import { Menu, MenuItem, Intent } from '@blueprintjs/core';
-import { safeCallback } from '@/utils';
 
 /**
  * Table actions cell.

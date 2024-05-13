@@ -1,15 +1,15 @@
+import { MenuItem } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { MenuItem } from '@blueprintjs/core';
 
-import { formattedAmount } from '@/utils';
-import { T, Icon, Choose, If } from '@/components';
+import { Choose, Icon, If, T } from '@bigcapital/webapp/components';
+import { formattedAmount } from '@bigcapital/webapp/utils';
 
-import { RESOURCES_TYPES } from '@/constants/resourcesTypes';
-import { AbilitySubject, BillAction } from '@/constants/abilityOption';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
-import { DRAWERS } from '@/constants/drawers';
+import { AbilitySubject, BillAction } from '@bigcapital/webapp/constants/abilityOption';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import { RESOURCES_TYPES } from '@bigcapital/webapp/constants/resourcesTypes';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
 
 /**
  * Universal search bill item select action.

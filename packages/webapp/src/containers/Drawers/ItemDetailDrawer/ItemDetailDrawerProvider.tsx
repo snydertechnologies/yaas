@@ -1,9 +1,9 @@
 // @ts-nocheck
 import React from 'react';
-import { DrawerHeaderContent, DrawerLoading } from '@/components';
-import { useItem } from '@/hooks/query';
+import { DrawerHeaderContent, DrawerLoading } from '@bigcapital/webapp/components';
+import { useItem } from '@bigcapital/webapp/hooks/query';
 import { inactiveStatus } from './utlis';
-import { DRAWERS } from '@/constants/drawers';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
 
 const ItemDetailDrawerContext = React.createContext();
 

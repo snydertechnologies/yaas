@@ -1,6 +1,6 @@
+import { getViewItemFactory, getViewMetaFactory } from '@bigcapital/webapp/store/customViews/customViews.selectors';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { getViewItemFactory, getViewMetaFactory } from '@/store/customViews/customViews.selectors';
 
 export default () => {
   const getViewItem = getViewItemFactory();

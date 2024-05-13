@@ -1,7 +1,7 @@
 // @ts-nocheck
 import React from 'react';
 
-import '@/style/components/MaterialProgressBar.scss';
+import '@bigcapital/webapp/style/components/MaterialProgressBar.scss';
 
 export function MaterialProgressBar() {
   return (

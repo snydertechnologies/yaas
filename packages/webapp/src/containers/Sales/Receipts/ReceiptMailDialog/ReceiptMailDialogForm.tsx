@@ -1,19 +1,19 @@
+import { AppToaster } from '@bigcapital/webapp/components';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import {
+  MailNotificationFormValues,
+  initialMailNotificationValues,
+  transformMailFormToInitialValues,
+  transformMailFormToRequest,
+} from '@bigcapital/webapp/containers/SendMailNotification/utils';
+import { useSendSaleReceiptMail } from '@bigcapital/webapp/hooks/query';
+import { Intent } from '@blueprintjs/core';
 // @ts-nocheck
 import { Formik, FormikBag } from 'formik';
 import * as R from 'ramda';
-import { Intent } from '@blueprintjs/core';
 import { useReceiptMailDialogBoot } from './ReceiptMailDialogBoot';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { DialogsName } from '@/constants/dialogs';
-import { useSendSaleReceiptMail } from '@/hooks/query';
 import { ReceiptMailDialogFormContent } from './ReceiptMailDialogFormContent';
-import {
-  initialMailNotificationValues,
-  MailNotificationFormValues,
-  transformMailFormToInitialValues,
-  transformMailFormToRequest,
-} from '@/containers/SendMailNotification/utils';
-import { AppToaster } from '@/components';
 
 const initialFormValues = {
   ...initialMailNotificationValues,

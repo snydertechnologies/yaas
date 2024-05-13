@@ -1,29 +1,29 @@
+import { Intent } from '@blueprintjs/core';
+import { useFormikContext } from 'formik';
+import { keyBy, omit } from 'lodash';
+import moment from 'moment';
+import * as R from 'ramda';
 // @ts-nocheck
 import React from 'react';
-import moment from 'moment';
 import intl from 'react-intl-universal';
-import * as R from 'ramda';
-import { Intent } from '@blueprintjs/core';
-import { keyBy, omit } from 'lodash';
-import { useFormikContext } from 'formik';
 
-import { useWatch } from '@/hooks/utils';
-import { AppToaster } from '@/components';
-import { useWarehouseTransferFormContext } from './WarehouseTransferFormProvider';
+import { AppToaster } from '@bigcapital/webapp/components';
+import { ensureEntriesHaveEmptyLine, updateItemsEntriesTotal } from '@bigcapital/webapp/containers/Entries/utils';
+import { useWatch } from '@bigcapital/webapp/hooks/utils';
 import {
   compose,
-  transformToForm,
+  defaultFastFieldShouldUpdate,
+  orderingLinesIndexes,
   repeatValue,
   transactionNumber,
-  defaultFastFieldShouldUpdate,
-  updateTableRow,
+  transformToForm,
+  updateAutoAddNewLine,
   updateMinEntriesLines,
   updateRemoveLineByIndex,
-  orderingLinesIndexes,
-  updateAutoAddNewLine,
   updateTableCell,
-} from '@/utils';
-import { updateItemsEntriesTotal, ensureEntriesHaveEmptyLine } from '@/containers/Entries/utils';
+  updateTableRow,
+} from '@bigcapital/webapp/utils';
+import { useWarehouseTransferFormContext } from './WarehouseTransferFormProvider';
 
 export const MIN_LINES_NUMBER = 1;
 

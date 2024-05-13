@@ -1,16 +1,16 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { useDeleteLandedCost } from '@bigcapital/webapp/hooks/query';
+import { Alert, Intent } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Intent, Alert } from '@blueprintjs/core';
-import { FormattedMessage as T } from '@/components';
 import intl from 'react-intl-universal';
-import { useDeleteLandedCost } from '@/hooks/query';
 
-import { AppToaster } from '@/components';
+import { AppToaster } from '@bigcapital/webapp/components';
 
-import withAlertActions from '@/containers/Alert/withAlertActions';
-import withAlertStoreConnect from '@/containers/Alert/withAlertStoreConnect';
+import withAlertActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withAlertStoreConnect from '@bigcapital/webapp/containers/Alert/withAlertStoreConnect';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  *  Bill transaction delete alert.

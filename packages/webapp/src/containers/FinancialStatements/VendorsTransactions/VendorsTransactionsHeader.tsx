@@ -1,10 +1,10 @@
 // @ts-nocheck
 import React from 'react';
 
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { Button, Intent, Tab, Tabs } from '@blueprintjs/core';
+import { Form, Formik } from 'formik';
 import moment from 'moment';
-import { Formik, Form } from 'formik';
-import { Tabs, Tab, Button, Intent } from '@blueprintjs/core';
-import { FormattedMessage as T } from '@/components';
 
 import FinancialStatementHeader from '../FinancialStatementHeader';
 import VendorsTransactionsHeaderGeneralPanel from './VendorsTransactionsHeaderGeneralPanel';
@@ -12,7 +12,7 @@ import VendorsTransactionsHeaderGeneralPanel from './VendorsTransactionsHeaderGe
 import withVendorsTransaction from './withVendorsTransaction';
 import withVendorsTransactionsActions from './withVendorsTransactionsActions';
 
-import { compose, transformToForm } from '@/utils';
+import { compose, transformToForm } from '@bigcapital/webapp/utils';
 import { getVendorTransactionsQuerySchema, getVendorsTransactionsDefaultQuery } from './_utils';
 
 /**

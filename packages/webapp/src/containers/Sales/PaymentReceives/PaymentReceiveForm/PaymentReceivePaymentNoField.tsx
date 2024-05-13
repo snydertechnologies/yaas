@@ -1,14 +1,14 @@
-// @ts-nocheck
-import React, { useMemo } from 'react';
-import { Position, ControlGroup } from '@blueprintjs/core';
+import { ControlGroup, Position } from '@blueprintjs/core';
 import { useFormikContext } from 'formik';
 import * as R from 'ramda';
+// @ts-nocheck
+import React, { useMemo } from 'react';
 
-import { FInputGroup, FormattedMessage as T } from '@/components';
-import { FFormGroup, FieldRequiredHint, Icon, InputPrependButton } from '@/components';
+import { FInputGroup, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { FFormGroup, FieldRequiredHint, Icon, InputPrependButton } from '@bigcapital/webapp/components';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import withSettings from '@/containers/Settings/withSettings';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
 
 /**
  * Payment receive number field.

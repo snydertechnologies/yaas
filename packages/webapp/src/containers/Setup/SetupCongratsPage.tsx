@@ -1,14 +1,14 @@
+import { Button, Intent } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Button, Intent } from '@blueprintjs/core';
 
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
 import WorkflowIcon from './WorkflowIcon';
-import { FormattedMessage as T } from '@/components';
 
-import withOrganizationActions from '@/containers/Organization/withOrganizationActions';
-import { compose } from '@/utils';
+import withOrganizationActions from '@bigcapital/webapp/containers/Organization/withOrganizationActions';
+import { compose } from '@bigcapital/webapp/utils';
 
-import '@/style/pages/Setup/Congrats.scss';
+import '@bigcapital/webapp/style/pages/Setup/Congrats.scss';
 
 /**
  * Setup congrats page.

@@ -1,21 +1,21 @@
-// @ts-nocheck
-import React from 'react';
-import moment from 'moment';
-import intl from 'react-intl-universal';
-import { pick, first, sumBy } from 'lodash';
-import { useFormikContext } from 'formik';
-import { Intent } from '@blueprintjs/core';
-import { AppToaster } from '@/components';
-import { usePaymentMadeFormContext } from './PaymentMadeFormProvider';
+import { AppToaster } from '@bigcapital/webapp/components';
+import { useCurrentOrganization } from '@bigcapital/webapp/hooks/state';
 import {
   defaultFastFieldShouldUpdate,
+  formattedAmount,
+  orderingLinesIndexes,
   safeSumBy,
   transformToForm,
-  orderingLinesIndexes,
-  formattedAmount,
-} from '@/utils';
-import { useCurrentOrganization } from '@/hooks/state';
+} from '@bigcapital/webapp/utils';
+import { Intent } from '@blueprintjs/core';
+import { useFormikContext } from 'formik';
+import { first, pick, sumBy } from 'lodash';
+import moment from 'moment';
+// @ts-nocheck
+import React from 'react';
+import intl from 'react-intl-universal';
 import { PAYMENT_MADE_ERRORS } from '../constants';
+import { usePaymentMadeFormContext } from './PaymentMadeFormProvider';
 
 export const ERRORS = {
   PAYMENT_NUMBER_NOT_UNIQUE: 'PAYMENT.NUMBER.NOT.UNIQUE',

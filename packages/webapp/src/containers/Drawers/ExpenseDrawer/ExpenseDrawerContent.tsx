@@ -1,10 +1,10 @@
 // @ts-nocheck
 import React from 'react';
 
-import { DrawerBody } from '@/components';
+import { DrawerBody } from '@bigcapital/webapp/components';
 
-import { ExpenseDrawerProvider } from './ExpenseDrawerProvider';
 import ExpenseDrawerDetails from './ExpenseDrawerDetails';
+import { ExpenseDrawerProvider } from './ExpenseDrawerProvider';
 
 /**
  * Expense drawer content.

@@ -1,5 +1,5 @@
-import type { IAccount, ISystemUser, ITaxTransaction } from '@/interfaces';
-import type { IDynamicListFilter } from '@/interfaces/DynamicFilter';
+import type { IAccount, ISystemUser, ITaxTransaction } from '@bigcapital/server/interfaces';
+import type { IDynamicListFilter } from '@bigcapital/server/interfaces/DynamicFilter';
 import type { Knex } from 'knex';
 import type { IItemEntry, IItemEntryDTO } from './ItemEntry';
 import type { CommonMailOptions, CommonMailOptionsDTO } from './Mailable';

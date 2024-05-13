@@ -1,8 +1,8 @@
-import { ServiceError } from '@/exceptions';
-import { IItemEntryDTO } from '@/interfaces';
-import { Bill } from '@/models';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
-import { transformToMap } from '@/utils';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { IItemEntryDTO } from '@bigcapital/server/interfaces';
+import { Bill } from '@bigcapital/server/models';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import { transformToMap } from '@bigcapital/server/utils';
 import { Inject, Service } from 'typedi';
 import { ERRORS } from './constants';
 

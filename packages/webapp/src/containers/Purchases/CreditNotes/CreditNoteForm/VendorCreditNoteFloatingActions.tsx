@@ -1,20 +1,20 @@
-// @ts-nocheck
-import React from 'react';
-import classNames from 'classnames';
-import { useHistory } from 'react-router-dom';
-import { useFormikContext } from 'formik';
+import { Icon, If, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
 import {
-  Intent,
   Button,
   ButtonGroup,
+  Intent,
+  Menu,
+  MenuItem,
   Popover,
   PopoverInteractionKind,
   Position,
-  Menu,
-  MenuItem,
 } from '@blueprintjs/core';
-import { If, Icon, FormattedMessage as T } from '@/components';
-import { CLASSES } from '@/constants/classes';
+import classNames from 'classnames';
+import { useFormikContext } from 'formik';
+// @ts-nocheck
+import React from 'react';
+import { useHistory } from 'react-router-dom';
 import { useVendorCreditNoteFormContext } from './VendorCreditNoteFormProvider';
 
 /**

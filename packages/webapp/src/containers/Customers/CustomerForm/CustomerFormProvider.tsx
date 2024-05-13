@@ -1,9 +1,16 @@
+import { Features } from '@bigcapital/webapp/constants';
+import {
+  useBranches,
+  useContact,
+  useCreateCustomer,
+  useCurrencies,
+  useCustomer,
+  useEditCustomer,
+} from '@bigcapital/webapp/hooks/query';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
 // @ts-nocheck
 import React, { useState, createContext } from 'react';
 import { useLocation } from 'react-router-dom';
-import { useCustomer, useCurrencies, useCreateCustomer, useEditCustomer, useContact, useBranches } from '@/hooks/query';
-import { Features } from '@/constants';
-import { useFeatureCan } from '@/hooks/state';
 
 const CustomerFormContext = createContext();
 

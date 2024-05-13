@@ -1,6 +1,6 @@
 // @ts-nocheck
 import { createReducer } from '@reduxjs/toolkit';
-import { createTableStateReducers } from '@/store/tableState.reducer';
+import { createTableStateReducers } from '@bigcapital/webapp/store/tableState.reducer';
 
 const initialState = {
   tableState: {

@@ -1,6 +1,6 @@
 // @ts-nocheck
-import { DashboardInsider } from '@/components';
-import { ImportView } from '@/containers/Import';
+import { DashboardInsider } from '@bigcapital/webapp/components';
+import { ImportView } from '@bigcapital/webapp/containers/Import';
 import { useHistory } from 'react-router-dom';
 
 export default function VendorCreditsImport() {

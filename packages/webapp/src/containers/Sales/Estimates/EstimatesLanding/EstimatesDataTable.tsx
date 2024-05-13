@@ -4,20 +4,25 @@ import { useHistory } from 'react-router-dom';
 
 import EstimatesEmptyStatus from './EstimatesEmptyStatus';
 
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
 import withEstimatesActions from './withEstimatesActions';
-import withAlertsActions from '@/containers/Alert/withAlertActions';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import withSettings from '@/containers/Settings/withSettings';
 
-import { TABLES } from '@/constants/tables';
-import { DataTable, DashboardContentTable, TableSkeletonRows, TableSkeletonHeader } from '@/components';
-import { ActionsMenu, useEstiamtesTableColumns } from './components';
+import {
+  DashboardContentTable,
+  DataTable,
+  TableSkeletonHeader,
+  TableSkeletonRows,
+} from '@bigcapital/webapp/components';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import { TABLES } from '@bigcapital/webapp/constants/tables';
+import { useMemorizedColumnsWidths } from '@bigcapital/webapp/hooks';
+import { compose } from '@bigcapital/webapp/utils';
 import { useEstimatesListContext } from './EstimatesListProvider';
-import { useMemorizedColumnsWidths } from '@/hooks';
-import { compose } from '@/utils';
-import { DRAWERS } from '@/constants/drawers';
-import { DialogsName } from '@/constants/dialogs';
+import { ActionsMenu, useEstiamtesTableColumns } from './components';
 
 /**
  * Estimates datatable.

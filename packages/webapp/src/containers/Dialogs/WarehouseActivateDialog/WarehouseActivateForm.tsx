@@ -2,16 +2,16 @@
 import React from 'react';
 import intl from 'react-intl-universal';
 
-import { Formik } from 'formik';
 import { Intent } from '@blueprintjs/core';
+import { Formik } from 'formik';
 
-import { AppToaster } from '@/components';
-import { useWarehouseActivateContext } from './WarehouseActivateFormProvider';
+import { AppToaster } from '@bigcapital/webapp/components';
 import WarehouseActivateFormContent from './WarehouseActivateFormContent';
+import { useWarehouseActivateContext } from './WarehouseActivateFormProvider';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 /**
  * warehouse activate form.

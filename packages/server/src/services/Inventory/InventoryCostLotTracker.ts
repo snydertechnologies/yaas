@@ -1,4 +1,4 @@
-import InventoryCostMethod from '@/services/Inventory/InventoryCostMethod';
+import InventoryCostMethod from '@bigcapital/server/services/Inventory/InventoryCostMethod';
 import { IInventoryLotCost, IInventoryTransaction } from 'interfaces';
 import { chain, pick } from 'lodash';
 import moment from 'moment';

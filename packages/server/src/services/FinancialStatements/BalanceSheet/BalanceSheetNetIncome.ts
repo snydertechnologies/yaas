@@ -5,7 +5,7 @@ import {
   IBalanceSheetSchemaNetIncomeNode,
   IBalanceSheetSchemaNode,
   IBalanceSheetTotalPeriod,
-} from '@/interfaces';
+} from '@bigcapital/server/interfaces';
 import * as R from 'ramda';
 import { FinancialHorizTotals } from '../FinancialHorizTotals';
 import { FinancialPreviousPeriod } from '../FinancialPreviousPeriod';

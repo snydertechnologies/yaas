@@ -3,8 +3,8 @@ import { get } from 'lodash';
 import * as R from 'ramda';
 import React from 'react';
 
+import { useAbilitiesFilter } from '@bigcapital/webapp/hooks/utils';
 import { universalSearchBinds } from './DashboardUniversalSearchBinds';
-import { useAbilitiesFilter } from '@/hooks/utils';
 
 /**
  *

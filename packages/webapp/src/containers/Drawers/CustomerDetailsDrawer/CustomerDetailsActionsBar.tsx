@@ -1,39 +1,39 @@
+import {
+  Button,
+  Classes,
+  Intent,
+  Menu,
+  MenuItem,
+  NavbarDivider,
+  NavbarGroup,
+  Popover,
+  PopoverInteractionKind,
+  Position,
+} from '@blueprintjs/core';
+import clsx from 'classnames';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import clsx from 'classnames';
 import { useHistory } from 'react-router-dom';
-import {
-  Button,
-  NavbarGroup,
-  Classes,
-  NavbarDivider,
-  Intent,
-  Position,
-  PopoverInteractionKind,
-  Popover,
-  Menu,
-  MenuItem,
-} from '@blueprintjs/core';
 
 import { useCustomerDetailsDrawerContext } from './CustomerDetailsDrawerProvider';
 
-import withAlertsActions from '@/containers/Alert/withAlertActions';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
 
-import { DashboardActionsBar, Can, Icon, FormattedMessage as T } from '@/components';
-import { CustomerMoreMenuItem } from './utils';
+import { Can, DashboardActionsBar, Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
 import {
   AbilitySubject,
-  SaleInvoiceAction,
-  SaleEstimateAction,
-  SaleReceiptAction,
-  PaymentReceiveAction,
   CustomerAction,
-} from '@/constants/abilityOption';
-import { compose } from '@/utils';
-import { DRAWERS } from '@/constants/drawers';
+  PaymentReceiveAction,
+  SaleEstimateAction,
+  SaleInvoiceAction,
+  SaleReceiptAction,
+} from '@bigcapital/webapp/constants/abilityOption';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import { compose } from '@bigcapital/webapp/utils';
+import { CustomerMoreMenuItem } from './utils';
 
 /**
  * Customer details actions bar.

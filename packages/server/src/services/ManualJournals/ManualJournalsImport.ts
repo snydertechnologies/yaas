@@ -1,4 +1,4 @@
-import { IManualJournalDTO } from '@/interfaces';
+import { IManualJournalDTO } from '@bigcapital/server/interfaces';
 import { Knex } from 'knex';
 import { Inject } from 'typedi';
 import * as Yup from 'yup';

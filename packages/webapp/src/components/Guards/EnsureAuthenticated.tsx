@@ -1,7 +1,7 @@
+import { useIsAuthenticated } from '@bigcapital/webapp/hooks/state';
 // @ts-nocheck
 import React from 'react';
 import { Redirect } from 'react-router-dom';
-import { useIsAuthenticated } from '@/hooks/state';
 
 interface EnsureAuthenticatedProps {
   children: React.ReactNode;

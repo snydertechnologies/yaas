@@ -1,6 +1,6 @@
-import { IAPAgingSummaryQuery, IAPAgingSummarySheet } from '@/interfaces';
-import TenancyService from '@/services/Tenancy/TenancyService';
-import { Tenant } from '@/system/models';
+import { IAPAgingSummaryQuery, IAPAgingSummarySheet } from '@bigcapital/server/interfaces';
+import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import { Tenant } from '@bigcapital/server/system/models';
 import { isEmpty } from 'lodash';
 import moment from 'moment';
 import { Inject, Service } from 'typedi';

@@ -1,11 +1,11 @@
 // @ts-nocheck
 import styled from 'styled-components';
 
-import '@/style/pages/CashFlow/AccountTransactions/List.scss';
+import '@bigcapital/webapp/style/pages/CashFlow/AccountTransactions/List.scss';
 
+import { AccountTransactionsAllProvider } from './AccountTransactionsAllBoot';
 import AccountTransactionsDataTable from './AccountTransactionsDataTable';
 import { AccountTransactionsUncategorizeFilter } from './AccountTransactionsUncategorizeFilter';
-import { AccountTransactionsAllProvider } from './AccountTransactionsAllBoot';
 
 const Box = styled.div`
   margin: 30px 15px;

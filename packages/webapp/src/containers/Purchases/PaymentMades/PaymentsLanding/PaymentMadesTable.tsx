@@ -2,23 +2,28 @@
 import React, { useCallback } from 'react';
 import { useHistory } from 'react-router-dom';
 
-import { compose } from '@/utils';
-import { TABLES } from '@/constants/tables';
-import { DataTable, DashboardContentTable, TableSkeletonRows, TableSkeletonHeader } from '@/components';
+import {
+  DashboardContentTable,
+  DataTable,
+  TableSkeletonHeader,
+  TableSkeletonRows,
+} from '@bigcapital/webapp/components';
+import { TABLES } from '@bigcapital/webapp/constants/tables';
+import { compose } from '@bigcapital/webapp/utils';
 
 import PaymentMadesEmptyStatus from './PaymentMadesEmptyStatus';
 
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
+import withCurrentOrganization from '@bigcapital/webapp/containers/Organization/withCurrentOrganization';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
 import withPaymentMade from './withPaymentMade';
 import withPaymentMadeActions from './withPaymentMadeActions';
-import withCurrentOrganization from '@/containers/Organization/withCurrentOrganization';
-import withAlertsActions from '@/containers/Alert/withAlertActions';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
-import withSettings from '@/containers/Settings/withSettings';
 
-import { usePaymentMadesTableColumns, ActionsMenu } from './components';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import { useMemorizedColumnsWidths } from '@bigcapital/webapp/hooks';
 import { usePaymentMadesListContext } from './PaymentMadesListProvider';
-import { useMemorizedColumnsWidths } from '@/hooks';
-import { DRAWERS } from '@/constants/drawers';
+import { ActionsMenu, usePaymentMadesTableColumns } from './components';
 
 /**
  * Payment made datatable transactions.

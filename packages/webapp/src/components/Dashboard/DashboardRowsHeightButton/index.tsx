@@ -1,18 +1,18 @@
-// @ts-nocheck
-import React from 'react';
+import { Icon, T } from '@bigcapital/webapp/components';
 import {
   Button,
-  PopoverInteractionKind,
-  Popover,
-  Menu,
-  MenuItem,
-  MenuDivider,
   Classes,
-  Tooltip,
+  Menu,
+  MenuDivider,
+  MenuItem,
+  Popover,
+  PopoverInteractionKind,
   Position,
+  Tooltip,
 } from '@blueprintjs/core';
 import clsx from 'classnames';
-import { Icon, T } from '@/components';
+// @ts-nocheck
+import React from 'react';
 
 import Style from './style.module.scss';
 

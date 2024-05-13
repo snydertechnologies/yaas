@@ -1,6 +1,6 @@
+import { useItem } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React from 'react';
-import { useItem } from '@/hooks/query';
 
 interface IItemMeta {
   rowIndex: number;

@@ -1,16 +1,16 @@
 // @ts-nocheck
 import React, { useCallback } from 'react';
 
-import { compose } from '@/utils';
-import { DataTable, TableSkeletonRows, AppToaster } from '@/components';
-import { useResendInvitation } from '@/hooks/query';
+import { AppToaster, DataTable, TableSkeletonRows } from '@bigcapital/webapp/components';
+import { useResendInvitation } from '@bigcapital/webapp/hooks/query';
+import { compose } from '@bigcapital/webapp/utils';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import withAlertActions from '@/containers/Alert/withAlertActions';
+import withAlertActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
 
-import { ActionsMenu, useUsersListColumns } from './components';
-import { useUsersListContext } from './UsersProvider';
 import { Intent } from '@blueprintjs/core';
+import { useUsersListContext } from './UsersProvider';
+import { ActionsMenu, useUsersListColumns } from './components';
 
 /**
  * Users datatable.

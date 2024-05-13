@@ -1,9 +1,9 @@
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
 // @ts-nocheck
 import * as R from 'ramda';
 import { useHistory } from 'react-router-dom';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
 import ReceiptMailDialogContent from '../../ReceiptMailDialog/ReceiptMailDialogContent';
-import { DialogsName } from '@/constants/dialogs';
 
 interface ReceiptFormDeliverDialogContent {
   receiptId: number;

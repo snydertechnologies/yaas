@@ -1,7 +1,7 @@
-import { IGetWarehousesTransfersFilterDTO } from '@/interfaces';
-import { TransformerInjectable } from '@/lib/Transformer/TransformerInjectable';
-import DynamicListingService from '@/services/DynamicListing/DynamicListService';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { IGetWarehousesTransfersFilterDTO } from '@bigcapital/server/interfaces';
+import { TransformerInjectable } from '@bigcapital/server/lib/Transformer/TransformerInjectable';
+import DynamicListingService from '@bigcapital/server/services/DynamicListing/DynamicListService';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import * as R from 'ramda';
 import { Inject, Service } from 'typedi';
 import { WarehouseTransferTransformer } from './WarehouseTransferTransfomer';

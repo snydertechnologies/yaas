@@ -2,12 +2,12 @@
 import React, { useEffect } from 'react';
 import intl from 'react-intl-universal';
 
-import { CurrenciesProvider } from './CurrenciesProvider';
 import CurrenciesDataTable from './CurrenciesDataTable';
+import { CurrenciesProvider } from './CurrenciesProvider';
 
-import withDashboardActions from '@/containers/Dashboard/withDashboardActions';
+import withDashboardActions from '@bigcapital/webapp/containers/Dashboard/withDashboardActions';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 
 function CurrenciesList({
   // #withDashboardActions

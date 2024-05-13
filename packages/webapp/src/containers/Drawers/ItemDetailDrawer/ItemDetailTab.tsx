@@ -2,13 +2,13 @@
 import React from 'react';
 import { Tab } from '@blueprintjs/core';
 
-import { DrawerMainTabs, FormattedMessage as T } from '@/components';
+import { DrawerMainTabs, FormattedMessage as T } from '@bigcapital/webapp/components';
 import { ItemPaymentTransactions } from './ItemPaymentTransactions';
 import ItemDetailHeader from './ItemDetailHeader';
 import WarehousesLocationsTable from './WarehousesLocations';
 
-import { Features } from '@/constants';
-import { useFeatureCan } from '@/hooks/state';
+import { Features } from '@bigcapital/webapp/constants';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
 
 export default function ItemDetailTab() {
   const { featureCan } = useFeatureCan();

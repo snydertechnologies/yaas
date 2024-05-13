@@ -2,17 +2,19 @@
 import React from 'react';
 
 const VendorCreditDeleteAlert = React.lazy(
-  () => import('@/containers/Alerts/VendorCeditNotes/VendorCreditDeleteAlert'),
+  () => import('@bigcapital/webapp/containers/Alerts/VendorCeditNotes/VendorCreditDeleteAlert'),
 );
 
 const RefundVendorCreditDeleteAlert = React.lazy(
-  () => import('@/containers/Alerts/VendorCeditNotes/RefundVendorCreditDeleteAlert'),
+  () => import('@bigcapital/webapp/containers/Alerts/VendorCeditNotes/RefundVendorCreditDeleteAlert'),
 );
 
-const OpenVendorCreditAlert = React.lazy(() => import('@/containers/Alerts/VendorCeditNotes/VendorCreditOpenedAlert'));
+const OpenVendorCreditAlert = React.lazy(
+  () => import('@bigcapital/webapp/containers/Alerts/VendorCeditNotes/VendorCreditOpenedAlert'),
+);
 
 const ReconcileVendorCreditDeleteAlert = React.lazy(
-  () => import('@/containers/Alerts/VendorCeditNotes/ReconcileVendorCreditDeleteAlert'),
+  () => import('@bigcapital/webapp/containers/Alerts/VendorCeditNotes/ReconcileVendorCreditDeleteAlert'),
 );
 
 /**

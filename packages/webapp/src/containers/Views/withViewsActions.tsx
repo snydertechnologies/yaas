@@ -1,13 +1,13 @@
-// @ts-nocheck
-import { connect } from 'react-redux';
 import {
-  fetchView,
-  submitView,
   deleteView,
   editView,
-  fetchViewResource,
   fetchResourceViews,
-} from '@/store/customViews/customViews.actions';
+  fetchView,
+  fetchViewResource,
+  submitView,
+} from '@bigcapital/webapp/store/customViews/customViews.actions';
+// @ts-nocheck
+import { connect } from 'react-redux';
 
 export const mapDispatchToProps = (dispatch) => ({
   requestFetchView: (id) => dispatch(fetchView({ id })),

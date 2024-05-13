@@ -1,4 +1,4 @@
-import { IManualJournal } from '@/interfaces';
+import { IManualJournal } from '@bigcapital/server/interfaces';
 import { omit } from 'lodash';
 import { Inject, Service } from 'typedi';
 import { BranchesSettings } from '../../BranchesSettings';

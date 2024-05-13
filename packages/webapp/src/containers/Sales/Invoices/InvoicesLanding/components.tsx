@@ -1,12 +1,20 @@
+import {
+  AppToaster,
+  Can,
+  Choose,
+  FormatDateCell,
+  Icon,
+  If,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import { AbilitySubject, PaymentReceiveAction, SaleInvoiceAction } from '@bigcapital/webapp/constants/abilityOption';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { calculateStatus, formattedAmount, safeCallback } from '@bigcapital/webapp/utils';
+import { Intent, Menu, MenuDivider, MenuItem, ProgressBar, Tag } from '@blueprintjs/core';
+import clsx from 'classnames';
 // @ts-nocheck
 import React from 'react';
-import { Intent, Tag, Menu, MenuItem, MenuDivider, ProgressBar } from '@blueprintjs/core';
 import intl from 'react-intl-universal';
-import clsx from 'classnames';
-import { CLASSES } from '@/constants/classes';
-import { FormatDateCell, FormattedMessage as T, AppToaster, Choose, If, Icon, Can } from '@/components';
-import { formattedAmount, safeCallback, calculateStatus } from '@/utils';
-import { SaleInvoiceAction, PaymentReceiveAction, AbilitySubject } from '@/constants/abilityOption';
 
 export function InvoiceStatus({ invoice }) {
   return (

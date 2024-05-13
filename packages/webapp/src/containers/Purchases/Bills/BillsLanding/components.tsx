@@ -1,12 +1,12 @@
+import { Can, Choose, FormatDateCell, Icon, If, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { CLASSES } from '@bigcapital/webapp/constants';
+import { AbilitySubject, BillAction, PaymentMadeAction } from '@bigcapital/webapp/constants/abilityOption';
+import { calculateStatus, formattedAmount, safeCallback } from '@bigcapital/webapp/utils';
+import { Intent, Menu, MenuDivider, MenuItem, ProgressBar, Tag } from '@blueprintjs/core';
+import clsx from 'classnames';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { Intent, Menu, MenuItem, MenuDivider, Tag, ProgressBar } from '@blueprintjs/core';
-import clsx from 'classnames';
-import { FormatDateCell, FormattedMessage as T, Icon, If, Choose, Can } from '@/components';
-import { formattedAmount, safeCallback, calculateStatus } from '@/utils';
-import { BillAction, PaymentMadeAction, AbilitySubject } from '@/constants/abilityOption';
-import { CLASSES } from '@/constants';
 
 /**
  * Actions menu.

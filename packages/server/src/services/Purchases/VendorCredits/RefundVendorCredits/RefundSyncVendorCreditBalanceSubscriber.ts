@@ -1,5 +1,5 @@
-import { IRefundVendorCreditCreatedPayload, IRefundVendorCreditDeletedPayload } from '@/interfaces';
-import events from '@/subscribers/events';
+import { IRefundVendorCreditCreatedPayload, IRefundVendorCreditDeletedPayload } from '@bigcapital/server/interfaces';
+import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 import RefundSyncCreditRefundedAmount from './RefundSyncCreditRefundedAmount';
 

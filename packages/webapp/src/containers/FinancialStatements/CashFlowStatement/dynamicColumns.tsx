@@ -2,9 +2,9 @@
 import * as R from 'ramda';
 import intl from 'react-intl-universal';
 
-import { Align } from '@/constants';
-import { CellTextSpan } from '@/components/Datatable/Cells';
-import { getColumnWidth } from '@/utils';
+import { CellTextSpan } from '@bigcapital/webapp/components/Datatable/Cells';
+import { Align } from '@bigcapital/webapp/constants';
+import { getColumnWidth } from '@bigcapital/webapp/utils';
 
 /**
  * Account name column mapper.

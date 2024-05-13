@@ -3,13 +3,13 @@ import React, { useMemo } from 'react';
 import intl from 'react-intl-universal';
 import styled from 'styled-components';
 
-import { DataTable, FinancialSheet } from '@/components';
+import { DataTable, FinancialSheet } from '@bigcapital/webapp/components';
 
-import { useCustomersTransactionsColumns } from './components';
 import { useCustomersTransactionsContext } from './CustomersTransactionsProvider';
+import { useCustomersTransactionsColumns } from './components';
 
-import { defaultExpanderReducer, tableRowTypesToClassnames } from '@/utils';
-import { TableStyle } from '@/constants';
+import { TableStyle } from '@bigcapital/webapp/constants';
+import { defaultExpanderReducer, tableRowTypesToClassnames } from '@bigcapital/webapp/utils';
 
 /**
  * Customers transactions table.

@@ -1,8 +1,8 @@
-import { Icon } from '@/components';
+import { Icon } from '@bigcapital/webapp/components';
 import classNames from 'classnames';
 import React from 'react';
 
-import '@/style/components/BigcapitalLoading.scss';
+import '@bigcapital/webapp/style/components/BigcapitalLoading.scss';
 
 /**
  * Bigcapital logo loading.

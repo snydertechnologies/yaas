@@ -1,6 +1,6 @@
-import { ILedger, ISaveAccountsBalanceQueuePayload } from '@/interfaces';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
-import { TenantMetadata } from '@/system/models';
+import { ILedger, ISaveAccountsBalanceQueuePayload } from '@bigcapital/server/interfaces';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import { TenantMetadata } from '@bigcapital/server/system/models';
 import async from 'async';
 import { Knex } from 'knex';
 import { uniq } from 'lodash';

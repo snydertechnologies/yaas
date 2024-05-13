@@ -1,7 +1,10 @@
-import { CASHFLOW_DIRECTION } from '@/services/Cashflow/constants';
-import { getCashflowAccountTransactionsTypes, getCashflowTransactionType } from '@/services/Cashflow/utils';
-import { getTransactionTypeLabel } from '@/utils/transactions-types';
-import TenantModel from 'models/TenantModel';
+import TenantModel from '@bigcapital/server/models/TenantModel';
+import { CASHFLOW_DIRECTION } from '@bigcapital/server/services/Cashflow/constants';
+import {
+  getCashflowAccountTransactionsTypes,
+  getCashflowTransactionType,
+} from '@bigcapital/server/services/Cashflow/utils';
+import { getTransactionTypeLabel } from '@bigcapital/server/utils/transactions-types';
 import { Model } from 'objection';
 export default class CashflowTransaction extends TenantModel {
   transactionType: string;
@@ -87,9 +90,9 @@ export default class CashflowTransaction extends TenantModel {
    * Relationship mapping.
    */
   static get relationMappings() {
-    const CashflowTransactionLine = require('models/CashflowTransactionLine');
-    const AccountTransaction = require('models/AccountTransaction');
-    const Account = require('models/Account');
+    const CashflowTransactionLine = require('@bigcapital/server/models/CashflowTransactionLine');
+    const AccountTransaction = require('@bigcapital/server/models/AccountTransaction');
+    const Account = require('@bigcapital/server/models/Account');
 
     return {
       /**

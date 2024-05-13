@@ -1,8 +1,8 @@
-import { ServiceError } from '@/exceptions';
-import { IAuthSignInPOJO, IAuthSignedInEventPayload, IAuthSigningInEventPayload, ISystemUser } from '@/interfaces';
-import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';
-import events from '@/subscribers/events';
-import { Tenant } from '@/system/models';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { IAuthSignInPOJO, IAuthSignedInEventPayload, IAuthSigningInEventPayload, ISystemUser } from '@bigcapital/server/interfaces';
+import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
+import events from '@bigcapital/server/subscribers/events';
+import { Tenant } from '@bigcapital/server/system/models';
 import { cloneDeep } from 'lodash';
 import { Container, Inject } from 'typedi';
 import { ERRORS } from './_constants';

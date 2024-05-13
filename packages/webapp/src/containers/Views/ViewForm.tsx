@@ -1,7 +1,7 @@
 // @ts-nocheck
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { useFormik } from 'formik';
-import { FormattedMessage as T } from '@/components';
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
 
 import { useHistory } from 'react-router-dom';
 import { InputGroup, FormGroup, Intent, Button, MenuItem, Classes, HTMLSelect, Menu, H5, H6 } from '@blueprintjs/core';
@@ -9,9 +9,9 @@ import { Row, Col } from 'react-grid-system';
 import { ReactSortable } from 'react-sortablejs';
 import * as Yup from 'yup';
 import { pick, get } from 'lodash';
-import ErrorMessage from '@/components/ErrorMessage';
-import { If, Icon, AppToaster } from '@/components';
-import ViewFormContainer from '@/containers/Views/ViewForm.container.js';
+import ErrorMessage from '@bigcapital/webapp/components/ErrorMessage';
+import { If, Icon, AppToaster } from '@bigcapital/webapp/components';
+import ViewFormContainer from '@bigcapital/webapp/containers/Views/ViewForm.container.js';
 
 function ViewForm({
   requestSubmitView,

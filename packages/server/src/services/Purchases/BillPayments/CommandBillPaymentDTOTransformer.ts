@@ -1,6 +1,6 @@
-import { IBillPayment, IBillPaymentDTO, IVendor } from '@/interfaces';
-import { BranchTransactionDTOTransform } from '@/services/Branches/Integrations/BranchTransactionDTOTransform';
-import { formatDateFields } from '@/utils';
+import { IBillPayment, IBillPaymentDTO, IVendor } from '@bigcapital/server/interfaces';
+import { BranchTransactionDTOTransform } from '@bigcapital/server/services/Branches/Integrations/BranchTransactionDTOTransform';
+import { formatDateFields } from '@bigcapital/server/utils';
 import { sumBy } from 'lodash';
 import * as R from 'ramda';
 import { Inject, Service } from 'typedi';

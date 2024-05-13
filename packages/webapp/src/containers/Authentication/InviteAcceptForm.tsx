@@ -1,16 +1,16 @@
+import { Intent, Position } from '@blueprintjs/core';
+import { Formik } from 'formik';
+import { isEmpty } from 'lodash';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { Formik } from 'formik';
 import { useHistory } from 'react-router-dom';
-import { Intent, Position } from '@blueprintjs/core';
-import { isEmpty } from 'lodash';
 
-import { useInviteAcceptContext } from './InviteAcceptProvider';
-import { AppToaster } from '@/components';
-import { InviteAcceptSchema } from './utils';
+import { AppToaster } from '@bigcapital/webapp/components';
 import InviteAcceptFormContent from './InviteAcceptFormContent';
+import { useInviteAcceptContext } from './InviteAcceptProvider';
 import { AuthInsiderCard } from './_components';
+import { InviteAcceptSchema } from './utils';
 
 const initialValues = {
   organization_name: '',

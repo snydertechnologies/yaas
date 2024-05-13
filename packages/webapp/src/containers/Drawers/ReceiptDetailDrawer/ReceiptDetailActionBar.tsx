@@ -2,18 +2,18 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
-import { Button, NavbarGroup, Classes, NavbarDivider, Intent } from '@blueprintjs/core';
+import { Button, Classes, Intent, NavbarDivider, NavbarGroup } from '@blueprintjs/core';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import withAlertsActions from '@/containers/Alert/withAlertActions';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
-import { Can, Icon, FormattedMessage as T, DrawerActionsBar } from '@/components';
-import { ReceiptMoreMenuItems } from './components';
+import { Can, DrawerActionsBar, Icon, FormattedMessage as T } from '@bigcapital/webapp/components';
+import { AbilitySubject, SaleReceiptAction } from '@bigcapital/webapp/constants/abilityOption';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
+import { compose, safeCallback } from '@bigcapital/webapp/utils';
 import { useReceiptDetailDrawerContext } from './ReceiptDetailDrawerProvider';
-import { SaleReceiptAction, AbilitySubject } from '@/constants/abilityOption';
-import { safeCallback, compose } from '@/utils';
-import { DRAWERS } from '@/constants/drawers';
-import { DialogsName } from '@/constants/dialogs';
+import { ReceiptMoreMenuItems } from './components';
 
 /**
  * Receipt details actions bar.

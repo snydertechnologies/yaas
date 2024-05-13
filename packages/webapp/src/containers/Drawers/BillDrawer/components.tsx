@@ -4,9 +4,9 @@ import intl from 'react-intl-universal';
 import styled from 'styled-components';
 import clsx from 'classnames';
 import { Intent, MenuItem, Menu } from '@blueprintjs/core';
-import { safeCallback } from '@/utils';
-import { CLASSES } from '@/constants/classes';
-import { Icon } from '@/components';
+import { safeCallback } from '@bigcapital/webapp/utils';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { Icon } from '@bigcapital/webapp/components';
 
 /**
  * Actions menu.

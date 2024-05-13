@@ -1,4 +1,4 @@
-import { ICreditNoteNewDTO } from '@/interfaces';
+import { ICreditNoteNewDTO } from '@bigcapital/server/interfaces';
 import { Knex } from 'knex';
 import { Inject, Service } from 'typedi';
 import { Importable } from '../Import/Importable';

@@ -1,11 +1,11 @@
 // @ts-nocheck
 import React from 'react';
 import * as R from 'ramda';
-import { Can, Icon, T } from '@/components';
+import { Can, Icon, T } from '@bigcapital/webapp/components';
 import { Button, Menu, MenuItem, Popover, PopoverInteractionKind, Position } from '@blueprintjs/core';
-import { AbilitySubject, InventoryAdjustmentAction } from '@/constants/abilityOption';
+import { AbilitySubject, InventoryAdjustmentAction } from '@bigcapital/webapp/constants/abilityOption';
 import { useItemDetailDrawerContext } from './ItemDetailDrawerProvider';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
 
 /**
  * Invoice details more actions menu.

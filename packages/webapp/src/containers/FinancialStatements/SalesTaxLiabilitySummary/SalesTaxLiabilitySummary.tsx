@@ -1,19 +1,19 @@
+import moment from 'moment';
 // @ts-nocheck
 import React, { useEffect } from 'react';
-import moment from 'moment';
 
+import { DashboardPageContent, FinancialStatement } from '@bigcapital/webapp/components';
 import { SalesTaxLiabilitySummaryLoadingBar } from './components';
-import { FinancialStatement, DashboardPageContent } from '@/components';
 
-import SalesTaxLiabilitySummaryHeader from './SalesTaxLiabilitySummaryHeader';
-import SalesTaxLiabilitySummaryActionsBar from './SalesTaxLiabilitySummaryActionsBar';
-import { SalesTaxLiabilitySummaryBoot } from './SalesTaxLiabilitySummaryBoot';
-import { SalesTaxLiabilitySummaryBody } from './SalesTaxLiabilitySummaryBody';
-import { useSalesTaxLiabilitySummaryQuery } from './utils';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import { compose } from '@bigcapital/webapp/utils';
 import { SalesTaxLiabiltiyPdfDialog } from './SalesTaxLiabilityPdfDialog';
+import SalesTaxLiabilitySummaryActionsBar from './SalesTaxLiabilitySummaryActionsBar';
+import { SalesTaxLiabilitySummaryBody } from './SalesTaxLiabilitySummaryBody';
+import { SalesTaxLiabilitySummaryBoot } from './SalesTaxLiabilitySummaryBoot';
+import SalesTaxLiabilitySummaryHeader from './SalesTaxLiabilitySummaryHeader';
+import { useSalesTaxLiabilitySummaryQuery } from './utils';
 import withSalesTaxLiabilitySummaryActions from './withSalesTaxLiabilitySummaryActions';
-import { compose } from '@/utils';
-import { DialogsName } from '@/constants/dialogs';
 
 /**
  * Sales tax liability summary.

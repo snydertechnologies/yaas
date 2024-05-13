@@ -4,23 +4,23 @@ import styled from 'styled-components';
 
 import {
   DataTable,
-  TableFastCell,
-  TableSkeletonRows,
-  TableSkeletonHeader,
-  TableVirtualizedListRows,
   FormattedMessage as T,
-} from '@/components';
-import { TABLES } from '@/constants/tables';
+  TableFastCell,
+  TableSkeletonHeader,
+  TableSkeletonRows,
+  TableVirtualizedListRows,
+} from '@bigcapital/webapp/components';
+import { TABLES } from '@bigcapital/webapp/constants/tables';
 
-import withSettings from '@/containers/Settings/withSettings';
-import withAlertsActions from '@/containers/Alert/withAlertActions';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
 
-import { useMemorizedColumnsWidths } from '@/hooks';
-import { useAccountTransactionsColumns, ActionsMenu } from './components';
+import { useMemorizedColumnsWidths } from '@bigcapital/webapp/hooks';
+import { ActionsMenu, useAccountTransactionsColumns } from './components';
 import { handleCashFlowTransactionType } from './utils';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 import { useAccountTransactionsAllContext } from './AccountTransactionsAllBoot';
 
 /**

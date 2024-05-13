@@ -1,11 +1,11 @@
+import { Classes, Intent, Menu, MenuDivider, MenuItem } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
 import styled from 'styled-components';
-import { Menu, MenuItem, MenuDivider, Intent, Classes } from '@blueprintjs/core';
 
-import { Icon, If } from '@/components';
-import { safeCallback } from '@/utils';
+import { Icon, If } from '@bigcapital/webapp/components';
+import { safeCallback } from '@bigcapital/webapp/utils';
 
 const WAREHOUSES_SKELETON_N = 4;
 

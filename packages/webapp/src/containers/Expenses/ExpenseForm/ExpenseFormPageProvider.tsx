@@ -1,18 +1,18 @@
-// @ts-nocheck
-import React, { createContext } from 'react';
-import { DashboardInsider } from '@/components/Dashboard';
-import { Features } from '@/constants';
-import { useFeatureCan } from '@/hooks/state';
+import { DashboardInsider } from '@bigcapital/webapp/components/Dashboard';
+import { Features } from '@bigcapital/webapp/constants';
+import { useProjects } from '@bigcapital/webapp/containers/Projects/hooks';
 import {
-  useCurrencies,
-  useCustomers,
-  useExpense,
   useAccounts,
   useBranches,
   useCreateExpense,
+  useCurrencies,
+  useCustomers,
   useEditExpense,
-} from '@/hooks/query';
-import { useProjects } from '@/containers/Projects/hooks';
+  useExpense,
+} from '@bigcapital/webapp/hooks/query';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
+// @ts-nocheck
+import React, { createContext } from 'react';
 
 const ExpenseFormPageContext = createContext();
 

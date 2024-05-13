@@ -1,7 +1,7 @@
 // @ts-nocheck
 import React from 'react';
 
-import { Card, CommercialDocBox } from '@/components';
+import { Card, CommercialDocBox } from '@bigcapital/webapp/components';
 
 import CashflowTransactionDrawerActionBar from './CashflowTransactionDrawerActionBar';
 import CashflowTransactionDrawerHeader from './CashflowTransactionDrawerHeader';

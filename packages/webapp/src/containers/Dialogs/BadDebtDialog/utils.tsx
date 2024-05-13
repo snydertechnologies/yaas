@@ -1,8 +1,8 @@
+import { Intent } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Intent } from '@blueprintjs/core';
 
-import { AppToaster } from '@/components';
+import { AppToaster } from '@bigcapital/webapp/components';
 
 /**
  * Transformes the response errors types.

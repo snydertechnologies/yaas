@@ -3,10 +3,10 @@ import React from 'react';
 import withBreadcrumbs from 'react-router-breadcrumbs-hoc';
 import { useHistory } from 'react-router-dom';
 
-import { If, Icon } from '@/components';
-import { FormattedMessage as T } from '@/components';
-import withDashboard from '@/containers/Dashboard/withDashboard';
-import { compose } from '@/utils';
+import { Icon, If } from '@bigcapital/webapp/components';
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import withDashboard from '@bigcapital/webapp/containers/Dashboard/withDashboard';
+import { compose } from '@bigcapital/webapp/utils';
 
 function DashboardBackLink({ dashboardBackLink, breadcrumbs }) {
   const history = useHistory();

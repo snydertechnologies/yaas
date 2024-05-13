@@ -1,4 +1,4 @@
-import { IBalanceSheetQuery, IFinancialDatePeriodsUnit } from '@/interfaces';
+import { IBalanceSheetQuery, IFinancialDatePeriodsUnit } from '@bigcapital/server/interfaces';
 import { merge } from 'lodash';
 import * as R from 'ramda';
 import { FinancialDateRanges } from '../FinancialDateRanges';

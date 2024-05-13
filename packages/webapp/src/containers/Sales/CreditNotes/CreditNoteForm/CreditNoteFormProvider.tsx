@@ -1,23 +1,23 @@
+import { DashboardInsider } from '@bigcapital/webapp/components/Dashboard';
+import { Features } from '@bigcapital/webapp/constants';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
+import { isEmpty, pick } from 'lodash';
 // @ts-nocheck
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import { isEmpty, pick } from 'lodash';
-import { DashboardInsider } from '@/components/Dashboard';
 import { transformToEditForm } from './utils';
-import { Features } from '@/constants';
-import { useFeatureCan } from '@/hooks/state';
 
 import {
-  useCreditNote,
-  useCreateCreditNote,
-  useEditCreditNote,
-  useItems,
-  useCustomers,
-  useWarehouses,
   useBranches,
-  useSettingsCreditNotes,
+  useCreateCreditNote,
+  useCreditNote,
+  useCustomers,
+  useEditCreditNote,
   useInvoice,
-} from '@/hooks/query';
+  useItems,
+  useSettingsCreditNotes,
+  useWarehouses,
+} from '@bigcapital/webapp/hooks/query';
 
 const CreditNoteFormContext = React.createContext();
 

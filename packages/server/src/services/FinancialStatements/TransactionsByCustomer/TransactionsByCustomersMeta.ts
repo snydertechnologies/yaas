@@ -1,4 +1,4 @@
-import { ITransactionsByCustomersFilter, ITransactionsByCustomersMeta } from '@/interfaces';
+import { ITransactionsByCustomersFilter, ITransactionsByCustomersMeta } from '@bigcapital/server/interfaces';
 import moment from 'moment';
 import { Inject, Service } from 'typedi';
 import { FinancialSheetMeta } from '../FinancialSheetMeta';

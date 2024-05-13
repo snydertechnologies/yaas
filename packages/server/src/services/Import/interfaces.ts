@@ -1,5 +1,5 @@
-import { IModelMetaField2 } from '@/interfaces';
-import Import from '@/models/Import';
+import { IModelMetaField2 } from '@bigcapital/server/interfaces';
+import Import from '@bigcapital/server/models/Import';
 
 export interface ImportMappingAttr {
   from: string;

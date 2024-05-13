@@ -1,11 +1,11 @@
 // @ts-nocheck
 import intl from 'react-intl-universal';
 
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
 
-import { AbilitySubject, AccountAction } from '@/constants/abilityOption';
-import { RESOURCES_TYPES } from '@/constants/resourcesTypes';
-import { DRAWERS } from '@/constants/drawers';
+import { AbilitySubject, AccountAction } from '@bigcapital/webapp/constants/abilityOption';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import { RESOURCES_TYPES } from '@bigcapital/webapp/constants/resourcesTypes';
 
 function AccountUniversalSearchItemSelectComponent({
   // #ownProps

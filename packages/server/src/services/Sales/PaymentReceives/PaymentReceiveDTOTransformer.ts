@@ -1,6 +1,6 @@
-import { ICustomer, IPaymentReceive, IPaymentReceiveCreateDTO, IPaymentReceiveEditDTO } from '@/interfaces';
-import { BranchTransactionDTOTransform } from '@/services/Branches/Integrations/BranchTransactionDTOTransform';
-import { formatDateFields } from '@/utils';
+import { ICustomer, IPaymentReceive, IPaymentReceiveCreateDTO, IPaymentReceiveEditDTO } from '@bigcapital/server/interfaces';
+import { BranchTransactionDTOTransform } from '@bigcapital/server/services/Branches/Integrations/BranchTransactionDTOTransform';
+import { formatDateFields } from '@bigcapital/server/utils';
 import { omit, sumBy } from 'lodash';
 import * as R from 'ramda';
 import { Inject, Service } from 'typedi';

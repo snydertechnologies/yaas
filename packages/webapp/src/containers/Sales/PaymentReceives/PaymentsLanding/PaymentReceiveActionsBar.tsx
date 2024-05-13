@@ -1,30 +1,30 @@
+import { Alignment, Button, Classes, Intent, NavbarDivider, NavbarGroup } from '@blueprintjs/core';
 // @ts-nocheck
 import React from 'react';
-import { Button, Classes, NavbarDivider, NavbarGroup, Intent, Alignment } from '@blueprintjs/core';
 
-import { useHistory } from 'react-router-dom';
 import {
-  Icon,
-  Can,
-  If,
-  DashboardFilterButton,
   AdvancedFilterPopover,
-  FormattedMessage as T,
-  DashboardRowsHeightButton,
+  Can,
   DashboardActionViewsList,
   DashboardActionsBar,
-} from '@/components';
+  DashboardFilterButton,
+  DashboardRowsHeightButton,
+  Icon,
+  If,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import { useHistory } from 'react-router-dom';
 
+import { AbilitySubject, PaymentReceiveAction } from '@bigcapital/webapp/constants/abilityOption';
+import { DialogsName } from '@bigcapital/webapp/constants/dialogs';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
+import withSettingsActions from '@bigcapital/webapp/containers/Settings/withSettingsActions';
+import { useRefreshPaymentReceive } from '@bigcapital/webapp/hooks/query/paymentReceives';
+import { compose } from '@bigcapital/webapp/utils';
+import { usePaymentReceivesListContext } from './PaymentReceiptsListProvider';
 import withPaymentReceives from './withPaymentReceives';
 import withPaymentReceivesActions from './withPaymentReceivesActions';
-import withSettings from '@/containers/Settings/withSettings';
-import withSettingsActions from '@/containers/Settings/withSettingsActions';
-import withDialogActions from '@/containers/Dialog/withDialogActions';
-import { PaymentReceiveAction, AbilitySubject } from '@/constants/abilityOption';
-import { usePaymentReceivesListContext } from './PaymentReceiptsListProvider';
-import { useRefreshPaymentReceive } from '@/hooks/query/paymentReceives';
-import { compose } from '@/utils';
-import { DialogsName } from '@/constants/dialogs';
 
 /**
  * Payment receives actions bar.

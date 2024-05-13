@@ -1,8 +1,8 @@
+import clsx from 'classnames';
 // @ts-nocheck
 import React from 'react';
-import clsx from 'classnames';
 
-import { Card } from '@/components';
+import { Card } from '@bigcapital/webapp/components';
 
 import CustomerDetailsActionsBar from './CustomerDetailsActionsBar';
 import CustomerDetailsHeader from './CustomerDetailsHeader';

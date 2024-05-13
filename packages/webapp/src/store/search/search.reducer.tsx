@@ -1,5 +1,5 @@
 // @ts-nocheck
-import t from '@/store/types';
+import t from '@bigcapital/webapp/store/types';
 import { createReducer } from '@reduxjs/toolkit';
 
 const DEFAULT_RESOURCE_TYPE = 'customer';

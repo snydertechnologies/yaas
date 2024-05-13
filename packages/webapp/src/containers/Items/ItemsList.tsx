@@ -1,15 +1,15 @@
+import { compose } from '@bigcapital/webapp/utils';
 // @ts-nocheck
 import React from 'react';
-import { compose } from '@/utils';
 
-import '@/style/pages/Items/List.scss';
+import '@bigcapital/webapp/style/pages/Items/List.scss';
 
-import { DashboardPageContent } from '@/components';
+import { DashboardPageContent } from '@bigcapital/webapp/components';
 import { ItemsListProvider } from './ItemsListProvider';
 
 import ItemsActionsBar from './ItemsActionsBar';
-import ItemsViewsTabs from './ItemsViewsTabs';
 import ItemsDataTable from './ItemsDataTable';
+import ItemsViewsTabs from './ItemsViewsTabs';
 
 import withItems from './withItems';
 import withItemsActions from './withItemsActions';

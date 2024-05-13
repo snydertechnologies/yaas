@@ -1,17 +1,17 @@
 // @ts-nocheck
 import React from 'react';
-import { DataTable, TableSkeletonRows, Card, FormattedMessage as T } from '@/components';
+import { DataTable, TableSkeletonRows, Card, FormattedMessage as T } from '@bigcapital/webapp/components';
 
 import { useLocatedLandedCostColumns, ActionsMenu } from './components';
 import { useBillDrawerContext } from './BillDrawerProvider';
 
-import withAlertsActions from '@/containers/Alert/withAlertActions';
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
+import withAlertsActions from '@bigcapital/webapp/containers/Alert/withAlertActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
 
-import { TableStyle } from '@/constants';
+import { TableStyle } from '@bigcapital/webapp/constants';
 
-import { compose } from '@/utils';
-import { DRAWERS } from '@/constants/drawers';
+import { compose } from '@bigcapital/webapp/utils';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
 
 /**
  * Located landed cost table.

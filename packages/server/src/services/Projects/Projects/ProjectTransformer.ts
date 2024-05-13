@@ -1,6 +1,6 @@
-import { Transformer } from '@/lib/Transformer/Transformer';
-import Project from 'models/Project';
-import { formatNumber } from 'utils';
+import { Transformer } from '@bigcapital/server/lib/Transformer/Transformer';
+import Project from '@bigcapital/server/models/Project';
+import { formatNumber } from '@bigcapital/server/utils';
 
 export class ProjectTransformer extends Transformer {
   /**

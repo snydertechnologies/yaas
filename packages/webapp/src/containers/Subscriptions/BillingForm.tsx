@@ -1,17 +1,17 @@
+import { Alert, DashboardInsider, If, T } from '@bigcapital/webapp/components';
+import { Form, Formik } from 'formik';
 // @ts-nocheck
 import React, { useEffect } from 'react';
 import intl from 'react-intl-universal';
-import { Formik, Form } from 'formik';
-import { DashboardInsider, If, Alert, T } from '@/components';
 
-import '@/style/pages/Billing/BillingPage.scss';
+import '@bigcapital/webapp/style/pages/Billing/BillingPage.scss';
 
-import { compose } from '@/utils';
+import { compose } from '@bigcapital/webapp/utils';
 import { MasterBillingTabs } from './SubscriptionTabs';
 import { getBillingFormValidationSchema } from './utils';
 
+import withDashboardActions from '@bigcapital/webapp/containers/Dashboard/withDashboardActions';
 import withBillingActions from './withBillingActions';
-import withDashboardActions from '@/containers/Dashboard/withDashboardActions';
 import withSubscriptionPlansActions from './withSubscriptionPlansActions';
 import withSubscriptions from './withSubscriptions';
 

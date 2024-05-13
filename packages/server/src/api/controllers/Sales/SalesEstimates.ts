@@ -1,10 +1,10 @@
-import BaseController from '@/api/controllers/BaseController';
-import CheckPolicies from '@/api/middleware/CheckPolicies';
-import asyncMiddleware from '@/api/middleware/asyncMiddleware';
-import { ServiceError } from '@/exceptions';
-import { AbilitySubject, ISaleEstimateDTO, SaleEstimateAction, SaleEstimateMailOptionsDTO } from '@/interfaces';
-import DynamicListingService from '@/services/DynamicListing/DynamicListService';
-import { SaleEstimatesApplication } from '@/services/Sales/Estimates/SaleEstimatesApplication';
+import BaseController from '@bigcapital/server/api/controllers/BaseController';
+import CheckPolicies from '@bigcapital/server/api/middleware/CheckPolicies';
+import asyncMiddleware from '@bigcapital/server/api/middleware/asyncMiddleware';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { AbilitySubject, ISaleEstimateDTO, SaleEstimateAction, SaleEstimateMailOptionsDTO } from '@bigcapital/server/interfaces';
+import DynamicListingService from '@bigcapital/server/services/DynamicListing/DynamicListService';
+import { SaleEstimatesApplication } from '@bigcapital/server/services/Sales/Estimates/SaleEstimatesApplication';
 import { NextFunction, Request, Response, Router } from 'express';
 import { body, check, param, query } from 'express-validator';
 import { Inject, Service } from 'typedi';

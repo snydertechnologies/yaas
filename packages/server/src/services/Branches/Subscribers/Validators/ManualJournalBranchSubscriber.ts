@@ -1,6 +1,6 @@
-import { Features, IManualJournalCreatingPayload, IManualJournalEditingPayload } from '@/interfaces';
-import { FeaturesManager } from '@/services/Features/FeaturesManager';
-import events from '@/subscribers/events';
+import { Features, IManualJournalCreatingPayload, IManualJournalEditingPayload } from '@bigcapital/server/interfaces';
+import { FeaturesManager } from '@bigcapital/server/services/Features/FeaturesManager';
+import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 import { ManualJournalBranchesValidator } from '../../Integrations/ManualJournals/ManualJournalsBranchesValidator';
 

@@ -1,7 +1,7 @@
-import { ServiceError } from '@/exceptions';
-import { ISaleEstimate } from '@/interfaces';
-import { SaleEstimate } from '@/models';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { ISaleEstimate } from '@bigcapital/server/interfaces';
+import { SaleEstimate } from '@bigcapital/server/models';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject, Service } from 'typedi';
 import { ERRORS } from './constants';
 

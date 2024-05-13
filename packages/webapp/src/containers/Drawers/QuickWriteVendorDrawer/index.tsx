@@ -1,9 +1,9 @@
+import * as R from 'ramda';
 // @ts-nocheck
 import React from 'react';
-import * as R from 'ramda';
 
-import { Drawer, DrawerSuspense } from '@/components';
-import withDrawers from '@/containers/Drawer/withDrawers';
+import { Drawer, DrawerSuspense } from '@bigcapital/webapp/components';
+import withDrawers from '@bigcapital/webapp/containers/Drawer/withDrawers';
 
 const QuickWriteVendorDrawerContent = React.lazy(() => import('./QuickWriteVendorDrawerContent'));
 

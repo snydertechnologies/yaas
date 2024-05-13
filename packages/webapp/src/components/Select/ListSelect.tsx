@@ -1,10 +1,10 @@
-// @ts-nocheck
-import React, { useState, useMemo, useEffect } from 'react';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
 import { Button, MenuItem } from '@blueprintjs/core';
 import { Select } from '@blueprintjs/select';
-import { FormattedMessage as T } from '../FormattedMessage';
 import classNames from 'classnames';
-import { CLASSES } from '@/constants/classes';
+// @ts-nocheck
+import React, { useState, useMemo, useEffect } from 'react';
+import { FormattedMessage as T } from '../FormattedMessage';
 
 export function ListSelect({
   buttonProps,

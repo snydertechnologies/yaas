@@ -1,30 +1,30 @@
+import { Intent } from '@blueprintjs/core';
+import classNames from 'classnames';
+import { Form, Formik } from 'formik';
+import { isEmpty, omit } from 'lodash';
+import * as R from 'ramda';
 // @ts-nocheck
 import React, { useMemo } from 'react';
-import { Formik, Form } from 'formik';
-import { Intent } from '@blueprintjs/core';
 import intl from 'react-intl-universal';
-import * as R from 'ramda';
-import { isEmpty, omit } from 'lodash';
-import classNames from 'classnames';
 import { useHistory } from 'react-router-dom';
 
-import { CLASSES } from '@/constants/classes';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
 import { CreateJournalSchema, EditJournalSchema } from './MakeJournalEntries.schema';
-import { useMakeJournalFormContext } from './MakeJournalProvider';
-import MakeJournalEntriesHeader from './MakeJournalEntriesHeader';
-import MakeJournalFormFloatingActions from './MakeJournalFormFloatingActions';
 import MakeJournalEntriesField from './MakeJournalEntriesField';
-import MakeJournalFormFooter from './MakeJournalFormFooter';
+import MakeJournalEntriesHeader from './MakeJournalEntriesHeader';
 import MakeJournalFormDialogs from './MakeJournalFormDialogs';
+import MakeJournalFormFloatingActions from './MakeJournalFormFloatingActions';
+import MakeJournalFormFooter from './MakeJournalFormFooter';
 import MakeJournalFormTopBar from './MakeJournalFormTopBar';
+import { useMakeJournalFormContext } from './MakeJournalProvider';
 
-import withSettings from '@/containers/Settings/withSettings';
-import withCurrentOrganization from '@/containers/Organization/withCurrentOrganization';
+import withCurrentOrganization from '@bigcapital/webapp/containers/Organization/withCurrentOrganization';
+import withSettings from '@bigcapital/webapp/containers/Settings/withSettings';
 
-import { AppToaster } from '@/components';
-import { compose, orderingLinesIndexes, transactionNumber } from '@/utils';
-import { transformErrors, transformToEditForm, defaultManualJournal } from './utils';
+import { AppToaster } from '@bigcapital/webapp/components';
+import { compose, orderingLinesIndexes, transactionNumber } from '@bigcapital/webapp/utils';
 import { JournalSyncIncrementSettingsToForm } from './components';
+import { defaultManualJournal, transformErrors, transformToEditForm } from './utils';
 
 /**
  * Journal entries form.

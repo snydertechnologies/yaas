@@ -1,11 +1,11 @@
 // @ts-nocheck
 import React from 'react';
 import intl from 'react-intl-universal';
-import { DrawerHeaderContent, DrawerLoading } from '@/components';
-import { useBill, useBillLocatedLandedCost } from '@/hooks/query';
-import { useFeatureCan } from '@/hooks/state';
-import { Features } from '@/constants';
-import { DRAWERS } from '@/constants/drawers';
+import { DrawerHeaderContent, DrawerLoading } from '@bigcapital/webapp/components';
+import { useBill, useBillLocatedLandedCost } from '@bigcapital/webapp/hooks/query';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
+import { Features } from '@bigcapital/webapp/constants';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
 
 const BillDrawerContext = React.createContext();
 

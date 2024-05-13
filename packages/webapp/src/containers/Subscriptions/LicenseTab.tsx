@@ -1,11 +1,11 @@
+import { FormattedMessage as T } from '@bigcapital/webapp/components';
+import { compose } from '@bigcapital/webapp/utils';
+import { Button, Intent } from '@blueprintjs/core';
+import { useFormikContext } from 'formik';
 // @ts-nocheck
 import React from 'react';
-import { Intent, Button } from '@blueprintjs/core';
-import { useFormikContext } from 'formik';
-import { FormattedMessage as T } from '@/components';
-import { compose } from '@/utils';
 
-import withDialogActions from '@/containers/Dialog/withDialogActions';
+import withDialogActions from '@bigcapital/webapp/containers/Dialog/withDialogActions';
 
 /**
  * Payment via license code tab.

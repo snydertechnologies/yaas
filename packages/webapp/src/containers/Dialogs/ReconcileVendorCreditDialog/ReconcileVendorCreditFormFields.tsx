@@ -1,15 +1,15 @@
+import { Classes } from '@blueprintjs/core';
+import { FastField, useFormikContext } from 'formik';
+import { subtract } from 'lodash';
 // @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
-import { FastField, useFormikContext } from 'formik';
-import { Classes } from '@blueprintjs/core';
-import { subtract } from 'lodash';
 
-import { getEntriesTotal } from '@/containers/Entries/utils';
-import { T, TotalLines, TotalLine, TotalLineBorderStyle, TotalLineTextStyle } from '@/components';
+import { T, TotalLine, TotalLineBorderStyle, TotalLineTextStyle, TotalLines } from '@bigcapital/webapp/components';
+import { getEntriesTotal } from '@bigcapital/webapp/containers/Entries/utils';
+import { formattedAmount } from '@bigcapital/webapp/utils';
 import ReconcileVendorCreditEntriesTable from './ReconcileVendorCreditEntriesTable';
 import { useReconcileVendorCreditContext } from './ReconcileVendorCreditFormProvider';
-import { formattedAmount } from '@/utils';
 
 export default function ReconcileVendorCreditFormFields() {
   const {

@@ -1,8 +1,8 @@
-import { TaxPayableAccount } from '@/database/seeds/data/accounts';
-import type { IAccount } from '@/interfaces';
-import TenantRepository from '@/repositories/TenantRepository';
+import { TaxPayableAccount } from '@bigcapital/server/database/seeds/data/accounts';
+import type { IAccount } from '@bigcapital/server/interfaces';
+import { Account } from '@bigcapital/server/models';
+import TenantRepository from '@bigcapital/server/repositories/TenantRepository';
 import type { Knex } from 'knex';
-import { Account } from 'models';
 
 export default class AccountRepository extends TenantRepository {
   /**

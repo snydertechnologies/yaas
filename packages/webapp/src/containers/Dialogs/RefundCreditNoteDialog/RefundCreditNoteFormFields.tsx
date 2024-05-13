@@ -1,35 +1,35 @@
-// @ts-nocheck
-import React from 'react';
-import styled from 'styled-components';
-import intl from 'react-intl-universal';
-import { isEqual } from 'lodash';
-import { FastField, ErrorMessage, useFormikContext } from 'formik';
-import { Classes, FormGroup, InputGroup, TextArea, Position, ControlGroup } from '@blueprintjs/core';
-import classNames from 'classnames';
-import { CLASSES, Features } from '@/constants';
-import { DateInput } from '@blueprintjs/datetime';
 import {
-  Icon,
-  Col,
-  Row,
-  If,
-  FieldRequiredHint,
   AccountsSuggestField,
-  InputPrependText,
-  MoneyInputGroup,
-  FormattedMessage as T,
-  ExchangeRateMutedField,
   BranchSelect,
   BranchSelectButton,
+  Col,
+  ExchangeRateMutedField,
   FeatureCan,
-} from '@/components';
-import { inputIntent, momentFormatter, tansformDateValue, handleDateChange, compose } from '@/utils';
-import { useAutofocus } from '@/hooks';
-import { ACCOUNT_TYPE } from '@/constants/accountTypes';
-import { useSetPrimaryBranchToForm } from './utils';
+  FieldRequiredHint,
+  Icon,
+  If,
+  InputPrependText,
+  MoneyInputGroup,
+  Row,
+  FormattedMessage as T,
+} from '@bigcapital/webapp/components';
+import { CLASSES, Features } from '@bigcapital/webapp/constants';
+import { ACCOUNT_TYPE } from '@bigcapital/webapp/constants/accountTypes';
+import { useAutofocus } from '@bigcapital/webapp/hooks';
+import { compose, handleDateChange, inputIntent, momentFormatter, tansformDateValue } from '@bigcapital/webapp/utils';
+import { Classes, ControlGroup, FormGroup, InputGroup, Position, TextArea } from '@blueprintjs/core';
+import { DateInput } from '@blueprintjs/datetime';
+import classNames from 'classnames';
+import { ErrorMessage, FastField, useFormikContext } from 'formik';
+import { isEqual } from 'lodash';
+// @ts-nocheck
+import React from 'react';
+import intl from 'react-intl-universal';
+import styled from 'styled-components';
 import { useRefundCreditNoteContext } from './RefundCreditNoteFormProvider';
+import { useSetPrimaryBranchToForm } from './utils';
 
-import withCurrentOrganization from '@/containers/Organization/withCurrentOrganization';
+import withCurrentOrganization from '@bigcapital/webapp/containers/Organization/withCurrentOrganization';
 
 /**
  * Refund credit note form fields.

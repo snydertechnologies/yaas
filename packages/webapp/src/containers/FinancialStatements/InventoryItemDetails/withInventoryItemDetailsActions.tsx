@@ -1,6 +1,6 @@
+import { toggleInventoryItemDetailsFilterDrawer } from '@bigcapital/webapp/store/financialStatement/financialStatements.actions';
 // @ts-nocheck
 import { connect } from 'react-redux';
-import { toggleInventoryItemDetailsFilterDrawer } from '@/store/financialStatement/financialStatements.actions';
 
 const mapActionsToProps = (dispatch) => ({
   toggleInventoryItemDetailsFilterDrawer: (toggle) => dispatch(toggleInventoryItemDetailsFilterDrawer(toggle)),

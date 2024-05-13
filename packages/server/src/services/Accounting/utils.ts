@@ -1,4 +1,4 @@
-import { IAccountTransaction, ILedgerEntry } from '@/interfaces';
+import { IAccountTransaction, ILedgerEntry } from '@bigcapital/server/interfaces';
 
 export const transformLedgerEntryToTransaction = (entry: ILedgerEntry): IAccountTransaction => {
   return {

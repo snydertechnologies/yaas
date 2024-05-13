@@ -1,13 +1,13 @@
+import * as R from 'ramda';
 // @ts-nocheck
 import React from 'react';
-import * as R from 'ramda';
 
-import InventoryValuationTable from './InventoryValuationTable';
 import { useInventoryValuationContext } from './InventoryValuationProvider';
+import InventoryValuationTable from './InventoryValuationTable';
 
+import { FinancialSheetSkeleton } from '@bigcapital/webapp/components/FinancialSheet';
+import withCurrentOrganization from '@bigcapital/webapp/containers/Organization/withCurrentOrganization';
 import { FinancialReportBody } from '../FinancialReportPage';
-import { FinancialSheetSkeleton } from '@/components/FinancialSheet';
-import withCurrentOrganization from '@/containers/Organization/withCurrentOrganization';
 
 /**
  * Inventory valuation body.

@@ -1,19 +1,19 @@
-// @ts-nocheck
-import React, { createContext, useState } from 'react';
-import { Features } from '@/constants';
-import { useFeatureCan } from '@/hooks/state';
-import { DashboardInsider } from '@/components';
+import { DashboardInsider } from '@bigcapital/webapp/components';
+import { Features } from '@bigcapital/webapp/constants';
+import { useProjects } from '@bigcapital/webapp/containers/Projects/hooks';
 import {
   useAccounts,
   useAutoCompleteContacts,
-  useCurrencies,
-  useJournal,
-  useCreateJournal,
-  useEditJournal,
   useBranches,
+  useCreateJournal,
+  useCurrencies,
+  useEditJournal,
+  useJournal,
   useSettingsManualJournals,
-} from '@/hooks/query';
-import { useProjects } from '@/containers/Projects/hooks';
+} from '@bigcapital/webapp/hooks/query';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
+// @ts-nocheck
+import React, { createContext, useState } from 'react';
 
 const MakeJournalFormContext = createContext();
 

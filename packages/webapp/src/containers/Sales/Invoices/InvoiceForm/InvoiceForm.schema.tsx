@@ -1,10 +1,10 @@
-// @ts-nocheck
-import * as Yup from 'yup';
+import { DATATYPES_LENGTH } from '@bigcapital/webapp/constants/dataTypes';
+import { TaxType } from '@bigcapital/webapp/interfaces/TaxRates';
+import { isBlank } from '@bigcapital/webapp/utils';
 import moment from 'moment';
 import intl from 'react-intl-universal';
-import { DATATYPES_LENGTH } from '@/constants/dataTypes';
-import { isBlank } from '@/utils';
-import { TaxType } from '@/interfaces/TaxRates';
+// @ts-nocheck
+import * as Yup from 'yup';
 
 const getSchema = () =>
   Yup.object().shape({

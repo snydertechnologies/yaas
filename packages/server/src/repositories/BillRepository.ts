@@ -1,5 +1,5 @@
-import TenantRepository from '@/repositories/TenantRepository';
-import { Bill } from 'models';
+import { Bill } from '@bigcapital/server/models';
+import TenantRepository from '@bigcapital/server/repositories/TenantRepository';
 import moment from 'moment';
 
 export default class BillRepository extends TenantRepository {

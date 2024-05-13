@@ -1,6 +1,6 @@
-import { IBillPaymentEntryDTO } from '@/interfaces';
-import HasTenancyService from '@/services/Tenancy/TenancyService';
-import { entriesAmountDiff } from '@/utils';
+import { IBillPaymentEntryDTO } from '@bigcapital/server/interfaces';
+import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
+import { entriesAmountDiff } from '@bigcapital/server/utils';
 import { Knex } from 'knex';
 import { Inject, Service } from 'typedi';
 

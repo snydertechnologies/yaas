@@ -1,11 +1,11 @@
+import classNames from 'classnames';
 // @ts-nocheck
 import React, { lazy } from 'react';
-import classNames from 'classnames';
 
-import { Dialog, DialogSuspense } from '@/components';
-import withDialogRedux from '@/components/DialogReduxConnect';
-import { CLASSES } from '@/constants/classes';
-import { compose } from '@/utils';
+import { Dialog, DialogSuspense } from '@bigcapital/webapp/components';
+import withDialogRedux from '@bigcapital/webapp/components/DialogReduxConnect';
+import { CLASSES } from '@bigcapital/webapp/constants/classes';
+import { compose } from '@bigcapital/webapp/utils';
 
 // Lazy loading the content.
 const InventoryValuationPdfDialogContent = lazy(() => import('./InventoryValuationSheetPdfDialogContent'));

@@ -1,7 +1,7 @@
+import { DialogContent } from '@bigcapital/webapp/components';
+import { useSettingsWarehouseTransfers } from '@bigcapital/webapp/hooks/query';
 // @ts-nocheck
 import React, { createContext } from 'react';
-import { DialogContent } from '@/components';
-import { useSettingsWarehouseTransfers } from '@/hooks/query';
 
 const WarehouseTransferNumberDilaogContext = createContext();
 

@@ -1,19 +1,29 @@
-// @ts-nocheck
-import React from 'react';
+import { AppToaster } from '@bigcapital/webapp/components';
+import { ERROR } from '@bigcapital/webapp/constants/errors';
+import {
+  aggregateItemEntriesTaxRates,
+  assignEntriesTaxAmount,
+  getEntriesTotal,
+} from '@bigcapital/webapp/containers/Entries/utils';
+import { ensureEntriesHaveEmptyLine, updateItemsEntriesTotal } from '@bigcapital/webapp/containers/Entries/utils';
+import { useCurrentOrganization } from '@bigcapital/webapp/hooks/state';
+import { TaxType } from '@bigcapital/webapp/interfaces/TaxRates';
+import {
+  compose,
+  defaultFastFieldShouldUpdate,
+  formattedAmount,
+  repeatValue,
+  transformToForm,
+} from '@bigcapital/webapp/utils';
+import { Intent } from '@blueprintjs/core';
 import { useFormikContext } from 'formik';
-import intl from 'react-intl-universal';
+import { first, omit, round, sumBy } from 'lodash';
 import moment from 'moment';
 import * as R from 'ramda';
-import { Intent } from '@blueprintjs/core';
-import { omit, first, sumBy, round } from 'lodash';
-import { compose, transformToForm, repeatValue, formattedAmount, defaultFastFieldShouldUpdate } from '@/utils';
-import { ERROR } from '@/constants/errors';
-import { AppToaster } from '@/components';
-import { useCurrentOrganization } from '@/hooks/state';
-import { aggregateItemEntriesTaxRates, assignEntriesTaxAmount, getEntriesTotal } from '@/containers/Entries/utils';
+// @ts-nocheck
+import React from 'react';
+import intl from 'react-intl-universal';
 import { useInvoiceFormContext } from './InvoiceFormProvider';
-import { updateItemsEntriesTotal, ensureEntriesHaveEmptyLine } from '@/containers/Entries/utils';
-import { TaxType } from '@/interfaces/TaxRates';
 
 export const MIN_LINES_NUMBER = 1;
 

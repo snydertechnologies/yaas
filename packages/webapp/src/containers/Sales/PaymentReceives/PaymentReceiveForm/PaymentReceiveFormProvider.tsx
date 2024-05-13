@@ -1,18 +1,18 @@
-// @ts-nocheck
-import React, { createContext, useContext } from 'react';
-import { Features } from '@/constants';
-import { useFeatureCan } from '@/hooks/state';
-import { DashboardInsider } from '@/components';
-import { useProjects } from '@/containers/Projects/hooks';
+import { DashboardInsider } from '@bigcapital/webapp/components';
+import { Features } from '@bigcapital/webapp/constants';
+import { useProjects } from '@bigcapital/webapp/containers/Projects/hooks';
 import {
-  useSettingsPaymentReceives,
-  usePaymentReceiveEditPage,
   useAccounts,
-  useCustomers,
   useBranches,
   useCreatePaymentReceive,
+  useCustomers,
   useEditPaymentReceive,
-} from '@/hooks/query';
+  usePaymentReceiveEditPage,
+  useSettingsPaymentReceives,
+} from '@bigcapital/webapp/hooks/query';
+import { useFeatureCan } from '@bigcapital/webapp/hooks/state';
+// @ts-nocheck
+import React, { createContext, useContext } from 'react';
 
 // Payment receive form context.
 const PaymentReceiveFormContext = createContext();

@@ -1,8 +1,8 @@
-import BaseController from '@/api/controllers/BaseController';
-import { FeatureActivationGuard } from '@/api/middleware/FeatureActivationGuard';
-import { ServiceError } from '@/exceptions';
-import { Features, ICreateBranchDTO, IEditBranchDTO } from '@/interfaces';
-import { BranchesApplication } from '@/services/Branches/BranchesApplication';
+import BaseController from '@bigcapital/server/api/controllers/BaseController';
+import { FeatureActivationGuard } from '@bigcapital/server/api/middleware/FeatureActivationGuard';
+import { ServiceError } from '@bigcapital/server/exceptions';
+import { Features, ICreateBranchDTO, IEditBranchDTO } from '@bigcapital/server/interfaces';
+import { BranchesApplication } from '@bigcapital/server/services/Branches/BranchesApplication';
 import { NextFunction, Request, Response, Router } from 'express';
 import { check, param } from 'express-validator';
 import { Inject, Service } from 'typedi';

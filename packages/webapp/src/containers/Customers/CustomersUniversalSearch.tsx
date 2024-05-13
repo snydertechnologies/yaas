@@ -1,11 +1,11 @@
+import { AbilitySubject, CustomerAction } from '@bigcapital/webapp/constants/abilityOption';
 // @ts-nocheck
 import intl from 'react-intl-universal';
-import { AbilitySubject, CustomerAction } from '@/constants/abilityOption';
 
-import withDrawerActions from '@/containers/Drawer/withDrawerActions';
+import withDrawerActions from '@bigcapital/webapp/containers/Drawer/withDrawerActions';
 
-import { RESOURCES_TYPES } from '@/constants/resourcesTypes';
-import { DRAWERS } from '@/constants/drawers';
+import { DRAWERS } from '@bigcapital/webapp/constants/drawers';
+import { RESOURCES_TYPES } from '@bigcapital/webapp/constants/resourcesTypes';
 
 function CustomerUniversalSearchSelectComponent({
   resourceType,

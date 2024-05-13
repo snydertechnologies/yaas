@@ -1,4 +1,4 @@
-import TenantModel from 'models/TenantModel';
+import TenantModel from '@bigcapital/server/models/TenantModel';
 import { Model } from 'objection';
 
 export default class InventoryAdjustmentEntry extends TenantModel {
@@ -13,8 +13,8 @@ export default class InventoryAdjustmentEntry extends TenantModel {
    * Relationship mapping.
    */
   static get relationMappings() {
-    const InventoryAdjustment = require('models/InventoryAdjustment');
-    const Item = require('models/Item');
+    const InventoryAdjustment = require('@bigcapital/server/models/InventoryAdjustment');
+    const Item = require('@bigcapital/server/models/Item');
 
     return {
       inventoryAdjustment: {

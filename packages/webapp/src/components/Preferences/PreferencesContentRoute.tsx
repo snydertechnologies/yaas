@@ -1,7 +1,7 @@
+import preferencesRoutes from '@bigcapital/webapp/routes/preferences';
 // @ts-nocheck
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import preferencesRoutes from '@/routes/preferences';
 
 export default function DashboardContentRoute() {
   return (

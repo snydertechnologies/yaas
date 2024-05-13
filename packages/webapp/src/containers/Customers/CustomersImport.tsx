@@ -1,7 +1,7 @@
 // @ts-nocheck
-import { DashboardInsider } from '@/components';
-import { ImportView } from '../Import/ImportView';
+import { DashboardInsider } from '@bigcapital/webapp/components';
 import { useHistory } from 'react-router-dom';
+import { ImportView } from '../Import/ImportView';
 
 export default function CustomersImport() {
   const history = useHistory();

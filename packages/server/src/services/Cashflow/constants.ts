@@ -1,4 +1,4 @@
-import { ACCOUNT_TYPE } from '@/data/AccountTypes';
+import { ACCOUNT_TYPE } from '@bigcapital/server/data/AccountTypes';
 
 export const ERRORS = {
   CASHFLOW_TRANSACTION_TYPE_INVALID: 'CASHFLOW_TRANSACTION_TYPE_INVALID',
