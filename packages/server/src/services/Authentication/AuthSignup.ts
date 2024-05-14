@@ -1,5 +1,5 @@
 import crypto from 'crypto';
-import {
+import type {
   IAuthSignedUpEventPayload,
   IAuthSigningUpEventPayload,
   IRegisterDTO,
