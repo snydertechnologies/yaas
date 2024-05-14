@@ -1,7 +1,9 @@
-import { edgeSharedDomain } from './bigcapital-libs-backend';
+import { mylib } from './mylib';
 
-describe('edgeSharedDomain', () => {
-  it('should work', () => {
-    expect(edgeSharedDomain()).toEqual('bigcapital-libs-backend');
+import { describe, expect, test } from 'bun:test';
+
+describe('mylib', () => {
+  test('should work', () => {
+    expect(mylib()).toEqual('mylib');
   });
 });

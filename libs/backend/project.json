@@ -6,11 +6,12 @@
   "tags": ["stack:edge", "lang:typescript", "framework:agnostic", "ecosystem:shared", "domain:shared", "type:domain"],
   "targets": {
     "build": {
-      "executor": "@nx/js:swc",
+      "executor": "@nx-bun/nx:build",
       "options": {
-        "assets": ["libs/backend/*.md"],
-        "main": "libs/backend/src/index.ts",
+        "bun": true,
+        "entrypoints": ["libs/backend/src/index.ts"],
         "outputPath": "dist/libs/backend",
+        "smol": false,
         "tsConfig": "libs/backend/tsconfig.lib.json"
       },
       "outputs": ["{options.outputPath}"]
@@ -18,30 +19,24 @@
     "format": {
       "executor": "nx:run-commands",
       "options": {
-        "commands": ["cd libs/backend && bun --bun format"],
+        "commands": ["cd libs/backend && bunx @biomejs/biome format --write ./"],
         "parallel": false
       }
     },
     "lint": {
       "executor": "nx:run-commands",
       "options": {
-        "commands": ["cd libs/backend && bun --bun lint"],
-        "parallel": false
-      }
-    },
-    "install": {
-      "executor": "nx:run-commands",
-      "options": {
-        "commands": ["cd libs/backend && bun i"],
+        "commands": ["cd libs/backend && bunx @biomejs/biome lint --apply ./"],
         "parallel": false
       }
     },
     "test": {
-      "executor": "@nx/jest:jest",
+      "executor": "@nx-bun/nx:test",
       "options": {
-        "jestConfig": "libs/backend/jest.config.ts"
-      },
-      "outputs": ["{workspaceRoot}/coverage/libs/backend"]
+        "bail": true,
+        "bun": false,
+        "smol": false
+      }
     }
   }
 }

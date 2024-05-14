@@ -20,8 +20,6 @@
       "@public/*": ["packages/webapp/public/*"],
       "@bigcapital/libs-backend": ["libs/backend/src/index.ts"]
     },
-    "types": [
-      "bun-types" // add Bun global
-    ]
+    "types": ["bun-types"]
   }
 }

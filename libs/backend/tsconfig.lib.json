@@ -1,10 +1,17 @@
 {
   "compilerOptions": {
     "declaration": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ES2022",
+    "moduleResolution": "node",
     "outDir": "../../dist/out-tsc",
-    "types": []
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ES2021",
+    "types": ["bun-types"]
   },
-  "exclude": ["jest.config.ts", "**/*.spec.ts", "**/*.test.ts"],
+  "exclude": ["jest.config.ts", "src/**/*.spec.ts", "src/**/*.test.ts"],
   "extends": "./tsconfig.json",
-  "include": ["**/*.ts"]
+  "include": ["src/**/*.ts"]
 }
