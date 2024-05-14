@@ -1,4 +1,4 @@
-import { IItem, IItemCreateDTO, IItemEditDTO, IItemsFilter } from '@bigcapital/server/interfaces';
+import { IItem, IItemCreateDTO, IItemEditDTO, IItemsFilter } from '@bigcapital/libs-backend';
 import { Inject, Service } from 'typedi';
 import { ActivateItem } from './ActivateItem';
 import { CreateItem } from './CreateItem';

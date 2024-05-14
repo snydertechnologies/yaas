@@ -2,11 +2,11 @@ import { NextFunction, Request, Response, Router } from 'express';
 import { ValidationChain, check, query } from 'express-validator';
 import { Inject, Service } from 'typedi';
 
+import { AbilitySubject, IVendorEditDTO, IVendorNewDTO, IVendorsFilter, VendorAction } from '@bigcapital/libs-backend';
 import ContactsController from '@bigcapital/server/api/controllers/Contacts/Contacts';
 import CheckPolicies from '@bigcapital/server/api/middleware/CheckPolicies';
 import asyncMiddleware from '@bigcapital/server/api/middleware/asyncMiddleware';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { AbilitySubject, IVendorEditDTO, IVendorNewDTO, IVendorsFilter, VendorAction } from '@bigcapital/server/interfaces';
 import { VendorsApplication } from '@bigcapital/server/services/Contacts/Vendors/VendorsApplication';
 
 @Service()

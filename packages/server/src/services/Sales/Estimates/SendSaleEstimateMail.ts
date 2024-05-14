@@ -1,4 +1,8 @@
-import { ISaleEstimateMailPresendEvent, SaleEstimateMailOptions, SaleEstimateMailOptionsDTO } from '@bigcapital/server/interfaces';
+import {
+  ISaleEstimateMailPresendEvent,
+  SaleEstimateMailOptions,
+  SaleEstimateMailOptionsDTO,
+} from '@bigcapital/libs-backend';
 import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import Mail from '@bigcapital/server/lib/Mail';
 import { ContactMailNotification } from '@bigcapital/server/services/MailNotification/ContactMailNotification';

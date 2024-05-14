@@ -1,4 +1,4 @@
-import { EchangeRateLatestPOJO, ExchangeRateLatestDTO } from '@bigcapital/server/interfaces';
+import { EchangeRateLatestPOJO, ExchangeRateLatestDTO } from '@bigcapital/libs-backend';
 import { Inject } from 'typedi';
 import { ExchangeRatesService } from './ExchangeRatesService';
 

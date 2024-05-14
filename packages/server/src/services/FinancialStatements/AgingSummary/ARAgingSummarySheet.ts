@@ -7,7 +7,7 @@ import {
   IAgingPeriod,
   ICustomer,
   ISaleInvoice,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { Dictionary, groupBy, isEmpty, sum } from 'lodash';
 import * as R from 'ramda';
 import { allPassedConditionsPass } from '../../../utils';

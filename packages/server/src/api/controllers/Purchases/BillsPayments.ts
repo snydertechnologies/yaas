@@ -1,8 +1,8 @@
+import { AbilitySubject, IPaymentMadeAction } from '@bigcapital/libs-backend';
 import BaseController from '@bigcapital/server/api/controllers/BaseController';
 import CheckPolicies from '@bigcapital/server/api/middleware/CheckPolicies';
 import asyncMiddleware from '@bigcapital/server/api/middleware/asyncMiddleware';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { AbilitySubject, IPaymentMadeAction } from '@bigcapital/server/interfaces';
 import DynamicListingService from '@bigcapital/server/services/DynamicListing/DynamicListService';
 import { BillPaymentsApplication } from '@bigcapital/server/services/Purchases/BillPayments/BillPaymentsApplication';
 import BillPaymentsPages from '@bigcapital/server/services/Purchases/BillPayments/BillPaymentsPages';

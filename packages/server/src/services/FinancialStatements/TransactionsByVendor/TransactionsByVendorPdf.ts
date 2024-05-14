@@ -1,4 +1,4 @@
-import { ITransactionsByVendorsFilter } from '@bigcapital/server/interfaces';
+import { ITransactionsByVendorsFilter } from '@bigcapital/libs-backend';
 import { Inject, Service } from 'typedi';
 import { TableSheetPdf } from '../TableSheetPdf';
 import { TransactionsByVendorTableInjectable } from './TransactionsByVendorTableInjectable';

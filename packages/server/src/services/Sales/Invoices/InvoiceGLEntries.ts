@@ -1,4 +1,4 @@
-import { AccountNormal, IItemEntry, ILedger, ILedgerEntry, ISaleInvoice } from '@bigcapital/server/interfaces';
+import { AccountNormal, IItemEntry, ILedger, ILedgerEntry, ISaleInvoice } from '@bigcapital/libs-backend';
 import Ledger from '@bigcapital/server/services/Accounting/Ledger';
 import LedgerStorageService from '@bigcapital/server/services/Accounting/LedgerStorageService';
 import ItemsEntriesService from '@bigcapital/server/services/Items/ItemsEntriesService';

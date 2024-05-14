@@ -1,4 +1,4 @@
-import { ITableRow } from '@bigcapital/server/interfaces';
+import { ITableRow } from '@bigcapital/libs-backend';
 import { flatNestedTree } from '@bigcapital/server/utils/deepdash';
 import { repeat } from 'lodash';
 

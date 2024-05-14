@@ -1,5 +1,5 @@
+import { IModel } from '@bigcapital/libs-backend';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { IModel } from '@bigcapital/server/interfaces';
 import DynamicFilterViews from '@bigcapital/server/lib/DynamicFilter/DynamicFilterViews';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject, Service } from 'typedi';

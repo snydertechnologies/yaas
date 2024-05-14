@@ -4,7 +4,7 @@ import {
   ISaleInvoiceCreateDTO,
   ISaleInvoiceEditDTO,
   ITenantUser,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { ItemEntry } from '@bigcapital/server/models';
 import { BranchTransactionDTOTransform } from '@bigcapital/server/services/Branches/Integrations/BranchTransactionDTOTransform';
 import ItemsEntriesService from '@bigcapital/server/services/Items/ItemsEntriesService';

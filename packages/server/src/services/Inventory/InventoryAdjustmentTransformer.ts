@@ -1,4 +1,4 @@
-import { IInventoryAdjustment } from '@bigcapital/server/interfaces';
+import { IInventoryAdjustment } from '@bigcapital/libs-backend';
 import { Transformer } from '@bigcapital/server/lib/Transformer/Transformer';
 
 export default class InventoryAdjustmentTransformer extends Transformer {

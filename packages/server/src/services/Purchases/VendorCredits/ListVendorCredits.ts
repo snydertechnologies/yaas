@@ -1,4 +1,4 @@
-import { IVendorCreditsQueryDTO } from '@bigcapital/server/interfaces';
+import { IVendorCreditsQueryDTO } from '@bigcapital/libs-backend';
 import { TransformerInjectable } from '@bigcapital/server/lib/Transformer/TransformerInjectable';
 import DynamicListingService from '@bigcapital/server/services/DynamicListing/DynamicListService';
 import * as R from 'ramda';

@@ -1,4 +1,4 @@
-import { Features, IManualJournalCreatingPayload, IManualJournalEditingPayload } from '@bigcapital/server/interfaces';
+import { Features, IManualJournalCreatingPayload, IManualJournalEditingPayload } from '@bigcapital/libs-backend';
 import { FeaturesManager } from '@bigcapital/server/services/Features/FeaturesManager';
 import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';

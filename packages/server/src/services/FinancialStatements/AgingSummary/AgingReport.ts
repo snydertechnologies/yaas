@@ -1,4 +1,4 @@
-import { IAgingPeriod } from '@bigcapital/server/interfaces';
+import { IAgingPeriod } from '@bigcapital/libs-backend';
 import moment from 'moment';
 import FinancialSheet from '../FinancialSheet';
 

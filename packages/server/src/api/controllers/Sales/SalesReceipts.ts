@@ -1,9 +1,9 @@
+import { AbilitySubject, SaleReceiptAction } from '@bigcapital/libs-backend';
+import { ACCEPT_TYPE } from '@bigcapital/libs-backend';
+import { ISaleReceiptDTO, SaleReceiptMailOptsDTO } from '@bigcapital/libs-backend';
 import CheckPolicies from '@bigcapital/server/api/middleware/CheckPolicies';
 import asyncMiddleware from '@bigcapital/server/api/middleware/asyncMiddleware';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { AbilitySubject, SaleReceiptAction } from '@bigcapital/server/interfaces';
-import { ACCEPT_TYPE } from '@bigcapital/server/interfaces/Http';
-import { ISaleReceiptDTO, SaleReceiptMailOptsDTO } from '@bigcapital/server/interfaces/SaleReceipt';
 import DynamicListingService from '@bigcapital/server/services/DynamicListing/DynamicListService';
 import { SaleReceiptApplication } from '@bigcapital/server/services/Sales/Receipts/SaleReceiptApplication';
 import { NextFunction, Request, Response, Router } from 'express';

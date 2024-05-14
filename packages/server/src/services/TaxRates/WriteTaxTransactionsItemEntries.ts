@@ -1,4 +1,4 @@
-import { IItemEntry, ITaxTransaction } from '@bigcapital/server/interfaces';
+import { IItemEntry, ITaxTransaction } from '@bigcapital/libs-backend';
 import { Knex } from 'knex';
 import { chain, keyBy, sumBy } from 'lodash';
 import { Inject, Service } from 'typedi';

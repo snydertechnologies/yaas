@@ -1,5 +1,5 @@
+import { AbilitySubject, InventoryAdjustmentAction } from '@bigcapital/libs-backend';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { AbilitySubject, InventoryAdjustmentAction } from '@bigcapital/server/interfaces';
 import DynamicListingService from '@bigcapital/server/services/DynamicListing/DynamicListService';
 import InventoryAdjustmentService from '@bigcapital/server/services/Inventory/InventoryAdjustmentService';
 import { NextFunction, Request, Response, Router } from 'express';

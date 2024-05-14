@@ -3,7 +3,7 @@ import {
   ISaleInvoiceDeletedPayload,
   ISaleInvoiceEditedPayload,
   ISaleInvoiceEventDeliveredPayload,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { InvoiceInventoryTransactions } from '@bigcapital/server/services/Sales/Invoices/InvoiceInventoryTransactions';
 import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';

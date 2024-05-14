@@ -1,4 +1,4 @@
-import { ICashFlowStatementMeta, ICashFlowStatementQuery } from '@bigcapital/server/interfaces';
+import { ICashFlowStatementMeta, ICashFlowStatementQuery } from '@bigcapital/libs-backend';
 import moment from 'moment';
 import { Inject, Service } from 'typedi';
 import { FinancialSheetMeta } from '../FinancialSheetMeta';

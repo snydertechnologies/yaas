@@ -1,4 +1,4 @@
-import { IInventoryValuationReportQuery, IInventoryValuationTable } from '@bigcapital/server/interfaces';
+import { IInventoryValuationReportQuery, IInventoryValuationTable } from '@bigcapital/libs-backend';
 import { Inject, Service } from 'typedi';
 import { InventoryValuationSheetService } from './InventoryValuationSheetService';
 import { InventoryValuationSheetTable } from './InventoryValuationSheetTable';

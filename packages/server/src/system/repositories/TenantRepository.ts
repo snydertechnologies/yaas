@@ -1,4 +1,4 @@
-import type { ITenant } from '@bigcapital/server/interfaces';
+import type { ITenant } from '@bigcapital/libs-backend';
 import { Tenant } from '@bigcapital/server/system/models';
 import moment from 'moment';
 import uniqid from 'uniqid';

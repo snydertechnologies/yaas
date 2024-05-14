@@ -1,4 +1,4 @@
-import { ISaleInvoice } from '@bigcapital/server/interfaces';
+import { ISaleInvoice } from '@bigcapital/libs-backend';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject, Service } from 'typedi';
 

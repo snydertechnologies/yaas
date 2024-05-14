@@ -1,4 +1,4 @@
-import { ITenantUserDeletedPayload } from '@bigcapital/server/interfaces';
+import { ITenantUserDeletedPayload } from '@bigcapital/libs-backend';
 import events from '@bigcapital/server/subscribers/events';
 import { SystemUser } from '@bigcapital/server/system/models';
 

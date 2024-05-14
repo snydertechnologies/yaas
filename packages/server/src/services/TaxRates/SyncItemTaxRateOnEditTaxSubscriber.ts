@@ -1,4 +1,4 @@
-import { ITaxRateEditedPayload } from '@bigcapital/server/interfaces';
+import { ITaxRateEditedPayload } from '@bigcapital/libs-backend';
 import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 import { runAfterTransaction } from '../UnitOfWork/TransactionsHooks';

@@ -2,7 +2,7 @@ import {
   ITransactionsByVendorTable,
   ITransactionsByVendorsFilter,
   ITransactionsByVendorsStatement,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { Inject, Service } from 'typedi';
 import { TransactionsByVendorExportInjectable } from './TransactionsByVendorExportInjectable';
 import { TransactionsByVendorsInjectable } from './TransactionsByVendorInjectable';

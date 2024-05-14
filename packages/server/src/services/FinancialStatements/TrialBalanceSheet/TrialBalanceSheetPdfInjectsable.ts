@@ -1,4 +1,4 @@
-import { ITrialBalanceSheetQuery } from '@bigcapital/server/interfaces';
+import { ITrialBalanceSheetQuery } from '@bigcapital/libs-backend';
 import { Inject, Service } from 'typedi';
 import { TableSheetPdf } from '../TableSheetPdf';
 import { TrialBalanceSheetTableInjectable } from './TrialBalanceSheetTableInjectable';

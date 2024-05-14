@@ -1,4 +1,4 @@
-import { IAccountTransaction } from '@bigcapital/server/interfaces';
+import { IAccountTransaction } from '@bigcapital/libs-backend';
 import { Transformer } from '@bigcapital/server/lib/Transformer/Transformer';
 
 export default class AccountTransactionTransformer extends Transformer {

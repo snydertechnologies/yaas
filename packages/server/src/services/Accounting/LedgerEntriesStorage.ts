@@ -1,4 +1,4 @@
-import { ILedger, ILedgerEntry, ISaveLedgerEntryQueuePayload } from '@bigcapital/server/interfaces';
+import { ILedger, ILedgerEntry, ISaveLedgerEntryQueuePayload } from '@bigcapital/libs-backend';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import async from 'async';
 import { Knex } from 'knex';

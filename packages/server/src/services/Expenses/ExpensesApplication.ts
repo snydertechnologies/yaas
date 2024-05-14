@@ -1,4 +1,4 @@
-import { IExpense, IExpenseCreateDTO, IExpenseEditDTO, IExpensesFilter, ISystemUser } from '@bigcapital/server/interfaces';
+import { IExpense, IExpenseCreateDTO, IExpenseEditDTO, IExpensesFilter, ISystemUser } from '@bigcapital/libs-backend';
 import { Inject, Service } from 'typedi';
 import { CreateExpense } from './CRUD/CreateExpense';
 import { DeleteExpense } from './CRUD/DeleteExpense';

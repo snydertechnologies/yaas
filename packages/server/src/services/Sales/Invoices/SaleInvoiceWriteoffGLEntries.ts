@@ -1,4 +1,4 @@
-import { AccountNormal, ILedger, ILedgerEntry, ISaleInvoice } from '@bigcapital/server/interfaces';
+import { AccountNormal, ILedger, ILedgerEntry, ISaleInvoice } from '@bigcapital/libs-backend';
 import Ledger from '@bigcapital/server/services/Accounting/Ledger';
 import { Service } from 'typedi';
 

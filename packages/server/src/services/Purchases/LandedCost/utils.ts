@@ -1,4 +1,4 @@
-import { IBillLandedCostTransactionEntry, IItemEntry } from '@bigcapital/server/interfaces';
+import { IBillLandedCostTransactionEntry, IItemEntry } from '@bigcapital/libs-backend';
 import { transformToMap } from '@bigcapital/server/utils';
 
 export const ERRORS = {

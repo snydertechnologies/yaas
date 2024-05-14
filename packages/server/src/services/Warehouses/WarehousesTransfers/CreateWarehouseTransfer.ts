@@ -5,7 +5,7 @@ import {
   IWarehouseTransferCreate,
   IWarehouseTransferCreated,
   IWarehouseTransferEntryDTO,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import { InventoryItemCostService } from '@bigcapital/server/services/Inventory/InventoryCostsService';
 import ItemsEntriesService from '@bigcapital/server/services/Items/ItemsEntriesService';

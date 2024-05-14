@@ -1,4 +1,4 @@
-import { ILedgerEntry } from '@bigcapital/server/interfaces';
+import { ILedgerEntry } from '@bigcapital/libs-backend';
 import JournalEntry from '@bigcapital/server/services/Accounting/JournalEntry';
 import JournalPoster from '@bigcapital/server/services/Accounting/JournalPoster';
 import Knex from 'knex';

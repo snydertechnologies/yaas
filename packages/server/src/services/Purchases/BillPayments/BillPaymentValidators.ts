@@ -1,6 +1,12 @@
+import {
+  IBill,
+  IBillPayment,
+  IBillPaymentDTO,
+  IBillPaymentEntry,
+  IBillPaymentEntryDTO,
+} from '@bigcapital/libs-backend';
 import { ACCOUNT_TYPE } from '@bigcapital/server/data/AccountTypes';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { IBill, IBillPayment, IBillPaymentDTO, IBillPaymentEntry, IBillPaymentEntryDTO } from '@bigcapital/server/interfaces';
 import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { difference, sumBy } from 'lodash';
 import { Inject, Service } from 'typedi';

@@ -1,4 +1,4 @@
-import { IExpense, IExpenseCommonDTO, IExpenseCreateDTO, IExpenseEditDTO, ISystemUser } from '@bigcapital/server/interfaces';
+import { IExpense, IExpenseCommonDTO, IExpenseCreateDTO, IExpenseEditDTO, ISystemUser } from '@bigcapital/libs-backend';
 import { BranchTransactionDTOTransform } from '@bigcapital/server/services/Branches/Integrations/BranchTransactionDTOTransform';
 import { TenantMetadata } from '@bigcapital/server/system/models';
 import { omit, sumBy } from 'lodash';

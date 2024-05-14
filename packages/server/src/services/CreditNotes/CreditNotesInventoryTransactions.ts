@@ -1,4 +1,4 @@
-import { ICreditNote } from '@bigcapital/server/interfaces';
+import { ICreditNote } from '@bigcapital/libs-backend';
 import InventoryService from '@bigcapital/server/services/Inventory/Inventory';
 import ItemsEntriesService from '@bigcapital/server/services/Items/ItemsEntriesService';
 import { Knex } from 'knex';

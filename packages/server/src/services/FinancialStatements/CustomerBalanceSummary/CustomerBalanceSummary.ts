@@ -5,7 +5,7 @@ import {
   ICustomerBalanceSummaryQuery,
   ILedger,
   INumberFormatQuery,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { isEmpty } from 'lodash';
 import * as R from 'ramda';
 import { ContactBalanceSummaryReport } from '../ContactBalanceSummary/ContactBalanceSummary';

@@ -1,4 +1,4 @@
-import { IBillPayment, IBillPaymentDTO, IVendor } from '@bigcapital/server/interfaces';
+import { IBillPayment, IBillPaymentDTO, IVendor } from '@bigcapital/libs-backend';
 import { BranchTransactionDTOTransform } from '@bigcapital/server/services/Branches/Integrations/BranchTransactionDTOTransform';
 import { formatDateFields } from '@bigcapital/server/utils';
 import { sumBy } from 'lodash';

@@ -1,4 +1,4 @@
-import { IPaymentReceiveCreatedPayload } from '@bigcapital/server/interfaces';
+import { IPaymentReceiveCreatedPayload } from '@bigcapital/libs-backend';
 import { EventSubscriber } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import { PaymentReceiveIncrement } from '@bigcapital/server/services/Sales/PaymentReceives/PaymentReceiveIncrement';
 import events from '@bigcapital/server/subscribers/events';

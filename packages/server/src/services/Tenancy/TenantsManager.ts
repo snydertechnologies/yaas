@@ -1,6 +1,6 @@
+import { ITenant, ITenantDBManager, ITenantManager } from '@bigcapital/libs-backend';
 import { EventDispatcher, EventDispatcherInterface } from '@bigcapital/server/decorators/eventDispatcher';
 import { TenantAlreadyInitialized, TenantAlreadySeeded, TenantDatabaseNotBuilt } from '@bigcapital/server/exceptions';
-import { ITenant, ITenantDBManager, ITenantManager } from '@bigcapital/server/interfaces';
 import { SeedMigration } from '@bigcapital/server/lib/Seeder/SeedMigration';
 import TenantDBManager from '@bigcapital/server/services/Tenancy/TenantDBManager';
 import events from '@bigcapital/server/subscribers/events';

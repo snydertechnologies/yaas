@@ -1,4 +1,4 @@
-import { IInventoryAdjustmentCreatingPayload } from '@bigcapital/server/interfaces';
+import { IInventoryAdjustmentCreatingPayload } from '@bigcapital/libs-backend';
 import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 import { WarehousesDTOValidators } from '../../../Integrations/WarehousesDTOValidators';

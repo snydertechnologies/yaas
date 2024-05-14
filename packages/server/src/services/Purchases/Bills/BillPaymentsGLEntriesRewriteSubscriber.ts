@@ -1,4 +1,4 @@
-import { IBillEditedPayload } from '@bigcapital/server/interfaces';
+import { IBillEditedPayload } from '@bigcapital/libs-backend';
 import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 import { BillPaymentsGLEntriesRewrite } from './BillPaymentsGLEntriesRewrite';

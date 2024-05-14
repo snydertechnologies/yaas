@@ -1,4 +1,4 @@
-import { IModel, IView, IViewsService } from '@bigcapital/server/interfaces';
+import { IModel, IView, IViewsService } from '@bigcapital/libs-backend';
 import ResourceService from '@bigcapital/server/services/Resource/ResourceService';
 import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject, Service } from 'typedi';

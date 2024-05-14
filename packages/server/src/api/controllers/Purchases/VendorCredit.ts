@@ -1,7 +1,12 @@
+import {
+  AbilitySubject,
+  IVendorCreditCreateDTO,
+  IVendorCreditEditDTO,
+  VendorCreditAction,
+} from '@bigcapital/libs-backend';
 import BaseController from '@bigcapital/server/api/controllers/BaseController';
 import CheckPolicies from '@bigcapital/server/api/middleware/CheckPolicies';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { AbilitySubject, IVendorCreditCreateDTO, IVendorCreditEditDTO, VendorCreditAction } from '@bigcapital/server/interfaces';
 import DynamicListingService from '@bigcapital/server/services/DynamicListing/DynamicListService';
 import CreateVendorCredit from '@bigcapital/server/services/Purchases/VendorCredits/CreateVendorCredit';
 import DeleteVendorCredit from '@bigcapital/server/services/Purchases/VendorCredits/DeleteVendorCredit';

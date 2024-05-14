@@ -1,4 +1,4 @@
-import { IAuthGetMetaPOJO, IPasswordReset, IRegisterDTO, ISystemUser } from '@bigcapital/server/interfaces';
+import { IAuthGetMetaPOJO, IPasswordReset, IRegisterDTO, ISystemUser } from '@bigcapital/libs-backend';
 import { SystemUser } from '@bigcapital/server/system/models';
 import { Inject, Service } from 'typedi';
 import { AuthSendResetPassword } from './AuthSendResetPassword';

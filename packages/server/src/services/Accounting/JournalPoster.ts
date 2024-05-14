@@ -1,4 +1,4 @@
-import { IAccountChange, IAccountsChange, IJournalEntry, IJournalPoster } from '@bigcapital/server/interfaces';
+import { IAccountChange, IAccountsChange, IJournalEntry, IJournalPoster } from '@bigcapital/libs-backend';
 import JournalEntry from '@bigcapital/server/services/Accounting/JournalEntry';
 import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import async from 'async';

@@ -1,4 +1,4 @@
-import { IInventoryTransaction, IItemsQuantityChanges } from '@bigcapital/server/interfaces';
+import { IInventoryTransaction, IItemsQuantityChanges } from '@bigcapital/libs-backend';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import Knex from 'knex';
 import { toSafeInteger } from 'lodash';

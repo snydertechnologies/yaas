@@ -1,4 +1,4 @@
-import { ICustomer, ISaleReceipt, ISaleReceiptDTO } from '@bigcapital/server/interfaces';
+import { ICustomer, ISaleReceipt, ISaleReceiptDTO } from '@bigcapital/libs-backend';
 import { ItemEntry } from '@bigcapital/server/models';
 import { BranchTransactionDTOTransform } from '@bigcapital/server/services/Branches/Integrations/BranchTransactionDTOTransform';
 import ItemsEntriesService from '@bigcapital/server/services/Items/ItemsEntriesService';

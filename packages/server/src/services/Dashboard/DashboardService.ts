@@ -1,4 +1,4 @@
-import { IFeatureAllItem, ISystemUser } from '@bigcapital/server/interfaces';
+import { IFeatureAllItem, ISystemUser } from '@bigcapital/libs-backend';
 import { FeaturesManager } from '@bigcapital/server/services/Features/FeaturesManager';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject, Service } from 'typedi';

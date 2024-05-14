@@ -1,5 +1,5 @@
+import { ICustomer, ISaleReceipt, ISaleReceiptSmsDetails, SMS_NOTIFICATION_KEY } from '@bigcapital/libs-backend';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { ICustomer, ISaleReceipt, ISaleReceiptSmsDetails, SMS_NOTIFICATION_KEY } from '@bigcapital/server/interfaces';
 import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import SmsNotificationsSettingsService from '@bigcapital/server/services/Settings/SmsNotificationsSettings';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';

@@ -1,5 +1,5 @@
-import { ITableColumn } from '@bigcapital/server/interfaces';
-import { ITableRow } from '@bigcapital/server/interfaces';
+import { ITableColumn } from '@bigcapital/libs-backend';
+import { ITableRow } from '@bigcapital/libs-backend';
 import { increment } from '@bigcapital/server/utils';
 import { clone, cloneDeep, isEmpty, omit } from 'lodash';
 import * as R from 'ramda';

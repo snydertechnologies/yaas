@@ -1,5 +1,5 @@
+import { IAccount, IAccountCreateDTO, IAccountDTO } from '@bigcapital/libs-backend';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { IAccount, IAccountCreateDTO, IAccountDTO } from '@bigcapital/server/interfaces';
 import AccountTypesUtils from '@bigcapital/server/lib/AccountTypes';
 import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject, Service } from 'typedi';

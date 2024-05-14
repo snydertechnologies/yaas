@@ -1,4 +1,4 @@
-import { IPaymentReceiveCreatedPayload } from '@bigcapital/server/interfaces';
+import { IPaymentReceiveCreatedPayload } from '@bigcapital/libs-backend';
 import { PaymentReceiveNotifyBySms } from '@bigcapital/server/services/Sales/PaymentReceives/PaymentReceiveSmsNotify';
 import { runAfterTransaction } from '@bigcapital/server/services/UnitOfWork/TransactionsHooks';
 import events from '@bigcapital/server/subscribers/events';

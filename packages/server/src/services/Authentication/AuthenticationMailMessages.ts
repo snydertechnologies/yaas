@@ -1,5 +1,5 @@
+import { ISystemUser } from '@bigcapital/libs-backend';
 import config from '@bigcapital/server/config';
-import { ISystemUser } from '@bigcapital/server/interfaces';
 import Mail from '@bigcapital/server/lib/Mail';
 import { Service } from 'typedi';
 

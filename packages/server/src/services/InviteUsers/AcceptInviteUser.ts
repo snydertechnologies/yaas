@@ -1,11 +1,11 @@
-import { ServiceError } from '@bigcapital/server/exceptions';
 import {
   IAcceptInviteEventPayload,
   ICheckInviteEventPayload,
   IInviteUserInput,
   IUserInvite,
-} from '@bigcapital/server/interfaces';
-import { IAcceptInviteUserService } from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
+import { IAcceptInviteUserService } from '@bigcapital/libs-backend';
+import { ServiceError } from '@bigcapital/server/exceptions';
 import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import events from '@bigcapital/server/subscribers/events';
 import { Invite, SystemUser, Tenant } from '@bigcapital/server/system/models';

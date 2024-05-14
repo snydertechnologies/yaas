@@ -1,6 +1,6 @@
+import { AbilitySubject, ICashFlowStatementDOO, ReportsAction } from '@bigcapital/libs-backend';
 import CheckPolicies from '@bigcapital/server/api/middleware/CheckPolicies';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { AbilitySubject, ICashFlowStatementDOO, ReportsAction } from '@bigcapital/server/interfaces';
 import CashFlowTable from '@bigcapital/server/services/FinancialStatements/CashFlow/CashFlowTable';
 import CashflowAccountTransactionsService from '@bigcapital/server/services/FinancialStatements/CashflowAccountTransactions/CashflowAccountTransactionsService';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';

@@ -4,7 +4,7 @@ import {
   ISalesByItemsTotal,
   ITableColumn,
   ITableRow,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { tableRowMapper } from '@bigcapital/server/utils';
 import * as R from 'ramda';
 import FinancialSheet from '../FinancialSheet';

@@ -1,4 +1,9 @@
-import { CreateUncategorizedTransactionDTO, IAccountCreateDTO, PlaidAccount, PlaidTransaction } from '@bigcapital/server/interfaces';
+import {
+  CreateUncategorizedTransactionDTO,
+  IAccountCreateDTO,
+  PlaidAccount,
+  PlaidTransaction,
+} from '@bigcapital/libs-backend';
 import * as R from 'ramda';
 
 /**

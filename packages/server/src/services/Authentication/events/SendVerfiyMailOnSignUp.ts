@@ -1,4 +1,4 @@
-import { IAuthSignedUpEventPayload } from '@bigcapital/server/interfaces';
+import { IAuthSignedUpEventPayload } from '@bigcapital/libs-backend';
 import events from '@bigcapital/server/subscribers/events';
 import { Inject } from 'typedi';
 

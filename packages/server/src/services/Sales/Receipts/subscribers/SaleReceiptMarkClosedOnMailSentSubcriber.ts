@@ -1,5 +1,5 @@
+import { ISaleReceiptMailPresend } from '@bigcapital/libs-backend';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { ISaleReceiptMailPresend } from '@bigcapital/server/interfaces';
 import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 import { CloseSaleReceipt } from '../CloseSaleReceipt';

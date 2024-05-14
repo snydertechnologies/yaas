@@ -1,4 +1,4 @@
-import { IAccountCreateDTO } from '@bigcapital/server/interfaces';
+import { IAccountCreateDTO } from '@bigcapital/libs-backend';
 import { Knex } from 'knex';
 import { Inject, Service } from 'typedi';
 import { Importable } from '../Import/Importable';

@@ -5,7 +5,7 @@ import { param } from 'express-validator';
 import { Inject, Service } from 'typedi';
 import BaseController from '../BaseController';
 
-import { AbilitySubject, CashflowAction } from '@bigcapital/server/interfaces';
+import { AbilitySubject, CashflowAction } from '@bigcapital/libs-backend';
 import { CashflowApplication } from '@bigcapital/server/services/Cashflow/CashflowApplication';
 
 @Service()

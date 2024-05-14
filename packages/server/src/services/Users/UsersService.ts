@@ -1,4 +1,3 @@
-import { ServiceError } from '@bigcapital/server/exceptions';
 import {
   IEditUserDTO,
   ISystemUser,
@@ -7,7 +6,8 @@ import {
   ITenantUserDeletedPayload,
   ITenantUserEditedPayload,
   ITenantUserInactivatedPayload,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
+import { ServiceError } from '@bigcapital/server/exceptions';
 import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import { TransformerInjectable } from '@bigcapital/server/lib/Transformer/TransformerInjectable';
 import RolesService from '@bigcapital/server/services/Roles/RolesService';

@@ -1,4 +1,4 @@
-import { IARAgingSummaryQuery, IARAgingSummaryTable } from '@bigcapital/server/interfaces';
+import { IARAgingSummaryQuery, IARAgingSummaryTable } from '@bigcapital/libs-backend';
 import { Inject, Service } from 'typedi';
 import ARAgingSummaryService from './ARAgingSummaryService';
 import ARAgingSummaryTable from './ARAgingSummaryTable';

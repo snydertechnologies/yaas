@@ -1,4 +1,4 @@
-import type { IDynamicListFilterDTO } from '@bigcapital/server/interfaces/DynamicFilter';
+import type { IDynamicListFilter } from '@bigcapital/libs-backend';
 import type { Knex } from 'knex';
 import type { IItemEntry, IItemEntryDTO } from './ItemEntry';
 import type { CommonMailOptions, CommonMailOptionsDTO } from './Mailable';
@@ -40,7 +40,7 @@ export interface ISaleEstimateDTO {
   warehouseId?: number;
 }
 
-export interface ISalesEstimatesFilter extends IDynamicListFilterDTO {
+export interface ISalesEstimatesFilter extends IDynamicListFilter {
   stringifiedFilterRoles?: string;
 }
 

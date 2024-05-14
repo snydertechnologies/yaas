@@ -1,4 +1,4 @@
-import { IPurchasesByItemsReportQuery, IPurchasesByItemsSheetMeta } from '@bigcapital/server/interfaces/PurchasesByItemsSheet';
+import { IPurchasesByItemsReportQuery, IPurchasesByItemsSheetMeta } from '@bigcapital/libs-backend';
 import moment from 'moment';
 import { Inject, Service } from 'typedi';
 import { FinancialSheetMeta } from '../FinancialSheetMeta';

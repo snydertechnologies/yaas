@@ -1,4 +1,4 @@
-import { IBillPaymentEntryDTO } from '@bigcapital/server/interfaces';
+import { IBillPaymentEntryDTO } from '@bigcapital/libs-backend';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { entriesAmountDiff } from '@bigcapital/server/utils';
 import { Knex } from 'knex';

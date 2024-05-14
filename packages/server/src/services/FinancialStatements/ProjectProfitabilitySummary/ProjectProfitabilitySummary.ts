@@ -1,7 +1,4 @@
-import {
-  IProjectProfitabilitySummaryProjectNode,
-  IProjectProfitabilitySummaryTotal,
-} from '@bigcapital/server/interfaces';
+import { IProjectProfitabilitySummaryProjectNode, IProjectProfitabilitySummaryTotal } from '@bigcapital/libs-backend';
 import Project from '@bigcapital/server/models/Project';
 import { sumBy } from 'lodash';
 import { map } from 'lodash/fp';

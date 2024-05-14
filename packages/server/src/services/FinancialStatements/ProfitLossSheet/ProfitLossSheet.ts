@@ -8,8 +8,8 @@ import {
   IProfitLossSheetEquationNode,
   IProfitLossSheetNode,
   ProfitLossNodeType,
-} from '@bigcapital/server/interfaces';
-import { IProfitLossSheetQuery } from '@bigcapital/server/interfaces/ProfitLossSheet';
+} from '@bigcapital/libs-backend';
+import { IProfitLossSheetQuery } from '@bigcapital/libs-backend';
 import * as R from 'ramda';
 import { FinancialDateRanges } from '../FinancialDateRanges';
 import { FinancialEvaluateEquation } from '../FinancialEvaluateEquation';

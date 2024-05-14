@@ -1,4 +1,4 @@
-import { AccountNormal, ILedgerEntry, IPaymentReceive, IPaymentReceiveGLCommonEntry } from '@bigcapital/server/interfaces';
+import { AccountNormal, ILedgerEntry, IPaymentReceive, IPaymentReceiveGLCommonEntry } from '@bigcapital/libs-backend';
 import Ledger from '@bigcapital/server/services/Accounting/Ledger';
 import LedgerStorageService from '@bigcapital/server/services/Accounting/LedgerStorageService';
 import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';

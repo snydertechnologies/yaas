@@ -1,4 +1,4 @@
-import type { IModelMeta, ISearchRole } from '@bigcapital/server/interfaces';
+import type { IModelMeta, ISearchRole } from '@bigcapital/libs-backend';
 
 export default (Model) =>
   class ModelSearchable extends Model {

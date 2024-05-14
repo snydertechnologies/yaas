@@ -1,4 +1,4 @@
-import { IItemEntry } from '@bigcapital/server/interfaces';
+import { IItemEntry } from '@bigcapital/libs-backend';
 import { ItemEntry } from '@bigcapital/server/models';
 import { keyBy, sumBy } from 'lodash';
 import { Inject, Service } from 'typedi';

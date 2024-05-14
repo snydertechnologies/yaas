@@ -4,7 +4,7 @@ import {
   IProjectTimeCreatePOJO,
   IProjectTimeCreatedEventPayload,
   IProjectTimeCreatingEventPayload,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import UnitOfWork from '@bigcapital/server/services/UnitOfWork';

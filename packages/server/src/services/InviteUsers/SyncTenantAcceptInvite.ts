@@ -1,4 +1,4 @@
-import { IAcceptInviteEventPayload } from '@bigcapital/server/interfaces';
+import { IAcceptInviteEventPayload } from '@bigcapital/libs-backend';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import events from '@bigcapital/server/subscribers/events';
 import { omit } from 'lodash';

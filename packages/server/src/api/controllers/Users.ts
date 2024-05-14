@@ -1,10 +1,10 @@
+import { IEditUserDTO } from '@bigcapital/libs-backend';
 import BaseController from '@bigcapital/server/api/controllers/BaseController';
 import AttachCurrentTenantUser from '@bigcapital/server/api/middleware/AttachCurrentTenantUser';
 import TenancyMiddleware from '@bigcapital/server/api/middleware/TenancyMiddleware';
 import asyncMiddleware from '@bigcapital/server/api/middleware/asyncMiddleware';
 import JWTAuth from '@bigcapital/server/api/middleware/jwtAuth';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { IEditUserDTO } from '@bigcapital/server/interfaces';
 import UsersService from '@bigcapital/server/services/Users/UsersService';
 import { NextFunction, Request, Response, Router } from 'express';
 import { check, param, query } from 'express-validator';

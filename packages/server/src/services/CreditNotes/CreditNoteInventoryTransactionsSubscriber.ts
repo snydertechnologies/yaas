@@ -1,4 +1,8 @@
-import { ICreditNoteCreatedPayload, ICreditNoteDeletedPayload, ICreditNoteEditedPayload } from '@bigcapital/server/interfaces';
+import {
+  ICreditNoteCreatedPayload,
+  ICreditNoteDeletedPayload,
+  ICreditNoteEditedPayload,
+} from '@bigcapital/libs-backend';
 import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 import CreditNoteInventoryTransactions from './CreditNotesInventoryTransactions';

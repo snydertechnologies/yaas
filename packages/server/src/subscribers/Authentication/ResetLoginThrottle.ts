@@ -1,4 +1,4 @@
-import type { IAuthSignedInEventPayload } from '@bigcapital/server/interfaces';
+import type { IAuthSignedInEventPayload } from '@bigcapital/libs-backend';
 import events from '@bigcapital/server/subscribers/events';
 import { Container, Service } from 'typedi';
 

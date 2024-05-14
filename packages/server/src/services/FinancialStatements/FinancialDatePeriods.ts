@@ -3,7 +3,7 @@ import {
   IFinancialDatePeriodsUnit,
   type IFinancialSheetTotalPeriod,
   type IFormatNumberSettings,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { dateRangeFromToCollection } from '@bigcapital/server/utils';
 import { memoize } from 'lodash';
 import { compose } from 'lodash/fp';

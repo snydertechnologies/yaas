@@ -1,4 +1,4 @@
-import { IModelMetaField2 } from '@bigcapital/server/interfaces';
+import { IModelMetaField2 } from '@bigcapital/libs-backend';
 import Import from '@bigcapital/server/models/Import';
 
 export interface ImportMappingAttr {

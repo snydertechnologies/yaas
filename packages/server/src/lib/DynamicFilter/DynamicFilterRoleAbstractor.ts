@@ -1,4 +1,4 @@
-import { IDynamicFilter, IFilterRole, IModel } from '@bigcapital/server/interfaces';
+import { IDynamicFilter, IFilterRole, IModel } from '@bigcapital/libs-backend';
 import moment from 'moment';
 import * as R from 'ramda';
 import { Lexer } from '../LogicEvaluation/Lexer';

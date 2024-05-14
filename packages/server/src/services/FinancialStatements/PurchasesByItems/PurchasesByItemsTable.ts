@@ -1,9 +1,5 @@
-import { ITableColumn, ITableColumnAccessor, ITableRow } from '@bigcapital/server/interfaces';
-import {
-  IPurchasesByItemsItem,
-  IPurchasesByItemsSheetData,
-  IPurchasesByItemsTotal,
-} from '@bigcapital/server/interfaces/PurchasesByItemsSheet';
+import { ITableColumn, ITableColumnAccessor, ITableRow } from '@bigcapital/libs-backend';
+import { IPurchasesByItemsItem, IPurchasesByItemsSheetData, IPurchasesByItemsTotal } from '@bigcapital/libs-backend';
 import { tableRowMapper } from '@bigcapital/server/utils';
 import * as R from 'ramda';
 import FinancialSheet from '../FinancialSheet';

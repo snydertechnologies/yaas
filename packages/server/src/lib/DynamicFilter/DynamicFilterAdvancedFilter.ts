@@ -1,4 +1,4 @@
-import { IFilterRole } from '@bigcapital/server/interfaces';
+import { IFilterRole } from '@bigcapital/libs-backend';
 import DynamicFilterFilterRoles from './DynamicFilterFilterRoles';
 
 export default class DynamicFilterAdvancedFilter extends DynamicFilterFilterRoles {

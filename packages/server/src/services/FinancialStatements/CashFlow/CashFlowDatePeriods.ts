@@ -1,4 +1,3 @@
-import { ACCOUNT_ROOT_TYPE } from '@bigcapital/server/data/AccountTypes';
 import {
   ICashFlowDatePeriod,
   ICashFlowSchemaTotalSection,
@@ -9,7 +8,8 @@ import {
   ICashFlowStatementTotalSection,
   IDateRange,
   IFormatNumberSettings,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
+import { ACCOUNT_ROOT_TYPE } from '@bigcapital/server/data/AccountTypes';
 import { accumSum, dateRangeFromToCollection } from '@bigcapital/server/utils';
 import { get, mapValues, sumBy } from 'lodash';
 import * as R from 'ramda';

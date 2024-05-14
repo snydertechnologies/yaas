@@ -1,5 +1,5 @@
+import { IAccount, IUncategorizedCashflowTransaction } from '@bigcapital/libs-backend';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { IAccount, IUncategorizedCashflowTransaction } from '@bigcapital/server/interfaces';
 import CashflowTransaction from '@bigcapital/server/models/CashflowTransaction';
 import { camelCase, includes, upperFirst } from 'lodash';
 import { Service } from 'typedi';

@@ -1,4 +1,4 @@
-import { IAllocatedLandedCostCreatedPayload, IBillLandedCost, ILandedCostDTO } from '@bigcapital/server/interfaces';
+import { IAllocatedLandedCostCreatedPayload, IBillLandedCost, ILandedCostDTO } from '@bigcapital/libs-backend';
 import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import UnitOfWork from '@bigcapital/server/services/UnitOfWork';
 import events from '@bigcapital/server/subscribers/events';

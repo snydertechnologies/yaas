@@ -1,4 +1,4 @@
-import { ITaxRateActivatedPayload, ITaxRateActivatingPayload } from '@bigcapital/server/interfaces';
+import { ITaxRateActivatedPayload, ITaxRateActivatingPayload } from '@bigcapital/libs-backend';
 import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import events from '@bigcapital/server/subscribers/events';
 import { Knex } from 'knex';

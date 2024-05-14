@@ -2,7 +2,7 @@ import {
   IProjectProfitabilitySummaryMeta,
   IProjectProfitabilitySummaryPOJO,
   ProjectProfitabilitySummaryQuery,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Tenant } from '@bigcapital/server/system/models';
 import { Inject, Service } from 'typedi';

@@ -1,4 +1,3 @@
-import { ServiceError } from '@bigcapital/server/exceptions';
 import {
   ICustomer,
   ISaleInvoice,
@@ -6,7 +5,8 @@ import {
   ISaleInvoiceSmsDetailsDTO,
   InvoiceNotificationType,
   SMS_NOTIFICATION_KEY,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
+import { ServiceError } from '@bigcapital/server/exceptions';
 import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import SmsNotificationsSettingsService from '@bigcapital/server/services/Settings/SmsNotificationsSettings';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';

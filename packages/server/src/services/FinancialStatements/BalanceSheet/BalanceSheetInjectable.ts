@@ -1,4 +1,4 @@
-import { IBalanceSheetQuery, IBalanceSheetStatement, IBalanceSheetStatementService } from '@bigcapital/server/interfaces';
+import { IBalanceSheetQuery, IBalanceSheetStatement, IBalanceSheetStatementService } from '@bigcapital/libs-backend';
 import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Tenant } from '@bigcapital/server/system/models';
 import moment from 'moment';

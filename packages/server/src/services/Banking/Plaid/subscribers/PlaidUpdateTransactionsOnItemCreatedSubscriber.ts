@@ -1,4 +1,4 @@
-import { IPlaidItemCreatedEventPayload } from '@bigcapital/server/interfaces/Plaid';
+import { IPlaidItemCreatedEventPayload } from '@bigcapital/libs-backend';
 import { EventSubscriber } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';

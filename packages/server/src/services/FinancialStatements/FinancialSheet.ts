@@ -1,4 +1,4 @@
-import { ICashFlowStatementTotal, IFormatNumberSettings, INumberFormatQuery } from '@bigcapital/server/interfaces';
+import { ICashFlowStatementTotal, IFormatNumberSettings, INumberFormatQuery } from '@bigcapital/libs-backend';
 import { formatNumber } from '@bigcapital/server/utils';
 import moment from 'moment';
 

@@ -12,7 +12,7 @@ import {
   IItem,
   INumberFormatQuery,
   TInventoryTransactionDirection,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { transformToMapBy, transformToMapKeyValue } from '@bigcapital/server/utils';
 import { filterDeep } from '@bigcapital/server/utils/deepdash';
 import { defaultTo, get, sumBy } from 'lodash';

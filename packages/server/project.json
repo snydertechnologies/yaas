@@ -33,6 +33,18 @@
       "executor": "nx:run-commands",
       "options": {
         "commands": [
+          "cd packages/server && bun build ./src/index.ts --outdir ../../dist/packages/server/ --target bun --sourcemap=external"
+        ],
+        "parallel": false
+      }
+    },
+    "build-sfe": {
+      "configurations": {
+        "production": {}
+      },
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
           "cd packages/server && bun build --compile --sourcemap ./src/index.ts --outfile ../../dist/packages/server/YACS.Server.bun --target bun"
         ],
         "parallel": false

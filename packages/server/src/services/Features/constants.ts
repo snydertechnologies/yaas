@@ -1,5 +1,5 @@
+import { Features, IFeatureConfiugration } from '@bigcapital/libs-backend';
 import config from '@bigcapital/server/config';
-import { Features, IFeatureConfiugration } from '@bigcapital/server/interfaces';
 import { defaultTo } from 'lodash';
 
 export const FeaturesConfigure: IFeatureConfiugration[] = [

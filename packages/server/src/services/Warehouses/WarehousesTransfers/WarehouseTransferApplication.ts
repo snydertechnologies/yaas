@@ -3,7 +3,7 @@ import {
   IEditWarehouseTransferDTO,
   IGetWarehousesTransfersFilterDTO,
   IWarehouseTransfer,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { Inject, Service } from 'typedi';
 import { CreateWarehouseTransfer } from './CreateWarehouseTransfer';
 import { DeleteWarehouseTransfer } from './DeleteWarehouseTransfer';

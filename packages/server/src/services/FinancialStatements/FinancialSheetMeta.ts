@@ -1,4 +1,4 @@
-import { IFinancialSheetCommonMeta } from '@bigcapital/server/interfaces';
+import { IFinancialSheetCommonMeta } from '@bigcapital/libs-backend';
 import { TenantMetadata } from '@bigcapital/server/system/models';
 import { Inject, Service } from 'typedi';
 import InventoryService from '../Inventory/Inventory';

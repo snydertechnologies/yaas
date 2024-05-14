@@ -3,7 +3,7 @@ import {
   PaymentReceiveMailOptsDTO,
   PaymentReceiveMailPresendEvent,
   SendInvoiceMailDTO,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import Mail from '@bigcapital/server/lib/Mail';
 import { ContactMailNotification } from '@bigcapital/server/services/MailNotification/ContactMailNotification';

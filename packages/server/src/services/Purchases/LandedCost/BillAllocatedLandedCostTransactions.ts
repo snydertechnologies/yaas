@@ -1,4 +1,4 @@
-import { IBillLandedCostTransaction } from '@bigcapital/server/interfaces';
+import { IBillLandedCostTransaction } from '@bigcapital/libs-backend';
 import I18nService from '@bigcapital/server/services/I18n/I18nService';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { formatNumber } from '@bigcapital/server/utils';

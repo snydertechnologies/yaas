@@ -1,10 +1,10 @@
-import { ServiceError } from '@bigcapital/server/exceptions';
 import {
   IVendorCredit,
   IVendorCreditOpenPayload,
   IVendorCreditOpenedPayload,
   IVendorCreditOpeningPayload,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
+import { ServiceError } from '@bigcapital/server/exceptions';
 import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import UnitOfWork from '@bigcapital/server/services/UnitOfWork';
 import events from '@bigcapital/server/subscribers/events';

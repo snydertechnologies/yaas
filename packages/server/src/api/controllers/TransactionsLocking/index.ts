@@ -1,7 +1,7 @@
+import { AbilitySubject, AccountAction } from '@bigcapital/libs-backend';
 import BaseController from '@bigcapital/server/api/controllers/BaseController';
 import CheckPolicies from '@bigcapital/server/api/middleware/CheckPolicies';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { AbilitySubject, AccountAction } from '@bigcapital/server/interfaces';
 import TransactionsLockingService from '@bigcapital/server/services/TransactionsLocking/CommandTransactionsLockingService';
 import QueryTransactionsLocking from '@bigcapital/server/services/TransactionsLocking/QueryTransactionsLocking';
 import { NextFunction, Request, Response, Router } from 'express';

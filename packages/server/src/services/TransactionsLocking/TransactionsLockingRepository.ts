@@ -1,4 +1,4 @@
-import { ITransactionMeta, TransactionsLockingGroup, TransactionsLockingType } from '@bigcapital/server/interfaces';
+import { ITransactionMeta, TransactionsLockingGroup, TransactionsLockingType } from '@bigcapital/libs-backend';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { parseDate } from '@bigcapital/server/utils';
 import { isUndefined } from 'lodash';

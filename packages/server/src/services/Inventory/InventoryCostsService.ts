@@ -1,4 +1,4 @@
-import { IInventoryItemCostMeta } from '@bigcapital/server/interfaces';
+import { IInventoryItemCostMeta } from '@bigcapital/libs-backend';
 import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Knex } from 'knex';
 import { get, keyBy } from 'lodash';

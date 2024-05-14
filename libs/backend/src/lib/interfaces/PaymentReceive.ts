@@ -1,5 +1,5 @@
-import type { CommonMailOptions, CommonMailOptionsDTO, ISystemUser } from '@bigcapital/server/interfaces';
 import type { Knex } from 'knex';
+import type { CommonMailOptions, CommonMailOptionsDTO, ISystemUser } from './';
 import type { ILedgerEntry } from './Ledger';
 import type { ISaleInvoice } from './SaleInvoice';
 
@@ -65,7 +65,7 @@ export interface IPaymentReceiveEntryDTO {
   paymentAmount: number;
 }
 
-export interface IPaymentReceivesFilter extends IDynamicListFilterDTO {
+export interface IPaymentReceivesFilter extends IDynamicListFilter {
   stringifiedFilterRoles?: string;
 }
 

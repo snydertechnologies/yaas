@@ -1,5 +1,5 @@
+import type { IBalanceSheetStructureSection } from '@bigcapital/libs-backend';
 import { ACCOUNT_TYPE } from '@bigcapital/server/data/AccountTypes';
-import type { IBalanceSheetStructureSection } from '@bigcapital/server/interfaces';
 
 const balanceSheetStructure: IBalanceSheetStructureSection[] = [
   {

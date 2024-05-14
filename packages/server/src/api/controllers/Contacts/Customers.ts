@@ -1,8 +1,8 @@
+import { AbilitySubject, CustomerAction, ICustomerEditDTO, ICustomerNewDTO } from '@bigcapital/libs-backend';
 import ContactsController from '@bigcapital/server/api/controllers/Contacts/Contacts';
 import CheckPolicies from '@bigcapital/server/api/middleware/CheckPolicies';
 import asyncMiddleware from '@bigcapital/server/api/middleware/asyncMiddleware';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { AbilitySubject, CustomerAction, ICustomerEditDTO, ICustomerNewDTO } from '@bigcapital/server/interfaces';
 import { CustomersApplication } from '@bigcapital/server/services/Contacts/Customers/CustomersApplication';
 import DynamicListingService from '@bigcapital/server/services/DynamicListing/DynamicListService';
 import { NextFunction, Request, Response, Router } from 'express';

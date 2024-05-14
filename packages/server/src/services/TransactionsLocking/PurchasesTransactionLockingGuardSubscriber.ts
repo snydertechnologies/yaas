@@ -10,7 +10,7 @@ import {
   IVendorCreditCreatingPayload,
   IVendorCreditDeletingPayload,
   IVendorCreditEditingPayload,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import events from '@bigcapital/server/subscribers/events';
 import { Inject } from 'typedi';
 import PurchasesTransactionsLocking from './PurchasesTransactionLockingGuard';

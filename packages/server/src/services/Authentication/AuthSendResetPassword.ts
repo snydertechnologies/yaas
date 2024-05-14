@@ -1,12 +1,12 @@
-import config from '@bigcapital/server/config';
-import { ServiceError } from '@bigcapital/server/exceptions';
 import {
   IAuthResetedPasswordEventPayload,
   IAuthSendedResetPassword,
   IAuthSendingResetPassword,
   IPasswordReset,
   ISystemUser,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
+import config from '@bigcapital/server/config';
+import { ServiceError } from '@bigcapital/server/exceptions';
 import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import events from '@bigcapital/server/subscribers/events';
 import { PasswordReset } from '@bigcapital/server/system/models';

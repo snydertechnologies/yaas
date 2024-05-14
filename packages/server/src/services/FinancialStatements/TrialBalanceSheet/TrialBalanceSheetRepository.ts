@@ -1,4 +1,4 @@
-import type { ITrialBalanceSheetQuery } from '@bigcapital/server/interfaces';
+import type { ITrialBalanceSheetQuery } from '@bigcapital/libs-backend';
 import Ledger from '@bigcapital/server/services/Accounting/Ledger';
 import { Knex } from 'knex';
 import { isEmpty } from 'lodash';

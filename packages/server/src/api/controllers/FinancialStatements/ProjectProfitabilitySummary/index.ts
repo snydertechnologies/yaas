@@ -1,5 +1,5 @@
+import { AbilitySubject, IProjectProfitabilitySummaryPOJO, ReportsAction } from '@bigcapital/libs-backend';
 import CheckPolicies from '@bigcapital/server/api/middleware/CheckPolicies';
-import { AbilitySubject, IProjectProfitabilitySummaryPOJO, ReportsAction } from '@bigcapital/server/interfaces';
 import { ProjectProfitabilitySummaryService } from '@bigcapital/server/services/FinancialStatements/ProjectProfitabilitySummary/ProjectProfitabilitySummaryService';
 import { ProjectProfitabilitySummaryTable } from '@bigcapital/server/services/FinancialStatements/ProjectProfitabilitySummary/ProjectProfitabilitySummaryTable';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';

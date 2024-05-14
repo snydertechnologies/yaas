@@ -1,5 +1,5 @@
+import { IPaymentReceive, IPaymentReceivePageEntry, ISaleInvoice } from '@bigcapital/libs-backend';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { IPaymentReceive, IPaymentReceivePageEntry, ISaleInvoice } from '@bigcapital/server/interfaces';
 import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { omit } from 'lodash';
 import { Inject, Service } from 'typedi';

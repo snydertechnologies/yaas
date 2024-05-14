@@ -1,4 +1,4 @@
-import { IRefundCreditNoteCreatedPayload, IRefundCreditNoteDeletedPayload } from '@bigcapital/server/interfaces';
+import { IRefundCreditNoteCreatedPayload, IRefundCreditNoteDeletedPayload } from '@bigcapital/libs-backend';
 import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 import RefundCreditNoteGLEntries from './RefundCreditNoteGLEntries';

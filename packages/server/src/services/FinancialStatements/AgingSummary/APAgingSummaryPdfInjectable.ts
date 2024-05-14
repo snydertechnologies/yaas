@@ -1,4 +1,4 @@
-import { IAPAgingSummaryQuery } from '@bigcapital/server/interfaces';
+import { IAPAgingSummaryQuery } from '@bigcapital/libs-backend';
 import { Inject, Service } from 'typedi';
 import { TableSheetPdf } from '../TableSheetPdf';
 import { APAgingSummaryTableInjectable } from './APAgingSummaryTableInjectable';

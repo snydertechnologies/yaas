@@ -1,4 +1,4 @@
-import { IAccountsTransactionsFilter, IGetAccountTransactionPOJO } from '@bigcapital/server/interfaces';
+import { IAccountsTransactionsFilter, IGetAccountTransactionPOJO } from '@bigcapital/libs-backend';
 import { TransformerInjectable } from '@bigcapital/server/lib/Transformer/TransformerInjectable';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject, Service } from 'typedi';

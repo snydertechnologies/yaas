@@ -1,4 +1,4 @@
-import { IApplyCreditToInvoicesCreatedPayload, IApplyCreditToInvoicesDeletedPayload } from '@bigcapital/server/interfaces';
+import { IApplyCreditToInvoicesCreatedPayload, IApplyCreditToInvoicesDeletedPayload } from '@bigcapital/libs-backend';
 import events from '@bigcapital/server/subscribers/events';
 import { sumBy } from 'lodash';
 import { Inject, Service } from 'typedi';

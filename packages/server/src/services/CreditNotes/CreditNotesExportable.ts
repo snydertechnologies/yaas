@@ -1,4 +1,4 @@
-import { ICreditNotesQueryDTO } from '@bigcapital/server/interfaces';
+import { ICreditNotesQueryDTO } from '@bigcapital/libs-backend';
 import { Exportable } from '@bigcapital/server/services/Export/Exportable';
 import { Inject, Service } from 'typedi';
 import ListCreditNotes from './ListCreditNotes';

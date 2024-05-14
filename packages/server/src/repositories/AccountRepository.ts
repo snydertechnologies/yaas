@@ -1,5 +1,5 @@
+import type { IAccount } from '@bigcapital/libs-backend';
 import { TaxPayableAccount } from '@bigcapital/server/database/seeds/data/accounts';
-import type { IAccount } from '@bigcapital/server/interfaces';
 import { Account } from '@bigcapital/server/models';
 import TenantRepository from '@bigcapital/server/repositories/TenantRepository';
 import type { Knex } from 'knex';

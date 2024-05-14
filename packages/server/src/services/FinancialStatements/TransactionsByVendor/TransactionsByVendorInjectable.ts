@@ -3,7 +3,7 @@ import {
   ITransactionsByVendorsFilter,
   ITransactionsByVendorsService,
   ITransactionsByVendorsStatement,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import Ledger from '@bigcapital/server/services/Accounting/Ledger';
 import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Tenant } from '@bigcapital/server/system/models';

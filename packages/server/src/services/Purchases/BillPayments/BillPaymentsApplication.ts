@@ -1,4 +1,4 @@
-import { IBillPayment, IBillPaymentDTO } from '@bigcapital/server/interfaces';
+import { IBillPayment, IBillPaymentDTO } from '@bigcapital/libs-backend';
 import { Inject, Service } from 'typedi';
 import { CreateBillPayment } from './CreateBillPayment';
 import { DeleteBillPayment } from './DeleteBillPayment';

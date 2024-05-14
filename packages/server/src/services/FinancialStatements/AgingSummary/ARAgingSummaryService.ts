@@ -1,4 +1,4 @@
-import { IARAgingSummaryQuery } from '@bigcapital/server/interfaces';
+import { IARAgingSummaryQuery } from '@bigcapital/libs-backend';
 import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Tenant } from '@bigcapital/server/system/models';
 import { isEmpty } from 'lodash';

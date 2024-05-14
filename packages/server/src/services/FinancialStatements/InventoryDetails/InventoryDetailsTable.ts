@@ -6,7 +6,7 @@ import {
   IInventoryDetailsOpening,
   ITableColumn,
   ITableRow,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { tableRowMapper } from '@bigcapital/server/utils';
 import { mapValuesDeep } from '@bigcapital/server/utils/deepdash';
 import * as R from 'ramda';

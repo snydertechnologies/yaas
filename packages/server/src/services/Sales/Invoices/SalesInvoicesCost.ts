@@ -1,4 +1,4 @@
-import { IInventoryCostLotsGLEntriesWriteEvent, IInventoryTransaction } from '@bigcapital/server/interfaces';
+import { IInventoryCostLotsGLEntriesWriteEvent, IInventoryTransaction } from '@bigcapital/libs-backend';
 import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import InventoryService from '@bigcapital/server/services/Inventory/Inventory';
 import UnitOfWork from '@bigcapital/server/services/UnitOfWork';

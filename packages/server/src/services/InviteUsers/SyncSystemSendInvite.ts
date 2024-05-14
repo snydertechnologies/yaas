@@ -2,7 +2,7 @@ import {
   IUserInviteResendEventPayload,
   IUserInviteTenantSyncedEventPayload,
   IUserInvitedEventPayload,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import events from '@bigcapital/server/subscribers/events';

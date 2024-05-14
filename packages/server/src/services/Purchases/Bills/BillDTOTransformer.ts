@@ -1,4 +1,4 @@
-import { IBill, IBillDTO, IItemEntry, ISystemUser, IVendor } from '@bigcapital/server/interfaces';
+import { IBill, IBillDTO, IItemEntry, ISystemUser, IVendor } from '@bigcapital/libs-backend';
 import { BranchTransactionDTOTransform } from '@bigcapital/server/services/Branches/Integrations/BranchTransactionDTOTransform';
 import { ItemEntriesTaxTransactions } from '@bigcapital/server/services/TaxRates/ItemEntriesTaxTransactions';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';

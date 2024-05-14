@@ -1,4 +1,4 @@
-import { ContactService, ICustomer, ICustomerEditDTO, ICustomerNewDTO } from '@bigcapital/server/interfaces';
+import { ContactService, ICustomer, ICustomerEditDTO, ICustomerNewDTO } from '@bigcapital/libs-backend';
 import { TenantMetadata } from '@bigcapital/server/system/models';
 import { defaultTo, isEmpty, omit } from 'lodash';
 import moment from 'moment';

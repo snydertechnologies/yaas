@@ -1,4 +1,3 @@
-import config from '@bigcapital/server/config';
 import {
   IInventoryItemCostScheduledPayload,
   IInventoryLotCost,
@@ -8,7 +7,8 @@ import {
   IItemEntry,
   IItemEntryTransactionType,
   TInventoryTransactionDirection,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
+import config from '@bigcapital/server/config';
 import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import InventoryAverageCost from '@bigcapital/server/services/Inventory/InventoryAverageCost';
 import InventoryCostLotTracker from '@bigcapital/server/services/Inventory/InventoryCostLotTracker';

@@ -6,7 +6,7 @@ import {
   ITransactionsByContactsContact,
   ITransactionsByContactsFilter,
   ITransactionsByContactsTransaction,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { allPassedConditionsPass } from '@bigcapital/server/utils';
 import { defaultTo, sumBy } from 'lodash';
 import FinancialSheet from '../FinancialSheet';

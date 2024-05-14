@@ -1,4 +1,8 @@
-import { IVendorCreditCreatedPayload, IVendorCreditDeletedPayload, IVendorCreditEditedPayload } from '@bigcapital/server/interfaces';
+import {
+  IVendorCreditCreatedPayload,
+  IVendorCreditDeletedPayload,
+  IVendorCreditEditedPayload,
+} from '@bigcapital/libs-backend';
 import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 import VendorCreditInventoryTransactions from './VendorCreditInventoryTransactions';

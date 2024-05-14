@@ -1,8 +1,13 @@
+import {
+  AbilitySubject,
+  ISaleEstimateDTO,
+  SaleEstimateAction,
+  SaleEstimateMailOptionsDTO,
+} from '@bigcapital/libs-backend';
 import BaseController from '@bigcapital/server/api/controllers/BaseController';
 import CheckPolicies from '@bigcapital/server/api/middleware/CheckPolicies';
 import asyncMiddleware from '@bigcapital/server/api/middleware/asyncMiddleware';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { AbilitySubject, ISaleEstimateDTO, SaleEstimateAction, SaleEstimateMailOptionsDTO } from '@bigcapital/server/interfaces';
 import DynamicListingService from '@bigcapital/server/services/DynamicListing/DynamicListService';
 import { SaleEstimatesApplication } from '@bigcapital/server/services/Sales/Estimates/SaleEstimatesApplication';
 import { NextFunction, Request, Response, Router } from 'express';

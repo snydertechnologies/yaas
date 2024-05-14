@@ -1,4 +1,4 @@
-import { ITransactionsByCustomersFilter, ITransactionsByCustomersStatement } from '@bigcapital/server/interfaces';
+import { ITransactionsByCustomersFilter, ITransactionsByCustomersStatement } from '@bigcapital/libs-backend';
 import { Inject, Service } from 'typedi';
 import { TransactionsByCustomersExportInjectable } from './TransactionsByCustomersExportInjectable';
 import { TransactionsByCustomersPdf } from './TransactionsByCustomersPdf';

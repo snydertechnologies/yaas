@@ -1,4 +1,4 @@
-import { IMetaQuery, IMetableStore, IMetadata } from '@bigcapital/server/interfaces';
+import { IMetaQuery, IMetableStore, IMetadata } from '@bigcapital/libs-backend';
 import { itemsStartWith } from '@bigcapital/server/utils';
 import { isEmpty, omit } from 'lodash';
 import { Model } from 'objection';

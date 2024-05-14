@@ -1,4 +1,4 @@
-import { ISaleReceiptEventClosedPayload, ISaleReceiptEventClosingPayload } from '@bigcapital/server/interfaces';
+import { ISaleReceiptEventClosedPayload, ISaleReceiptEventClosingPayload } from '@bigcapital/libs-backend';
 import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import UnitOfWork from '@bigcapital/server/services/UnitOfWork';

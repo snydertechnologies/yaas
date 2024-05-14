@@ -1,4 +1,4 @@
-import { IModel } from '@bigcapital/server/interfaces';
+import { IModel } from '@bigcapital/libs-backend';
 import DynamicFilterSearch from '@bigcapital/server/lib/DynamicFilter/DynamicFilterSearch';
 import { Service } from 'typedi';
 import DynamicListAbstract from './DynamicListAbstract';

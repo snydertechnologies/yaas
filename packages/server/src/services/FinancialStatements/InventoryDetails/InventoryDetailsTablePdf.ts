@@ -1,4 +1,4 @@
-import { IInventoryDetailsQuery } from '@bigcapital/server/interfaces';
+import { IInventoryDetailsQuery } from '@bigcapital/libs-backend';
 import { Inject, Service } from 'typedi';
 import { TableSheetPdf } from '../TableSheetPdf';
 import { InventoryDetailsTableInjectable } from './InventoryDetailsTableInjectable';

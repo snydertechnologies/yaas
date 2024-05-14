@@ -1,5 +1,3 @@
-import { ACCOUNT_TYPE } from '@bigcapital/server/data/AccountTypes';
-import { ServiceError } from '@bigcapital/server/exceptions';
 import {
   IAccount,
   IPaymentReceive,
@@ -7,7 +5,9 @@ import {
   IPaymentReceiveEntry,
   IPaymentReceiveEntryDTO,
   ISaleInvoice,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
+import { ACCOUNT_TYPE } from '@bigcapital/server/data/AccountTypes';
+import { ServiceError } from '@bigcapital/server/exceptions';
 import { PaymentReceive } from '@bigcapital/server/models';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { difference, sumBy } from 'lodash';

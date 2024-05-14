@@ -2,7 +2,7 @@ import type {
   ICashflowAccountTransaction,
   ICashflowAccountTransactionsQuery,
   INumberFormatQuery,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { runningAmount } from '@bigcapital/server/utils';
 import moment from 'moment';
 import * as R from 'ramda';

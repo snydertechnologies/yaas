@@ -3,7 +3,7 @@ import {
   ITransactionsLockingListPOJO,
   ITransactionsLockingSchema,
   TransactionsLockingGroup,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { TransformerInjectable } from '@bigcapital/server/lib/Transformer/TransformerInjectable';
 import { Inject, Service } from 'typedi';
 import TransactionsLockingMetaTransformer from './TransactionsLockingMetaTransformer';

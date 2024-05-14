@@ -1,6 +1,6 @@
-import type { AbilitySubject } from '@bigcapital/server/interfaces';
-import type { IFilterRole } from '@bigcapital/server/interfaces/DynamicFilter';
+import type { IFilterRole } from '@bigcapital/libs-backend';
 import type { Knex } from 'knex';
+import type { AbilitySubject } from './';
 
 export interface IItem {
   id: number;
@@ -79,7 +79,7 @@ export interface IItemsService {
   itemsList(tenantId: number, itemsFilter: IItemsFilter): Promise<{ items: IItem[] }>;
 }
 
-export interface IItemsFilter extends IDynamicListFilterDTO {
+export interface IItemsFilter extends IDynamicListFilter {
   stringifiedFilterRoles?: string;
   page: number;
   pageSize: number;

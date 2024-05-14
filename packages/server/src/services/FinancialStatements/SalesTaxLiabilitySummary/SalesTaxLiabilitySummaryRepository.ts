@@ -1,8 +1,5 @@
+import { SalesTaxLiabilitySummaryPayableById, SalesTaxLiabilitySummarySalesById } from '@bigcapital/libs-backend';
 import { ACCOUNT_TYPE } from '@bigcapital/server/data/AccountTypes';
-import {
-  SalesTaxLiabilitySummaryPayableById,
-  SalesTaxLiabilitySummarySalesById,
-} from '@bigcapital/server/interfaces/SalesTaxLiabilitySummary';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { keyBy } from 'lodash';
 import { Inject, Service } from 'typedi';

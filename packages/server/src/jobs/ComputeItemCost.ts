@@ -1,4 +1,4 @@
-import type { IComputeItemCostJobCompletedPayload, IComputeItemCostJobStartedPayload } from '@bigcapital/server/interfaces';
+import type { IComputeItemCostJobCompletedPayload, IComputeItemCostJobStartedPayload } from '@bigcapital/libs-backend';
 import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import InventoryService from '@bigcapital/server/services/Inventory/Inventory';
 import events from '@bigcapital/server/subscribers/events';

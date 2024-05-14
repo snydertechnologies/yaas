@@ -1,5 +1,5 @@
+import { IBill, IBillPayment, IBillReceivePageEntry } from '@bigcapital/libs-backend';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { IBill, IBillPayment, IBillReceivePageEntry } from '@bigcapital/server/interfaces';
 import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { omit } from 'lodash';
 import { Inject, Service } from 'typedi';

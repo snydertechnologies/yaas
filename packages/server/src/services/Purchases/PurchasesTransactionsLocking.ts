@@ -1,4 +1,4 @@
-import { TransactionsLockingGroup } from '@bigcapital/server/interfaces';
+import { TransactionsLockingGroup } from '@bigcapital/libs-backend';
 import TransactionsLockingValidator from '@bigcapital/server/services/TransactionsLocking/TransactionsLockingGuard';
 import { Inject, Service } from 'typedi';
 

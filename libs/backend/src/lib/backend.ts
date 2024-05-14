@@ -1,6 +1,3 @@
-/**
- *
- */
-export function edgeSharedDomain(): string {
-  return 'bigcapital-libs-backend';
+export function mylib(): string {
+  return 'mylib';
 }

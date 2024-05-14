@@ -1,5 +1,5 @@
-import type { IDynamicListFilter, IItemEntry, IItemEntryDTO } from '@bigcapital/server/interfaces';
 import type { Knex } from 'knex';
+import type { IDynamicListFilter, IItemEntry, IItemEntryDTO } from './';
 
 export enum VendorCreditAction {
   Create = 'Create',

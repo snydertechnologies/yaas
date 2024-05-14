@@ -1,4 +1,4 @@
-import { IDynamicFilter, IFilterRole, IModel } from '@bigcapital/server/interfaces';
+import { IDynamicFilter, IFilterRole, IModel } from '@bigcapital/libs-backend';
 import { forEach } from 'lodash';
 import DynamicFilterAbstractor from './DynamicFilterAbstractor';
 

@@ -3,7 +3,7 @@ import {
   IManualJournalEventDeletedPayload,
   IManualJournalEventEditedPayload,
   IManualJournalEventPublishedPayload,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import events from '@bigcapital/server/subscribers/events';
 import { EventSubscriber } from 'event-dispatch';
 import { Inject } from 'typedi';

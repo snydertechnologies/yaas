@@ -1,4 +1,4 @@
-import { ISaleInvoiceMailSend, SendInvoiceMailDTO } from '@bigcapital/server/interfaces';
+import { ISaleInvoiceMailSend, SendInvoiceMailDTO } from '@bigcapital/libs-backend';
 import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import Mail from '@bigcapital/server/lib/Mail';
 import { parseAndValidateMailOptions } from '@bigcapital/server/services/MailNotification/utils';

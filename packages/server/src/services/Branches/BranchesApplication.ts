@@ -1,4 +1,4 @@
-import { IBranch, ICreateBranchDTO, IEditBranchDTO } from '@bigcapital/server/interfaces';
+import { IBranch, ICreateBranchDTO, IEditBranchDTO } from '@bigcapital/libs-backend';
 import { Inject, Service } from 'typedi';
 import { ActivateBranches } from './ActivateBranches';
 import { CreateBranch } from './CreateBranch';

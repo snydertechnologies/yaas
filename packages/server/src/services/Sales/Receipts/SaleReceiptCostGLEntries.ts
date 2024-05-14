@@ -1,4 +1,4 @@
-import { AccountNormal, IInventoryLotCost, ILedgerEntry } from '@bigcapital/server/interfaces';
+import { AccountNormal, IInventoryLotCost, ILedgerEntry } from '@bigcapital/libs-backend';
 import Ledger from '@bigcapital/server/services/Accounting/Ledger';
 import LedgerStorageService from '@bigcapital/server/services/Accounting/LedgerStorageService';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';

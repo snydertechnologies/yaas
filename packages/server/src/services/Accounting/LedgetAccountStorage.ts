@@ -1,4 +1,4 @@
-import { ILedger, ISaveAccountsBalanceQueuePayload } from '@bigcapital/server/interfaces';
+import { ILedger, ISaveAccountsBalanceQueuePayload } from '@bigcapital/libs-backend';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { TenantMetadata } from '@bigcapital/server/system/models';
 import async from 'async';

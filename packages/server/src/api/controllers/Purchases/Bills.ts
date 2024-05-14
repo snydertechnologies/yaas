@@ -1,8 +1,8 @@
+import { AbilitySubject, BillAction, IBillDTO, IBillEditDTO } from '@bigcapital/libs-backend';
 import BaseController from '@bigcapital/server/api/controllers/BaseController';
 import CheckPolicies from '@bigcapital/server/api/middleware/CheckPolicies';
 import asyncMiddleware from '@bigcapital/server/api/middleware/asyncMiddleware';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { AbilitySubject, BillAction, IBillDTO, IBillEditDTO } from '@bigcapital/server/interfaces';
 import DynamicListingService from '@bigcapital/server/services/DynamicListing/DynamicListService';
 import { BillsApplication } from '@bigcapital/server/services/Purchases/Bills/BillsApplication';
 import { NextFunction, Request, Response, Router } from 'express';

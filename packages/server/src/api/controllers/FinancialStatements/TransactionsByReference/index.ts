@@ -1,5 +1,5 @@
+import { ITransactionsByReferenceTransaction } from '@bigcapital/libs-backend';
 import BaseController from '@bigcapital/server/api/controllers/BaseController';
-import { ITransactionsByReferenceTransaction } from '@bigcapital/server/interfaces';
 import TransactionsByReferenceService from '@bigcapital/server/services/FinancialStatements/TransactionsByReference';
 import { NextFunction, Request, Response, Router } from 'express';
 import { ValidationChain, query } from 'express-validator';

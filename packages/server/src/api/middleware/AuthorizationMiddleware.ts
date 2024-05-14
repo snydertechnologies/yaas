@@ -1,4 +1,4 @@
-import { IRole, IRolePremission, ISystemUser } from '@bigcapital/server/interfaces';
+import { IRole, IRolePremission, ISystemUser } from '@bigcapital/libs-backend';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Ability } from '@casl/ability';
 import { NextFunction, Request, Response } from 'express';

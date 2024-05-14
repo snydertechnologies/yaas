@@ -5,7 +5,7 @@ import {
   IBalanceSheetComparsions,
   IBalanceSheetDataNode,
   IBalanceSheetTotal,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { sumBy } from 'lodash';
 import * as R from 'ramda';
 import { FinancialHorizTotals } from '../FinancialHorizTotals';

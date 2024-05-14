@@ -1,4 +1,4 @@
-import { IView, IViewRole } from '@bigcapital/server/interfaces';
+import { IView, IViewRole } from '@bigcapital/libs-backend';
 import { omit } from 'lodash';
 import DynamicFilterRoleAbstractor from './DynamicFilterRoleAbstractor';
 

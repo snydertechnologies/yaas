@@ -6,7 +6,7 @@ import {
   ILandedCostTransactionEntry,
   ILedger,
   ILedgerEntry,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import Ledger from '@bigcapital/server/services/Accounting/Ledger';
 import LedgerRepository from '@bigcapital/server/services/Ledger/LedgerRepository';
 import JournalPosterService from '@bigcapital/server/services/Sales/JournalPosterService';

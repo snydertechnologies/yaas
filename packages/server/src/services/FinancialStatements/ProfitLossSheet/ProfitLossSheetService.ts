@@ -1,4 +1,4 @@
-import { IProfitLossSheetMeta, IProfitLossSheetNode, IProfitLossSheetQuery } from '@bigcapital/server/interfaces';
+import { IProfitLossSheetMeta, IProfitLossSheetNode, IProfitLossSheetQuery } from '@bigcapital/libs-backend';
 import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Tenant } from '@bigcapital/server/system/models';
 import { Inject, Service } from 'typedi';

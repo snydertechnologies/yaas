@@ -1,5 +1,5 @@
+import { IAuthGetMetaPOJO } from '@bigcapital/libs-backend';
 import config from '@bigcapital/server/config';
-import { IAuthGetMetaPOJO } from '@bigcapital/server/interfaces';
 import { Service } from 'typedi';
 
 @Service()

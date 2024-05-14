@@ -1,4 +1,4 @@
-import { IAccountTransaction, ILedger, ILedgerEntry } from '@bigcapital/server/interfaces';
+import { IAccountTransaction, ILedger, ILedgerEntry } from '@bigcapital/libs-backend';
 import { defaultTo, sumBy, uniqBy } from 'lodash';
 import moment from 'moment';
 

@@ -1,4 +1,3 @@
-import { ServiceError } from '@bigcapital/server/exceptions';
 import {
   ICreateRoleDTO,
   ICreateRolePermissionDTO,
@@ -8,7 +7,8 @@ import {
   IRoleCreatedPayload,
   IRoleDeletedPayload,
   IRoleEditedPayload,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
+import { ServiceError } from '@bigcapital/server/exceptions';
 import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import { TransformerInjectable } from '@bigcapital/server/lib/Transformer/TransformerInjectable';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';

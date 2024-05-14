@@ -1,5 +1,5 @@
+import { IItem, IItemEntry, IItemEntryDTO } from '@bigcapital/libs-backend';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { IItem, IItemEntry, IItemEntryDTO } from '@bigcapital/server/interfaces';
 import { ItemEntry } from '@bigcapital/server/models';
 import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { entriesAmountDiff } from '@bigcapital/server/utils';

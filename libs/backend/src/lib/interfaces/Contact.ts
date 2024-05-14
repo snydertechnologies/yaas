@@ -1,5 +1,5 @@
-import type { ISystemUser } from '@bigcapital/server/interfaces';
 import type { Knex } from 'knex';
+import type { ISystemUser } from './';
 import type { IFilterRole } from './DynamicFilter';
 
 export enum ContactService {

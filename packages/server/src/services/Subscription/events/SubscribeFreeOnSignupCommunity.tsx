@@ -1,5 +1,5 @@
+import { IAuthSignedUpEventPayload } from '@bigcapital/libs-backend';
 import config from '@bigcapital/server/config';
-import { IAuthSignedUpEventPayload } from '@bigcapital/server/interfaces';
 import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 import { Subscription } from '../Subscription';

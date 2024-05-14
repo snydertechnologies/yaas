@@ -1,4 +1,4 @@
-import type { ISystemUser } from '@bigcapital/server/interfaces';
+import type { ISystemUser } from '@bigcapital/libs-backend';
 import { SystemUser } from '@bigcapital/server/system/models';
 import SystemRepository from '@bigcapital/server/system/repositories/SystemRepository';
 import moment from 'moment';

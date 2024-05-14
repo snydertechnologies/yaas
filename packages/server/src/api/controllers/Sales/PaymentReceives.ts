@@ -1,9 +1,14 @@
+import {
+  AbilitySubject,
+  IPaymentReceiveDTO,
+  PaymentReceiveAction,
+  PaymentReceiveMailOptsDTO,
+} from '@bigcapital/libs-backend';
+import { ACCEPT_TYPE } from '@bigcapital/libs-backend';
 import BaseController from '@bigcapital/server/api/controllers/BaseController';
 import CheckPolicies from '@bigcapital/server/api/middleware/CheckPolicies';
 import asyncMiddleware from '@bigcapital/server/api/middleware/asyncMiddleware';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { AbilitySubject, IPaymentReceiveDTO, PaymentReceiveAction, PaymentReceiveMailOptsDTO } from '@bigcapital/server/interfaces';
-import { ACCEPT_TYPE } from '@bigcapital/server/interfaces/Http';
 import DynamicListingService from '@bigcapital/server/services/DynamicListing/DynamicListService';
 import { PaymentReceivesApplication } from '@bigcapital/server/services/Sales/PaymentReceives/PaymentReceivesApplication';
 import PaymentReceivesPages from '@bigcapital/server/services/Sales/PaymentReceives/PaymentReceivesPages';

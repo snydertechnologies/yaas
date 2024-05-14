@@ -1,9 +1,9 @@
+import { AbilitySubject, AccountAction, IAccountDTO, IAccountsStructureType } from '@bigcapital/libs-backend';
 import BaseController from '@bigcapital/server/api/controllers/BaseController';
 import CheckPolicies from '@bigcapital/server/api/middleware/CheckPolicies';
 import asyncMiddleware from '@bigcapital/server/api/middleware/asyncMiddleware';
 import { DATATYPES_LENGTH } from '@bigcapital/server/data/DataTypes';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { AbilitySubject, AccountAction, IAccountDTO, IAccountsStructureType } from '@bigcapital/server/interfaces';
 import { AccountsApplication } from '@bigcapital/server/services/Accounts/AccountsApplication';
 import { MAX_ACCOUNTS_CHART_DEPTH } from '@bigcapital/server/services/Accounts/constants';
 import DynamicListingService from '@bigcapital/server/services/DynamicListing/DynamicListService';

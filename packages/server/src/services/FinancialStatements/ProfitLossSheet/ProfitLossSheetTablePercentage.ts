@@ -1,4 +1,4 @@
-import { ITableColumn, ITableColumnAccessor } from '@bigcapital/server/interfaces';
+import { ITableColumn, ITableColumnAccessor } from '@bigcapital/libs-backend';
 import * as R from 'ramda';
 import { ProfitLossSheetQuery } from './ProfitLossSheetQuery';
 

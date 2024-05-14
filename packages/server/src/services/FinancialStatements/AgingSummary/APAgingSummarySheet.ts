@@ -7,7 +7,7 @@ import {
   IAgingPeriod,
   IBill,
   IVendor,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { allPassedConditionsPass } from '@bigcapital/server/utils';
 import { groupBy, isEmpty, sum } from 'lodash';
 import * as R from 'ramda';
