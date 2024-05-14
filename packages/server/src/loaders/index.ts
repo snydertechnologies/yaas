@@ -6,11 +6,12 @@ import i18nConfig from '@bigcapital/server/loaders/i18n';
 import jobsLoader from '@bigcapital/server/loaders/jobs';
 import Logger from '@bigcapital/server/loaders/logger';
 import mongooseLoader from '@bigcapital/server/loaders/mongoose';
+import type { Express } from 'express';
 
 // We have to import at least all the events once so they can be triggered
 // import '@bigcapital/server/loaders/events';
 
-export default async ({ expressApp }) => {
+export default async ({ expressApp }: { expressApp: Express }) => {
   const mongoConnection = await mongooseLoader();
   Logger.info('[init] MongoDB loaded and connected!');
 
