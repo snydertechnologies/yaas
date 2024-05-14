@@ -1,5 +1,9 @@
+import {
+  IWarehouseTransfer,
+  IWarehouseTransferEditedPayload,
+  IWarehouseTransferInitiatePayload,
+} from '@bigcapital/libs-backend';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { IWarehouseTransfer, IWarehouseTransferEditedPayload, IWarehouseTransferInitiatePayload } from '@bigcapital/server/interfaces';
 import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import UnitOfWork from '@bigcapital/server/services/UnitOfWork';

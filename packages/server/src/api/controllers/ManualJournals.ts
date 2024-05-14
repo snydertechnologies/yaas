@@ -1,9 +1,9 @@
+import { AbilitySubject, ManualJournalAction } from '@bigcapital/libs-backend';
 import BaseController from '@bigcapital/server/api/controllers/BaseController';
 import CheckPolicies from '@bigcapital/server/api/middleware/CheckPolicies';
 import asyncMiddleware from '@bigcapital/server/api/middleware/asyncMiddleware';
 import { DATATYPES_LENGTH } from '@bigcapital/server/data/DataTypes';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { AbilitySubject, ManualJournalAction } from '@bigcapital/server/interfaces';
 import DynamicListingService from '@bigcapital/server/services/DynamicListing/DynamicListService';
 import { ManualJournalsApplication } from '@bigcapital/server/services/ManualJournals/ManualJournalsApplication';
 import { NextFunction, Request, Response, Router } from 'express';

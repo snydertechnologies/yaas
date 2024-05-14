@@ -1,7 +1,7 @@
+import { ITenant, ITenantDBManager } from '@bigcapital/libs-backend';
 import config from '@bigcapital/server/config';
 import { tenantKnexConfig, tenantSeedConfig } from '@bigcapital/server/config/knexConfig';
 import { TenantDBAlreadyExists } from '@bigcapital/server/exceptions';
-import { ITenant, ITenantDBManager } from '@bigcapital/server/interfaces';
 import SystemService from '@bigcapital/server/services/Tenancy/SystemService';
 import Knex from 'knex';
 import { knexSnakeCaseMappers } from 'objection';

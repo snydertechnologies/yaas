@@ -1,7 +1,7 @@
+import { AbilitySubject, ReportsAction } from '@bigcapital/libs-backend';
+import { ACCEPT_TYPE } from '@bigcapital/libs-backend';
 import BaseController from '@bigcapital/server/api/controllers/BaseController';
 import CheckPolicies from '@bigcapital/server/api/middleware/CheckPolicies';
-import { AbilitySubject, ReportsAction } from '@bigcapital/server/interfaces';
-import { ACCEPT_TYPE } from '@bigcapital/server/interfaces/Http';
 import { InventortyDetailsApplication } from '@bigcapital/server/services/FinancialStatements/InventoryDetails/InventoryDetailsApplication';
 import { NextFunction, Request, Response, Router, ValidationChain } from 'express';
 import { query } from 'express-validator';

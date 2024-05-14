@@ -12,7 +12,7 @@
     "dev:webapp": "bun --bun nx run webapp:serve",
     "dev:website": "bun --bun nx run website:serve",
     "format": "bun i && bun --bun nx run-many --all --target=format",
-    "install:packages": "bun i && bun --bun nx run-many --all --target=install",
+    "install:deps": "bun i && bun --bun nx run-many --all --target=install",
     "lint": "bun i && bun --bun nx run-many --all --target=lint",
     "prepare": "husky install",
     "serve:server": "lerna run serve --scope \"@bigcapital/server\"",
@@ -25,23 +25,31 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.7.3",
+    "@casl/ability": "^5.4.3",
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@faker-js/faker": "^8.4.1",
     "@nx/jest": "^19.0.3",
     "@nx/js": "^19.0.3",
     "@playwright/test": "^1.44.0",
-    "@swc/helpers": "0.5.3",
     "@swc-node/register": "1.9.0",
-    "swc-loader": "^0.2.6",
     "@swc/cli": "0.3.12",
     "@swc/core": "1.4.13",
+    "@swc/helpers": "0.5.3",
     "@swc/jest": "0.2.36",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/uniqid": "^5.3.4",
+    "bcryptjs": "^2.4.3",
     "bun-types": "^1.1.7",
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
     "husky": "^9.0.11",
-    "nx": "^19.0.2"
+    "nx": "^19.0.2",
+    "objection": "^3.1.4",
+    "objection-filter": "^4.4.0",
+    "objection-soft-delete": "^1.0.7",
+    "objection-unique": "^1.2.2",
+    "swc-loader": "^0.2.6"
   },
   "peerDependencies": {
     "typescript": "beta"
@@ -52,5 +60,8 @@
     "pnpm": "please-use-bun",
     "yarn": "please-use-bun"
   },
-  "engineStrict": true
+  "engineStrict": true,
+  "dependencies": {
+    "uniqid": "^5.4.0"
+  }
 }

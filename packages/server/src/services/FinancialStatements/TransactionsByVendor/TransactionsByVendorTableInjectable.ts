@@ -1,4 +1,4 @@
-import { ITransactionsByVendorTable, ITransactionsByVendorsFilter } from '@bigcapital/server/interfaces';
+import { ITransactionsByVendorTable, ITransactionsByVendorsFilter } from '@bigcapital/libs-backend';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject, Service } from 'typedi';
 import { TransactionsByVendorsInjectable } from './TransactionsByVendorInjectable';

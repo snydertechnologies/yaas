@@ -1,5 +1,5 @@
-import type { IDynamicListFilter, IItemEntry } from '@bigcapital/server/interfaces';
 import type { Knex } from 'knex';
+import type { IDynamicListFilter, IItemEntry } from './';
 import type { ILedgerEntry } from './Ledger';
 
 export interface ICreditNoteEntryNewDTO {

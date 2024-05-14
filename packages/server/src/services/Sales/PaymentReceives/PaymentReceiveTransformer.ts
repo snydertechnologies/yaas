@@ -1,4 +1,4 @@
-import { IPaymentReceive, IPaymentReceiveEntry } from '@bigcapital/server/interfaces';
+import { IPaymentReceive, IPaymentReceiveEntry } from '@bigcapital/libs-backend';
 import { Transformer } from '@bigcapital/server/lib/Transformer/Transformer';
 import { formatNumber } from '@bigcapital/server/utils';
 import { PaymentReceiveEntryTransfromer } from './PaymentReceiveEntryTransformer';

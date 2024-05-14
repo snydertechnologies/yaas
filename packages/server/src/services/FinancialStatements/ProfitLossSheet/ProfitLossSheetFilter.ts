@@ -1,4 +1,4 @@
-import { IProfitLossSheetNode, ProfitLossNodeType } from '@bigcapital/server/interfaces';
+import { IProfitLossSheetNode, ProfitLossNodeType } from '@bigcapital/libs-backend';
 import { get } from 'lodash';
 import * as R from 'ramda';
 import { FinancialFilter } from '../FinancialFilter';

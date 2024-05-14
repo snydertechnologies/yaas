@@ -3,7 +3,7 @@ import {
   ICustomerBalanceSummaryService,
   ICustomerBalanceSummaryStatement,
   ILedgerEntry,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import Ledger from '@bigcapital/server/services/Accounting/Ledger';
 import { Tenant } from '@bigcapital/server/system/models';
 import moment from 'moment';

@@ -1,5 +1,5 @@
+import { ISaleEstimateMailPresendEvent } from '@bigcapital/libs-backend';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { ISaleEstimateMailPresendEvent } from '@bigcapital/server/interfaces';
 import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 import { DeliverSaleEstimate } from '../DeliverSaleEstimate';

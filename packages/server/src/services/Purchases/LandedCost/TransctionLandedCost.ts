@@ -1,5 +1,5 @@
+import { IBill, IExpense, ILandedCostTransaction, ILandedCostTransactionEntry } from '@bigcapital/libs-backend';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { IBill, IExpense, ILandedCostTransaction, ILandedCostTransactionEntry } from '@bigcapital/server/interfaces';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Model } from 'objection';
 import * as R from 'ramda';

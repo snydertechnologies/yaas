@@ -1,5 +1,5 @@
+import { IDynamicListFilter, IDynamicListService, IModel } from '@bigcapital/libs-backend';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { IDynamicListFilter, IDynamicListService, IModel } from '@bigcapital/server/interfaces';
 import { DynamicFilter } from '@bigcapital/server/lib/DynamicFilter';
 import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { NextFunction, Request, Response } from 'express';

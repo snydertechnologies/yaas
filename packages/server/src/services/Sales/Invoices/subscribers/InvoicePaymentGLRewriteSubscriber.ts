@@ -1,4 +1,4 @@
-import { ISaleInvoiceEditingPayload } from '@bigcapital/server/interfaces';
+import { ISaleInvoiceEditingPayload } from '@bigcapital/libs-backend';
 import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 import { InvoicePaymentsGLEntriesRewrite } from '../InvoicePaymentsGLRewrite';

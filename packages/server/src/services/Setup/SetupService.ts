@@ -1,4 +1,4 @@
-import { IOrganizationSetupDTO, ITenant } from '@bigcapital/server/interfaces';
+import { IOrganizationSetupDTO, ITenant } from '@bigcapital/libs-backend';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import Currencies from 'js-money/lib/currency';
 import { Inject, Service } from 'typedi';

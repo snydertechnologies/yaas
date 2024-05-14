@@ -1,4 +1,4 @@
-import { IItemEntry } from '@bigcapital/server/interfaces';
+import { IItemEntry } from '@bigcapital/libs-backend';
 import { Transformer } from '@bigcapital/server/lib/Transformer/Transformer';
 import { formatNumber } from '@bigcapital/server/utils';
 

@@ -1,5 +1,5 @@
+import { ICommonLandedCostEntry, ICommonLandedCostEntryDTO } from '@bigcapital/libs-backend';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { ICommonLandedCostEntry, ICommonLandedCostEntryDTO } from '@bigcapital/server/interfaces';
 import { transformToMap } from '@bigcapital/server/utils';
 import { Service } from 'typedi';
 

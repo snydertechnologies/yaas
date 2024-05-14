@@ -1,4 +1,4 @@
-import { IPlaidItemCreatedEventPayload, PlaidItemDTO } from '@bigcapital/server/interfaces/Plaid';
+import { IPlaidItemCreatedEventPayload, PlaidItemDTO } from '@bigcapital/libs-backend';
 import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import { PlaidClientWrapper } from '@bigcapital/server/lib/Plaid';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';

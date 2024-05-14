@@ -1,4 +1,4 @@
-import { ISalesByItemsReportQuery } from '@bigcapital/server/interfaces';
+import { ISalesByItemsReportQuery } from '@bigcapital/libs-backend';
 import { Inject, Service } from 'typedi';
 import { SalesByItemsReportService } from './SalesByItemsService';
 import { SalesByItemsTable } from './SalesByItemsTable';

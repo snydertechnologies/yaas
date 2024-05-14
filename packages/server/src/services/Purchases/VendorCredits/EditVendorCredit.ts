@@ -1,4 +1,8 @@
-import { IVendorCreditEditDTO, IVendorCreditEditedPayload, IVendorCreditEditingPayload } from '@bigcapital/server/interfaces';
+import {
+  IVendorCreditEditDTO,
+  IVendorCreditEditedPayload,
+  IVendorCreditEditingPayload,
+} from '@bigcapital/libs-backend';
 import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import ItemsEntriesService from '@bigcapital/server/services/Items/ItemsEntriesService';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';

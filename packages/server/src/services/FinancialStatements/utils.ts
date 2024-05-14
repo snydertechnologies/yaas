@@ -1,4 +1,4 @@
-import { ITableRow } from '@bigcapital/server/interfaces';
+import { ITableRow } from '@bigcapital/libs-backend';
 import { kebabCase } from 'lodash';
 
 export const formatNumber = (balance, { noCents, divideOn1000 }): string => {

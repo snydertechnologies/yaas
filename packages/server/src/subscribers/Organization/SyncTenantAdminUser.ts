@@ -1,4 +1,4 @@
-import { IOrganizationBuildEventPayload } from '@bigcapital/server/interfaces';
+import { IOrganizationBuildEventPayload } from '@bigcapital/libs-backend';
 import OrganizationService from '@bigcapital/server/services/Organization/OrganizationService';
 import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';

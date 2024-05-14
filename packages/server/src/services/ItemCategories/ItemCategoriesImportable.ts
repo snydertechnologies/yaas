@@ -1,4 +1,4 @@
-import { IItemCategoryOTD } from '@bigcapital/server/interfaces';
+import { IItemCategoryOTD } from '@bigcapital/libs-backend';
 import { Knex } from 'knex';
 import { Inject, Service } from 'typedi';
 import { Importable } from '../Import/Importable';

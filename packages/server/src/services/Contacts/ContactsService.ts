@@ -1,5 +1,5 @@
+import { IContact, IContactEditDTO, IContactNewDTO, IContactsAutoCompleteFilter } from '@bigcapital/libs-backend';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { IContact, IContactEditDTO, IContactNewDTO, IContactsAutoCompleteFilter } from '@bigcapital/server/interfaces';
 import DynamicListingService from '@bigcapital/server/services/DynamicListing/DynamicListService';
 import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Knex } from 'knex';

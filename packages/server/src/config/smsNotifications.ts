@@ -1,4 +1,4 @@
-import { type ISmsNotificationDefined, SMS_NOTIFICATION_KEY } from '@bigcapital/server/interfaces';
+import { type ISmsNotificationDefined, SMS_NOTIFICATION_KEY } from '@bigcapital/libs-backend';
 
 export default [
   {

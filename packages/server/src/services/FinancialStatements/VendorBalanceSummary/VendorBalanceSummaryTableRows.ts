@@ -6,7 +6,7 @@ import {
   IVendorBalanceSummaryQuery,
   IVendorBalanceSummaryTotal,
   IVendorBalanceSummaryVendor,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { tableMapper, tableRowMapper } from '@bigcapital/server/utils';
 import * as R from 'ramda';
 

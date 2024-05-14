@@ -5,7 +5,7 @@ import {
   IDateRange,
   ITableColumn,
   ITableRow,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { dateRangeFromToCollection, tableRowMapper } from '@bigcapital/server/utils';
 import { mapValuesDeep } from '@bigcapital/server/utils/deepdash';
 import { isEmpty } from 'lodash';

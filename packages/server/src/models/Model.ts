@@ -1,5 +1,5 @@
+import { PaginationQueryBuilder } from '@bigcapital/libs-backend';
 import DateSession from '@bigcapital/server/models/DateSession';
-import PaginationQueryBuilder from '@bigcapital/server/models/Pagination';
 import { Model, mixin } from 'objection';
 
 export default class ModelBase extends mixin(Model, [DateSession]) {

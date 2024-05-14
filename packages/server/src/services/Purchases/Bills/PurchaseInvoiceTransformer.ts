@@ -1,4 +1,4 @@
-import { IBill } from '@bigcapital/server/interfaces';
+import { IBill } from '@bigcapital/libs-backend';
 import { Transformer } from '@bigcapital/server/lib/Transformer/Transformer';
 import { ItemEntryTransformer } from '@bigcapital/server/services/Sales/Invoices/ItemEntryTransformer';
 import { SaleInvoiceTaxEntryTransformer } from '@bigcapital/server/services/Sales/Invoices/SaleInvoiceTaxEntryTransformer';

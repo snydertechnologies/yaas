@@ -1,4 +1,4 @@
-import { IAccountEventDeletePayload } from '@bigcapital/server/interfaces';
+import { IAccountEventDeletePayload } from '@bigcapital/libs-backend';
 import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 import CashflowDeleteAccount from './CashflowDeleteAccount';

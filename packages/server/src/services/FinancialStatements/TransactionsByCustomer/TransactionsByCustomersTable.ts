@@ -1,4 +1,4 @@
-import { ITableColumn, ITableRow, ITransactionsByCustomersCustomer } from '@bigcapital/server/interfaces';
+import { ITableColumn, ITableRow, ITransactionsByCustomersCustomer } from '@bigcapital/libs-backend';
 import { tableRowMapper } from '@bigcapital/server/utils';
 import * as R from 'ramda';
 import TransactionsByContactsTableRows from '../TransactionsByContact/TransactionsByContactTableRows';

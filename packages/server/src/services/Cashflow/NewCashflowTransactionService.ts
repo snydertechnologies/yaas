@@ -5,7 +5,7 @@ import {
   ICashflowTransactionInput,
   ICommandCashflowCreatedPayload,
   ICommandCashflowCreatingPayload,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import { BranchTransactionDTOTransform } from '@bigcapital/server/services/Branches/Integrations/BranchTransactionDTOTransform';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';

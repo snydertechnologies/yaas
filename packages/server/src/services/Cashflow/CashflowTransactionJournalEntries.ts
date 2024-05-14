@@ -1,9 +1,9 @@
+import { AccountNormal, type ICashflowTransaction, type ILedgerEntry } from '@bigcapital/libs-backend';
 import Ledger from '@bigcapital/server/services/Accounting/Ledger';
 import LedgerStorageService from '@bigcapital/server/services/Accounting/LedgerStorageService';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Knex } from 'knex';
 import { Inject, Service } from 'typedi';
-import { AccountNormal, ICashflowTransaction, ILedgerEntry } from '../../interfaces';
 import { getCashflowAccountTransactionsTypes, transformCashflowTransactionType } from './utils';
 
 @Service()

@@ -15,6 +15,20 @@
       },
       "outputs": ["{options.outputPath}"]
     },
+    "format": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["cd libs/backend && bun --bun format"],
+        "parallel": false
+      }
+    },
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["cd libs/backend && bun --bun lint"],
+        "parallel": false
+      }
+    },
     "test": {
       "executor": "@nx/jest:jest",
       "options": {

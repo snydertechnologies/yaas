@@ -3,7 +3,7 @@ import { defaultTo } from 'lodash';
 import { isEmpty } from 'lodash';
 import * as R from 'ramda';
 
-import { IAccount, IAccountTransactionsGroupBy, IProfitLossSheetQuery } from '@bigcapital/server/interfaces';
+import { IAccount, IAccountTransactionsGroupBy, IProfitLossSheetQuery } from '@bigcapital/libs-backend';
 import Ledger from '@bigcapital/server/services/Accounting/Ledger';
 import { transformToMapBy } from '@bigcapital/server/utils';
 import { FinancialDatePeriods } from '../FinancialDatePeriods';

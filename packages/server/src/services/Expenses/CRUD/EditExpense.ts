@@ -4,7 +4,7 @@ import {
   IExpenseEventEditPayload,
   IExpenseEventEditingPayload,
   ISystemUser,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import EntriesService from '@bigcapital/server/services/Entries';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';

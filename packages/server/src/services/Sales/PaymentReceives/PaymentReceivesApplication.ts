@@ -8,7 +8,7 @@ import {
   IPaymentReceivesFilter,
   ISystemUser,
   PaymentReceiveMailOptsDTO,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { Inject, Service } from 'typedi';
 import { CreatePaymentReceive } from './CreatePaymentReceive';
 import { DeletePaymentReceive } from './DeletePaymentReceive';

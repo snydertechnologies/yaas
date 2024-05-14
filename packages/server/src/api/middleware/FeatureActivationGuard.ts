@@ -1,4 +1,4 @@
-import { Features } from '@bigcapital/server/interfaces';
+import { Features } from '@bigcapital/libs-backend';
 import { Request, Response } from 'express';
 
 export const FeatureActivationGuard = (feature: Features) => (req: Request, res: Response, next: Function) => {

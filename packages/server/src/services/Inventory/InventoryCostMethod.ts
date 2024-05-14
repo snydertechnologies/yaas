@@ -1,4 +1,4 @@
-import { IInventoryLotCost } from '@bigcapital/server/interfaces';
+import { IInventoryLotCost } from '@bigcapital/libs-backend';
 import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { omit } from 'lodash';
 import { Container } from 'typedi';

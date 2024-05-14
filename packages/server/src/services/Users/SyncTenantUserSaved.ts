@@ -1,4 +1,8 @@
-import { ITenantUserActivatedPayload, ITenantUserEditedPayload, ITenantUserInactivatedPayload } from '@bigcapital/server/interfaces';
+import {
+  ITenantUserActivatedPayload,
+  ITenantUserEditedPayload,
+  ITenantUserInactivatedPayload,
+} from '@bigcapital/libs-backend';
 import events from '@bigcapital/server/subscribers/events';
 import { SystemUser } from '@bigcapital/server/system/models';
 import { pick } from 'lodash';

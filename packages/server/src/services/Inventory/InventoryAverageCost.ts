@@ -1,4 +1,4 @@
-import { IInventoryTransaction } from '@bigcapital/server/interfaces';
+import { IInventoryTransaction } from '@bigcapital/libs-backend';
 import InventoryCostMethod from '@bigcapital/server/services/Inventory/InventoryCostMethod';
 import { Knex } from 'knex';
 import { pick } from 'lodash';

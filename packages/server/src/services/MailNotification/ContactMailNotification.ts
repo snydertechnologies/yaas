@@ -1,4 +1,4 @@
-import { CommonMailOptions } from '@bigcapital/server/interfaces';
+import { CommonMailOptions } from '@bigcapital/libs-backend';
 import { MailTenancy } from '@bigcapital/server/services/MailTenancy/MailTenancy';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Tenant } from '@bigcapital/server/system/models';

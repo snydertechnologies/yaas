@@ -1,4 +1,4 @@
-import { ISaleEstimateCreatedPayload } from '@bigcapital/server/interfaces';
+import { ISaleEstimateCreatedPayload } from '@bigcapital/libs-backend';
 import { SaleEstimateNotifyBySms } from '@bigcapital/server/services/Sales/Estimates/SaleEstimateSmsNotify';
 import { runAfterTransaction } from '@bigcapital/server/services/UnitOfWork/TransactionsHooks';
 import events from '@bigcapital/server/subscribers/events';

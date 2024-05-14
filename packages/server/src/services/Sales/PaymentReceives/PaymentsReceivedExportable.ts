@@ -1,4 +1,4 @@
-import { IAccountsStructureType, IPaymentReceivesFilter } from '@bigcapital/server/interfaces';
+import { IAccountsStructureType, IPaymentReceivesFilter } from '@bigcapital/libs-backend';
 import { Exportable } from '@bigcapital/server/services/Export/Exportable';
 import { Inject, Service } from 'typedi';
 import { PaymentReceivesApplication } from './PaymentReceivesApplication';

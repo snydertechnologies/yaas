@@ -1,4 +1,4 @@
-import { ITenant } from '@bigcapital/server/interfaces';
+import { ITenant } from '@bigcapital/libs-backend';
 import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import TenantsManagerService from '@bigcapital/server/services/Tenancy/TenantsManager';
 import { Request } from 'express';

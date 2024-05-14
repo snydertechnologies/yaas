@@ -1,4 +1,4 @@
-import { IBillsFilter } from '@bigcapital/server/interfaces';
+import { IBillsFilter } from '@bigcapital/libs-backend';
 import { Exportable } from '@bigcapital/server/services/Export/Exportable';
 import { Inject, Service } from 'typedi';
 import { BillsApplication } from './BillsApplication';

@@ -1,4 +1,4 @@
-import { IExpense } from '@bigcapital/server/interfaces';
+import { IExpense } from '@bigcapital/libs-backend';
 import { TransformerInjectable } from '@bigcapital/server/lib/Transformer/TransformerInjectable';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject, Service } from 'typedi';

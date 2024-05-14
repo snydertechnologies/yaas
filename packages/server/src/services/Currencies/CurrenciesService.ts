@@ -1,5 +1,5 @@
+import { ICurrenciesService, ICurrency, ICurrencyDTO, ICurrencyEditDTO } from '@bigcapital/libs-backend';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { ICurrenciesService, ICurrency, ICurrencyDTO, ICurrencyEditDTO } from '@bigcapital/server/interfaces';
 import { TransformerInjectable } from '@bigcapital/server/lib/Transformer/TransformerInjectable';
 import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Tenant } from '@bigcapital/server/system/models';

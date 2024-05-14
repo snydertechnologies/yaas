@@ -5,7 +5,7 @@ import {
   ITrialBalanceSheetData,
   ITrialBalanceSheetQuery,
   ITrialBalanceTotal,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { allPassedConditionsPass, flatToNestedArray } from '@bigcapital/server/utils';
 import { sumBy } from 'lodash';
 import * as R from 'ramda';

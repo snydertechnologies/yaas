@@ -1,5 +1,5 @@
+import { IGeneralLedgerMeta, IGeneralLedgerSheetQuery } from '@bigcapital/libs-backend';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { IGeneralLedgerMeta, IGeneralLedgerSheetQuery } from '@bigcapital/server/interfaces';
 import Journal from '@bigcapital/server/services/Accounting/JournalPoster';
 import GeneralLedgerSheet from '@bigcapital/server/services/FinancialStatements/GeneralLedger/GeneralLedger';
 import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';

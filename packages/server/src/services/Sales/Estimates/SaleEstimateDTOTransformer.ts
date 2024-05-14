@@ -1,4 +1,4 @@
-import { ICustomer, ISaleEstimate, ISaleEstimateDTO } from '@bigcapital/server/interfaces';
+import { ICustomer, ISaleEstimate, ISaleEstimateDTO } from '@bigcapital/libs-backend';
 import { BranchTransactionDTOTransform } from '@bigcapital/server/services/Branches/Integrations/BranchTransactionDTOTransform';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { WarehouseTransactionDTOTransform } from '@bigcapital/server/services/Warehouses/Integrations/WarehouseTransactionDTOTransform';

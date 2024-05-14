@@ -1,4 +1,4 @@
-import { ITaxRate } from '@bigcapital/server/interfaces';
+import { ITaxRate } from '@bigcapital/libs-backend';
 import {
   SalesTaxLiabilitySummaryPayableById,
   SalesTaxLiabilitySummaryQuery,
@@ -6,7 +6,7 @@ import {
   SalesTaxLiabilitySummaryReportData,
   SalesTaxLiabilitySummarySalesById,
   SalesTaxLiabilitySummaryTotal,
-} from '@bigcapital/server/interfaces/SalesTaxLiabilitySummary';
+} from '@bigcapital/libs-backend';
 import { isEmpty, sumBy } from 'lodash';
 import * as R from 'ramda';
 import FinancialSheet from '../FinancialSheet';

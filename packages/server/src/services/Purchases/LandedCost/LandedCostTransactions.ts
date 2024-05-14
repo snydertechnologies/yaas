@@ -4,7 +4,7 @@ import {
   ILandedCostTransactionEntry,
   ILandedCostTransactionEntryDOJO,
   ILandedCostTransactionsQueryDTO,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { formatNumber } from '@bigcapital/server/utils';
 import { ref } from 'objection';
 import * as R from 'ramda';

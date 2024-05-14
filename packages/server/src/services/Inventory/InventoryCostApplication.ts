@@ -1,4 +1,4 @@
-import { IInventoryItemCostMeta } from '@bigcapital/server/interfaces';
+import { IInventoryItemCostMeta } from '@bigcapital/libs-backend';
 import { Inject, Service } from 'typedi';
 import { InventoryItemCostService } from './InventoryCostsService';
 

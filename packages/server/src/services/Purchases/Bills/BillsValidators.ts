@@ -1,5 +1,5 @@
+import { IItemEntryDTO } from '@bigcapital/libs-backend';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { IItemEntryDTO } from '@bigcapital/server/interfaces';
 import { Bill } from '@bigcapital/server/models';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { transformToMap } from '@bigcapital/server/utils';

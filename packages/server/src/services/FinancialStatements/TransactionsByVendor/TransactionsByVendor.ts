@@ -7,7 +7,7 @@ import {
   ITransactionsByVendorsTransaction,
   ITransactionsByVendorsVendor,
   IVendor,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { isEmpty } from 'lodash';
 import * as R from 'ramda';
 import TransactionsByContact from '../TransactionsByContact/TransactionsByContact';

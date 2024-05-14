@@ -1,5 +1,5 @@
+import { CommonMailOptions, CommonMailOptionsDTO } from '@bigcapital/libs-backend';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { CommonMailOptions, CommonMailOptionsDTO } from '@bigcapital/server/interfaces';
 import { isEmpty } from 'lodash';
 import { ERRORS } from './constants';
 

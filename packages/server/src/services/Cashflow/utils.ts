@@ -2,7 +2,7 @@ import {
   ICashflowNewCommandDTO,
   ICategorizeCashflowTransactioDTO,
   IUncategorizedCashflowTransaction,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { camelCase, upperFirst } from 'lodash';
 import { CASHFLOW_TRANSACTION_TYPE, CASHFLOW_TRANSACTION_TYPE_META, ICashflowTransactionTypeMeta } from './constants';
 

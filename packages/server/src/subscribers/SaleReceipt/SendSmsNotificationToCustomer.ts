@@ -1,4 +1,4 @@
-import { ISaleReceiptCreatedPayload } from '@bigcapital/server/interfaces';
+import { ISaleReceiptCreatedPayload } from '@bigcapital/libs-backend';
 import { SaleReceiptNotifyBySms } from '@bigcapital/server/services/Sales/Receipts/SaleReceiptNotifyBySms';
 import { runAfterTransaction } from '@bigcapital/server/services/UnitOfWork/TransactionsHooks';
 import events from '@bigcapital/server/subscribers/events';

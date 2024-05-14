@@ -1,4 +1,4 @@
-import { ISaleReceiptCreatingPayload, ISaleReceiptEditingPayload } from '@bigcapital/server/interfaces';
+import { ISaleReceiptCreatingPayload, ISaleReceiptEditingPayload } from '@bigcapital/libs-backend';
 import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 import { WarehousesDTOValidators } from '../../../Integrations/WarehousesDTOValidators';

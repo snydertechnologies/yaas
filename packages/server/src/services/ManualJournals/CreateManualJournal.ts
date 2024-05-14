@@ -4,7 +4,7 @@ import {
   IManualJournalDTO,
   IManualJournalEventCreatedPayload,
   ISystemUser,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import { ManualJournalBranchesDTOTransformer } from '@bigcapital/server/services/Branches/Integrations/ManualJournals/ManualJournalDTOTransformer';
 import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';

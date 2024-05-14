@@ -1,9 +1,9 @@
+import { ILoginDTO, IRegisterDTO } from '@bigcapital/libs-backend';
 import BaseController from '@bigcapital/server/api/controllers/BaseController';
 import LoginThrottlerMiddleware from '@bigcapital/server/api/middleware/LoginThrottlerMiddleware';
 import asyncMiddleware from '@bigcapital/server/api/middleware/asyncMiddleware';
 import { DATATYPES_LENGTH } from '@bigcapital/server/data/DataTypes';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { ILoginDTO, IRegisterDTO } from '@bigcapital/server/interfaces';
 import AuthenticationApplication from '@bigcapital/server/services/Authentication/AuthApplication';
 import { Request, Response, Router } from 'express';
 import { ValidationChain, check } from 'express-validator';

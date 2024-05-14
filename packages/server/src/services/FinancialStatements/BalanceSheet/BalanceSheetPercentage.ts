@@ -1,4 +1,4 @@
-import { IBalanceSheetDataNode } from '@bigcapital/server/interfaces';
+import { IBalanceSheetDataNode } from '@bigcapital/libs-backend';
 import { get } from 'lodash';
 import * as R from 'ramda';
 import { BalanceSheetQuery } from './BalanceSheetQuery';

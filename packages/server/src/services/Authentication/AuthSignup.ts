@@ -1,7 +1,12 @@
 import crypto from 'crypto';
+import {
+  IAuthSignedUpEventPayload,
+  IAuthSigningUpEventPayload,
+  IRegisterDTO,
+  ISystemUser,
+} from '@bigcapital/libs-backend';
 import config from '@bigcapital/server/config';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { IAuthSignedUpEventPayload, IAuthSigningUpEventPayload, IRegisterDTO, ISystemUser } from '@bigcapital/server/interfaces';
 import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import events from '@bigcapital/server/subscribers/events';
 import { hashPassword } from '@bigcapital/server/utils';

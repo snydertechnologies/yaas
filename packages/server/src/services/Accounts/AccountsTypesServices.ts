@@ -1,4 +1,4 @@
-import { IAccountType, IAccountsTypesService } from '@bigcapital/server/interfaces';
+import { IAccountType, IAccountsTypesService } from '@bigcapital/libs-backend';
 import AccountTypesUtils from '@bigcapital/server/lib/AccountTypes';
 import I18nService from '@bigcapital/server/services/I18n/I18nService';
 import { Inject, Service } from 'typedi';

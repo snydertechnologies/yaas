@@ -1,4 +1,4 @@
-import type { IModelMeta, IModelMetaDefaultSort, IModelMetaField } from '@bigcapital/server/interfaces';
+import type { IModelMeta, IModelMetaDefaultSort, IModelMetaField } from '@bigcapital/libs-backend';
 import { get } from 'lodash';
 
 const defaultModelMeta = {

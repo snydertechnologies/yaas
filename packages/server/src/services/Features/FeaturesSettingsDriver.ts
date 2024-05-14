@@ -1,4 +1,4 @@
-import { IFeatureAllItem } from '@bigcapital/server/interfaces';
+import { IFeatureAllItem } from '@bigcapital/libs-backend';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject, Service } from 'typedi';
 import { FeaturesConfigureManager } from './FeaturesConfigureManager';

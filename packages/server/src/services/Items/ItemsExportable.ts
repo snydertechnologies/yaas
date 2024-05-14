@@ -1,4 +1,4 @@
-import { IItemsFilter } from '@bigcapital/server/interfaces';
+import { IItemsFilter } from '@bigcapital/libs-backend';
 import { Inject, Service } from 'typedi';
 import { Exportable } from '../Export/Exportable';
 import { ItemsApplication } from './ItemsApplication';

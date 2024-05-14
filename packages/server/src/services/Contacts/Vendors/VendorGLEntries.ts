@@ -1,4 +1,4 @@
-import { AccountNormal, ILedgerEntry, IVendor } from '@bigcapital/server/interfaces';
+import { AccountNormal, ILedgerEntry, IVendor } from '@bigcapital/libs-backend';
 import Ledger from '@bigcapital/server/services/Accounting/Ledger';
 import { Service } from 'typedi';
 

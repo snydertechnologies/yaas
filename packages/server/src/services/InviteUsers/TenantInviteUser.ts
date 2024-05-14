@@ -1,4 +1,3 @@
-import { ServiceError } from '@bigcapital/server/exceptions';
 import {
   IInviteUserService,
   ISystemUser,
@@ -6,7 +5,8 @@ import {
   IUserInviteResendEventPayload,
   IUserInvitedEventPayload,
   IUserSendInviteDTO,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
+import { ServiceError } from '@bigcapital/server/exceptions';
 import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import RolesService from '@bigcapital/server/services/Roles/RolesService';
 import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';

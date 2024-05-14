@@ -1,5 +1,5 @@
+import { ICreditNote, ICreditNoteOpenedPayload, ICreditNoteOpeningPayload } from '@bigcapital/libs-backend';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { ICreditNote, ICreditNoteOpenedPayload, ICreditNoteOpeningPayload } from '@bigcapital/server/interfaces';
 import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import ItemsEntriesService from '@bigcapital/server/services/Items/ItemsEntriesService';
 import UnitOfWork from '@bigcapital/server/services/UnitOfWork';

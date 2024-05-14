@@ -1,4 +1,4 @@
-import { IFilterMeta, IManualJournal, IManualJournalsFilter, IPaginationMeta } from '@bigcapital/server/interfaces';
+import { IFilterMeta, IManualJournal, IManualJournalsFilter, IPaginationMeta } from '@bigcapital/libs-backend';
 import { TransformerInjectable } from '@bigcapital/server/lib/Transformer/TransformerInjectable';
 import DynamicListingService from '@bigcapital/server/services/DynamicListing/DynamicListService';
 import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';

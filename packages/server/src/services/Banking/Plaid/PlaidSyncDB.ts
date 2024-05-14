@@ -1,4 +1,4 @@
-import { PlaidAccount, PlaidTransaction } from '@bigcapital/server/interfaces';
+import { PlaidAccount, PlaidTransaction } from '@bigcapital/libs-backend';
 import { CreateAccount } from '@bigcapital/server/services/Accounts/CreateAccount';
 import { CashflowApplication } from '@bigcapital/server/services/Cashflow/CashflowApplication';
 import { DeleteCashflowTransaction } from '@bigcapital/server/services/Cashflow/DeleteCashflowTransactionService';

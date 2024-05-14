@@ -1,4 +1,4 @@
-import { AccountNormal, IExpense, IExpenseCategory, ILedger, ILedgerEntry } from '@bigcapital/server/interfaces';
+import { AccountNormal, IExpense, IExpenseCategory, ILedger, ILedgerEntry } from '@bigcapital/libs-backend';
 import Ledger from '@bigcapital/server/services/Accounting/Ledger';
 import * as R from 'ramda';
 import { Service } from 'typedi';

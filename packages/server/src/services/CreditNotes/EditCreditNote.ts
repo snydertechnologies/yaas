@@ -1,4 +1,4 @@
-import { ICreditNoteEditDTO, ICreditNoteEditedPayload, ICreditNoteEditingPayload } from '@bigcapital/server/interfaces';
+import { ICreditNoteEditDTO, ICreditNoteEditedPayload, ICreditNoteEditingPayload } from '@bigcapital/libs-backend';
 import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import ItemsEntriesService from '@bigcapital/server/services/Items/ItemsEntriesService';
 import UnitOfWork from '@bigcapital/server/services/UnitOfWork';

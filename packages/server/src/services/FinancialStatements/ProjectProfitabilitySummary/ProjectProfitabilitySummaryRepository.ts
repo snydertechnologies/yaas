@@ -1,5 +1,5 @@
+import { ProjectProfitabilitySummaryQuery } from '@bigcapital/libs-backend';
 import { ACCOUNT_ROOT_TYPE } from '@bigcapital/server/data/AccountTypes';
-import { ProjectProfitabilitySummaryQuery } from '@bigcapital/server/interfaces';
 import Project from '@bigcapital/server/models/Project';
 import Ledger from '@bigcapital/server/services/Accounting/Ledger';
 import { isEmpty, map } from 'lodash';

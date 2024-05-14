@@ -1,4 +1,4 @@
-import { ICreditNoteAppliedToInvoice } from '@bigcapital/server/interfaces';
+import { ICreditNoteAppliedToInvoice } from '@bigcapital/libs-backend';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import Bluebird from 'bluebird';
 import Knex from 'knex';

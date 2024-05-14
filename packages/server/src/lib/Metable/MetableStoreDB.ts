@@ -1,5 +1,5 @@
+import { IMetableStoreStorage, IMetadata } from '@bigcapital/libs-backend';
 import config from '@bigcapital/server/data/options';
-import { IMetableStoreStorage, IMetadata } from '@bigcapital/server/interfaces';
 import { isBlank, parseBoolean } from '@bigcapital/server/utils';
 import MetableConfig from './MetableConfig';
 import MetableStore from './MetableStore';

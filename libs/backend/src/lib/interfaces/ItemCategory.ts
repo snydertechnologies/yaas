@@ -1,5 +1,5 @@
 import type Knex from 'knex';
-import type { IDynamicListFilterDTO } from './DynamicFilter';
+import type { IDynamicListFilter } from './DynamicFilter';
 import type { ISystemUser } from './User';
 
 export interface IItemCategory {
@@ -28,7 +28,7 @@ export interface IItemCategoryOTD {
   costMethod?: string;
 }
 
-export interface IItemCategoriesFilter extends IDynamicListFilterDTO {
+export interface IItemCategoriesFilter extends IDynamicListFilter {
   stringifiedFilterRoles?: string;
 }
 

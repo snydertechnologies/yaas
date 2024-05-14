@@ -1,4 +1,4 @@
-import { IBalanceSheetQuery, IBalanceSheetTable } from '@bigcapital/server/interfaces';
+import { IBalanceSheetQuery, IBalanceSheetTable } from '@bigcapital/libs-backend';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject, Service } from 'typedi';
 import BalanceSheetStatementService from './BalanceSheetInjectable';

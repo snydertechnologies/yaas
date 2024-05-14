@@ -1,5 +1,5 @@
-import type { IBill } from '@bigcapital/server/interfaces';
-import type Knex from 'knex';
+import type { Knex } from 'knex';
+import type { IBill } from './';
 import type { IItemEntry } from './ItemEntry';
 
 export interface IBillLandedCost {
@@ -104,7 +104,7 @@ export interface ILandedCostTransactionDOJO extends ILandedCostTransaction {
   formattedAllocatedCostAmount: string;
 }
 
-interface ILandedCostEntry {
+export interface ILandedCostEntry {
   id: number;
   landedCost?: boolean;
 }

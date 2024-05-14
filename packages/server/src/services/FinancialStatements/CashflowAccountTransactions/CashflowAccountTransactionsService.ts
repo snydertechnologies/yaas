@@ -1,6 +1,6 @@
+import { IAccount, ICashflowAccountTransactionsQuery } from '@bigcapital/libs-backend';
 import { ACCOUNT_TYPE } from '@bigcapital/server/data/AccountTypes';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { IAccount, ICashflowAccountTransactionsQuery } from '@bigcapital/server/interfaces';
 import I18nService from '@bigcapital/server/services/I18n/I18nService';
 import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { includes } from 'lodash';

@@ -1,5 +1,3 @@
-import { ACCOUNT_ROOT_TYPE, ACCOUNT_TYPE } from '@bigcapital/server/data/AccountTypes';
-import { ServiceError } from '@bigcapital/server/exceptions';
 import {
   IFilterMeta,
   IItemCategoriesFilter,
@@ -10,7 +8,9 @@ import {
   IItemCategoryEditedPayload,
   IItemCategoryOTD,
   ISystemUser,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
+import { ACCOUNT_ROOT_TYPE, ACCOUNT_TYPE } from '@bigcapital/server/data/AccountTypes';
+import { ServiceError } from '@bigcapital/server/exceptions';
 import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import DynamicListingService from '@bigcapital/server/services/DynamicListing/DynamicListService';
 import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';

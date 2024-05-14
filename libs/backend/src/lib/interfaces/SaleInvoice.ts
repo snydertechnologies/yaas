@@ -1,6 +1,6 @@
-import type { IAccount, ISystemUser, ITaxTransaction } from '@bigcapital/server/interfaces';
-import type { IDynamicListFilter } from '@bigcapital/server/interfaces/DynamicFilter';
+import type { IDynamicListFilter } from '@bigcapital/libs-backend';
 import type { Knex } from 'knex';
+import type { IAccount, ISystemUser, ITaxTransaction } from './';
 import type { IItemEntry, IItemEntryDTO } from './ItemEntry';
 import type { CommonMailOptions, CommonMailOptionsDTO } from './Mailable';
 

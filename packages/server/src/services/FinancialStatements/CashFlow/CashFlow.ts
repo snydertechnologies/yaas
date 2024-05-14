@@ -1,4 +1,3 @@
-import { ACCOUNT_ROOT_TYPE } from '@bigcapital/server/data/AccountTypes';
 import {
   IAccount,
   ICashFlowCashBeginningNode,
@@ -17,7 +16,8 @@ import {
   ICashFlowStatementTotalSection,
   ILedger,
   INumberFormatQuery,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
+import { ACCOUNT_ROOT_TYPE } from '@bigcapital/server/data/AccountTypes';
 import I18nService from '@bigcapital/server/services/I18n/I18nService';
 import { accumSum, transformToMapBy } from '@bigcapital/server/utils';
 import { defaultTo, get, isEmpty, map, mapValues, set, sumBy } from 'lodash';

@@ -4,7 +4,7 @@ import {
   IProfitLossSheetEquationNode,
   IProfitLossSheetNode,
   IProfitLossSheetTotal,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { sumBy } from 'lodash';
 import { compose } from 'lodash/fp';
 import * as R from 'ramda';

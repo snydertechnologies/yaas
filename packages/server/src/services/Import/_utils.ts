@@ -1,6 +1,6 @@
 import path from 'path';
+import { IModelMetaField, IModelMetaField2 } from '@bigcapital/libs-backend';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { IModelMetaField, IModelMetaField2 } from '@bigcapital/server/interfaces';
 import { multiNumberParse } from '@bigcapital/server/utils/multi-number-parse';
 import fs from 'fs/promises';
 import { Knex } from 'knex';

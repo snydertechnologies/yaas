@@ -1,4 +1,4 @@
-import { IAccountsFilter, IAccountsStructureType } from '@bigcapital/server/interfaces';
+import { IAccountsFilter, IAccountsStructureType } from '@bigcapital/libs-backend';
 import { Inject, Service } from 'typedi';
 import { Exportable } from '../Export/Exportable';
 import ItemCategoriesService from './ItemCategoriesService';

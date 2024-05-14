@@ -1,4 +1,4 @@
-import { IBill, IBillEditDTO, IBillEditedPayload, IBillEditingPayload, ISystemUser } from '@bigcapital/server/interfaces';
+import { IBill, IBillEditDTO, IBillEditedPayload, IBillEditingPayload, ISystemUser } from '@bigcapital/libs-backend';
 import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import EntriesService from '@bigcapital/server/services/Entries';
 import ItemsEntriesService from '@bigcapital/server/services/Items/ItemsEntriesService';

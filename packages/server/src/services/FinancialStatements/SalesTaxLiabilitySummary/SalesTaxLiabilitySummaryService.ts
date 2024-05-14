@@ -1,4 +1,4 @@
-import { SalesTaxLiabilitySummaryQuery } from '@bigcapital/server/interfaces/SalesTaxLiabilitySummary';
+import { SalesTaxLiabilitySummaryQuery } from '@bigcapital/libs-backend';
 import { Inject, Service } from 'typedi';
 import { SalesTaxLiabilitySummary } from './SalesTaxLiabilitySummary';
 import { SalesTaxLiabilitySummaryMeta } from './SalesTaxLiabilitySummaryMeta';

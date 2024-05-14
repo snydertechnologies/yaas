@@ -1,4 +1,4 @@
-import { IJournalReportQuery, IJournalTable } from '@bigcapital/server/interfaces';
+import { IJournalReportQuery, IJournalTable } from '@bigcapital/libs-backend';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject } from 'typedi';
 import { JournalSheetService } from './JournalSheetService';

@@ -5,7 +5,7 @@ import {
   IProjectProfitabilitySummaryTotalNode,
   ITableColumn,
   ITableRow,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { tableRowMapper } from '@bigcapital/server/utils';
 import { map } from 'lodash/fp';
 import * as R from 'ramda';

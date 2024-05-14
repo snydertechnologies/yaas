@@ -1,4 +1,9 @@
-import { IBIllEventDeletedPayload, IBillCreatedPayload, IBillEditedPayload, IBillOpenedPayload } from '@bigcapital/server/interfaces';
+import {
+  IBIllEventDeletedPayload,
+  IBillCreatedPayload,
+  IBillEditedPayload,
+  IBillOpenedPayload,
+} from '@bigcapital/libs-backend';
 import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 import { BillGLEntries } from './BillGLEntries';

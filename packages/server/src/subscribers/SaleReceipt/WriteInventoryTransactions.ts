@@ -1,4 +1,8 @@
-import { ISaleReceiptCreatedPayload, ISaleReceiptEditedPayload, ISaleReceiptEventDeletedPayload } from '@bigcapital/server/interfaces';
+import {
+  ISaleReceiptCreatedPayload,
+  ISaleReceiptEditedPayload,
+  ISaleReceiptEventDeletedPayload,
+} from '@bigcapital/libs-backend';
 import { SaleReceiptInventoryTransactions } from '@bigcapital/server/services/Sales/Receipts/SaleReceiptInventoryTransactions';
 import events from '@bigcapital/server/subscribers/events';
 import { EventSubscriber } from 'event-dispatch';

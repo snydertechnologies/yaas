@@ -5,7 +5,7 @@ import {
   IInventoryValuationTotal,
   IItem,
   InventoryCostLotTracker,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { allPassedConditionsPass, transformToMap } from '@bigcapital/server/utils';
 import { get, isEmpty, sumBy } from 'lodash';
 import * as R from 'ramda';

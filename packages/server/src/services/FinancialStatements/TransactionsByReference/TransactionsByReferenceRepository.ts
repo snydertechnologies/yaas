@@ -1,4 +1,4 @@
-import { IAccount, IAccountTransaction } from '@bigcapital/server/interfaces';
+import { IAccount, IAccountTransaction } from '@bigcapital/libs-backend';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject, Service } from 'typedi';
 

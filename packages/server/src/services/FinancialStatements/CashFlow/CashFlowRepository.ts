@@ -1,4 +1,4 @@
-import { IAccount, IAccountTransaction, ICashFlowStatementQuery } from '@bigcapital/server/interfaces';
+import { IAccount, IAccountTransaction, ICashFlowStatementQuery } from '@bigcapital/libs-backend';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Knex } from 'knex';
 import { isEmpty } from 'lodash';

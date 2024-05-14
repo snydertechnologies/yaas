@@ -1,5 +1,5 @@
+import { ISaleInvoiceCreateDTO, ProjectLinkRefType } from '@bigcapital/libs-backend';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { ISaleInvoiceCreateDTO, ProjectLinkRefType } from '@bigcapital/server/interfaces';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { difference, isEmpty } from 'lodash';
 import { Inject, Service } from 'typedi';

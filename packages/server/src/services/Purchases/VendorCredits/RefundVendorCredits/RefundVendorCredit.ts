@@ -1,5 +1,5 @@
+import { IAccount, IVendorCredit } from '@bigcapital/libs-backend';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { IAccount, IVendorCredit } from '@bigcapital/server/interfaces';
 import { Service } from 'typedi';
 import BaseVendorCredit from '../BaseVendorCredit';
 import { ERRORS } from './constants';

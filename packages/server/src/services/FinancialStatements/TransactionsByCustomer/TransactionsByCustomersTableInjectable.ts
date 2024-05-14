@@ -1,4 +1,4 @@
-import { ITransactionsByCustomersFilter, ITransactionsByCustomersTable } from '@bigcapital/server/interfaces';
+import { ITransactionsByCustomersFilter, ITransactionsByCustomersTable } from '@bigcapital/libs-backend';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject, Service } from 'typedi';
 import { TransactionsByCustomersSheet } from './TransactionsByCustomersService';

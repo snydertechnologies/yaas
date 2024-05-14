@@ -1,4 +1,10 @@
-import { IBill, IItem, IItemEntry, ILandedCostTransaction, ILandedCostTransactionEntry } from '@bigcapital/server/interfaces';
+import {
+  IBill,
+  IItem,
+  IItemEntry,
+  ILandedCostTransaction,
+  ILandedCostTransactionEntry,
+} from '@bigcapital/libs-backend';
 import { isEmpty } from 'lodash';
 import { Service } from 'typedi';
 

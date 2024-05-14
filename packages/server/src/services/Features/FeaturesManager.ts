@@ -1,4 +1,4 @@
-import { IFeatureAllItem } from '@bigcapital/server/interfaces';
+import { IFeatureAllItem } from '@bigcapital/libs-backend';
 import { Inject, Service } from 'typedi';
 import { FeaturesSettingsDriver } from './FeaturesSettingsDriver';
 

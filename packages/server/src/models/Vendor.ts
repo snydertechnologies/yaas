@@ -1,10 +1,10 @@
+import { PaginationQueryBuilder } from '@bigcapital/libs-backend';
 import TenantModel from '@bigcapital/server/models/TenantModel';
 import { DEFAULT_VIEWS } from '@bigcapital/server/services/Contacts/Vendors/constants';
 import { Model, mixin } from 'objection';
 import CustomViewBaseModel from './CustomViewBaseModel';
 import ModelSearchable from './ModelSearchable';
 import ModelSetting from './ModelSetting';
-import PaginationQueryBuilder from './Pagination';
 import VendorSettings from './Vendor.Settings';
 
 class VendorQueryBuilder extends PaginationQueryBuilder {

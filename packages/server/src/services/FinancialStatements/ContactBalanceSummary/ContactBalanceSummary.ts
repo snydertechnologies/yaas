@@ -5,7 +5,7 @@ import {
   IContactBalanceSummaryQuery,
   IContactBalanceSummaryTotal,
   ILedger,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { allPassedConditionsPass } from '@bigcapital/server/utils';
 import { isEmpty, sumBy } from 'lodash';
 import * as R from 'ramda';

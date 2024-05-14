@@ -1,4 +1,4 @@
-import { ICustomerBalanceSummaryMeta, ICustomerBalanceSummaryQuery } from '@bigcapital/server/interfaces';
+import { ICustomerBalanceSummaryMeta, ICustomerBalanceSummaryQuery } from '@bigcapital/libs-backend';
 import moment from 'moment';
 import { Inject, Service } from 'typedi';
 import { FinancialSheetMeta } from '../FinancialSheetMeta';

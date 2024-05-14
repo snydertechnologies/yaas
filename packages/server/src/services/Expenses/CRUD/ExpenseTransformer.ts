@@ -1,4 +1,4 @@
-import { IExpense } from '@bigcapital/server/interfaces';
+import { IExpense } from '@bigcapital/libs-backend';
 import { Transformer } from '@bigcapital/server/lib/Transformer/Transformer';
 import { formatNumber } from '@bigcapital/server/utils';
 import { ExpenseCategoryTransformer } from './ExpenseCategoryTransformer';

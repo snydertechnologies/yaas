@@ -7,7 +7,7 @@ import {
   ISalesByItemsReportQuery,
   ISalesByItemsSheetData,
   ISalesByItemsTotal,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { allPassedConditionsPass, transformToMap } from '@bigcapital/server/utils';
 import * as R from 'ramda';
 import FinancialSheet from '../FinancialSheet';

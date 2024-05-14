@@ -3,7 +3,7 @@ import {
   IPaymentReceiveEntry,
   IPaymentReceiveSmsDetails,
   SMS_NOTIFICATION_KEY,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import SmsNotificationsSettingsService from '@bigcapital/server/services/Settings/SmsNotificationsSettings';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';

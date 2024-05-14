@@ -1,4 +1,4 @@
-import { CreateUncategorizedTransactionDTO } from '@bigcapital/server/interfaces';
+import { CreateUncategorizedTransactionDTO } from '@bigcapital/libs-backend';
 import { Knex } from 'knex';
 import { Inject, Service } from 'typedi';
 import HasTenancyService from '../Tenancy/TenancyService';

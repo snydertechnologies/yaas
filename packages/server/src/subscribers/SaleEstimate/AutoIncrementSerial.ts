@@ -1,4 +1,4 @@
-import { ISaleEstimateCreatedPayload } from '@bigcapital/server/interfaces';
+import { ISaleEstimateCreatedPayload } from '@bigcapital/libs-backend';
 import SettingsService from '@bigcapital/server/services/Settings/SettingsService';
 import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import events from '@bigcapital/server/subscribers/events';

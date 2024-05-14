@@ -6,7 +6,7 @@ import {
   ITrialBalanceSheetData,
   ITrialBalanceSheetQuery,
   ITrialBalanceTotal,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { tableRowMapper } from '@bigcapital/server/utils';
 import * as R from 'ramda';
 import { IROW_TYPE } from '../BalanceSheet/constants';

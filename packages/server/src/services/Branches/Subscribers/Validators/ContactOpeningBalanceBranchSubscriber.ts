@@ -3,7 +3,7 @@ import {
   ICustomerOpeningBalanceEditingPayload,
   IVendorEventCreatingPayload,
   IVendorOpeningBalanceEditingPayload,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 import { ValidateBranchExistance } from '../../Integrations/ValidateBranchExistance';

@@ -1,4 +1,4 @@
-import { IGeneralLedgerSheetQuery, IGeneralLedgerTableData } from '@bigcapital/server/interfaces';
+import { IGeneralLedgerSheetQuery, IGeneralLedgerTableData } from '@bigcapital/libs-backend';
 import { Inject } from 'typedi';
 import { GeneralLedgerExportInjectable } from './GeneralLedgerExport';
 import { GeneralLedgerPdf } from './GeneralLedgerPdf';

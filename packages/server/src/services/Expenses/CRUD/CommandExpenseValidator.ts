@@ -1,6 +1,6 @@
+import { IAccount, IExpense, IExpenseCreateDTO, IExpenseEditDTO } from '@bigcapital/libs-backend';
 import { ACCOUNT_PARENT_TYPE, ACCOUNT_ROOT_TYPE } from '@bigcapital/server/data/AccountTypes';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { IAccount, IExpense, IExpenseCreateDTO, IExpenseEditDTO } from '@bigcapital/server/interfaces';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { difference, sumBy } from 'lodash';
 import { Inject, Service } from 'typedi';

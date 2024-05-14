@@ -1,4 +1,4 @@
-import { SaleInvoiceMailOptions } from '@bigcapital/server/interfaces';
+import { SaleInvoiceMailOptions } from '@bigcapital/libs-backend';
 import { ContactMailNotification } from '@bigcapital/server/services/MailNotification/ContactMailNotification';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject, Service } from 'typedi';

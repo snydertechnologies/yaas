@@ -1,4 +1,4 @@
-import { ISaleInvoice } from '@bigcapital/server/interfaces';
+import { ISaleInvoice } from '@bigcapital/libs-backend';
 import { TransformerInjectable } from '@bigcapital/server/lib/Transformer/TransformerInjectable';
 import { Inject, Service } from 'typedi';
 import { CreditNoteAppliedInvoiceTransformer } from './CreditNoteAppliedInvoiceTransformer';

@@ -2,7 +2,7 @@ import {
   IInventoryAdjustmentEventCreatedPayload,
   IInventoryAdjustmentEventDeletedPayload,
   IInventoryAdjustmentEventPublishedPayload,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import InventoryAdjustmentsGL from '@bigcapital/server/services/Inventory/InventoryAdjustmentGL';
 import InventoryAdjustmentService from '@bigcapital/server/services/Inventory/InventoryAdjustmentService';
 import events from '@bigcapital/server/subscribers/events';

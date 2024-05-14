@@ -1,4 +1,4 @@
-import { IExpensesFilter } from '@bigcapital/server/interfaces';
+import { IExpensesFilter } from '@bigcapital/libs-backend';
 import { Inject, Service } from 'typedi';
 import { Exportable } from '../Export/Exportable';
 import { ExpensesApplication } from './ExpensesApplication';

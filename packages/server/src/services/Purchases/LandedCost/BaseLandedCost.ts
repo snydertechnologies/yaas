@@ -1,4 +1,3 @@
-import { ServiceError } from '@bigcapital/server/exceptions';
 import {
   IBill,
   IBillLandedCostTransaction,
@@ -7,7 +6,8 @@ import {
   ILandedCostItemDTO,
   ILandedCostTransaction,
   ILandedCostTransactionEntry,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
+import { ServiceError } from '@bigcapital/server/exceptions';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { difference, sumBy } from 'lodash';
 import { Inject, Service } from 'typedi';

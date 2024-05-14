@@ -5,9 +5,9 @@ import { Inject, Service } from 'typedi';
 import SmsNotificationsSettingsService from '@bigcapital/server/services/Settings/SmsNotificationsSettings';
 import BaseController from '../BaseController';
 
+import { AbilitySubject, IEditSmsNotificationDTO, PreferencesAction } from '@bigcapital/libs-backend';
 import CheckPolicies from '@bigcapital/server/api/middleware/CheckPolicies';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { AbilitySubject, IEditSmsNotificationDTO, PreferencesAction } from '@bigcapital/server/interfaces';
 
 @Service()
 export default class SettingsController extends BaseController {

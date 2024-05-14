@@ -2,7 +2,7 @@ import {
   IPaymentReceiveCreatedPayload,
   IPaymentReceiveDeletedPayload,
   IPaymentReceiveEditedPayload,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { PaymentReceiveGLEntries } from '@bigcapital/server/services/Sales/PaymentReceives/PaymentReceiveGLEntries';
 import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';

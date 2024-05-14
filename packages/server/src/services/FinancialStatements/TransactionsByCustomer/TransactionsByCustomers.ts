@@ -5,7 +5,7 @@ import {
   ITransactionsByCustomersData,
   ITransactionsByCustomersFilter,
   ITransactionsByCustomersTransaction,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import Ledger from '@bigcapital/server/services/Accounting/Ledger';
 import { isEmpty } from 'lodash';
 import * as R from 'ramda';

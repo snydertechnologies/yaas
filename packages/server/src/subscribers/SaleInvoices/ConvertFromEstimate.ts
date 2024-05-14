@@ -1,4 +1,4 @@
-import { ISaleInvoiceCreatedPayload } from '@bigcapital/server/interfaces';
+import { ISaleInvoiceCreatedPayload } from '@bigcapital/libs-backend';
 import { EventSubscriber } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import { ConvertSaleEstimate } from '@bigcapital/server/services/Sales/Estimates/ConvetSaleEstimate';
 import events from '@bigcapital/server/subscribers/events';

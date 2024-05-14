@@ -1,4 +1,4 @@
-import { EchangeRateLatestPOJO, ExchangeRateLatestDTO } from '@bigcapital/server/interfaces';
+import { EchangeRateLatestPOJO, ExchangeRateLatestDTO } from '@bigcapital/libs-backend';
 import { ExchangeRate } from '@bigcapital/server/lib/ExchangeRate/ExchangeRate';
 import { ExchangeRateServiceType } from '@bigcapital/server/lib/ExchangeRate/types';
 import { TenantMetadata } from '@bigcapital/server/system/models';

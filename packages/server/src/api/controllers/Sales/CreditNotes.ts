@@ -1,8 +1,8 @@
+import { AbilitySubject, CreditNoteAction, ICreditNoteEditDTO, ICreditNoteNewDTO } from '@bigcapital/libs-backend';
+import { ACCEPT_TYPE } from '@bigcapital/libs-backend';
 import BaseController from '@bigcapital/server/api/controllers/BaseController';
 import CheckPolicies from '@bigcapital/server/api/middleware/CheckPolicies';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { AbilitySubject, CreditNoteAction, ICreditNoteEditDTO, ICreditNoteNewDTO } from '@bigcapital/server/interfaces';
-import { ACCEPT_TYPE } from '@bigcapital/server/interfaces/Http';
 import CreateCreditNote from '@bigcapital/server/services/CreditNotes/CreateCreditNote';
 import CreateRefundCreditNote from '@bigcapital/server/services/CreditNotes/CreateRefundCreditNote';
 import CreditNoteApplyToInvoices from '@bigcapital/server/services/CreditNotes/CreditNoteApplyToInvoices';

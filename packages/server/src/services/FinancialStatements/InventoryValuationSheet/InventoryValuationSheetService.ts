@@ -1,4 +1,4 @@
-import { IInventoryValuationReportQuery, IInventoryValuationSheet } from '@bigcapital/server/interfaces';
+import { IInventoryValuationReportQuery, IInventoryValuationSheet } from '@bigcapital/libs-backend';
 import InventoryService from '@bigcapital/server/services/Inventory/Inventory';
 import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Tenant } from '@bigcapital/server/system/models';

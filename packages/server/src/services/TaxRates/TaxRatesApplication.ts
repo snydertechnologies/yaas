@@ -1,4 +1,4 @@
-import { ICreateTaxRateDTO, IEditTaxRateDTO } from '@bigcapital/server/interfaces';
+import { ICreateTaxRateDTO, IEditTaxRateDTO } from '@bigcapital/libs-backend';
 import { Inject, Service } from 'typedi';
 import { ActivateTaxRateService } from './ActivateTaxRate';
 import { CreateTaxRate } from './CreateTaxRate';

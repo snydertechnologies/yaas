@@ -1,5 +1,5 @@
+import { IAccount, IRefundCreditNote } from '@bigcapital/libs-backend';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { IAccount, IRefundCreditNote } from '@bigcapital/server/interfaces';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Inject, Service } from 'typedi';
 import BaseCreditNotes from './CreditNotes';

@@ -1,4 +1,3 @@
-import { ServiceError } from '@bigcapital/server/exceptions';
 import {
   IInventoryAdjustment,
   IInventoryAdjustmentCreatingPayload,
@@ -12,7 +11,8 @@ import {
   IPaginationMeta,
   IQuickInventoryAdjustmentDTO,
   ISystemUser,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
+import { ServiceError } from '@bigcapital/server/exceptions';
 import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import { TransformerInjectable } from '@bigcapital/server/lib/Transformer/TransformerInjectable';
 import { BranchTransactionDTOTransform } from '@bigcapital/server/services/Branches/Integrations/BranchTransactionDTOTransform';

@@ -1,5 +1,5 @@
-import { AccountNormal, ILedgerEntry } from '@bigcapital/server/interfaces';
-import { IRefundVendorCredit } from '@bigcapital/server/interfaces';
+import { AccountNormal, ILedgerEntry } from '@bigcapital/libs-backend';
+import { IRefundVendorCredit } from '@bigcapital/libs-backend';
 import LedgerRepository from '@bigcapital/server/services/Ledger/LedgerRepository';
 import JournalPosterService from '@bigcapital/server/services/Sales/JournalPosterService';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';

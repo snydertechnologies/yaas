@@ -1,6 +1,11 @@
+import {
+  ICreditNote,
+  ICreditNoteAppliedToInvoice,
+  ICreditNoteAppliedToInvoiceModel,
+  ISaleInvoice,
+} from '@bigcapital/libs-backend';
+import { IApplyCreditToInvoicesCreatedPayload, IApplyCreditToInvoicesDTO } from '@bigcapital/libs-backend';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { ICreditNote, ICreditNoteAppliedToInvoice, ICreditNoteAppliedToInvoiceModel, ISaleInvoice } from '@bigcapital/server/interfaces';
-import { IApplyCreditToInvoicesCreatedPayload, IApplyCreditToInvoicesDTO } from '@bigcapital/server/interfaces';
 import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import UnitOfWork from '@bigcapital/server/services/UnitOfWork';
 import events from '@bigcapital/server/subscribers/events';

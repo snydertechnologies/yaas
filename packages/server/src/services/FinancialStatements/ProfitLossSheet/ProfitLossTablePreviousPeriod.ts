@@ -1,4 +1,4 @@
-import { IDateRange, ITableColumn, ITableColumnAccessor } from '@bigcapital/server/interfaces';
+import { IDateRange, ITableColumn, ITableColumnAccessor } from '@bigcapital/libs-backend';
 import * as R from 'ramda';
 import { FinancialTablePreviousPeriod } from '../FinancialTablePreviousPeriod';
 import { ProfitLossSheetQuery } from './ProfitLossSheetQuery';

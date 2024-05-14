@@ -1,4 +1,4 @@
-import { IAccountTransactionsGroupBy, type IBalanceSheetQuery, type ILedger } from '@bigcapital/server/interfaces';
+import { IAccountTransactionsGroupBy, type IBalanceSheetQuery, type ILedger } from '@bigcapital/libs-backend';
 import Ledger from '@bigcapital/server/services/Accounting/Ledger';
 import { transformToMapBy } from '@bigcapital/server/utils';
 import { Knex } from 'knex';

@@ -4,7 +4,7 @@ import {
   IProjectTimeEditDTO,
   IProjectTimeEditPOJO,
   IProjectTimeGetPOJO,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { Inject, Service } from 'typedi';
 import { CreateTimeService } from './CreateTime';
 import { DeleteTimeService } from './DeleteTime';

@@ -1,4 +1,8 @@
-import { ISaleInvoiceCreatedPayload, ISaleInvoiceDeletedPayload, ISaleInvoiceEditedPayload } from '@bigcapital/server/interfaces';
+import {
+  ISaleInvoiceCreatedPayload,
+  ISaleInvoiceDeletedPayload,
+  ISaleInvoiceEditedPayload,
+} from '@bigcapital/libs-backend';
 import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';
 import { WriteTaxTransactionsItemEntries } from '../WriteTaxTransactionsItemEntries';

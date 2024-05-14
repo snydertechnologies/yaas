@@ -1,4 +1,4 @@
-import { IPurchasesByItemsReportQuery, IPurchasesByItemsSheet } from '@bigcapital/server/interfaces/PurchasesByItemsSheet';
+import { IPurchasesByItemsReportQuery, IPurchasesByItemsSheet } from '@bigcapital/libs-backend';
 import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Tenant } from '@bigcapital/server/system/models';
 import moment from 'moment';

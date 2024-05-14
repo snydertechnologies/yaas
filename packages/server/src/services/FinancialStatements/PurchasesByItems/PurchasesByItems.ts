@@ -1,10 +1,10 @@
-import { IAccountTransaction, IItem } from '@bigcapital/server/interfaces';
+import { IAccountTransaction, IItem } from '@bigcapital/libs-backend';
 import {
   IPurchasesByItemsItem,
   IPurchasesByItemsReportQuery,
   IPurchasesByItemsSheetData,
   IPurchasesByItemsTotal,
-} from '@bigcapital/server/interfaces/PurchasesByItemsSheet';
+} from '@bigcapital/libs-backend';
 import { allPassedConditionsPass, transformToMap } from '@bigcapital/server/utils';
 import { get, isEmpty, sumBy } from 'lodash';
 import * as R from 'ramda';

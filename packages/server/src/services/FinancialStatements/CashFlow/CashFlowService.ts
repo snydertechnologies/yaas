@@ -3,7 +3,7 @@ import {
   ICashFlowStatementDOO,
   ICashFlowStatementQuery,
   ICashFlowStatementService,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import Ledger from '@bigcapital/server/services/Accounting/Ledger';
 import InventoryService from '@bigcapital/server/services/Inventory/Inventory';
 import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';

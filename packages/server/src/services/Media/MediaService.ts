@@ -1,6 +1,6 @@
 import fs from 'fs';
+import { IMedia, IMediaService } from '@bigcapital/libs-backend';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { IMedia, IMediaService } from '@bigcapital/server/interfaces';
 import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { difference } from 'lodash';
 import { Inject, Service } from 'typedi';

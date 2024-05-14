@@ -1,4 +1,4 @@
-import { IVendorCreditsQueryDTO } from '@bigcapital/server/interfaces';
+import { IVendorCreditsQueryDTO } from '@bigcapital/libs-backend';
 import { Exportable } from '@bigcapital/server/services/Export/Exportable';
 import { Inject, Service } from 'typedi';
 import ListVendorCredits from './ListVendorCredits';

@@ -1,4 +1,4 @@
-import { IAccount, IAccountsStructureType } from '@bigcapital/server/interfaces';
+import { IAccount, IAccountsStructureType } from '@bigcapital/libs-backend';
 import { Transformer } from '@bigcapital/server/lib/Transformer/Transformer';
 import {
   assocDepthLevelToObjectTree,

@@ -7,7 +7,7 @@ import {
   ISalesEstimatesFilter,
   SaleEstimateMailOptions,
   SaleEstimateMailOptionsDTO,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { Inject, Service } from 'typedi';
 import { ApproveSaleEstimate } from './ApproveSaleEstimate';
 import { CreateSaleEstimate } from './CreateSaleEstimate';

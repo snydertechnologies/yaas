@@ -1,4 +1,4 @@
-import { IBill, IBillsFilter, IFilterMeta, IPaginationMeta } from '@bigcapital/server/interfaces';
+import { IBill, IBillsFilter, IFilterMeta, IPaginationMeta } from '@bigcapital/libs-backend';
 import { TransformerInjectable } from '@bigcapital/server/lib/Transformer/TransformerInjectable';
 import DynamicListingService from '@bigcapital/server/services/DynamicListing/DynamicListService';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';

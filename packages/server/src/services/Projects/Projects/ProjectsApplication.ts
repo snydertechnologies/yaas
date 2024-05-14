@@ -7,7 +7,7 @@ import {
   IVendorsFilter,
   ProjectBillableEntriesQuery,
   ProjectBillableEntry,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { Inject, Service } from 'typedi';
 import CreateProject from './CreateProject';
 import DeleteProject from './DeleteProject';

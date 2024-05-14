@@ -20,7 +20,7 @@ import {
   SaleReceiptAction,
   VendorAction,
   VendorCreditAction,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 
 export const AbilitySchema: ISubjectAbilitiesSchema[] = [
   {

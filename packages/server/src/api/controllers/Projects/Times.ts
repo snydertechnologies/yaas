@@ -1,8 +1,8 @@
+import { AbilitySubject, AccountAction } from '@bigcapital/libs-backend';
 import BaseController from '@bigcapital/server/api/controllers/BaseController';
 import CheckPolicies from '@bigcapital/server/api/middleware/CheckPolicies';
 import asyncMiddleware from '@bigcapital/server/api/middleware/asyncMiddleware';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { AbilitySubject, AccountAction } from '@bigcapital/server/interfaces';
 import { TimesApplication } from '@bigcapital/server/services/Projects/Times/TimesApplication';
 import { NextFunction, Request, Response, Router } from 'express';
 import { check, param, query } from 'express-validator';

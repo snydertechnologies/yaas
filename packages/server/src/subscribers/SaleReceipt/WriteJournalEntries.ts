@@ -1,4 +1,8 @@
-import { ISaleReceiptCreatedPayload, ISaleReceiptEditedPayload, ISaleReceiptEventDeletedPayload } from '@bigcapital/server/interfaces';
+import {
+  ISaleReceiptCreatedPayload,
+  ISaleReceiptEditedPayload,
+  ISaleReceiptEventDeletedPayload,
+} from '@bigcapital/libs-backend';
 import { SaleReceiptGLEntries } from '@bigcapital/server/services/Sales/Receipts/SaleReceiptGLEntries';
 import events from '@bigcapital/server/subscribers/events';
 import { Inject, Service } from 'typedi';

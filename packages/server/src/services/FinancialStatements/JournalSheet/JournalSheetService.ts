@@ -1,4 +1,4 @@
-import { IJournalReportQuery, IJournalSheet } from '@bigcapital/server/interfaces';
+import { IJournalReportQuery, IJournalSheet } from '@bigcapital/libs-backend';
 import Journal from '@bigcapital/server/services/Accounting/JournalPoster';
 import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { Tenant } from '@bigcapital/server/system/models';

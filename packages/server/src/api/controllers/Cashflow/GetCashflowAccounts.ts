@@ -1,6 +1,6 @@
+import { AbilitySubject, CashflowAction } from '@bigcapital/libs-backend';
 import CheckPolicies from '@bigcapital/server/api/middleware/CheckPolicies';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { AbilitySubject, CashflowAction } from '@bigcapital/server/interfaces';
 import { CashflowApplication } from '@bigcapital/server/services/Cashflow/CashflowApplication';
 import { NextFunction, Request, Response, Router } from 'express';
 import { query } from 'express-validator';

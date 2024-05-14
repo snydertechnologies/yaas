@@ -5,7 +5,7 @@ import {
   ICustomerOpeningBalanceEditDTO,
   ICustomersFilter,
   ISystemUser,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { Inject, Service } from 'typedi';
 import { CreateCustomer } from './CRUD/CreateCustomer';
 import { DeleteCustomer } from './CRUD/DeleteCustomer';

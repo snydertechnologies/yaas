@@ -1,4 +1,4 @@
-import { ITableRow, ITransactionsByContactsContact } from '@bigcapital/server/interfaces';
+import { ITableRow, ITransactionsByContactsContact } from '@bigcapital/libs-backend';
 import { tableMapper, tableRowMapper } from '@bigcapital/server/utils';
 import moment from 'moment';
 import * as R from 'ramda';

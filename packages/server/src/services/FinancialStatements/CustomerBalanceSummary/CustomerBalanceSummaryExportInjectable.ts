@@ -1,4 +1,4 @@
-import { ICustomerBalanceSummaryQuery } from '@bigcapital/server/interfaces';
+import { ICustomerBalanceSummaryQuery } from '@bigcapital/libs-backend';
 import { TableSheet } from '@bigcapital/server/lib/Xlsx/TableSheet';
 import { Inject, Service } from 'typedi';
 import { CustomerBalanceSummaryTableInjectable } from './CustomerBalanceSummaryTableInjectable';

@@ -1,5 +1,5 @@
+import { TransactionsLockingGroup } from '@bigcapital/libs-backend';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { TransactionsLockingGroup } from '@bigcapital/server/interfaces';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import moment from 'moment';
 import { Inject, Service } from 'typedi';

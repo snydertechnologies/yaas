@@ -1,5 +1,5 @@
+import { IModel, ISortOrder } from '@bigcapital/libs-backend';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { IModel, ISortOrder } from '@bigcapital/server/interfaces';
 import DynamicFilterSortBy from '@bigcapital/server/lib/DynamicFilter/DynamicFilterSortBy';
 import { Service } from 'typedi';
 import DynamicListAbstract from './DynamicListAbstract';

@@ -2,7 +2,7 @@ import {
   IComputeItemCostJobCompletedPayload,
   IInventoryTransactionsCreatedPayload,
   IInventoryTransactionsDeletedPayload,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import InventoryService from '@bigcapital/server/services/Inventory/Inventory';
 import InventoryItemsQuantitySync from '@bigcapital/server/services/Inventory/InventoryItemsQuantitySync';
 import { SaleInvoicesCost } from '@bigcapital/server/services/Sales/Invoices/SalesInvoicesCost';

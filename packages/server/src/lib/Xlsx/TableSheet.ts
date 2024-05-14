@@ -1,4 +1,4 @@
-import type { ITableData } from '@bigcapital/server/interfaces';
+import type { ITableData } from '@bigcapital/libs-backend';
 import { FinancialTableStructure } from '@bigcapital/server/services/FinancialStatements/FinancialTableStructure';
 import { type WorkBook, utils, write } from 'xlsx';
 

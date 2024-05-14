@@ -1,4 +1,4 @@
-import { IAgingSummaryMeta, IAgingSummaryQuery } from '@bigcapital/server/interfaces';
+import { IAgingSummaryMeta, IAgingSummaryQuery } from '@bigcapital/libs-backend';
 import { Inject, Service } from 'typedi';
 import { AgingSummaryMeta } from './AgingSummaryMeta';
 

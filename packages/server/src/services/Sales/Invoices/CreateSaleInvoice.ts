@@ -5,7 +5,7 @@ import {
   ISaleInvoiceCreatedPayload,
   ISaleInvoiceCreatingPaylaod,
   ITenantUser,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { EventPublisher } from '@bigcapital/server/lib/EventPublisher/EventPublisher';
 import ItemsEntriesService from '@bigcapital/server/services/Items/ItemsEntriesService';
 import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';

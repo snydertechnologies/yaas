@@ -7,7 +7,7 @@ import {
   IBalanceSheetSchemaAccountNode,
   IBalanceSheetSchemaNode,
   INumberFormatQuery,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { defaultTo, toArray } from 'lodash';
 import * as R from 'ramda';
 import { FinancialSheetStructure } from '../FinancialSheetStructure';

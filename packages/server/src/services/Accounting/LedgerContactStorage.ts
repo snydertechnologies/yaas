@@ -1,5 +1,5 @@
+import { ILedger, ILedgerEntry, ISaleContactsBalanceQueuePayload } from '@bigcapital/libs-backend';
 import { ACCOUNT_TYPE } from '@bigcapital/server/data/AccountTypes';
-import { ILedger, ILedgerEntry, ISaleContactsBalanceQueuePayload } from '@bigcapital/server/interfaces';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { TenantMetadata } from '@bigcapital/server/system/models';
 import async from 'async';

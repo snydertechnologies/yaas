@@ -1,5 +1,5 @@
+import { IModelMeta, IModelMetaField, IModelMetaField2 } from '@bigcapital/libs-backend';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { IModelMeta, IModelMetaField, IModelMetaField2 } from '@bigcapital/server/interfaces';
 import I18nService from '@bigcapital/server/services/I18n/I18nService';
 import TenancyService from '@bigcapital/server/services/Tenancy/TenancyService';
 import { camelCase, pickBy, upperFirst } from 'lodash';

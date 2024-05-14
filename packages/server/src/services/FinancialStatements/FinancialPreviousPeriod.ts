@@ -1,4 +1,4 @@
-import { IFinancialDatePeriodsUnit, IFinancialNodeWithPreviousPeriod } from '@bigcapital/server/interfaces';
+import { IFinancialDatePeriodsUnit, IFinancialNodeWithPreviousPeriod } from '@bigcapital/libs-backend';
 import { sumBy } from 'lodash';
 import * as R from 'ramda';
 

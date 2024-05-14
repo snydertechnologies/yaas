@@ -7,7 +7,7 @@ import {
   IAccountsTransactionsFilter,
   IFilterMeta,
   IGetAccountTransactionPOJO,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { Knex } from 'knex';
 import { Inject, Service } from 'typedi';
 import { ActivateAccount } from './ActivateAccount';

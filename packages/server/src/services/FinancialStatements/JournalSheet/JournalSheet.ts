@@ -5,7 +5,7 @@ import {
   IJournalReportEntriesGroup,
   IJournalReportQuery,
   IJournalTableData,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import { chain, get, head, sumBy } from 'lodash';
 import moment from 'moment';
 import FinancialSheet from '../FinancialSheet';

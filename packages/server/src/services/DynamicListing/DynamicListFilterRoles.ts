@@ -1,5 +1,5 @@
+import { IFilterRole, IModel } from '@bigcapital/libs-backend';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { IFilterRole, IModel } from '@bigcapital/server/interfaces';
 import DynamicFilterAdvancedFilter from '@bigcapital/server/lib/DynamicFilter/DynamicFilterAdvancedFilter';
 import validator from 'is-my-json-valid';
 import * as R from 'ramda';

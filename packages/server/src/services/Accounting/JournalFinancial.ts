@@ -1,4 +1,4 @@
-import { IJournalPoster } from '@bigcapital/server/interfaces';
+import { IJournalPoster } from '@bigcapital/libs-backend';
 
 export default class JournalFinancial {
   journal: IJournalPoster;

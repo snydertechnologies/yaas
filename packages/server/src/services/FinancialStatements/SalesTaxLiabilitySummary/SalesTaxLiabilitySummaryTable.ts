@@ -1,10 +1,10 @@
-import { ITableColumn, ITableRow } from '@bigcapital/server/interfaces';
+import { ITableColumn, ITableRow } from '@bigcapital/libs-backend';
 import {
   SalesTaxLiabilitySummaryQuery,
   SalesTaxLiabilitySummaryRate,
   SalesTaxLiabilitySummaryReportData,
   SalesTaxLiabilitySummaryTotal,
-} from '@bigcapital/server/interfaces/SalesTaxLiabilitySummary';
+} from '@bigcapital/libs-backend';
 import { tableRowMapper } from '@bigcapital/server/utils';
 import * as R from 'ramda';
 import AgingReport from '../AgingSummary/AgingReport';

@@ -1,4 +1,4 @@
-import { IProfitLossSheetQuery } from '@bigcapital/server/interfaces';
+import { IProfitLossSheetQuery } from '@bigcapital/libs-backend';
 import { TableSheet } from '@bigcapital/server/lib/Xlsx/TableSheet';
 import { Inject, Service } from 'typedi';
 import { ProfitLossSheetTableInjectable } from './ProfitLossSheetTableInjectable';

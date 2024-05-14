@@ -1,4 +1,4 @@
-import { AccountNormal, ILedgerEntry, IRefundCreditNote } from '@bigcapital/server/interfaces';
+import { AccountNormal, ILedgerEntry, IRefundCreditNote } from '@bigcapital/libs-backend';
 import Ledger from '@bigcapital/server/services/Accounting/Ledger';
 import LedgerStorageService from '@bigcapital/server/services/Accounting/LedgerStorageService';
 import HasTenancyService from '@bigcapital/server/services/Tenancy/TenancyService';

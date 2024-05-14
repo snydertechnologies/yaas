@@ -1,5 +1,5 @@
+import { ICreditNote, ICreditNoteEditDTO, ICreditNoteNewDTO } from '@bigcapital/libs-backend';
 import { ServiceError } from '@bigcapital/server/exceptions';
-import { ICreditNote, ICreditNoteEditDTO, ICreditNoteNewDTO } from '@bigcapital/server/interfaces';
 import { BranchTransactionDTOTransform } from '@bigcapital/server/services/Branches/Integrations/BranchTransactionDTOTransform';
 import ItemsEntriesService from '@bigcapital/server/services/Items/ItemsEntriesService';
 import AutoIncrementOrdersService from '@bigcapital/server/services/Sales/AutoIncrementOrdersService';

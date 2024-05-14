@@ -3,7 +3,7 @@ import {
   ITenantUserDeletedPayload,
   ITenantUserEditedPayload,
   ITenantUserInactivatedPayload,
-} from '@bigcapital/server/interfaces';
+} from '@bigcapital/libs-backend';
 import events from '@bigcapital/server/subscribers/events';
 import { ABILITIES_CACHE } from '../../api/middleware/AuthorizationMiddleware';
 

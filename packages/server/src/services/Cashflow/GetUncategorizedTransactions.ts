@@ -1,4 +1,4 @@
-import { IGetUncategorizedTransactionsQuery } from '@bigcapital/server/interfaces';
+import { IGetUncategorizedTransactionsQuery } from '@bigcapital/libs-backend';
 import { TransformerInjectable } from '@bigcapital/server/lib/Transformer/TransformerInjectable';
 import { Inject, Service } from 'typedi';
 import HasTenancyService from '../Tenancy/TenancyService';

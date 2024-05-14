@@ -1,4 +1,4 @@
-import { IInventoryTransaction, IWarehouseTransfer, IWarehouseTransferEntry } from '@bigcapital/server/interfaces';
+import { IInventoryTransaction, IWarehouseTransfer, IWarehouseTransferEntry } from '@bigcapital/libs-backend';
 import InventoryService from '@bigcapital/server/services/Inventory/Inventory';
 import { Knex } from 'knex';
 import { Inject, Service } from 'typedi';

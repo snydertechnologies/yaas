@@ -1,4 +1,4 @@
-import { ContactService, IVendorEditDTO, IVendorNewDTO } from '@bigcapital/server/interfaces';
+import { ContactService, IVendorEditDTO, IVendorNewDTO } from '@bigcapital/libs-backend';
 import { TenantMetadata } from '@bigcapital/server/system/models';
 import { defaultTo, isEmpty } from 'lodash';
 import moment from 'moment';

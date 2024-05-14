@@ -1,4 +1,4 @@
-import { IRefundCreditNote } from '@bigcapital/server/interfaces';
+import { IRefundCreditNote } from '@bigcapital/libs-backend';
 import { TransformerInjectable } from '@bigcapital/server/lib/Transformer/TransformerInjectable';
 import { Inject, Service } from 'typedi';
 import RefundCreditNote from './RefundCreditNote';

@@ -1,4 +1,4 @@
-import { ITableColumn, ITableData, ITableRow } from '@bigcapital/server/interfaces';
+import { ITableColumn, ITableData, ITableRow } from '@bigcapital/libs-backend';
 import { ChromiumlyTenancy } from '@bigcapital/server/services/ChromiumlyTenancy/ChromiumlyTenancy';
 import { TemplateInjectable } from '@bigcapital/server/services/TemplateInjectable/TemplateInjectable';
 import * as R from 'ramda';
